@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "DRY & KISS Analysis - Modulo Job"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> c88446c (.)
+=======
+>>>>>>> 83c689e (.)
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025
@@ -48,7 +51,11 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 =======
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 >>>>>>> c88446c (.)
+=======
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+>>>>>>> 83c689e (.)
