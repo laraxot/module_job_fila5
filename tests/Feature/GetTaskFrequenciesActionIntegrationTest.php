@@ -9,7 +9,7 @@ use Modules\Job\Tests\TestCase;
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
-        $this->action = new GetTaskFrequenciesAction;
+        $this->action = new GetTaskFrequenciesAction();
     });
 
     it('returns array when config exists', function () {
