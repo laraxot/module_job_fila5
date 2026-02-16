@@ -152,4 +152,6 @@ return [
         'sort' => 93,
         'icon' => 'job-failed-job',
     ],
+    'label' => 'Failed Import Row',
+    'plural_label' => 'Failed Import Row (Plurale)',
 ];

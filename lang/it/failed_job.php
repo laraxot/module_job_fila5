@@ -169,4 +169,5 @@ return [
         'icon' => 'job-failed-job',
     ],
     'label' => 'failed job',
+    'plural_label' => 'Failed Job (Plurale)',
 ];

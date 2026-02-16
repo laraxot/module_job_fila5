@@ -169,4 +169,6 @@ return [
     'model' => [
         'label' => 'job batch.model',
     ],
+    'label' => 'Job Batch',
+    'plural_label' => 'Job Batch (Plurale)',
 ];

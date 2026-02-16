@@ -128,4 +128,6 @@ return [
         'recurring' => 'Ricorrente',
         'batch' => 'Batch',
     ],
+    'label' => 'Jobs Waiting',
+    'plural_label' => 'Jobs Waiting (Plurale)',
 ];

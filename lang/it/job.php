@@ -132,7 +132,7 @@ return [
         'type' => [
             'label' => 'Tipo',
             'placeholder' => 'Seleziona il tipo',
-            'help' => 'Tipo di job (e.g., importazione, esportazione)',
+            'help' => 'Tipo di job (e.g., importazione, esportazione]',
             'tooltip' => 'Tipo di job',
             'helper_text' => '',
             'options' => [
@@ -504,4 +504,6 @@ return [
         'description' => 'Gestione dei processi in background',
     ],
     'search_placeholder' => 'Cerca per nome, tipo o stato...',
+    'label' => 'Job',
+    'plural_label' => 'Job (Plurale)',
 ];

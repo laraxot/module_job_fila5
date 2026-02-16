@@ -120,4 +120,6 @@ return [
         'job_exported' => 'Dati esportati correttamente',
     ],
     'title' => 'job status',
+    'label' => 'Job Status',
+    'plural_label' => 'Job Status (Plurale)',
 ];
