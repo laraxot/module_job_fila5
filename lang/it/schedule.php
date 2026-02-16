@@ -119,7 +119,7 @@ return [
         'timezone' => 'All schedules will be executed in the timezone: ',
         'select' => 'Select a command',
         'custom' => 'Custom Command',
-        'custom-command-here' => 'Custom Command here (e.g. `cat /proc/cpuinfo` or `artisan db:migrate`)',
+        'custom-command-here' => 'Custom Command here (e.g. `cat /proc/cpuinfo` or `artisan db:migrate`]',
     ],
     'status' => [
         'active' => 'Active',
@@ -210,11 +210,11 @@ return [
     'cron' => [
         'help' => [
             'title' => 'Aiuto Espressioni Cron',
-            'minute' => 'Minuto (0-59)',
-            'hour' => 'Ora (0-23)',
-            'day_of_month' => 'Giorno del Mese (1-31)',
-            'month' => 'Mese (1-12)',
-            'day_of_week' => 'Giorno della Settimana (0-6)',
+            'minute' => 'Minuto (0-59]',
+            'hour' => 'Ora (0-23]',
+            'day_of_month' => 'Giorno del Mese (1-31]',
+            'month' => 'Mese (1-12]',
+            'day_of_week' => 'Giorno della Settimana (0-6]',
             'examples' => [
                 'every_minute' => '* * * * * - Ogni minuto',
                 'every_hour' => '0 * * * * - Ogni ora',
@@ -225,5 +225,18 @@ return [
     ],
     'model' => [
         'label' => 'schedule.model',
+    ],
+    'label' => 'Schedule',
+    'plural_label' => 'Schedule (Plurale)',
+    'actions' => [
+        'create' => [
+            'label' => 'Crea Schedule',
+        ],
+        'edit' => [
+            'label' => 'Modifica Schedule',
+        ],
+        'delete' => [
+            'label' => 'Elimina Schedule',
+        ],
     ],
 ];

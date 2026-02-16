@@ -226,4 +226,6 @@ return [
         'high' => 'Alta',
         'urgent' => 'Urgente',
     ],
+    'label' => 'Job Manager',
+    'plural_label' => 'Job Manager (Plurale)',
 ];

@@ -22,7 +22,7 @@ return [
         ],
         'format' => [
             'label' => 'Formato',
-            'tooltip' => 'Scegli il formato di esportazione (CSV, Excel, etc.)',
+            'tooltip' => 'Scegli il formato di esportazione (CSV, Excel, etc.]',
             'placeholder' => 'Seleziona formato',
         ],
         'filters' => [
@@ -143,4 +143,6 @@ return [
         'xml' => 'XML',
         'pdf' => 'PDF',
     ],
+    'label' => 'Export',
+    'plural_label' => 'Export (Plurale)',
 ];

@@ -99,4 +99,6 @@ return [
         'job_stopped' => 'Monitoraggio del job fermato',
     ],
     'title' => 'job monitor',
+    'label' => 'Job Monitor',
+    'plural_label' => 'Job Monitor (Plurale)',
 ];

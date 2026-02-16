@@ -34,7 +34,7 @@ return [
         ],
         'format' => [
             'label' => 'Formato',
-            'tooltip' => 'Formato del file importato (CSV, Excel, etc.)',
+            'tooltip' => 'Formato del file importato (CSV, Excel, etc.]',
             'placeholder' => 'Seleziona formato',
         ],
         'rows' => [
@@ -228,4 +228,6 @@ return [
         'json' => 'JSON',
         'xml' => 'XML',
     ],
+    'label' => 'Import',
+    'plural_label' => 'Import (Plurale)',
 ];
