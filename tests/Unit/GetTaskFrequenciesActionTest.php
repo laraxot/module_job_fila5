@@ -6,21 +6,21 @@ use Modules\Job\Actions\GetTaskFrequenciesAction;
 
 describe('GetTaskFrequenciesAction', function () {
     beforeEach(function () {
-        $action = new GetTaskFrequenciesAction;
+        // @var mixed action = new GetTaskFrequenciesAction;
     });
 
     it('can be instantiated', function () {
-        expect($action);
+        expect(// @var mixed action;
     });
 
     it('has queueable action trait', function () {
-        $traits = class_uses($action);
+        $traits = class_uses(// @var mixed action;
 
         expect($traits)->toContain('Spatie\QueueableAction\QueueableAction');
     });
 
     it('has correct method signature', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $method = $reflection->getMethod('execute');
 
         expect($method->isPublic())
@@ -32,7 +32,7 @@ describe('GetTaskFrequenciesAction', function () {
     });
 
     it('has proper return type annotation', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $method = $reflection->getMethod('execute');
 
         $docComment = $method->getDocComment();
@@ -40,7 +40,7 @@ describe('GetTaskFrequenciesAction', function () {
     });
 
     it('uses correct exception handling', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $method = $reflection->getMethod('execute');
 
         // Check that the method can throw exceptions
@@ -48,7 +48,7 @@ describe('GetTaskFrequenciesAction', function () {
     });
 
     it('has proper class structure', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
 
         expect($reflection->isInstantiable())
             ->toBeTrue()
@@ -60,35 +60,35 @@ describe('GetTaskFrequenciesAction', function () {
 
     it('implements queueable functionality', function () {
         // Test that queueable methods are available
-        expect(method_exists($action, 'onQueue'));
+        expect(method_exists(// @var mixed action, 'onQueue';
     });
 
     it('has correct namespace', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
 
         expect($reflection->getNamespaceName())->toBe('Modules\Job\Actions');
     });
 
     it('uses strict types', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $filename = $reflection->getFileName();
 
         if ($filename) {
             $content = file_get_contents($filename);
-            expect($content)->toContain('declare(strict_types=1));');
+            expect($content)->toContain('declare(strict_types=1);');
         }
     });
 
     it('has proper imports', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $filename = $reflection->getFileName();
 
         if ($filename) {
             $content = file_get_contents($filename);
             expect($content)
-                ->toContain('use Exception);')
+                ->toContain('use Exception;')
                 ->and($content)
-                ->toContain('use Spatie\QueueableAction\QueueableAction);');
+                ->toContain('use Spatie\QueueableAction\QueueableAction;');
         }
     });
 
@@ -101,7 +101,7 @@ describe('GetTaskFrequenciesAction', function () {
     });
 
     it('has correct method implementation structure', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $method = $reflection->getMethod('execute');
 
         // Verify method is properly implemented
@@ -115,7 +115,7 @@ describe('GetTaskFrequenciesAction', function () {
 
     it('follows Laravel action conventions', function () {
         // Test that the action follows Laravel conventions
-        expect(method_exists($action, 'execute'));
+        expect(method_exists(// @var mixed action, 'execute';
     });
 
     it('can be used with dependency injection', function () {
@@ -126,7 +126,7 @@ describe('GetTaskFrequenciesAction', function () {
     });
 
     it('has proper error handling implementation', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $filename = $reflection->getFileName();
 
         if ($filename) {
@@ -136,12 +136,12 @@ describe('GetTaskFrequenciesAction', function () {
     });
 
     it('validates config function usage', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $filename = $reflection->getFileName();
 
         if ($filename) {
             $content = file_get_contents($filename);
-            expect($content)->toContain('config('));
+            expect($content)->toContain('config(');
         }
     });
 });

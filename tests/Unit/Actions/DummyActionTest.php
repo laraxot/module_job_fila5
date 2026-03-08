@@ -6,15 +6,15 @@ use Modules\Job\Actions\DummyAction;
 
 describe('DummyAction', function () {
     beforeEach(function () {
-        $action = new DummyAction;
+        // @var mixed action = new DummyAction;
     });
 
     it('can be instantiated', function () {
-        expect($action);
+        expect(// @var mixed action;
     });
 
     it('has correct method signature', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $method = $reflection->getMethod('execute');
 
         expect($method->isPublic())
@@ -26,28 +26,28 @@ describe('DummyAction', function () {
     });
 
     it('uses QueueableAction trait', function () {
-        $traits = class_uses($action);
+        $traits = class_uses(// @var mixed action;
 
         expect($traits)->toContain('Spatie\QueueableAction\QueueableAction');
     });
 
     it('uses strict types', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
         $filename = $reflection->getFileName();
 
         expect($filename)->not->toBeNull();
         $content = file_get_contents($filename);
-        expect($content)->toContain('declare(strict_types=1));');
+        expect($content)->toContain('declare(strict_types=1);');
     });
 
     it('has correct namespace', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
 
         expect($reflection->getNamespaceName())->toBe('Modules\Job\Actions');
     });
 
     it('has proper class structure', function () {
-        $reflection = new ReflectionClass($action);
+        $reflection = new ReflectionClass(// @var mixed action;
 
         expect($reflection->isInstantiable())
             ->toBeTrue()
@@ -58,13 +58,13 @@ describe('DummyAction', function () {
     });
 
     it('implements queueable functionality', function () {
-        expect(method_exists($action, 'onQueue'));
+        expect(method_exists(// @var mixed action, 'onQueue';
     });
 
     it('has required imports', function () {
-        $filename = (new ReflectionClass($action));
+        $filename = (new ReflectionClass(// @var mixed action;
         $content = file_get_contents($filename);
 
-        expect($content)->toContain('use Spatie\QueueableAction\QueueableAction);');
+        expect($content)->toContain('use Spatie\QueueableAction\QueueableAction;');
     });
 });
