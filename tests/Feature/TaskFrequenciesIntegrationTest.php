@@ -6,14 +6,14 @@ uses(\Modules\Job\Tests\TestCase::class);
 
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 
-describe('TaskFrequencies Integration', function () {)
-    beforeEach(function () {)
+describe('TaskFrequencies Integration', function () {
+    beforeEach(function () {
         $action = new GetTaskFrequenciesAction;
     });
 
-    it('integrates with Laravel config system', function () {)
+    it('integrates with Laravel config system', function () {
         // Set up realistic frequency configuration
-        config(['totem.frequencies' => [)
+        config(['totem.frequencies' => [
             'everyMinute' => 'Every Minute',
             'everyFiveMinutes' => 'Every 5 Minutes',
             'everyTenMinutes' => 'Every 10 Minutes',
@@ -38,7 +38,7 @@ describe('TaskFrequencies Integration', function () {)
             ->and(count($result))
             ->toBe(15)
             ->and($result)
-            ->toHaveKeys([)
+            ->toHaveKeys([
                 'everyMinute',
                 'everyFiveMinutes',
                 'everyTenMinutes',
@@ -57,9 +57,9 @@ describe('TaskFrequencies Integration', function () {)
             ]);
     });
 
-    it('handles real-world frequency configurations', function () {)
+    it('handles real-world frequency configurations', function () {
         // Test with configuration that might be used in production
-        config(['totem.frequencies' => [)
+        config(['totem.frequencies' => [
             'everyMinute' => 'Every Minute',
             'everyFiveMinutes' => 'Every 5 Minutes',
             'hourly' => 'Hourly',
@@ -84,7 +84,7 @@ describe('TaskFrequencies Integration', function () {)
             ->toBe('Monthly');
     });
 
-    it('can be used in queue context', function () {)
+    it('can be used in queue context', function () {
         // Test queueable functionality
         config(['totem.frequencies' => ['test' => 'Test Frequency']]);
 
@@ -92,7 +92,7 @@ describe('TaskFrequencies Integration', function () {)
         expect(method_exists($action, 'onQueue'));
     });
 
-    it('handles configuration changes dynamically', function () {)
+    it('handles configuration changes dynamically', function () {
         // Test with initial config
         config(['totem.frequencies' => ['initial' => 'Initial Value']]);
         $result1 = $action->execute();
@@ -113,9 +113,9 @@ describe('TaskFrequencies Integration', function () {)
             ->not->toHaveKey('initial');
     });
 
-    it('validates configuration file structure', function () {)
+    it('validates configuration file structure', function () {
         // Test that the action works with nested configuration
-        config(['totem.frequencies' => [)
+        config(['totem.frequencies' => [
             'simple' => 'Simple Value',
             'complex' => [
                 'label' => 'Complex Label',
@@ -136,7 +136,7 @@ describe('TaskFrequencies Integration', function () {)
             ->toBe('Complex Label');
     });
 
-    it('handles empty configuration gracefully', function () {)
+    it('handles empty configuration gracefully', function () {
         config(['totem.frequencies' => []]);
 
         $result = $action->execute();
@@ -144,8 +144,8 @@ describe('TaskFrequencies Integration', function () {)
         expect($result)->toBeArray()->and($result)->toBeEmpty();
     });
 
-    it('works with string and numeric keys', function () {)
-        config(['totem.frequencies' => [)
+    it('works with string and numeric keys', function () {
+        config(['totem.frequencies' => [
             'string_key' => 'String Value',
             0 => 'Numeric Key Value',
             1 => 'Another Numeric',
@@ -166,14 +166,14 @@ describe('TaskFrequencies Integration', function () {)
             ->toBe('Mixed Key Value');
     });
 
-    it('integrates with Laravel service container', function () {)
+    it('integrates with Laravel service container', function () {
         // Test that the action can be resolved from container
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
 
         expect($actionFromContainer)->toBeInstanceOf(GetTaskFrequenciesAction::class);
     });
 
-    it('handles concurrent access correctly', function () {)
+    it('handles concurrent access correctly', function () {
         config(['totem.frequencies' => ['concurrent' => 'Concurrent Value']]);
 
         // Simulate multiple calls
@@ -189,7 +189,7 @@ describe('TaskFrequencies Integration', function () {)
             ->toBe('Concurrent Value');
     });
 
-    it('validates error handling in production scenario', function () {)
+    it('validates error handling in production scenario', function () {
         // Test various invalid configurations that might occur
         $invalidConfigs = [
             'string_value',
@@ -207,8 +207,8 @@ describe('TaskFrequencies Integration', function () {)
         }
     });
 
-    it('maintains consistency across multiple executions', function () {)
-        config(['totem.frequencies' => [)
+    it('maintains consistency across multiple executions', function () {
+        config(['totem.frequencies' => [
             'consistent_key' => 'Consistent Value',
             'another_key' => 'Another Value',
         ]]);
@@ -224,9 +224,9 @@ describe('TaskFrequencies Integration', function () {)
         }
     });
 
-    it('works with realistic totem configuration', function () {)
+    it('works with realistic totem configuration', function () {
         // Test with configuration that would be realistic for Laravel Totem
-        config(['totem.frequencies' => [)
+        config(['totem.frequencies' => [
             'everyMinute' => 'Every Minute',
             'everyTwoMinutes' => 'Every Two Minutes',
             'everyThreeMinutes' => 'Every Three Minutes',
