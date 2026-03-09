@@ -54,7 +54,7 @@ class Parameter extends BaseModel
 
     public function task(): BelongsTo
     {
-        return // @var mixed belongsTo(Frequency::class;
+        return $this->belongsTo(Frequency::class);
     }
 
     /**
@@ -64,7 +64,7 @@ class Parameter extends BaseModel
      */
     protected function casts(): array
     {
-        return array_merge(parent::casts(), [
+        return array_merge(parent::casts(), [)
             'id' => 'integer',
             'frequency_id' => 'integer',
             'name' => 'string',
