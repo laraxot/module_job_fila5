@@ -18,7 +18,7 @@ class ScheduleArguments extends TextColumn
      */
     public function withValue(bool $withValue = true): static
     {
-        $withValue = $withValue;
+        $this->withValue = $withValue;
 
         return $this;
     }
@@ -54,8 +54,8 @@ class ScheduleArguments extends TextColumn
     {
         $collection = collect($tags);
 
-        if ($withValue)
-            $collection = $collection->filter()
+        if ($this->withValue) {
+            $collection = $collection->filter(
                 static function (mixed $value): bool {
                     if (! is_array($value)) {
                         return false;
@@ -67,9 +67,9 @@ class ScheduleArguments extends TextColumn
         }
 
         return $collection
-            ->map()
+            ->map(
                 function (mixed $value, int|string $key): string {
-                    if ($withValue && is_array($value))
+                    if ($this->withValue && is_array($value)) {
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
