@@ -137,11 +137,11 @@ class Task extends BaseModel
      */
     public function compileParameters(bool $forScheduler = false): array
     {
-        if ($parameters === null)
+        if ($this->parameters === null) {
             return [];
         }
 
-        $parameters = json_decode($parameters, true);
+        $parameters = json_decode($this->parameters, true);
         Assert::isArray($parameters);
 
         if ($forScheduler) {
@@ -162,7 +162,7 @@ class Task extends BaseModel
      */
     public function getActivatedAttribute(): bool
     {
-        return (bool) $is_active;
+        return (bool) $this->is_active;
     }
 
     /**
@@ -172,7 +172,7 @@ class Task extends BaseModel
      */
     public function getUpcomingAttribute(): string
     {
-        // return CronExpression::factory($getCronExpression());
+        // return CronExpression::factory($this->getCronExpression());
         return 'preso';
     }
 
@@ -197,7 +197,7 @@ class Task extends BaseModel
      */
     public function getLastResultAttribute(): ?Result
     {
-        $res = $this->results();
+        $res = $this->results()->latest('ran_at')->first();
         if ($res === null) {
             return null;
         }
@@ -211,7 +211,7 @@ class Task extends BaseModel
         /**
          * @var float $avg_duration
          */
-        $avg_duration = $this->results();
+        $avg_duration = $this->results()->avg('duration');
 
         return (float) $avg_duration;
     }
@@ -221,7 +221,7 @@ class Task extends BaseModel
      */
     public function routeNotificationForMail(): ?string
     {
-        return $notification_email_address;
+        return $this->notification_email_address;
     }
 
     /**
@@ -229,7 +229,7 @@ class Task extends BaseModel
      */
     public function routeNotificationForNexmo(): ?string
     {
-        return $notification_phone_number;
+        return $this->notification_phone_number;
     }
 
     /**
@@ -237,7 +237,7 @@ class Task extends BaseModel
      */
     public function routeNotificationForSlack(): ?string
     {
-        return $notification_slack_webhook;
+        return $this->notification_slack_webhook;
     }
 
     /**
@@ -245,11 +245,11 @@ class Task extends BaseModel
      */
     public function autoCleanup(): void
     {
-        if ($auto_cleanup_num > 0)
-            if ($auto_cleanup_type === 'results')
+        if ($this->auto_cleanup_num > 0) {
+            if ($this->auto_cleanup_type === 'results') {
                 $oldest_id = $this->results()
                     ->orderBy('ran_at', 'desc')
-                    ->limit($auto_cleanup_num)
+                    ->limit($this->auto_cleanup_num)
                     ->get()
                     ->min('id');
                 do {
@@ -265,7 +265,7 @@ class Task extends BaseModel
             } else {
                 do {
                     $rowsToDelete = $this->results()
-                        ->where('ran_at', '<', Carbon::now()->subDays($auto_cleanup_num - 1))
+                        ->where('ran_at', '<', Carbon::now()->subDays($this->auto_cleanup_num - 1))
                         ->limit(50)
                         ->getQuery()
                         ->select('id')

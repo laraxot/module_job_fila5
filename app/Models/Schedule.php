@@ -171,7 +171,7 @@ class Schedule extends BaseModel
     {
         $arguments = [];
 
-        foreach ($params ?? [] as $argument => $value)
+        foreach ($this->params ?? [] as $argument => $value) {
             // PHPStan Level 10: Type safety for mixed $value
             if (! is_array($value)) {
                 continue;
@@ -207,15 +207,15 @@ class Schedule extends BaseModel
      */
     public function getOptions(): array
     {
-        $options = collect($options ?? []);
-        $optionsWithValues = $options_with_value ?? [];
+        $options = collect($this->options ?? []);
+        $optionsWithValues = $this->options_with_value ?? [];
 
         if (! empty($optionsWithValues)) {
             $options = $options->merge($optionsWithValues);
         }
 
         return $options
-            ->map()
+            ->map(
                 static function ($value, $key): string {
                     if (is_array($value)) {
                         $name = $value['name'] ?? null;

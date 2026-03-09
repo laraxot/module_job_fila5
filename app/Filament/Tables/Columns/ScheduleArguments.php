@@ -18,7 +18,7 @@ class ScheduleArguments extends TextColumn
      */
     public function withValue(bool $withValue = true): static
     {
-        $withValue = $withValue;
+        $this->withValue = $withValue;
 
         return $this;
     }
@@ -49,8 +49,7 @@ class ScheduleArguments extends TextColumn
 
     /**
      * Format tags when they are in array format.
-     */
-    /**
+     *
      * @param  array<int|string, mixed>  $tags
      * @return array<int, string>
      */
@@ -61,7 +60,7 @@ class ScheduleArguments extends TextColumn
         foreach ($tags as $key => $value) {
             $keyStr = (string) $key;
 
-            if (! $withValue)
+            if (! $this->withValue) {
                 $valStr = is_scalar($value) ? (string) $value : '';
                 $result[] = $keyStr.'='.$valStr;
 

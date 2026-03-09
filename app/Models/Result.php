@@ -61,7 +61,7 @@ class Result extends BaseModel
 
     public function getLastRun(): Builder
     {
-        return $this->select('ran_at')
+        return static::query()->select('ran_at')
             // ->whereColumn('task_id', TOTEM_TABLE_PREFIX.'tasks.id')
             ->whereColumn('task_id', 'tasks.id')
             ->latest()
@@ -71,7 +71,7 @@ class Result extends BaseModel
 
     public function getAverageRunTime(): Builder
     {
-        return $this->select(DB::raw('avg(duration)))
+        return static::query()->select(DB::raw('avg(duration)'))
             // ->whereColumn('task_id', TOTEM_TABLE_PREFIX.'tasks.id')
             ->whereColumn('task_id', 'tasks.id')
             ->getQuery();
