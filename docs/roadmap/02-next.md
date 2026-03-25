@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Next (Module Job)"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "02 next"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Next (Module Job)
 
 ## Features

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Storage Server 1"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "storage server 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage

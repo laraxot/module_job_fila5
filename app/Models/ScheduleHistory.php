@@ -32,6 +32,10 @@ use Override;
  * @property string|null $deleted_by
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> c88446c (.)
  * @method static ScheduleHistoryFactory factory($count = null, $state = [])
  * @method static Builder<static>|ScheduleHistory newModelQuery()
  * @method static Builder<static>|ScheduleHistory newQuery()
@@ -48,7 +52,13 @@ use Override;
  * @method static Builder<static>|ScheduleHistory whereScheduleId($value)
  * @method static Builder<static>|ScheduleHistory whereUpdatedAt($value)
  * @method static Builder<static>|ScheduleHistory whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
+=======
+ *
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class ScheduleHistory extends BaseModel
@@ -83,9 +93,12 @@ class ScheduleHistory extends BaseModel
      *
      */
 
+<<<<<<< HEAD
     /**
      * @return BelongsTo<Schedule, $this>
      */
+=======
+>>>>>>> c88446c (.)
     public function command(): BelongsTo
     {
         return $this->belongsTo(Schedule::class, 'schedule_id', 'id');

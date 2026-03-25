@@ -50,6 +50,10 @@ use Override;
  * @property \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
  * @property int|null $histories_count
  * @property ProfileContract|null $updater
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> c88446c (.)
  * @method static Builder<static>|Schedule active()
  * @method static ScheduleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Schedule inactive()
@@ -86,7 +90,13 @@ use Override;
  * @method static Builder<static>|Schedule whereWithoutOverlapping($value)
  * @method static Builder<static>|Schedule withTrashed(bool $withTrashed = true)
  * @method static Builder<static>|Schedule withoutTrashed()
+<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
+=======
+ *
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class Schedule extends BaseModel
@@ -131,8 +141,11 @@ class Schedule extends BaseModel
 
     /**
      * Get available environments.
+<<<<<<< HEAD
      *
      * @return Collection<int|string, mixed>
+=======
+>>>>>>> c88446c (.)
      */
     public static function getEnvironments(): Collection
     {
@@ -141,8 +154,11 @@ class Schedule extends BaseModel
 
     /**
      * Get the related histories.
+<<<<<<< HEAD
      *
      * @return HasMany<ScheduleHistory, $this>
+=======
+>>>>>>> c88446c (.)
      */
     public function histories(): HasMany
     {
@@ -151,9 +167,12 @@ class Schedule extends BaseModel
 
     /**
      * Scope a query to only include inactive schedules.
+<<<<<<< HEAD
      *
      * @param  Builder<static>  $query
      * @return Builder<static>
+=======
+>>>>>>> c88446c (.)
      */
     public function scopeInactive(Builder $query): Builder
     {
@@ -162,9 +181,12 @@ class Schedule extends BaseModel
 
     /**
      * Scope a query to only include active schedules.
+<<<<<<< HEAD
      *
      * @param  Builder<static>  $query
      * @return Builder<static>
+=======
+>>>>>>> c88446c (.)
      */
     public function scopeActive(Builder $query): Builder
     {
@@ -173,8 +195,11 @@ class Schedule extends BaseModel
 
     /**
      * Get arguments from params.
+<<<<<<< HEAD
      *
      * @return array<string, string>
+=======
+>>>>>>> c88446c (.)
      */
     public function getArguments(): array
     {
@@ -196,7 +221,11 @@ class Schedule extends BaseModel
             if (isset($safeValue['type']) && $safeValue['type'] === 'function') {
                 // PHPStan Level 10: Ensure string for evaluateFunction
                 $functionString = isset($safeValue['value']) && is_string($safeValue['value']) ? $safeValue['value'] : '';
+<<<<<<< HEAD
                 $arguments[$argument] = $this->evaluateFunction($functionString) ?? '';
+=======
+                $arguments[$argument] = $this->evaluateFunction($functionString);
+>>>>>>> c88446c (.)
             } else {
                 $name = isset($safeValue['name']) && is_string($safeValue['name'])
                     ? $safeValue['name']
@@ -208,16 +237,23 @@ class Schedule extends BaseModel
             }
         }
 
+<<<<<<< HEAD
         /** @var array<string, string> $result */
         $result = $arguments;
 
         return $result;
+=======
+        return $arguments;
+>>>>>>> c88446c (.)
     }
 
     /**
      * Get options as array.
+<<<<<<< HEAD
      *
      * @return array<int|string, string>
+=======
+>>>>>>> c88446c (.)
      */
     public function getOptions(): array
     {
@@ -228,6 +264,7 @@ class Schedule extends BaseModel
             $options = $options->merge($optionsWithValues);
         }
 
+<<<<<<< HEAD
         $result = [];
         foreach ($options as $key => $value) {
             $normalizedKey = is_int($key) || is_string($key) ? $key : (string) $key;
@@ -245,6 +282,26 @@ class Schedule extends BaseModel
         }
 
         return $result;
+=======
+        return $options
+            ->map(
+                static function ($value, $key): string {
+                    if (is_array($value)) {
+                        $name = $value['name'] ?? null;
+                        $fallbackKey = (string) $key;
+                        $optionName = is_string($name) ? $name : $fallbackKey;
+                        $optionValue = $value['value'] ?? null;
+
+                        return '--'.$optionName.'='.(string) $optionValue;
+                    }
+
+                    $strValue = (string) $value;
+
+                    return "--{$strValue}";
+                },
+            )
+            ->toArray();
+>>>>>>> c88446c (.)
     }
 
     /** @return array<string, string> */

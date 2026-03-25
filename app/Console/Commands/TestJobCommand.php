@@ -15,11 +15,21 @@ class TestJobCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> c88446c (.)
      */
     protected $signature = 'schedule:test-job';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> c88446c (.)
      */
     protected $description = 'Command that display a friendly message that is intented to test a job.';
 
@@ -29,7 +39,11 @@ class TestJobCommand extends Command
     public function handle(): int
     {
         $this->info('Hello the test worked.');
+<<<<<<< HEAD
         Log::debug('Hello the test worked.');
+=======
+        Log::info('Hello the test worked.');
+>>>>>>> c88446c (.)
 
         return 0;
     }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Schedule"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "schedule"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring
@@ -26,7 +29,10 @@ https://github.com/spatie/laravel-schedule-monitor
 ----------------------------
 https://inspector.dev/laravel/
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c88446c (.)
 -------------------------------
 https://simple-web.dev/the-laravel-scheduler-without-cronjobs
 
@@ -38,5 +44,8 @@ https://www.thisprogrammingthing.com/what-the-f-ck-is-with-all-the-artisan-comma
 https://github.com/robersonfaria/laravel-database-schedule
 https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c88446c (.)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Schedule Crud Component"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "schedule crud 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Schedule Crud Component
 
 ## Panoramica

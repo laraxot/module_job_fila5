@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "module job 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Modulo Job
 
 ## Informazioni Generali

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job - Sprint Planning Meeting"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "sprint planning meeting"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Job - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo.

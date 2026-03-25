@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Boost Skill Fix Summary - Job Module"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "boost skill fix summary"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Boost Skill Fix Summary - Job Module
 
 **Date**: 2026-03-02  

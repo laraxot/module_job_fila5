@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Database\Seeders;
 
+<<<<<<< HEAD
 use Illuminate\Database\Seeder;
 
 /**
@@ -34,5 +35,20 @@ class JobDatabaseSeeder extends Seeder
         ]);
 
         $this->command->info('JobDatabaseSeeder: completato.');
+=======
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Seeder;
+
+class JobDatabaseSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        Model::unguard();
+
+        // $this->call("OthersTableSeeder");
+>>>>>>> c88446c (.)
     }
 }

@@ -25,112 +25,158 @@ return [
             'label' => 'Nome',
             'tooltip' => 'Inserisci il nome del job programmato',
             'placeholder' => 'Nome del job',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Seleziona il guardiano per il job',
             'placeholder' => 'Nome del guardiano',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Assegna i permessi necessari al job',
             'placeholder' => 'Permessi',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome del responsabile',
             'placeholder' => 'Nome responsabile',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome del responsabile',
             'placeholder' => 'Cognome responsabile',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'command' => [
             'label' => 'Command',
             'tooltip' => 'Inserisci il comando da eseguire',
             'placeholder' => 'Comando',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'arguments' => [
             'label' => 'Arguments',
             'tooltip' => 'Specificare eventuali argomenti per il comando',
             'placeholder' => 'Argomenti',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'options' => [
             'label' => 'Options',
             'tooltip' => 'Inserisci eventuali opzioni per il comando',
             'placeholder' => 'Opzioni',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'expression' => [
             'label' => 'Cron Expression',
             'tooltip' => 'Imposta l\'espressione cron per la pianificazione',
             'placeholder' => 'Espressione Cron',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'log_filename' => [
             'label' => 'Log Filename',
             'tooltip' => 'Nome del file di log',
             'placeholder' => 'Log filename',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Stato corrente del job',
             'placeholder' => 'Stato',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'actions' => [
             'label' => 'Actions',
             'tooltip' => 'Azioni disponibili per il job',
             'icon' => 'action-icon',
             'color' => 'blue',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'run_in_background' => [
             'label' => 'Run in Background',
             'tooltip' => 'Esegui il job in background',
             'placeholder' => 'Run in background',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Data di creazione del job',
             'placeholder' => 'Data creazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'updated_at' => [
             'label' => 'Updated At',
             'tooltip' => 'Ultima data di aggiornamento',
             'placeholder' => 'Data aggiornamento',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'timezone' => [
             'label' => 'Fuso Orario',
             'tooltip' => 'Imposta il fuso orario per il job',
             'placeholder' => 'Fuso orario',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -151,6 +197,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+>>>>>>> c88446c (.)
         ],
     ],
     'messages' => [
@@ -267,8 +324,11 @@ return [
     'model' => [
         'label' => 'schedule.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+>>>>>>> c88446c (.)
 ];

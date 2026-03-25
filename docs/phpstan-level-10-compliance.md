@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Compliance - Job Module"
 module: "Job"
@@ -12,12 +13,21 @@ related:
 # PHPStan Level 10 Compliance - Job Module
 
 **Ultimo aggiornamento**: [DATE]
+=======
+# PHPStan Level 10 Compliance - Job Module
+
+**Ultimo aggiornamento**: 2025-12-10
+>>>>>>> c88446c (.)
 **Status**: ✅ Completamente conforme a PHPStan Level 10
 
 ## 📊 Stato Corrente
 - **Errori PHPStan**: 0
 - **Livello analisi**: Level 10 (massimo)
+<<<<<<< HEAD
 - **Data ultima verifica**: [DATE]
+=======
+- **Data ultima verifica**: 2025-12-10
+>>>>>>> c88446c (.)
 
 ## 🔧 Correzioni Applicate
 

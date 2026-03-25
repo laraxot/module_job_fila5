@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Schedule 1 1"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "schedule 1 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 https://github.com/codestudiohq/laravel-totem
 
 https://github.com/stylers-llc/laravel-task-manager

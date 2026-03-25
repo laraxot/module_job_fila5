@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "JobServiceProvider"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "job service provider 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # JobServiceProvider
 
 ## Panoramica

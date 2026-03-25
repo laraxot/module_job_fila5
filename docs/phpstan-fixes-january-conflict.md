@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "phpstan fixes january conflict"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -194,8 +197,13 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
+<<<<<<< HEAD
 - [README.md Modulo Job](README.md)
 - [Queue Management](./queue/readme.md)
+=======
+- [README.md Modulo Job](./README.md)
+- [Queue Management](./queue/README.md)
+>>>>>>> c88446c (.)
 - [Best Practices](./best-practices.md)
 
 ### **Risorse Esterne**

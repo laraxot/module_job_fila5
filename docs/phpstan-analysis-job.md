@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Analysis - Job Module"
 module: "Job"
@@ -9,13 +10,19 @@ qmd: "phpstan analysis job"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # PHPStan Analysis - Job Module
 
 ## 📊 Status
 
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
+<<<<<<< HEAD
 **Last Analysis**: [DATE]
+=======
+**Last Analysis**: 2025-11-05
+>>>>>>> c88446c (.)
 
 ## 🎯 Module Overview
 
@@ -28,10 +35,17 @@ related:
 ### Historical Status (from documentation)
 - **Initial Errors**: 31
 - **Files Modified**: 13
+<<<<<<< HEAD
 - **Completion Date**: [DATE]
 - **Success Rate**: 100%
 
 ### Current Status ([DATE])
+=======
+- **Completion Date**: 2025-11-05
+- **Success Rate**: 100%
+
+### Current Status (2025-11-05)
+>>>>>>> c88446c (.)
 - **Current Errors**: 0
 - **Completion Percentage**: 100%
 - **Status**: ✅ Fully PHPStan Level 10 Compliant
@@ -169,7 +183,11 @@ $result = $value['key']; // Now safe
 
 ---
 
+<<<<<<< HEAD
 **Analysis Date**: [DATE]
+=======
+**Analysis Date**: 2025-11-05
+>>>>>>> c88446c (.)
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ✅ Fully PHPStan Level 10 Compliant

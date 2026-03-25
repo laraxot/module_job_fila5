@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Soketi"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "soketi"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 https://github.com/Safemood/REAL-TIME-LARAVEL-9-SOKETI/
 
 https://medium.com/@tthdvd/laravel-reactjs-soketi-triumvirates-step-by-step-guide-to-build-a-real-time-webapp-part-2-f1ed815ec539
@@ -31,6 +34,7 @@ https://aboutyou.tech/blog/setup-and-scale-a-websocket-server-with-laravel/
 
 https://medium.com/@antoine.lame/using-soketi-with-laravel-902ee1e6b7b
 
+<<<<<<< HEAD
 
 //----------- TESTER 
 https://www.piesocket.com/websocket-tester
@@ -41,3 +45,10 @@ https://www.youtube.com/watch?v=mDnsC-sfG7I
 
 
 
+=======
+//----------- TESTER
+https://www.piesocket.com/websocket-tester
+
+//--------- VIDEO -------------
+https://www.youtube.com/watch?v=mDnsC-sfG7I
+>>>>>>> c88446c (.)

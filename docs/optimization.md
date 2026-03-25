@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Optimization"
 module: "Job"
@@ -10,4 +11,6 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://filamentphp.com/community/danharrin-fast-table-pagination
+=======
+>>>>>>> c88446c (.)
 

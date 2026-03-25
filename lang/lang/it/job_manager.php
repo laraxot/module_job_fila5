@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 |<|?|p|h|p|
 |
 |d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
@@ -27,3 +28,33 @@
 | | | | |]|,|
 |]|;|
 |
+=======
+<?php
+
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'create' => [
+            'label' => 'create',
+        ],
+    ],
+    'fields' => [
+        'status' => [
+            'label' => 'status',
+        ],
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'queue' => [
+            'label' => 'queue',
+        ],
+        'progress' => [
+            'label' => 'progress',
+        ],
+        'started_at' => [
+            'label' => 'started_at',
+        ],
+    ],
+];
+>>>>>>> c88446c (.)

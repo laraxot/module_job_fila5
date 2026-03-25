@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Later (Module Job)"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "03 later"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Later (Module Job)
 
 ## Longer-term ideas

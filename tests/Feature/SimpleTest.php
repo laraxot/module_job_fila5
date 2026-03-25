@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Feature;
@@ -11,4 +12,8 @@ uses(\Modules\Job\Tests\TestCase::class);
 
 it('has a simple passing test', function () {
     Assert::assertSame('job', 'job');
+=======
+it('has a simple passing test', function () {
+    expect(true)->toBeTrue();
+>>>>>>> c88446c (.)
 });

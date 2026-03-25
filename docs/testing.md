@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing Documentation"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "testing"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Testing Documentation
 
 ## Overview
@@ -191,7 +194,11 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
+<<<<<<< HEAD
 'database.connections.job.database' => 'Quaeris_data_test',
+=======
+        'database.connections.job.database' => 'quaeris_data_test',
+>>>>>>> c88446c (.)
     ]);
     
     return $app;
@@ -277,9 +284,15 @@ protected function createApplication()
 
 ### Internal Resources
 
+<<<<<<< HEAD
 - [Testing Setup Guide](../../../docs/testing-setup.md)
 - [Testing Best Practices](../../../docs/testing-best-practices.md)
 - [Troubleshooting Guide](../../../docs/troubleshooting.md)
+=======
+- [Testing Setup Guide](../../docs/testing-setup.md)
+- [Testing Best Practices](../../docs/testing-best-practices.md)
+- [Troubleshooting Guide](../../docs/troubleshooting.md)
+>>>>>>> c88446c (.)
 
 ## Testing Examples
 
@@ -412,4 +425,8 @@ Remember: Good tests are the foundation of reliable software development.
 
 ---
 
+<<<<<<< HEAD
 *
+=======
+*Last updated: January 2025*
+>>>>>>> c88446c (.)

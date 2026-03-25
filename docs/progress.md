@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Progress"
 module: "Job"
@@ -11,3 +12,6 @@ related:
 ---
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
 
+=======
+https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
+>>>>>>> c88446c (.)

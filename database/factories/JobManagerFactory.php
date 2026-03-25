@@ -21,7 +21,10 @@ class JobManagerFactory extends Factory
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      * @return array<string, mixed>
+=======
+>>>>>>> c88446c (.)
      */
     public function definition(): array
     {

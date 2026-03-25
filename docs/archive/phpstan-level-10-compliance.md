@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Compliance - Job Module"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "phpstan level 10 compliance"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # PHPStan Level 10 Compliance - Job Module
 
 **Ultimo aggiornamento**: 2025-12-10

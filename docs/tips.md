@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Tips"
 module: "Job"
@@ -9,4 +10,17 @@ qmd: "tips"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-https://dudi.dev/optimize-laravel-database-queries/
+https://dudi.dev/optimize-laravel-database-queries/
+=======
+### Versione HEAD
+
+https://dudi.dev/optimize-laravel-database-queries/
+## Collegamenti tra versioni di tips.md
+* [tips.md](../../../../bashscripts/docs/wsl/tips.md)
+
+### Versione Incoming
+
+https://dudi.dev/optimize-laravel-database-queries/
+
+---
+>>>>>>> c88446c (.)

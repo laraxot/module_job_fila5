@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Standard <nome progetto>: spatie/laravel-queueable-action"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "queueable action"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Standard <nome progetto>: spatie/laravel-queueable-action
 
 In tutto il progetto <nome progetto>, **NON si utilizzano Service class custom**. La business logic asincrona e le azioni riutilizzabili sono gestite SEMPRE tramite [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action).
@@ -42,4 +45,8 @@ class SendWelcomeEmailAction
 ## Collegamenti
 
 - [Documentazione ufficiale](https://github.com/spatie/laravel-queueable-action)
+<<<<<<< HEAD
 - [README Notify](../laravel/modules/notify/docs/readme.md)
+=======
+- [README Notify](../laravel/Modules/Notify/docs/README.md)
+>>>>>>> c88446c (.)

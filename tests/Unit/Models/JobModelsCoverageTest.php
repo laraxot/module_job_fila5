@@ -3,7 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Models;
+<<<<<<< HEAD
 use function Safe\class_uses;
+=======
+
+>>>>>>> c88446c (.)
 use Modules\Job\Models\BaseModel;
 use Modules\Job\Models\Export;
 use Modules\Job\Models\FailedJob;
@@ -14,16 +18,20 @@ use Modules\Job\Models\JobManager;
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Schedule;
 use Modules\Job\Models\Task;
+<<<<<<< HEAD
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+>>>>>>> c88446c (.)
 
 describe('Job Models Coverage', function () {
     describe('Task Model', function () {
         it('can be instantiated', function () {
             $task = new Task;
+<<<<<<< HEAD
             Assert::assertInstanceOf(Task::class, $task);
         });
 
@@ -37,17 +45,39 @@ describe('Job Models Coverage', function () {
 
         it('uses Notifiable trait', function () {
             Assert::assertTrue(in_array('Illuminate\Notifications\Notifiable', class_uses(Task::class)));
+=======
+            expect($task)->toBeInstanceOf(Task::class);
+        });
+
+        it('uses HasXotFactory trait', function () {
+            expect(in_array('Modules\Xot\Models\Traits\HasXotFactory', class_uses(Task::class)))->toBeTrue();
+        });
+
+        it('uses FrontendSortable trait', function () {
+            expect(in_array('Modules\Job\Models\Traits\FrontendSortable', class_uses(Task::class)))->toBeTrue();
+        });
+
+        it('uses Notifiable trait', function () {
+            expect(in_array('Illuminate\Notifications\Notifiable', class_uses(Task::class)))->toBeTrue();
+>>>>>>> c88446c (.)
         });
 
         it('has fillable fields defined', function () {
             $task = new Task;
+<<<<<<< HEAD
             Assert::assertContains('command', $task->getFillable());
             Assert::assertContains('description', $task->getFillable());
             Assert::assertContains('expression', $task->getFillable());
+=======
+            expect($task->getFillable())->toContain('command');
+            expect($task->getFillable())->toContain('description');
+            expect($task->getFillable())->toContain('expression');
+>>>>>>> c88446c (.)
         });
 
         it('has appends defined', function () {
             $task = new Task;
+<<<<<<< HEAD
             Assert::assertContains('activated', $task->getAppends());
             Assert::assertContains('upcoming', $task->getAppends());
             Assert::assertContains('average_runtime', $task->getAppends());
@@ -86,12 +116,51 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($task->getAppends())->toContain('activated');
+            expect($task->getAppends())->toContain('upcoming');
+            expect($task->getAppends())->toContain('average_runtime');
+        });
+
+        it('has frequencies relationship', function () {
+            $task = new Task;
+            expect(method_exists($task, 'frequencies'))->toBeTrue();
+        });
+
+        it('has results relationship', function () {
+            $task = new Task;
+            expect(method_exists($task, 'results'))->toBeTrue();
+        });
+
+        it('has compileParameters method', function () {
+            $task = new Task;
+            expect(method_exists($task, 'compileParameters'))->toBeTrue();
+        });
+
+        it('has autoCleanup method', function () {
+            $task = new Task;
+            expect(method_exists($task, 'autoCleanup'))->toBeTrue();
+        });
+
+        it('has notification routing methods', function () {
+            $task = new Task;
+            expect(method_exists($task, 'routeNotificationForMail'))->toBeTrue();
+            expect(method_exists($task, 'routeNotificationForNexmo'))->toBeTrue();
+            expect(method_exists($task, 'routeNotificationForSlack'))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(Task::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('Frequency Model', function () {
         it('can be instantiated', function () {
             $model = new Frequency;
+<<<<<<< HEAD
             Assert::assertInstanceOf(Frequency::class, $model);
         });
 
@@ -106,12 +175,27 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(Frequency::class);
+        });
+
+        it('extends BaseModel', function () {
+            $reflection = new ReflectionClass(Frequency::class);
+            expect($reflection->isSubclassOf(BaseModel::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(Frequency::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('Result Model', function () {
         it('can be instantiated', function () {
             $model = new Result;
+<<<<<<< HEAD
             Assert::assertInstanceOf(Result::class, $model);
         });
 
@@ -126,12 +210,27 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(Result::class);
+        });
+
+        it('extends BaseModel', function () {
+            $reflection = new ReflectionClass(Result::class);
+            expect($reflection->isSubclassOf(BaseModel::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(Result::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('Schedule Model', function () {
         it('can be instantiated', function () {
             $model = new Schedule;
+<<<<<<< HEAD
             Assert::assertInstanceOf(Schedule::class, $model);
         });
 
@@ -146,12 +245,27 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(Schedule::class);
+        });
+
+        it('extends BaseModel', function () {
+            $reflection = new ReflectionClass(Schedule::class);
+            expect($reflection->isSubclassOf(BaseModel::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(Schedule::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('Import Model', function () {
         it('can be instantiated', function () {
             $model = new Import;
+<<<<<<< HEAD
             Assert::assertInstanceOf(Import::class, $model);
         });
 
@@ -166,12 +280,27 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(Import::class);
+        });
+
+        it('extends BaseModel', function () {
+            $reflection = new ReflectionClass(Import::class);
+            expect($reflection->isSubclassOf(BaseModel::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(Import::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('Export Model', function () {
         it('can be instantiated', function () {
             $model = new Export;
+<<<<<<< HEAD
             Assert::assertInstanceOf(Export::class, $model);
         });
 
@@ -186,12 +315,27 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(Export::class);
+        });
+
+        it('extends Filament Export', function () {
+            $reflection = new ReflectionClass(Export::class);
+            expect($reflection->isSubclassOf(\Filament\Actions\Exports\Models\Export::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(Export::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('JobBatch Model', function () {
         it('can be instantiated', function () {
             $model = new JobBatch;
+<<<<<<< HEAD
             Assert::assertInstanceOf(JobBatch::class, $model);
         });
 
@@ -206,12 +350,27 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(JobBatch::class);
+        });
+
+        it('extends BaseModel', function () {
+            $reflection = new ReflectionClass(JobBatch::class);
+            expect($reflection->isSubclassOf(BaseModel::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(JobBatch::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('JobManager Model', function () {
         it('can be instantiated', function () {
             $model = new JobManager;
+<<<<<<< HEAD
             Assert::assertInstanceOf(JobManager::class, $model);
         });
 
@@ -226,12 +385,27 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(JobManager::class);
+        });
+
+        it('extends BaseModel', function () {
+            $reflection = new ReflectionClass(JobManager::class);
+            expect($reflection->isSubclassOf(BaseModel::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(JobManager::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 
     describe('FailedJob Model', function () {
         it('can be instantiated', function () {
             $model = new FailedJob;
+<<<<<<< HEAD
             Assert::assertInstanceOf(FailedJob::class, $model);
         });
 
@@ -246,6 +420,20 @@ describe('Job Models Coverage', function () {
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
             Assert::assertStringContainsString('', $content);
+=======
+            expect($model)->toBeInstanceOf(FailedJob::class);
+        });
+
+        it('extends BaseModel', function () {
+            $reflection = new ReflectionClass(FailedJob::class);
+            expect($reflection->isSubclassOf(BaseModel::class))->toBeTrue();
+        });
+
+        it('uses strict types', function () {
+            $reflection = new ReflectionClass(FailedJob::class);
+            $content = file_get_contents($reflection->getFileName());
+            expect($content)->toContain('');
+>>>>>>> c88446c (.)
         });
     });
 });

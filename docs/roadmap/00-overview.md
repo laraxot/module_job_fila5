@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Roadmap overview (Module Job)"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "00 overview"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Roadmap overview (Module Job)
 
 ## Scope

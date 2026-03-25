@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Fixes - Gennaio 2025"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "phpstan fixes january "
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # PHPStan Fixes - Gennaio 2025
 
 ## Modulo Job - Correzioni Completate

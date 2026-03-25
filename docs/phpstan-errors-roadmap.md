@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Errors Roadmap - Job Module"
 module: "Job"
@@ -11,6 +12,11 @@ related:
 ---
 # PHPStan Level 10 Errors Roadmap - Job Module
 
+=======
+# PHPStan Level 10 Errors Roadmap - Job Module
+
+**Data**: 2026-01-09  
+>>>>>>> c88446c (.)
 **Modulo**: Job  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **IN ANALISI**
@@ -168,4 +174,8 @@ return $options;
 
 **Status**: 🧘 **IN ANALISI**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> c88446c (.)

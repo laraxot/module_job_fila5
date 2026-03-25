@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Links"
 module: "Job"
@@ -28,4 +29,6 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
  https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs  !!!!
 
 
+=======
+>>>>>>> c88446c (.)
 

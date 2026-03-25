@@ -32,9 +32,13 @@ class TaskCompleted extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      */
+<<<<<<< HEAD
     /**
      * @return array<int, string>
      */
+=======
+    // public function via(mixed $notifiable): array {
+>>>>>>> c88446c (.)
     public function via(Task $notifiable): array
     {
         $channels = [];

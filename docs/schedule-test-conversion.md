@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "ScheduleBusinessLogicTest Conversion - PHPUnit to Pest"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "schedule test conversion"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
 
 ## Problem
@@ -87,5 +90,9 @@ Total: 12 tests, 10 converted from PHPUnit to Pest
 
 ---
 
+<<<<<<< HEAD
 **Date**: [DATE]
+=======
+**Date**: 2026-01-09
+>>>>>>> c88446c (.)
 **Status**: Complete

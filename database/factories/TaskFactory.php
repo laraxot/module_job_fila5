@@ -14,9 +14,12 @@ class TaskFactory extends Factory
 {
     protected $model = Task::class;
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> c88446c (.)
     public function definition(): array
     {
         return [

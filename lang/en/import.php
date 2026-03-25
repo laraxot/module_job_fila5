@@ -21,69 +21,97 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo unico dell\'importazione',
             'placeholder' => 'ID Importazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'file' => [
             'label' => 'File',
             'tooltip' => 'Seleziona il file da importare',
             'placeholder' => 'Scegli un file',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'source' => [
             'label' => 'Sorgente',
             'tooltip' => 'Indica la sorgente del file importato',
             'placeholder' => 'Sorgente del file',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'format' => [
             'label' => 'Formato',
             'tooltip' => 'Formato del file importato (CSV, Excel, etc.)',
             'placeholder' => 'Seleziona formato',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'rows' => [
             'label' => 'Righe',
             'tooltip' => 'Numero totale di righe nel file',
             'placeholder' => 'Numero righe',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'processed' => [
             'label' => 'Righe Processate',
             'tooltip' => 'Numero di righe processate con successo',
             'placeholder' => 'Righe processate',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'failed' => [
             'label' => 'Righe Fallite',
             'tooltip' => 'Numero di righe che hanno causato errore durante l\'importazione',
             'placeholder' => 'Righe fallite',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'started_at' => [
             'label' => 'Iniziato il',
             'tooltip' => 'Data e ora di inizio dell\'importazione',
             'placeholder' => 'Data inizio importazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'completed_at' => [
             'label' => 'Completato il',
             'tooltip' => 'Data e ora di completamento dell\'importazione',
             'placeholder' => 'Data completamento importazione',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> c88446c (.)
         ],
         'options' => [
             'label' => 'Opzioni',
             'tooltip' => 'Impostazioni avanzate per l\'importazione',
             'placeholder' => 'Seleziona le opzioni',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -98,6 +126,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+>>>>>>> c88446c (.)
         ],
     ],
     'formats' => [
@@ -248,6 +284,9 @@ return [
         'json' => 'JSON',
         'xml' => 'XML',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> c88446c (.)
 ];

@@ -21,7 +21,11 @@ jobs:
           zip -r ${{ github.event.repository.name }}.zip . -x ".git/*" ".github/*"
 
       - name: Attest Build Provenance
+<<<<<<< HEAD
         uses: actions/attest-build-provenance@v2
+=======
+        uses: actions/attest-build-provenance@v3
+>>>>>>> c88446c (.)
         with:
           subject-path: ${{ github.event.repository.name }}.zip
 
