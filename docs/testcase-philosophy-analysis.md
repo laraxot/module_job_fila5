@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "TestCase Philosophy Analysis - Job Module"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "testcase philosophy analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # TestCase Philosophy Analysis - Job Module
 
 ## Il Problema Attuale
@@ -276,8 +279,13 @@ php artisan migrate --env=testing --database=xot --force
 **File:** `laravel/.env.testing`
 
 **Verificare:**
+<<<<<<< HEAD
 - ✅ JOB_DB_DATABASE=<nome progetto>_job_test
 - ✅ XOT_DB_DATABASE=<nome progetto>_xot_test
+=======
+- ✅ JOB_DB_DATABASE=laravelpizza_job_test
+- ✅ XOT_DB_DATABASE=laravelpizza_xot_test
+>>>>>>> c88446c (.)
 - ✅ Connessioni MySQL configurate
 
 ### 4. Aggiornare Documentazione
@@ -314,7 +322,11 @@ Creare:
 
 ---
 
+<<<<<<< HEAD
 **Data:** [DATE]
+=======
+**Data:** 2026-01-09
+>>>>>>> c88446c (.)
 **Stato:** Analisi Completata - Pronto per Implementazione
 **Vincitore Litigata:** Posizione B (MySQL)
 **Motivazione:** Correttezza > Velocità + Rispetto indicazioni utente

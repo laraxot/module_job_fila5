@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Best Practices per Risorse Filament nel Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "filament best practices 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Best Practices per Risorse Filament nel Modulo Job
 
 Questo documento descrive le best practices da seguire quando si creano o modificano risorse Filament nel modulo Job.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risks - Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "05 risks"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Risks - Job
 
 ## Top Risks

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module - Product Roadmap"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "product roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Job Module - Product Roadmap
 
 **Module:** Job  

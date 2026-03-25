@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Correzioni PHPStan Livello 10 - Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "phpstan level10 fixes"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Correzioni PHPStan Livello 10 - Modulo Job
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Job e le relative soluzioni implementate.

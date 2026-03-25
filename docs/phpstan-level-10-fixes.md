@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Fixes - Modulo Job"
 module: "Job"
@@ -12,6 +13,11 @@ related:
 # PHPStan Level 10 Fixes - Modulo Job
 
 ## Data: [DATE]
+=======
+# PHPStan Level 10 Fixes - Modulo Job
+
+## Data: 2025-01-22
+>>>>>>> c88446c (.)
 ## Status: ✅ COMPLETATO (0 errori)
 
 ## 🎯 FILOSOFIA E BUSINESS LOGIC

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Sessione PHPStan Completa - Tutti i Moduli"
 module: "Job"
@@ -10,6 +11,10 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 # Sessione PHPStan Completa - Tutti i Moduli
+=======
+# Sessione PHPStan Completa - Tutti i Moduli
+**Data**: 2025-11-05  
+>>>>>>> c88446c (.)
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)  
 **Status**: ⏳ IN CORSO
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module - Product Launch Plan"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "product launch plan"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Job Module - Product Launch Plan
 
 **Module:** Job  

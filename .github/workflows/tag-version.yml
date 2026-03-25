@@ -7,14 +7,20 @@ on:
       - master
 
 jobs:
+<<<<<<< HEAD
   test:
     runs-on: ubuntu-latest
 
     name: Tag New Version
+=======
+  release:
+    runs-on: ubuntu-latest
+>>>>>>> c88446c (.)
     if: "!contains(github.event.head_commit.message, '[release]')"
 
     steps:
       - name: Checkout code
+<<<<<<< HEAD
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
@@ -42,3 +48,22 @@ jobs:
         run: ./node_modules/semantic-release/bin/semantic-release.js --no-ci
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
+=======
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install semantic-release
+        run: npm install --no-save semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/github
+
+      - name: Run semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: npx semantic-release
+>>>>>>> c88446c (.)

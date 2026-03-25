@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PRD - Job Module (2025-2026 Lean Standard)"
 module: "Job"
@@ -48,3 +49,18 @@ Background task management, scheduling, and import/export processes are currentl
 - All 9+ Filament resources refactored into the `Schemas/Tables` structure.
 - Full quality pipeline (PHPStan L10) passes.
 - Documentation cleaned and archived.
+=======
+# PRD: Job Module
+
+## 📋 Overview
+- **Author:** Gemini CLI
+- **Status:** Draft
+- **Target Release:** 1.0.0
+
+## ❓ Problem Statement
+Specialized logic for Job needs a dedicated, type-safe Module to ensure maintainability.
+
+## 🎯 Goals & Success Metrics
+- **Goal 1:** 100% PHPStan L10 compliance.
+- **Goal 2:** Seamless integration with XotBase.
+>>>>>>> c88446c (.)

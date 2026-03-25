@@ -35,6 +35,10 @@ use function Safe\json_decode;
  * @property-read string|null $display_name
  * @property-read string $status
  * @property-read ProfileContract|null $updater
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> c88446c (.)
  * @method static JobFactory factory($count = null, $state = [])
  * @method static Builder<static>|Job newModelQuery()
  * @method static Builder<static>|Job newQuery()
@@ -49,7 +53,13 @@ use function Safe\json_decode;
  * @method static Builder<static>|Job whereReservedAt($value)
  * @method static Builder<static>|Job whereUpdatedAt($value)
  * @method static Builder<static>|Job whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
+=======
+ *
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class Job extends BaseModel
@@ -74,9 +84,12 @@ class Job extends BaseModel
         return $res;
     }
 
+<<<<<<< HEAD
     /**
      * @return Attribute<string, never>
      */
+=======
+>>>>>>> c88446c (.)
     public function status(): Attribute
     {
         return Attribute::make(get: function (): string {

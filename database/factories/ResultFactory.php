@@ -14,9 +14,12 @@ class ResultFactory extends Factory
 {
     protected $model = Result::class;
 
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> c88446c (.)
     public function definition(): array
     {
         return [

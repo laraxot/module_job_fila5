@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "MCP Server Consigliati per il Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "mcp server recommended"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # MCP Server Consigliati per il Modulo Job
 
 ## Scopo del Modulo

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Fixes - Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "phpstan level 10 fixes"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # PHPStan Level 10 Fixes - Modulo Job
 
 ## Data: 2025-01-22

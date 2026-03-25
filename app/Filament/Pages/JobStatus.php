@@ -35,9 +35,12 @@ class JobStatus extends XotBasePage
         ];
     }
 
+<<<<<<< HEAD
     /**
      * @return array<int, object>
      */
+=======
+>>>>>>> c88446c (.)
     public function getActs(): array
     {
         return [

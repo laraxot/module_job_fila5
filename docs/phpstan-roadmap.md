@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Roadmap - Job Module"
 module: "Job"
@@ -12,6 +13,11 @@ related:
 # PHPStan Roadmap - Job Module
 
 > **Date**: [DATE]
+=======
+# PHPStan Roadmap - Job Module
+
+> **Date**: 2026-01-14
+>>>>>>> c88446c (.)
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 

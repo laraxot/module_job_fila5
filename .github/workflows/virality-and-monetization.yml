@@ -41,7 +41,11 @@ jobs:
     needs: craft-marketing-kit
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       - uses: actions/download-artifact@v8
+=======
+      - uses: actions/download-artifact@v4
+>>>>>>> c88446c (.)
         with:
           name: "Job-marketing-kit"
           path: kit
@@ -52,7 +56,11 @@ jobs:
             -H 'Content-Type: application/json' \
             -d @kit/hero.md
       - name: Open GitHub Discussion highlight
+<<<<<<< HEAD
         uses: actions/github-script@v9
+=======
+        uses: actions/github-script@v7
+>>>>>>> c88446c (.)
         env:
           MODULE_NAME: "Job"
         with:
@@ -93,7 +101,11 @@ jobs:
     needs: [announce-social, monetize-marketplaces]
     runs-on: ubuntu-latest
     steps:
+<<<<<<< HEAD
       - uses: actions/download-artifact@v8
+=======
+      - uses: actions/download-artifact@v4
+>>>>>>> c88446c (.)
         with:
           name: "Job-marketing-kit"
           path: kit

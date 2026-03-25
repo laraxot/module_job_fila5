@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Docs Health - Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "docs health"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Docs Health - Job
 
 ## Snapshot

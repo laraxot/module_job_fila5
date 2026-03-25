@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Cyclomatic Complexity Report - Module: Job"
 module: "Job"
@@ -11,6 +12,11 @@ related:
 ---
 # Cyclomatic Complexity Report - Module: Job
 
+=======
+# Cyclomatic Complexity Report - Module: Job
+
+**Generated:** 2025-10-01 19:44:11
+>>>>>>> c88446c (.)
 **Analyzer:** Super Mucca 🐮
 
 ---

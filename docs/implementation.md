@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "implementation"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Implementazione Job
 
 ## Struttura del Codice
@@ -307,9 +310,15 @@ class JobPageTest extends TestCase
 ### Versione HEAD
 
 ## Collegamenti tra versioni di implementation.md
+<<<<<<< HEAD
 * [implementation.md](../../../gdpr/docs/implementation.md)
 * [implementation.md](../../../xot/docs/implementation.md)
 * [implementation.md](../../../job/docs/implementation.md)
+=======
+* [implementation.md](../../../Gdpr/docs/implementation.md)
+* [implementation.md](../../../Xot/docs/implementation.md)
+* [implementation.md](../../../Job/docs/implementation.md)
+>>>>>>> c88446c (.)
 
 ### Versione Incoming
 

@@ -54,10 +54,18 @@ use function Safe\json_decode;
  * @property-read Collection<int, Result> $results
  * @property-read int|null $results_count
  * @property-read ProfileContract|null $updater
+<<<<<<< HEAD
  * @method static Builder<static>|Task newModelQuery()
  * @method static Builder<static>|Task newQuery()
  * @method static Builder<static>|Task query()
  * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
+=======
+ *
+ * @method static Builder<static>|Task newModelQuery()
+ * @method static Builder<static>|Task newQuery()
+ * @method static Builder<static>|Task query()
+ * @method static Builder<static>|Task sortableBy(array $sortableColumns, array $defaultSort = [])
+>>>>>>> c88446c (.)
  * @method static Builder<static>|Task whereAutoCleanupNum($value)
  * @method static Builder<static>|Task whereAutoCleanupType($value)
  * @method static Builder<static>|Task whereCommand($value)
@@ -78,19 +86,34 @@ use function Safe\json_decode;
  * @method static Builder<static>|Task whereTimezone($value)
  * @method static Builder<static>|Task whereUpdatedAt($value)
  * @method static Builder<static>|Task whereUpdatedBy($value)
+<<<<<<< HEAD
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @property-read ProfileContract|null $deleter
  * @method static TaskFactory factory($count = null, $state = [])
  * @method static Builder<static>|Task whereDeletedAt($value)
  * @method static Builder<static>|Task whereDeletedBy($value)
+=======
+ *
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property-read ProfileContract|null $deleter
+ *
+ * @method static TaskFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Task whereDeletedAt($value)
+ * @method static Builder<static>|Task whereDeletedBy($value)
+ *
+>>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
+<<<<<<< HEAD
     /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+=======
+>>>>>>> c88446c (.)
     use HasXotFactory;
     use Notifiable;
 
@@ -175,8 +198,11 @@ class Task extends BaseModel
 
     /**
      * Frequencies Relation.
+<<<<<<< HEAD
      *
      * @return HasMany<Frequency, $this>
+=======
+>>>>>>> c88446c (.)
      */
     public function frequencies(): HasMany
     {
@@ -185,8 +211,11 @@ class Task extends BaseModel
 
     /**
      * Results Relation.
+<<<<<<< HEAD
      *
      * @return HasMany<Result, $this>
+=======
+>>>>>>> c88446c (.)
      */
     public function results(): HasMany
     {

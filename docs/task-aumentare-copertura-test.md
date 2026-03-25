@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Task: Aumentare Copertura Test - Job"
 module: "Job"
@@ -9,11 +10,17 @@ qmd: "task aumentare copertura test"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Task: Aumentare Copertura Test - Job
 
 **Modulo**: Job
 **Priorita'**: Media
 **Completamento**: 20%
+<<<<<<< HEAD
+=======
+**Data**: 2026-01-30
+>>>>>>> c88446c (.)
 
 ---
 

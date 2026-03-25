@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Navigation Translations Completion Roadmap - Job Module"
 module: "Job"
@@ -11,6 +12,11 @@ related:
 ---
 # Navigation Translations Completion Roadmap - Job Module
 
+=======
+# Navigation Translations Completion Roadmap - Job Module
+
+**Data**: 2026-01-09  
+>>>>>>> c88446c (.)
 **Modulo**: Job  
 **Status**: 📝 **ROADMAP CREATA**
 
@@ -236,11 +242,20 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
+<<<<<<< HEAD
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
+=======
+- [Translation Standards](../../Xot/docs/translation-standards.md)
+- [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
+>>>>>>> c88446c (.)
 
 ---
 
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> c88446c (.)

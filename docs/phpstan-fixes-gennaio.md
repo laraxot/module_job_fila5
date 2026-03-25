@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
 module: "Job"
@@ -13,6 +14,12 @@ related:
 
 **Data**: 27 Gennaio 2025  
 **Status**: ✅ COMPLETATO CON SUCCESSO  
+=======
+# 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
+
+**Data**: 27 Gennaio 2025
+**Status**: ✅ COMPLETATO CON SUCCESSO
+>>>>>>> c88446c (.)
 **Errori Corretti**: 1 errore di sintassi constructor
 
 ## 📋 Panoramica Correzioni
@@ -205,6 +212,7 @@ public function __construct(string $output)
 
 ---
 
+<<<<<<< HEAD
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 2.0  
 **🐛 PHPStan Level**: 9 ✅  
@@ -215,3 +223,11 @@ public function __construct(string $output)
 
 
 
+=======
+**🔄 Ultimo aggiornamento**: 27 Gennaio 2025
+**📦 Versione**: 2.0
+**🐛 PHPStan Level**: 9 ✅
+**🌐 Translation Standards**: IT/EN complete ✅
+**🚀 Performance**: 95/100 score
+**✨ Test Coverage**: 85% ✅
+>>>>>>> c88446c (.)

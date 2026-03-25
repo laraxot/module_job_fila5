@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job - Product Strategy"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "product strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Job - Product Strategy
 
 > Strategia prodotto. Modulo.

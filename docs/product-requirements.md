@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Product Requirements Document (PRD)"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "product requirements"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Product Requirements Document (PRD)
 
 ## Metadata

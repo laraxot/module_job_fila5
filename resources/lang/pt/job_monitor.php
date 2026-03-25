@@ -14,8 +14,11 @@ return [
             'tooltip' => 'Sair',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+=======
+>>>>>>> c88446c (.)
 ];

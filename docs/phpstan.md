@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PHPStan Level 10 Roadmap - Job Module"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "phpstan"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # PHPStan Level 10 Roadmap - Job Module
 
 **Status**: ✅ Completato

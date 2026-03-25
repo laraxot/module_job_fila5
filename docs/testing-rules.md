@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing Rules Summary"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "testing rules"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

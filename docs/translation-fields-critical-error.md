@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Errore Critico: Rimozione Sezione 'fields' dalle Traduzioni"
 module: "Job"
@@ -11,6 +12,11 @@ related:
 ---
 # Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
 
+=======
+# Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
+
+**Data**: 2026-01-09  
+>>>>>>> c88446c (.)
 **Modulo**: Job  
 **Status**: 🔴 **ERRORE IDENTIFICATO E CORRETTO**
 
@@ -85,4 +91,8 @@ Tutti i file creati sono stati corretti per includere:
 
 **Status**: ✅ **ERRORE CORRETTO**
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
+=======
+**Ultimo aggiornamento**: 2026-01-09
+>>>>>>> c88446c (.)

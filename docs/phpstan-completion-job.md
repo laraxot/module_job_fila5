@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "✅ PHPStan Completion - Modulo Job"
 module: "Job"
@@ -9,10 +10,16 @@ qmd: "phpstan completion job"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # ✅ PHPStan Completion - Modulo Job
 
 ## 🎉 Status: COMPLETATO - 0 Errori
 
+<<<<<<< HEAD
+=======
+**Data**: 11 Ottobre 2025
+>>>>>>> c88446c (.)
 **PHPStan Level**: Max
 **Errori Risolti**: 58 → 0 ✅ (-100%)
 

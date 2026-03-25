@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "User Research: Job Module"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "user research"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> c88446c (.)
 # User Research: Job Module
 
 ## 🔬 Research Goals
