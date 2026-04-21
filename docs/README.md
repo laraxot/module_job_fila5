@@ -44,3 +44,10 @@ Job\Services\QueueManager
 
 - [Queue Config](./queue/)
 - [Failed Jobs](./failed/)
+
+
+## Standard Rules & Workflow
+
+- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
+- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
