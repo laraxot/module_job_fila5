@@ -8,7 +8,7 @@ use Filament\Tables\Columns\TextColumn;
 
 class ScheduleOptions extends TextColumn
 {
-    protected bool $withValue = true;
+    protected $withValue = true;
 
     public function withValue(bool $withValue = true): static
     {
