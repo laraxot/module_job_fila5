@@ -31,6 +31,7 @@ use Override;
  * @property Carbon|null $cancelled_at
  * @property Carbon $created_at
  * @property Carbon|null $finished_at
+ *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -55,10 +56,8 @@ use Override;
  */
 class JobBatch extends BaseModel
 {
-    /** @var bool */
     public $incrementing = false;
 
-    /** @var string */
     protected $keyType = 'string';
 
     protected $fillable = [

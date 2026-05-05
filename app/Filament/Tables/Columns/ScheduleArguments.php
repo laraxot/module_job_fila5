@@ -11,7 +11,7 @@ class ScheduleArguments extends TextColumn
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 
-    protected bool $withValue = true;
+    protected $withValue = true;
 
     /**
      * Set whether to include values in the output.
@@ -52,6 +52,7 @@ class ScheduleArguments extends TextColumn
      */
     /**
      * @param  array<int|string, mixed>  $tags
+     *
      * @return array<int, string>
      */
     protected function formatArrayTags(array $tags): array
