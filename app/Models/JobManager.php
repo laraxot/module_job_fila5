@@ -62,6 +62,7 @@ use Override;
  * @property int $attempt
  * @property int|null $progress
  * @property string|null $exception_message
+ *
  * @property-read ProfileContract|null $creator
  * @property-read string $status
  * @property-read ProfileContract|null $updater
@@ -112,7 +113,7 @@ class JobManager extends BaseModel
 
     public function status(): Attribute
     {
-        return Attribute::make(get: function (): string {
+        return Attribute::make(get: function(): string {
             if ($this->isFinished()) {
                 $failed = $this->attributes['failed'] ?? false;
 
