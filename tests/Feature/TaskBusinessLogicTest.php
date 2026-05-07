@@ -8,7 +8,7 @@ use Modules\Job\Tests\TestCase;
 
 uses(TestCase::class);
 
-it('can create task with basic information', function (): void {
+it('can create task with basic information', function(): void {
     $taskData = [
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
@@ -43,7 +43,7 @@ it('can create task with basic information', function (): void {
     expect($task->is_active)->toBe(1);
 });
 
-it('can manage task activation and deactivation', function (): void {
+it('can manage task activation and deactivation', function(): void {
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -63,7 +63,7 @@ it('can manage task activation and deactivation', function (): void {
     expect($task->is_active)->toBe(0);
 });
 
-it('can handle task parameters and compilation', function (): void {
+it('can handle task parameters and compilation', function(): void {
     $task = Task::create([
         'description' => 'Task con parametri',
         'command' => 'user:process',
@@ -83,7 +83,7 @@ it('can handle task parameters and compilation', function (): void {
     expect($executionParams)->toBeArray();
 });
 
-it('can manage task frequencies', function (): void {
+it('can manage task frequencies', function(): void {
     $task = Task::create([
         'description' => 'Task con frequenze',
         'command' => 'report:generate',
@@ -109,7 +109,7 @@ it('can manage task frequencies', function (): void {
     expect($task->frequencies->contains($frequency2))->toBeTrue();
 });
 
-it('can handle task notifications', function (): void {
+it('can handle task notifications', function(): void {
     $task = Task::create([
         'description' => 'Task con notifiche',
         'command' => 'backup:create',
@@ -126,7 +126,7 @@ it('can handle task notifications', function (): void {
     expect($task->notification_slack_webhook)->toBe('https://hooks.slack.com/services/...');
 });
 
-it('can manage task execution settings', function (): void {
+it('can manage task execution settings', function(): void {
     $task = Task::create([
         'description' => 'Task con impostazioni esecuzione',
         'command' => 'heavy:process',
@@ -146,7 +146,7 @@ it('can manage task execution settings', function (): void {
     expect($task->run_in_background)->toBe(1);
 });
 
-it('can handle task cleanup settings', function (): void {
+it('can handle task cleanup settings', function(): void {
     $task = Task::create([
         'description' => 'Task con pulizia automatica',
         'command' => 'logs:cleanup',
@@ -162,7 +162,7 @@ it('can handle task cleanup settings', function (): void {
     expect($task->auto_cleanup_type)->toBe('days');
 });
 
-it('can manage task results and history', function (): void {
+it('can manage task results and history', function(): void {
     $task = Task::create([
         'description' => 'Task con risultati',
         'command' => 'test:command',
@@ -194,7 +194,7 @@ it('can manage task results and history', function (): void {
     expect($task->results->contains($result2))->toBeTrue();
 });
 
-it('can handle task priority management', function (): void {
+it('can handle task priority management', function(): void {
     $highPriorityTask = Task::create([
         'description' => 'Task alta priorità',
         'command' => 'critical:process',
@@ -218,7 +218,7 @@ it('can handle task priority management', function (): void {
     expect($lowPriorityTask->description)->toContain('bassa');
 });
 
-it('can manage task timezone handling', function (): void {
+it('can manage task timezone handling', function(): void {
     $romeTask = Task::create([
         'description' => 'Task Roma',
         'command' => 'local:process',
@@ -241,7 +241,7 @@ it('can manage task timezone handling', function (): void {
     expect($utcTask->timezone)->toBe('UTC');
 });
 
-it('can handle task status transitions', function (): void {
+it('can handle task status transitions', function(): void {
     $task = Task::create([
         'description' => 'Task con transizioni stato',
         'command' => 'status:test',
@@ -263,7 +263,7 @@ it('can handle task status transitions', function (): void {
     expect($task->is_active)->toBe(1);
 });
 
-it('can handle task ordering and sorting', function (): void {
+it('can handle task ordering and sorting', function(): void {
     $task1 = Task::create([
         'description' => 'Primo task',
         'command' => 'first:command',
@@ -287,7 +287,7 @@ it('can handle task ordering and sorting', function (): void {
     expect($task2->description)->toBe('Secondo task');
 });
 
-it('can handle task maintenance mode', function (): void {
+it('can handle task maintenance mode', function(): void {
     $maintenanceTask = Task::create([
         'description' => 'Task manutenzione',
         'command' => 'maintenance:task',

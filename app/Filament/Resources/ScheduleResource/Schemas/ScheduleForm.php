@@ -1,12 +1,8 @@
 <?php
 
-/**
- * @see https://github.com/husam-tariq/filament-database-schedule/blob/main/src/Filament/resources/ScheduleResource.php
- */
-
 declare(strict_types=1);
 
-namespace Modules\Job\Filament\Resources;
+namespace Modules\Job\Filament\Resources\ScheduleResource\Schemas;
 
 use Filament\Forms\Components\Hidden;
 use Filament\Forms\Components\Repeater;
@@ -17,58 +13,33 @@ use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
-use Filament\Support\Components\Component;
-use Illuminate\Contracts\Support\Htmlable;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Schemas\Components\Component;
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Datas\CommandData;
-use Modules\Job\Filament\Resources\ScheduleResource\Pages\CreateSchedule;
-use Modules\Job\Filament\Resources\ScheduleResource\Pages\EditSchedule;
-use Modules\Job\Filament\Resources\ScheduleResource\Pages\ListSchedules;
-use Modules\Job\Filament\Resources\ScheduleResource\Pages\ViewSchedule;
-use Modules\Job\Models\Schedule;
 use Modules\Job\Rules\Corn;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-use Override;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
 
-class ScheduleResource extends XotBaseResource
+/**
+ * ScheduleForm Schema.
+ */
+class ScheduleForm extends XotBaseResourceForm
 {
-    protected static ?string $model = Schedule::class;
+    /** @var DataCollection<CommandData>|null */
+    protected static ?DataCollection $commands = null;
 
-    protected static bool $shouldRegisterNavigation = true;
-
-    /** @var DataCollection<CommandData> */
-    protected static DataCollection $commands;
-
-    public static function getEloquentQuery(): Builder
-    {
-        return parent::getEloquentQuery()
-            ->withoutGlobalScopes([
-                SoftDeletingScope::class,
-            ]);
-    }
-
-    #[Override]
-    public static function getPages(): array
-    {
-        return [
-            'index' => ListSchedules::route('/'),
-            'create' => CreateSchedule::route('/create'),
-            'edit' => EditSchedule::route('/{record}/edit'),
-            'view' => ViewSchedule::route('/{record}'),
-        ];
-    }
-
-    #[Override]
     /**
-     * @return array<string, Htmlable|string>
+     * Get the form schema.
+     *
+     * @return array<string, Component>
      */
     public static function getFormSchema(): array
     {
-        static::$commands = app(GetCommandsAction::class)->execute();
+        if (static::$commands === null) {
+            static::$commands = app(GetCommandsAction::class)->execute();
+        }
+        
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
 
         return [
@@ -80,6 +51,9 @@ class ScheduleResource extends XotBaseResource
                     ->required()
                     ->afterStateUpdated(function (Set $set, ?string $state): void {
                         Assert::string($state);
+                        if (static::$commands === null) {
+                            static::$commands = app(GetCommandsAction::class)->execute();
+                        }
                         Assert::isInstanceOf(
                             $command = static::$commands->where('name', $state)->first(),
                             CommandData::class,
@@ -134,7 +108,7 @@ class ScheduleResource extends XotBaseResource
                     ->rules([new Corn()])
                     ->required(),
                 TagsInput::make('environments')->placeholder(null),
-                TextInput::make('log_filename')->helperText(static::trans('messages.help-log-filename')),
+                TextInput::make('log_filename'),
                 TextInput::make('webhook_before'),
                 TextInput::make('webhook_after'),
                 TextInput::make('email_output'),
@@ -147,14 +121,6 @@ class ScheduleResource extends XotBaseResource
                 Toggle::make('on_one_server'),
                 Toggle::make('run_in_background'),
             ])->inlineLabel(false),
-        ];
-    }
-
-    #[Override]
-    public static function getRelations(): array
-    {
-        return [
-
         ];
     }
 }

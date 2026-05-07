@@ -9,7 +9,7 @@ module: "Job"
 
 ## Log Entries
 
-_No activity yet. Start by ingesting raw documents._
+[2026-05-06 05:50:00 UTC] [UPDATE] Documentato il pattern PHPStan per `CreateSchedule::getFormSchema()`: validare elementi `Htmlable|string`, costruire lista tipizzata, evitare `@var` non supportati da runtime.
 
 ### Format
 
