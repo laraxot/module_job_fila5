@@ -11,7 +11,7 @@ updated: "2026-04-15T08:28:44Z"
 
 ## Concepts
 
-_No concepts ingested yet. Drop raw documents in `../raw/articles/` and run ingest._
+- [phpstan-schedule-schema-return-type](./concepts/phpstan-schedule-schema-return-type.md) — restringere `getFormSchema()` con validazione runtime e lista tipizzata
 
 ## Entities
 
@@ -28,5 +28,5 @@ _No comparisons synthesized yet._
 ---
 
 **Last Updated:** 2026-04-15T08:28:44Z  
-**Total Pages:** 0  
+**Total Pages:** 1  
 **Total Raw Sources:** 0
