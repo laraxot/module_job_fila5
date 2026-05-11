@@ -1,12 +1,12 @@
-# Job Module - rules Index
+# Job Module - concepts Index
 
 ## Purpose
-Index for Job module rules.
+Index for Job module concepts.
 
 ## On-Demand Loading
 
 ```bash
-qmd search "Job rules" --limit 5
+qmd search "Job concepts" --limit 5
 ```
 
 ## See Also
