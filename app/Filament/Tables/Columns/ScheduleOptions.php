@@ -9,12 +9,7 @@ use Webmozart\Assert\Assert;
 
 class ScheduleOptions extends TextColumn
 {
-<<<<<<< Updated upstream
-    protected $withValue = true;
-=======
-    /** @var bool */
     protected bool $withValue = true;
->>>>>>> Stashed changes
 
     public function withValue(bool $withValue = true): static
     {
