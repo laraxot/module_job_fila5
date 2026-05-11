@@ -10,10 +10,10 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
-use Filament\Schemas\Components\Component;
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Datas\CommandData;
 use Modules\Job\Rules\Corn;
@@ -39,7 +39,7 @@ class ScheduleForm extends XotBaseResourceForm
         if (static::$commands === null) {
             static::$commands = app(GetCommandsAction::class)->execute();
         }
-        
+
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
 
         return [
@@ -105,7 +105,7 @@ class ScheduleForm extends XotBaseResourceForm
                     ->reorderable(false),
                 TextInput::make('expression')
                     ->placeholder('* * * * *')
-                    ->rules([new Corn()])
+                    ->rules([new Corn])
                     ->required(),
                 TagsInput::make('environments')->placeholder(null),
                 TextInput::make('log_filename'),

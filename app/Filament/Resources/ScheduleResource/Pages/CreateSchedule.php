@@ -27,9 +27,6 @@ final class CreateSchedule extends XotBaseCreateRecord
     {
         $res = $this->getResource()::getFormSchema();
         Assert::isArray($res);
-<<<<<<< Updated upstream
-        return $res;
-=======
 
         $components = [];
 
@@ -46,7 +43,6 @@ final class CreateSchedule extends XotBaseCreateRecord
         }
 
         return $components;
->>>>>>> Stashed changes
     }
 
     public function schema(Schema $schema): Schema

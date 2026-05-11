@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobResource\Tables;
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 /**
@@ -14,7 +14,7 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class JobsTable extends XotBaseResourceTable
 {
     /**
-     * @return array<int|string, \Filament\Tables\Columns\Column>
+     * @return array<int|string, Column>
      */
     public static function getTableColumns(): array
     {
