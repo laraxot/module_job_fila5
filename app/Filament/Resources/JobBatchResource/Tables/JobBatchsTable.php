@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\app\Filament\Resources\JobBatchResource\Tables;
+namespace Modules\Job\Filament\Resources\JobBatchResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
