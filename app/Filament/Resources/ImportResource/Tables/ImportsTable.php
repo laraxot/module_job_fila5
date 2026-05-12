@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\app\Filament\Resources\ImportResource\Tables;
+namespace Modules\Job\Filament\Resources\ImportResource\Tables;
 
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;

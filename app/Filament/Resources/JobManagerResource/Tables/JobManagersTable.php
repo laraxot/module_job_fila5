@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\app\Filament\Resources\JobManagerResource\Tables;
+namespace Modules\Job\Filament\Resources\JobManagerResource\Tables;
 
 use Filament\Actions\DeleteBulkAction;
 use Filament\Tables\Columns\Column;
