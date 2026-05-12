@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\base_quaeris_fila5\var\www\_bases\base_quaeris_fila5\laravel\Modules\Job\app\Filament\Resources\ExportResource\Schemas;
+namespace Modules\Job\app\Filament\Resources\ExportResource\Schemas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
