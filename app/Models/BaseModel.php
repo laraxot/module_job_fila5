@@ -30,7 +30,6 @@ abstract class BaseModel extends Model
      *
      * @see https://laravel-news.com/6-eloquent-secrets
      */
-
     public $incrementing = true;
 
     public $timestamps = true;
