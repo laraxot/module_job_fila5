@@ -1,11 +1,17 @@
----
-title: "concepts index — Job"
-type: index
-tags: [concepts, Job]
-created: 2026-05-11
-updated: 2026-05-11
----
+# Job Module - concepts Index
 
-# concepts Index — Job
+## Purpose
+Index for Job module concepts.
 
-Concetti specifici del modulo Job. Carica on-demand via `qmd search` o consulta il [trigger map root](/docs/wiki/rules/00-TRIGGER_MAP.md).
+## On-Demand Loading
+
+```bash
+qmd search "Job concepts" --limit 5
+```
+
+## See Also
+- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Wiki](../../../docs/wiki/)
+
+---
+*Updated: 2026-05-11*
