@@ -15,9 +15,6 @@ class ExportsTable extends XotBaseResourceTable
      */
     public function getTableColumns(): array
     {
-    /**
-     * @return array<int\|string, \Filament\Tables\Columns\Column>
-     */
         return [
             'id' => TextColumn::make('id')->searchable()->sortable(),
             'exporter' => TextColumn::make('exporter')->searchable()->sortable(),
