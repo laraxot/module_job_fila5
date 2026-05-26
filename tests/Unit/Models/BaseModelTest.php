@@ -11,7 +11,7 @@ use Modules\Job\Models\BaseModel;
 use Modules\Job\Tests\TestCase;
 
 beforeEach(function () {
-    $this->baseModel = new class() extends BaseModel
+    $this->baseModel = new class extends BaseModel
     {
         protected $table = 'test_job_table';
     };
