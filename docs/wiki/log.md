@@ -12,24 +12,17 @@ module: "Job"
 - Created module index.md
 - Ready for on-demand loading via QMD
 
-<<<<<<< HEAD
-=======
-[2026-05-06 05:50:00 UTC] [UPDATE] Documentato il pattern PHPStan per `CreateSchedule::getFormSchema()`: validare elementi `Htmlable|string`, costruire lista tipizzata, evitare `@var` non supportati da runtime.
+## [2026-05-26] Second brain / checkpoint confidenza
 
-### Format
+- Memoria ripartenza: [wiki/memories/session-confidence-checkpoint.md](memories/session-confidence-checkpoint.md)
+- Handoff root: [docs/chat/handoff-job-lang-merge-phpstan-confidence.md](../../../../../docs/chat/handoff-job-lang-merge-phpstan-confidence.md)
 
-```
-[YYYY-MM-DD HH:MM:SS UTC] [OPERATION] Description
-```
+## [2026-05-26] PHPStan L10 + issue repo modulo
 
-**Operations:**
-- `INGEST` — Added raw document to wiki
-- `QUERY` — Answered question from wiki
-- `LINT` — Maintained wiki quality
-- `UPDATE` — Modified existing wiki page
+- `./vendor/bin/phpstan analyse Modules/Job` → OK dopo fix `JobServiceProvider`, `SchedulesTable`, `FailedImportRowsTable`
+- Issue modulo **#12**, **#13**: repo da `git remote -v` in `laravel/Modules/Job` (no URL org fissi in wiki)
 
----
+## [2026-05-26] Git collision cleanup (PHP)
 
-**Last Activity:** None  
-**Total Operations:** 0
->>>>>>> 860dff1 (.)
+- Risolti marcatori merge in 13 file PHP (`Policies`, Filament Tables/Forms, Lang `WriteTranslationFileAction`) — strategia HEAD/current.
+- Validazione: `php -l`, PHPMD/Insights su path toccati; PHPStan globale bloccato da fatal preesistente in `Notify/EditMailTemplate`.

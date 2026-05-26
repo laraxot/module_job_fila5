@@ -4,12 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\FailedImportRowResource\Tables;
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class FailedImportRowsTable extends XotBaseResourceTable
 {
-    public static function getTableColumns(): array
+    /**
+     * @return array<string, Column>
+     */
+    public function getTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')->searchable()->sortable(),
