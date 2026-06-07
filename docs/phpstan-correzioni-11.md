@@ -1,4 +1,4 @@
-# Correzioni PHPStan Livello 10 - Modulo Job
+**Data**: 2025-11-05
 **Errori iniziali**: 31
 **Errori finali**: 0
 **Status**: ✅ COMPLETATO
@@ -406,3 +406,10 @@ fn (ModelType $item): ReturnType => ...
 ---
 
 **Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
+---
+module: theme
+topic: phpstan-correzioni-11
+canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-11.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-11.md

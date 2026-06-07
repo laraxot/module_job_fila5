@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\Tests\Unit\Models;
-
-uses(TestCase::class);
-
-use Illuminate\Database\Eloquent\Model;
-use Modules\Job\Models\BaseModel;
-use Modules\Job\Tests\TestCase;
 
 beforeEach(function () {
     $this->baseModel = new class extends BaseModel
