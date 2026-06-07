@@ -1,6 +1,4 @@
-# 🐄 DRY & KISS Analysis - Job
-
-**Data:** [DATE] | **Status:** ✅
+**Data:** 2025-10-15 | **Status:** ✅
 
 ## 📊 Struttura
 Models: 34 🟡 | Resources: 9 | Actions: 7 | Docs: 64
@@ -41,3 +39,10 @@ Models/
 2. Resources refactoring (1 sett)
 
 **Status:** 🟡 DA RIORGANIZZARE
+---
+module: theme
+topic: dry-kiss-analysis
+canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
