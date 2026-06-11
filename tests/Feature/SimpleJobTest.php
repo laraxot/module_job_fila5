@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-uses(TestCase::class);
-
 use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Safe\json_encode;
+
+uses(TestCase::class);
 
 describe('Job Business Logic', function () {
     it('can create job with basic information', function () {
@@ -25,13 +27,12 @@ describe('Job Business Logic', function () {
 
         $job = Job::create($jobData);
 
-        expect($job)
-            ->toBeInstanceOf(Job::class)
-            ->and($job->queue)
-            ->toBe('default')
-            ->and($job->attempts)
-            ->toBe(0)
-            ->and($job->reserved_at)
-            ->toBeNull();
+        Assert::assertInstanceOf(Job::class, $job);
+
+        Assert::assertSame('default', $job->queue);
+
+        Assert::assertSame(0, $job->attempts);
+
+        Assert::assertNull($job->reserved_at);
     });
 });
