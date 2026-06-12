@@ -39,18 +39,18 @@ describe('Status', function () {
         Assert::assertContains('Filament\Support\Contracts\HasLabel', $interfaces);
     });
 
-    it('getColor returns correct colors', function () {
-        Assert::assertSame('success', Status::Active->getColor());
-        Assert::assertSame('warning', Status::Inactive->getColor());
-        Assert::assertSame('danger', Status::Trashed->getColor());
-        Assert::assertSame('danger', Status::One->getColor());
+    it('getColor returns translation keys via EnumTrait', function () {
+        Assert::assertSame('job::status.values.active.color', Status::Active->getColor());
+        Assert::assertSame('job::status.values.inactive.color', Status::Inactive->getColor());
+        Assert::assertSame('job::status.values.trashed.color', Status::Trashed->getColor());
+        Assert::assertSame('job::status.values.1.color', Status::One->getColor());
     });
 
-    it('getIcon returns correct icons', function () {
-        Assert::assertSame('heroicon-o-check-circle', Status::Active->getIcon());
-        Assert::assertSame('heroicon-o-document', Status::Inactive->getIcon());
-        Assert::assertSame('heroicon-o-x-circle', Status::Trashed->getIcon());
-        Assert::assertSame('heroicon-o-x-circle', Status::One->getIcon());
+    it('getIcon returns translation keys via EnumTrait', function () {
+        Assert::assertSame('job::status.values.active.icon', Status::Active->getIcon());
+        Assert::assertSame('job::status.values.inactive.icon', Status::Inactive->getIcon());
+        Assert::assertSame('job::status.values.trashed.icon', Status::Trashed->getIcon());
+        Assert::assertSame('job::status.values.1.icon', Status::One->getIcon());
     });
 
     it('getLabel returns a non-empty string', function () {

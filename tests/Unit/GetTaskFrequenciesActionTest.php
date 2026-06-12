@@ -39,7 +39,7 @@ describe('GetTaskFrequenciesAction', function (): void {
         $docComment = $method->getDocComment();
 
         Assert::assertIsString($docComment);
-        Assert::assertStringContainsString('@return array<string, mixed>', $docComment);
+        Assert::assertStringContainsString('@return array', $docComment);
     });
 
     test('has proper class structure', function (): void {

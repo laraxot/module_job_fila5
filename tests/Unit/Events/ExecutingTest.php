@@ -31,7 +31,7 @@ describe('Executing', function () {
 
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
-        Assert::assertStringContainsString('', $content);
+        Assert::assertStringContainsString('declare(strict_types=1);', $content);
     });
 
     it('is instantiable', function () {
@@ -42,9 +42,11 @@ describe('Executing', function () {
 
     it('has no additional methods', function () {
         $reflection = new ReflectionClass(Executing::class);
-        $methods = $reflection->getMethods(ReflectionMethod::IS_PUBLIC);
+        $ownMethods = array_filter(
+            $reflection->getMethods(ReflectionMethod::IS_PUBLIC),
+            static fn (ReflectionMethod $method): bool => $method->getDeclaringClass()->getName() === Executing::class,
+        );
 
-        // Only inherits from BroadcastingEvent
-
+        Assert::assertSame([], array_values($ownMethods));
     });
 });
