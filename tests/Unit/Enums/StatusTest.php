@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Enums;
+use ReflectionClass;
 
 use Modules\Job\Enums\Status;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);

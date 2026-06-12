@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
+use ReflectionClass;
 
 use function Safe\class_uses;
 use Modules\Job\Actions\Command\GetCommandOptionsActions;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use Symfony\Component\Console\Command\Command;
 use function Safe\file_get_contents;
 

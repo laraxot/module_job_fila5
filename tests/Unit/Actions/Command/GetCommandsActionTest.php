@@ -3,11 +3,11 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
+use ReflectionClass;
 
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use Spatie\LaravelData\DataCollection;
 use function Safe\file_get_contents;
 
