@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
+use ReflectionClass;
 
 use Modules\Job\Events\BroadcastingEvent;
 use Modules\Job\Events\Executed;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);

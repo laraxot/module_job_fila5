@@ -1,11 +1,11 @@
 <?php
 
 declare(strict_types=1);
+use ReflectionClass;
 
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 use function Safe\class_uses;
 use function Safe\file_get_contents;

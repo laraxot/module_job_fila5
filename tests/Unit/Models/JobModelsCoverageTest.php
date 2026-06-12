@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Models;
+use ReflectionClass;
 
 use function Safe\class_uses;
 use Modules\Job\Models\BaseModel;
@@ -17,7 +18,6 @@ use Modules\Job\Models\Schedule;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
