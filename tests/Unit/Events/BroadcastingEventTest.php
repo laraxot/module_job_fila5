@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
+use ReflectionClass;
 
 use function Safe\class_uses;
 use Illuminate\Broadcasting\PrivateChannel;
@@ -10,7 +11,6 @@ use Modules\Job\Events\BroadcastingEvent;
 use Modules\Job\Events\TaskEvent;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
