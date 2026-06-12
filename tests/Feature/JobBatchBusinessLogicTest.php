@@ -11,19 +11,25 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 
+function uniqueJobBatchId(string $prefix = 'batch'): string
+{
+    return $prefix.'-'.str_replace('.', '', uniqid('', true));
+}
+
 it('can create job batch with basic information', function (): void {
         /** @var TestCase $this */
+    $batchId = uniqueJobBatchId('basic');
     $batchData = [
-        'id' => 'batch-123',
+        'id' => $batchId,
         'name' => 'Processamento utenti batch',
         'total_jobs' => 100,
         'pending_jobs' => 100,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([
+        'options' => [
             'priority' => 'high',
             'notify_on_completion' => true,
-        ]),
+        ],
         'cancelled_at' => null,
         'finished_at' => null,
     ];
@@ -31,14 +37,14 @@ it('can create job batch with basic information', function (): void {
     $batch = JobBatch::create($batchData);
 
     $this->assertDatabaseHasRow('job_batches', [
-        'id' => 'batch-123',
+        'id' => $batchId,
         'name' => 'Processamento utenti batch',
         'total_jobs' => 100,
         'pending_jobs' => 100,
         'failed_jobs' => 0,
     ]);
 
-    Assert::assertSame('batch-123', $batch->id);
+    Assert::assertSame($batchId, $batch->id);
     Assert::assertSame('Processamento utenti batch', $batch->name);
     Assert::assertSame(100, $batch->total_jobs);
     Assert::assertSame(100, $batch->pending_jobs);
@@ -48,13 +54,13 @@ it('can create job batch with basic information', function (): void {
 it('can manage batch job progression', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'progression-test',
+        'id' => uniqueJobBatchId('progression'),
         'name' => 'Test progressione',
         'total_jobs' => 10,
         'pending_jobs' => 10,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([]),
+        'options' => [],
     ]);
 
     Assert::assertSame(10, $batch->pending_jobs);
@@ -71,13 +77,13 @@ it('can manage batch job progression', function (): void {
 it('can handle batch job failures', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'failure-test',
+        'id' => uniqueJobBatchId('failure'),
         'name' => 'Test fallimenti',
         'total_jobs' => 5,
         'pending_jobs' => 5,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([]),
+        'options' => [],
     ]);
 
     // Simula fallimento di alcuni job
@@ -96,13 +102,13 @@ it('can handle batch job failures', function (): void {
 it('can manage batch completion status', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'completion-test',
+        'id' => uniqueJobBatchId('completion'),
         'name' => 'Test completamento',
         'total_jobs' => 3,
         'pending_jobs' => 3,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([]),
+        'options' => [],
     ]);
 
     Assert::assertFalse($batch->finished());
@@ -120,13 +126,13 @@ it('can manage batch completion status', function (): void {
 it('can handle batch cancellation', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'cancellation-test',
+        'id' => uniqueJobBatchId('cancellation'),
         'name' => 'Test cancellazione',
         'total_jobs' => 5,
         'pending_jobs' => 5,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([]),
+        'options' => [],
     ]);
 
     Assert::assertFalse($batch->cancelled());
@@ -150,7 +156,7 @@ it('can manage batch options and configuration', function (): void {
     ];
 
     $batch = JobBatch::create([
-        'id' => 'options-test',
+        'id' => uniqueJobBatchId('options'),
         'name' => 'Test opzioni',
         'total_jobs' => 10,
         'pending_jobs' => 10,
@@ -168,13 +174,13 @@ it('can manage batch options and configuration', function (): void {
 it('can calculate batch progress percentage', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'progress-test',
+        'id' => uniqueJobBatchId('progress'),
         'name' => 'Test progresso',
         'total_jobs' => 100,
         'pending_jobs' => 75,
         'failed_jobs' => 5,
         'failed_job_ids' => json_encode(['job-1', 'job-2', 'job-3', 'job-4', 'job-5']),
-        'options' => json_encode([]),
+        'options' => [],
     ]);
 
     // Calcola progresso: (total - pending) / total
@@ -188,32 +194,32 @@ it('can calculate batch progress percentage', function (): void {
 it('can handle batch job relationships', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'relationships-test',
+        'id' => uniqueJobBatchId('relationships'),
         'name' => 'Test relazioni',
         'total_jobs' => 3,
         'pending_jobs' => 3,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([]),
+        'options' => [],
     ]);
 
     // Crea job associati al batch
     $job1 = Job::create([
         'queue' => 'batch',
-        'payload' => json_encode([
+        'payload' => [
             'displayName' => 'BatchJob1',
             'batch_id' => $batch->id,
-        ]),
+        ],
         'attempts' => 0,
         'available_at' => now()->timestamp,
     ]);
 
     $job2 = Job::create([
         'queue' => 'batch',
-        'payload' => json_encode([
+        'payload' => [
             'displayName' => 'BatchJob2',
             'batch_id' => $batch->id,
-        ]),
+        ],
         'attempts' => 0,
         'available_at' => now()->timestamp,
     ]);
@@ -226,13 +232,13 @@ it('can handle batch job relationships', function (): void {
 it('can manage batch cleanup and maintenance', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'cleanup-test',
+        'id' => uniqueJobBatchId('cleanup'),
         'name' => 'Test pulizia',
         'total_jobs' => 10,
         'pending_jobs' => 0,
         'failed_jobs' => 2,
         'failed_job_ids' => json_encode(['job-1', 'job-2']),
-        'options' => json_encode([]),
+        'options' => [],
         'finished_at' => now()->subDays(7),
     ]);
 
@@ -245,16 +251,16 @@ it('can manage batch cleanup and maintenance', function (): void {
 it('can handle batch retry logic', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'retry-test',
+        'id' => uniqueJobBatchId('retry'),
         'name' => 'Test retry',
         'total_jobs' => 5,
         'pending_jobs' => 0,
         'failed_jobs' => 3,
         'failed_job_ids' => json_encode(['job-1', 'job-2', 'job-3']),
-        'options' => json_encode([
+        'options' => [
             'retry_failed_jobs' => true,
             'max_retries' => 2,
-        ]),
+        ],
         'finished_at' => now(),
     ]);
 
@@ -277,18 +283,18 @@ it('can handle batch retry logic', function (): void {
 it('can handle batch notification settings', function (): void {
         /** @var TestCase $this */
     $batch = JobBatch::create([
-        'id' => 'notification-test',
+        'id' => uniqueJobBatchId('notification'),
         'name' => 'Test notifiche',
         'total_jobs' => 10,
         'pending_jobs' => 10,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([
+        'options' => [
             'notify_on_completion' => true,
             'notify_on_failure' => true,
             'notification_email' => 'admin@example.com',
             'notification_slack' => 'https://hooks.slack.com/...',
-        ]),
+        ],
     ]);
 
     $options = $batch->options?->all() ?? [];
@@ -306,19 +312,19 @@ it('can handle batch bulk operations', function (): void {
 
     for ($i = 1; $i <= 3; $i++) {
         $batchList[] = JobBatch::create([
-            'id' => "bulk-batch-{$i}",
+            'id' => uniqueJobBatchId("bulk-{$i}"),
             'name' => "Batch bulk {$i}",
             'total_jobs' => $i * 10,
             'pending_jobs' => $i * 5,
             'failed_jobs' => $i,
             'failed_job_ids' => json_encode(["failed-job-{$i}"]),
-            'options' => json_encode(['priority' => $priorities[$i - 1]]),
+            'options' => ['priority' => $priorities[$i - 1]],
         ]);
     }
 
     Assert::assertCount(3, $batchList);
     foreach ($batchList as $index => $batch) {
-        Assert::assertSame('bulk-batch-'.($index + 1), $batch->id);
+        Assert::assertNotEmpty($batch->id);
         Assert::assertSame(($index + 1) * 10, $batch->total_jobs);
         $batchOptions = $batch->options?->all() ?? [];
         Assert::assertSame($priorities[$index], $batchOptions['priority'] ?? null);
@@ -329,13 +335,13 @@ it('can validate batch integrity', function (): void {
         /** @var TestCase $this */
     // Test con batch valido
     $validBatch = JobBatch::create([
-        'id' => 'valid-batch',
+        'id' => uniqueJobBatchId('valid'),
         'name' => 'Batch valido',
         'total_jobs' => 10,
         'pending_jobs' => 10,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
-        'options' => json_encode([]),
+        'options' => [],
     ]);
 
     Assert::assertNotNull($validBatch->id);
