@@ -3,13 +3,13 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
+use ReflectionClass;
 
 use function Safe\class_uses;
 use Illuminate\Support\Collection;
 use Modules\Job\Actions\GetTaskCommandsAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
