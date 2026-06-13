@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Models;
-use ReflectionClass;
-
 use function Safe\class_uses;
 use Modules\Job\Models\BaseModel;
 use Modules\Job\Models\Export;
@@ -56,34 +54,34 @@ describe('Job Models Coverage', function () {
         });
 
         it('has frequencies relationship', function () {
-            $reflection = new ReflectionClass(Task::class);
+            $reflection = new \ReflectionClass(Task::class);
             Assert::assertTrue($reflection->hasMethod('frequencies'));
         });
 
         it('has results relationship', function () {
-            $reflection = new ReflectionClass(Task::class);
+            $reflection = new \ReflectionClass(Task::class);
             Assert::assertTrue($reflection->hasMethod('results'));
         });
 
         it('has compileParameters method', function () {
-            $reflection = new ReflectionClass(Task::class);
+            $reflection = new \ReflectionClass(Task::class);
             Assert::assertTrue($reflection->hasMethod('compileParameters'));
         });
 
         it('has autoCleanup method', function () {
-            $reflection = new ReflectionClass(Task::class);
+            $reflection = new \ReflectionClass(Task::class);
             Assert::assertTrue($reflection->hasMethod('autoCleanup'));
         });
 
         it('has notification routing methods', function () {
-            $reflection = new ReflectionClass(Task::class);
+            $reflection = new \ReflectionClass(Task::class);
             Assert::assertTrue($reflection->hasMethod('routeNotificationForMail'));
             Assert::assertTrue($reflection->hasMethod('routeNotificationForNexmo'));
             Assert::assertTrue($reflection->hasMethod('routeNotificationForSlack'));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(Task::class);
+            $reflection = new \ReflectionClass(Task::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -98,12 +96,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends BaseModel', function () {
-            $reflection = new ReflectionClass(Frequency::class);
+            $reflection = new \ReflectionClass(Frequency::class);
             Assert::assertTrue($reflection->isSubclassOf(BaseModel::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(Frequency::class);
+            $reflection = new \ReflectionClass(Frequency::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -118,12 +116,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends BaseModel', function () {
-            $reflection = new ReflectionClass(Result::class);
+            $reflection = new \ReflectionClass(Result::class);
             Assert::assertTrue($reflection->isSubclassOf(BaseModel::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(Result::class);
+            $reflection = new \ReflectionClass(Result::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -138,12 +136,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends BaseModel', function () {
-            $reflection = new ReflectionClass(Schedule::class);
+            $reflection = new \ReflectionClass(Schedule::class);
             Assert::assertTrue($reflection->isSubclassOf(BaseModel::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(Schedule::class);
+            $reflection = new \ReflectionClass(Schedule::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -158,12 +156,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends BaseModel', function () {
-            $reflection = new ReflectionClass(Import::class);
+            $reflection = new \ReflectionClass(Import::class);
             Assert::assertTrue($reflection->isSubclassOf(BaseModel::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(Import::class);
+            $reflection = new \ReflectionClass(Import::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -178,12 +176,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends Filament Export', function () {
-            $reflection = new ReflectionClass(Export::class);
+            $reflection = new \ReflectionClass(Export::class);
             Assert::assertTrue($reflection->isSubclassOf(\Filament\Actions\Exports\Models\Export::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(Export::class);
+            $reflection = new \ReflectionClass(Export::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -198,12 +196,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends BaseModel', function () {
-            $reflection = new ReflectionClass(JobBatch::class);
+            $reflection = new \ReflectionClass(JobBatch::class);
             Assert::assertTrue($reflection->isSubclassOf(BaseModel::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(JobBatch::class);
+            $reflection = new \ReflectionClass(JobBatch::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -218,12 +216,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends BaseModel', function () {
-            $reflection = new ReflectionClass(JobManager::class);
+            $reflection = new \ReflectionClass(JobManager::class);
             Assert::assertTrue($reflection->isSubclassOf(BaseModel::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(JobManager::class);
+            $reflection = new \ReflectionClass(JobManager::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -238,12 +236,12 @@ describe('Job Models Coverage', function () {
         });
 
         it('extends BaseModel', function () {
-            $reflection = new ReflectionClass(FailedJob::class);
+            $reflection = new \ReflectionClass(FailedJob::class);
             Assert::assertTrue($reflection->isSubclassOf(BaseModel::class));
         });
 
         it('uses strict types', function () {
-            $reflection = new ReflectionClass(FailedJob::class);
+            $reflection = new \ReflectionClass(FailedJob::class);
             $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);

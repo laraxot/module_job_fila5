@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
-use ReflectionClass;
-
 use Modules\Job\Events\BroadcastingEvent;
 use Modules\Job\Events\Executed;
 use Modules\Job\Tests\TestCase;
@@ -15,17 +13,17 @@ uses(TestCase::class);
 
 describe('Executed', function () {
     it('extends BroadcastingEvent', function () {
-        Assert::assertTrue((new ReflectionClass(Executed::class))->isSubclassOf(BroadcastingEvent::class));
+        Assert::assertTrue((new \ReflectionClass(Executed::class))->isSubclassOf(BroadcastingEvent::class));
     });
 
     it('has correct namespace', function () {
-        $reflection = new ReflectionClass(Executed::class);
+        $reflection = new \ReflectionClass(Executed::class);
 
         Assert::assertSame('Modules\Job\Events', $reflection->getNamespaceName());
     });
 
     it('uses strict types', function () {
-        $reflection = new ReflectionClass(Executed::class);
+        $reflection = new \ReflectionClass(Executed::class);
         $filename = $reflection->getFileName();
 
         Assert::assertNotFalse($filename);
@@ -34,7 +32,7 @@ describe('Executed', function () {
     });
 
     it('has required imports', function () {
-        $filename = (new ReflectionClass(Executed::class))->getFileName();
+        $filename = (new \ReflectionClass(Executed::class))->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
 
@@ -43,7 +41,7 @@ describe('Executed', function () {
     });
 
     it('has constructor with Task, float and string parameters', function () {
-        $reflection = new ReflectionClass(Executed::class);
+        $reflection = new \ReflectionClass(Executed::class);
         $constructor = $reflection->getConstructor();
 
         Assert::assertNotNull($constructor);
@@ -56,7 +54,7 @@ describe('Executed', function () {
     });
 
     it('is instantiable', function () {
-        $reflection = new ReflectionClass(Executed::class);
+        $reflection = new \ReflectionClass(Executed::class);
 
         Assert::assertTrue($reflection->isInstantiable());
     });
