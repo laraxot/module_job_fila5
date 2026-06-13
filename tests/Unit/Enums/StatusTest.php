@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Enums;
-use ReflectionClass;
-
 use Modules\Job\Enums\Status;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -14,7 +12,7 @@ uses(TestCase::class);
 
 describe('Status', function () {
     it('is an enum', function () {
-        $reflection = new ReflectionClass(Status::class);
+        $reflection = new \ReflectionClass(Status::class);
 
         Assert::assertTrue($reflection->isEnum());
     });
@@ -32,7 +30,7 @@ describe('Status', function () {
     });
 
     it('implements Filament interfaces', function () {
-        $interfaces = (new ReflectionClass(Status::class))->getInterfaceNames();
+        $interfaces = (new \ReflectionClass(Status::class))->getInterfaceNames();
 
         Assert::assertContains('Filament\Support\Contracts\HasColor', $interfaces);
         Assert::assertContains('Filament\Support\Contracts\HasIcon', $interfaces);
@@ -58,13 +56,13 @@ describe('Status', function () {
     });
 
     it('has correct namespace', function () {
-        $reflection = new ReflectionClass(Status::class);
+        $reflection = new \ReflectionClass(Status::class);
 
         Assert::assertSame('Modules\Job\Enums', $reflection->getNamespaceName());
     });
 
     it('uses strict types', function () {
-        $reflection = new ReflectionClass(Status::class);
+        $reflection = new \ReflectionClass(Status::class);
         $filename = $reflection->getFileName();
 
         Assert::assertNotFalse($filename);
@@ -73,7 +71,7 @@ describe('Status', function () {
     });
 
     it('has required imports', function () {
-        $filename = (new ReflectionClass(Status::class))->getFileName();
+        $filename = (new \ReflectionClass(Status::class))->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
 
