@@ -9,7 +9,7 @@ use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetCommandsAction', function (): void {
     test('can be instantiated', function (): void {
