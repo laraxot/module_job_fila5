@@ -10,7 +10,7 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetTaskCommandsAction', function (): void {
     test('can be instantiated', function (): void {

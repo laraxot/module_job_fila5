@@ -10,7 +10,7 @@ use PHPUnit\Framework\Assert;
 use Symfony\Component\Console\Command\Command;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetCommandArgumentsActions', function (): void {
     test('can be instantiated', function (): void {

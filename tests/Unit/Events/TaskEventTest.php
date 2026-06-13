@@ -10,7 +10,7 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('TaskEvent', function () {
     it('extends Event base class', function () {
