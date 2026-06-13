@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
-use ReflectionClass;
-
 use function Safe\class_uses;
 use Modules\Job\Actions\ExecuteTaskAction;
 use Modules\Job\Tests\TestCase;
@@ -20,7 +18,7 @@ describe('ExecuteTaskAction', function (): void {
     });
 
     test('has correct method signature', function (): void {
-        $reflection = new ReflectionClass(ExecuteTaskAction::class);
+        $reflection = new \ReflectionClass(ExecuteTaskAction::class);
         $method = $reflection->getMethod('execute');
 
         Assert::assertTrue($method->isPublic());
@@ -32,7 +30,7 @@ describe('ExecuteTaskAction', function (): void {
     });
 
     test('returns string', function (): void {
-        $reflection = new ReflectionClass(ExecuteTaskAction::class);
+        $reflection = new \ReflectionClass(ExecuteTaskAction::class);
         $method = $reflection->getMethod('execute');
         Assert::assertInstanceOf(\ReflectionNamedType::class, $returnType = $method->getReturnType());
         Assert::assertSame('string', $returnType->getName());
@@ -44,7 +42,7 @@ describe('ExecuteTaskAction', function (): void {
     });
 
     test('uses strict types', function (): void {
-        $reflection = new ReflectionClass(ExecuteTaskAction::class);
+        $reflection = new \ReflectionClass(ExecuteTaskAction::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -52,19 +50,19 @@ describe('ExecuteTaskAction', function (): void {
     });
 
     test('has correct namespace', function (): void {
-        $reflection = new ReflectionClass(ExecuteTaskAction::class);
+        $reflection = new \ReflectionClass(ExecuteTaskAction::class);
         Assert::assertSame('Modules\Job\Actions', $reflection->getNamespaceName());
     });
 
     test('has proper class structure', function (): void {
-        $reflection = new ReflectionClass(ExecuteTaskAction::class);
+        $reflection = new \ReflectionClass(ExecuteTaskAction::class);
         Assert::assertTrue($reflection->isInstantiable());
         Assert::assertFalse($reflection->isFinal());
         Assert::assertFalse($reflection->isAbstract());
     });
 
     test('has required imports', function (): void {
-        $reflection = new ReflectionClass(ExecuteTaskAction::class);
+        $reflection = new \ReflectionClass(ExecuteTaskAction::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
