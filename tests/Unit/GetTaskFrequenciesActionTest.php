@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-use ReflectionClass;
-
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
