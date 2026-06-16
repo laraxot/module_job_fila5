@@ -3,15 +3,13 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
-
 use function Safe\class_uses;
 use Modules\Job\Actions\DummyAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('DummyAction', function (): void {
     test('can be instantiated', function (): void {
@@ -20,7 +18,7 @@ describe('DummyAction', function (): void {
     });
 
     test('has correct method signature', function (): void {
-        $reflection = new ReflectionClass(DummyAction::class);
+        $reflection = new \ReflectionClass(DummyAction::class);
         $method = $reflection->getMethod('execute');
 
         Assert::assertTrue($method->isPublic());
@@ -35,7 +33,7 @@ describe('DummyAction', function (): void {
     });
 
     test('uses strict types', function (): void {
-        $reflection = new ReflectionClass(DummyAction::class);
+        $reflection = new \ReflectionClass(DummyAction::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -43,19 +41,19 @@ describe('DummyAction', function (): void {
     });
 
     test('has correct namespace', function (): void {
-        $reflection = new ReflectionClass(DummyAction::class);
+        $reflection = new \ReflectionClass(DummyAction::class);
         Assert::assertSame('Modules\Job\Actions', $reflection->getNamespaceName());
     });
 
     test('has proper class structure', function (): void {
-        $reflection = new ReflectionClass(DummyAction::class);
+        $reflection = new \ReflectionClass(DummyAction::class);
         Assert::assertTrue($reflection->isInstantiable());
         Assert::assertFalse($reflection->isFinal());
         Assert::assertFalse($reflection->isAbstract());
     });
 
     test('has required imports', function (): void {
-        $reflection = new ReflectionClass(DummyAction::class);
+        $reflection = new \ReflectionClass(DummyAction::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
