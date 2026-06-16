@@ -8,7 +8,7 @@ use Filament\Infolists\Components\TextEntry;
 use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceInfolist;
 
-class JobsWaitingInfolist extends XotBaseResourceInfolist
+class JobInfolist extends XotBaseResourceInfolist
 {
     /**
      * @return array<string, Component>
