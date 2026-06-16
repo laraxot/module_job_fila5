@@ -3,20 +3,18 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
-
 use function Safe\class_uses;
 use Illuminate\Broadcasting\Channel;
 use Modules\Job\Events\PrivateEvent;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('PrivateEvent', function () {
     it('implements ShouldBroadcast', function () {
-        $interfaces = (new ReflectionClass(PrivateEvent::class))->getInterfaceNames();
+        $interfaces = (new \ReflectionClass(PrivateEvent::class))->getInterfaceNames();
 
         Assert::assertContains('Illuminate\Contracts\Broadcasting\ShouldBroadcast', $interfaces);
     });
@@ -36,7 +34,7 @@ describe('PrivateEvent', function () {
     });
 
     it('has broadcastOn method', function () {
-        $reflection = new ReflectionClass(PrivateEvent::class);
+        $reflection = new \ReflectionClass(PrivateEvent::class);
         $method = $reflection->getMethod('broadcastOn');
 
         Assert::assertTrue($method->isPublic());
@@ -45,13 +43,13 @@ describe('PrivateEvent', function () {
     });
 
     it('has correct namespace', function () {
-        $reflection = new ReflectionClass(PrivateEvent::class);
+        $reflection = new \ReflectionClass(PrivateEvent::class);
 
         Assert::assertSame('Modules\Job\Events', $reflection->getNamespaceName());
     });
 
     it('uses strict types', function () {
-        $reflection = new ReflectionClass(PrivateEvent::class);
+        $reflection = new \ReflectionClass(PrivateEvent::class);
         $filename = $reflection->getFileName();
 
         Assert::assertNotFalse($filename);
@@ -60,7 +58,7 @@ describe('PrivateEvent', function () {
     });
 
     it('has required imports', function () {
-        $filename = (new ReflectionClass(PrivateEvent::class))->getFileName();
+        $filename = (new \ReflectionClass(PrivateEvent::class))->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
 

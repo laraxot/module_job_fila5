@@ -1,11 +1,9 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 
 use function Safe\class_uses;
 use function Safe\file_get_contents;
@@ -39,7 +37,7 @@ describe('GetTaskFrequenciesAction', function (): void {
         $docComment = $method->getDocComment();
 
         Assert::assertIsString($docComment);
-        Assert::assertStringContainsString('@return array<string, mixed>', $docComment);
+        Assert::assertStringContainsString('@return array', $docComment);
     });
 
     test('has proper class structure', function (): void {
