@@ -7,6 +7,7 @@ namespace Modules\Job\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
+use Modules\Fixcity\Models\User;
 use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
@@ -24,6 +25,9 @@ abstract class TestCase extends XotBaseTestCase
 {
     use DatabaseTransactions;
 
+    /** @var list<string> */
+    protected $connectionsToTransact = ['job', 'sqlite', 'xot', 'user'];
+
     public mixed $action = null;
 
     /**
@@ -36,6 +40,27 @@ abstract class TestCase extends XotBaseTestCase
             UserServiceProvider::class,
             JobServiceProvider::class,
         ];
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+
+        config(['auth.providers.users.model' => User::class]);
     }
 
     /**
@@ -80,7 +105,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         $this->expectException($exceptionClass);
         if ($message !== null) {
-            $this->expectExceptionMessage($message);
+            $this->expectThrowableMessage($message);
         }
     }
 }

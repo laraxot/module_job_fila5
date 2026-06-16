@@ -3,16 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
-
 use function Safe\class_uses;
 use Modules\Job\Actions\Command\GetCommandArgumentsActions;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use Symfony\Component\Console\Command\Command;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetCommandArgumentsActions', function (): void {
     test('can be instantiated', function (): void {
@@ -21,7 +19,7 @@ describe('GetCommandArgumentsActions', function (): void {
     });
 
     test('has correct method signature', function (): void {
-        $reflection = new ReflectionClass(GetCommandArgumentsActions::class);
+        $reflection = new \ReflectionClass(GetCommandArgumentsActions::class);
         $method = $reflection->getMethod('execute');
         Assert::assertTrue($method->isPublic());
         Assert::assertSame(1, $method->getNumberOfParameters());
@@ -35,7 +33,7 @@ describe('GetCommandArgumentsActions', function (): void {
     });
 
     test('uses strict types', function (): void {
-        $reflection = new ReflectionClass(GetCommandArgumentsActions::class);
+        $reflection = new \ReflectionClass(GetCommandArgumentsActions::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -43,7 +41,7 @@ describe('GetCommandArgumentsActions', function (): void {
     });
 
     test('has correct namespace', function (): void {
-        $reflection = new ReflectionClass(GetCommandArgumentsActions::class);
+        $reflection = new \ReflectionClass(GetCommandArgumentsActions::class);
         Assert::assertSame('Modules\Job\Actions\Command', $reflection->getNamespaceName());
     });
 
@@ -53,14 +51,14 @@ describe('GetCommandArgumentsActions', function (): void {
     });
 
     test('has proper class structure', function (): void {
-        $reflection = new ReflectionClass(GetCommandArgumentsActions::class);
+        $reflection = new \ReflectionClass(GetCommandArgumentsActions::class);
         Assert::assertTrue($reflection->isInstantiable());
         Assert::assertFalse($reflection->isFinal());
         Assert::assertFalse($reflection->isAbstract());
     });
 
     test('has required imports', function (): void {
-        $reflection = new ReflectionClass(GetCommandArgumentsActions::class);
+        $reflection = new \ReflectionClass(GetCommandArgumentsActions::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);

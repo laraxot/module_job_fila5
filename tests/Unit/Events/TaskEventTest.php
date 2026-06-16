@@ -3,24 +3,22 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
-
 use function Safe\class_uses;
 use Modules\Job\Events\Event;
 use Modules\Job\Events\TaskEvent;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('TaskEvent', function () {
     it('extends Event base class', function () {
-        Assert::assertTrue((new ReflectionClass(TaskEvent::class))->isSubclassOf(Event::class));
+        Assert::assertTrue((new \ReflectionClass(TaskEvent::class))->isSubclassOf(Event::class));
     });
 
     it('has correct namespace', function () {
-        $reflection = new ReflectionClass(TaskEvent::class);
+        $reflection = new \ReflectionClass(TaskEvent::class);
 
         Assert::assertSame('Modules\Job\Events', $reflection->getNamespaceName());
     });
@@ -33,7 +31,7 @@ describe('TaskEvent', function () {
     });
 
     it('uses strict types', function () {
-        $reflection = new ReflectionClass(TaskEvent::class);
+        $reflection = new \ReflectionClass(TaskEvent::class);
         $filename = $reflection->getFileName();
 
         Assert::assertNotFalse($filename);
@@ -42,7 +40,7 @@ describe('TaskEvent', function () {
     });
 
     it('has Task property', function () {
-        $reflection = new ReflectionClass(TaskEvent::class);
+        $reflection = new \ReflectionClass(TaskEvent::class);
         $props = $reflection->getProperties();
 
         Assert::assertCount(1, $props);
@@ -51,7 +49,7 @@ describe('TaskEvent', function () {
     });
 
     it('has required imports', function () {
-        $filename = (new ReflectionClass(TaskEvent::class))->getFileName();
+        $filename = (new \ReflectionClass(TaskEvent::class))->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
 

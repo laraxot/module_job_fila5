@@ -3,16 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
-
 use function Safe\class_uses;
 use Modules\Job\Actions\Command\GetCommandOptionsActions;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use Symfony\Component\Console\Command\Command;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetCommandOptionsActions', function (): void {
     test('can be instantiated', function (): void {
@@ -21,7 +19,7 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('has correct method signature', function (): void {
-        $reflection = new ReflectionClass(GetCommandOptionsActions::class);
+        $reflection = new \ReflectionClass(GetCommandOptionsActions::class);
         $method = $reflection->getMethod('execute');
         Assert::assertTrue($method->isPublic());
         Assert::assertSame(1, $method->getNumberOfParameters());
@@ -48,7 +46,7 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('uses strict types', function (): void {
-        $reflection = new ReflectionClass(GetCommandOptionsActions::class);
+        $reflection = new \ReflectionClass(GetCommandOptionsActions::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -56,7 +54,7 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('has correct namespace', function (): void {
-        $reflection = new ReflectionClass(GetCommandOptionsActions::class);
+        $reflection = new \ReflectionClass(GetCommandOptionsActions::class);
         Assert::assertSame('Modules\Job\Actions\Command', $reflection->getNamespaceName());
     });
 
@@ -66,19 +64,19 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('has proper class structure', function (): void {
-        $reflection = new ReflectionClass(GetCommandOptionsActions::class);
+        $reflection = new \ReflectionClass(GetCommandOptionsActions::class);
         Assert::assertTrue($reflection->isInstantiable());
         Assert::assertFalse($reflection->isFinal());
         Assert::assertFalse($reflection->isAbstract());
     });
 
     test('implements queueable functionality', function (): void {
-        $reflection = new ReflectionClass(GetCommandOptionsActions::class);
+        $reflection = new \ReflectionClass(GetCommandOptionsActions::class);
         Assert::assertTrue($reflection->hasMethod('onQueue'));
     });
 
     test('has required imports', function (): void {
-        $reflection = new ReflectionClass(GetCommandOptionsActions::class);
+        $reflection = new \ReflectionClass(GetCommandOptionsActions::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
