@@ -3,16 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
-
 use function Safe\class_uses;
 use Illuminate\Support\Collection;
 use Modules\Job\Actions\GetTaskCommandsAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use ReflectionClass;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetTaskCommandsAction', function (): void {
     test('can be instantiated', function (): void {
@@ -21,7 +19,7 @@ describe('GetTaskCommandsAction', function (): void {
     });
 
     test('has correct method signature', function (): void {
-        $reflection = new ReflectionClass(GetTaskCommandsAction::class);
+        $reflection = new \ReflectionClass(GetTaskCommandsAction::class);
         $method = $reflection->getMethod('execute');
 
         Assert::assertTrue($method->isPublic());
@@ -41,7 +39,7 @@ describe('GetTaskCommandsAction', function (): void {
     });
 
     test('uses strict types', function (): void {
-        $reflection = new ReflectionClass(GetTaskCommandsAction::class);
+        $reflection = new \ReflectionClass(GetTaskCommandsAction::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
@@ -49,19 +47,19 @@ describe('GetTaskCommandsAction', function (): void {
     });
 
     test('has correct namespace', function (): void {
-        $reflection = new ReflectionClass(GetTaskCommandsAction::class);
+        $reflection = new \ReflectionClass(GetTaskCommandsAction::class);
         Assert::assertSame('Modules\Job\Actions', $reflection->getNamespaceName());
     });
 
     test('has proper class structure', function (): void {
-        $reflection = new ReflectionClass(GetTaskCommandsAction::class);
+        $reflection = new \ReflectionClass(GetTaskCommandsAction::class);
         Assert::assertTrue($reflection->isInstantiable());
         Assert::assertFalse($reflection->isFinal());
         Assert::assertFalse($reflection->isAbstract());
     });
 
     test('has required imports', function (): void {
-        $reflection = new ReflectionClass(GetTaskCommandsAction::class);
+        $reflection = new \ReflectionClass(GetTaskCommandsAction::class);
         $filename = $reflection->getFileName();
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
