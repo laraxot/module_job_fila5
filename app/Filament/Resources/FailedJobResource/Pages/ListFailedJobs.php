@@ -53,7 +53,7 @@ class ListFailedJobs extends XotBaseListRecords
         return [
             'retry_all' => Action::make('retry_all')
                 ->requiresConfirmation()
-                ->action(static function (): void {
+                ->action(static function(): void {
                     Artisan::call('queue:retry all');
                     Notification::make()
                         ->title('All failed jobs have been pushed back onto the queue.')
@@ -63,7 +63,7 @@ class ListFailedJobs extends XotBaseListRecords
             'delete_all' => Action::make('delete_all')
                 ->requiresConfirmation()
                 ->color('danger')
-                ->action(static function (): void {
+                ->action(static function(): void {
                     FailedJob::truncate();
                     Notification::make()
                         ->title('All failed jobs have been removed.')
