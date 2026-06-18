@@ -19,7 +19,7 @@ class ScheduleService
 
         $model = app($modelClass);
         Assert::isInstanceOf($model, Schedule::class, '['.__LINE__.']['.class_basename($this).']');
-        $model = $model;
+        $this->model = $model;
     }
 
     /**
@@ -31,7 +31,7 @@ class ScheduleService
             return $this->getFromCache();
         }
 
-        return $model->active();
+        return $this->model->active()->get();
     }
 
     public function clearCache(): void
@@ -50,7 +50,7 @@ class ScheduleService
         Assert::string($store = config('job::cache.store'), '['.__LINE__.']['.class_basename($this).']');
         Assert::string($key = config('job::cache.key'), '['.__LINE__.']['.class_basename($this).']');
 
-        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $model->active());
+        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->model->active()->get());
         Assert::isInstanceOf($result, Collection::class);
 
         /** @var Collection<int, Schedule> $result */
