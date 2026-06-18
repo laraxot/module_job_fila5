@@ -81,7 +81,7 @@ class ScheduleHistory extends BaseModel
      * {
      * parent::__construct($attributes);
      *
-     * $table = Config::get('filament-database-schedule.table.schedule_histories', 'schedule_histories');
+     * // @var mixed table = Config::get('filament-database-schedule.table.schedule_histories', 'schedule_histories';
      * }
      *
      */
@@ -91,7 +91,7 @@ class ScheduleHistory extends BaseModel
      */
     public function command(): BelongsTo
     {
-        return $this->belongsTo(Schedule::class, 'schedule_id', 'id');
+        return // @var mixed belongsTo(Schedule::class, 'schedule_id', 'id';
     }
 
     #[Override]
