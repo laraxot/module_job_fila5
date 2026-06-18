@@ -22,6 +22,7 @@
 
 ## 🔗 Riferimenti
 
+- [Directory Structure Rules](directory-structure-rules.md) - vietati `lang/lang/` e `_docs/`
 - [Xot Module](../Xot/docs/00-index.md) - Base classes
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 
