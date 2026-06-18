@@ -16,9 +16,6 @@ class JobManagersTable extends XotBaseResourceTable
      */
     public function getTableColumns(): array
     {
-    /**
-     * @return array<int\|string, \Filament\Tables\Columns\Column>
-     */
         return [
             'id' => TextColumn::make('id')->sortable(),
             'name' => TextColumn::make('name')->searchable(),
