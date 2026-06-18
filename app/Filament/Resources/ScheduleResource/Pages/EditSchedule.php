@@ -20,7 +20,7 @@ class EditSchedule extends XotBaseEditRecord
     /** @var Collection<int, mixed> */
     public Collection $commands;
 
-    public static string $resource = ScheduleResource::class;
+    protected static string $resource = ScheduleResource::class;
 
     #[Override]
     protected function getFormSchema(): array
