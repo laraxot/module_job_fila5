@@ -10,8 +10,12 @@ use function Safe\json_encode;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 it('can create task with basic information', function (): void {
         /** @var TestCase $this */
+=======
+it('can create task with basic information', function(): void {
+>>>>>>> 860dff1 (.)
     $taskData = [
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
@@ -46,8 +50,12 @@ it('can create task with basic information', function (): void {
     Assert::assertSame(1, $task->is_active);
 });
 
+<<<<<<< HEAD
 it('can manage task activation and deactivation', function (): void {
         /** @var TestCase $this */
+=======
+it('can manage task activation and deactivation', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -66,8 +74,12 @@ it('can manage task activation and deactivation', function (): void {
     Assert::assertSame(0, $task->is_active);
 });
 
+<<<<<<< HEAD
 it('can handle task parameters and compilation', function (): void {
         /** @var TestCase $this */
+=======
+it('can handle task parameters and compilation', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Task con parametri',
         'command' => 'user:process',
@@ -86,8 +98,12 @@ it('can handle task parameters and compilation', function (): void {
     Assert::assertIsArray($executionParams);
 });
 
+<<<<<<< HEAD
 it('can manage task frequencies', function (): void {
         /** @var TestCase $this */
+=======
+it('can manage task frequencies', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Task con frequenze',
         'command' => 'report:generate',
@@ -113,8 +129,12 @@ it('can manage task frequencies', function (): void {
     Assert::assertTrue($task->frequencies->contains($frequency2));
 });
 
+<<<<<<< HEAD
 it('can handle task notifications', function (): void {
         /** @var TestCase $this */
+=======
+it('can handle task notifications', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Task con notifiche',
         'command' => 'backup:create',
@@ -131,8 +151,12 @@ it('can handle task notifications', function (): void {
     Assert::assertSame('https://hooks.slack.com/services/...', $task->notification_slack_webhook);
 });
 
+<<<<<<< HEAD
 it('can manage task execution settings', function (): void {
         /** @var TestCase $this */
+=======
+it('can manage task execution settings', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Task con impostazioni esecuzione',
         'command' => 'heavy:process',
@@ -152,8 +176,12 @@ it('can manage task execution settings', function (): void {
     Assert::assertSame(1, $task->run_in_background);
 });
 
+<<<<<<< HEAD
 it('can handle task cleanup settings', function (): void {
         /** @var TestCase $this */
+=======
+it('can handle task cleanup settings', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Task con pulizia automatica',
         'command' => 'logs:cleanup',
@@ -169,8 +197,12 @@ it('can handle task cleanup settings', function (): void {
     Assert::assertSame('days', $task->auto_cleanup_type);
 });
 
+<<<<<<< HEAD
 it('can manage task results and history', function (): void {
         /** @var TestCase $this */
+=======
+it('can manage task results and history', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Task con risultati',
         'command' => 'test:command',
@@ -202,8 +234,12 @@ it('can manage task results and history', function (): void {
     Assert::assertTrue($task->results->contains($result2));
 });
 
+<<<<<<< HEAD
 it('can handle task priority management', function (): void {
         /** @var TestCase $this */
+=======
+it('can handle task priority management', function(): void {
+>>>>>>> 860dff1 (.)
     $highPriorityTask = Task::create([
         'description' => 'Task alta priorità',
         'command' => 'critical:process',
@@ -227,8 +263,12 @@ it('can handle task priority management', function (): void {
     Assert::assertStringContainsString((string)'bassa', (string)$lowPriorityTask->description);
 });
 
+<<<<<<< HEAD
 it('can manage task timezone handling', function (): void {
         /** @var TestCase $this */
+=======
+it('can manage task timezone handling', function(): void {
+>>>>>>> 860dff1 (.)
     $romeTask = Task::create([
         'description' => 'Task Roma',
         'command' => 'local:process',
@@ -251,8 +291,12 @@ it('can manage task timezone handling', function (): void {
     Assert::assertSame('UTC', $utcTask->timezone);
 });
 
+<<<<<<< HEAD
 it('can handle task status transitions', function (): void {
         /** @var TestCase $this */
+=======
+it('can handle task status transitions', function(): void {
+>>>>>>> 860dff1 (.)
     $task = Task::create([
         'description' => 'Task con transizioni stato',
         'command' => 'status:test',
@@ -272,8 +316,12 @@ it('can handle task status transitions', function (): void {
     Assert::assertSame(1, $task->is_active);
 });
 
+<<<<<<< HEAD
 it('can handle task ordering and sorting', function (): void {
         /** @var TestCase $this */
+=======
+it('can handle task ordering and sorting', function(): void {
+>>>>>>> 860dff1 (.)
     $task1 = Task::create([
         'description' => 'Primo task',
         'command' => 'first:command',
@@ -297,8 +345,12 @@ it('can handle task ordering and sorting', function (): void {
     Assert::assertSame('Secondo task', $task2->description);
 });
 
+<<<<<<< HEAD
 it('can handle task maintenance mode', function (): void {
         /** @var TestCase $this */
+=======
+it('can handle task maintenance mode', function(): void {
+>>>>>>> 860dff1 (.)
     $maintenanceTask = Task::create([
         'description' => 'Task manutenzione',
         'command' => 'maintenance:task',
