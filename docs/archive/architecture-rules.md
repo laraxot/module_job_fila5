@@ -1,5 +1,8 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8bc3175 (.)
 title: architecture rules — puntatore
 type: reference
 updated: 2026-05-21
@@ -8,6 +11,7 @@ updated: 2026-05-21
 # Architecture rules (puntatore)
 
 Regole globali: [../../../../docs/wiki/rules/00-TRIGGER_MAP.md](../../../../docs/wiki/rules/00-TRIGGER_MAP.md).
+<<<<<<< HEAD
 =======
 module: theme
 topic: architecture-rules
@@ -32,3 +36,5 @@ For strict coding standards, Filament extension rules, and PHPStan guidelines, p
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
 >>>>>>> 44fb130 (.)
 >>>>>>> 860dff1 (.)
+=======
+>>>>>>> 8bc3175 (.)

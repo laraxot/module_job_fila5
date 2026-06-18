@@ -35,11 +35,17 @@ abstract class BaseModel extends XotBaseModel
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8bc3175 (.)
 [DRY/KISS Global](../../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 
 =======
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 >>>>>>> 860dff1 (.)
+<<<<<<< HEAD
 =======
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 >>>>>>> 860dff1 (.)
+=======
+>>>>>>> 8bc3175 (.)

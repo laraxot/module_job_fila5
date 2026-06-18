@@ -12,6 +12,7 @@ use function Safe\json_encode;
 uses(TestCase::class);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 function uniqueJobBatchId(string $prefix = 'batch'): string
 {
     return $prefix.'-'.str_replace('.', '', uniqid('', true));
@@ -23,6 +24,9 @@ it('can create job batch with basic information', function (): void {
 =======
 it('can create job batch with basic information', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can create job batch with basic information', function(): void {
+>>>>>>> 8bc3175 (.)
     $batchData = [
         'id' => $batchId,
         'name' => 'Processamento utenti batch',
@@ -56,11 +60,15 @@ it('can create job batch with basic information', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can manage batch job progression', function (): void {
         /** @var TestCase $this */
 =======
 it('can manage batch job progression', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can manage batch job progression', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('progression'),
         'name' => 'Test progressione',
@@ -83,11 +91,15 @@ it('can manage batch job progression', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can handle batch job failures', function (): void {
         /** @var TestCase $this */
 =======
 it('can handle batch job failures', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can handle batch job failures', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('failure'),
         'name' => 'Test fallimenti',
@@ -112,11 +124,15 @@ it('can handle batch job failures', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can manage batch completion status', function (): void {
         /** @var TestCase $this */
 =======
 it('can manage batch completion status', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can manage batch completion status', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('completion'),
         'name' => 'Test completamento',
@@ -140,11 +156,15 @@ it('can manage batch completion status', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can handle batch cancellation', function (): void {
         /** @var TestCase $this */
 =======
 it('can handle batch cancellation', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can handle batch cancellation', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('cancellation'),
         'name' => 'Test cancellazione',
@@ -165,11 +185,15 @@ it('can handle batch cancellation', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can manage batch options and configuration', function (): void {
         /** @var TestCase $this */
 =======
 it('can manage batch options and configuration', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can manage batch options and configuration', function(): void {
+>>>>>>> 8bc3175 (.)
     $options = [
         'priority' => 'high',
         'notify_on_completion' => true,
@@ -196,11 +220,15 @@ it('can manage batch options and configuration', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can calculate batch progress percentage', function (): void {
         /** @var TestCase $this */
 =======
 it('can calculate batch progress percentage', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can calculate batch progress percentage', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('progress'),
         'name' => 'Test progresso',
@@ -220,11 +248,15 @@ it('can calculate batch progress percentage', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can handle batch job relationships', function (): void {
         /** @var TestCase $this */
 =======
 it('can handle batch job relationships', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can handle batch job relationships', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('relationships'),
         'name' => 'Test relazioni',
@@ -262,11 +294,15 @@ it('can handle batch job relationships', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can manage batch cleanup and maintenance', function (): void {
         /** @var TestCase $this */
 =======
 it('can manage batch cleanup and maintenance', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can manage batch cleanup and maintenance', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('cleanup'),
         'name' => 'Test pulizia',
@@ -285,11 +321,15 @@ it('can manage batch cleanup and maintenance', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can handle batch retry logic', function (): void {
         /** @var TestCase $this */
 =======
 it('can handle batch retry logic', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can handle batch retry logic', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('retry'),
         'name' => 'Test retry',
@@ -321,11 +361,15 @@ it('can handle batch retry logic', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can handle batch notification settings', function (): void {
         /** @var TestCase $this */
 =======
 it('can handle batch notification settings', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can handle batch notification settings', function(): void {
+>>>>>>> 8bc3175 (.)
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('notification'),
         'name' => 'Test notifiche',
@@ -349,11 +393,15 @@ it('can handle batch notification settings', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can handle batch bulk operations', function (): void {
         /** @var TestCase $this */
 =======
 it('can handle batch bulk operations', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can handle batch bulk operations', function(): void {
+>>>>>>> 8bc3175 (.)
     // Crea un batch di batch per testare operazioni bulk
     $batchList = [];
     $priorities = ['active', 'completed', 'failed'];
@@ -380,11 +428,15 @@ it('can handle batch bulk operations', function(): void {
 });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 it('can validate batch integrity', function (): void {
         /** @var TestCase $this */
 =======
 it('can validate batch integrity', function(): void {
 >>>>>>> 860dff1 (.)
+=======
+it('can validate batch integrity', function(): void {
+>>>>>>> 8bc3175 (.)
     // Test con batch valido
     $validBatch = JobBatch::create([
         'id' => uniqueJobBatchId('valid'),

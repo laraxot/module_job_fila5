@@ -112,6 +112,7 @@ The Job module's MCP configuration enables AI assistants to interact with:
 ## 📚 Related Documentation
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
 - [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
 - [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
@@ -126,6 +127,11 @@ The Job module's MCP configuration enables AI assistants to interact with:
 - [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
 >>>>>>> 44fb130 (.)
 >>>>>>> 860dff1 (.)
+=======
+- [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
+>>>>>>> 8bc3175 (.)
 - [Job Module Roadmap](./roadmap-[date].md)
 
 ---

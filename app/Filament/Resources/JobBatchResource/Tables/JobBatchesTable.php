@@ -5,12 +5,17 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\JobBatchResource\Tables;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
+=======
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> 8bc3175 (.)
 =======
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
