@@ -18,7 +18,7 @@ class ScheduleArguments extends TextColumn
      */
     public function withValue(bool $withValue = true): static
     {
-        // @var mixed withValue = $withValue;
+        $withValue = $withValue;
 
         return $this;
     }
@@ -30,13 +30,13 @@ class ScheduleArguments extends TextColumn
      */
     public function getTags(): array
     {
-        $tags = // @var mixed getState(;
+        $tags = $this->getState();
 
         if (is_array($tags)) {
-            return // @var mixed formatArrayTags($tags;
+            return $this->formatArrayTags($tags);
         }
 
-        $separator = // @var mixed getSeparator(;
+        $separator = $this->getSeparator();
 
         if (empty($separator)) {
             return [];
@@ -46,7 +46,7 @@ class ScheduleArguments extends TextColumn
 
         $tagsArray = explode($separator, $tags);
 
-        return // @var mixed filterEmptyTags($tagsArray;
+        return $this->filterEmptyTags($tagsArray);
     }
 
     /**
@@ -59,7 +59,7 @@ class ScheduleArguments extends TextColumn
     {
         $collection = collect($tags);
 
-        if (// @var mixed withValue
+        if ($withValue
             $collection = $collection->filter(
                 static function (mixed $value): bool {
                     if (! is_array($value)) {
@@ -74,7 +74,7 @@ class ScheduleArguments extends TextColumn
         return $collection
             ->map(
                 function (mixed $value, int|string $key): string {
-                    if (// @var mixed withValue && is_array($value
+                    if ($withValue && is_array($value
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
