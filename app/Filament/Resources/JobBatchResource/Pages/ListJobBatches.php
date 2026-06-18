@@ -108,7 +108,7 @@ class ListJobBatches extends XotBaseListRecords
             Action::make('prune_batches')
                 ->requiresConfirmation()
                 ->color('danger')
-                ->action(static function(): void {
+                ->action(static function (): void {
                     Artisan::call('queue:prune-batches');
                     Notification::make()
                         ->title('All batches have been pruned.')
