@@ -64,7 +64,7 @@ class Frequency extends BaseModel
      */
     public function task(): BelongsTo
     {
-        return // @var mixed belongsTo(Task::class;
+        return $this->belongsTo(Task::class);
     }
 
     /**
@@ -72,7 +72,7 @@ class Frequency extends BaseModel
      */
     public function parameters(): HasMany
     {
-        return // @var mixed hasMany(Parameter::class;
+        return $this->hasMany(Parameter::class);
     }
 
     /**
