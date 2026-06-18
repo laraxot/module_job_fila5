@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: .gitignore
@@ -5,3 +6,8 @@ canonical: ../../../Themes/docs/shared-components/.gitignore
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitignore
+=======
+# Local generated documentation archives
+legacy/
+archive/
+>>>>>>> 8cd86cb (.)
