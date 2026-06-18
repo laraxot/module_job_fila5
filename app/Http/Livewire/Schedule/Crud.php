@@ -53,11 +53,11 @@ class Crud extends Component
             'tasks' => $tasks,
             /*
              * 'task' => new Task(),
-             * 'commands' => $this->getCommands(
+             * 'commands' => $this->getCommands(),
              * 'timezones' => timezone_identifiers_list(),
-             * 'frequencies' => // Placeholder purged getFrequencies(
+             * 'frequencies' => $this->getFrequencies(),
              */
-        ]);
+        ];
 
         return view($view, $view_params);
     }
