@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 module: theme
 topic: lang_link
@@ -7,6 +8,8 @@ canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep-Modules
 =======
+=======
+>>>>>>> 8bc3175 (.)
 # Collegamento alle Traduzioni del Modulo Job
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
@@ -45,4 +48,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 ## Versione Incoming
 
 La versione incoming coincide con la versione HEAD ed eredita gli stessi collegamenti e linee guida.
+<<<<<<< HEAD
 >>>>>>> 860dff1 (.)
+=======
+>>>>>>> 8bc3175 (.)

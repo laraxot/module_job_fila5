@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8bc3175 (.)
 # Conflict Resolution — Module Job
 
 ## Summary
@@ -12,6 +15,7 @@
 
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+<<<<<<< HEAD
 =======
 ---
 module: theme
@@ -21,3 +25,5 @@ canonical: ../../../Themes/docs/shared-components/.gitkeep
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
 >>>>>>> 860dff1 (.)
+=======
+>>>>>>> 8bc3175 (.)
