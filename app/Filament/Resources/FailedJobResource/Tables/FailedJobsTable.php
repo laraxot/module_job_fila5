@@ -13,18 +13,21 @@ use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
+/**
+ * FailedJobsTable Schema.
+ */
 class FailedJobsTable extends XotBaseResourceTable
 {
     /**
-     * @return array<string, Column>
+     * @return array<int|string, Column>
      */
     public static function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->sortable(),
-            'connection' => TextColumn::make('connection')->searchable()->sortable(),
-            'queue' => TextColumn::make('queue')->searchable()->sortable(),
-            'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
+            TextColumn::make('id')->sortable(),
+            TextColumn::make('connection')->searchable()->sortable(),
+            TextColumn::make('queue')->searchable()->sortable(),
+            TextColumn::make('failed_at')->dateTime()->sortable(),
         ];
     }
 

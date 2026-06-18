@@ -17,8 +17,12 @@ class JobsWaitingsTable extends XotBaseResourceTable
     {
         return [
             'id' => TextColumn::make('id')->sortable(),
-            'name' => TextColumn::make('name')->searchable(),
+            'queue' => TextColumn::make('queue')->searchable()->sortable(),
+            'attempts' => TextColumn::make('attempts')->sortable(),
+            'available_at' => TextColumn::make('available_at')->sortable(),
+            'reserved_at' => TextColumn::make('reserved_at')->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }
