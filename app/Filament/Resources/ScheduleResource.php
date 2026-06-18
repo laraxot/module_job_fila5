@@ -61,9 +61,6 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
-    /**
-     * @return array<string, Htmlable|string>
-     */
     public static function getFormSchema(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
