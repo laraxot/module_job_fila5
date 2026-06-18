@@ -12,8 +12,9 @@ use Exception;
 use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Process;
-use function Safe\fopen;
 use Symfony\Component\Console\Output\StreamOutput;
+
+use function Safe\fopen;
 
 class ClockWidget extends Widget
 {
