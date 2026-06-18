@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Conflict Resolution — Module Job
 
 ## Summary
@@ -11,3 +12,12 @@
 
 ## Backlinks
 - [Root conflict resolution report](../../../../docs/conflict-resolution-report.md)
+=======
+---
+module: theme
+topic: conflict-resolution
+canonical: ../../../Themes/docs/shared-components/.gitkeep
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
+>>>>>>> 860dff1 (.)
