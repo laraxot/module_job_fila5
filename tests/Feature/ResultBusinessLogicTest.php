@@ -9,7 +9,7 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-it('can create result with basic information', function (): void {
+it('can create result with basic information', function(): void {
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -38,7 +38,7 @@ it('can create result with basic information', function (): void {
     Assert::assertSame('5.2', $result->duration);
 });
 
-it('can manage result execution lifecycle', function (): void {
+it('can manage result execution lifecycle', function(): void {
     $task = Task::create([
         'description' => 'Lifecycle Task',
         'command' => 'lifecycle:test',
@@ -65,7 +65,7 @@ it('can manage result execution lifecycle', function (): void {
     Assert::assertSame('3.5', $result->duration);
 });
 
-it('can handle result relationships with task', function (): void {
+it('can handle result relationships with task', function(): void {
     $task = Task::create([
         'description' => 'Relationship Task',
         'command' => 'relationship:test',
@@ -100,7 +100,7 @@ it('can handle result relationships with task', function (): void {
     Assert::assertTrue($task->results->contains($result2));
 });
 
-it('can manage result status variations', function (): void {
+it('can manage result status variations', function(): void {
     $task = Task::create([
         'description' => 'Status Task',
         'command' => 'status:test',
@@ -133,7 +133,7 @@ it('can manage result status variations', function (): void {
     Assert::assertSame('2.5', $result->duration);
 });
 
-it('can handle result with different durations', function (): void {
+it('can handle result with different durations', function(): void {
     $task = Task::create([
         'description' => 'Duration Task',
         'command' => 'duration:test',
@@ -158,7 +158,7 @@ it('can handle result with different durations', function (): void {
     Assert::assertSame('0.001', $result->duration);
 });
 
-it('can validate result data integrity', function (): void {
+it('can validate result data integrity', function(): void {
     $task = Task::create([
         'description' => 'Validation Task',
         'command' => 'validation:test',
@@ -185,7 +185,7 @@ it('can validate result data integrity', function (): void {
     Assert::assertSame('1.0', $validResult->duration);
 });
 
-it('can manage multiple results for same task', function (): void {
+it('can manage multiple results for same task', function(): void {
     $task = Task::create([
         'description' => 'Batch Task',
         'command' => 'batch:test',
@@ -225,7 +225,7 @@ it('can manage multiple results for same task', function (): void {
     Assert::assertSame(2, $failedCount);
 });
 
-it('can access task last result', function (): void {
+it('can access task last result', function(): void {
     $task = Task::create([
         'description' => 'Last Result Task',
         'command' => 'last-result:test',
@@ -264,7 +264,7 @@ it('can access task last result', function (): void {
     Assert::assertSame('failed', $lastResult->result);
 });
 
-it('can calculate average runtime', function (): void {
+it('can calculate average runtime', function(): void {
     $task = Task::create([
         'description' => 'Average Runtime Task',
         'command' => 'avg-runtime:test',
@@ -307,7 +307,7 @@ it('can calculate average runtime', function (): void {
     Assert::assertGreaterThan(0, $taskWithAvg->average_runtime);
 });
 
-it('can handle result with empty values', function (): void {
+it('can handle result with empty values', function(): void {
     $task = Task::create([
         'description' => 'Empty Result Task',
         'command' => 'empty:test',
@@ -333,7 +333,7 @@ it('can handle result with empty values', function (): void {
     Assert::assertSame('pending', $result->result);
 });
 
-it('can handle result with large duration', function (): void {
+it('can handle result with large duration', function(): void {
     $task = Task::create([
         'description' => 'Large Duration Task',
         'command' => 'large-duration:test',
@@ -358,7 +358,7 @@ it('can handle result with large duration', function (): void {
     Assert::assertSame('3600.0', $result->duration);
 });
 
-it('can manage result timestamps', function (): void {
+it('can manage result timestamps', function(): void {
     $task = Task::create([
         'description' => 'Timestamp Task',
         'command' => 'timestamp:test',
