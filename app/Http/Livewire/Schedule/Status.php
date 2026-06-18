@@ -72,10 +72,10 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
-        // @var mixed out .= '<hr/>';
+        $out .= '<hr/>';
         Artisan::call($cmd);
-        // @var mixed out .= Artisan::output(;
-        // @var mixed out .= '<hr/>';
+        $out .= Artisan::output();
+        $out .= '<hr/>';
     }
 
     /**
