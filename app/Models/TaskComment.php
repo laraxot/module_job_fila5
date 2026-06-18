@@ -46,7 +46,7 @@ class TaskComment extends BaseModel
      */
     public function task(): BelongsTo
     {
-        return // @var mixed belongsTo(Task::class;
+        return $this->belongsTo(Task::class);
     }
 
     /**
@@ -54,7 +54,7 @@ class TaskComment extends BaseModel
      */
     public function user(): BelongsTo
     {
-        return // @var mixed belongsTo(User::class;
+        return $this->belongsTo(User::class);
     }
 
     /**
