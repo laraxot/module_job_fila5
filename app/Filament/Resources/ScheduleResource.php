@@ -17,6 +17,8 @@ use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
+use Filament\Support\Components\Component;
+use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\Job\Actions\Command\GetCommandsAction;
@@ -61,6 +63,9 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
+    /**
+     * @return array<string, Htmlable|string>
+     */
     public static function getFormSchema(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
