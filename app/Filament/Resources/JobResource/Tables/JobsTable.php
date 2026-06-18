@@ -61,6 +61,9 @@ class JobsTable extends XotBaseResourceTable
      */
     public static function getTableColumns(): array
     {
+    /**
+     * @return array<int\|string, \Filament\Tables\Columns\Column>
+     */
         return [
             TextColumn::make('id')->sortable(),
             TextColumn::make('queue')->searchable()->sortable(),
