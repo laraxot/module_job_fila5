@@ -6,13 +6,13 @@ namespace Modules\Job\Filament\Resources\FailedImportRowResource\Schemas;
 
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Component as SchemaComponent;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class FailedImportRowForm extends XotBaseResourceForm
 {
     /**
-     * @return array<int|string, Component>
+     * @return array<int|string, SchemaComponent>
      */
     public static function getFormSchema(): array
     {
