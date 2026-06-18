@@ -20,8 +20,8 @@ abstract class BaseModel extends XotBaseModel
 
     public function __construct(array $attributes = [])
     {
-        if (isset($this->prefix)) {
-            $this->table = $this->prefix.$this->table;
+        if (isset(// @var mixed prefix
+            // @var mixed table = $this->prefix.$this->table;
         }
 
         parent::__construct($attributes);
