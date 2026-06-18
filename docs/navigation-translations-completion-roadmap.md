@@ -1,5 +1,6 @@
 # Navigation Translations Completion Roadmap - Job Module
 
+**Data**: 2026-01-09  
 **Modulo**: Job  
 **Status**: 📝 **ROADMAP CREATA**
 
@@ -225,6 +226,8 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
+- [Translation Standards](../../Xot/docs/translation-standards.md)
+- [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
 
@@ -232,4 +235,5 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
+**Ultimo aggiornamento**: 2026-01-09
 **Ultimo aggiornamento**: [DATE]
