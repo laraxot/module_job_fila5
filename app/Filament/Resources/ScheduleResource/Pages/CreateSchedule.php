@@ -19,11 +19,14 @@ final class CreateSchedule extends XotBaseCreateRecord
     use NavigationPageLabelTrait;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     /** @var Collection<int, mixed> */
     public Collection $commands;
 
 =======
 >>>>>>> 860dff1 (.)
+=======
+>>>>>>> 8bc3175 (.)
     protected static string $resource = ScheduleResource::class;
 
     /**
@@ -33,6 +36,12 @@ final class CreateSchedule extends XotBaseCreateRecord
     {
         $res = $this->getResource()::getFormSchema();
         Assert::isArray($res);
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+        return $res;
+=======
+>>>>>>> 8bc3175 (.)
 
         $components = [];
 
@@ -49,6 +58,10 @@ final class CreateSchedule extends XotBaseCreateRecord
         }
 
         return $components;
+<<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
+>>>>>>> 8bc3175 (.)
     }
 
     public function schema(Schema $schema): Schema
