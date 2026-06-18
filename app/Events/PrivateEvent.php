@@ -24,8 +24,7 @@ class PrivateEvent implements ShouldBroadcast
      */
     public function __construct(
         public string $message,
-    ) {
-    }
+    ) {}
 
     /**
      * Get the channels the event should broadcast on.
