@@ -34,4 +34,3 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
-
