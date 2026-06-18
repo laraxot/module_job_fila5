@@ -12,9 +12,8 @@ use Exception;
 use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Process;
-use Symfony\Component\Console\Output\StreamOutput;
-
 use function Safe\fopen;
+use Symfony\Component\Console\Output\StreamOutput;
 
 class QueueListenWidget extends Widget
 {
