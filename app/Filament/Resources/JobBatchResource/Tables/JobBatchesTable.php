@@ -4,12 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobBatchResource\Tables;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
+=======
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+>>>>>>> 860dff1 (.)
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 /**
@@ -18,9 +23,15 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class JobBatchesTable extends XotBaseResourceTable
 {
     /**
+<<<<<<< HEAD
      * @return array<int|string, Column>
      */
     public function getTableColumns(): array
+=======
+     * @return array<int|string, \Filament\Tables\Columns\Column>
+     */
+    public static function getTableColumns(): array
+>>>>>>> 860dff1 (.)
     {
         return [
             TextColumn::make('id')->sortable(),
@@ -31,6 +42,7 @@ class JobBatchesTable extends XotBaseResourceTable
             TextColumn::make('created_at')->dateTime()->sortable(),
         ];
     }
+<<<<<<< HEAD
 
     public function getTableHeaderActions(): array
     {
@@ -54,4 +66,6 @@ class JobBatchesTable extends XotBaseResourceTable
             'delete' => DeleteBulkAction::make(),
         ];
     }
+=======
+>>>>>>> 860dff1 (.)
 }
