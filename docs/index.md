@@ -219,5 +219,3 @@ Common issues and solutions:
 - Database connection issues
 - Retry loop problems
 - Worker process crashes
-
-- [Conflict Resolution](conflict-resolution.md)
