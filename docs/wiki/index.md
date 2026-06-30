@@ -46,3 +46,10 @@ qmd search "Job <topic>" --limit 5
 ## Shared Second Brain Discipline
 
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — local docs/wiki operating contract aligned with root LLM Wiki discipline.
+<<<<<<< HEAD
+=======
+
+## Composer / nwidart
+
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello fixcity)
+>>>>>>> laraxot/dev
