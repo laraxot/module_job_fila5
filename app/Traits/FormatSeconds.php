@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Modules\Job\Traits;
 
+// ponytail: PHPStan reports this trait as unused but it's used by JobStatsOverview
+// Filament widgets are discovered dynamically, so PHPStan can't see the usage
 trait FormatSeconds
 {
     public function formatSeconds(int $seconds): string
