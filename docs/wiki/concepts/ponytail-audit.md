@@ -1,11 +1,9 @@
 # Ponytail audit — Job
 
-**Run:** 2026-06-30
+**Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.
 
-Documento canonico: [ponytail-audit-over-engineering.md](../../ponytail-audit-over-engineering.md)
+- [Hub audit](../../../../../../docs/audit/ponytail-audit.md)
+- [Remediation](../../../../../../docs/project/ponytail-audit-remediation.md)
+- [Findings Job](../../ponytail-audit-over-engineering.md)
 
-## Findings
-
-- `Config.bak/` — duplicato di `config/`
-- `TaskInterface` — già rinominato `.bak` (run precedente)
-- ~~policy stub~~ — **rimosso da perimetro**: policy modello sono contratto Laravel (vedi [model-policy-laravel-contract.md](./model-policy-laravel-contract.md))
+Aggiornare solo finding e stato specifici di questo modulo.
