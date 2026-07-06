@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Fixes — Job
 
 ## 2026-06-10 — STORY-307 · L10 · 0 errori codice
@@ -8,9 +7,6 @@
 ---
 
 ## Storico — Gennaio 2025
-=======
-# PHPStan Fixes – Gennaio 2025
->>>>>>> 8bc3175 (.)
 
 ## ✅ Stato complessivo
 
