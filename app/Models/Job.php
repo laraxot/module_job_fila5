@@ -77,6 +77,12 @@ class Job extends BaseModel
         return $res;
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return Attribute<string, never>
+     */
+>>>>>>> origin/dev
     public function status(): Attribute
     {
         return Attribute::make(get: function (): string {

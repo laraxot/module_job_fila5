@@ -41,11 +41,23 @@ class TaskComment extends BaseModel
         'comment',
     ];
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return BelongsTo<Task, $this>
+     */
+>>>>>>> origin/dev
     public function task(): BelongsTo
     {
         return $this->belongsTo(Task::class);
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return BelongsTo<User, $this>
+     */
+>>>>>>> origin/dev
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

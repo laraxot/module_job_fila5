@@ -46,8 +46,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|JobsWaiting whereUpdatedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedBy($value)
  *
+<<<<<<< HEAD
  * @mixin IdeHelperJobsWaiting
  *
+=======
+>>>>>>> origin/dev
  * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent

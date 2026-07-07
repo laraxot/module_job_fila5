@@ -38,7 +38,11 @@ class ScheduleResource extends XotBaseResource
 
     protected static bool $shouldRegisterNavigation = true;
 
+<<<<<<< HEAD
     /** @var DataCollection<CommandData> */
+=======
+    /** @var DataCollection<int, CommandData> */
+>>>>>>> origin/dev
     protected static DataCollection $commands;
 
     public static function getEloquentQuery(): Builder
