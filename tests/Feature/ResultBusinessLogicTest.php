@@ -5,6 +5,10 @@ declare(strict_types=1);
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
+<<<<<<< HEAD
+=======
+use PHPUnit\Framework\Assert;
+>>>>>>> origin/dev
 
 uses(TestCase::class);
 
@@ -32,9 +36,15 @@ it('can create result with basic information', function (): void {
 
     $result = Result::create($resultData);
 
+<<<<<<< HEAD
     expect($result->task_id)->toBe($task->id);
     expect($result->result)->toBe('success');
     expect($result->duration)->toBe('5.2');
+=======
+    Assert::assertSame($task->id, $result->task_id);
+    Assert::assertSame('success', $result->result);
+    Assert::assertSame('5.2', $result->duration);
+>>>>>>> origin/dev
 });
 
 it('can manage result execution lifecycle', function (): void {
@@ -60,8 +70,13 @@ it('can manage result execution lifecycle', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
     expect($result->result)->toBe('success');
     expect($result->duration)->toBe('3.5');
+=======
+    Assert::assertSame('success', $result->result);
+    Assert::assertSame('3.5', $result->duration);
+>>>>>>> origin/dev
 });
 
 it('can handle result relationships with task', function (): void {
@@ -94,9 +109,15 @@ it('can handle result relationships with task', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
     expect($task->results)->toHaveCount(2);
     expect($task->results->contains($result1))->toBeTrue();
     expect($task->results->contains($result2))->toBeTrue();
+=======
+    Assert::assertCount(2, $task->results);
+    Assert::assertTrue($task->results->contains($result1));
+    Assert::assertTrue($task->results->contains($result2));
+>>>>>>> origin/dev
 });
 
 it('can manage result status variations', function (): void {
@@ -121,16 +142,25 @@ it('can manage result status variations', function (): void {
         'result' => 'failed',
     ]);
 
+<<<<<<< HEAD
     expect($result->result)->toBe('failed');
 
+=======
+    Assert::assertSame('failed', $result->result);
+>>>>>>> origin/dev
     // Aggiorna risultato
     $result->update([
         'result' => 'success',
         'duration' => '2.5',
     ]);
 
+<<<<<<< HEAD
     expect($result->result)->toBe('success');
     expect($result->duration)->toBe('2.5');
+=======
+    Assert::assertSame('success', $result->result);
+    Assert::assertSame('2.5', $result->duration);
+>>>>>>> origin/dev
 });
 
 it('can handle result with different durations', function (): void {
@@ -155,7 +185,11 @@ it('can handle result with different durations', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
     expect($result->duration)->toBe('0.001');
+=======
+    Assert::assertSame('0.001', $result->duration);
+>>>>>>> origin/dev
 });
 
 it('can validate result data integrity', function (): void {
@@ -181,8 +215,13 @@ it('can validate result data integrity', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
     expect($validResult->id)->not->toBeNull();
     expect($validResult->duration)->toBe('1.0');
+=======
+    Assert::assertNotNull($validResult->id);
+    Assert::assertSame('1.0', $validResult->duration);
+>>>>>>> origin/dev
 });
 
 it('can manage multiple results for same task', function (): void {
@@ -213,6 +252,7 @@ it('can manage multiple results for same task', function (): void {
         ]);
     }
 
+<<<<<<< HEAD
     expect($results)->toHaveCount(5);
 
     $taskResults = $task->fresh()->results;
@@ -223,6 +263,18 @@ it('can manage multiple results for same task', function (): void {
 
     expect($successCount)->toBe(3);
     expect($failedCount)->toBe(2);
+=======
+    Assert::assertCount(5, $results);
+    $taskFresh = $task->fresh();
+    Assert::assertNotNull($taskFresh);
+    $taskResults = $taskFresh->results;
+    Assert::assertCount(5, $taskResults);
+    $successCount = $taskResults->where('result', 'success')->count();
+    $failedCount = $taskResults->where('result', 'failed')->count();
+
+    Assert::assertSame(3, $successCount);
+    Assert::assertSame(2, $failedCount);
+>>>>>>> origin/dev
 });
 
 it('can access task last result', function (): void {
@@ -257,8 +309,16 @@ it('can access task last result', function (): void {
 
     // Verifica che l'ultimo risultato sia quello atteso
     $taskWithLastResult = $task->fresh();
+<<<<<<< HEAD
     expect($taskWithLastResult->last_result->id)->toBe($latestResult->id);
     expect($taskWithLastResult->last_result->result)->toBe('failed');
+=======
+    Assert::assertNotNull($taskWithLastResult);
+    $lastResult = $taskWithLastResult->last_result;
+    Assert::assertNotNull($lastResult);
+    Assert::assertSame($latestResult->id, $lastResult->id);
+    Assert::assertSame('failed', $lastResult->result);
+>>>>>>> origin/dev
 });
 
 it('can calculate average runtime', function (): void {
@@ -300,7 +360,12 @@ it('can calculate average runtime', function (): void {
 
     // Verifica che il calcolo della media funzioni
     $taskWithAvg = $task->fresh();
+<<<<<<< HEAD
     expect($taskWithAvg->average_runtime)->toBeGreaterThan(0);
+=======
+    Assert::assertNotNull($taskWithAvg);
+    Assert::assertGreaterThan(0, $taskWithAvg->average_runtime);
+>>>>>>> origin/dev
 });
 
 it('can handle result with empty values', function (): void {
@@ -325,8 +390,13 @@ it('can handle result with empty values', function (): void {
         'result' => 'pending',
     ]);
 
+<<<<<<< HEAD
     expect($result->duration)->toBe('0.0');
     expect($result->result)->toBe('pending');
+=======
+    Assert::assertSame('0.0', $result->duration);
+    Assert::assertSame('pending', $result->result);
+>>>>>>> origin/dev
 });
 
 it('can handle result with large duration', function (): void {
@@ -351,7 +421,11 @@ it('can handle result with large duration', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
     expect($result->duration)->toBe('3600.0');
+=======
+    Assert::assertSame('3600.0', $result->duration);
+>>>>>>> origin/dev
 });
 
 it('can manage result timestamps', function (): void {
@@ -376,6 +450,11 @@ it('can manage result timestamps', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
     expect($result->created_at)->not->toBeNull();
     expect($result->updated_at)->not->toBeNull();
+=======
+    Assert::assertNotNull($result->created_at);
+    Assert::assertNotNull($result->updated_at);
+>>>>>>> origin/dev
 });

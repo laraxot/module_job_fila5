@@ -5,10 +5,19 @@ declare(strict_types=1);
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
+<<<<<<< HEAD
+=======
+use PHPUnit\Framework\Assert;
+use function Safe\json_encode;
+>>>>>>> origin/dev
 
 uses(TestCase::class);
 
 it('can create task with basic information', function (): void {
+<<<<<<< HEAD
+=======
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $taskData = [
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
@@ -29,7 +38,11 @@ it('can create task with basic information', function (): void {
 
     $task = Task::create($taskData);
 
+<<<<<<< HEAD
     $this->assertDatabaseHas('tasks', [
+=======
+    $this->assertDatabaseHasRow('tasks', [
+>>>>>>> origin/dev
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
         'expression' => '0 2 * * *',
@@ -37,6 +50,7 @@ it('can create task with basic information', function (): void {
         'is_active' => 1,
     ], 'job');
 
+<<<<<<< HEAD
     expect($task->description)->toBe('Pulizia database giornaliera');
     expect($task->command)->toBe('db:cleanup');
     expect($task->expression)->toBe('0 2 * * *');
@@ -44,6 +58,16 @@ it('can create task with basic information', function (): void {
 });
 
 it('can manage task activation and deactivation', function (): void {
+=======
+    Assert::assertSame('Pulizia database giornaliera', $task->description);
+    Assert::assertSame('db:cleanup', $task->command);
+    Assert::assertSame('0 2 * * *', $task->expression);
+    Assert::assertSame(1, $task->is_active);
+});
+
+it('can manage task activation and deactivation', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -53,17 +77,29 @@ it('can manage task activation and deactivation', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
+<<<<<<< HEAD
     expect($task->is_active)->toBe(1);
 
+=======
+    Assert::assertSame(1, $task->is_active);
+>>>>>>> origin/dev
     // Disattiva il task
     $task->update([
         'is_active' => 0,
     ]);
 
+<<<<<<< HEAD
     expect($task->is_active)->toBe(0);
 });
 
 it('can handle task parameters and compilation', function (): void {
+=======
+    Assert::assertSame(0, $task->is_active);
+});
+
+it('can handle task parameters and compilation', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Task con parametri',
         'command' => 'user:process',
@@ -76,6 +112,7 @@ it('can handle task parameters and compilation', function (): void {
 
     // Compila parametri per lo scheduler
     $schedulerParams = $task->compileParameters(true);
+<<<<<<< HEAD
     expect($schedulerParams)->toBeArray();
 
     // Compila parametri per l'esecuzione
@@ -84,6 +121,16 @@ it('can handle task parameters and compilation', function (): void {
 });
 
 it('can manage task frequencies', function (): void {
+=======
+    Assert::assertIsArray($schedulerParams);
+    // Compila parametri per l'esecuzione
+    $executionParams = $task->compileParameters(false);
+    Assert::assertIsArray($executionParams);
+});
+
+it('can manage task frequencies', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Task con frequenze',
         'command' => 'report:generate',
@@ -104,12 +151,22 @@ it('can manage task frequencies', function (): void {
         'interval' => json_encode(['day' => 'monday', 'time' => '09:00']),
     ]);
 
+<<<<<<< HEAD
     expect($task->frequencies)->toHaveCount(2);
     expect($task->frequencies->contains($frequency1))->toBeTrue();
     expect($task->frequencies->contains($frequency2))->toBeTrue();
 });
 
 it('can handle task notifications', function (): void {
+=======
+    Assert::assertCount(2, $task->frequencies);
+    Assert::assertTrue($task->frequencies->contains($frequency1));
+    Assert::assertTrue($task->frequencies->contains($frequency2));
+});
+
+it('can handle task notifications', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Task con notifiche',
         'command' => 'backup:create',
@@ -121,12 +178,22 @@ it('can handle task notifications', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/...',
     ]);
 
+<<<<<<< HEAD
     expect($task->notification_email_address)->toBe('admin@example.com');
     expect($task->notification_phone_number)->toBe('+1234567890');
     expect($task->notification_slack_webhook)->toBe('https://hooks.slack.com/services/...');
 });
 
 it('can manage task execution settings', function (): void {
+=======
+    Assert::assertSame('admin@example.com', $task->notification_email_address);
+    Assert::assertSame('+1234567890', $task->notification_phone_number);
+    Assert::assertSame('https://hooks.slack.com/services/...', $task->notification_slack_webhook);
+});
+
+it('can manage task execution settings', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Task con impostazioni esecuzione',
         'command' => 'heavy:process',
@@ -140,6 +207,7 @@ it('can manage task execution settings', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
+<<<<<<< HEAD
     expect($task->dont_overlap)->toBe(1);
     expect($task->run_in_maintenance)->toBe(1);
     expect($task->run_on_one_server)->toBe(1);
@@ -147,6 +215,16 @@ it('can manage task execution settings', function (): void {
 });
 
 it('can handle task cleanup settings', function (): void {
+=======
+    Assert::assertSame(1, $task->dont_overlap);
+    Assert::assertSame(1, $task->run_in_maintenance);
+    Assert::assertSame(1, $task->run_on_one_server);
+    Assert::assertSame(1, $task->run_in_background);
+});
+
+it('can handle task cleanup settings', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Task con pulizia automatica',
         'command' => 'logs:cleanup',
@@ -158,11 +236,20 @@ it('can handle task cleanup settings', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
+<<<<<<< HEAD
     expect($task->auto_cleanup_num)->toBe(30);
     expect($task->auto_cleanup_type)->toBe('days');
 });
 
 it('can manage task results and history', function (): void {
+=======
+    Assert::assertSame(30, $task->auto_cleanup_num);
+    Assert::assertSame('days', $task->auto_cleanup_type);
+});
+
+it('can manage task results and history', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Task con risultati',
         'command' => 'test:command',
@@ -189,12 +276,22 @@ it('can manage task results and history', function (): void {
         'output' => 'Task in esecuzione',
     ]);
 
+<<<<<<< HEAD
     expect($task->results)->toHaveCount(2);
     expect($task->results->contains($result1))->toBeTrue();
     expect($task->results->contains($result2))->toBeTrue();
 });
 
 it('can handle task priority management', function (): void {
+=======
+    Assert::assertCount(2, $task->results);
+    Assert::assertTrue($task->results->contains($result1));
+    Assert::assertTrue($task->results->contains($result2));
+});
+
+it('can handle task priority management', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $highPriorityTask = Task::create([
         'description' => 'Task alta priorità',
         'command' => 'critical:process',
@@ -214,11 +311,20 @@ it('can handle task priority management', function (): void {
     ]);
 
     // Non possiamo testare priority_id perché non esiste nella tabella
+<<<<<<< HEAD
     expect($highPriorityTask->description)->toContain('alta');
     expect($lowPriorityTask->description)->toContain('bassa');
 });
 
 it('can manage task timezone handling', function (): void {
+=======
+    Assert::assertStringContainsString((string)'alta', (string)$highPriorityTask->description);
+    Assert::assertStringContainsString((string)'bassa', (string)$lowPriorityTask->description);
+});
+
+it('can manage task timezone handling', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $romeTask = Task::create([
         'description' => 'Task Roma',
         'command' => 'local:process',
@@ -237,11 +343,20 @@ it('can manage task timezone handling', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
+<<<<<<< HEAD
     expect($romeTask->timezone)->toBe('Europe/Rome');
     expect($utcTask->timezone)->toBe('UTC');
 });
 
 it('can handle task status transitions', function (): void {
+=======
+    Assert::assertSame('Europe/Rome', $romeTask->timezone);
+    Assert::assertSame('UTC', $utcTask->timezone);
+});
+
+it('can handle task status transitions', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task = Task::create([
         'description' => 'Task con transizioni stato',
         'command' => 'status:test',
@@ -252,6 +367,7 @@ it('can handle task status transitions', function (): void {
     ]);
 
     // Testiamo solo il campo is_active che esiste veramente
+<<<<<<< HEAD
     expect($task->is_active)->toBe(1);
 
     // Cambia is_active a 0
@@ -264,6 +380,19 @@ it('can handle task status transitions', function (): void {
 });
 
 it('can handle task ordering and sorting', function (): void {
+=======
+    Assert::assertSame(1, $task->is_active);
+    // Cambia is_active a 0
+    $task->update(['is_active' => 0]);
+    Assert::assertSame(0, $task->is_active);
+    // Ripristina is_active a 1
+    $task->update(['is_active' => 1]);
+    Assert::assertSame(1, $task->is_active);
+});
+
+it('can handle task ordering and sorting', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $task1 = Task::create([
         'description' => 'Primo task',
         'command' => 'first:command',
@@ -283,11 +412,20 @@ it('can handle task ordering and sorting', function (): void {
     ]);
 
     // Testiamo che entrambi i task esistano
+<<<<<<< HEAD
     expect($task1->description)->toBe('Primo task');
     expect($task2->description)->toBe('Secondo task');
 });
 
 it('can handle task maintenance mode', function (): void {
+=======
+    Assert::assertSame('Primo task', $task1->description);
+    Assert::assertSame('Secondo task', $task2->description);
+});
+
+it('can handle task maintenance mode', function (): void {
+        /** @var TestCase $this */
+>>>>>>> origin/dev
     $maintenanceTask = Task::create([
         'description' => 'Task manutenzione',
         'command' => 'maintenance:task',
@@ -308,6 +446,11 @@ it('can handle task maintenance mode', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
+<<<<<<< HEAD
     expect($maintenanceTask->run_in_maintenance)->toBe(1);
     expect($normalTask->run_in_maintenance)->toBe(0);
+=======
+    Assert::assertSame(1, $maintenanceTask->run_in_maintenance);
+    Assert::assertSame(0, $normalTask->run_in_maintenance);
+>>>>>>> origin/dev
 });

@@ -53,6 +53,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Export whereUserId($value)
  * @method static Builder<static>|Export whereUserType($value)
  *
+<<<<<<< HEAD
  * @mixin IdeHelperExport
  * @mixin IdeHelperExport
  * @mixin IdeHelperExport
@@ -62,11 +63,16 @@ use Illuminate\Support\Carbon;
  * @mixin IdeHelperExport
  * @mixin IdeHelperExport
  * @mixin IdeHelperExport
+=======
+>>>>>>> origin/dev
  * @mixin Eloquent
  */
 class Export extends BaseExport
 {
+<<<<<<< HEAD
     /** @var string */
+=======
+>>>>>>> origin/dev
     protected $connection = 'job';
 
     protected $fillable = [
