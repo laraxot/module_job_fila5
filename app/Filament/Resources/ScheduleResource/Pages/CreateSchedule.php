@@ -7,66 +7,40 @@ namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Support\Htmlable;
+use Illuminate\Support\Collection;
 use Illuminate\Validation\ValidationException;
 use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 use Modules\Xot\Filament\Traits\NavigationPageLabelTrait;
-use UnexpectedValueException;
 use Webmozart\Assert\Assert;
 
-final class CreateSchedule extends XotBaseCreateRecord
+class CreateSchedule extends XotBaseCreateRecord
 {
     use NavigationPageLabelTrait;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     /** @var Collection<int, mixed> */
     public Collection $commands;
 
-=======
->>>>>>> 860dff1 (.)
-=======
->>>>>>> 8bc3175 (.)
     protected static string $resource = ScheduleResource::class;
 
     /**
      * @return array<Htmlable|string>
      */
-    public function getFormSchema(): array
+    public function getformSchema(): array
     {
         $res = $this->getResource()::getFormSchema();
         Assert::isArray($res);
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-        return $res;
-=======
->>>>>>> 8bc3175 (.)
+        $formSchema = $res;
 
-        $components = [];
-
-        foreach ($res as $component) {
-            if ($component instanceof Htmlable || is_string($component)) {
-                $components[] = $component;
-
-                continue;
-            }
-
-            throw new UnexpectedValueException(
-                'Schedule schema accepts only Htmlable components or strings.',
-            );
-        }
-
-        return $components;
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
->>>>>>> 8bc3175 (.)
+        /** @var array<Htmlable|string> $formSchema */
+        return $formSchema;
     }
 
     public function schema(Schema $schema): Schema
     {
+        /** @var array<Htmlable|string> $formSchema */
         $formSchema = $this->getFormSchema();
+        Assert::isArray($formSchema);
 
         return $schema->components($formSchema);
     }
