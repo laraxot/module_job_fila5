@@ -4,37 +4,32 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\FailedJobResource\Tables;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
-=======
->>>>>>> 8bc3175 (.)
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
-/**
- * FailedJobsTable Schema.
- */
 class FailedJobsTable extends XotBaseResourceTable
 {
     /**
-     * @return array<int|string, Column>
+     * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
-            TextColumn::make('id')->sortable(),
-            TextColumn::make('connection')->searchable()->sortable(),
-            TextColumn::make('queue')->searchable()->sortable(),
-            TextColumn::make('failed_at')->dateTime()->sortable(),
+            'id' => TextColumn::make('id')->sortable(),
+            'connection' => TextColumn::make('connection')->searchable()->sortable(),
+            'queue' => TextColumn::make('queue')->searchable()->sortable(),
+            'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
         ];
     }
 
+    /**
+     * @return array<string, Action>
+     */
     public function getTableHeaderActions(): array
     {
         return [
@@ -57,39 +52,6 @@ class FailedJobsTable extends XotBaseResourceTable
                         ->success()
                         ->send();
                 }),
-=======
-            'id' => TextColumn::make('id')->sortable(),
-            'connection' => TextColumn::make('connection')->searchable()->sortable(),
-            'queue' => TextColumn::make('queue')->searchable()->sortable(),
-            'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
->>>>>>> 8bc3175 (.)
-=======
-use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
-use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
-
-/**
- * FailedJobsTable Schema.
- */
-class FailedJobsTable extends XotBaseResourceTable
-{
-    /**
-     * @return array<int|string, \Filament\Tables\Columns\Column>
-     */
-    public function getTableColumns(): array
-    {
-<<<<<<< HEAD
-    /**
-     * @return array<int\|string, \Filament\Tables\Columns\Column>
-     */
-=======
->>>>>>> 8bc3175 (.)
-        return [
-            TextColumn::make('id')->sortable(),
-            TextColumn::make('connection')->searchable()->sortable(),
-            TextColumn::make('queue')->searchable()->sortable(),
-            TextColumn::make('failed_at')->dateTime()->sortable(),
->>>>>>> 860dff1 (.)
         ];
     }
 }
