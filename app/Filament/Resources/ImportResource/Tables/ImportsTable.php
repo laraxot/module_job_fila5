@@ -5,10 +5,15 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\ImportResource\Tables;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 >>>>>>> 40b96bcd6 (.)
+=======
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+>>>>>>> origin/dev
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -18,6 +23,7 @@ class ImportsTable extends XotBaseResourceTable
     /**
      * @return array<string, Column>
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
     public static function getTableColumns(): array
     {
@@ -34,6 +40,8 @@ class ImportsTable extends XotBaseResourceTable
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
 =======
+=======
+>>>>>>> origin/dev
     public function getTableColumns(): array
     {
         return [
@@ -54,7 +62,10 @@ class ImportsTable extends XotBaseResourceTable
     {
         return [
             'delete' => DeleteBulkAction::make(),
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         ];
     }
 }

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\ImportResource\Schemas;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -15,20 +16,30 @@ use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 >>>>>>> 40b96bcd6 (.)
+=======
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
+>>>>>>> origin/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ImportForm extends XotBaseResourceForm
 {
     /**
 <<<<<<< HEAD
+<<<<<<< HEAD
      * @return array<int|string, SchemaComponent>
 =======
      * @return array<int|string, Component>
 >>>>>>> 40b96bcd6 (.)
+=======
+     * @return array<int|string, Component>
+>>>>>>> origin/dev
      */
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'name' => TextInput::make('name')->required()->maxLength(255),
             'file' => FileUpload::make('file')
@@ -54,10 +65,15 @@ class ImportForm extends XotBaseResourceForm
         ];
 
 =======
+=======
+>>>>>>> origin/dev
             Section::make([
                 'name' => TextInput::make('name'),
             ]),
         ];
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
     }
 }

@@ -5,9 +5,12 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\ScheduleResource\Tables;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
@@ -16,11 +19,15 @@ use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Models\Schedule;
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class SchedulesTable extends XotBaseResourceTable
 {
+<<<<<<< HEAD
 <<<<<<< HEAD
     /**
      * @return array<string, Column>
@@ -40,6 +47,8 @@ class SchedulesTable extends XotBaseResourceTable
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
 =======
+=======
+>>>>>>> origin/dev
     public function getTableColumns(): array
     {
         return [
@@ -71,7 +80,10 @@ class SchedulesTable extends XotBaseResourceTable
     {
         return [
             'delete' => DeleteBulkAction::make(),
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         ];
     }
 }

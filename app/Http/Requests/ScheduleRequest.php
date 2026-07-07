@@ -15,6 +15,11 @@ class ScheduleRequest extends FormRequest
 
     /**
      * Get the validation rules that apply to the request.
+<<<<<<< HEAD
+=======
+     *
+     * @return array<string, string>
+>>>>>>> origin/dev
      */
     public function rules(): array
     {

@@ -110,6 +110,12 @@ class JobManager extends BaseModel
         return Hash::make($job->getRawBody());
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return Attribute<string, never>
+     */
+>>>>>>> origin/dev
     public function status(): Attribute
     {
         return Attribute::make(get: function (): string {
@@ -150,6 +156,12 @@ class JobManager extends BaseModel
         return ! $this->hasFailed();
     }
 
+<<<<<<< HEAD
+=======
+    /**
+     * @return Builder<static>
+     */
+>>>>>>> origin/dev
     public function prunable(): Builder
     {
         if (config('jobs.pruning.activate')) {
@@ -158,10 +170,20 @@ class JobManager extends BaseModel
                 $retention_days = 365;
             }
 
+<<<<<<< HEAD
             return static::where('created_at', '<=', now()->subDays($retention_days));
         }
 
         return static::query();
+=======
+            return static::query()->where('created_at', '<=', now()->subDays($retention_days));
+        }
+
+        /** @var Builder<static> $query */
+        $query = static::query();
+
+        return $query;
+>>>>>>> origin/dev
     }
 
     #[Override]
