@@ -2,12 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 /**
  * ---.
  */
 
 namespace Modules\Job\Traits;
 
+=======
+namespace Modules\Job\Traits;
+
+/**
+ * Formatta secondi in stringa leggibile (d/h/m/s).
+ * Usato da widget Filament JobStatsOverview, JobsWaitingOverview (discovery dinamico).
+ */
+>>>>>>> origin/dev
 trait FormatSeconds
 {
     public function formatSeconds(int $seconds): string

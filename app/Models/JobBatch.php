@@ -55,10 +55,17 @@ use Override;
  */
 class JobBatch extends BaseModel
 {
+<<<<<<< HEAD
     /** @var bool */
     public $incrementing = false;
 
     /** @var string */
+=======
+    public const UPDATED_AT = null;
+
+    public $incrementing = false;
+
+>>>>>>> origin/dev
     protected $keyType = 'string';
 
     protected $fillable = [
@@ -113,9 +120,13 @@ class JobBatch extends BaseModel
      */
     public function finished(): bool
     {
+<<<<<<< HEAD
         $finishedAt = $this->attributes['finished_at'] ?? null;
 
         return $finishedAt instanceof Carbon;
+=======
+        return $this->finished_at !== null;
+>>>>>>> origin/dev
     }
 
     /**
@@ -144,9 +155,13 @@ class JobBatch extends BaseModel
      */
     public function cancelled(): bool
     {
+<<<<<<< HEAD
         $cancelledAt = $this->attributes['cancelled_at'] ?? null;
 
         return $cancelledAt instanceof Carbon;
+=======
+        return $this->cancelled_at !== null;
+>>>>>>> origin/dev
     }
 
     /**  @return array<string, string>  */

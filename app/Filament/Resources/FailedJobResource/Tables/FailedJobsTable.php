@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\FailedJobResource\Tables;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -25,6 +26,8 @@ class FailedJobsTable extends XotBaseResourceTable
             TextColumn::make('queue')->searchable()->sortable(),
             TextColumn::make('failed_at')->dateTime()->sortable(),
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
@@ -73,7 +76,10 @@ class FailedJobsTable extends XotBaseResourceTable
                         ->success()
                         ->send();
                 }),
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         ];
     }
 }
