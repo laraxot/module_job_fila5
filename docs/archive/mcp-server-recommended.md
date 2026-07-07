@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: mcp-server-recommended
@@ -29,4 +28,3 @@ Gestione code, job asincroni, schedulazione e workflow.
 
 ## Note
 - Personalizza la configurazione in base ai workflow e ai servizi esterni utilizzati.
->>>>>>> 255bbbb (.)
