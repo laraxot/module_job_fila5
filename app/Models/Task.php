@@ -58,7 +58,11 @@ use function Safe\json_decode;
  * @method static Builder<static>|Task newModelQuery()
  * @method static Builder<static>|Task newQuery()
  * @method static Builder<static>|Task query()
+<<<<<<< HEAD
  * @method static Builder<static>|Task sortableBy(array $sortableColumns, array $defaultSort = [])
+=======
+ * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, string> $defaultSort = [])
+>>>>>>> origin/dev
  * @method static Builder<static>|Task whereAutoCleanupNum($value)
  * @method static Builder<static>|Task whereAutoCleanupType($value)
  * @method static Builder<static>|Task whereCommand($value)
@@ -94,6 +98,10 @@ class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
+<<<<<<< HEAD
+=======
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+>>>>>>> origin/dev
     use HasXotFactory;
     use Notifiable;
 
@@ -178,6 +186,11 @@ class Task extends BaseModel
 
     /**
      * Frequencies Relation.
+<<<<<<< HEAD
+=======
+     *
+     * @return HasMany<Frequency, $this>
+>>>>>>> origin/dev
      */
     public function frequencies(): HasMany
     {
@@ -186,6 +199,11 @@ class Task extends BaseModel
 
     /**
      * Results Relation.
+<<<<<<< HEAD
+=======
+     *
+     * @return HasMany<Result, $this>
+>>>>>>> origin/dev
      */
     public function results(): HasMany
     {

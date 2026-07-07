@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\JobResource\Tables;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -26,6 +27,8 @@ class JobsTable extends XotBaseResourceTable
             TextColumn::make('available_at')->dateTime()->sortable(),
             TextColumn::make('created_at')->dateTime()->sortable(),
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\Column;
@@ -67,7 +70,10 @@ class JobsTable extends XotBaseResourceTable
         return [
             'view' => ViewAction::make(),
             'delete' => DeleteAction::make(),
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
         ];
     }
 }
