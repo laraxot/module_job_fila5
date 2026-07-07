@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\JobBatchResource\Schemas;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
@@ -22,6 +23,8 @@ class JobBatchForm extends XotBaseResourceForm
      *
      * @return array<string, Component>
 =======
+=======
+>>>>>>> origin/dev
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -31,11 +34,15 @@ class JobBatchForm extends XotBaseResourceForm
 {
     /**
      * @return array<int|string, Component>
+<<<<<<< HEAD
 >>>>>>> 40b96bcd6 (.)
+=======
+>>>>>>> origin/dev
      */
     public static function getFormSchema(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
             'id' => TextInput::make('id')->required()->maxLength(255),
             'name' => TextInput::make('name')->required()->maxLength(255),
@@ -52,6 +59,11 @@ class JobBatchForm extends XotBaseResourceForm
                 'name' => TextInput::make('name'),
             ]),
 >>>>>>> 40b96bcd6 (.)
+=======
+            Section::make([
+                'name' => TextInput::make('name'),
+            ]),
+>>>>>>> origin/dev
         ];
     }
 }

@@ -5,12 +5,20 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
 use Closure;
+<<<<<<< HEAD
+=======
+use Filament\Actions\ActionGroup;
+>>>>>>> origin/dev
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> origin/dev
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\ScheduleResource;
@@ -46,6 +54,7 @@ class ListSchedules extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
     public function getListTableActions(): array
     {
         return [
@@ -58,16 +67,45 @@ class ListSchedules extends XotBaseListRecords
                 'filament-support::actions/force-delete.single.label',
             )),
             ViewAction::make()
+=======
+    /**
+     * @return array<string, EditAction|RestoreAction|DeleteAction|ForceDeleteAction|ViewAction|ActionGroup>
+     */
+    #[Override]
+    public function getTableActions(): array
+    {
+        return [
+            'edit' => EditAction::make()
+                ->hidden(static fn (Schedule $record): bool => $record->deleted_at !== null)
+                ->tooltip(__('filament-support::actions/edit.single.label')),
+            'restore' => RestoreAction::make()->tooltip(__('filament-support::actions/restore.single.label')),
+            'delete' => DeleteAction::make()->tooltip(__('filament-support::actions/delete.single.label')),
+            'forceDelete' => ForceDeleteAction::make()->tooltip(__(
+                'filament-support::actions/force-delete.single.label',
+            )),
+            'history' => ViewAction::make()
+>>>>>>> origin/dev
                 ->icon('history')
                 ->color('gray')
                 ->tooltip(static::trans('buttons.history')),
         ];
     }
 
+<<<<<<< HEAD
     public function getListTableBulkActions(): array
     {
         return [
             DeleteBulkAction::make(),
+=======
+    /**
+     * @return array<string, DeleteBulkAction>
+     */
+    #[Override]
+    public function getTableBulkActions(): array
+    {
+        return [
+            'delete' => DeleteBulkAction::make(),
+>>>>>>> origin/dev
         ];
     }
 

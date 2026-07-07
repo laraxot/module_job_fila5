@@ -24,12 +24,29 @@ class Crud extends Component
 
     /**
      * Return available frequencies.
+<<<<<<< HEAD
+=======
+     *
+     * @return array<string, mixed>
+>>>>>>> origin/dev
      */
     public static function getFrequencies(): array
     {
         $res = config('totem.frequencies');
         if (is_array($res)) {
+<<<<<<< HEAD
             return $res;
+=======
+            $frequencies = [];
+            foreach ($res as $key => $value) {
+                if (! is_string($key)) {
+                    continue;
+                }
+                $frequencies[$key] = $value;
+            }
+
+            return $frequencies;
+>>>>>>> origin/dev
         }
 
         throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
@@ -59,6 +76,11 @@ class Crud extends Component
 
     /**
      * Return collection of Artisan commands filtered if needed.
+<<<<<<< HEAD
+=======
+     *
+     * @return Collection<string, Command>
+>>>>>>> origin/dev
      */
     public function getCommands(): Collection
     {
