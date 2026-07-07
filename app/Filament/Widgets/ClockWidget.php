@@ -28,25 +28,25 @@ class ClockWidget extends Widget
 
     public function begin(): void
     {
-        // @var mixed beginProcess(;
+        $this->beginProcess();
     }
 
     public function beginProcess(): void
     {
-        // @var mixed time = '';
+        $this->time = '';
         $process = Process::path(base_path())->start('php artisan queue:listen --timeout=0');
         while ($process->running()) {
             // ...
-            // @var mixed stream(
+            $this->stream(
                 to: 'count',
-                content: // @var mixed time,
+                content: $this->time,
                 replace: true,
             );
             // Pause for 1 second between numbers...
             sleep(3);
             // se no troppe richieste
 
-            // @var mixed time .= $process->latestOutput(;
+            $this->time .= $process->latestOutput();
         }
 
         $process->wait();
@@ -54,7 +54,7 @@ class ClockWidget extends Widget
 
     public function beginStream(): void
     {
-        // @var mixed run = ! $this->run;
+        $this->run = ! $this->run;
         // $output = new BufferedOutput();
         /*
          * $output = new class() extends StreamOutput {
@@ -92,11 +92,11 @@ class ClockWidget extends Widget
         // dddx($output);
         // dddx($output->fetch());
         /*
-         * while (// @var mixed run
+         * while ($this->run) {
          * // Stream the current count to the browser...
-         * // @var mixed stream(
+         * $this->stream(
          * to: 'count',
-         * content: // @var mixed time,
+         * content: $this->time,
          * replace: true,
          * );
          *
@@ -104,8 +104,8 @@ class ClockWidget extends Widget
          * sleep(1);
          *
          * // Decrement the counter...
-         * // // @var mixed time = (string;
-         * // @var mixed time = $output->fetch(;
+         * // $this->time = (string) Carbon::now()->format('H:i:s');
+         * $this->time = $output->fetch().PHP_EOL;
          * }
          */
     }
