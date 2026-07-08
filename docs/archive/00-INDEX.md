@@ -1,11 +1,9 @@
-<<<<<<< HEAD
 # 📚 JOB Module - Documentation Index
 
 **Path**: `laravel/Modules/Job/docs/`  
 **Modulo**: @Modules/Job
 
 ## 📄 Documenti
-=======
 # 📚 **Indice Documentazione Modulo Job**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -17,7 +15,6 @@
 3. [philosophy.md](./philosophy.md) - La gestione "Zen" dei flussi asincroni.
 
 ## 📋 **Documenti Prodotto & Sviluppo**
->>>>>>> laraxot/dev
 
 ### Product
 | File | Scopo |
@@ -34,7 +31,6 @@
 | SPRINT_PLANNING.md | Sprint Planning |
 | USER_RESEARCH.md | User Research |
 
-<<<<<<< HEAD
 ## 🔗 Riferimenti
 
 - [Directory Structure Rules](directory-structure-rules.md) - vietati `lang/lang/` e `_docs/`
@@ -44,7 +40,6 @@
 ---
 
 **Ultimo Aggiornamento**: 2026-03-24
-=======
 ## 🏗️ **Core Logic & Services**
 - ⚡ **[Queue Management](./queueable-action.md)** - Guida alla gestione delle code e dei worker.
 - 🕒 **[Scheduling System](./schedule.md)** - Configurazione di cron job e task pianificati.
@@ -75,4 +70,3 @@
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
->>>>>>> laraxot/dev
