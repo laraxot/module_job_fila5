@@ -11,11 +11,7 @@ trait FrontendSortable
     /**
      * @param  Builder<static>  $query
      * @param  array<string>  $sortableColumns
-<<<<<<< HEAD
      * @param  array<string, 'asc'|'desc'>  $defaultSort
-=======
-     * @param  array<string, string>  $defaultSort
->>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function scopeSortableBy(
