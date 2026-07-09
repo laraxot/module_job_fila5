@@ -28,6 +28,9 @@ class JobsTable extends XotBaseResourceTable
         ];
     }
 
+    /**
+     * @return array<string, \Filament\Tables\Filters\SelectFilter>
+     */
     public function getTableFilters(): array
     {
         return [
@@ -40,6 +43,9 @@ class JobsTable extends XotBaseResourceTable
         ];
     }
 
+    /**
+     * @return array<int|string, \Filament\Actions\Action>
+     */
     public function getTableActions(): array
     {
         return [
