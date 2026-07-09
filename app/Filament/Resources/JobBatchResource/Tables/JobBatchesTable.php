@@ -32,6 +32,9 @@ class JobBatchesTable extends XotBaseResourceTable
         ];
     }
 
+    /**
+     * @return array<string, Action>
+     */
     public function getTableHeaderActions(): array
     {
         return [
@@ -48,6 +51,9 @@ class JobBatchesTable extends XotBaseResourceTable
         ];
     }
 
+    /**
+     * @return array<int|string, \Filament\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [

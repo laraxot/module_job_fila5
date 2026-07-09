@@ -25,6 +25,9 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
+    /**
+     * @return array<string, TextColumn>
+     */
     #[Override]
     public function getTableColumns(): array
     {
