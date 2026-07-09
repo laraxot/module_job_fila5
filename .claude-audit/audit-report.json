@@ -1,15 +1,15 @@
 {
   "version": "0.2.2",
-  "timestamp": "2026-07-09T18:44:14.489Z",
+  "timestamp": "2026-07-09T19:26:09.331Z",
   "project": {
     "name": "Job",
     "path": "/var/www/_bases/base_fixcity_fila5/laravel/Modules/Job",
     "languages": {
-      "Markdown": 369,
+      "Markdown": 345,
       "JSON": 11,
       "YAML": 4,
       "XML": 3,
-      "PHP": 551,
+      "PHP": 504,
       "JavaScript": 6,
       "Shell": 1,
       "HTML": 7,
@@ -18,8 +18,8 @@
     "frameworks": [
       "TailwindCSS"
     ],
-    "totalFiles": 953,
-    "totalLines": 58643,
+    "totalFiles": 882,
+    "totalLines": 56135,
     "hasTests": true,
     "hasDependencyFile": true,
     "dependencyFile": "package.json",
@@ -101,5 +101,5 @@
   "mediumCount": 0,
   "lowCount": 0,
   "aiPowered": false,
-  "durationMs": 427
+  "durationMs": 237
 }

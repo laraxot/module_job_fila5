@@ -4,6 +4,10 @@
 
 @php
 // Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
 // Job Blade view — see Modules/Job/docs/wiki.
 // Job Blade view — see Modules/Job/docs/wiki.
 // Job Blade view — see Modules/Job/docs/wiki.

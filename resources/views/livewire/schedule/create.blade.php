@@ -6,6 +6,10 @@
 // Job Blade view — see Modules/Job/docs/wiki.
 @endphp
 
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
 <?php
 
 declare(strict_types=1);
