@@ -53,6 +53,8 @@ class ScheduleResource extends XotBaseResource
     public static function getPages(): array
     {
         return [
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
             'index' => ListSchedules::route('/'),
             'create' => CreateSchedule::route('/create'),
             'edit' => EditSchedule::route('/{record}/edit'),

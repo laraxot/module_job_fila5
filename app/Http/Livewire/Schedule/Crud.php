@@ -79,23 +79,6 @@ class Crud extends Component
         /** @var Collection<string, Command> $all_commands */
         $all_commands = collect(Artisan::all());
 
-        /*
-         * if (! empty($command_filter)) {
-         * // $all_commands = $all_commands->filter(function (Command $command) use ($command_filter, $whitelist) {
-         * $all_commands = $all_commands->filter(
-         * function ($command) use ($command_filter, $whitelist) {
-         * foreach ($command_filter as $filter) {
-         * if (fnmatch($filter, $command->getName())) {
-         * return $whitelist;
-         * }U/Notifications/VerifyEmail.php
-         * }
-         *
-         * return ! $whitelist;
-         * }
-         * );
-         * }
-         */
-
         return $all_commands->sortBy(
             static function (Command $command): string {
                 Assert::string($name = $command->getName());

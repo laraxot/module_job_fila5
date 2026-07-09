@@ -1,3 +1,15 @@
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
 <?php
 
 declare(strict_types=1);
@@ -18,6 +30,16 @@ declare(strict_types=1);
     'type' => 'button',
     'labelSrOnly' => false,
 ])
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot — see module docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
 
 @php
     $buttonClasses = array_merge(
