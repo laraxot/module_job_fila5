@@ -1,3 +1,15 @@
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
 <?php
 
 declare(strict_types=1);
@@ -18,6 +30,24 @@ declare(strict_types=1);
                 <input class="uk-input" placeholder="e.g. Daily Backups" name="description" id="description"
                     value="{{ old('description', $task->description) }}" type="text">
                 @if ($errors->has('description'))
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot — see module docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
+// Laraxot module file — see docs/wiki for domain contract.
                     <p class="uk-text-danger">{{ $errors->first('description') }}</p>
                 @endif
             </div>

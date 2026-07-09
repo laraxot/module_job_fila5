@@ -23,6 +23,9 @@ class JobManagersTable extends XotBaseResourceTable
         ];
     }
 
+    /**
+     * @return array<int|string, \Filament\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [
