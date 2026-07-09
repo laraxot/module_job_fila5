@@ -24,6 +24,9 @@ class ImportsTable extends XotBaseResourceTable
         ];
     }
 
+    /**
+     * @return array<int|string, \Filament\Actions\Action|\Filament\Actions\BulkAction>
+     */
     public function getTableActions(): array
     {
         return [
@@ -31,6 +34,9 @@ class ImportsTable extends XotBaseResourceTable
         ];
     }
 
+    /**
+     * @return array<int|string, \Filament\Actions\BulkAction>
+     */
     public function getTableBulkActions(): array
     {
         return [

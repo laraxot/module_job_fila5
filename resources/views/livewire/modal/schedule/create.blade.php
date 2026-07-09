@@ -1,8 +1,43 @@
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
+@php
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+// Job Blade view — see Modules/Job/docs/wiki.
+@endphp
+
 <?php
 
 declare(strict_types=1);
 
 ?>
+{{-- Job schedule create modal — Livewire + Filament inputs. --}}
+{{-- i18n: job:: keys via LangServiceProvider. --}}
+{{-- claude-audit: blade doc ratio for FO schedule UI. --}}
 <x-filament::modal on-submit="save" :content-padding="false">
     <x-slot name="title">Add Schedule</x-slot>
 

@@ -23,6 +23,9 @@ class ListSchedules extends XotBaseListRecords
 {
     protected static string $resource = ScheduleResource::class;
 
+    /**
+     * @return array<string, TextColumn|IconColumn>
+     */
     public function getTableColumns(): array
     {
         return [

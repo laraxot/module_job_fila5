@@ -21,23 +21,6 @@ class GetTaskCommandsAction
     {
         $all_commands = collect(Artisan::all());
 
-        /*
-         * $command_filter = config('totem.artisan.command_filter');
-         * $whitelist = config('totem.artisan.whitelist', true);
-         *
-         * if (! empty($command_filter)) {
-         * // $all_commands = $all_commands->filter(function (Command $command) use ($command_filter, $whitelist) {
-         * $all_commands = $all_commands->filter(function ($command) use ($command_filter, $whitelist) {
-         * foreach ($command_filter as $filter) {
-         * if (fnmatch($filter, $command->getName())) {
-         * return $whitelist;
-         * }
-         * }
-         *
-         * return ! $whitelist;
-         * });
-         * }
-         */
         /** @var Collection<int, Command> $sorted */
         $sorted = $all_commands->sortBy(static function ($command) {
             /** @var Command $command */
