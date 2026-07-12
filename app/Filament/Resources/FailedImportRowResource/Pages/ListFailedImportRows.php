@@ -13,13 +13,17 @@ class ListFailedImportRows extends XotBaseListRecords
 {
     protected static string $resource = FailedImportRowResource::class;
 
+<<<<<<< HEAD
     /**
      * @return array<string, TextColumn>
      */
     #[Override]
+=======
+>>>>>>> abc6eb3 (.)
     /**
-     * @return array<string, mixed>
+     * @return array<string, TextColumn>
      */
+    #[Override]
     public function getTableColumns(): array
     {
         return [
