@@ -12,7 +12,7 @@ use Modules\Job\Models\Task;
 /**
  * @phpstan-require-extends Model
  */
-interface TaskInterface
+interface TaskContract
 {
     /**
      * Returns Eloquent Builder.
