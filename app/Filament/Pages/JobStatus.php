@@ -6,6 +6,8 @@ namespace Modules\Job\Filament\Pages;
 
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Filament\Widgets\ClockWidget;
+use Modules\Job\Actions\Console\AssertAllowedArtisanCommandAction;
+use Modules\Job\Actions\Console\GetJobStatusCommandsAction;
 use Modules\Xot\Filament\Pages\XotBasePage;
 
 class JobStatus extends XotBasePage
@@ -23,6 +25,8 @@ class JobStatus extends XotBasePage
 
     public function artisan(string $cmd): void
     {
+        app(AssertAllowedArtisanCommandAction::class)->execute($cmd, app(GetJobStatusCommandsAction::class)->execute());
+
         $this->out = '';
         Artisan::call($cmd);
         $this->out .= Artisan::output();

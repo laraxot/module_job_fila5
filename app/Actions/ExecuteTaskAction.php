@@ -4,7 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions;
 
+use Illuminate\Support\Facades\Artisan;
+use Modules\Job\Models\Task;
 use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 class ExecuteTaskAction
 {
@@ -12,10 +15,15 @@ class ExecuteTaskAction
 
     public function execute(string $taskId): string
     {
-        // TODO: Implement task execution
-        // See ROADMAP-2026.md Phase 1 - Critical Fixes
-        throw new \BadMethodCallException(
-            'Method ExecuteTaskAction::execute() not implemented yet. See ROADMAP-2026.md'
-        );
+        $task = Task::query()->findOrFail($taskId);
+        $command = $task->command;
+        Assert::stringNotEmpty($command, '['.__LINE__.']['.class_basename($this).']');
+
+        $registered = array_keys(Artisan::all());
+        Assert::inArray($command, $registered, sprintf('Command [%s] is not registered.', $command));
+
+        Artisan::call($command, $task->compileParameters());
+
+        return Artisan::output();
     }
 }
