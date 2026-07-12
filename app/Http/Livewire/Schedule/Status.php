@@ -9,6 +9,8 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Livewire\Component;
+use Modules\Job\Actions\Console\AssertAllowedArtisanCommandAction;
+use Modules\Job\Actions\Console\GetScheduleStatusCommandsAction;
 use Modules\Xot\Actions\GetViewAction;
 
 /**
@@ -72,6 +74,8 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
+        app(AssertAllowedArtisanCommandAction::class)->execute($cmd, app(GetScheduleStatusCommandsAction::class)->execute());
+
         $this->out .= '<hr/>';
         Artisan::call($cmd);
         $this->out .= Artisan::output();

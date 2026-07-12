@@ -178,5 +178,14 @@ _docs/
 docs/archive/agentdb.rvf
 lang/lang
 docs/archived/
+<<<<<<< HEAD
 tests/AuditCoverage
 docs/legacy
+=======
+tests/AuditCoverage/*
+docs/legacy
+
+# claude-audit bridge (non committare)
+audit-coverage/
+tests/AuditCoverage/*
+>>>>>>> abc6eb3 (.)
