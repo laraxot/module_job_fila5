@@ -25,13 +25,6 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-    /**
-     * @return array<string, TextColumn>
-     */
-    #[Override]
-=======
->>>>>>> abc6eb3 (.)
     /**
      * @return array<string, TextColumn>
      */
