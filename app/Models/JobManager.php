@@ -167,10 +167,7 @@ class JobManager extends BaseModel
             return static::query()->where('created_at', '<=', now()->subDays($retention_days));
         }
 
-        /** @var Builder<static> $query */
-        $query = static::query();
-
-        return $query;
+        return static::query()->whereRaw('1 = 0');
     }
 
     #[Override]
