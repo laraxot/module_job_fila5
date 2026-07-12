@@ -9,9 +9,12 @@ use Illuminate\Support\Collection;
 use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
 use Symfony\Component\Console\Command\Command;
+use Spatie\QueueableAction\QueueableAction;
 
 class GetCommandsAction
 {
+    use QueueableAction;
+
     /**
      * Execute the action.
      *
