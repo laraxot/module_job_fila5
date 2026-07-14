@@ -18,24 +18,6 @@
 | | | | |/|/| |M|O|D|E|L| |I|N|F|O|R|M|A|T|I|O|N|
 | | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 | | | | |'|m|o|d|e|l|'| |=|>| |[|
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot â€” see module docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
-// Laraxot module file â€” see docs/wiki for domain contract.
 | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|J|o|b|'|,|
 | | | | | | | | |'|p|l|u|r|a|l|'| |=|>| |'|J|o|b|'|,|
 | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|P|r|o|c|e|s|s|i| |i|n| |b|a|c|k|g|r|o|u|n|d| |e| |c|o|d|e| |d|i| |e|l|a|b|o|r|a|z|i|o|n|e|'|,|
@@ -53,8 +35,8 @@
 | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|d|a|'|,|
 | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |i|l| |n|o|m|e| |d|e|l|l|a| |c|o|d|a|'|,|
 | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|N|o|m|e| |d|e|l|l|a| |c|o|d|a| |d|i| |e|l|a|b|o|r|a|z|i|o|n|e|'|,|
-| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|C|o|d|a| |s|p|e|c|i|f|i|c|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ãƒ|Â¨| |s|t|a|t|o| |a|c|c|o|d|a|t|o| |p|e|r| |l||'|e|l|a|b|o|r|a|z|i|o|n|e|'|,|
-| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|p|e|c|i|f|i|c|a| |l|a| |c|o|d|a| |d|i| |p|r|i|o|r|i|t|Ãƒ|Â | |p|e|r| |l||'|e|l|a|b|o|r|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|C|o|d|a| |s|p|e|c|i|f|i|c|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |a|c|c|o|d|a|t|o| |p|e|r| |l||'|e|l|a|b|o|r|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|p|e|c|i|f|i|c|a| |l|a| |c|o|d|a| |d|i| |p|r|i|o|r|i|t|Ã| | |p|e|r| |l||'|e|l|a|b|o|r|a|z|i|o|n|e|'|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|p|a|y|l|o|a|d|'| |=|>| |[|
 | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|a|y|l|o|a|d|'|,|
@@ -67,25 +49,25 @@
 | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|T|e|n|t|a|t|i|v|i|'|,|
 | | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|N|u|m|e|r|o| |d|i| |t|e|n|t|a|t|i|v|i|'|,|
 | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|N|u|m|e|r|o| |d|i| |t|e|n|t|a|t|i|v|i| |d|i| |e|s|e|c|u|z|i|o|n|e|'|,|
-| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|N|u|m|e|r|o| |d|i| |v|o|l|t|e| |c|h|e| |i|l| |j|o|b| |Ãƒ|Â¨| |s|t|a|t|o| |t|e|n|t|a|t|o| |d|i| |e|s|e|g|u|i|r|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|N|u|m|e|r|o| |d|i| |v|o|l|t|e| |c|h|e| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |t|e|n|t|a|t|o| |d|i| |e|s|e|g|u|i|r|e|'|,|
 | | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|n|d|i|c|a| |q|u|a|n|t|e| |v|o|l|t|e| |i|l| |j|o|b| |h|a| |t|e|n|t|a|t|o| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|r|e|s|e|r|v|e|d|_|a|t|'| |=|>| |[|
 | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|R|i|s|e|r|v|a|t|o| |a|l|l|e|'|,|
 | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|i| |r|i|s|e|r|v|a| |d|e|l| |j|o|b|'|,|
-| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ãƒ|Â¨| |s|t|a|t|o| |r|i|s|e|r|v|a|t|o| |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |r|i|s|e|r|v|a|t|o| |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|'| |=|>| |[|
 | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|i|s|p|o|n|i|b|i|l|e| |a|l|l|e|'|,|
-| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|D|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ãƒ|Â |'|,|
-| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ãƒ|Â | |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|D|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| |'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| | |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
 | | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |d|i|v|e|n|t|a| |d|i|s|p|o|n|i|b|i|l|e| |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
-| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|p|e|c|i|f|i|c|a| |q|u|a|n|d|o| |i|l| |j|o|b| |p|u|Ãƒ|Â²| |e|s|s|e|r|e| |e|l|a|b|o|r|a|t|o|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|p|e|c|i|f|i|c|a| |q|u|a|n|d|o| |i|l| |j|o|b| |p|u|Ã|²| |e|s|s|e|r|e| |e|l|a|b|o|r|a|t|o|'|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|c|r|e|a|t|e|d|_|a|t|'| |=|>| |[|
 | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|a|t|a| |C|r|e|a|z|i|o|n|e|'|,|
 | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|i| |c|r|e|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
-| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ãƒ|Â¨| |s|t|a|t|o| |c|r|e|a|t|o| |n|e|l| |s|i|s|t|e|m|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |c|r|e|a|t|o| |n|e|l| |s|i|s|t|e|m|a|'|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|u|p|d|a|t|e|d|_|a|t|'| |=|>| |[|
 | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|U|l|t|i|m|a| |M|o|d|i|f|i|c|a|'|,|
@@ -110,7 +92,7 @@
 | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
 | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |c|r|e|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
-| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ãƒ|Â¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l|a| |c|r|e|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l|a| |c|r|e|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
 | | | | | | | | | | | | |]|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|e|d|i|t|'| |=|>| |[|
@@ -126,7 +108,7 @@
 | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
 | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |m|o|d|i|f|i|c|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
-| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ãƒ|Â¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l|a| |m|o|d|i|f|i|c|a| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l|a| |m|o|d|i|f|i|c|a| |d|e|l| |j|o|b|'|,|
 | | | | | | | | | | | | |]|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|d|e|l|e|t|e|'| |=|>| |[|
@@ -136,13 +118,13 @@
 | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|E|l|i|m|i|n|a| |i|l| |j|o|b| |s|e|l|e|z|i|o|n|a|t|o|'|,|
 | | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
 | | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|E|l|i|m|i|n|a| |J|o|b|'|,|
-| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |q|u|e|s|t|o| |j|o|b|?| |Q|u|e|s|t|a| |a|z|i|o|n|e| |Ãƒ|Â¨| |i|r|r|e|v|e|r|s|i|b|i|l|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |q|u|e|s|t|o| |j|o|b|?| |Q|u|e|s|t|a| |a|z|i|o|n|e| |Ã|¨| |i|r|r|e|v|e|r|s|i|b|i|l|e|.|'|,|
 | | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|E|l|i|m|i|n|a|'|,|
 | | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
 | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
 | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |e|l|i|m|i|n|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
-| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ãƒ|Â¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|e|l|i|m|i|n|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|e|l|i|m|i|n|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
 | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |'|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |q|u|e|s|t|o| |j|o|b|?|'|,|
 | | | | | | | | |]|,|
@@ -159,7 +141,7 @@
 | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
 | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|o| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
-| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ãƒ|Â¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |i|l| |r|i|n|v|i|o| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |i|l| |r|i|n|v|i|o| |d|e|l| |j|o|b|'|,|
 | | | | | | | | | | | | |]|,|
 | | | | | | | | |]|,|
 | | | | | | | | |'|v|i|e|w|'| |=|>| |[|
@@ -176,13 +158,13 @@
 | | | | | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|E|l|i|m|i|n|a| |t|u|t|t|i| |i| |j|o|b| |s|e|l|e|z|i|o|n|a|t|i|'|,|
 | | | | | | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
 | | | | | | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|E|l|i|m|i|n|a| |J|o|b| |S|e|l|e|z|i|o|n|a|t|i|'|,|
-| | | | | | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |i| |j|o|b| |s|e|l|e|z|i|o|n|a|t|i|?| |Q|u|e|s|t|a| |a|z|i|o|n|e| |Ãƒ|Â¨| |i|r|r|e|v|e|r|s|i|b|i|l|e|.|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |i| |j|o|b| |s|e|l|e|z|i|o|n|a|t|i|?| |Q|u|e|s|t|a| |a|z|i|o|n|e| |Ã|¨| |i|r|r|e|v|e|r|s|i|b|i|l|e|.|'|,|
 | | | | | | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|E|l|i|m|i|n|a| |t|u|t|t|i|'|,|
 | | | | | | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
 | | | | | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
 | | | | | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |e|l|i|m|i|n|a|t|i| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
-| | | | | | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ãƒ|Â¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|e|l|i|m|i|n|a|z|i|o|n|e| |d|e|i| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|e|l|i|m|i|n|a|z|i|o|n|e| |d|e|i| |j|o|b|'|,|
 | | | | | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |'|r|e|t|r|y|'| |=|>| |[|
@@ -198,7 +180,7 @@
 | | | | | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
 | | | | | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|i| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
-| | | | | | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ãƒ|Â¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |i|l| |r|i|n|v|i|o| |d|e|i| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |i|l| |r|i|n|v|i|o| |d|e|i| |j|o|b|'|,|
 | | | | | | | | | | | | | | | | |]|,|
 | | | | | | | | | | | | |]|,|
 | | | | | | | | |]|,|
@@ -263,7 +245,7 @@
 | | | | | | | | |'|r|e|t|r|i|e|d|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|o| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
 | | | | | | | | |'|b|u|l|k|_|d|e|l|e|t|e|d|'| |=|>| |'|J|o|b| |e|l|i|m|i|n|a|t|i| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
 | | | | | | | | |'|b|u|l|k|_|r|e|t|r|i|e|d|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|i| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
-| | | | | | | | |'|e|r|r|o|r|_|g|e|n|e|r|a|l|'| |=|>| |'|S|i| |Ãƒ|Â¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e|.| |R|i|p|r|o|v|a| |p|i|Ãƒ|Â¹| |t|a|r|d|i|.|'|,|
+| | | | | | | | |'|e|r|r|o|r|_|g|e|n|e|r|a|l|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e|.| |R|i|p|r|o|v|a| |p|i|Ã|¹| |t|a|r|d|i|.|'|,|
 | | | | | | | | |'|e|r|r|o|r|_|v|a|l|i|d|a|t|i|o|n|'| |=|>| |'|S|i| |s|o|n|o| |v|e|r|i|f|i|c|a|t|i| |e|r|r|o|r|i| |d|i| |v|a|l|i|d|a|z|i|o|n|e|.|'|,|
 | | | | | | | | |'|e|r|r|o|r|_|p|e|r|m|i|s|s|i|o|n|'| |=|>| |'|N|o|n| |h|a|i| |i| |p|e|r|m|e|s|s|i| |p|e|r| |e|s|e|g|u|i|r|e| |q|u|e|s|t|a| |a|z|i|o|n|e|.|'|,|
 | | | | | | | | |'|s|u|c|c|e|s|s|_|o|p|e|r|a|t|i|o|n|'| |=|>| |'|O|p|e|r|a|z|i|o|n|e| |c|o|m|p|l|e|t|a|t|a| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
@@ -272,12 +254,12 @@
 | | | | |/|/| |V|A|L|I|D|A|T|I|O|N| |-| |M|E|S|S|A|G|G|I| |D|I| |V|A|L|I|D|A|Z|I|O|N|E|
 | | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 | | | | |'|v|a|l|i|d|a|t|i|o|n|'| |=|>| |[|
-| | | | | | | | |'|q|u|e|u|e|_|r|e|q|u|i|r|e|d|'| |=|>| |'|L|a| |c|o|d|a| |Ãƒ|Â¨| |o|b|b|l|i|g|a|t|o|r|i|a|'|,|
-| | | | | | | | |'|p|a|y|l|o|a|d|_|r|e|q|u|i|r|e|d|'| |=|>| |'|I|l| |p|a|y|l|o|a|d| |Ãƒ|Â¨| |o|b|b|l|i|g|a|t|o|r|i|o|'|,|
+| | | | | | | | |'|q|u|e|u|e|_|r|e|q|u|i|r|e|d|'| |=|>| |'|L|a| |c|o|d|a| |Ã|¨| |o|b|b|l|i|g|a|t|o|r|i|a|'|,|
+| | | | | | | | |'|p|a|y|l|o|a|d|_|r|e|q|u|i|r|e|d|'| |=|>| |'|I|l| |p|a|y|l|o|a|d| |Ã|¨| |o|b|b|l|i|g|a|t|o|r|i|o|'|,|
 | | | | | | | | |'|a|t|t|e|m|p|t|s|_|n|u|m|e|r|i|c|'| |=|>| |'|I| |t|e|n|t|a|t|i|v|i| |d|e|v|o|n|o| |e|s|s|e|r|e| |n|u|m|e|r|i|c|i|'|,|
 | | | | | | | | |'|a|t|t|e|m|p|t|s|_|m|i|n|'| |=|>| |'|I| |t|e|n|t|a|t|i|v|i| |d|e|v|o|n|o| |e|s|s|e|r|e| |a|l|m|e|n|o| |:|m|i|n|'|,|
-| | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|_|r|e|q|u|i|r|e|d|'| |=|>| |'|L|a| |d|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ãƒ|Â | |Ãƒ|Â¨| |o|b|b|l|i|g|a|t|o|r|i|a|'|,|
-| | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|_|a|f|t|e|r|'| |=|>| |'|L|a| |d|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ãƒ|Â | |d|e|v|e| |e|s|s|e|r|e| |f|u|t|u|r|a|'|,|
+| | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|_|r|e|q|u|i|r|e|d|'| |=|>| |'|L|a| |d|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| | |Ã|¨| |o|b|b|l|i|g|a|t|o|r|i|a|'|,|
+| | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|_|a|f|t|e|r|'| |=|>| |'|L|a| |d|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| | |d|e|v|e| |e|s|s|e|r|e| |f|u|t|u|r|a|'|,|
 | | | | |]|,|
 | | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
 | | | | |/|/| |D|E|S|C|R|I|P|T|I|O|N|S| |-| |D|E|S|C|R|I|Z|I|O|N|I| |C|O|N|T|E|S|T|U|A|L|I|
@@ -294,8 +276,8 @@
 | | | | |'|o|p|t|i|o|n|s|'| |=|>| |[|
 | | | | | | | | |'|q|u|e|u|e|s|'| |=|>| |[|
 | | | | | | | | | | | | |'|d|e|f|a|u|l|t|'| |=|>| |'|D|e|f|a|u|l|t|'|,|
-| | | | | | | | | | | | |'|h|i|g|h|'| |=|>| |'|A|l|t|a| |P|r|i|o|r|i|t|Ãƒ|Â |'|,|
-| | | | | | | | | | | | |'|l|o|w|'| |=|>| |'|B|a|s|s|a| |P|r|i|o|r|i|t|Ãƒ|Â |'|,|
+| | | | | | | | | | | | |'|h|i|g|h|'| |=|>| |'|A|l|t|a| |P|r|i|o|r|i|t|Ã| |'|,|
+| | | | | | | | | | | | |'|l|o|w|'| |=|>| |'|B|a|s|s|a| |P|r|i|o|r|i|t|Ã| |'|,|
 | | | | | | | | | | | | |'|e|m|a|i|l|s|'| |=|>| |'|E|m|a|i|l|'|,|
 | | | | | | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|s|'| |=|>| |'|N|o|t|i|f|i|c|h|e|'|,|
 | | | | | | | | | | | | |'|r|e|p|o|r|t|s|'| |=|>| |'|R|e|p|o|r|t|'|,|
