@@ -1,3 +1,14 @@
+---
+title: "PHPStan Fixes — Job"
+module: "Job"
+type: concept
+tags: [phpstan, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 <<<<<<< HEAD
 # PHPStan Fixes — Job
 

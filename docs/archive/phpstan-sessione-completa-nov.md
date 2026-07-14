@@ -1,3 +1,14 @@
+---
+title: "Sessione PHPStan Completa - Tutti i Moduli"
+module: "Job"
+type: concept
+tags: [phpstan, sessione, completa, nov]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan sessione completa nov"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 <<<<<<< HEAD
 ---
 module: theme

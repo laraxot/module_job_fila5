@@ -1,3 +1,14 @@
+---
+title: "MCP Server Consigliati per il Modulo Job"
+module: "Job"
+type: concept
+tags: [mcp, server, recommended]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "mcp server recommended"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 <<<<<<< HEAD
 <<<<<<< HEAD
 ---

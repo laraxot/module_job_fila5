@@ -1,3 +1,14 @@
+---
+title: "Links 1"
+module: "Job"
+type: concept
+tags: [links, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links 1"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 

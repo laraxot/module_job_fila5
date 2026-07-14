@@ -1,3 +1,14 @@
+---
+title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
+module: "Job"
+type: concept
+tags: [phpstan, fixes, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan fixes conflict"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Status**: ✅ COMPLETATO CON SUCCESSO

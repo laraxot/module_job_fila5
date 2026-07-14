@@ -1,3 +1,14 @@
+---
+title: "CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH"
+module: "Job"
+type: rule
+tags: [rules, testing, no, migrate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "rules testing no migrate fresh"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 <<<<<<< HEAD
 ---
 module: theme

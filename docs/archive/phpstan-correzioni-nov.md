@@ -1,3 +1,14 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo Job"
+module: "Job"
+type: concept
+tags: [phpstan, correzioni, nov]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan correzioni nov"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 <<<<<<< HEAD
 ---
 module: theme
