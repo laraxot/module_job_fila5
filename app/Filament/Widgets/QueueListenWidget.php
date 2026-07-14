@@ -9,19 +9,21 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Widgets;
 
 use Exception;
-use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Process;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Symfony\Component\Console\Output\StreamOutput;
 
 use function Safe\fopen;
 
-class QueueListenWidget extends Widget
+class QueueListenWidget extends XotBaseWidget
 {
     public string $time = '---';
 
     public bool $run = false;
 
+    /** @var view-string */
+    /** @phpstan-ignore property.defaultValue */
     protected string $view = 'job::filament.widgets.queue-listen';
 
     protected int|string|array $columnSpan = 'full';
