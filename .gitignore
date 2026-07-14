@@ -180,3 +180,6 @@ lang/lang
 audit-coverage/
 tests/AuditCoverage/
 .claude-audit/
+.vscode/
+.devcontainer/
+.vscode/

@@ -28,6 +28,9 @@ class ListJobs extends XotBaseListRecords
     #[Override]
     public function getTableColumns(): array
     {
+        /** @phpstan-var view-string */
+        $payloadArrayView = 'job::filament.tables.columns.array';
+
         return [
             'id' => TextColumn::make('id')->searchable()->sortable(),
             'queue' => TextColumn::make('queue')->searchable()->sortable(),
@@ -43,7 +46,7 @@ class ListJobs extends XotBaseListRecords
             'reserved_at' => TextColumn::make('reserved_at')->dateTime()->sortable(),
             'available_at' => TextColumn::make('available_at')->dateTime()->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'payload_view' => ViewColumn::make('payload')->view('job::filament.tables.columns.array'),
+            'payload_view' => ViewColumn::make('payload')->view($payloadArrayView),
         ];
     }
 
