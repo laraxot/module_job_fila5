@@ -1,3 +1,14 @@
+---
+title: "Modulo Job"
+module: "Job"
+type: concept
+tags: [module, job, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module job 1"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Modulo Job
 
 ## Informazioni Generali
