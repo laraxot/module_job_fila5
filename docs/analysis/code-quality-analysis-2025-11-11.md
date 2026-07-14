@@ -1,3 +1,14 @@
+---
+title: "⚙️ Job Module - Code Quality Analysis Report"
+module: "Job"
+type: concept
+tags: [code, quality, analysis, 2025]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality analysis 2025 11 11"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
