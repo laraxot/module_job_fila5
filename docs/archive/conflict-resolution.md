@@ -1,3 +1,14 @@
+---
+title: "Conflict Resolution — Module Job"
+module: "Job"
+type: concept
+tags: [conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Conflict Resolution — Module Job
 
 ## Summary
