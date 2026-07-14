@@ -8,7 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobManagerResource\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\JobManager;
