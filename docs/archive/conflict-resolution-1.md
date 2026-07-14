@@ -1,3 +1,14 @@
+---
+title: "Risoluzione Conflitti Git - Modulo Job"
+module: "Job"
+type: concept
+tags: [conflict, resolution, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution 1"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Risoluzione Conflitti Git - Modulo Job
 
 ## Panoramica

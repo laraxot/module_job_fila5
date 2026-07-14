@@ -1,3 +1,14 @@
+---
+title: "Merge Conflict Files List"
+module: "Job"
+type: concept
+tags: [merge, conflict, files, list]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "merge conflict files list"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 <<<<<<< HEAD
 ---
 module: theme
