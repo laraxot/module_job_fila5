@@ -1,7 +1,16 @@
 ---
-module: theme
-topic: dry-kiss-analysis-2025-10-15
-canonical: ../../../../Themes/docs/shared-components/dry-kiss-analysis-.md
+title: "Dry Kiss Analysis"
+type: concept
+status: deprecated
+module: "Job"
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "deprecated dry-kiss-analysis"
+related:
+  - "./dry-kiss-analysis.md"
 ---
+# Dry Kiss Analysis
 
-See canonical documentation: ../../../../Themes/docs/shared-components/dry-kiss-analysis-.md
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
+
+Vedi il file canonico: [dry-kiss-analysis.md](./dry-kiss-analysis.md)
