@@ -1,21 +1,16 @@
 ---
-title: "Copilot Redundancy Audit 2026 05 25"
-module: "Job"
+title: "Copilot Redundancy Audit"
 type: concept
-tags: [copilot, redundancy, audit, 2026]
+status: deprecated
+module: "Job"
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "copilot redundancy audit 2026 05 25"
+qmd: "deprecated copilot-redundancy-audit"
 related:
-  - "./phpstan-fixes-archive-2.md"
+  - "./copilot-redundancy-audit.md"
 ---
-Copilot Redundancy Audit — 2026-05-25
+# Copilot Redundancy Audit
 
-Sintesi
-- Template e job-related docs ripetuti (job.txt, worker.txt, queue patterns).
+> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
 
-Raccomandazioni
-- Consolidare pratiche raccomandate per queue/jobs in un unico documento di riferimento e usare link canonical.
-- Documentare convenzioni di naming per classi Job e per i file di configurazione.
-
-Autore: Copilot CLI
+Vedi il file canonico: [copilot-redundancy-audit.md](./copilot-redundancy-audit.md)
