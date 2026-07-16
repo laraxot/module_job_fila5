@@ -114,7 +114,6 @@ Thumbs.db
 # DOCUMENTATION CACHE
 # ==============================================
 docs/phpstan/
-docs/cache/
 /docs/cache
 docs/archive/
 docs/archive/**
@@ -160,7 +159,6 @@ laravel
 public_html
 lang/lang/
 _docs/
-_docs/
 
 # -----------------------------------------------------------------------------
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
@@ -180,3 +178,18 @@ lang/lang
 .devcontainer/
 .vscode/
 tests/AuditCoverage
+
+# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+scripts/
+bashscripts/
+docs/archived/
+docs/legacy/
+docs/workbench/
+.circleci/
+.claude-audit/
+tests/.claude-audit/
+_bmad-output/
+test-results/
+.kilocode/
+.kiro/
+.ralph/
