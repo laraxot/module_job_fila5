@@ -18,10 +18,10 @@ class Executed extends BroadcastingEvent
     {
         parent::__construct($task);
 
-        $time_elapsed_secs = microtime(true) - $started;
+        $timeElapsedSecs = microtime(true) - $started;
 
         $task->results()->create([
-            'duration' => $time_elapsed_secs * 1000,
+            'duration' => $timeElapsedSecs * 1000,
             'result' => $output,
         ]);
 
