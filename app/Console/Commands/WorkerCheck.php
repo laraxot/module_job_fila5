@@ -60,10 +60,10 @@ class WorkerCheck extends Command
             return false;
         }
 
-        $process_cmd = sprintf('ps -p %s -opid=,cmd=', $pid);
-        $this->comment($process_cmd);
+        $processCmd = sprintf('ps -p %s -opid=,cmd=', $pid);
+        $this->comment($processCmd);
         $output = null;
-        $process = exec($process_cmd, $output);
+        $process = exec($processCmd, $output);
         // $processIsQueueListener = str_contains($process, 'queue:listen'); // 5.1
         // if ($process === false) {
         // DISABILITATO PER SBLOCCARE MODULE JOB
