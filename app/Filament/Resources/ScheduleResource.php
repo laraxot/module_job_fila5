@@ -64,12 +64,12 @@ class ScheduleResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
-        $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
+        $commandsOpts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
 
         return [
             'main_section' => Section::make([
                 Select::make('command')
-                    ->options(fn () => $commands_opts)
+                    ->options(fn () => $commandsOpts)
                     ->reactive()
                     ->searchable()
                     ->required()
@@ -80,10 +80,10 @@ class ScheduleResource extends XotBaseResource
                             CommandData::class,
                         );
                         $params = $command->arguments;
-                        $options_with_value = $command->options['withValue'] ?? [];
-                        Assert::isArray($options_with_value);
+                        $optionsWithValue = $command->options['withValue'] ?? [];
+                        Assert::isArray($optionsWithValue);
                         $set('params', $params);
-                        $set('options_with_value', $options_with_value);
+                        $set('options_with_value', $optionsWithValue);
                     }),
                 Repeater::make('params')
                     ->schema([
