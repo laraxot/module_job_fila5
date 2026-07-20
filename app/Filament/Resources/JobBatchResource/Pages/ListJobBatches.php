@@ -32,8 +32,8 @@ class ListJobBatches extends XotBaseListRecords
     #[Override]
     public function getTableColumns(): array
     {
-        $date_format = config('app.date_format');
-        Assert::string($date_format, '['.__LINE__.']['.class_basename(self::class).']');
+        $dateFormat = config('app.date_format');
+        Assert::string($dateFormat, '['.__LINE__.']['.class_basename(self::class).']');
 
         return [
             'id' => TextColumn::make('id')
@@ -66,13 +66,13 @@ class ListJobBatches extends XotBaseListRecords
                 ->searchable()
                 ->limit(50),
             'options' => TextColumn::make('options')->wrap()->searchable(),
-            'cancelled_at' => TextColumn::make('cancelled_at')->dateTime($date_format)->sortable(),
+            'cancelled_at' => TextColumn::make('cancelled_at')->dateTime($dateFormat)->sortable(),
             'created_at' => TextColumn::make('created_at')
-                ->dateTime($date_format)
+                ->dateTime($dateFormat)
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'finished_at' => TextColumn::make('finished_at')
-                ->dateTime($date_format)
+                ->dateTime($dateFormat)
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
         ];

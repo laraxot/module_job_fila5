@@ -47,13 +47,13 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
      */
     protected function getTableColumns(): array
     {
-        $date_format = config('app.date_format');
-        Assert::string($date_format, '['.__LINE__.']['.class_basename($this).']');
+        $dateFormat = config('app.date_format');
+        Assert::string($dateFormat, '['.__LINE__.']['.class_basename($this).']');
 
         return [
             Split::make([
                 'command' => TextColumn::make('command'),
-                'created_at' => TextColumn::make('created_at')->dateTime($date_format),
+                'created_at' => TextColumn::make('created_at')->dateTime($dateFormat),
                 'updated_at' => TextColumn::make('updated_at')->formatStateUsing(static function (
                     ?Carbon $state,
                     ScheduleHistory $record,
