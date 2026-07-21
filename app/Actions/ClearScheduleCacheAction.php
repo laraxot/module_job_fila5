@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\Actions\Schedule;
+namespace Modules\Job\Actions;
 
 use Illuminate\Support\Facades\Cache;
 use Spatie\QueueableAction\QueueableAction;
