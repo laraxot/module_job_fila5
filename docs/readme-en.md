@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "⚙️ Job — English presentation"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "readme en"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> 0531e08 (.)
 # ⚙️ Job — English presentation
 
 [![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)

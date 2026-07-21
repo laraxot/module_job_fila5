@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Activity Log"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "log"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> 0531e08 (.)
 # Job Activity Log
 
 > **Module**: Job

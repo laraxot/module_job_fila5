@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Ponytail audit — Job (over-engineering)"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "ponytail audit over engineering"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> 0531e08 (.)
 # Ponytail audit — Job (over-engineering)
 
 **Ultimo run:** 2026-06-30 (re-run #2)  

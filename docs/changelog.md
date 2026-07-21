@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Changelog"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "changelog"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> 0531e08 (.)
 # Changelog
 
 All notable changes to this project will be documented in this file.
