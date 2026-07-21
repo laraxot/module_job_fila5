@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Raw Sources — Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "index"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> 0531e08 (.)
 # Raw Sources — Job
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

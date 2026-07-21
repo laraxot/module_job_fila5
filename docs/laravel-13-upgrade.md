@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Upgrade Laravel 13 - Job 🐄✨"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "laravel 13 upgrade"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> 0531e08 (.)
 # Upgrade Laravel 13 - Job 🐄✨
 
 ## 🎯 Visione Architetturale

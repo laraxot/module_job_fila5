@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing in Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "testing"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> 0531e08 (.)
 # Testing in Job
 
 Questo componente segue lo standard globale di progetto per il testing.
