@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Dry Kiss Analysis"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [dry-kiss-analysis.md](./dry-kiss-analysis.md)
 =======
+=======
+>>>>>>> 8ae863e (.)
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025  
@@ -53,4 +56,7 @@ abstract class BaseModel extends XotBaseModel
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 
+<<<<<<< HEAD
 >>>>>>> 0531e08 (.)
+=======
+>>>>>>> 8ae863e (.)

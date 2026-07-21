@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Code Quality Analysis"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [code-quality-analysis.md](./code-quality-analysis.md)
 =======
+=======
+>>>>>>> 8ae863e (.)
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -100,5 +103,9 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 
 **Report Generated**: 2025-11-11
 **Next Review**: After fixing syntax errors
+<<<<<<< HEAD
 **Target Completion**: 2025-11-15
 >>>>>>> 0531e08 (.)
+=======
+**Target Completion**: 2025-11-15
+>>>>>>> 8ae863e (.)
