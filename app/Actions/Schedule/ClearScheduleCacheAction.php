@@ -12,10 +12,13 @@ class ClearScheduleCacheAction
 {
     use QueueableAction;
 
+    /**
+     * Clear the schedules cache.
+     */
     public function execute(): void
     {
-        Assert::string($store = config('job::cache.store'), '['.__LINE__.']['.class_basename($this).']');
-        Assert::string($key = config('job::cache.key'), '['.__LINE__.']['.class_basename($this).']');
+        Assert::string($store = config('job::cache.store'), '['.class_basename($this).']');
+        Assert::string($key = config('job::cache.key'), '['.class_basename($this).']');
 
         Cache::store($store)->forget($key);
     }
