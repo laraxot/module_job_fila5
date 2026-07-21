@@ -15,36 +15,45 @@ class GetActiveSchedulesAction
     use QueueableAction;
 
     /**
+     * Get active schedules with caching support.
+     *
      * @return Collection<int, Schedule>
      */
     public function execute(): Collection
     {
-        if (config('job::cache.enabled')) {
-            return $this->getFromCache();
+        if (! config('job::cache.enabled')) {
+            return $this->getSchedules();
         }
 
-        return $this->getModel()->active()->get();
-    }
-
-    private function getModel(): Schedule
-    {
-        Assert::string($modelClass = config('job::model'), '['.__LINE__.']['.class_basename($this).']');
-
-        $model = app($modelClass);
-        Assert::isInstanceOf($model, Schedule::class, '['.__LINE__.']['.class_basename($this).']');
-
-        return $model;
+        return $this->getFromCache();
     }
 
     /**
+     * Get active schedules directly from the database.
+     *
+     * @return Collection<int, Schedule>
+     */
+    private function getSchedules(): Collection
+    {
+        Assert::string($modelClass = config('job::model'), '['.class_basename($this).']');
+
+        $model = app($modelClass);
+        Assert::isInstanceOf($model, Schedule::class, '['.class_basename($this).']');
+
+        return $model->active()->get();
+    }
+
+    /**
+     * Get active schedules from cache with fallback to database.
+     *
      * @return Collection<int, Schedule>
      */
     private function getFromCache(): Collection
     {
-        Assert::string($store = config('job::cache.store'), '['.__LINE__.']['.class_basename($this).']');
-        Assert::string($key = config('job::cache.key'), '['.__LINE__.']['.class_basename($this).']');
+        Assert::string($store = config('job::cache.store'), '['.class_basename($this).']');
+        Assert::string($key = config('job::cache.key'), '['.class_basename($this).']');
 
-        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->getModel()->active()->get());
+        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->getSchedules());
         Assert::isInstanceOf($result, Collection::class);
 
         /** @var Collection<int, Schedule> $result */
