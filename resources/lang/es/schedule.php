@@ -9,13 +9,10 @@ return [
         'icon' => 'heroicon-o-calendar',
         'sort' => 98,
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
-=======
->>>>>>> c88446c (.)
 ];

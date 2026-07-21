@@ -19,147 +19,104 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo unico del job batch',
             'placeholder' => 'ID del Batch',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome del batch di job',
             'placeholder' => 'Inserisci nome batch',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'total_jobs' => [
             'label' => 'Jobs Totali',
             'tooltip' => 'Numero totale di jobs nel batch',
             'placeholder' => 'Numero di jobs totali',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'pending_jobs' => [
             'label' => 'Jobs in Attesa',
             'tooltip' => 'Numero di jobs ancora in attesa di elaborazione',
             'placeholder' => 'Jobs in attesa',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'failed_jobs' => [
             'label' => 'Jobs Falliti',
             'tooltip' => 'Numero di jobs che hanno fallito',
             'placeholder' => 'Jobs falliti',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'failed_job_ids' => [
             'label' => 'ID Jobs Falliti',
             'tooltip' => 'Identificativo dei jobs che hanno fallito',
             'placeholder' => 'ID dei jobs falliti',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'options' => [
             'label' => 'Opzioni',
             'tooltip' => 'Opzioni di configurazione per il job batch',
             'placeholder' => 'Seleziona opzioni',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'created_at' => [
             'label' => 'Creato il',
             'tooltip' => 'Data di creazione del job batch',
             'placeholder' => 'Data creazione',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'cancelled_at' => [
             'label' => 'Cancellato il',
             'tooltip' => 'Data di cancellazione del batch',
             'placeholder' => 'Data cancellazione',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'finished_at' => [
             'label' => 'Terminato il',
             'tooltip' => 'Data di terminazione del batch',
             'placeholder' => 'Data di terminazione',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard a cui è associato il job batch',
             'placeholder' => 'Seleziona guard',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al job batch',
             'placeholder' => 'Seleziona permessi',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento del batch',
             'placeholder' => 'Data aggiornamento',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente associato',
             'placeholder' => 'Inserisci nome',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente associato',
             'placeholder' => 'Inserisci cognome',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -174,14 +131,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> c88446c (.)
         ],
     ],
     'actions' => [
@@ -256,9 +205,6 @@ return [
     'model' => [
         'label' => 'job batch.model',
     ],
-<<<<<<< HEAD
     'label' => 'Job Batch',
     'plural_label' => 'Job Batch (Plurale)',
-=======
->>>>>>> c88446c (.)
 ];

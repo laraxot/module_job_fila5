@@ -25,11 +25,8 @@ class ScheduleArguments extends TextColumn
 
     /**
      * Get the tags as an array.
-<<<<<<< HEAD
      *
      * @return array<int, string>
-=======
->>>>>>> c88446c (.)
      */
     public function getTags(): array
     {
@@ -54,12 +51,9 @@ class ScheduleArguments extends TextColumn
 
     /**
      * Format tags when they are in array format.
-<<<<<<< HEAD
      *
      * @param  array<int|string, mixed>  $tags
      * @return array<int, string>
-=======
->>>>>>> c88446c (.)
      */
     protected function formatArrayTags(array $tags): array
     {
@@ -98,12 +92,9 @@ class ScheduleArguments extends TextColumn
 
     /**
      * Filter out empty tags from the array.
-<<<<<<< HEAD
      *
      * @param  list<string>  $tags
      * @return list<string>
-=======
->>>>>>> c88446c (.)
      */
     protected function filterEmptyTags(array $tags): array
     {

@@ -24,10 +24,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read ProfileContract|null $creator
  * @property-read Frequency|null $task
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
-=======
- *
->>>>>>> c88446c (.)
  * @method static ParameterFactory factory($count = null, $state = [])
  * @method static Builder<static>|Parameter newModelQuery()
  * @method static Builder<static>|Parameter newQuery()
@@ -40,13 +36,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Parameter whereUpdatedAt($value)
  * @method static Builder<static>|Parameter whereUpdatedBy($value)
  * @method static Builder<static>|Parameter whereValue($value)
-<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
-=======
- *
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class Parameter extends BaseModel
@@ -59,12 +49,9 @@ class Parameter extends BaseModel
         'value',
     ];
 
-<<<<<<< HEAD
     /**
      * @return BelongsTo<Frequency, $this>
      */
-=======
->>>>>>> c88446c (.)
     public function task(): BelongsTo
     {
         return $this->belongsTo(Frequency::class);

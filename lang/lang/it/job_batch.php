@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 |<|?|p|h|p|
 |
 |d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
@@ -16,21 +15,3 @@
 | | | | |]|,|
 |]|;|
 |
-=======
-<?php
-
-declare(strict_types=1);
-
-return [
-    'actions' => [
-        'prune_batches' => [
-            'label' => 'prune_batches',
-        ],
-    ],
-    'fields' => [
-        'failed_job_ids' => [
-            'label' => 'failed_job_ids',
-        ],
-    ],
-];
->>>>>>> c88446c (.)

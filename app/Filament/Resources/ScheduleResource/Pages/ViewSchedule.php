@@ -42,12 +42,9 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
         return [];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<int, Split>
      */
-=======
->>>>>>> c88446c (.)
     protected function getTableColumns(): array
     {
         $date_format = config('app.date_format');
@@ -55,15 +52,9 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
 
         return [
             Split::make([
-<<<<<<< HEAD
                 'command' => TextColumn::make('command'),
                 'created_at' => TextColumn::make('created_at')->dateTime($date_format),
                 'updated_at' => TextColumn::make('updated_at')->formatStateUsing(static function (
-=======
-                TextColumn::make('command'),
-                TextColumn::make('created_at')->dateTime($date_format),
-                TextColumn::make('updated_at')->formatStateUsing(static function (
->>>>>>> c88446c (.)
                     ?Carbon $state,
                     ScheduleHistory $record,
                 ): string {
@@ -77,7 +68,6 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
 
                     return (string) $state->diffInSeconds($record->created_at).' seconds';
                 }),
-<<<<<<< HEAD
                 'output' => TextColumn::make('output')->formatStateUsing(
                     static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output',
                 ),
@@ -91,19 +81,6 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
                         ))),
                 ])->collapsible(),
             ]),
-=======
-                TextColumn::make('output')->formatStateUsing(
-                    static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output',
-                ),
-            ]),
-            Panel::make([
-                TextColumn::make('output')
-                    ->extraAttributes(['class' => '!max-w-max'], true)
-                    ->formatStateUsing(static fn (string $state): HtmlString => new HtmlString(nl2br(
-                        $state,
-                    ))),
-            ])->collapsible(),
->>>>>>> c88446c (.)
             // ->collapsed(config('job::history_collapsed'))
         ];
     }

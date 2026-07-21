@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests;
 
-<<<<<<< HEAD
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
@@ -13,20 +12,11 @@ use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
-=======
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Modules\Job\Providers\JobServiceProvider;
-use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Providers\XotServiceProvider;
-use Modules\Xot\Tests\CreatesApplication;
->>>>>>> c88446c (.)
 
 /**
  * Base test case for Job module.
  *
  * Uses MySQL from .env.testing.
-<<<<<<< HEAD
  * All module connections are mapped by TenantServiceProvider.
  * Migrations must be run ONCE externally: php artisan migrate --env=testing
  * DatabaseTransactions handles rollback between tests.
@@ -51,21 +41,11 @@ abstract class TestCase extends XotBaseTestCase
             JobServiceProvider::class,
         ];
     }
-=======
- */
-abstract class TestCase extends BaseTestCase
-{
-    use CreatesApplication;
-    use DatabaseTransactions;
-
-    protected static bool $migrated = false;
->>>>>>> c88446c (.)
 
     protected function setUp(): void
     {
         parent::setUp();
 
-<<<<<<< HEAD
         $database = database_path('fixcity_data.sqlite');
 
         /** @var array<string, array<string, mixed>> $connections */
@@ -127,27 +107,5 @@ abstract class TestCase extends BaseTestCase
         if ($message !== null) {
             $this->expectThrowableMessage($message);
         }
-=======
-        if (! self::$migrated) {
-            $this->artisan('migrate:fresh', [
-                '--force' => true,
-            ]);
-
-            $this->artisan('module:migrate', [
-                '--force' => true,
-            ]);
-
-            self::$migrated = true;
-        }
-    }
-
-    protected function getPackageProviders($app): array
-    {
-        return [
-            JobServiceProvider::class,
-            UserServiceProvider::class,
-            XotServiceProvider::class,
-        ];
->>>>>>> c88446c (.)
     }
 }

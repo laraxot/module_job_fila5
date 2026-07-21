@@ -16,11 +16,8 @@ interface TaskInterface
 {
     /**
      * Returns Eloquent Builder.
-<<<<<<< HEAD
      *
      * @return Builder<Task>
-=======
->>>>>>> c88446c (.)
      */
     public function builder(): Builder;
 
@@ -31,41 +28,29 @@ interface TaskInterface
 
     /**
      * Returns all tasks.
-<<<<<<< HEAD
      *
      * @return Collection<int, Task>
-=======
->>>>>>> c88446c (.)
      */
     public function findAll(): Collection;
 
     /**
      * Returns all active tasks.
-<<<<<<< HEAD
      *
      * @return Collection<int, Task>
-=======
->>>>>>> c88446c (.)
      */
     public function findAllActive(): Collection;
 
     /**
      * Creates a new task with the given data.
-<<<<<<< HEAD
      *
      * @param  array<string, mixed>  $input
-=======
->>>>>>> c88446c (.)
      */
     public function store(array $input): Task|bool;
 
     /**
      * Updates the given task with the given data.
-<<<<<<< HEAD
      *
      * @param  array<string, mixed>  $input
-=======
->>>>>>> c88446c (.)
      */
     public function update(array $input, Task $task): Task;
 

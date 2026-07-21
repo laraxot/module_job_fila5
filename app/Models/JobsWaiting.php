@@ -30,10 +30,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read string|null $display_name
  * @property-read string $status
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
-=======
- *
->>>>>>> c88446c (.)
  * @method static JobsWaitingFactory factory($count = null, $state = [])
  * @method static Builder<static>|JobsWaiting newModelQuery()
  * @method static Builder<static>|JobsWaiting newQuery()
@@ -48,15 +44,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|JobsWaiting whereReservedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedBy($value)
-<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
-=======
- *
- * @mixin IdeHelperJobsWaiting
- *
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class JobsWaiting extends Job {}
