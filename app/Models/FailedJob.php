@@ -25,10 +25,6 @@ use Override;
  * @property string $failed_at
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
-=======
- *
->>>>>>> c88446c (.)
  * @method static FailedJobFactory factory($count = null, $state = [])
  * @method static Builder<static>|FailedJob newModelQuery()
  * @method static Builder<static>|FailedJob newQuery()
@@ -40,13 +36,7 @@ use Override;
  * @method static Builder<static>|FailedJob wherePayload($value)
  * @method static Builder<static>|FailedJob whereQueue($value)
  * @method static Builder<static>|FailedJob whereUuid($value)
-<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
-=======
- *
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class FailedJob extends BaseModel

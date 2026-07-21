@@ -33,10 +33,6 @@ use Override;
  * @property Carbon|null $finished_at
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
-=======
- *
->>>>>>> c88446c (.)
  * @method static JobBatchFactory factory($count = null, $state = [])
  * @method static Builder<static>|JobBatch newModelQuery()
  * @method static Builder<static>|JobBatch newQuery()
@@ -51,28 +47,15 @@ use Override;
  * @method static Builder<static>|JobBatch whereOptions($value)
  * @method static Builder<static>|JobBatch wherePendingJobs($value)
  * @method static Builder<static>|JobBatch whereTotalJobs($value)
-<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
-=======
- *
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class JobBatch extends BaseModel
 {
-<<<<<<< HEAD
     public const UPDATED_AT = null;
 
     public $incrementing = false;
 
-=======
-    /** @var bool */
-    public $incrementing = false;
-
-    /** @var string */
->>>>>>> c88446c (.)
     protected $keyType = 'string';
 
     protected $fillable = [
@@ -127,13 +110,7 @@ class JobBatch extends BaseModel
      */
     public function finished(): bool
     {
-<<<<<<< HEAD
         return $this->finished_at !== null;
-=======
-        $finishedAt = $this->attributes['finished_at'] ?? null;
-
-        return $finishedAt instanceof Carbon;
->>>>>>> c88446c (.)
     }
 
     /**
@@ -162,13 +139,7 @@ class JobBatch extends BaseModel
      */
     public function cancelled(): bool
     {
-<<<<<<< HEAD
         return $this->cancelled_at !== null;
-=======
-        $cancelledAt = $this->attributes['cancelled_at'] ?? null;
-
-        return $cancelledAt instanceof Carbon;
->>>>>>> c88446c (.)
     }
 
     /**  @return array<string, string>  */

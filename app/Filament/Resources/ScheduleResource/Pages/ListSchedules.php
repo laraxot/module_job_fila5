@@ -5,20 +5,14 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
 use Closure;
-<<<<<<< HEAD
 use Filament\Actions\ActionGroup;
-=======
->>>>>>> c88446c (.)
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
-<<<<<<< HEAD
 use Override;
-=======
->>>>>>> c88446c (.)
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\ScheduleResource;
@@ -54,7 +48,6 @@ class ListSchedules extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<string, EditAction|RestoreAction|DeleteAction|ForceDeleteAction|ViewAction|ActionGroup>
      */
@@ -71,27 +64,12 @@ class ListSchedules extends XotBaseListRecords
                 'filament-support::actions/force-delete.single.label',
             )),
             'history' => ViewAction::make()
-=======
-    public function getListTableActions(): array
-    {
-        return [
-            EditAction::make()
-                ->hidden(static fn (Schedule $record): bool => $record->deleted_at !== null)
-                ->tooltip(__('filament-support::actions/edit.single.label')),
-            RestoreAction::make()->tooltip(__('filament-support::actions/restore.single.label')),
-            DeleteAction::make()->tooltip(__('filament-support::actions/delete.single.label')),
-            ForceDeleteAction::make()->tooltip(__(
-                'filament-support::actions/force-delete.single.label',
-            )),
-            ViewAction::make()
->>>>>>> c88446c (.)
                 ->icon('history')
                 ->color('gray')
                 ->tooltip(static::trans('buttons.history')),
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<string, DeleteBulkAction>
      */
@@ -100,12 +78,6 @@ class ListSchedules extends XotBaseListRecords
     {
         return [
             'delete' => DeleteBulkAction::make(),
-=======
-    public function getListTableBulkActions(): array
-    {
-        return [
-            DeleteBulkAction::make(),
->>>>>>> c88446c (.)
         ];
     }
 

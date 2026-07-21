@@ -16,11 +16,7 @@ use Override;
 
 class ListJobsWaiting extends XotBaseListRecords
 {
-<<<<<<< HEAD
     protected static string $resource = JobsWaitingResource::class;
-=======
-    public static string $resource = JobsWaitingResource::class;
->>>>>>> c88446c (.)
 
     public function getHeaderWidgets(): array
     {
@@ -30,12 +26,9 @@ class ListJobsWaiting extends XotBaseListRecords
     }
 
     #[Override]
-<<<<<<< HEAD
     /*
      * @return array<string, mixed>
      */
-=======
->>>>>>> c88446c (.)
     public function getTableColumns(): array
     {
         return [

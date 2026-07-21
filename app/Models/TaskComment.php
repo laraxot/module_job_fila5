@@ -17,26 +17,14 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Task|null $task
  * @property ProfileContract|null $updater
  * @property User|null $user
-<<<<<<< HEAD
-=======
- *
->>>>>>> c88446c (.)
  * @method static Builder<static>|TaskComment newModelQuery()
  * @method static Builder<static>|TaskComment newQuery()
  * @method static Builder<static>|TaskComment onlyTrashed()
  * @method static Builder<static>|TaskComment query()
  * @method static Builder<static>|TaskComment withTrashed(bool $withTrashed = true)
  * @method static Builder<static>|TaskComment withoutTrashed()
-<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
  * @method static TaskCommentFactory factory($count = null, $state = [])
-=======
- *
- * @property-read ProfileContract|null $deleter
- *
- * @method static TaskCommentFactory factory($count = null, $state = [])
- *
->>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class TaskComment extends BaseModel
@@ -49,23 +37,17 @@ class TaskComment extends BaseModel
         'comment',
     ];
 
-<<<<<<< HEAD
     /**
      * @return BelongsTo<Task, $this>
      */
-=======
->>>>>>> c88446c (.)
     public function task(): BelongsTo
     {
         return $this->belongsTo(Task::class);
     }
 
-<<<<<<< HEAD
     /**
      * @return BelongsTo<User, $this>
      */
-=======
->>>>>>> c88446c (.)
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

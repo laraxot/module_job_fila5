@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
-<<<<<<< HEAD
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -64,77 +63,5 @@ describe('GetCommandsAction', function (): void {
         $method = $reflection->getMethod('execute');
         Assert::assertInstanceOf(\ReflectionNamedType::class, $returnType = $method->getReturnType());
         Assert::assertSame(DataCollection::class, $returnType->getName());
-=======
-
-use Modules\Job\Actions\Command\GetCommandsAction;
-
-describe('GetCommandsAction', function () {
-    beforeEach(function () {
-        $action = new GetCommandsAction;
-    });
-
-    it('can be instantiated', function () {
-        expect($action);
-    });
-
-    it('has correct method signature', function () {
-        $reflection = new ReflectionClass($action);
-        $method = $reflection->getMethod('execute');
-
-        expect($method->isPublic())
-            ->toBeTrue()
-            ->and($method->getNumberOfParameters())
-            ->toBe(0);
-    });
-
-    it('can be resolved from container', function () {
-        $actionFromContainer = app(GetCommandsAction::class);
-
-        expect($actionFromContainer)->toBeInstanceOf(GetCommandsAction::class);
-    });
-
-    it('uses strict types', function () {
-        $reflection = new ReflectionClass($action);
-        $filename = $reflection->getFileName();
-
-        expect($filename)->not->toBeNull();
-        $content = file_get_contents($filename);
-        expect($content)->toContain('');
-    });
-
-    it('has correct namespace', function () {
-        $reflection = new ReflectionClass($action);
-
-        expect($reflection->getNamespaceName())->toBe('Modules\Job\Actions\Command');
-    });
-
-    it('uses required imports', function () {
-        $filename = (new ReflectionClass($action));
-        $content = file_get_contents($filename);
-
-        expect($content)->toContain('use Illuminate\Console\Application;')
-            ->and($content)->toContain('use Illuminate\Support\Collection;')
-            ->and($content)->toContain('use Modules\Job\Datas\CommandData;');
-    });
-
-    it('has proper class structure', function () {
-        $reflection = new ReflectionClass($action);
-
-        expect($reflection->isInstantiable())
-            ->toBeTrue()
-            ->and($reflection->isFinal())
-            ->toBeFalse()
-            ->and($reflection->isAbstract())
-            ->toBeFalse();
-    });
-
-    it('has execute method returning DataCollection', function () {
-        $reflection = new ReflectionClass($action);
-        $method = $reflection->getMethod('execute');
-
-        // Method should return DataCollection type
-        $returnType = $method->getReturnType();
-        expect($returnType)->not->toBeNull();
->>>>>>> c88446c (.)
     });
 });

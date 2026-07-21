@@ -27,10 +27,6 @@ use Override;
  * @property-read ProfileContract|null $creator
  * @property-read Task|null $task
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
-=======
- *
->>>>>>> c88446c (.)
  * @method static Factory<static> factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newQuery()
@@ -44,13 +40,7 @@ use Override;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereTaskId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedBy($value)
-<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
-=======
- *
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class Result extends BaseModel
@@ -61,12 +51,9 @@ class Result extends BaseModel
         'task_id',
     ];
 
-<<<<<<< HEAD
     /**
      * @return BelongsTo<Task, $this>
      */
-=======
->>>>>>> c88446c (.)
     public function task(): BelongsTo
     {
         return $this->belongsTo(Task::class);

@@ -22,7 +22,6 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'Modifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -68,29 +67,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'payload' => [
-            'label' => 'Contenuto',
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'queue' => [
-            'label' => 'Coda',
-        ],
-        'attempts' => [
-            'label' => 'Tentativi',
-        ],
-        'reserved_at' => [
-            'label' => 'Riservato il',
-        ],
-        'available_at' => [
-            'label' => 'Disponibile il',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
->>>>>>> c88446c (.)
         ],
     ],
     'navigation' => [
@@ -101,8 +77,4 @@ return [
     ],
     'label' => 'Lavoro',
     'plural_label' => 'Lavori',
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> c88446c (.)

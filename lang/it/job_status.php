@@ -19,61 +19,43 @@ return [
             'label' => 'Nome',
             'tooltip' => 'Nome del job monitorato',
             'placeholder' => 'Inserisci nome del job',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associato al job',
             'placeholder' => 'Seleziona guard',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Permessi associati al job',
             'placeholder' => 'Seleziona permessi',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'updated_at' => [
             'label' => 'Aggiornato il',
             'tooltip' => 'Data dell\'ultimo aggiornamento dello stato del job',
             'placeholder' => 'Data di aggiornamento',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome dell\'utente che ha creato o gestisce il job',
             'placeholder' => 'Nome responsabile',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome dell\'utente che ha creato o gestisce il job',
             'placeholder' => 'Cognome responsabile',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
     ],
     'actions' => [
@@ -150,9 +132,6 @@ return [
         'job_exported' => 'Dati esportati correttamente',
     ],
     'title' => 'job status',
-<<<<<<< HEAD
     'label' => 'Job Status',
     'plural_label' => 'Job Status (Plurale)',
-=======
->>>>>>> c88446c (.)
 ];

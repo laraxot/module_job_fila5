@@ -20,161 +20,109 @@ return [
         'id' => [
             'label' => 'ID',
             'tooltip' => 'Unique job identifier',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'queue' => [
             'label' => 'Queue',
             'tooltip' => 'The queue this job belongs to',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'payload' => [
             'label' => 'Payload',
             'tooltip' => 'Data associated with the job',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'attempts' => [
             'label' => 'Attempts',
             'tooltip' => 'Number of attempts to execute the job',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'reserved_at' => [
             'label' => 'Reserved at',
             'tooltip' => 'Date and time when the job was reserved',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'available_at' => [
             'label' => 'Available at',
             'tooltip' => 'Date and time when the job became available',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'created_at' => [
             'label' => 'Created at',
             'tooltip' => 'Job creation date',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Current job status',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'progress' => [
             'label' => 'Progress',
             'tooltip' => 'Job completion percentage',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'type' => [
             'label' => 'Type',
             'tooltip' => 'Job type (e.g., import, export)',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'name' => [
             'label' => 'Name',
             'tooltip' => 'Job name',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'description' => [
             'label' => 'Description',
             'tooltip' => 'Job description',
             'placeholder' => 'Enter a description',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Job guardian',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'permissions' => [
             'label' => 'Permissions',
             'tooltip' => 'Permissions associated with the job',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'updated_at' => [
             'label' => 'Updated at',
             'tooltip' => 'Date of last job update',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'first_name' => [
             'label' => 'First Name',
             'tooltip' => 'Responsible person\'s first name',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'last_name' => [
             'label' => 'Last Name',
             'tooltip' => 'Responsible person\'s last name',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> c88446c (.)
         ],
         'select_all' => [
             'label' => 'Select All',
             'tooltip' => 'Select all available items',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -213,26 +161,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'value' => [
-            'label' => 'value',
->>>>>>> c88446c (.)
         ],
     ],
     'actions' => [
@@ -323,9 +251,6 @@ return [
         'notification' => 'Notification',
         'cleanup' => 'Cleanup',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> c88446c (.)
 ];

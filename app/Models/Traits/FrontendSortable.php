@@ -9,15 +9,10 @@ use Illuminate\Database\Eloquent\Builder;
 trait FrontendSortable
 {
     /**
-<<<<<<< HEAD
      * @param  Builder<static>  $query
      * @param  array<string>  $sortableColumns
      * @param  array<string, 'asc'|'desc'>  $defaultSort
      * @return Builder<static>
-=======
-     * @param  array<string, string>  $defaultSort
-     * @param  array<string>  $sortableColumns
->>>>>>> c88446c (.)
      */
     public function scopeSortableBy(
         Builder $query,
@@ -43,11 +38,8 @@ trait FrontendSortable
             },
             static function (Builder $query) use ($defaultSort): void {
                 foreach ($defaultSort as $key => $direction) {
-<<<<<<< HEAD
                     /** @var 'asc'|'desc' $direction */
                     $direction = in_array($direction, ['asc', 'desc'], true) ? $direction : 'asc';
-=======
->>>>>>> c88446c (.)
                     $query->orderBy($key, $direction);
                 }
             },

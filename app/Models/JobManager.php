@@ -65,10 +65,6 @@ use Override;
  * @property-read ProfileContract|null $creator
  * @property-read string $status
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
-=======
- *
->>>>>>> c88446c (.)
  * @method static JobManagerFactory factory($count = null, $state = [])
  * @method static Builder<static>|JobManager newModelQuery()
  * @method static Builder<static>|JobManager newQuery()
@@ -83,13 +79,7 @@ use Override;
  * @method static Builder<static>|JobManager whereProgress($value)
  * @method static Builder<static>|JobManager whereQueue($value)
  * @method static Builder<static>|JobManager whereStartedAt($value)
-<<<<<<< HEAD
  * @property-read ProfileContract|null $deleter
-=======
- *
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> c88446c (.)
  * @mixin \Eloquent
  */
 class JobManager extends BaseModel
@@ -117,12 +107,9 @@ class JobManager extends BaseModel
         return Hash::make($job->getRawBody());
     }
 
-<<<<<<< HEAD
     /**
      * @return Attribute<string, never>
      */
-=======
->>>>>>> c88446c (.)
     public function status(): Attribute
     {
         return Attribute::make(get: function (): string {
@@ -163,12 +150,9 @@ class JobManager extends BaseModel
         return ! $this->hasFailed();
     }
 
-<<<<<<< HEAD
     /**
      * @return Builder<static>
      */
-=======
->>>>>>> c88446c (.)
     public function prunable(): Builder
     {
         if (config('jobs.pruning.activate')) {
@@ -177,7 +161,6 @@ class JobManager extends BaseModel
                 $retention_days = 365;
             }
 
-<<<<<<< HEAD
             return static::query()->where('created_at', '<=', now()->subDays($retention_days));
         }
 
@@ -185,12 +168,6 @@ class JobManager extends BaseModel
         $query = static::query();
 
         return $query;
-=======
-            return static::where('created_at', '<=', now()->subDays($retention_days));
-        }
-
-        return static::query();
->>>>>>> c88446c (.)
     }
 
     #[Override]

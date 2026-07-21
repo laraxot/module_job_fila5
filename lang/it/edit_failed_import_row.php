@@ -8,7 +8,6 @@ return [
             'label' => 'delete',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Edit Failed Import Row',
     'plural_label' => 'Edit Failed Import Row (Plurale)',
     'navigation' => [
@@ -42,6 +41,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> c88446c (.)
 ];

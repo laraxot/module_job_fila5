@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 |<|?|p|h|p|
 |
 |d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
@@ -14,19 +13,3 @@
 | | | | |]|,|
 |]|;|
 |
-=======
-<?php
-
-declare(strict_types=1);
-
-return [
-    'fields' => [
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'validation_error' => [
-            'label' => 'validation_error',
-        ],
-    ],
-];
->>>>>>> c88446c (.)
