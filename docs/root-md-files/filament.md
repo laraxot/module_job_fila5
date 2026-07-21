@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Filament"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "filament"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> a80e95a (.)
 
 https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailedJobsServiceProvider.php
 
