@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Sessione Completa 11"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-sessione-completa-11.md](./phpstan-sessione-completa-11.md)
 =======
+=======
+>>>>>>> 8ae863e (.)
 # Sessione PHPStan Completa - Tutti i Moduli
 **Data**: 2025-11-05  
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)  
@@ -201,4 +204,7 @@ $media = $record->getFirstMedia($attachment);
 
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
 
+<<<<<<< HEAD
 >>>>>>> c88446c (.)
+=======
+>>>>>>> 8ae863e (.)

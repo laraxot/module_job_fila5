@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Phpstan Correzioni 11"
 type: concept
@@ -16,6 +17,8 @@ related:
 
 Vedi il file canonico: [phpstan-correzioni-11.md](./phpstan-correzioni-11.md)
 =======
+=======
+>>>>>>> 8ae863e (.)
 # Correzioni PHPStan Livello 10 - Modulo Job
 **Data**: 2025-11-05  
 **Errori iniziali**: 31  
@@ -426,4 +429,7 @@ fn (ModelType $item): ReturnType => ...
 
 **Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
 
+<<<<<<< HEAD
 >>>>>>> c88446c (.)
+=======
+>>>>>>> 8ae863e (.)
