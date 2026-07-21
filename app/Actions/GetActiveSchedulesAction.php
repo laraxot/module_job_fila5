@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\Actions\Schedule;
+namespace Modules\Job\Actions;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
@@ -14,6 +14,17 @@ class GetActiveSchedulesAction
 {
     use QueueableAction;
 
+    private Schedule $model;
+
+    public function __construct()
+    {
+        Assert::string($modelClass = config('job::model'), '['.__LINE__.']['.class_basename($this).']');
+
+        $model = app($modelClass);
+        Assert::isInstanceOf($model, Schedule::class, '['.__LINE__.']['.class_basename($this).']');
+        $this->model = $model;
+    }
+
     /**
      * @return Collection<int, Schedule>
      */
@@ -23,17 +34,7 @@ class GetActiveSchedulesAction
             return $this->getFromCache();
         }
 
-        return $this->getModel()->active()->get();
-    }
-
-    private function getModel(): Schedule
-    {
-        Assert::string($modelClass = config('job::model'), '['.__LINE__.']['.class_basename($this).']');
-
-        $model = app($modelClass);
-        Assert::isInstanceOf($model, Schedule::class, '['.__LINE__.']['.class_basename($this).']');
-
-        return $model;
+        return $this->model->active()->get();
     }
 
     /**
@@ -44,7 +45,7 @@ class GetActiveSchedulesAction
         Assert::string($store = config('job::cache.store'), '['.__LINE__.']['.class_basename($this).']');
         Assert::string($key = config('job::cache.key'), '['.__LINE__.']['.class_basename($this).']');
 
-        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->getModel()->active()->get());
+        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->model->active()->get());
         Assert::isInstanceOf($result, Collection::class);
 
         /** @var Collection<int, Schedule> $result */
