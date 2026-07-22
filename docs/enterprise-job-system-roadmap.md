@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Job Module - Comprehensive Job Management System"
-module: "Job"
-type: concept
-tags: [enterprise, job, system, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "enterprise job system roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Job Module - Comprehensive Job Management System
 
 ## Overview
@@ -520,11 +506,7 @@ class JobPermission
 
 ---
 
-<<<<<<< HEAD
-
-=======
 **Last Updated**: 2026-01-23  
 **Version**: v1.0.0 (Alpha)  
->>>>>>> c88446c (.)
 **Priority**: Critical Development Need  
 **Estimated Completion**: 16-18 weeks with full team

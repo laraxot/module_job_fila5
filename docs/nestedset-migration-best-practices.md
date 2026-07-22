@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "NestedSet Migration Best Practices - Job Module"
-module: "Job"
-type: concept
-tags: [nestedset, migration, best, practices]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "nestedset migration best practices"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview
@@ -468,7 +454,6 @@ return new class extends XotBaseMigration
 - [Documentazione principale](/docs/migration/nestedset-best-practices.md)
 - [Job Module Architecture](/docs/architecture/job-module.md)
 - [AddressItemEnum Integration](/docs/address-item-enum-integration.md)
-<<<<<<< HEAD
 # NestedSet Migration Best Practices — DOCUMENTO LEGACY
 
 > **ATTENZIONE**: Questo documento è **legacy**. Il progetto ha completato la migrazione
@@ -506,5 +491,3 @@ class MyTreeModel extends BaseTreeModel
 - **2026-03**: Rimozione completa di `kalnoy/nestedset`
 
 *Ultimo aggiornamento: marzo 2026*
-=======
->>>>>>> c88446c (.)

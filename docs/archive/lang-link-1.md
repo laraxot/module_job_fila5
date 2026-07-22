@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Collegamento alle Traduzioni del Modulo Job"
-module: "Job"
-type: concept
-tags: [lang, link, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "lang link 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Collegamento alle Traduzioni del Modulo Job
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

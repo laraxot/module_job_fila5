@@ -1,12 +1,3 @@
-<<<<<<< HEAD
----
-module: theme
-topic: dry-kiss-analysis
-canonical: ../../../../Themes/docs/shared-components/dry-kiss-analysis-.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/dry-kiss-analysis-.md
-=======
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025  
@@ -44,4 +35,3 @@ abstract class BaseModel extends XotBaseModel
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 
->>>>>>> c88446c (.)

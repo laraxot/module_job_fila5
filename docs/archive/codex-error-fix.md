@@ -9,15 +9,6 @@ qmd: "codex error fix"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
----
-module: theme
-topic: codex-error-fix
-canonical: ../../../Themes/docs/shared-components/codex-error-fix.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/codex-error-fix.md
-=======
 # Codex Configuration Error Fixes
 
 Questo documento descrive le correzioni applicate agli errori riscontrati durante l'avvio di `codex`.
@@ -100,4 +91,3 @@ args = ["laravel/artisan", "boost:mcp"]
     ]
 }
 ```
->>>>>>> 8bc3175 (.)

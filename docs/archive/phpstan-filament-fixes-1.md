@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Correzioni PHPStan per Risorse Filament nel Modulo Job"
-module: "Job"
-type: concept
-tags: [phpstan, filament, fixes, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan filament fixes 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Correzioni PHPStan per Risorse Filament nel Modulo Job
 
 Questo documento traccia gli errori PHPStan identificati nelle risorse Filament del modulo Job e le relative soluzioni implementate.

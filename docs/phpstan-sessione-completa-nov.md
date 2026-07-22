@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-sessione-completa-nov
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/phpstan-sessione-completa-2025
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-sessione-completa-2025-11.md
-=======
 # Sessione PHPStan Completa - Tutti i Moduli
 **Data**: 2025-11-05  
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)  
@@ -192,4 +190,3 @@ $media = $record->getFirstMedia($attachment);
 
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
 
->>>>>>> c88446c (.)

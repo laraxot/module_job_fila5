@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: security
@@ -6,7 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/security.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/security.md
-=======
 # Configurazione della Sicurezza
 
 A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per controllare l'accesso a risorse esterne (immagini, fogli di stile, etc.) e prevenire vulnerabilità.
@@ -162,4 +160,3 @@ public function isUriValid(string $uri): bool
     return true;
 }
 ```
->>>>>>> c88446c (.)

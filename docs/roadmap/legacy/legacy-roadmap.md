@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Job Module Roadmap 2026"
-module: "Job"
-type: concept
-tags: [legacy, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "legacy roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Job Module Roadmap 2026
 
 ## ⚙️ Sacred Philosophy: "Automation is Liberation"

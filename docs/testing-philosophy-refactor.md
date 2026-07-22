@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Job Module Testing Refactor - The Journey to Zen"
-module: "Job"
-type: concept
-tags: [testing, philosophy, refactor]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testing philosophy refactor"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Job Module Testing Refactor - The Journey to Zen
 
 ## The Problem (Before Refactor)
@@ -113,20 +99,12 @@ abstract class TestCase extends BaseTestCase
 ```ini
 # Add Job module connection
 DB_CONNECTION=mysql
-<<<<<<< HEAD
-DB_DATABASE=<nome progetto>_data_test
-=======
 DB_DATABASE=laravelpizza_data_test
->>>>>>> c88446c (.)
 
 JOB_DB_CONNECTION=mysql
 JOB_DB_HOST=127.0.0.1
 JOB_DB_PORT=3306
-<<<<<<< HEAD
-JOB_DB_DATABASE=<nome progetto>_job_test
-=======
 JOB_DB_DATABASE=laravelpizza_job_test
->>>>>>> c88446c (.)
 JOB_DB_USERNAME=marco
 JOB_DB_PASSWORD=marco
 ```
@@ -191,11 +169,7 @@ $this->artisan('migrate', ['--database' => 'job']);
 ### Philosophical Benefits
 
 1. **Respects User Intent**: User configured MySQL → we use MySQL
-<<<<<<< HEAD
-2. **<nome progetto>able**: Developers expect `.env.testing` to work
-=======
 2. **Predictable**: Developers expect `.env.testing` to work
->>>>>>> c88446c (.)
 3. **Honest**: Code matches documentation
 4. **Robust**: Uses battle-tested migration system
 
@@ -277,11 +251,7 @@ This is the way.
 
 ---
 
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Version**: 1.0
 **Date**: 2026-01-09
->>>>>>> c88446c (.)
 **Author**: Claude Sonnet 4.5
 **Status**: Implementation Ready

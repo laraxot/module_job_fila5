@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: module-job-1
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/module-job-1.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-job-1.md
-=======
 # Modulo Job
 
 ## Informazioni Generali
@@ -129,4 +127,3 @@ composer format        # Formatta il codice
 
 ## Changelog
 Le modifiche vengono tracciate nel repository GitHub.
->>>>>>> c88446c (.)

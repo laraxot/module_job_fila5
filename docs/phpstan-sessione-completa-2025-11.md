@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-title: "Phpstan Sessione Completa 11"
-type: concept
-status: deprecated
-module: "Job"
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "deprecated phpstan-sessione-completa-11"
-related:
-  - "./phpstan-sessione-completa-11.md"
----
-# Phpstan Sessione Completa 11
-
-> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
-
-Vedi il file canonico: [phpstan-sessione-completa-11.md](./phpstan-sessione-completa-11.md)
-=======
-=======
->>>>>>> 8ae863e (.)
 # Sessione PHPStan Completa - Tutti i Moduli
 **Data**: 2025-11-05  
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)  
@@ -204,7 +183,3 @@ $media = $record->getFirstMedia($attachment);
 
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
 
-<<<<<<< HEAD
->>>>>>> c88446c (.)
-=======
->>>>>>> 8ae863e (.)

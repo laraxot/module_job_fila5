@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
-module: "Job"
-type: concept
-tags: [phpstan, fixes, gennaio, archive]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fixes gennaio archive 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> 0531e08 (.)
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -197,11 +183,7 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-- [README.md Modulo Job](README.md)
-=======
 - [README.md Modulo Job](./readme.md)
->>>>>>> 0531e08 (.)
 - [Queue Management](./queue/readme.md)
 - [Best Practices](./best-practices.md)
 

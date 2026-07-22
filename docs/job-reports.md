@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Job Module PDF Reports"
-module: "Job"
-type: concept
-tags: [job, reports]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "job reports"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Job Module PDF Reports
 
 ## 📋 Overview
@@ -850,23 +836,14 @@ public function generateWithErrorHandling(array $options = []): string
 
 ## 📚 References
 
-<<<<<<< HEAD
-- [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
-- [Job Module README](README.md)
-=======
 - [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
 - [Job Module README](./README.md)
->>>>>>> c88446c (.)
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 
 ---
 
-<<<<<<< HEAD
-**
-=======
 **Last Updated:** 2025-12-09
->>>>>>> c88446c (.)
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅

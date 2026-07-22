@@ -9,15 +9,6 @@ qmd: "metodi duplicati analisi"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
----
-module: theme
-topic: metodi-duplicati-analisi
-canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
-=======
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -555,4 +546,3 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> 8bc3175 (.)

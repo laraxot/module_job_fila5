@@ -1,26 +1,9 @@
-<<<<<<< HEAD
----
-title: "Task: Aumentare Copertura Test - Job"
-module: "Job"
-type: concept
-tags: [task, aumentare, copertura, test]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "task aumentare copertura test"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Task: Aumentare Copertura Test - Job
 
 **Modulo**: Job
 **Priorita'**: Media
 **Completamento**: 20%
-<<<<<<< HEAD
-=======
 **Data**: 2026-01-30
->>>>>>> c88446c (.)
 
 ---
 

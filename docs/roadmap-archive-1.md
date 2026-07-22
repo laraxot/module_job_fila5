@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "🎯 JOB MODULE - ROADMAP 2025"
-module: "Job"
-type: concept
-tags: [roadmap, archive, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap archive 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> 0531e08 (.)
 # 🎯 JOB MODULE - ROADMAP 2025
 
 **Modulo**: Job ([Description])  

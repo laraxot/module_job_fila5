@@ -9,14 +9,4 @@ qmd: "best practices"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
----
-module: theme
-topic: best-practices
-canonical: ../../../Themes/docs/shared-components/.gitkeep
----
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 8bc3175 (.)

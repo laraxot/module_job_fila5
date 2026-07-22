@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Risoluzione Conflitti Git - Modulo Job"
-module: "Job"
-type: concept
-tags: [conflict, resolution, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "conflict resolution 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Risoluzione Conflitti Git - Modulo Job
 
 ## Panoramica
@@ -231,10 +217,5 @@ Per ogni file con conflitti, seguiremo questi passaggi:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Documentazione Generale Risoluzione Conflitti](../../../../docs/conflict_resolution_summary.md)
-- [Documentazione Specifica del Modulo](../../../docs/risoluzione_conflitti_git.md)
-=======
 - [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md)
 - [Documentazione Specifica del Modulo](../../docs/risoluzione_conflitti_git.md)
->>>>>>> c88446c (.)

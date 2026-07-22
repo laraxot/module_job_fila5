@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Job Module Documentation"
-module: "Job"
-type: concept
-tags: [index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "index"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Job Module Documentation
 
 ## Overview
@@ -221,17 +207,14 @@ $avgTime = $jobMonitor->getAverageProcessingTime();
 6. **Monitoring**: Monitor job performance and failure rates
 
 ## Related Modules
-<<<<<<< HEAD
 - [Xot Module](../xot/docs/index.md) - Core base classes
 - [Activity Module](../activity/docs/index.md) - Activity logging
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [User Module](../user/docs/readme.md) - User authentication and management
-=======
 - [Xot Module](../Xot/docs/index.md) - Core base classes
 - [Activity Module](../Activity/docs/index.md) - Activity logging
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [User Module](../User/docs/README.md) - User authentication and management
->>>>>>> c88446c (.)
 
 ## Troubleshooting
 Common issues and solutions:

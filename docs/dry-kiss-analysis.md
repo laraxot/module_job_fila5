@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: dry-kiss-analysis
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
-=======
 # 🐄 DRY & KISS Analysis - Job
 
 **Data:** 2025-10-15 | **Status:** ✅
@@ -50,4 +48,3 @@ Models/
 2. Resources refactoring (1 sett)
 
 **Status:** 🟡 DA RIORGANIZZARE
->>>>>>> c88446c (.)

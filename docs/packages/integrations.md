@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Integrazioni"
-module: "Job"
-type: concept
-tags: [integrations]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "integrations"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Integrazioni
 
 ## Pacchetti Utilizzati
@@ -103,11 +89,7 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 ## Collegamenti tra versioni di integrations.md
 * [integrations.md](docs/tecnico/filament/integrations.md)
-<<<<<<< HEAD
-* [integrations.md](../../../job/docs/packages/integrations.md)
-=======
 * [integrations.md](../../../Job/docs/packages/integrations.md)
->>>>>>> c88446c (.)
 
 ### Versione Incoming
 

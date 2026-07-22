@@ -9,15 +9,6 @@ qmd: "filament"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
----
-module: theme
-topic: filament
-canonical: ../../../Themes/docs/shared-components/filament-Modules.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-Modules.txt
-=======
 
 https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailedJobsServiceProvider.php
 
@@ -27,4 +18,3 @@ https://medium.com/@laravelprotips/laravel-filament-top-12-plugins-simplified-wi
 
 
 
->>>>>>> 8bc3175 (.)

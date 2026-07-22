@@ -1,22 +1,6 @@
-<<<<<<< HEAD
----
-title: "Analisi Metodi Duplicati - Modulo Job"
-module: "Job"
-type: concept
-tags: [duplicate, methods, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "duplicate methods analysis"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-# Analisi Metodi Duplicati - Modulo Job
-
-=======
 # Analisi Metodi Duplicati - Modulo Job
 
 **Data Generazione**: 2025-10-15 06:41:17
->>>>>>> c88446c (.)
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo

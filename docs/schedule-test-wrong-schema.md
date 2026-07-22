@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "ScheduleBusinessLogicTest - Wrong Database Schema"
-module: "Job"
-type: concept
-tags: [schedule, test, wrong, schema]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "schedule test wrong schema"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # ScheduleBusinessLogicTest - Wrong Database Schema
 
 ## Problem Discovery
@@ -118,10 +104,6 @@ File `tests/Feature/ScheduleBusinessLogicTest.php` will be DELETED because:
 
 ---
 
-<<<<<<< HEAD
-**Date**: [DATE]
-=======
 **Date**: 2026-01-09
->>>>>>> c88446c (.)
 **Status**: Test File Deleted
 **Reason**: Complete schema mismatch - test was fiction, not reality

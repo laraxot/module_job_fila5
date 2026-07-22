@@ -1,21 +1,3 @@
-<<<<<<< HEAD
----
-title: "Phpstan Roadmap"
-type: concept
-status: deprecated
-module: "Job"
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "deprecated phpstan-roadmap"
-related:
-  - "./phpstan-roadmap.md"
----
-# Phpstan Roadmap
-
-> Deprecated: non aggiungere date nel filename; usare `created/updated` nel front matter.
-
-Vedi il file canonico: [phpstan-roadmap.md](./phpstan-roadmap.md)
-=======
 # PHPStan Level 10 Roadmap - Job Module
 
 **Data**: 2026-02-03
@@ -43,4 +25,3 @@ Vedi il file canonico: [phpstan-roadmap.md](./phpstan-roadmap.md)
 ## Verifica
 
 - [x] `./vendor/bin/phpstan analyse Modules --level=10`
->>>>>>> c88446c (.)

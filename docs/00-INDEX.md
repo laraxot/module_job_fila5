@@ -1,15 +1,3 @@
-<<<<<<< HEAD
----
-title: "📚 **Indice Documentazione Modulo Job**"
-module: "Job"
-type: concept
-tags: [00, INDEX]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "00 index"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # 📚 **Indice Documentazione Modulo Job**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -49,7 +37,6 @@ related:
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
-=======
 # 📚 JOB Module - Documentation Index
 
 **Path**: `laravel/Modules/Job/docs/`  
@@ -80,4 +67,3 @@ related:
 ---
 
 **Ultimo Aggiornamento**: 2026-03-24
->>>>>>> c88446c (.)

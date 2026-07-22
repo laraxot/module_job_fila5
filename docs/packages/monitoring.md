@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Monitoraggio"
-module: "Job"
-type: concept
-tags: [monitoring]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "monitoring"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Monitoraggio
 
 ## Pacchetti Utilizzati
@@ -100,13 +86,8 @@ Artisan::call('queue:forget', ['id' => 'all']);
 ### Versione HEAD
 
 ## Collegamenti tra versioni di monitoring.md
-<<<<<<< HEAD
-* [monitoring.md](../../../job/docs/packages/monitoring.md)
-* [monitoring.md](../../../../themes/one/docs/monitoring.md)
-=======
 * [monitoring.md](../../../Job/docs/packages/monitoring.md)
 * [monitoring.md](../../../../Themes/One/docs/monitoring.md)
->>>>>>> c88446c (.)
 
 ### Versione Incoming
 

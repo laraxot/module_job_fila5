@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-title: "PHPStan Fixes - Gennaio 2025"
-module: "Job"
-type: concept
-tags: [phpstan, fixes, january]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fixes january "
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
-=======
->>>>>>> 83c689e (.)
 # PHPStan Fixes - Gennaio 2025
 
 ## Modulo Job - Correzioni Completate

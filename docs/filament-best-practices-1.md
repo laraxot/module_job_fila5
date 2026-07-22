@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: filament-best-practices-1
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/filament-best-practices-1.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/filament-best-practices-1.md
-=======
 # Best Practices per Risorse Filament nel Modulo Job
 
 Questo documento descrive le best practices da seguire quando si creano o modificano risorse Filament nel modulo Job.
@@ -87,4 +85,3 @@ public static function getFormSchema(): array
 Questo pattern è stato corretto nelle seguenti risorse:
 - `ExportResource`
 - `FailedImportRowResource`
->>>>>>> c88446c (.)

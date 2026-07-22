@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ---
 module: theme
 topic: mcp_server_recommended
@@ -7,9 +5,6 @@ canonical: ../../../Themes/docs/shared-components/mcp_server_recommended.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp_server_recommended.md
-=======
-=======
->>>>>>> 8ae863e (.)
 # MCP Server Consigliati per il Modulo Job
 
 ## Scopo del Modulo
@@ -33,7 +28,3 @@ Gestione code, job asincroni, schedulazione e workflow.
 
 ## Note
 - Personalizza la configurazione in base ai workflow e ai servizi esterni utilizzati.
-<<<<<<< HEAD
->>>>>>> c88446c (.)
-=======
->>>>>>> 8ae863e (.)

@@ -1,33 +1,12 @@
-<<<<<<< HEAD
----
-title: "PHPStan Level 10 Compliance - Job Module"
-module: "Job"
-type: concept
-tags: [phpstan, level, 10, compliance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan level 10 compliance"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-# PHPStan Level 10 Compliance - Job Module
-
-**Ultimo aggiornamento**: [DATE]
-=======
 # PHPStan Level 10 Compliance - Job Module
 
 **Ultimo aggiornamento**: 2025-12-10
->>>>>>> c88446c (.)
 **Status**: ✅ Completamente conforme a PHPStan Level 10
 
 ## 📊 Stato Corrente
 - **Errori PHPStan**: 0
 - **Livello analisi**: Level 10 (massimo)
-<<<<<<< HEAD
-- **Data ultima verifica**: [DATE]
-=======
 - **Data ultima verifica**: 2025-12-10
->>>>>>> c88446c (.)
 
 ## 🔧 Correzioni Applicate
 

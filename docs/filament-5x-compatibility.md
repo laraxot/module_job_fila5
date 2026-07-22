@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Filament 5.x compatibility - modulo Job"
-module: "Job"
-type: concept
-tags: [filament, 5x, compatibility]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "filament 5x compatibility"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Filament 5.x compatibility - modulo Job
 
 **Versione Filament:** v5.2.1

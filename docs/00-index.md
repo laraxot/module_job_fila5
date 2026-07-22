@@ -1,31 +1,11 @@
-<<<<<<< HEAD
----
-title: "📚 **Indice Documentazione Modulo Job**"
-module: "Job"
-type: concept
-tags: [00, index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "00 index"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-# 📚 **Indice Documentazione Modulo Job**
-
-=======
 # 📚 **Indice Documentazione Modulo Job**
 
 **Last Update**: 31 Gennaio 2026
->>>>>>> c88446c (.)
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-<<<<<<< HEAD
-1. [README.md](README.md) - Panoramica completa, Multi-Queue e Scheduling.
-=======
 1. [README.md](./README.md) - Panoramica completa, Multi-Queue e Scheduling.
->>>>>>> c88446c (.)
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e obiettivi 2026.
 3. [philosophy.md](./philosophy.md) - La gestione "Zen" dei flussi asincroni.
 
@@ -44,7 +24,6 @@ related:
 - 🔬 **[Testing Strategy](./testing.md)** - Approccio Pest per i flussi di coda.
 - 🧹 **[PHPMD & Complexity](./cyclomatic-complexity-report.md)** - Analisi della pulizia del codice.
 
-<<<<<<< HEAD
 ## 📦 **Pacchetti Composer**
 - [Riferimento](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Nessuna dipendenza diretta; usa Xot, spipu/html2pdf (via Xot)
 
@@ -59,7 +38,6 @@ related:
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
-=======
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e Page classes.
 - [Activity](../../Activity/docs/README.md) - Tracciamento log esecuzione.
@@ -67,4 +45,3 @@ related:
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
->>>>>>> c88446c (.)
