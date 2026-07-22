@@ -1,29 +1,45 @@
 ---
-title: PHPStan trait probe FormatSeconds
+title: "FormatSeconds — no PHPStan probe"
 type: concept
 module: Job
-tags: [phpstan, trait, probe, filament, format-seconds]
+tags: [phpstan, trait, format-seconds, no-probe]
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-07-22
+qmd: "FormatSeconds trait.unused JobStatsOverview no PhpstanProbe"
+issues:
+  - "https://github.com/laraxot/module_job_fila5/issues"
+discussions:
+  - "https://github.com/laraxot/module_job_fila5/discussions"
 related:
-  - ../../../Xot/docs/wiki/concepts/phpstan-trait-probes.md
-  - ../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md
+  - ../../../../../../docs/wiki/rules/no-phpstan-probe-models.md
+  - ../../../../Xot/docs/wiki/concepts/phpstan-trait-probes.md
+  - ../../../../Xot/docs/phpstan-modules-fix-log.md
 ---
 
-# PHPStan trait probe — FormatSeconds
+# FormatSeconds — niente probe PHPStan
 
-## Problema
+## Scopo
 
-`FormatSeconds` è usato da widget Filament (`JobStatsOverview`, `JobsWaitingOverview`) registrati via discovery. PHPStan segnala `trait.unused` sul file trait isolato.
+`FormatSeconds` formatta durate (secondi → `d/h/m/s`) per overview Filament delle code Job.
 
-## Soluzione
-
-Probe host `app/Phpstan/FormatSecondsPhpstanProbe.php` registrato in `xotPhpstanTraitProbeClasses()` (`Modules/Xot/helpers/Helper.php`).
-
-Pattern canonico Laraxot: **probe + registry**, non ignore globale in `phpstan.neon`.
-
-## Chiamanti runtime
+## Consumatori reali (SSoT runtime)
 
 - `JobResource/Widgets/JobStatsOverview`
 - `JobManagerResource/Widgets/JobStatsOverview`
 - `JobsWaitingResource/Widgets/JobsWaitingOverview`
+- Test Pest: `tests/Unit/Traits/FormatSecondsTest.php` (classe anonima)
+
+## Anti-pattern rimosso (2026-07-22)
+
+`app/Phpstan/FormatSecondsPhpstanProbe.php` **vietato** dal canon
+[`no-phpstan-probe-models`](../../../../../../docs/wiki/rules/no-phpstan-probe-models.md).
+
+Se PHPStan segnala `trait.unused` sul file trait isolato (discovery Filament),
+preferire `@phpstan-ignore trait.unused` nel docblock del trait — **mai** un host fittizio.
+
+## Verifica
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules/Job --memory-limit=2G
+test ! -d Modules/Job/app/Phpstan
+```
