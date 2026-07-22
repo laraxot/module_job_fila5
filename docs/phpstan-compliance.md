@@ -1,25 +1,8 @@
-<<<<<<< HEAD
----
-title: "PHPStan Compliance - Job Module"
-module: "Job"
-type: concept
-tags: [phpstan, compliance]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan compliance"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # PHPStan Compliance - Job Module
 
 ## Status: ✅ FULLY COMPLIANT
 
-<<<<<<< HEAD
-=======
 **Analysis Date:** September 22, 2025
->>>>>>> c88446c (.)
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 206
 **Errors Found:** 0

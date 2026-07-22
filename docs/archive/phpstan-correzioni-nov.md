@@ -9,15 +9,6 @@ qmd: "phpstan correzioni nov"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
----
-module: theme
-topic: phpstan-correzioni-nov
-canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-2025-11.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-2025-11.md
-=======
 # Correzioni PHPStan Livello 10 - Modulo Job
 **Data**: 2025-11-05  
 **Errori iniziali**: 31  
@@ -428,4 +419,3 @@ fn (ModelType $item): ReturnType => ...
 
 **Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
 
->>>>>>> 8bc3175 (.)

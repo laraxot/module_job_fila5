@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Job Module Analysis"
-module: "Job"
-type: concept
-tags: [analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "analysis"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Job Module Analysis
 
 ## Overview
@@ -77,7 +63,6 @@ Modules/Job/
 ### Versione HEAD
 
 ## Collegamenti tra versioni di analysis.md
-<<<<<<< HEAD
 * [analysis.md](../../../notify/docs/analysis.md)
 * [analysis.md](../../../notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/docs/analysis.md)
@@ -91,7 +76,6 @@ Modules/Job/
 * [analysis.md](../../../media/docs/analysis.md)
 * [analysis.md](../../../media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/docs/analysis.md)
-=======
 * [analysis.md](../../../Notify/docs/analysis.md)
 * [analysis.md](../../../Notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../Xot/docs/analysis.md)
@@ -105,7 +89,6 @@ Modules/Job/
 * [analysis.md](../../../Media/docs/analysis.md)
 * [analysis.md](../../../Media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../Themes/One/docs/analysis.md)
->>>>>>> c88446c (.)
 
 ### Versione Incoming
 

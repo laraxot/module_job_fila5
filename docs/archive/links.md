@@ -9,15 +9,6 @@ qmd: "links"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
----
-module: theme
-topic: links
-canonical: ../../../Themes/docs/shared-components/links.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/links.txt
-=======
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 
@@ -38,4 +29,3 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
 
 
 
->>>>>>> 8bc3175 (.)

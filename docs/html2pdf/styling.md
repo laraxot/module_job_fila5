@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: styling
@@ -6,7 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/styling-Modules.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/styling-Modules.md
-=======
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.
@@ -146,4 +144,3 @@ $src = 'data:image/png;base64,' . $imageData;
 // Passa la stringa $src alla view
 return view('pdf.template', compact('src'));
 ```
->>>>>>> c88446c (.)

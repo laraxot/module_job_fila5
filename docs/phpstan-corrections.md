@@ -1,20 +1,5 @@
-<<<<<<< HEAD
----
-title: "Correzioni PHPStan Livello 10 - Modulo Job"
-module: "Job"
-type: concept
-tags: [phpstan, corrections]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan corrections"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-# Correzioni PHPStan Livello 10 - Modulo Job
-=======
 # Correzioni PHPStan Livello 10 - Modulo Job
 **Data**: 2025-11-05
->>>>>>> c88446c (.)
 **Errori iniziali**: 31
 **Errori finali**: 0
 **Status**: ✅ COMPLETATO

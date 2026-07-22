@@ -1,23 +1,8 @@
-<<<<<<< HEAD
----
-title: "Integrazione Documentazione"
-module: "Job"
-type: concept
-tags: [integration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "integration"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Integrazione Documentazione
 
 ## Documentazione Collegata
 
 ### Filament
-<<<<<<< HEAD
 - [Risorse Filament](../../docs/filament-risorse.md)
 - [Personalizzazioni Avanzate](../../docs/filament-personalizzazioni-avanzate.md)
 - [Gestione Contenuti](../../docs/gestione-contenuti-json.md)
@@ -31,7 +16,6 @@ related:
 - [Standard Codice](../../docs/standard-codice.md)
 - [Traduzioni](../../docs/traduzioni.md)
 - [Componenti e Blocchi](../../docs/componenti-blocchi-contenuto.md)
-=======
 - [Risorse Filament](../docs/filament-risorse.md)
 - [Personalizzazioni Avanzate](../docs/filament-personalizzazioni-avanzate.md)
 - [Gestione Contenuti](../docs/gestione-contenuti-json.md)
@@ -45,7 +29,6 @@ related:
 - [Standard Codice](../docs/standard-codice.md)
 - [Traduzioni](../docs/traduzioni.md)
 - [Componenti e Blocchi](../docs/componenti-blocchi-contenuto.md)
->>>>>>> c88446c (.)
 
 ## Best Practices
 
@@ -99,15 +82,9 @@ related:
 ### Versione HEAD
 
 ## Collegamenti tra versioni di integration.md
-<<<<<<< HEAD
-* [integration.md](../../../gdpr/docs/integration.md)
-* [integration.md](../../../xot/docs/integration.md)
-* [integration.md](../../../job/docs/integration.md)
-=======
 * [integration.md](../../../Gdpr/docs/integration.md)
 * [integration.md](../../../Xot/docs/integration.md)
 * [integration.md](../../../Job/docs/integration.md)
->>>>>>> c88446c (.)
 
 ### Versione Incoming
 

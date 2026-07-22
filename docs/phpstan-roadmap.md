@@ -1,23 +1,6 @@
-<<<<<<< HEAD
----
-title: "PHPStan Roadmap - Job Module"
-module: "Job"
-type: concept
-tags: [phpstan, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-# PHPStan Roadmap - Job Module
-
-> **Date**: [DATE]
-=======
 # PHPStan Roadmap - Job Module
 
 > **Date**: 2026-01-14
->>>>>>> c88446c (.)
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0
 

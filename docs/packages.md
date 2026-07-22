@@ -1,31 +1,11 @@
-<<<<<<< HEAD
----
-title: "Pacchetti del Modulo Job"
-module: "Job"
-type: concept
-tags: [packages]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "packages"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Pacchetti del Modulo Job
 
 ## Pacchetti Utilizzati
 
 ### Core
-<<<<<<< HEAD
-- [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila5](../tenant/docs/packages.md) - Gestione multi-tenant
-=======
 - [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
->>>>>>> c88446c (.)
 
 ### Queue
 - [laravel/horizon](https://github.com/laravel/horizon)
@@ -84,7 +64,6 @@ related:
 ### Versione HEAD
 
 ## Collegamenti tra versioni di packages.md
-<<<<<<< HEAD
 * [packages.md](../../../gdpr/docs/packages.md)
 * [packages.md](../../../notify/docs/packages.md)
 * [packages.md](../../../xot/docs/packages.md)
@@ -94,7 +73,6 @@ related:
 * [packages.md](../../../job/docs/packages.md)
 * [packages.md](../../../media/docs/packages.md)
 * [packages.md](../../../tenant/docs/packages.md)
-=======
 * [packages.md](../../../Gdpr/docs/packages.md)
 * [packages.md](../../../Notify/docs/packages.md)
 * [packages.md](../../../Xot/docs/packages.md)
@@ -104,7 +82,6 @@ related:
 * [packages.md](../../../Job/docs/packages.md)
 * [packages.md](../../../Media/docs/packages.md)
 * [packages.md](../../../Tenant/docs/packages.md)
->>>>>>> c88446c (.)
 
 ### Versione Incoming
 

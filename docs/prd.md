@@ -1,15 +1,3 @@
-<<<<<<< HEAD
----
-title: "PRD - Job Module (2025-2026 Lean Standard)"
-module: "Job"
-type: concept
-tags: [prd]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "prd"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # PRD - Job Module (2025-2026 Lean Standard)
 
 ## 1. Problem Statement
@@ -49,7 +37,6 @@ Background task management, scheduling, and import/export processes are currentl
 - All 9+ Filament resources refactored into the `Schemas/Tables` structure.
 - Full quality pipeline (PHPStan L10) passes.
 - Documentation cleaned and archived.
-=======
 # PRD: Job Module
 
 ## 📋 Overview
@@ -63,4 +50,3 @@ Specialized logic for Job needs a dedicated, type-safe Module to ensure maintain
 ## 🎯 Goals & Success Metrics
 - **Goal 1:** 100% PHPStan L10 compliance.
 - **Goal 2:** Seamless integration with XotBase.
->>>>>>> c88446c (.)

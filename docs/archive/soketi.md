@@ -9,15 +9,6 @@ qmd: "soketi"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
----
-module: theme
-topic: soketi
-canonical: ../../../Themes/docs/shared-components/soketi.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/soketi.txt
-=======
 https://github.com/Safemood/REAL-TIME-LARAVEL-9-SOKETI/
 
 https://medium.com/@tthdvd/laravel-reactjs-soketi-triumvirates-step-by-step-guide-to-build-a-real-time-webapp-part-2-f1ed815ec539
@@ -50,4 +41,3 @@ https://www.youtube.com/watch?v=mDnsC-sfG7I
 
 
 
->>>>>>> 8bc3175 (.)

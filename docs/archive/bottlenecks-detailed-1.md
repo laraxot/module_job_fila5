@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Analisi Dettagliata dei Colli di Bottiglia - Modulo Job"
-module: "Job"
-type: concept
-tags: [bottlenecks, detailed, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "bottlenecks detailed 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Job
 
 ## Panoramica

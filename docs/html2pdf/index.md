@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: index
@@ -6,7 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/README-Modules.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
-=======
 # Html2Pdf - Panoramica e Installazione
 
 Questa sezione fornisce una panoramica generale della libreria Html2Pdf, le novità dell'ultima versione, le istruzioni per l'installazione e l'architettura di integrazione nel progetto.
@@ -107,4 +105,3 @@ enum PdfEngineEnum
     case SPATIE;   // spatie/laravel-pdf (alternative)
 }
 ```
->>>>>>> c88446c (.)

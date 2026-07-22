@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: conflict-resolution-1
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/conflict-resolution-1.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-1.md
-=======
 # Risoluzione Conflitti Git - Modulo Job
 
 ## Panoramica
@@ -228,4 +226,3 @@ Per ogni file con conflitti, seguiremo questi passaggi:
 
 - [Documentazione Generale Risoluzione Conflitti](../../../docs/conflict_resolution_summary.md)
 - [Documentazione Specifica del Modulo](../../docs/risoluzione_conflitti_git.md)
->>>>>>> c88446c (.)

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Storage Server 1"
-module: "Job"
-type: concept
-tags: [storage, server, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "storage server 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage

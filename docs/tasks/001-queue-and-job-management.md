@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Task 001: Implement Queue and Job Management System"
-module: "Job"
-type: concept
-tags: [001, queue, job, management]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "001 queue and job management"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # Task 001: Implement Queue and Job Management System
 
 ## Description
@@ -236,9 +222,6 @@ The Job module needs robust queue management for background processing with moni
 
 ---
 
-<<<<<<< HEAD
-=======
 **Created**: 2026-01-31
->>>>>>> c88446c (.)
 **Status**: Pending
 **Assignee**: TBD

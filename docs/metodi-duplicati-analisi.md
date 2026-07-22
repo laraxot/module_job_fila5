@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: metodi-duplicati-analisi
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Mod
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
-=======
 # 🐄⚡ ANALISI METODI DUPLICATI - SUPER MUCCA EDITION
 
 **Powered by**: Super Mucca AI 🐄✨
@@ -545,4 +543,3 @@ public function getTableFilters(): array
 4. Implementazione ColumnBuilder
 
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> c88446c (.)

@@ -1,15 +1,3 @@
-<<<<<<< HEAD
----
-title: "🎯 JOB MODULE - ROADMAP 2025"
-module: "Job"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # 🎯 JOB MODULE - ROADMAP 2025
 
 **Modulo**: Job ([Description])  
@@ -226,7 +214,6 @@ Job Module
 ---
 
 *Questa roadmap è specifica per il modulo Job e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-=======
 # Job Module - Complete Roadmap
 
 ## Module Overview
@@ -426,4 +413,3 @@ Job/
 **Last Updated**: 2026-01-02
 **Maintainer**: Team Laraxot
 **Status**: Active Development
->>>>>>> c88446c (.)

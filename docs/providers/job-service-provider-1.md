@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "JobServiceProvider"
-module: "Job"
-type: concept
-tags: [job, service, provider, 1]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "job service provider 1"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # JobServiceProvider
 
 ## Panoramica

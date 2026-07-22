@@ -1,25 +1,8 @@
-<<<<<<< HEAD
----
-title: "PHPStan Fixes - Modulo Job"
-module: "Job"
-type: concept
-tags: [phpstan, fixes, session]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fixes session"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> c88446c (.)
 # PHPStan Fixes - Modulo Job
 
 ## 🔄 Status: IN PROGRESS - 49 Errori Rimanenti
 
-<<<<<<< HEAD
-=======
 **Data**: 11 Ottobre 2025
->>>>>>> c88446c (.)
 **PHPStan Level**: Max
 **Errori Risolti**: 58 → 49 (-9 errori) ✅
 

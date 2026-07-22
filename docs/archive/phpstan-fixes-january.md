@@ -9,13 +9,6 @@ qmd: "phpstan fixes january"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-module: theme
-topic: phpstan-fixes-january
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes-january-2025.md
-=======
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -210,11 +203,9 @@ public function __construct(string $output)
 - [PHPStan Constructor Analysis](https://phpstan.org/rules/phpstan/phpstan/rule/phpstan.rules.phpstan.constructor)
 - [Laravel Queue Best Practices](https://laravel.com/docs/queues)
 
->>>>>>> 44fb130 (.)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-january-2025.md
-=======
 # PHPStan Fixes - Gennaio 2025
 
 ## Modulo Job - Correzioni Completate
@@ -248,4 +239,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixe
 - **File corretti**: 1
 - **Pattern applicati**: PHPDoc Contracts
 
->>>>>>> 8bc3175 (.)

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Upgrade Laravel 13 - Job 🐄✨"
-module: "Job"
-type: concept
-tags: [laravel, 13, upgrade]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "laravel 13 upgrade"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> 0531e08 (.)
 # Upgrade Laravel 13 - Job 🐄✨
 
 ## 🎯 Visione Architetturale

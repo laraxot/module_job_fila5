@@ -1,22 +1,6 @@
-<<<<<<< HEAD
----
-title: "PHPStan Level 10 Errors Roadmap - Job Module"
-module: "Job"
-type: concept
-tags: [phpstan, errors, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan errors roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-# PHPStan Level 10 Errors Roadmap - Job Module
-
-=======
 # PHPStan Level 10 Errors Roadmap - Job Module
 
 **Data**: 2026-01-09  
->>>>>>> c88446c (.)
 **Modulo**: Job  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **IN ANALISI**
@@ -174,8 +158,4 @@ return $options;
 
 **Status**: 🧘 **IN ANALISI**
 
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
 **Ultimo aggiornamento**: 2026-01-09
->>>>>>> c88446c (.)

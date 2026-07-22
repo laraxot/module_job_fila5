@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: bottlenecks-detailed-1
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/bottlenecks-detailed-1.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/bottlenecks-detailed-1.md
-=======
 # Analisi Dettagliata dei Colli di Bottiglia - Modulo Job
 
 ## Panoramica
@@ -344,4 +342,3 @@ abstract class BaseJob
 ```
 
 ---
->>>>>>> c88446c (.)

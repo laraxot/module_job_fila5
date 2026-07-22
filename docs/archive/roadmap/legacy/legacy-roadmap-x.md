@@ -4,9 +4,6 @@ topic: legacy-roadmap-x
 canonical: ../../../../../Themes/docs/shared-components/roadmap-2025-Modules.md
 ---
 
-<<<<<<< HEAD
-See canonical documentation: ../../../../../Themes/docs/shared-components/roadmap-2025-Modules.md
-=======
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Job** [descrizione del modulo].
@@ -213,4 +210,3 @@ Job Module
 ---
 
 *Questa roadmap è specifica per il modulo Job e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> 255bbbb (.)

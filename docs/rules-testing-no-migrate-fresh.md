@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: rules-testing-no-migrate-fresh
@@ -6,7 +5,6 @@ canonical: ../../../Themes/docs/shared-components/rules-testing-no-migrate-fresh
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/rules-testing-no-migrate-fresh.md
-=======
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH
 
 ## Rule
@@ -20,4 +18,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/rules-testin
 ## Correct Approach
 - Only use `DatabaseTransactions` to rollback state after tests.
 - Maintain strict database boundaries.
->>>>>>> c88446c (.)
