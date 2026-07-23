@@ -3,7 +3,7 @@ title: "Handoff multi-org sync (STORY-003)"
 type: handoff
 tags: [git, multi-org, bmad, story-003]
 created: 2026-07-21
-updated: 2026-07-21
+updated: 2026-07-23
 module: "Job"
 issues:
   - "https://github.com/provtv/module_job_fila5/issues/16"
@@ -41,3 +41,11 @@ Un tree dirty o un remote dietro/avanti **non** è sincronizzato, anche se l’a
 ## Note owner
 
 Seguire sync multi-org e mantenere docs allineate alla story.
+
+## Stato sync 2026-07-23
+
+- Remotes: `laraxot` + `provtv` (entrambi `git@github.com:.../module_job_fila5.git`), entrambi **reachable**.
+- Working tree già pulito al check, nessun merge/rebase in corso.
+- `laraxot/dev` e `provtv/dev`: entrambi già al tip locale (`4e91cf6`), **0 avanti / 0 dietro** su entrambi.
+- Nessuna azione necessaria: nessun commit, nessun merge, nessun push (già allineato).
+- Finale `git status`: `On branch dev`, up to date con `laraxot/dev` (e `provtv/dev`), working tree clean.
