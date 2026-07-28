@@ -11,7 +11,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 test('format_seconds_formats_minutes_and_seconds', function (): void {
-    $probe = new class {
+    $probe = new class()
+    {
         use FormatSeconds;
     };
 
@@ -19,7 +20,8 @@ test('format_seconds_formats_minutes_and_seconds', function (): void {
 });
 
 test('format_seconds_formats_hours', function (): void {
-    $probe = new class {
+    $probe = new class()
+    {
         use FormatSeconds;
     };
 
