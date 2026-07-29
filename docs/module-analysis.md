@@ -68,7 +68,11 @@ The Job module provides comprehensive queue and background job processing:
 - Advanced queue security features
 
 ## Integration with Other Modules
+<<<<<<< HEAD
 - **Quaeris**: Background PDF generation and report processing
+=======
+- **healthcare_app**: Background PDF generation and report processing
+>>>>>>> provtv/dev
 - **Limesurvey**: Survey data processing jobs
 - **Notify**: Notification queue management
 - **Media**: Media processing jobs
