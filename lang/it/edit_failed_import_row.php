@@ -25,6 +25,7 @@ return [
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -39,6 +40,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+>>>>>>> 400d6cb (.)
         ],
     ],
 ];

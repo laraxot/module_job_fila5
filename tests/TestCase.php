@@ -70,6 +70,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         $this->assertDatabaseHas($table, $data, $connection);
     }
+<<<<<<< HEAD
 
     /**
      * @param  array<string, mixed>  $data
@@ -108,4 +109,6 @@ abstract class TestCase extends XotBaseTestCase
             $this->expectThrowableMessage($message);
         }
     }
+=======
+>>>>>>> 400d6cb (.)
 }
