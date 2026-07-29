@@ -14,6 +14,7 @@ use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
+use Webmozart\Assert\Assert;
 
 class JobStatsOverview extends XotBaseStatsOverviewWidget
 {
@@ -51,7 +52,7 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
         }
 
         return [
-            Stat::make((string) __('jobs::translations.total_jobs'), (int) ($aggregatedInfo->count ?? 0)),
+            Stat::make(Assert::string(__('jobs::translations.total_jobs')), (int) Assert::integerish($aggregatedInfo->count ?? 0)),
             Stat::make((string) __('jobs::translations.execution_time'), (string) $totalTime),
             Stat::make((string) __('jobs::translations.average_time'), (string) $averageTime),
         ];
