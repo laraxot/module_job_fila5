@@ -7,21 +7,10 @@ use Modules\Job\Models\BaseModel;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> provtv/dev
 uses(TestCase::class);
 
 test('base model extends eloquent model', function () {
     $baseModel = new class() extends BaseModel
-<<<<<<< HEAD
-=======
-=======
-beforeEach(function () {
-    $this->baseModel = new class extends BaseModel
->>>>>>> 400d6cb (.)
->>>>>>> provtv/dev
     {
         protected $table = 'test_job_table';
     };

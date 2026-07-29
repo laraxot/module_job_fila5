@@ -16,7 +16,6 @@
 
 ## Perché esiste
 
-<<<<<<< HEAD
 Geocoding, export, notifiche bulk non devono bloccare l’utente. Il modulo Job fornisce un’infrastruttura robusta per l’esecuzione asincrona di attività lunghe, garantendo affidabilità, monitorabilità e scalabilità.
 
 **Casi d’uso:**
@@ -35,22 +34,11 @@ Geocoding, export, notifiche bulk non devono bloccare l’utente. Il modulo Job 
 - ✅ Batch processing con progress tracking
 - ✅ Error handling robusto con recovery
 - ✅ Monitoraggio in tempo reale
-=======
-Geocoding, export, notifiche bulk non devono bloccare l’utente.
-
-## Superpoteri
-
-- Job e queue Laravel
-- Integrazione Horizon-ready
-- Monitoring Filament
-- Pattern idempotenti
->>>>>>> provtv/dev
 
 ## Certificazioni
 
 | Certificazione | Stato |
 |----------------|-------|
-<<<<<<< HEAD
 | PHPStan livello 10 | ✅ Compliant |
 | `declare(strict_types=1)` | ✅ Su nuovo codice PHP |
 | Filament 5 + XotBase | ✅ Admin enterprise-ready |
@@ -93,13 +81,6 @@ Geocoding, export, notifiche bulk non devono bloccare l’utente.
 | `laravel/framework` | ^12.0 | Queue infrastructure |
 | `laravel/horizon` | ^2.0 | Queue monitoring (optional) |
 | `filament/filament` | ^5.0 | Admin dashboard |
-=======
-| PHPStan livello 10 | Target progetto |
-| `declare(strict_types=1)` | Su nuovo codice PHP |
-| Filament 5 + XotBase | Admin enterprise |
-| Test PHPUnit / Pest | Suite modulo |
-| Documentazione wiki | Cartella `docs/` |
->>>>>>> provtv/dev
 
 ## Vuoi entrare nel team?
 
@@ -109,18 +90,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-<<<<<<< HEAD
 **Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28
-=======
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> provtv/dev
