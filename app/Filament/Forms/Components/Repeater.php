@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Modules\Job\Filament\Fields;
+namespace Modules\Job\Filament\Forms\Components;
 
 use Modules\Xot\Filament\Forms\Components\XotBaseRepeater;
 use Webmozart\Assert\Assert;
