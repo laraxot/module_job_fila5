@@ -194,13 +194,8 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
-=======
-- [README.md Modulo Job](./readme.md)
-- [Queue Management](./queue/readme.md)
->>>>>>> provtv/dev
 - [Best Practices](./best-practices.md)
 
 ### **Risorse Esterne**
@@ -216,7 +211,3 @@ public function __construct(string $output)
 **🌐 Translation Standards**: IT/EN complete ✅  
 **🚀 Performance**: 95/100 score  
 **✨ Test Coverage**: 85% ✅
-
-
-
-

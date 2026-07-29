@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "phpstan fixes gennaio "
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> provtv/dev
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -197,11 +194,7 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
 - [README.md Modulo Job](README.md)
-=======
-- [README.md Modulo Job](./readme.md)
->>>>>>> provtv/dev
 - [Queue Management](./queue/readme.md)
 - [Best Practices](./best-practices.md)
 
