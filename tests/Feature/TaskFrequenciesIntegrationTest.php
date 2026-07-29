@@ -12,8 +12,17 @@ uses(TestCase::class);
 
 describe('TaskFrequencies Integration', function () {
     beforeEach(function () {
+<<<<<<< HEAD
         /** @var TestCase $this */
         $this->action = new GetTaskFrequenciesAction();
+=======
+<<<<<<< HEAD
+        /** @var TestCase $this */
+        $this->action = new GetTaskFrequenciesAction();
+=======
+        $this->action = new GetTaskFrequenciesAction;
+>>>>>>> 400d6cb (.)
+>>>>>>> provtv/dev
     });
 
     it('integrates with Laravel config system', function () {
@@ -165,7 +174,11 @@ describe('TaskFrequencies Integration', function () {
             true,
             false,
             null,
+<<<<<<< HEAD
             new stdClass(),
+=======
+            new stdClass,
+>>>>>>> provtv/dev
         ];
 
         $action = $this->getAction(GetTaskFrequenciesAction::class);

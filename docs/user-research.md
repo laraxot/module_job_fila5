@@ -1,14 +1,22 @@
 ---
+<<<<<<< HEAD
 title: "Job Module - User Research"
 module: "Job"
 type: concept
 tags: [USER, RESEARCH]
+=======
+title: "User Research: Job Module"
+module: "Job"
+type: concept
+tags: [user, research]
+>>>>>>> provtv/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "user research"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< HEAD
 # Job Module - User Research
 
 **Module:** Job  
@@ -97,3 +105,9 @@ Proactive failure notification appreciated.
 ---
 
 *Last Updated: March 12, 2026*
+=======
+# User Research: Job Module
+
+## 🔬 Research Goals
+Identify user needs for Job functionality.
+>>>>>>> provtv/dev

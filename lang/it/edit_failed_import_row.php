@@ -25,6 +25,10 @@ return [
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> provtv/dev
             'helper_text' => '',
             'description' => '',
         ],
@@ -39,6 +43,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< HEAD
+=======
+=======
+        ],
+        'created_at' => [
+            'label' => 'Data Creazione',
+        ],
+        'updated_at' => [
+            'label' => 'Ultima Modifica',
+>>>>>>> 400d6cb (.)
+>>>>>>> provtv/dev
         ],
     ],
 ];

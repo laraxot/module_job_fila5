@@ -5,6 +5,10 @@ use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> provtv/dev
 use function Safe\class_uses;
 use function Safe\file_get_contents;
 
@@ -14,6 +18,14 @@ describe('GetTaskFrequenciesAction', function (): void {
     test('can be instantiated', function (): void {
         $action = new GetTaskFrequenciesAction();
         Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $action);
+<<<<<<< HEAD
+=======
+=======
+describe('GetTaskFrequenciesAction', function () {
+    beforeEach(function () {
+        $this->action = new GetTaskFrequenciesAction;
+>>>>>>> 400d6cb (.)
+>>>>>>> provtv/dev
     });
 
     test('has queueable action trait', function (): void {
