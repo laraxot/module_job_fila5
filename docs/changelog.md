@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Changelog"
 module: "Job"
 type: concept
@@ -10,7 +11,11 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 # Changelog
+=======
+module: theme
+topic: CHANGELOG
+canonical: ../../../Themes/docs/shared-components/CHANGELOG.md
+---
+>>>>>>> 6cee1df (.)
 
-All notable changes to this project will be documented in this file.
-
-## [Unreleased]
+See canonical documentation: ../../../Themes/docs/shared-components/CHANGELOG.md

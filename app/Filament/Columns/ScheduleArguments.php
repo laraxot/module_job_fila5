@@ -78,12 +78,12 @@ class ScheduleArguments extends XotBaseTextColumn
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
-                        $val = isset($value['value']) ? (string) $value['value'] : '';
+                        $val = isset($value['value']) ? (string) Assert::scalar($value['value']) : '';
 
                         return $name.'='.$val;
                     }
 
-                    return (string) $key.'='.(string) $value;
+                    return (string) $key.'='.(string) Assert::scalar($value);
                 },
             )
             ->values()

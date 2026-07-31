@@ -1,19 +1,15 @@
----
-title: "Job Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
----
+# Documentation
 
-# Modulo Job
+This directory contains documentation for the module.
 
-## Overview
+## Structure
 
-Il modulo **Job** gestisce i job asincroni e le code di elaborazione.
+- **architecture.md** - Module architecture and design patterns
+- **README.md** - This file
 
-## Funzionalità
+## Guidelines
 
+<<<<<<< HEAD
 - Job queue management
 - Retry logic
 - Failed job handling
@@ -51,3 +47,10 @@ Job\Services\QueueManager
 
 - [Queue Config](./queue/)
 - [Failed Jobs](./failed/)
+=======
+Documentation should be:
+- Clear and concise
+- Example-driven
+- Updated with code changes
+- Use Markdown format (.md)
+>>>>>>> 6cee1df (.)
