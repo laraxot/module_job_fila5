@@ -145,3 +145,40 @@ public function resolveType(string $type): string
 
 Ogni `resolveX()` estratto scende sotto soglia 10 e diventa testabile in isolamento con un test Pest dedicato.
 
+
+## 2026-07-27 — ExecuteTaskAction.php: MissingImport + UnusedFormalParameter
+
+Fix applicato (agente cascade-secondary, batch phpstan-swarm su moduli Setting/
+Seo/Tenant/Gdpr/DbForge/Limesurvey/Job/TestModule, tutti verdi phpstan livello
+configurato in `laravel/phpstan.neon`):
+
+- `\BadMethodCallException` → `use BadMethodCallException;` (PHPMD `MissingImport`).
+- `$taskId` non usato: è un parametro di stub in attesa di implementazione
+  (vedi `ROADMAP-2026.md` Phase 1), **non va rimosso** (romperebbe la firma
+  pubblica attesa dai chiamanti). Soppresso con
+  `@SuppressWarnings("PHPMD.UnusedFormalParameter")`.
+
+**Nota tecnica importante**: la sintassi standard PHPMD
+`@SuppressWarnings(PHPMD.UnusedFormalParameter)` (senza quote) rompe il parser
+PHPDoc di PHPStan (`phpDoc.parseError` — il punto dentro le parentesi non
+quotate confonde il tokenizer). Serve **sempre quotare** il valore:
+`@SuppressWarnings("PHPMD.UnusedFormalParameter")`. Verificato che PHPMD la
+riconosce comunque (0 warning dopo il fix) e PHPStan non solleva più errori.
+
+Verifica: `php -l`, `phpstan analyse` (batch 8 moduli, 0 errori),
+`phpmd.phar` sul file (0 warning). Test Pest esistente
+(`Modules/Job/tests/Unit/Actions/ExecuteTaskActionTest.php`) non eseguibile in
+questa sessione per blocco a monte, vedi nota sotto.
+
+## Blocker esterno rilevato (non toccato, fuori scope)
+
+`Modules/AI/composer.json` risulta JSON non valido (parentesi graffa/quadra
+spuria dopo il blocco `config.allow-plugins`, riga ~66) — verificato con
+`composer validate`. Questo impedisce l'esecuzione di **qualsiasi** test Pest
+nel progetto (bootstrap Laravel fallisce silenziosamente su `php artisan test`
+e `vendor/bin/pest`, nessun output oltre al warning coverage, exit 1).
+
+Il modulo AI mostra decine di file modificati in `git status` (refactor in
+corso, non di questa sessione) — non è stato toccato per evitare collisione
+con lavoro attivo di un altro agente. Segnalato in
+`docs/chat/phpstan-modules-swarm-session.md` per chi ha in carico il modulo AI.
