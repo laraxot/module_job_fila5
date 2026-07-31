@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Agent instructions"
 type: reference
 tags: [agents, coding-agent, llm-wiki]
@@ -11,6 +12,18 @@ related:
   - ./coding-agent-manifests.md
 ---
 
+=======
+title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
+module: "Job"
+type: concept
+tags: [AGENTS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "agents"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> 6cee1df (.)
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job
@@ -150,4 +163,8 @@ Related:
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
+<<<<<<< HEAD
 - [Module Documentation](../README.md)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> 6cee1df (.)

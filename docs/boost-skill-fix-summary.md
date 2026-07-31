@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Boost Skill Fix Summary - Job Module"
 module: "Job"
 type: concept
@@ -41,4 +42,11 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Job processing
 - Status monitoring
 - Task scheduling
+=======
+module: theme
+topic: boost_skill_fix_summary
+canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
+---
+>>>>>>> 6cee1df (.)
 
+See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
