@@ -145,6 +145,7 @@ public function resolveType(string $type): string
 
 Ogni `resolveX()` estratto scende sotto soglia 10 e diventa testabile in isolamento con un test Pest dedicato.
 
+<<<<<<< HEAD
 
 ## 2026-07-27 — ExecuteTaskAction.php: MissingImport + UnusedFormalParameter
 
@@ -182,3 +183,5 @@ Il modulo AI mostra decine di file modificati in `git status` (refactor in
 corso, non di questa sessione) — non è stato toccato per evitare collisione
 con lavoro attivo di un altro agente. Segnalato in
 `docs/chat/phpstan-modules-swarm-session.md` per chi ha in carico il modulo AI.
+=======
+>>>>>>> 6cee1df (.)

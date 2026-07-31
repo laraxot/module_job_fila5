@@ -3,7 +3,11 @@ title: "Sincronizzazione multi-organizzazione (laraxot + provtv)"
 type: concept
 tags: [git, sync, multi-org, laraxot, provtv, quality-gates]
 created: "2026-07-21"
+<<<<<<< HEAD
 updated: "2026-07-23"
+=======
+updated: "2026-07-29"
+>>>>>>> 6cee1df (.)
 related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
 ---
@@ -27,12 +31,17 @@ fetch di tutti i remote, quality gates (PHPStan L10, PHPMD), risincronizzazione 
   "add/add" (nella maggior parte dei casi contenuto identico, differenze reali
   risolte a mano confrontando i diff).
 
+<<<<<<< HEAD
 - **Blocco LFS lato server (provtv)**: il push viene respinto da un pre-receive
   hook GitHub per centinaia di oggetti Git LFS il cui contenuto binario reale
   è andato perso (404 anche su laraxot, remote canonico). Non risolvibile da
   CLI: serve intervento amministrativo su `provtv` (disabilitare l'enforcement
   LFS o ricaricare manualmente i binari mancanti), oppure — come fatto per il
   modulo UI — una riscrittura della storia che rimuove il tracking LFS.
+=======
+  è andato perso (404 anche su laraxot, remote canonico). Non risolvibile da
+  CLI: serve intervento amministrativo su `provtv` (disabilitare l'enforcement
+>>>>>>> 6cee1df (.)
 
 ## Regola per il futuro
 
@@ -44,10 +53,16 @@ revisione manuale dei conflitti reali.
 ### Playbook push dual-remote (2026-07-22, canon UI)
 
 Se `unpack failed` / `did not receive expected object` → `git push --no-thin`.
+<<<<<<< HEAD
 Se `GH008` / LFS missing su un org e l’altro ha già accettato il tip →
 `git lfs fetch <sibling> --all` poi `git lfs push <target> --all`, poi push.
 Dettaglio (SSoT): [../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md](../UI/docs/wiki/troubleshooting/git-push-lfs-missing-objects.md).
 Niente reset/squash/force per aggirare LFS.
+=======
+Se `unpack failed` / `did not receive expected object` → `git push --no-thin`.
+Niente reset/squash/force: sempre forward-only.
+
+>>>>>>> 6cee1df (.)
 
 ### Caso User 2026-07-23 (unrelated)
 
