@@ -7,10 +7,6 @@ namespace Modules\Job\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
-use Modules\User\Models\User;
-=======
->>>>>>> 6cee1df (.)
 use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
