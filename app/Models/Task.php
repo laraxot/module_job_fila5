@@ -96,7 +96,7 @@ class Task extends BaseModel
     // use HasFrequencies;
     use FrontendSortable;
 
-    /** @phpstan-ignore-next-line */
+    /** @phpstan-use HasXotFactory<\Modules\Job\Database\Factories\TaskFactory, Task> */
     use HasXotFactory;
 
     use Notifiable;
