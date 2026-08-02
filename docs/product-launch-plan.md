@@ -1,26 +1,15 @@
 ---
-<<<<<<< HEAD
-title: "Job - Product Launch Plan"
-module: "Job"
-type: concept
-tags: [product, launch, plan]
-=======
 title: "Job Module - Product Launch Plan"
 module: "Job"
 type: concept
 tags: [PRODUCT, LAUNCH, PLAN]
->>>>>>> 6cee1df (.)
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product launch plan"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-# Job - Product Launch Plan
-=======
 # Job Module - Product Launch Plan
->>>>>>> 6cee1df (.)
 
 **Module:** Job  
 **Version:** 1.0.0  

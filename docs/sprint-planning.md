@@ -1,26 +1,15 @@
 ---
-<<<<<<< HEAD
-title: "Sprint Planning: Job Module"
-module: "Job"
-type: concept
-tags: [sprint, planning]
-=======
 title: "Job Module - Sprint Planning"
 module: "Job"
 type: concept
 tags: [SPRINT, PLANNING]
->>>>>>> 6cee1df (.)
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "sprint planning"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-# Sprint Planning: Job Module
-=======
 # Job Module - Sprint Planning
->>>>>>> 6cee1df (.)
 
 **Module:** Job  
 **Sprint:** Sprint 1 (March 12-25, 2026)  

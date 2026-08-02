@@ -14,10 +14,7 @@ use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
-<<<<<<< HEAD
-=======
 use Webmozart\Assert\Assert;
->>>>>>> 6cee1df (.)
 
 class JobStatsOverview extends XotBaseStatsOverviewWidget
 {

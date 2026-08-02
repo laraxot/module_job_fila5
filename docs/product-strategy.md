@@ -1,26 +1,15 @@
 ---
-<<<<<<< HEAD
-title: "Job - Product Strategy"
-module: "Job"
-type: concept
-tags: [product, strategy]
-=======
 title: "Job Module - Product Strategy"
 module: "Job"
 type: concept
 tags: [PRODUCT, STRATEGY]
->>>>>>> 6cee1df (.)
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-# Job - Product Strategy
-=======
 # Job Module - Product Strategy
->>>>>>> 6cee1df (.)
 
 **Module:** Job  
 **Version:** 1.0.0  
