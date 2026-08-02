@@ -13,7 +13,7 @@ related:
 
 ## 2026-06-10 — STORY-307 · L10 · 0 errori codice
 
-795→0. [#336](https://github.com/laraxot/base_fixcity_fila5/issues/336). `GetTaskFrequenciesAction` + test Assert.
+795→0. [#336](https://github.com/laraxot/platform/issues/336). `GetTaskFrequenciesAction` + test Assert.
 
 ---
 
