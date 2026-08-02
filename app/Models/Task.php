@@ -18,9 +18,10 @@ use function Safe\json_decode;
 class Task extends BaseModel
 {
     // use HasFrequencies;
-    use FrontendSortable;
-
-    use HasXotFactory;
+    use FrontendSortable;/**
+ * @phpstan-use HasXotFactory<\Modules\Job\Database\Factories\TaskFactory, Task>
+ */
+use HasXotFactory;
 
     use Notifiable;
 
