@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
@@ -14,14 +14,35 @@ use Modules\Xot\Models\Traits\HasXotFactory;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
+use function Safe\json_encode;
 
+/**
+ * @property string $id
+ * @property string $description
+ * @property string $command
+ * @property string|array<string, mixed>|null $parameters
+ * @property string $expression
+ * @property string $timezone
+ * @property bool $is_active
+ * @property bool $dont_overlap
+ * @property bool $run_in_maintenance
+ * @property string|null $notification_email_address
+ * @property string|null $notification_phone_number
+ * @property string|null $notification_slack_webhook
+ * @property string $auto_cleanup_type
+ * @property int $auto_cleanup_num
+ * @property bool $run_on_one_server
+ * @property bool $run_in_background
+ * @property-read Collection<int, Frequency> $frequencies
+ * @property-read Collection<int, Result> $results
+ */
 class Task extends BaseModel
 {
     // use HasFrequencies;
-    use FrontendSortable;/**
- * @phpstan-use HasXotFactory<\Modules\Job\Database\Factories\TaskFactory, Task>
- */
-use HasXotFactory;
+    use FrontendSortable;
+
+    /** @phpstan-use HasXotFactory<TaskFactory, Task> */
+    use HasXotFactory;
 
     use Notifiable;
 
@@ -52,26 +73,37 @@ use HasXotFactory;
         'average_runtime',
     ];
 
+    /**
+     * @return array<string, mixed>
+     */
     public function compileParameters(bool $forScheduler = false): array
     {
         if ($this->parameters === null) {
             return [];
         }
 
-        $parameters = json_decode($this->parameters, true);
-        Assert::isArray($parameters);
+        $parametersStr = is_string($this->parameters) ? $this->parameters : json_encode($this->parameters);
+        Assert::string($parametersStr);
+        $decoded = json_decode($parametersStr, true);
+        Assert::isArray($decoded);
 
-        if ($forScheduler) {
-            /** @var array<int|string, string> $result */
-            $result = [];
-            foreach ($parameters as $key => $value) {
-                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) Assert::scalar($value));
+        /** @var array<string, mixed> $result */
+        $result = [];
+        foreach ($decoded as $key => $value) {
+            if ($forScheduler) {
+                if (is_bool($value)) {
+                    $result[(string) $key] = $value ? '1' : '0';
+
+                    continue;
+                }
+
+                $result[(string) $key] = is_scalar($value) ? (string) $value : '';
+            } else {
+                $result[(string) $key] = $value;
             }
-
-            return $result;
         }
 
-        return $parameters;
+        return $result;
     }
 
     public function getActivatedAttribute(): bool
@@ -85,14 +117,26 @@ use HasXotFactory;
         return 'preso';
     }
 
+    /**
+     * @return HasMany<Frequency, $this>
+     */
     public function frequencies(): HasMany
     {
-        return $this->hasMany(Frequency::class, 'task_id', 'id')->with('parameters');
+        /** @var HasMany<Frequency, $this> $relation */
+        $relation = $this->hasMany(Frequency::class, 'task_id', 'id')->with('parameters');
+
+        return $relation;
     }
 
+    /**
+     * @return HasMany<Result, $this>
+     */
     public function results(): HasMany
     {
-        return $this->hasMany(Result::class, 'task_id', 'id');
+        /** @var HasMany<Result, $this> $relation */
+        $relation = $this->hasMany(Result::class, 'task_id', 'id');
+
+        return $relation;
     }
 
     public function getLastResultAttribute(): ?Result
@@ -115,17 +159,23 @@ use HasXotFactory;
 
     public function routeNotificationForMail(): ?string
     {
-        return $this->notification_email_address;
+        $email = $this->notification_email_address;
+
+        return $email ? (string) $email : null;
     }
 
     public function routeNotificationForNexmo(): ?string
     {
-        return $this->notification_phone_number;
+        $phone = $this->notification_phone_number;
+
+        return $phone ? (string) $phone : null;
     }
 
     public function routeNotificationForSlack(): ?string
     {
-        return $this->notification_slack_webhook;
+        $webhook = $this->notification_slack_webhook;
+
+        return $webhook ? (string) $webhook : null;
     }
 
     public function autoCleanup(): void
