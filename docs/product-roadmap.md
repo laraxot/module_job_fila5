@@ -1,26 +1,15 @@
 ---
-<<<<<<< HEAD
-title: "Job - Product Roadmap"
-module: "Job"
-type: concept
-tags: [product, roadmap]
-=======
 title: "Job Module - Product Roadmap"
 module: "Job"
 type: concept
 tags: [PRODUCT, ROADMAP]
->>>>>>> 6cee1df (.)
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
-# Job - Product Roadmap
-=======
 # Job Module - Product Roadmap
->>>>>>> 6cee1df (.)
 
 **Module:** Job  
 **Version:** 1.0.0  
