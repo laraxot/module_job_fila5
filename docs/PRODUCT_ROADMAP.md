@@ -73,7 +73,7 @@ To build a **comprehensive job queue and background processing system** that ens
 
 ### LATER
 - [ ] Advanced monitoring
-- [ ] Predictive scaling
+- [ ] Forecast-based scaling
 - [ ] Job dependencies
 - [ ] Workflow orchestration
 
