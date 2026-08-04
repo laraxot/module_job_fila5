@@ -103,6 +103,24 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'type' => [
+            'label' => 'type',
+            'placeholder' => 'type',
+            'helper_text' => 'type',
+            'description' => 'type',
+        ],
+        'error_message' => [
+            'label' => 'error_message',
+            'placeholder' => 'error_message',
+            'helper_text' => 'error_message',
+            'description' => 'error_message',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+            'placeholder' => 'updated_at',
+            'helper_text' => 'updated_at',
+            'description' => 'updated_at',
+        ],
     ],
     'formats' => [
         'csv' => 'CSV',
