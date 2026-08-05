@@ -49,8 +49,8 @@ Geocoding, export, notifiche bulk non devono bloccare l’utente. Il modulo Job 
 
 ### 📖 Introduzione
 
-- **[INDEX.md](./docs/INDEX.md)** — Indice completo e navigazione
-- **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)** — Architettura e design patterns
+- **[index.md](./docs/index.md)** — Indice completo e navigazione
+- **[architecture.md](./docs/architecture.md)** — Architettura e design patterns
 - **[PATTERNS.md](./docs/PATTERNS.md)** — 5 pattern architetturali + anti-pattern
 - **[COMPONENTS.md](./docs/COMPONENTS.md)** — Modelli, action, event, comandi
 
