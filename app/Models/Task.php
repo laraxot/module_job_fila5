@@ -41,7 +41,7 @@ class Task extends BaseModel
     // use HasFrequencies;
     use FrontendSortable;
 
-    /** @phpstan-use HasXotFactory<TaskFactory, Task> */
+    /** @phpstan-use HasXotFactory<TaskFactory> */
     use HasXotFactory;
 
     use Notifiable;
