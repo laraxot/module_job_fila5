@@ -15,15 +15,24 @@ use Filament\Forms\Components\Toggle;
 use Modules\Job\Filament\Resources\JobBatchResource\Pages\ListJobBatches;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-
+use Filament\Forms\Components\Field;
 class JobBatchResource extends XotBaseResource
 {
     // //
 
     // protected static ?string $model = JobBatch::class;
 
-    #[Override]
-    public static function getFormSchema(): array
+    /**
+
+
+     * @return array<string, mixed>
+
+
+     */
+
+
+    //#[Override]
+    public static function getFormSchemaOld(): array
     {
         return [];
     }

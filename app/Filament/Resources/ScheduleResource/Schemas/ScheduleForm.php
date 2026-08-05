@@ -34,7 +34,7 @@ class ScheduleForm extends XotBaseResourceForm
      *
      * @return array<string, Component>
      */
-    public static function getFormSchema(): array
+    public static function getFormSchemaOld(): array
     {
         if (static::$commands === null) {
             static::$commands = app(GetCommandsAction::class)->execute();
