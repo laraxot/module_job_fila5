@@ -14,13 +14,22 @@ use Modules\Job\Filament\Resources\FailedJobResource\Pages\ListFailedJobs;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-
+use Filament\Forms\Components\Field;
 class FailedJobResource extends XotBaseResource
 {
     protected static ?string $model = FailedJob::class;
 
-    #[Override]
-    public static function getFormSchema(): array
+    /**
+
+
+     * @return array<string, mixed>
+
+
+     */
+
+
+    //#[Override]
+    public static function getFormSchemaOld(): array
     {
         return [];
     }
