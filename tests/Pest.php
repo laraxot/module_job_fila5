@@ -13,6 +13,8 @@ use Modules\Job\Models\JobBatch;
  * Vietato pest()->extend() / expect()->extend() (PHPStan method.internalClass).
  */
 
+require_once __DIR__.'/../../Xot/tests/XotBasePest.php';
+
 /**
  * @param  array<string, mixed>  $attributes
  */
