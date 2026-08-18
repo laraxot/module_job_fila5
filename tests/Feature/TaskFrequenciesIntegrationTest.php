@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> af4545e (.)
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -13,10 +17,14 @@ describe('TaskFrequencies Integration', function () {
     beforeEach(function () {
         /** @var TestCase $this */
 <<<<<<< HEAD
+<<<<<<< HEAD
         $this->action = new GetTaskFrequenciesAction;
 =======
         $this->action = new GetTaskFrequenciesAction();
 >>>>>>> f0c10529 (.)
+=======
+        $this->action = new GetTaskFrequenciesAction;
+>>>>>>> af4545e (.)
     });
 
     it('integrates with Laravel config system', function () {
@@ -169,10 +177,14 @@ describe('TaskFrequencies Integration', function () {
             false,
             null,
 <<<<<<< HEAD
+<<<<<<< HEAD
             new stdClass,
 =======
             new stdClass(),
 >>>>>>> f0c10529 (.)
+=======
+            new stdClass,
+>>>>>>> af4545e (.)
         ];
 
         $action = $this->getAction(GetTaskFrequenciesAction::class);
@@ -249,4 +261,8 @@ describe('TaskFrequencies Integration', function () {
         Assert::assertSame('Monthly', $result['monthly']);
         Assert::assertSame('Yearly', $result['yearly']);
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> af4545e (.)

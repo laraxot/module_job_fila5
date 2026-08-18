@@ -9,9 +9,12 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class FailedImportRowsTable extends XotBaseResourceTable
 {
+<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
+=======
+>>>>>>> af4545e (.)
     public function getTableColumns(): array
     {
         return [

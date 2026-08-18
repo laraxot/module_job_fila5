@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module: Philosophy, Purpose, and Design Principles"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "philosophy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> af4545e (.)
 # Job Module: Philosophy, Purpose, and Design Principles
 
 

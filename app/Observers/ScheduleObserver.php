@@ -8,9 +8,15 @@ declare(strict_types=1);
 
 namespace Modules\Job\Observers;
 
+<<<<<<< HEAD
 use Modules\Job\Actions\ClearScheduleCacheAction;
 use Modules\Job\Enums\Status;
 use Modules\Job\Models\Schedule;
+=======
+use Modules\Job\Enums\Status;
+use Modules\Job\Models\Schedule;
+use Modules\Job\Services\ScheduleService;
+>>>>>>> af4545e (.)
 
 class ScheduleObserver
 {
@@ -63,7 +69,14 @@ class ScheduleObserver
     protected function clearCache(): void
     {
         if (config('job::cache.enabled')) {
+<<<<<<< HEAD
             app(ClearScheduleCacheAction::class)->execute();
+=======
+            $scheduleService = app(ScheduleService::class);
+            if ($scheduleService !== null) {
+                $scheduleService->clearCache();
+            }
+>>>>>>> af4545e (.)
         }
     }
 }

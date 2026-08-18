@@ -9,12 +9,20 @@ use Modules\Job\Models\JobBatch;
 
 /*
  * Bootstrap Pest — modulo Job.
+<<<<<<< HEAD
  * Ogni file test dichiara uses(\Modules\Job\Tests\TestCase::class).
+=======
+ * Ogni file test dichiara uses(Modules\Job\Tests\TestCase::class).
+>>>>>>> af4545e (.)
  * Vietato pest()->extend() / expect()->extend() (PHPStan method.internalClass).
  */
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> af4545e (.)
  */
 function createJob(array $attributes = []): Job
 {
@@ -22,7 +30,11 @@ function createJob(array $attributes = []): Job
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> af4545e (.)
  */
 function makeJob(array $attributes = []): Job
 {
@@ -35,7 +47,11 @@ function makeJob(array $attributes = []): Job
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> af4545e (.)
  */
 function createJobBatch(array $attributes = []): JobBatch
 {
@@ -43,7 +59,11 @@ function createJobBatch(array $attributes = []): JobBatch
 }
 
 /**
+<<<<<<< HEAD
  * @param  array<string, mixed>  $attributes
+=======
+ * @param array<string, mixed> $attributes
+>>>>>>> af4545e (.)
  */
 function makeJobBatch(array $attributes = []): JobBatch
 {

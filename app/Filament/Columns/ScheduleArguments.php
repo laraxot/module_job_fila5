@@ -79,19 +79,27 @@ class ScheduleArguments extends TextColumn
                             ? $value['name']
                             : (string) $key;
 <<<<<<< HEAD
+<<<<<<< HEAD
                         $val = isset($value['value']) ? (string) Assert::scalar($value['value']) : '';
 =======
                         $val = isset($value['value']) ? (string) $value['value'] : '';
 >>>>>>> f0c10529 (.)
+=======
+                        $val = isset($value['value']) ? (string) $value['value'] : '';
+>>>>>>> af4545e (.)
 
                         return $name.'='.$val;
                     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                     return (string) $key.'='.(string) Assert::scalar($value);
 =======
                     return (string) $key.'='.(string) $value;
 >>>>>>> f0c10529 (.)
+=======
+                    return (string) $key.'='.(string) $value;
+>>>>>>> af4545e (.)
                 },
             )
             ->values()
