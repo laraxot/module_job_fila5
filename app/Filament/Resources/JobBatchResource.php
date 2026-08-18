@@ -23,7 +23,7 @@ class JobBatchResource extends XotBaseResource
         return [];
     }
 
-    #[Override]
+    #[\Override]
     public static function getPages(): array
     {
         return [

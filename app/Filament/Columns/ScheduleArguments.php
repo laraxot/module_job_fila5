@@ -78,13 +78,13 @@ class ScheduleArguments extends TextColumn
                     if ($this->withValue && is_array($value)) {
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
-                            : SafeStringCastAction::cast($key);
+                            : (string) $key;
                         $val = isset($value['value']) ? SafeStringCastAction::cast($value['value']) : '';
 
                         return $name.'='.$val;
                     }
 
-                    return SafeStringCastAction::cast($key).'='.SafeStringCastAction::cast($value);
+                    return (string) $key.'='.SafeStringCastAction::cast($value);
                 },
             )
             ->values()
