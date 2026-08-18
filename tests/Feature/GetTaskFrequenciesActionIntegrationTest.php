@@ -11,7 +11,11 @@ uses(TestCase::class);
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $this->action = new GetTaskFrequenciesAction;
+=======
+        $this->action = new GetTaskFrequenciesAction();
+>>>>>>> f0c10529 (.)
     });
 
     it('returns array when config exists', function () {

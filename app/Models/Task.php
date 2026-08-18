@@ -152,7 +152,11 @@ class Task extends BaseModel
             /** @var array<int|string, string> $result */
             $result = [];
             foreach ($parameters as $key => $value) {
+<<<<<<< HEAD
                 $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) Assert::scalar($value));
+=======
+                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) $value);
+>>>>>>> f0c10529 (.)
             }
 
             return $result;

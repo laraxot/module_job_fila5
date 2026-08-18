@@ -7,8 +7,13 @@ namespace Modules\Job\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Models\User;
+=======
+use Modules\User\Models\User;
+use Modules\Job\Providers\JobServiceProvider;
+>>>>>>> f0c10529 (.)
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
