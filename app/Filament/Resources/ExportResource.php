@@ -11,21 +11,12 @@ use Filament\Forms\Components\TextInput;
 use Modules\Job\Models\Export;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-use Filament\Forms\Components\Field;
+
 class ExportResource extends XotBaseResource
 {
     protected static ?string $model = Export::class;
 
-    /**
-
-
-     * @return array<string, mixed>
-
-
-     */
-
-
-    //#[Override]
+    #[Override]
     public static function getFormSchemaOld(): array
     {
         return [

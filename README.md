@@ -8,7 +8,7 @@
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![Job Module](https://img.shields.io/badge/Module-Job-008758.svg)](#)
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 
 > **Lavoro pesante fuori dalla request.** Code, batch, retry — UX veloce anche sotto carico.
 
@@ -49,8 +49,8 @@ Geocoding, export, notifiche bulk non devono bloccare l’utente. Il modulo Job 
 
 ### 📖 Introduzione
 
-- **[index.md](./docs/index.md)** — Indice completo e navigazione
-- **[architecture.md](./docs/architecture.md)** — Architettura e design patterns
+- **[INDEX.md](./docs/INDEX.md)** — Indice completo e navigazione
+- **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)** — Architettura e design patterns
 - **[PATTERNS.md](./docs/PATTERNS.md)** — 5 pattern architetturali + anti-pattern
 - **[COMPONENTS.md](./docs/COMPONENTS.md)** — Modelli, action, event, comandi
 
@@ -90,4 +90,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-**Modulo** `job` · **Laraxot** · **Job Module** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28
+**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28

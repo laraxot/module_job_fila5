@@ -4,44 +4,100 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Notifications\DatabaseNotification;
+use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\TaskFactory;
 use Modules\Job\Models\Traits\FrontendSortable;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
-use function Safe\json_encode;
 
 /**
+ * Modules\Job\Models\Task.
+ *
  * @property string $id
  * @property string $description
  * @property string $command
- * @property string|array<string, mixed>|null $parameters
- * @property string $expression
+ * @property string|null $parameters
+ * @property string|null $expression
  * @property string $timezone
- * @property bool $is_active
- * @property bool $dont_overlap
- * @property bool $run_in_maintenance
+ * @property int $is_active
+ * @property int $dont_overlap
+ * @property int $run_in_maintenance
  * @property string|null $notification_email_address
  * @property string|null $notification_phone_number
- * @property string|null $notification_slack_webhook
- * @property string $auto_cleanup_type
+ * @property string $notification_slack_webhook
  * @property int $auto_cleanup_num
- * @property bool $run_on_one_server
- * @property bool $run_in_background
+ * @property string|null $auto_cleanup_type
+ * @property int $run_on_one_server
+ * @property int $run_in_background
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read ProfileContract|null $creator
  * @property-read Collection<int, Frequency> $frequencies
+ * @property-read int|null $frequencies_count
+ * @property-read bool $activated
+ * @property-read float $average_runtime
+ * @property-read Result|null $last_result
+ * @property-read string $upcoming
+ * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property-read int|null $notifications_count
  * @property-read Collection<int, Result> $results
+ * @property-read int|null $results_count
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static Builder<static>|Task newModelQuery()
+ * @method static Builder<static>|Task newQuery()
+ * @method static Builder<static>|Task query()
+ * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
+ * @method static Builder<static>|Task whereAutoCleanupNum($value)
+ * @method static Builder<static>|Task whereAutoCleanupType($value)
+ * @method static Builder<static>|Task whereCommand($value)
+ * @method static Builder<static>|Task whereCreatedAt($value)
+ * @method static Builder<static>|Task whereCreatedBy($value)
+ * @method static Builder<static>|Task whereDescription($value)
+ * @method static Builder<static>|Task whereDontOverlap($value)
+ * @method static Builder<static>|Task whereExpression($value)
+ * @method static Builder<static>|Task whereId($value)
+ * @method static Builder<static>|Task whereIsActive($value)
+ * @method static Builder<static>|Task whereNotificationEmailAddress($value)
+ * @method static Builder<static>|Task whereNotificationPhoneNumber($value)
+ * @method static Builder<static>|Task whereNotificationSlackWebhook($value)
+ * @method static Builder<static>|Task whereParameters($value)
+ * @method static Builder<static>|Task whereRunInBackground($value)
+ * @method static Builder<static>|Task whereRunInMaintenance($value)
+ * @method static Builder<static>|Task whereRunOnOneServer($value)
+ * @method static Builder<static>|Task whereTimezone($value)
+ * @method static Builder<static>|Task whereUpdatedAt($value)
+ * @method static Builder<static>|Task whereUpdatedBy($value)
+ *
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property-read ProfileContract|null $deleter
+ *
+ * @method static TaskFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Task whereDeletedAt($value)
+ * @method static Builder<static>|Task whereDeletedBy($value)
+ *
+ * @mixin \Eloquent
  */
 class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
 
-    /** @phpstan-use HasXotFactory<TaskFactory> */
+    /** @phpstan-use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
     use Notifiable;
@@ -65,6 +121,11 @@ class Task extends BaseModel
         'run_in_background',
     ];
 
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
     /** @var list<string> */
     protected $appends = [
         'activated',
@@ -74,7 +135,10 @@ class Task extends BaseModel
     ];
 
     /**
-     * @return array<string, mixed>
+     * Compila i parametri del task per l'esecuzione.
+     *
+     * @param  bool  $forScheduler  Se true, i parametri vengono formattati per lo scheduler
+     * @return array<int|string, mixed>
      */
     public function compileParameters(bool $forScheduler = false): array
     {
@@ -82,35 +146,35 @@ class Task extends BaseModel
             return [];
         }
 
-        $parametersStr = is_string($this->parameters) ? $this->parameters : json_encode($this->parameters);
-        Assert::string($parametersStr);
-        $decoded = json_decode($parametersStr, true);
-        Assert::isArray($decoded);
+        $parameters = json_decode($this->parameters, true);
+        Assert::isArray($parameters);
 
-        /** @var array<string, mixed> $result */
-        $result = [];
-        foreach ($decoded as $key => $value) {
-            if ($forScheduler) {
-                if (is_bool($value)) {
-                    $result[(string) $key] = $value ? '1' : '0';
-
-                    continue;
-                }
-
-                $result[(string) $key] = is_scalar($value) ? (string) $value : '';
-            } else {
-                $result[(string) $key] = $value;
+        if ($forScheduler) {
+            /** @var array<int|string, string> $result */
+            $result = [];
+            foreach ($parameters as $key => $value) {
+                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : SafeStringCastAction::cast($value);
             }
+
+            return $result;
         }
 
-        return $result;
+        return $parameters;
     }
 
+    /**
+     * Activated Accessor.
+     */
     public function getActivatedAttribute(): bool
     {
         return (bool) $this->is_active;
     }
 
+    /**
+     * Upcoming Accessor.
+     *
+     * throws \Exception
+     */
     public function getUpcomingAttribute(): string
     {
         // return CronExpression::factory($this->getCronExpression())->getNextRunDate()->format('Y-m-d H:i:s');
@@ -118,27 +182,28 @@ class Task extends BaseModel
     }
 
     /**
+     * Frequencies Relation.
+     *
      * @return HasMany<Frequency, $this>
      */
     public function frequencies(): HasMany
     {
-        /** @var HasMany<Frequency, $this> $relation */
-        $relation = $this->hasMany(Frequency::class, 'task_id', 'id')->with('parameters');
-
-        return $relation;
+        return $this->hasMany(Frequency::class, 'task_id', 'id')->with('parameters');
     }
 
     /**
+     * Results Relation.
+     *
      * @return HasMany<Result, $this>
      */
     public function results(): HasMany
     {
-        /** @var HasMany<Result, $this> $relation */
-        $relation = $this->hasMany(Result::class, 'task_id', 'id');
-
-        return $relation;
+        return $this->hasMany(Result::class, 'task_id', 'id');
     }
 
+    /**
+     * Returns the most recent result entry for this task.
+     */
     public function getLastResultAttribute(): ?Result
     {
         $res = $this->results()->orderBy('id', 'desc')->first();
@@ -152,32 +217,41 @@ class Task extends BaseModel
 
     public function getAverageRuntimeAttribute(): float
     {
+        /**
+         * @var float $avg_duration
+         */
         $avg_duration = $this->results()->avg('duration');
 
         return (float) $avg_duration;
     }
 
+    /**
+     * Route notifications for the mail channel.
+     */
     public function routeNotificationForMail(): ?string
     {
-        $email = $this->notification_email_address;
-
-        return $email ? (string) $email : null;
+        return $this->notification_email_address;
     }
 
+    /**
+     * Route notifications for the Nexmo channel.
+     */
     public function routeNotificationForNexmo(): ?string
     {
-        $phone = $this->notification_phone_number;
-
-        return $phone ? (string) $phone : null;
+        return $this->notification_phone_number;
     }
 
+    /**
+     * Route notifications for the Slack channel.
+     */
     public function routeNotificationForSlack(): ?string
     {
-        $webhook = $this->notification_slack_webhook;
-
-        return $webhook ? (string) $webhook : null;
+        return $this->notification_slack_webhook;
     }
 
+    /**
+     * Attempt to perform clean on task results.
+     */
     public function autoCleanup(): void
     {
         if ($this->auto_cleanup_num > 0) {

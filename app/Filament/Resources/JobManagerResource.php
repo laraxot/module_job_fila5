@@ -19,21 +19,12 @@ use Modules\Job\Filament\Resources\JobManagerResource\Widgets\JobStatsOverview;
 use Modules\Job\Models\JobManager;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-use Filament\Forms\Components\Field;
+
 class JobManagerResource extends XotBaseResource
 {
     protected static ?string $model = JobManager::class;
 
-    /**
-
-
-     * @return array<string, mixed>
-
-
-     */
-
-
-    //#[Override]
+    #[Override]
     public static function getFormSchemaOld(): array
     {
         return [
