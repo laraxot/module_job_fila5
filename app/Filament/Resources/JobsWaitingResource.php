@@ -16,23 +16,14 @@ use Modules\Job\Filament\Resources\JobsWaitingResource\Widgets\JobsWaitingOvervi
 use Modules\Job\Models\Job;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-use Filament\Forms\Components\Field;
+
 class JobsWaitingResource extends XotBaseResource
 {
     protected static ?string $model = Job::class;
 
     protected static bool $shouldRegisterNavigation = true;
 
-    /**
-
-
-     * @return array<string, mixed>
-
-
-     */
-
-
-    //#[Override]
+    #[Override]
     public static function getFormSchemaOld(): array
     {
         return [

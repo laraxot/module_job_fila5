@@ -91,7 +91,7 @@ Proactive failure notification appreciated.
 
 ### Long-Term
 - Create job debugging tools
-- Develop forecast-based alerting
+- Develop predictive alerting
 - Build workflow visualization
 
 ---

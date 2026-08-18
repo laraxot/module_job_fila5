@@ -7,9 +7,9 @@ created: 2026-08-02
 updated: 2026-08-02
 qmd: "headroom modulo Job proxy codex mcp context compression"
 issues:
-  - "https://github.com/provtv/base_ptv_fila5/issues/218"
+  - "https://github.com/provtv/<nome repository>/issues/218"
 discussions:
-  - "https://github.com/provtv/base_ptv_fila5/discussions/219"
+  - "https://github.com/provtv/<nome repository>/discussions/219"
 related:
   - "../../../../../docs/HEADROOM-INTEGRATION.md"
 ---

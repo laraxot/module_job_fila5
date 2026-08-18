@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Columns;
 
 use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 
 class ScheduleArguments extends TextColumn
@@ -77,13 +78,13 @@ class ScheduleArguments extends TextColumn
                     if ($this->withValue && is_array($value)) {
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
-                            : (string) $key;
-                        $val = isset($value['value']) ? (string) Assert::scalar($value['value']) : '';
+                            : SafeStringCastAction::cast($key);
+                        $val = isset($value['value']) ? SafeStringCastAction::cast($value['value']) : '';
 
                         return $name.'='.$val;
                     }
 
-                    return (string) $key.'='.(string) Assert::scalar($value);
+                    return SafeStringCastAction::cast($key).'='.SafeStringCastAction::cast($value);
                 },
             )
             ->values()
