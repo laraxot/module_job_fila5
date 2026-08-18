@@ -7,8 +7,8 @@ namespace Modules\Job\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
-use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Models\User;
+use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
@@ -46,7 +46,7 @@ abstract class TestCase extends XotBaseTestCase
     {
         parent::setUp();
 
-        $database = database_path('database.sqlite');
+        $database = database_path('fixcity_data.sqlite');
 
         /** @var array<string, array<string, mixed>> $connections */
         $connections = config('database.connections', []);

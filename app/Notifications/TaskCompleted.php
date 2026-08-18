@@ -38,15 +38,15 @@ class TaskCompleted extends Notification implements ShouldQueue
     public function via(Task $notifiable): array
     {
         $channels = [];
-        if ($notifiable->routeNotificationForMail() !== null) {
+        if ($notifiable->notification_email_address) {
             $channels[] = 'mail';
         }
 
-        if ($notifiable->routeNotificationForNexmo() !== null) {
+        if ($notifiable->notification_phone_number) {
             $channels[] = 'nexmo';
         }
 
-        if ($notifiable->routeNotificationForSlack() !== null) {
+        if ($notifiable->notification_slack_webhook !== '' && $notifiable->notification_slack_webhook !== '0') {
             $channels[] = 'slack';
         }
 

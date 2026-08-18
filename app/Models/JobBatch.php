@@ -17,7 +17,6 @@ use Illuminate\Support\Collection;
 use Modules\Job\Database\Factories\JobBatchFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
-use Webmozart\Assert\Assert;
 
 /**
  * Modules\Job\Models\JobBatch.
@@ -77,15 +76,10 @@ class JobBatch extends BaseModel
 
     /**
      * Get the total number of jobs that have been processed by the batch thus far.
-     *
-     * @return int
      */
-    public function processedJobs(): int|float
+    public function processedJobs(): int
     {
-        $totalJobs = (int) Assert::integerish($this->attributes['total_jobs'] ?? 0);
-        $pendingJobs = (int) Assert::integerish($this->attributes['pending_jobs'] ?? 0);
-
-        return $totalJobs - $pendingJobs;
+        return $this->total_jobs - $this->pending_jobs;
     }
 
     /**
@@ -93,10 +87,11 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
-        $totalJobs = (int) Assert::integerish($this->attributes['total_jobs'] ?? 0);
-        $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
+        if ($this->total_jobs <= 0) {
+            return 0;
+        }
 
-        return (int) $progress;
+        return (int) round($this->processedJobs() / $this->total_jobs * 100);
     }
 
     /**
@@ -104,9 +99,7 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
-        $pendingJobs = (int) Assert::integerish($this->attributes['pending_jobs'] ?? 0);
-
-        return $pendingJobs > 0;
+        return $this->pending_jobs > 0;
     }
 
     /**
@@ -122,9 +115,7 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
-        $failedJobs = (int) Assert::integerish($this->attributes['failed_jobs'] ?? 0);
-
-        return $failedJobs > 0;
+        return $this->failed_jobs > 0;
     }
 
     /**
@@ -132,10 +123,7 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
-        $failedJobs = (int) Assert::integerish($this->attributes['failed_jobs'] ?? 0);
-        $totalJobs = (int) Assert::integerish($this->attributes['total_jobs'] ?? 0);
-
-        return $failedJobs === $totalJobs;
+        return $this->failed_jobs === $this->total_jobs;
     }
 
     /**
