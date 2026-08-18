@@ -117,7 +117,11 @@ describe('Job Business Logic', function () {
     });
 
     it('model has correct fillable attributes', function () {
+<<<<<<< HEAD
         $job = new Job;
+=======
+        $job = new Job();
+>>>>>>> f0c10529 (.)
         $fillable = $job->getFillable();
 
         Assert::assertContains('queue', $fillable);
