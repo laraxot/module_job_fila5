@@ -29,7 +29,11 @@ jobs:
           owner: ${{ github.owner }}
           repo: ${{ github.repo }}
       - name: Create release
+<<<<<<< HEAD
         uses: softprops/action-gh-release@v3
+=======
+        uses: softprops/action-gh-release@v1
+>>>>>>> af4545e (.)
         with:
           generate_release_notes: true
         env:

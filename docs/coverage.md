@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Code Coverage: Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "coverage"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> af4545e (.)
 # Code Coverage: Job
 
 **Lines Coverage:** N/A (Failed to parse)

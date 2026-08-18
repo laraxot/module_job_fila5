@@ -26,7 +26,11 @@ jobs:
 
       # node dependency cache
       # this is not required but speeds up the process
+<<<<<<< HEAD
       - uses: actions/cache@v6
+=======
+      - uses: actions/cache@v3
+>>>>>>> af4545e (.)
         with:
           path: ./node_modules
           key: node-${{ hashFiles('**/composer.lock') }}

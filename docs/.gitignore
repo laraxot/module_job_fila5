@@ -6,6 +6,7 @@ canonical: ../../../Themes/docs/shared-components/.gitignore
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitignore
 agentdb.rvf
+<<<<<<< HEAD
 
 # Version-suffixed markdown (AI artifacts)
 *-[0-9]*.md
@@ -23,3 +24,5 @@ phpstan-sessione-completa-2025-11.md
 *-[0-9][0-9].md
 *_[0-9].md
 *_[0-9][0-9].md
+=======
+>>>>>>> af4545e (.)

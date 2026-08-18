@@ -8,12 +8,17 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Models\User;
 =======
 use Modules\User\Models\User;
 use Modules\Job\Providers\JobServiceProvider;
 >>>>>>> f0c10529 (.)
+=======
+use Modules\Fixcity\Models\User;
+use Modules\Job\Providers\JobServiceProvider;
+>>>>>>> af4545e (.)
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
@@ -113,4 +118,8 @@ abstract class TestCase extends XotBaseTestCase
             $this->expectThrowableMessage($message);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> af4545e (.)

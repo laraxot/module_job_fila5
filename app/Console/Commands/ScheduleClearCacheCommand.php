@@ -8,8 +8,13 @@ declare(strict_types=1);
 
 namespace Modules\Job\Console\Commands;
 
+<<<<<<< HEAD
 use Illuminate\Console\Command;
 use Modules\Job\Actions\ClearScheduleCacheAction;
+=======
+// use HusamTariq\FilamentDatabaseSchedule\Http\Services\ScheduleService;
+use Illuminate\Console\Command;
+>>>>>>> af4545e (.)
 
 class ScheduleClearCacheCommand extends Command
 {
@@ -28,9 +33,13 @@ class ScheduleClearCacheCommand extends Command
      */
     public function handle(): int
     {
+<<<<<<< HEAD
         /** @var ClearScheduleCacheAction $action */
         $action = app(ClearScheduleCacheAction::class);
         $action->execute();
+=======
+        // (new ScheduleService())->clearCache();  //WIP
+>>>>>>> af4545e (.)
         $this->info('Scheduling cache cleared.');
 
         return 0;
