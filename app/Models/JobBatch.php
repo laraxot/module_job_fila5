@@ -33,7 +33,6 @@ use Override;
  * @property Carbon|null $finished_at
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
- *
  * @method static JobBatchFactory factory($count = null, $state = [])
  * @method static Builder<static>|JobBatch newModelQuery()
  * @method static Builder<static>|JobBatch newQuery()
@@ -48,9 +47,7 @@ use Override;
  * @method static Builder<static>|JobBatch whereOptions($value)
  * @method static Builder<static>|JobBatch wherePendingJobs($value)
  * @method static Builder<static>|JobBatch whereTotalJobs($value)
- *
  * @property-read ProfileContract|null $deleter
- *
  * @mixin \Eloquent
  */
 class JobBatch extends BaseModel
@@ -79,7 +76,7 @@ class JobBatch extends BaseModel
      */
     public function processedJobs(): int
     {
-        return $this->total_jobs - $this->pending_jobs;
+        return (int) $this->total_jobs - (int) $this->pending_jobs;
     }
 
     /**
@@ -87,11 +84,12 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
-        if ($this->total_jobs <= 0) {
+        $total = (int) $this->total_jobs;
+        if ($total <= 0) {
             return 0;
         }
 
-        return (int) round($this->processedJobs() / $this->total_jobs * 100);
+        return (int) round(($this->processedJobs() / $total) * 100);
     }
 
     /**
@@ -99,7 +97,7 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
-        return $this->pending_jobs > 0;
+        return ((int) $this->pending_jobs) > 0;
     }
 
     /**
@@ -115,7 +113,7 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
-        return $this->failed_jobs > 0;
+        return ((int) $this->failed_jobs) > 0;
     }
 
     /**
@@ -123,7 +121,7 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
-        return $this->failed_jobs === $this->total_jobs;
+        return ((int) $this->failed_jobs) === ((int) $this->total_jobs);
     }
 
     /**
