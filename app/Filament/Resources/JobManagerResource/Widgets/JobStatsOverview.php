@@ -39,10 +39,10 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
                 : '0';
 
             $totalTime = app(SafeEloquentCastAction::class)
-                ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0')
+                ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0') !== '0'
                 ? $this->formatSeconds(
-                    (int) app(SafeEloquentCastAction::class)
-                        ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0'),
+                    app(SafeEloquentCastAction::class)
+                        ->getIntAttribute($aggregatedInfo, 'total_time_elapsed', 0),
                 )
                 : '0';
         } else {
