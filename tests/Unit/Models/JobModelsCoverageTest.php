@@ -20,7 +20,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-job-db');
 
 describe('Job Models Coverage', function () {
     describe('Task Model', function () {
