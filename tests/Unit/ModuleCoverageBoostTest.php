@@ -1,0 +1,84 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Job\Tests\Unit;
+
+use Modules\Job\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
+
+use function Safe\glob;
+
+uses(TestCase::class)->group('no-job-db');
+
+/**
+ * @return list<string>
+ */
+function jobBoostClasses(string $pattern): array
+{
+    $root = dirname(__DIR__, 2).'/app';
+    /** @var list<string> $files */
+    $files = glob($root.'/'.$pattern);
+    $classes = [];
+
+    foreach ($files as $file) {
+        $relative = str_replace($root.'/', '', $file);
+        $class = 'Modules\\Job\\'.str_replace(['/', '.php'], ['\\', ''], $relative);
+        if (class_exists($class)) {
+            $classes[] = $class;
+        }
+    }
+
+    sort($classes);
+
+    return $classes;
+}
+
+describe('Job coverage boost', function (): void {
+    test('status enum exposes cases', function (): void {
+        foreach (jobBoostClasses('Enums/*.php') as $class) {
+            $ref = new ReflectionClass($class);
+            if (! $ref->isEnum()) {
+                continue;
+            }
+            Assert::assertNotEmpty($class::cases());
+            if (method_exists($class, 'getLabel')) {
+                foreach ($class::cases() as $case) {
+                    Assert::assertIsString($case->getLabel());
+                }
+            }
+        }
+    });
+
+    test('actions resolve from container with strict types', function (): void {
+        foreach (jobBoostClasses('Actions/**/*.php') as $class) {
+            $ref = new ReflectionClass($class);
+            if ($ref->isAbstract() || $ref->isInterface()) {
+                continue;
+            }
+            Assert::assertInstanceOf($class, app($class));
+            Assert::assertStringContainsString('declare(strict_types=1);', XotBasePest::reflectionSource($class));
+        }
+    });
+
+    test('policies declare crud methods', function (): void {
+        foreach (jobBoostClasses('Models/Policies/*.php') as $class) {
+            $ref = new ReflectionClass($class);
+            if ($ref->isAbstract()) {
+                continue;
+            }
+            Assert::assertTrue($ref->hasMethod('viewAny') || $ref->hasMethod('before'));
+        }
+    });
+
+    test('providers expose module name', function (): void {
+        foreach (jobBoostClasses('Providers/*ServiceProvider.php') as $class) {
+            $provider = new $class(app());
+            if (property_exists($provider, 'name')) {
+                Assert::assertNotSame('', (string) $provider->name);
+            }
+        }
+    });
+});

@@ -10,7 +10,7 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
-uses(TestCase::class);
+uses(TestCase::class)->group('no-job-db');
 
 describe('Schedule Actions', function () {
     it('GetActiveSchedulesAction uses QueueableAction and has execute method', function () {
