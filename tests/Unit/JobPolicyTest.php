@@ -27,6 +27,7 @@ uses(TestCase::class)->group('no-job-db');
 
 /**
  * @param  list<string>  $permissions
+ * @param  list<string>  $roles
  * @return Mockery\MockInterface&UserContract
  */
 function jobFakeUser(array $permissions = [], bool $ownsTeam = false, bool $belongsToTeam = false, array $roles = []): UserContract

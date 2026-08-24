@@ -47,8 +47,10 @@ describe('Job ScheduleForm full schema coverage', function (): void {
         $collection = new DataCollection(CommandData::class, [$command]);
         app()->instance(GetCommandsAction::class, new class($collection)
         {
+            /** @param DataCollection<int, CommandData> $commands */
             public function __construct(private DataCollection $commands) {}
 
+            /** @return DataCollection<int, CommandData> */
             public function execute(): DataCollection
             {
                 return $this->commands;

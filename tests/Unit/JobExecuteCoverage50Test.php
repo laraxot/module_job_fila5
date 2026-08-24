@@ -41,6 +41,9 @@ use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+use function Safe\ob_get_clean;
+use function Safe\ob_start;
+
 uses(TestCase::class)->group('no-job-db');
 
 afterEach(function (): void {
@@ -68,7 +71,7 @@ function jobUser(bool $superAdmin = false): UserContract
     $user->shouldReceive('belongsToTeam')->andReturn(true);
     $user->shouldReceive('ownsTeam')->andReturn(true);
     $user->shouldReceive('hasPermissionTo')->andReturn(true);
-    $user->id = 1;
+    $user->id = '1';
 
     return $user;
 }
@@ -202,20 +205,26 @@ describe('Job execute coverage — events request rules columns', function (): v
     test('Corn valida espressione cron e rifiuta valori non stringa', function (): void {
         $rule = new Corn();
         $failed = false;
-        $rule->validate('expression', ['not-string'], static function () use (&$failed): void {
+        $rule->validate('expression', ['not-string'], static function (string $message, ?string $attribute = null) use (&$failed): \Illuminate\Translation\PotentiallyTranslatedString {
             $failed = true;
+
+            return new \Illuminate\Translation\PotentiallyTranslatedString($message, app(\Illuminate\Contracts\Translation\Translator::class));
         });
         Assert::assertTrue($failed);
 
         $failed = false;
-        $rule->validate('expression', 'not a cron', static function () use (&$failed): void {
+        $rule->validate('expression', 'not a cron', static function (string $message, ?string $attribute = null) use (&$failed): \Illuminate\Translation\PotentiallyTranslatedString {
             $failed = true;
+
+            return new \Illuminate\Translation\PotentiallyTranslatedString($message, app(\Illuminate\Contracts\Translation\Translator::class));
         });
         Assert::assertTrue($failed);
 
         $failed = false;
-        $rule->validate('expression', '* * * * *', static function () use (&$failed): void {
+        $rule->validate('expression', '* * * * *', static function (string $message, ?string $attribute = null) use (&$failed): \Illuminate\Translation\PotentiallyTranslatedString {
             $failed = true;
+
+            return new \Illuminate\Translation\PotentiallyTranslatedString($message, app(\Illuminate\Contracts\Translation\Translator::class));
         });
         Assert::assertFalse($failed);
     });
@@ -240,13 +249,9 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 
     test('Status enum espone label color icon tramite EnumTrait', function (): void {
         foreach (Status::cases() as $case) {
-            Assert::assertIsString($case->getLabel());
-            if (method_exists($case, 'getColor')) {
-                $case->getColor();
-            }
-            if (method_exists($case, 'getIcon')) {
-                $case->getIcon();
-            }
+            Assert::assertNotSame('', $case->getLabel());
+            Assert::assertNotSame('', $case->getColor());
+            Assert::assertNotSame('', $case->getIcon());
         }
     });
 
@@ -262,8 +267,12 @@ describe('Job execute coverage — actions enums commands livewire', function ()
     });
 
     test('artisan phpunit:test e schedule:test-job eseguono handle', function (): void {
-        $this->artisan('phpunit:test', ['argument' => 'x'])->assertExitCode(0);
-        $this->artisan('schedule:test-job')->assertExitCode(0);
+        $phpunit = $this->artisan('phpunit:test', ['argument' => 'x']);
+        $schedule = $this->artisan('schedule:test-job');
+        Assert::assertInstanceOf(\Illuminate\Testing\PendingCommand::class, $phpunit);
+        Assert::assertInstanceOf(\Illuminate\Testing\PendingCommand::class, $schedule);
+        $phpunit->assertExitCode(0);
+        $schedule->assertExitCode(0);
     });
 
     test('Livewire Broad try flasha sessione senza dd', function (): void {
@@ -273,11 +282,11 @@ describe('Job execute coverage — actions enums commands livewire', function ()
     });
 
     test('modelli foglia espongono tabella', function (): void {
-        Assert::assertIsString((new Job())->getTable());
-        Assert::assertIsString((new FailedJob())->getTable());
-        Assert::assertIsString((new JobBatch())->getTable());
-        Assert::assertIsString((new Schedule())->getTable());
-        Assert::assertIsString((new Result())->getTable());
+        Assert::assertSame('jobs', (new Job())->getTable());
+        Assert::assertSame('failed_jobs', (new FailedJob())->getTable());
+        Assert::assertSame('job_batches', (new JobBatch())->getTable());
+        Assert::assertSame('schedules', (new Schedule())->getTable());
+        Assert::assertSame('results', (new Result())->getTable());
     });
 
     test('policy CRUD con Team e hasPermissionTo', function (): void {
@@ -302,9 +311,9 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertTrue($jobPolicy->delete($user, $team));
 
         $batch = new \Modules\Job\Models\Policies\JobBatchPolicy();
-        $batch->viewAny($user);
-        $batch->create($user);
-        $batch->update($user);
+        Assert::assertFalse($batch->viewAny($user));
+        Assert::assertTrue($batch->create($user));
+        Assert::assertFalse($batch->update($user));
 
         $schedule = new Schedule();
         $schedulePolicy = new SchedulePolicy();
