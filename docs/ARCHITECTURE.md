@@ -1,19 +1,27 @@
----
-title: "Job Module Architecture"
-type: architecture
-tags: [module, architecture, job]
-created: 2026-08-04
-updated: 2026-08-04
----
-# Job Module — Architecture
+# Job Module Architecture
 
-## Purpose
-Job module for Laraxot platform.
+## Overview
+The Job module handles background jobs, task scheduling, and queue management.
 
-## Core Components
-- Models, Actions, Resources
-- Standard Laraxot module structure
+## Key Components
+- **BaseModel:** Foundation for all Job entities
+- **Task:** Core job/task entity
+- **Frequency:** Schedule patterns (cron-like)
+- **Result:** Execution results and logs
 
-## Quality Gates
-- PHPStan L10 compliance
-- Test coverage requirements
+## Design Patterns
+- **Event-driven:** Tasks trigger on schedule
+- **Queue-based:** Support for async execution
+- **Monitoring:** Result tracking and notifications
+
+## Dependencies
+- Laravel Queue
+- Filament Admin
+- Spatie Activity Log
+
+See also:
+- Filament integration: `docs/wiki/concepts/Job-filament-integration.md`
+- Schedule/Cron: `docs/wiki/how-to/Job-schedule-cron.md`
+- WebSocket support: `docs/wiki/how-to/Job-websocket-soketi.md`
+- Storage servers: `docs/wiki/how-to/Job-storage-server.md`
+- Optimization: `docs/wiki/tips/Job-optimization-tips.md`
