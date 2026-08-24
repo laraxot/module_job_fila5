@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit;
 
 use Mockery;
+use Illuminate\Contracts\Translation\Translator;
+use Illuminate\Translation\PotentiallyTranslatedString;
 use Modules\Job\Models\Policies\ExportPolicy;
 use Modules\Job\Models\Policies\FailedImportRowPolicy;
 use Modules\Job\Models\Policies\FailedJobPolicy;
@@ -56,6 +58,19 @@ function jobBehaviorUser(array $permissions = [], array $roles = [], bool $ownsT
 afterEach(function (): void {
     Mockery::close();
 });
+
+/**
+ * @param  string|null  $message
+ * @return \Closure(string, ?string=): PotentiallyTranslatedString
+ */
+function jobValidationFailure(?string &$message): \Closure
+{
+    return static function (string $failure, ?string $attribute = null) use (&$message): PotentiallyTranslatedString {
+        $message = $failure;
+
+        return new PotentiallyTranslatedString($failure, app(Translator::class));
+    };
+}
 
 test('JobBasePolicy before concede tutto al super-admin e passa oltre altrimenti', function (): void {
     $policy = new TaskPolicy();
@@ -160,21 +175,15 @@ test('Corn rule: rifiuta non-stringa e cron invalido; accetta espressione valida
     $rule = new Corn();
 
     $msg = null;
-    $rule->validate('expression', 123, static function (string $m) use (&$msg): void {
-        $msg = $m;
-    });
+    $rule->validate('expression', 123, jobValidationFailure($msg));
     Assert::assertIsString($msg);
     Assert::assertStringContainsString('not a string', (string) $msg);
 
     $msg = null;
-    $rule->validate('expression', 'not a cron', static function (string $m) use (&$msg): void {
-        $msg = $m;
-    });
+    $rule->validate('expression', 'not a cron', jobValidationFailure($msg));
     Assert::assertNotNull($msg);
 
     $msg = null;
-    $rule->validate('expression', '0 0 * * *', static function (string $m) use (&$msg): void {
-        $msg = $m;
-    });
+    $rule->validate('expression', '0 0 * * *', jobValidationFailure($msg));
     Assert::assertNull($msg);
 });

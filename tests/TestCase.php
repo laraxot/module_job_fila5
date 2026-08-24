@@ -91,14 +91,6 @@ abstract class TestCase extends XotBaseTestCase
             return false;
         }
 
-        if (in_array('job-db', $this->groups(), true)) {
-            return true;
-        }
-
-        if (in_array('no-job-db', $this->groups(), true)) {
-            return false;
-        }
-
         $testFile = $this->resolvePestTestFile();
 
         // Unit: esegui offline; i test DB-dependent usano gruppo `job-db`.
