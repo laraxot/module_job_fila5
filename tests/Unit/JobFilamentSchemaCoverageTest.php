@@ -8,14 +8,20 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\FilamentSchemaCoverage;
 use PHPUnit\Framework\Assert;
 
+use function Safe\glob;
+
 uses(TestCase::class)->group('no-job-db');
 
-/**
- * @return array{0: string, 1: string}
- */
+/** @return list{string, string} */
 function jobFilamentContext(): array
 {
     return [dirname(__DIR__, 2).'/app', 'Modules\\Job\\'];
+}
+
+/** @return list<string> */
+function jobPhpFiles(string $pattern): array
+{
+    return array_values(array_filter(glob($pattern), is_string(...)));
 }
 
 describe('Job Filament schema coverage', function (): void {
@@ -51,12 +57,8 @@ describe('Job enum and provider coverage', function (): void {
     test('enums expose cases and labels', function (): void {
         [$appRoot, $ns] = jobFilamentContext();
         $enumDir = $appRoot.'/Enums';
-        if (! is_dir($enumDir)) {
-            Assert::assertTrue(true);
-
-            return;
-        }
-        foreach (glob($enumDir.'/*.php') ?: [] as $file) {
+        Assert::assertDirectoryExists($enumDir);
+        foreach (jobPhpFiles($enumDir.'/*.php') as $file) {
             $class = $ns.str_replace(['/', '.php'], ['\\', ''], substr($file, strlen($appRoot) + 1));
             if (! enum_exists($class)) {
                 continue;
@@ -72,14 +74,15 @@ describe('Job enum and provider coverage', function (): void {
 
     test('service providers declare module name', function (): void {
         [$appRoot, $ns] = jobFilamentContext();
-        foreach (glob($appRoot.'/Providers/*ServiceProvider.php') ?: [] as $file) {
+        foreach (jobPhpFiles($appRoot.'/Providers/*ServiceProvider.php') as $file) {
             $class = $ns.str_replace(['/', '.php'], ['\\', ''], substr($file, strlen($appRoot) + 1));
             if (! class_exists($class)) {
                 continue;
             }
             $provider = new $class(app());
             if (property_exists($provider, 'name')) {
-                Assert::assertNotSame('', (string) $provider->name);
+                Assert::assertIsString($provider->name);
+                Assert::assertNotSame('', $provider->name);
             }
         }
     });

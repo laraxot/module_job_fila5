@@ -15,6 +15,8 @@ afterEach(function (): void {
     Mockery::close();
 });
 
+/** @return array{0: string, 1: string} */
+/** @return list{string, string} */
 function jobBusinessContext(): array
 {
     return [dirname(__DIR__, 2).'/app', 'Modules\\Job\\'];
