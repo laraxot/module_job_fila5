@@ -1,3 +1,15 @@
+---
+title: 'Schedule'
+module: Job
+type: reference
+slug: schedule
+description: 'https://healthchecks.io/'
+tags: [migrato-da-txt, job]
+converted_from: schedule.txt
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring
@@ -27,5 +39,3 @@ https://www.thisprogrammingthing.com/what-the-f-ck-is-with-all-the-artisan-comma
 https://github.com/robersonfaria/laravel-database-schedule
 https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
-
-
