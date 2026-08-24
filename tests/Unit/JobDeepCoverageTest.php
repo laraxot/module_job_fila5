@@ -11,6 +11,8 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-job-db');
 
+/** @return array{0: string, 1: string} */
+/** @return list{string, string} */
 function jobDeepContext(): array
 {
     return [dirname(__DIR__, 2).'/app', 'Modules\\Job\\'];
