@@ -1,46 +1,31 @@
-# Modulo Job
+---
+title: "Job — documentazione del modulo"
+description: "Documentazione del modulo Job: code e job asincroni."
+module: Job
+tags: [job, documentazione, modulo, laraxot]
+status: active
+repository: https://github.com/laraxot/module_job_fila5
+related:
+  - ./00-index.md
+  - ./index.md
+  - ../../../../docs/wiki/audits/docs-redundancy-audit.md
+issues: https://github.com/laraxot/module_job_fila5/issues
+discussions: https://github.com/laraxot/module_job_fila5/discussions
+---
 
-## Overview
+# Documentation
 
-Il modulo **Job** gestisce i job asincroni e le code di elaborazione.
+This directory contains documentation for the module.
 
-## Funzionalità
+## Structure
 
-- Job queue management
-- Retry logic
-- Failed job handling
-- Job monitoring
+- **architecture.md** - Module architecture and design patterns
+- **README.md** - This file
 
-## Modelli Principali
+## Guidelines
 
-```php
-// Job
-Job\Models\Job
-
-// Failed Job
-Job\Models\FailedJob
-
-// Job Batch
-Job\Models\JobBatch
-```
-
-## Services
-
-```php
-// Job dispatcher
-Job\Services\JobDispatcher
-
-// Queue manager
-Job\Services\QueueManager
-```
-
-## Collegamenti
-
-- [Documentazione Root](../../../docs/JOB_MODULE.md)
-- [Xot Base](../Xot/docs/)
-- [Notify Module](../Notify/docs/) - per notifiche job
-
-## Backlinks
-
-- [Queue Config](./queue/)
-- [Failed Jobs](./failed/)
+Documentation should be:
+- Clear and concise
+- Example-driven
+- Updated with code changes
+- Use Markdown format (.md)

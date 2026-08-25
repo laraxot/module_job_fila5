@@ -1,3 +1,14 @@
+---
+title: "Job Module - Comprehensive Analysis"
+module: "Job"
+type: concept
+tags: [module, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module analysis"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Job Module - Comprehensive Analysis
 
 ## Module Overview
@@ -57,7 +68,7 @@ The Job module provides comprehensive queue and background job processing:
 - Advanced queue security features
 
 ## Integration with Other Modules
-- **Quaeris**: Background PDF generation and report processing
+- **Dominio documentale**: Background PDF generation and report processing
 - **Limesurvey**: Survey data processing jobs
 - **Notify**: Notification queue management
 - **Media**: Media processing jobs

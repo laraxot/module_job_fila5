@@ -1,3 +1,14 @@
+---
+title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
+module: "Job"
+type: concept
+tags: [AGENTS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "agents"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job
@@ -136,5 +147,5 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
-- [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
+- [Project Wiki Agent Instructions](../../docs/wiki/agents.md)
 - [Module Documentation](../README.md)

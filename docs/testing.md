@@ -1,3 +1,14 @@
+---
+title: "Testing Documentation"
+module: "Job"
+type: concept
+tags: [testing]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Testing Documentation
 
 ## Overview
@@ -180,7 +191,7 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
-'database.connections.job.database' => 'Quaeris_data_test',
+'database.connections.job.database' => 'job_data_test',
     ]);
     
     return $app;

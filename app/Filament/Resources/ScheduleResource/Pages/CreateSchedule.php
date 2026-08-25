@@ -18,14 +18,15 @@ class CreateSchedule extends XotBaseCreateRecord
 {
     use NavigationPageLabelTrait;
 
+   /** @var Collection<int, mixed> */
     public Collection $commands;
 
-    public static string $resource = ScheduleResource::class;
+    protected static string $resource = ScheduleResource::class;
 
     /**
      * @return array<Htmlable|string>
      */
-    public function getformSchema(): array
+   public function getFormSchema(): array
     {
         $res = $this->getResource()::getFormSchema();
         Assert::isArray($res);
