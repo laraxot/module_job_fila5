@@ -21,7 +21,11 @@ class JobManagerFactory extends Factory
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function definition(): array

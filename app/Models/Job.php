@@ -77,7 +77,11 @@ class Job extends BaseModel
         return $res;
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return Attribute<string, never>
      */
     public function status(): Attribute

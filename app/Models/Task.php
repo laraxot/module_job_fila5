@@ -40,6 +40,10 @@ class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     /** @phpstan-use HasXotFactory<TaskFactory> */
     use HasXotFactory;
 
@@ -73,7 +77,11 @@ class Task extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
     * @return array<string, mixed>
+=======
+     * @return array<string, mixed>
+>>>>>>> laraxot/dev
      */
     public function compileParameters(bool $forScheduler = false): array
     {
@@ -81,7 +89,11 @@ class Task extends BaseModel
             return [];
         }
 
+<<<<<<< HEAD
        $parametersStr = is_string($this->parameters) ? $this->parameters : json_encode($this->parameters);
+=======
+        $parametersStr = is_string($this->parameters) ? $this->parameters : json_encode($this->parameters);
+>>>>>>> laraxot/dev
         Assert::string($parametersStr);
         $decoded = json_decode($parametersStr, true);
         Assert::isArray($decoded);
@@ -117,7 +129,11 @@ class Task extends BaseModel
     }
 
     /**
+<<<<<<< HEAD
     * @return HasMany<Frequency, $this>
+=======
+     * @return HasMany<Frequency, $this>
+>>>>>>> laraxot/dev
      */
     public function frequencies(): HasMany
     {
@@ -156,7 +172,11 @@ class Task extends BaseModel
         return (float) $avg_duration;
     }
 
+<<<<<<< HEAD
    public function routeNotificationForMail(): ?string
+=======
+    public function routeNotificationForMail(): ?string
+>>>>>>> laraxot/dev
     {
         $email = $this->notification_email_address;
 

@@ -24,7 +24,11 @@ describe('Job Models Coverage', function () {
     describe('Task Model', function () {
         it('can be instantiated', function () {
             $task = new Task;
+<<<<<<< HEAD
            Assert::assertInstanceOf(Task::class, $task);
+=======
+            Assert::assertInstanceOf(Task::class, $task);
+>>>>>>> laraxot/dev
         });
 
         it('uses HasXotFactory trait', function () {
@@ -41,14 +45,22 @@ describe('Job Models Coverage', function () {
 
         it('has fillable fields defined', function () {
             $task = new Task;
+<<<<<<< HEAD
            Assert::assertContains('command', $task->getFillable());
+=======
+            Assert::assertContains('command', $task->getFillable());
+>>>>>>> laraxot/dev
             Assert::assertContains('description', $task->getFillable());
             Assert::assertContains('expression', $task->getFillable());
         });
 
         it('has appends defined', function () {
             $task = new Task;
+<<<<<<< HEAD
            Assert::assertContains('activated', $task->getAppends());
+=======
+            Assert::assertContains('activated', $task->getAppends());
+>>>>>>> laraxot/dev
             Assert::assertContains('upcoming', $task->getAppends());
             Assert::assertContains('average_runtime', $task->getAppends());
         });
@@ -92,7 +104,11 @@ describe('Job Models Coverage', function () {
     describe('Frequency Model', function () {
         it('can be instantiated', function () {
             $model = new Frequency;
+<<<<<<< HEAD
            Assert::assertInstanceOf(Frequency::class, $model);
+=======
+            Assert::assertInstanceOf(Frequency::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends BaseModel', function () {
@@ -112,7 +128,11 @@ describe('Job Models Coverage', function () {
     describe('Result Model', function () {
         it('can be instantiated', function () {
             $model = new Result;
+<<<<<<< HEAD
            Assert::assertInstanceOf(Result::class, $model);
+=======
+            Assert::assertInstanceOf(Result::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends BaseModel', function () {
@@ -132,7 +152,11 @@ describe('Job Models Coverage', function () {
     describe('Schedule Model', function () {
         it('can be instantiated', function () {
             $model = new Schedule;
+<<<<<<< HEAD
            Assert::assertInstanceOf(Schedule::class, $model);
+=======
+            Assert::assertInstanceOf(Schedule::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends BaseModel', function () {
@@ -152,7 +176,11 @@ describe('Job Models Coverage', function () {
     describe('Import Model', function () {
         it('can be instantiated', function () {
             $model = new Import;
+<<<<<<< HEAD
            Assert::assertInstanceOf(Import::class, $model);
+=======
+            Assert::assertInstanceOf(Import::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends BaseModel', function () {
@@ -172,7 +200,11 @@ describe('Job Models Coverage', function () {
     describe('Export Model', function () {
         it('can be instantiated', function () {
             $model = new Export;
+<<<<<<< HEAD
            Assert::assertInstanceOf(Export::class, $model);
+=======
+            Assert::assertInstanceOf(Export::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends Filament Export', function () {
@@ -192,7 +224,11 @@ describe('Job Models Coverage', function () {
     describe('JobBatch Model', function () {
         it('can be instantiated', function () {
             $model = new JobBatch;
+<<<<<<< HEAD
            Assert::assertInstanceOf(JobBatch::class, $model);
+=======
+            Assert::assertInstanceOf(JobBatch::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends BaseModel', function () {
@@ -212,7 +248,11 @@ describe('Job Models Coverage', function () {
     describe('JobManager Model', function () {
         it('can be instantiated', function () {
             $model = new JobManager;
+<<<<<<< HEAD
            Assert::assertInstanceOf(JobManager::class, $model);
+=======
+            Assert::assertInstanceOf(JobManager::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends BaseModel', function () {
@@ -232,7 +272,11 @@ describe('Job Models Coverage', function () {
     describe('FailedJob Model', function () {
         it('can be instantiated', function () {
             $model = new FailedJob;
+<<<<<<< HEAD
            Assert::assertInstanceOf(FailedJob::class, $model);
+=======
+            Assert::assertInstanceOf(FailedJob::class, $model);
+>>>>>>> laraxot/dev
         });
 
         it('extends BaseModel', function () {

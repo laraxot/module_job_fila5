@@ -16,7 +16,11 @@ interface TaskInterface
 {
     /**
      * Returns Eloquent Builder.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @return Builder<Task>
      */
     public function builder(): Builder;
@@ -28,28 +32,44 @@ interface TaskInterface
 
     /**
      * Returns all tasks.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @return Collection<int, Task>
      */
     public function findAll(): Collection;
 
     /**
      * Returns all active tasks.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @return Collection<int, Task>
      */
     public function findAllActive(): Collection;
 
     /**
      * Creates a new task with the given data.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @param  array<string, mixed>  $input
      */
     public function store(array $input): Task|bool;
 
     /**
      * Updates the given task with the given data.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @param  array<string, mixed>  $input
      */
     public function update(array $input, Task $task): Task;

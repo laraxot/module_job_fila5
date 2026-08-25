@@ -42,7 +42,11 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
         return [];
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<int, Split>
      */
     protected function getTableColumns(): array
@@ -72,7 +76,11 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
                     static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output',
                 ),
             ]),
+<<<<<<< HEAD
            Split::make([
+=======
+            Split::make([
+>>>>>>> laraxot/dev
                 Panel::make([
                     'output' => TextColumn::make('output')
                         ->extraAttributes(['class' => '!max-w-max'], true)

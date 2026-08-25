@@ -38,7 +38,11 @@ class ScheduleResource extends XotBaseResource
 
     protected static bool $shouldRegisterNavigation = true;
 
+<<<<<<< HEAD
    /** @var DataCollection<int, CommandData> */
+=======
+    /** @var DataCollection<int, CommandData> */
+>>>>>>> laraxot/dev
     protected static DataCollection $commands;
 
     public static function getEloquentQuery(): Builder
@@ -60,7 +64,11 @@ class ScheduleResource extends XotBaseResource
         ];
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>
@@ -85,7 +93,11 @@ class ScheduleResource extends XotBaseResource
                     ->afterStateUpdated(function (Set $set, ?string $state): void {
                         Assert::string($state);
                         Assert::isInstanceOf(
+<<<<<<< HEAD
                            $command = static::$commands->toCollection()->where('name', $state)->first(),
+=======
+                            $command = static::$commands->toCollection()->where('name', $state)->first(),
+>>>>>>> laraxot/dev
                             CommandData::class,
                         );
                         $params = $command->arguments;

@@ -59,7 +59,11 @@ class Frequency extends BaseModel
         'interval',
     ];
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return BelongsTo<Task, $this>
      */
     public function task(): BelongsTo
@@ -67,7 +71,11 @@ class Frequency extends BaseModel
         return $this->belongsTo(Task::class);
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return HasMany<Parameter, $this>
      */
     public function parameters(): HasMany

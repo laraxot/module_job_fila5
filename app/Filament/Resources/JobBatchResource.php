@@ -22,7 +22,11 @@ class JobBatchResource extends XotBaseResource
 
     // protected static ?string $model = JobBatch::class;
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

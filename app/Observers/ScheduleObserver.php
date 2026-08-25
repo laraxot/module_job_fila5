@@ -63,7 +63,11 @@ class ScheduleObserver
     protected function clearCache(): void
     {
         if (config('job::cache.enabled')) {
+<<<<<<< HEAD
            app(ClearScheduleCacheAction::class)->execute();
+=======
+            app(ClearScheduleCacheAction::class)->execute();
+>>>>>>> laraxot/dev
         }
     }
 }
