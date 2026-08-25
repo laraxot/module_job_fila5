@@ -18,7 +18,11 @@ class ScheduleOptions extends XotBaseTextColumn
         return $this;
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<int|string, string>
      */
     public function getTags(): array

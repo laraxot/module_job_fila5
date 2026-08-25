@@ -14,13 +14,21 @@ uses(\Modules\Job\Tests\TestCase::class);
 describe('Event', function () {
     it('can be instantiated', function () {
         $event = new class extends Event {};
+<<<<<<< HEAD
        Assert::assertInstanceOf(Event::class, $event);
+=======
+        Assert::assertInstanceOf(Event::class, $event);
+>>>>>>> laraxot/dev
     });
 
     it('uses Dispatchable trait', function () {
         $traits = class_uses(Event::class);
 
+<<<<<<< HEAD
        Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
+=======
+        Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
+>>>>>>> laraxot/dev
     });
 
     it('uses strict types', function () {

@@ -35,7 +35,11 @@ class JobStatus extends XotBasePage
         ];
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<int, object>
      */
     public function getActs(): array

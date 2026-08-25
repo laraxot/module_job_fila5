@@ -19,7 +19,11 @@ class JobResource extends XotBaseResource
 {
     protected static ?string $model = Job::class;
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

@@ -23,7 +23,11 @@ class JobsWaitingResource extends XotBaseResource
 
     protected static bool $shouldRegisterNavigation = true;
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

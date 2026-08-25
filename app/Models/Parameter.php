@@ -52,7 +52,11 @@ class Parameter extends BaseModel
         'value',
     ];
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return BelongsTo<Frequency, $this>
      */
     public function task(): BelongsTo

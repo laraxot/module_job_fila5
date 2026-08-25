@@ -24,14 +24,22 @@ class Crud extends Component
 
     /**
      * Return available frequencies.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public static function getFrequencies(): array
     {
         $res = config('totem.frequencies');
         if (is_array($res)) {
+<<<<<<< HEAD
            $frequencies = [];
+=======
+            $frequencies = [];
+>>>>>>> laraxot/dev
             foreach ($res as $key => $value) {
                 if (! is_string($key)) {
                     continue;
@@ -69,7 +77,11 @@ class Crud extends Component
 
     /**
      * Return collection of Artisan commands filtered if needed.
+<<<<<<< HEAD
     *
+=======
+     *
+>>>>>>> laraxot/dev
      * @return Collection<string, Command>
      */
     public function getCommands(): Collection
