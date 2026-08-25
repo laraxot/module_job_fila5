@@ -103,11 +103,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-       'type' => [
-=======
         'type' => [
->>>>>>> laraxot/dev
             'label' => 'type',
             'placeholder' => 'type',
             'helper_text' => 'type',

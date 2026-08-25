@@ -15,11 +15,7 @@ class GetCommandsAction
     /**
      * Execute the action.
      *
-<<<<<<< HEAD
-    * @return DataCollection<int, CommandData>
-=======
      * @return DataCollection<int, CommandData>
->>>>>>> laraxot/dev
      */
     public function execute(): DataCollection
     {
@@ -57,11 +53,7 @@ class GetCommandsAction
                     )
                     ->values();
 
-<<<<<<< HEAD
-               /** @var array<int, array<string, mixed>> $argumentsArray */
-=======
                 /** @var array<int, array<string, mixed>> $argumentsArray */
->>>>>>> laraxot/dev
                 $argumentsArray = $arguments->values()->all();
 
                 return new CommandData(
@@ -69,11 +61,7 @@ class GetCommandsAction
                     description: $description,
                     signature: $signature,
                     full_name: $name.' - '.$description,
-<<<<<<< HEAD
-                   arguments: $argumentsArray,
-=======
                     arguments: $argumentsArray,
->>>>>>> laraxot/dev
                     options: [
                         'withValue' => $options->toArray(),
                     ],

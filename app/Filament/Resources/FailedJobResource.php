@@ -19,11 +19,7 @@ class FailedJobResource extends XotBaseResource
 {
     protected static ?string $model = FailedJob::class;
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

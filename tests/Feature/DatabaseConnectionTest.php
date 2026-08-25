@@ -16,10 +16,6 @@ test('default database connection is configured', function () {
 test('database configuration has required connections', function () {
     $connections = config('database.connections');
 
-<<<<<<< HEAD
-   Assert::assertIsArray($connections);
-=======
     Assert::assertIsArray($connections);
->>>>>>> laraxot/dev
     Assert::assertArrayHasKey('mysql', $connections);
 });

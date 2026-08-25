@@ -41,11 +41,7 @@ class TaskComment extends BaseModel
         'comment',
     ];
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return BelongsTo<Task, $this>
      */
     public function task(): BelongsTo
@@ -53,11 +49,7 @@ class TaskComment extends BaseModel
         return $this->belongsTo(Task::class);
     }
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return BelongsTo<User, $this>
      */
     public function user(): BelongsTo
