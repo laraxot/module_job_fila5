@@ -17,13 +17,21 @@ class EditSchedule extends XotBaseEditRecord
 {
     // TransTrait è già incluso in XotBaseEditRecord - non ridichiarare
 
+<<<<<<< HEAD
    /** @var Collection<int, mixed> */
+=======
+    /** @var Collection<int, mixed> */
+>>>>>>> laraxot/dev
     public Collection $commands;
 
     protected static string $resource = ScheduleResource::class;
 
     #[Override]
+<<<<<<< HEAD
    protected function getFormSchemaOld(): array
+=======
+    protected function getFormSchemaOld(): array
+>>>>>>> laraxot/dev
     {
         $schema = $this->getResource()::getFormSchemaOld();
         Assert::isArray($schema);

@@ -14,7 +14,11 @@ class ResultFactory extends Factory
 {
     protected $model = Result::class;
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function definition(): array

@@ -14,7 +14,11 @@ class ListFailedImportRows extends XotBaseListRecords
     protected static string $resource = FailedImportRowResource::class;
 
     #[Override]
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, mixed>
      */
     public function getTableColumns(): array

@@ -27,7 +27,11 @@ describe('BroadcastingEvent', function () {
     it('uses InteractsWithSockets trait', function () {
         $traits = class_uses(BroadcastingEvent::class);
 
+<<<<<<< HEAD
        Assert::assertContains('Illuminate\Broadcasting\InteractsWithSockets', $traits);
+=======
+        Assert::assertContains('Illuminate\Broadcasting\InteractsWithSockets', $traits);
+>>>>>>> laraxot/dev
     });
 
     it('has broadcastOn method returning PrivateChannel', function () {

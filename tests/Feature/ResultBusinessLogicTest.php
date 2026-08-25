@@ -33,7 +33,11 @@ it('can create result with basic information', function (): void {
 
     $result = Result::create($resultData);
 
+<<<<<<< HEAD
    Assert::assertSame($task->id, $result->task_id);
+=======
+    Assert::assertSame($task->id, $result->task_id);
+>>>>>>> laraxot/dev
     Assert::assertSame('success', $result->result);
     Assert::assertSame('5.2', $result->duration);
 });
@@ -61,7 +65,11 @@ it('can manage result execution lifecycle', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame('success', $result->result);
+=======
+    Assert::assertSame('success', $result->result);
+>>>>>>> laraxot/dev
     Assert::assertSame('3.5', $result->duration);
 });
 
@@ -95,7 +103,11 @@ it('can handle result relationships with task', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
    Assert::assertCount(2, $task->results);
+=======
+    Assert::assertCount(2, $task->results);
+>>>>>>> laraxot/dev
     Assert::assertTrue($task->results->contains($result1));
     Assert::assertTrue($task->results->contains($result2));
 });
@@ -122,14 +134,22 @@ it('can manage result status variations', function (): void {
         'result' => 'failed',
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame('failed', $result->result);
+=======
+    Assert::assertSame('failed', $result->result);
+>>>>>>> laraxot/dev
     // Aggiorna risultato
     $result->update([
         'result' => 'success',
         'duration' => '2.5',
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame('success', $result->result);
+=======
+    Assert::assertSame('success', $result->result);
+>>>>>>> laraxot/dev
     Assert::assertSame('2.5', $result->duration);
 });
 
@@ -155,7 +175,11 @@ it('can handle result with different durations', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame('0.001', $result->duration);
+=======
+    Assert::assertSame('0.001', $result->duration);
+>>>>>>> laraxot/dev
 });
 
 it('can validate result data integrity', function (): void {
@@ -181,7 +205,11 @@ it('can validate result data integrity', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
    Assert::assertNotNull($validResult->id);
+=======
+    Assert::assertNotNull($validResult->id);
+>>>>>>> laraxot/dev
     Assert::assertSame('1.0', $validResult->duration);
 });
 
@@ -213,7 +241,11 @@ it('can manage multiple results for same task', function (): void {
         ]);
     }
 
+<<<<<<< HEAD
    Assert::assertCount(5, $results);
+=======
+    Assert::assertCount(5, $results);
+>>>>>>> laraxot/dev
     $taskFresh = $task->fresh();
     Assert::assertNotNull($taskFresh);
     $taskResults = $taskFresh->results;
@@ -257,7 +289,11 @@ it('can access task last result', function (): void {
 
     // Verifica che l'ultimo risultato sia quello atteso
     $taskWithLastResult = $task->fresh();
+<<<<<<< HEAD
    Assert::assertNotNull($taskWithLastResult);
+=======
+    Assert::assertNotNull($taskWithLastResult);
+>>>>>>> laraxot/dev
     $lastResult = $taskWithLastResult->last_result;
     Assert::assertNotNull($lastResult);
     Assert::assertSame($latestResult->id, $lastResult->id);
@@ -303,7 +339,11 @@ it('can calculate average runtime', function (): void {
 
     // Verifica che il calcolo della media funzioni
     $taskWithAvg = $task->fresh();
+<<<<<<< HEAD
    Assert::assertNotNull($taskWithAvg);
+=======
+    Assert::assertNotNull($taskWithAvg);
+>>>>>>> laraxot/dev
     Assert::assertGreaterThan(0, $taskWithAvg->average_runtime);
 });
 
@@ -329,7 +369,11 @@ it('can handle result with empty values', function (): void {
         'result' => 'pending',
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame('0.0', $result->duration);
+=======
+    Assert::assertSame('0.0', $result->duration);
+>>>>>>> laraxot/dev
     Assert::assertSame('pending', $result->result);
 });
 
@@ -355,7 +399,11 @@ it('can handle result with large duration', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame('3600.0', $result->duration);
+=======
+    Assert::assertSame('3600.0', $result->duration);
+>>>>>>> laraxot/dev
 });
 
 it('can manage result timestamps', function (): void {
@@ -380,6 +428,10 @@ it('can manage result timestamps', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< HEAD
    Assert::assertNotNull($result->created_at);
+=======
+    Assert::assertNotNull($result->created_at);
+>>>>>>> laraxot/dev
     Assert::assertNotNull($result->updated_at);
 });

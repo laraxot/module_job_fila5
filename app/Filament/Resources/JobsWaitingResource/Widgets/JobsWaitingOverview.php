@@ -42,7 +42,11 @@ class JobsWaitingOverview extends XotBaseStatsOverviewWidget
 
         $aggregatedInfo = JobManager::query()->select($aggregationColumns)->first();
 
+<<<<<<< HEAD
        $averageTime = '0';
+=======
+        $averageTime = '0';
+>>>>>>> laraxot/dev
         $totalTime = '0';
 
         if ($aggregatedInfo instanceof Model) {

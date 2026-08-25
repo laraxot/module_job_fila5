@@ -107,7 +107,11 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
        'import_class' => [
+=======
+        'import_class' => [
+>>>>>>> laraxot/dev
             'label' => 'import_class',
             'placeholder' => 'import_class',
             'helper_text' => 'import_class',

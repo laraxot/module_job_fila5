@@ -22,7 +22,11 @@ describe('PublicEvent', function () {
     it('uses required traits', function () {
         $traits = class_uses(PublicEvent::class);
 
+<<<<<<< HEAD
        Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
+=======
+        Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
+>>>>>>> laraxot/dev
         Assert::assertContains('Illuminate\Broadcasting\InteractsWithSockets', $traits);
         Assert::assertContains('Illuminate\Queue\SerializesModels', $traits);
     });
@@ -30,7 +34,11 @@ describe('PublicEvent', function () {
     it('has color property', function () {
         $event = new PublicEvent;
 
+<<<<<<< HEAD
        Assert::assertSame('black', $event->color);
+=======
+        Assert::assertSame('black', $event->color);
+>>>>>>> laraxot/dev
     });
 
     it('has broadcastOn method', function () {

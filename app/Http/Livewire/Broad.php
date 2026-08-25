@@ -11,7 +11,11 @@ use Modules\Xot\Actions\GetViewAction;
 
 class Broad extends Component
 {
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * Untyped to match HandlesEvents::$listeners.
      *
      * @var array<string, string>
