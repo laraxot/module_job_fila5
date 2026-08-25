@@ -12,33 +12,21 @@ describe('Job Business Logic', function () {
     it('can create job with basic information', function () {
         $jobData = [
             'queue' => 'default',
-<<<<<<< HEAD
-           'payload' => [
-=======
             'payload' => [
->>>>>>> laraxot/dev
                 'displayName' => 'App\Jobs\ProcessUserJob',
                 'job' => 'Illuminate\Queue\CallQueuedHandler@call',
                 'maxTries' => 3,
                 'maxExceptions' => 0,
                 'timeout' => 120,
                 'data' => ['user_id' => 123],
-<<<<<<< HEAD
-           ],
-=======
             ],
->>>>>>> laraxot/dev
             'attempts' => 0,
             'available_at' => now()->timestamp,
         ];
 
         $job = Job::create($jobData);
 
-<<<<<<< HEAD
-       Assert::assertInstanceOf(Job::class, $job);
-=======
         Assert::assertInstanceOf(Job::class, $job);
->>>>>>> laraxot/dev
 
         Assert::assertSame('default', $job->queue);
 

@@ -24,11 +24,7 @@ class JobManagerResource extends XotBaseResource
 {
     protected static ?string $model = JobManager::class;
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

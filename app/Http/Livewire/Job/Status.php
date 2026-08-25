@@ -24,11 +24,7 @@ use function Safe\putenv;
  */
 class Status extends Component
 {
-<<<<<<< HEAD
-   /** @var array<string, mixed> */
-=======
     /** @var array<string, mixed> */
->>>>>>> laraxot/dev
     public array $form_data = [];
 
     public string $out = '';

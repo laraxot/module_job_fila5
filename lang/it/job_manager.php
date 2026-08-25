@@ -178,11 +178,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
-       'job_id' => [
-=======
         'job_id' => [
->>>>>>> laraxot/dev
             'label' => 'job_id',
             'placeholder' => 'job_id',
             'helper_text' => 'job_id',
