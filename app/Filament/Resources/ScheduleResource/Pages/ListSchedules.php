@@ -48,11 +48,7 @@ class ListSchedules extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return array<string, EditAction|RestoreAction|DeleteAction|ForceDeleteAction|ViewAction|ActionGroup>
      */
     #[Override]
@@ -74,11 +70,7 @@ class ListSchedules extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return array<string, DeleteBulkAction>
      */
     #[Override]

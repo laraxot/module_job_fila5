@@ -9,9 +9,4 @@ qmd: "tips"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
 https://dudi.dev/optimize-laravel-database-queries/
-
-=======
-https://dudi.dev/optimize-laravel-database-queries/
->>>>>>> laraxot/dev

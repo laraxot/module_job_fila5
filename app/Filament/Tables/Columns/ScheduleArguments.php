@@ -25,11 +25,7 @@ class ScheduleArguments extends XotBaseTextColumn
 
     /**
      * Get the tags as an array.
-<<<<<<< HEAD
-    *
-=======
      *
->>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public function getTags(): array
@@ -88,11 +84,7 @@ class ScheduleArguments extends XotBaseTextColumn
 
     /**
      * Filter out empty tags from the array.
-<<<<<<< HEAD
-    *
-=======
      *
->>>>>>> laraxot/dev
      * @param  list<string>  $tags
      * @return list<string>
      */

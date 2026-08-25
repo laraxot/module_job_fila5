@@ -14,11 +14,7 @@ class GetTaskCommandsAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return Collection<int, Command>
      */
     public function execute(): Collection
@@ -42,11 +38,7 @@ class GetTaskCommandsAction
          * });
          * }
          */
-<<<<<<< HEAD
-       /** @var Collection<int, Command> $sorted */
-=======
         /** @var Collection<int, Command> $sorted */
->>>>>>> laraxot/dev
         $sorted = $all_commands->sortBy(static function ($command) {
             /** @var Command $command */
             $name = $command->getName();
@@ -57,10 +49,7 @@ class GetTaskCommandsAction
 
             return $name;
         });
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
         return $sorted->values();
     }
 }

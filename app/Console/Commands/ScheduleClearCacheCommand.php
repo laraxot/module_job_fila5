@@ -28,11 +28,7 @@ class ScheduleClearCacheCommand extends Command
      */
     public function handle(): int
     {
-<<<<<<< HEAD
-       /** @var ClearScheduleCacheAction $action */
-=======
         /** @var ClearScheduleCacheAction $action */
->>>>>>> laraxot/dev
         $action = app(ClearScheduleCacheAction::class);
         $action->execute();
         $this->info('Scheduling cache cleared.');

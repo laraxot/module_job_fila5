@@ -53,8 +53,4 @@ test('base model has timestamps enabled', function () {
     };
 
     Assert::assertTrue($baseModel->usesTimestamps());
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> laraxot/dev

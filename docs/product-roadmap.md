@@ -111,8 +111,4 @@ To build a **comprehensive job queue and background processing system** that ens
 
 ---
 
-<<<<<<< HEAD
 *Last Updated: March 12, 2026*
-=======
-*Last Updated: March 12, 2026*
->>>>>>> laraxot/dev

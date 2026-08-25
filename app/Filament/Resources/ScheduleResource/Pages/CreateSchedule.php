@@ -18,11 +18,7 @@ class CreateSchedule extends XotBaseCreateRecord
 {
     use NavigationPageLabelTrait;
 
-<<<<<<< HEAD
-   /** @var Collection<int, mixed> */
-=======
     /** @var Collection<int, mixed> */
->>>>>>> laraxot/dev
     public Collection $commands;
 
     protected static string $resource = ScheduleResource::class;
@@ -30,11 +26,7 @@ class CreateSchedule extends XotBaseCreateRecord
     /**
      * @return array<Htmlable|string>
      */
-<<<<<<< HEAD
-   public function getFormSchema(): array
-=======
     public function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         $res = $this->getResource()::getFormSchema();
         Assert::isArray($res);

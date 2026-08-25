@@ -22,11 +22,7 @@ describe('PrivateEvent', function () {
     it('uses required traits', function () {
         $traits = class_uses(PrivateEvent::class);
 
-<<<<<<< HEAD
-       Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
-=======
         Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
->>>>>>> laraxot/dev
         Assert::assertContains('Illuminate\Broadcasting\InteractsWithSockets', $traits);
         Assert::assertContains('Illuminate\Queue\SerializesModels', $traits);
     });
@@ -34,11 +30,7 @@ describe('PrivateEvent', function () {
     it('has message property', function () {
         $event = new PrivateEvent('test message');
 
-<<<<<<< HEAD
-       Assert::assertSame('test message', $event->message);
-=======
         Assert::assertSame('test message', $event->message);
->>>>>>> laraxot/dev
     });
 
     it('has broadcastOn method', function () {
