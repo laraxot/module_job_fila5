@@ -56,7 +56,7 @@ use Webmozart\Assert\Assert;
  */
 class JobBatch extends BaseModel
 {
-    public const UPDATED_AT = null;
+    public const ?string UPDATED_AT = null;
 
     public $incrementing = false;
 
