@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
-class ScheduleArguments extends TextColumn
+class ScheduleArguments extends XotBaseTextColumn
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 
@@ -25,6 +25,8 @@ class ScheduleArguments extends TextColumn
 
     /**
      * Get the tags as an array.
+    *
+     * @return array<int, string>
      */
     public function getTags(): array
     {
@@ -49,6 +51,9 @@ class ScheduleArguments extends TextColumn
 
     /**
      * Format tags when they are in array format.
+    *
+     * @param  array<int|string, mixed>  $tags
+     * @return array<int, string>
      */
     protected function formatArrayTags(array $tags): array
     {
@@ -73,12 +78,12 @@ class ScheduleArguments extends TextColumn
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
-                        $val = isset($value['value']) ? (string) $value['value'] : '';
+                       $val = isset($value['value']) ? (string) Assert::scalar($value['value']) : '';
 
                         return $name.'='.$val;
                     }
 
-                    return (string) $key.'='.(string) $value;
+                   return (string) $key.'='.(string) Assert::scalar($value);
                 },
             )
             ->values()
@@ -87,6 +92,9 @@ class ScheduleArguments extends TextColumn
 
     /**
      * Filter out empty tags from the array.
+    *
+     * @param  array<int, string>  $tags
+     * @return array<int, string>
      */
     protected function filterEmptyTags(array $tags): array
     {

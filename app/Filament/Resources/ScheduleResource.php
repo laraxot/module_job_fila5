@@ -31,14 +31,14 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
 use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
-
+use Filament\Forms\Components\Field;
 class ScheduleResource extends XotBaseResource
 {
     protected static ?string $model = Schedule::class;
 
     protected static bool $shouldRegisterNavigation = true;
 
-    /** @var DataCollection<CommandData> */
+   /** @var DataCollection<int, CommandData> */
     protected static DataCollection $commands;
 
     public static function getEloquentQuery(): Builder
@@ -60,8 +60,17 @@ class ScheduleResource extends XotBaseResource
         ];
     }
 
-    #[Override]
-    public static function getFormSchema(): array
+   /**
+
+
+     * @return array<string, mixed>
+
+
+     */
+
+
+    //#[Override]
+    public static function getFormSchemaOld(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
@@ -76,7 +85,7 @@ class ScheduleResource extends XotBaseResource
                     ->afterStateUpdated(function (Set $set, ?string $state): void {
                         Assert::string($state);
                         Assert::isInstanceOf(
-                            $command = static::$commands->where('name', $state)->first(),
+                           $command = static::$commands->toCollection()->where('name', $state)->first(),
                             CommandData::class,
                         );
                         $params = $command->arguments;

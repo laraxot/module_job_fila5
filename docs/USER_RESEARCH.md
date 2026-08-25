@@ -1,3 +1,14 @@
+---
+title: "Job Module - User Research"
+module: "Job"
+type: concept
+tags: [USER, RESEARCH]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user research"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 # Job Module - User Research
 
 **Module:** Job  
@@ -80,7 +91,7 @@ Proactive failure notification appreciated.
 
 ### Long-Term
 - Create job debugging tools
-- Develop predictive alerting
+- Develop forecast-based alerting
 - Build workflow visualization
 
 ---

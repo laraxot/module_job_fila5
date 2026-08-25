@@ -11,9 +11,12 @@ use Override;
 
 class ListFailedImportRows extends XotBaseListRecords
 {
-    public static string $resource = FailedImportRowResource::class;
+    protected static string $resource = FailedImportRowResource::class;
 
     #[Override]
+   /**
+     * @return array<string, mixed>
+     */
     public function getTableColumns(): array
     {
         return [

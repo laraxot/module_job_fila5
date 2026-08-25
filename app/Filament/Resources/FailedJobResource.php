@@ -14,29 +14,24 @@ use Modules\Job\Filament\Resources\FailedJobResource\Pages\ListFailedJobs;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-
+use Filament\Forms\Components\Field;
 class FailedJobResource extends XotBaseResource
 {
     protected static ?string $model = FailedJob::class;
 
-    #[Override]
-    public static function getFormSchema(): array
+   /**
+
+
+     * @return array<string, mixed>
+
+
+     */
+
+
+    //#[Override]
+    public static function getFormSchemaOld(): array
     {
-        return [
-            'uuid' => TextInput::make('uuid')->disabled()->columnSpan(4),
-            'failed_at' => TextInput::make('failed_at')->disabled(),
-            'id' => TextInput::make('id')->disabled(),
-            'connection' => TextInput::make('connection')->disabled(),
-            'queue' => TextInput::make('queue')->disabled(),
-            'exception' => Textarea::make('exception')
-                ->disabled()
-                ->columnSpan(4)
-                ->extraInputAttributes(['style' => 'font-size: 80%;']),
-            'payload' => Textarea::make('payload')
-                ->disabled()
-                ->columnSpan(4)
-                ->extraInputAttributes(['style' => 'font-size: 80%;']),
-        ];
+        return [];
     }
 
     #[Override]

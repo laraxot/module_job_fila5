@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -16,11 +15,12 @@ use Modules\Job\Models\Job;
 use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
 
 /**
  * --....
  */
-class JobsWaitingOverview extends BaseWidget
+class JobsWaitingOverview extends XotBaseStatsOverviewWidget
 {
     use FormatSeconds;
 
@@ -42,20 +42,20 @@ class JobsWaitingOverview extends BaseWidget
 
         $aggregatedInfo = JobManager::query()->select($aggregationColumns)->first();
 
-        if (! ($aggregatedInfo instanceof Model)) {
-            $averageTime = '0';
-            $totalTime = '0';
-        } else {
+       $averageTime = '0';
+        $totalTime = '0';
+
+        if ($aggregatedInfo instanceof Model) {
             $averageSeconds = (float) $cast->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0');
             $totalSeconds = (int) $cast->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0');
 
-            $averageTime = $averageSeconds > 0.0
-                ? (string) ceil($averageSeconds).'s'
-                : '0';
+            if ($averageSeconds > 0.0) {
+                $averageTime = (string) ceil($averageSeconds).'s';
+            }
 
-            $totalTime = $totalSeconds > 0
-                ? $this->formatSeconds($totalSeconds)
-                : '0';
+            if ($totalSeconds > 0) {
+                $totalTime = $this->formatSeconds($totalSeconds);
+            }
         }
 
         return [

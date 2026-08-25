@@ -9,21 +9,17 @@ declare(strict_types=1);
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
-use Log;
+use Illuminate\Support\Facades\Log;
 
 class TestJobCommand extends Command
 {
     /**
      * The name and signature of the console command.
-     *
-     * @var string
      */
     protected $signature = 'schedule:test-job';
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected $description = 'Command that display a friendly message that is intented to test a job.';
 

@@ -1,32 +1,57 @@
 ---
-title: "Wiki Index"
-module: "Job"
-updated: "2026-04-15T08:28:44Z"
+title: "Job Module Wiki Index"
+type: index
+module: Job
+tags: [job, wiki, index, queue]
+created: 2026-04-15
+updated: 2026-06-05
+qmd: "job module wiki index queue second brain"
+issues:
+  - "https://github.com/laraxot/platform/issues/272"
+discussions:
+  - "https://github.com/laraxot/platform/discussions/273"
+related:
+  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-laraxot-map.md
+  - ../../../../docs/wiki/bmad/architecture.md
+  - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+  - ../../docs/wiki/concepts/ai-harness-module-discipline.md
 ---
 
-# Wiki Index — Job
+# Job Module Wiki
+## AI / second brain
 
-> **Purpose:** Content-oriented catalog of all wiki pages in this module.  
-> **Replaces embedding-based RAG at moderate scale (~100 sources).**
+- [hackernoon-ai-coding-tips-laraxot-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-laraxot-map.md)
+- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
+- [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
+- [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
+- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
-## Concepts
 
-_No concepts ingested yet. Drop raw documents in `../raw/articles/` and run ingest._
+## Indices
+- [Rules](rules/index.md)
+- [Skills](skills/index.md)
+- [Commands](commands/index.md)
+- [Memories](memories/index.md)
+- [Concepts](concepts/index.md)
 
-## Entities
+## On-Demand Workflow
 
-_No entities tracked yet._
-
-## Sources
-
-_No sources ingested yet._
-
-## Comparisons
-
-_No comparisons synthesized yet._
+```bash
+qmd search "Job <topic>" --limit 5
+```
 
 ---
+*Updated: 2026-05-11*
 
-**Last Updated:** 2026-04-15T08:28:44Z  
-**Total Pages:** 0  
-**Total Raw Sources:** 0
+## Shared Second Brain Discipline
+
+- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — local docs/wiki operating contract aligned with root LLM Wiki discipline.
+
+## Composer / nwidart
+
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello laraxot)
+
+## Guardrail policy
+
+- [model-policy-laravel-contract](./concepts/model-policy-laravel-contract.md)
+- [policy-restoration-incident](./concepts/policy-restoration-incident.md)

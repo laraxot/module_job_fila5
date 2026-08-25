@@ -1,29 +1,38 @@
 ---
-title: "Activity Log"
+title: "Job - Wiki Activity Log"
+module: "Job"
+type: concept
+tags: [log]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "log"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+## [2026-06-30] docs | Second brain — policy incident consolidato
+
+- Memoria datata rimossa; canon in [policy-restoration-incident.md](./concepts/policy-restoration-incident.md)
+- Hub progetto: [sacred-artifacts-never-delete.md](../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md)
+- Inventario repo-wide: [policy-module-inventory.md](../../../../../docs/wiki/concepts/policy-module-inventory.md) + `bashscripts/tools/audit-policy-inventory.sh`
+- Job 15/15 policy — gold standard (`ExportPolicy extends JobBasePolicy {}`)
+- Merge conflict risolto in [index.md](./index.md)
+
+## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
+
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-laraxot-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
+- GitHub: [#272](https://github.com/laraxot/platform/issues/272) / [D#273](https://github.com/laraxot/platform/discussions/273)
+
+---
+title: "Job Wiki Activity Log"
 module: "Job"
 ---
 
-# Activity Log — Job
+# Job - Wiki Activity Log
 
-> **Purpose:** Append-only chronological activity record tracking ingests, queries, and lint passes.
+## [2026-05-11] Wiki Structure Created
 
-## Log Entries
+- Created wiki structure: rules/, skills/, commands/, memories/, concepts/
+- Created index.md for each section
+- Created module index.md
+- Ready for on-demand loading via QMD
 
-_No activity yet. Start by ingesting raw documents._
-
-### Format
-
-```
-[YYYY-MM-DD HH:MM:SS UTC] [OPERATION] Description
-```
-
-**Operations:**
-- `INGEST` — Added raw document to wiki
-- `QUERY` — Answered question from wiki
-- `LINT` — Maintained wiki quality
-- `UPDATE` — Modified existing wiki page
-
----
-
-**Last Activity:** None  
-**Total Operations:** 0
