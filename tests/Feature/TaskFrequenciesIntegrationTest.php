@@ -5,22 +5,12 @@ declare(strict_types=1);
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use stdClass;
 
 uses(TestCase::class);
 
 describe('TaskFrequencies Integration', function () {
-    beforeEach(function () {
-        /** @var TestCase $this */
-        $this->action = new GetTaskFrequenciesAction;
-    });
-
     it('integrates with Laravel config system', function () {
-<<<<<<< HEAD
-       /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
         config(['totem.frequencies' => [
             'everyMinute' => 'Every Minute',
             'everyFiveMinutes' => 'Every 5 Minutes',
@@ -39,11 +29,7 @@ describe('TaskFrequencies Integration', function () {
             'yearly' => 'Yearly',
         ]]);
 
-<<<<<<< HEAD
-       $action = $this->getAction(GetTaskFrequenciesAction::class);
-=======
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
->>>>>>> laraxot/dev
+        $action = new GetTaskFrequenciesAction();
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -61,11 +47,7 @@ describe('TaskFrequencies Integration', function () {
             'monthly' => 'Monthly',
         ]]);
 
-<<<<<<< HEAD
-       $action = $this->getAction(GetTaskFrequenciesAction::class);
-=======
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
->>>>>>> laraxot/dev
+        $action = new GetTaskFrequenciesAction();
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -79,13 +61,13 @@ describe('TaskFrequencies Integration', function () {
     it('can be used in queue context', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => ['test' => 'Test Frequency']]);
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
+        $action = new GetTaskFrequenciesAction();
         Assert::assertTrue(method_exists($action, 'onQueue'));
     });
 
     it('handles configuration changes dynamically', function () {
         /** @var TestCase $this */
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
+        $action = new GetTaskFrequenciesAction();
 
         config(['totem.frequencies' => ['initial' => 'Initial Value']]);
         $result1 = $action->execute();
@@ -111,11 +93,7 @@ describe('TaskFrequencies Integration', function () {
             ],
         ]]);
 
-<<<<<<< HEAD
-       $action = $this->getAction(GetTaskFrequenciesAction::class);
-=======
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
->>>>>>> laraxot/dev
+        $action = new GetTaskFrequenciesAction();
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -127,7 +105,7 @@ describe('TaskFrequencies Integration', function () {
     it('handles empty configuration gracefully', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => []]);
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
+        $action = new GetTaskFrequenciesAction();
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -143,11 +121,7 @@ describe('TaskFrequencies Integration', function () {
             'mixed_123' => 'Mixed Key Value',
         ]]);
 
-<<<<<<< HEAD
-       $action = $this->getAction(GetTaskFrequenciesAction::class);
-=======
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
->>>>>>> laraxot/dev
+        $action = new GetTaskFrequenciesAction();
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -165,7 +139,7 @@ describe('TaskFrequencies Integration', function () {
     it('handles concurrent access correctly', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => ['concurrent' => 'Concurrent Value']]);
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
+        $action = new GetTaskFrequenciesAction();
 
         $result1 = $action->execute();
         $result2 = $action->execute();
@@ -187,11 +161,7 @@ describe('TaskFrequencies Integration', function () {
             new stdClass,
         ];
 
-<<<<<<< HEAD
-       $action = $this->getAction(GetTaskFrequenciesAction::class);
-=======
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
->>>>>>> laraxot/dev
+        $action = new GetTaskFrequenciesAction();
 
         foreach ($invalidConfigs as $invalidConfig) {
             config(['totem.frequencies' => $invalidConfig]);
@@ -205,21 +175,13 @@ describe('TaskFrequencies Integration', function () {
     });
 
     it('maintains consistency across multiple executions', function () {
-<<<<<<< HEAD
-       /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
         config(['totem.frequencies' => [
             'consistent_key' => 'Consistent Value',
             'another_key' => 'Another Value',
         ]]);
 
-<<<<<<< HEAD
-       $action = $this->getAction(GetTaskFrequenciesAction::class);
-=======
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
->>>>>>> laraxot/dev
+        $action = new GetTaskFrequenciesAction();
         $results = [];
         for ($i = 0; $i < 5; $i++) {
             $results[] = $action->execute();
@@ -231,11 +193,7 @@ describe('TaskFrequencies Integration', function () {
     });
 
     it('works with realistic totem configuration', function () {
-<<<<<<< HEAD
-       /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
         config(['totem.frequencies' => [
             'everyMinute' => 'Every Minute',
             'everyTwoMinutes' => 'Every Two Minutes',
@@ -265,11 +223,7 @@ describe('TaskFrequencies Integration', function () {
             'yearlyOn' => 'Yearly On',
         ]]);
 
-<<<<<<< HEAD
-       $action = $this->getAction(GetTaskFrequenciesAction::class);
-=======
-        $action = $this->getAction(GetTaskFrequenciesAction::class);
->>>>>>> laraxot/dev
+        $action = new GetTaskFrequenciesAction();
         $result = $action->execute();
 
         Assert::assertIsArray($result);

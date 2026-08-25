@@ -52,11 +52,7 @@ return [
             'helper_text' => 'Timestamp when job was added to queue',
             'tooltip' => '',
         ],
-<<<<<<< HEAD
-       'job_id' => [
-=======
         'job_id' => [
->>>>>>> laraxot/dev
             'label' => 'job_id',
             'placeholder' => 'job_id',
             'helper_text' => 'job_id',

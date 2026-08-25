@@ -12,11 +12,7 @@ use function Safe\json_encode;
 uses(TestCase::class);
 
 it('can create task with basic information', function (): void {
-<<<<<<< HEAD
-   /** @var TestCase $this */
-=======
     /** @var TestCase $this */
->>>>>>> laraxot/dev
     $taskData = [
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
@@ -37,11 +33,7 @@ it('can create task with basic information', function (): void {
 
     $task = Task::create($taskData);
 
-<<<<<<< HEAD
-   $this->assertDatabaseHasRow('tasks', [
-=======
     $this->assertDatabaseHasRow('tasks', [
->>>>>>> laraxot/dev
         'description' => 'Pulizia database giornaliera',
         'command' => 'db:cleanup',
         'expression' => '0 2 * * *',
@@ -49,11 +41,7 @@ it('can create task with basic information', function (): void {
         'is_active' => 1,
     ], 'job');
 
-<<<<<<< HEAD
-   Assert::assertSame('Pulizia database giornaliera', $task->description);
-=======
     Assert::assertSame('Pulizia database giornaliera', $task->description);
->>>>>>> laraxot/dev
     Assert::assertSame('db:cleanup', $task->command);
     Assert::assertSame('0 2 * * *', $task->expression);
     Assert::assertSame(1, $task->is_active);
@@ -70,21 +58,13 @@ it('can manage task activation and deactivation', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
-<<<<<<< HEAD
-   Assert::assertSame(1, $task->is_active);
-=======
     Assert::assertSame(1, $task->is_active);
->>>>>>> laraxot/dev
     // Disattiva il task
     $task->update([
         'is_active' => 0,
     ]);
 
-<<<<<<< HEAD
-   Assert::assertSame(0, $task->is_active);
-=======
     Assert::assertSame(0, $task->is_active);
->>>>>>> laraxot/dev
 });
 
 it('can handle task parameters and compilation', function (): void {
@@ -101,11 +81,7 @@ it('can handle task parameters and compilation', function (): void {
 
     // Compila parametri per lo scheduler
     $schedulerParams = $task->compileParameters(true);
-<<<<<<< HEAD
-   Assert::assertIsArray($schedulerParams);
-=======
     Assert::assertIsArray($schedulerParams);
->>>>>>> laraxot/dev
     // Compila parametri per l'esecuzione
     $executionParams = $task->compileParameters(false);
     Assert::assertIsArray($executionParams);
@@ -133,11 +109,7 @@ it('can manage task frequencies', function (): void {
         'interval' => json_encode(['day' => 'monday', 'time' => '09:00']),
     ]);
 
-<<<<<<< HEAD
-   Assert::assertCount(2, $task->frequencies);
-=======
     Assert::assertCount(2, $task->frequencies);
->>>>>>> laraxot/dev
     Assert::assertTrue($task->frequencies->contains($frequency1));
     Assert::assertTrue($task->frequencies->contains($frequency2));
 });
@@ -155,11 +127,7 @@ it('can handle task notifications', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/...',
     ]);
 
-<<<<<<< HEAD
-   Assert::assertSame('admin@example.com', $task->notification_email_address);
-=======
     Assert::assertSame('admin@example.com', $task->notification_email_address);
->>>>>>> laraxot/dev
     Assert::assertSame('+1234567890', $task->notification_phone_number);
     Assert::assertSame('https://hooks.slack.com/services/...', $task->notification_slack_webhook);
 });
@@ -179,11 +147,7 @@ it('can manage task execution settings', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
-<<<<<<< HEAD
-   Assert::assertSame(1, $task->dont_overlap);
-=======
     Assert::assertSame(1, $task->dont_overlap);
->>>>>>> laraxot/dev
     Assert::assertSame(1, $task->run_in_maintenance);
     Assert::assertSame(1, $task->run_on_one_server);
     Assert::assertSame(1, $task->run_in_background);
@@ -202,11 +166,7 @@ it('can handle task cleanup settings', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
-<<<<<<< HEAD
-   Assert::assertSame(30, $task->auto_cleanup_num);
-=======
     Assert::assertSame(30, $task->auto_cleanup_num);
->>>>>>> laraxot/dev
     Assert::assertSame('days', $task->auto_cleanup_type);
 });
 
@@ -238,11 +198,7 @@ it('can manage task results and history', function (): void {
         'output' => 'Task in esecuzione',
     ]);
 
-<<<<<<< HEAD
-   Assert::assertCount(2, $task->results);
-=======
     Assert::assertCount(2, $task->results);
->>>>>>> laraxot/dev
     Assert::assertTrue($task->results->contains($result1));
     Assert::assertTrue($task->results->contains($result2));
 });
@@ -268,11 +224,7 @@ it('can handle task priority management', function (): void {
     ]);
 
     // Non possiamo testare priority_id perché non esiste nella tabella
-<<<<<<< HEAD
-   Assert::assertStringContainsString((string) 'alta', (string) $highPriorityTask->description);
-=======
     Assert::assertStringContainsString((string) 'alta', (string) $highPriorityTask->description);
->>>>>>> laraxot/dev
     Assert::assertStringContainsString((string) 'bassa', (string) $lowPriorityTask->description);
 });
 
@@ -296,11 +248,7 @@ it('can manage task timezone handling', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
-<<<<<<< HEAD
-   Assert::assertSame('Europe/Rome', $romeTask->timezone);
-=======
     Assert::assertSame('Europe/Rome', $romeTask->timezone);
->>>>>>> laraxot/dev
     Assert::assertSame('UTC', $utcTask->timezone);
 });
 
@@ -316,11 +264,7 @@ it('can handle task status transitions', function (): void {
     ]);
 
     // Testiamo solo il campo is_active che esiste veramente
-<<<<<<< HEAD
-   Assert::assertSame(1, $task->is_active);
-=======
     Assert::assertSame(1, $task->is_active);
->>>>>>> laraxot/dev
     // Cambia is_active a 0
     $task->update(['is_active' => 0]);
     Assert::assertSame(0, $task->is_active);
@@ -350,11 +294,7 @@ it('can handle task ordering and sorting', function (): void {
     ]);
 
     // Testiamo che entrambi i task esistano
-<<<<<<< HEAD
-   Assert::assertSame('Primo task', $task1->description);
-=======
     Assert::assertSame('Primo task', $task1->description);
->>>>>>> laraxot/dev
     Assert::assertSame('Secondo task', $task2->description);
 });
 
@@ -380,10 +320,6 @@ it('can handle task maintenance mode', function (): void {
         'notification_slack_webhook' => 'https://hooks.slack.com/services/TEST',
     ]);
 
-<<<<<<< HEAD
-   Assert::assertSame(1, $maintenanceTask->run_in_maintenance);
-=======
     Assert::assertSame(1, $maintenanceTask->run_in_maintenance);
->>>>>>> laraxot/dev
     Assert::assertSame(0, $normalTask->run_in_maintenance);
 });

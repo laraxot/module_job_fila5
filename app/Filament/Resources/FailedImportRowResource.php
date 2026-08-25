@@ -14,11 +14,7 @@ class FailedImportRowResource extends XotBaseResource
 {
     protected static ?string $model = FailedImportRow::class;
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

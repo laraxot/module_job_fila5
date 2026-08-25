@@ -17,20 +17,12 @@ describe('Job Providers Coverage', function () {
     describe('JobServiceProvider', function () {
         it('can be instantiated', function () {
             $provider = new JobServiceProvider(app());
-<<<<<<< HEAD
-           Assert::assertInstanceOf(JobServiceProvider::class, $provider);
-=======
             Assert::assertInstanceOf(JobServiceProvider::class, $provider);
->>>>>>> laraxot/dev
         });
 
         it('has correct name', function () {
             $provider = new JobServiceProvider(app());
-<<<<<<< HEAD
-           Assert::assertSame('Job', $provider->name);
-=======
             Assert::assertSame('Job', $provider->name);
->>>>>>> laraxot/dev
         });
 
         it('has module directory via reflection', function () {
@@ -61,11 +53,7 @@ describe('Job Providers Coverage', function () {
     describe('EventServiceProvider', function () {
         it('can be instantiated', function () {
             $provider = new EventServiceProvider(app());
-<<<<<<< HEAD
-           Assert::assertInstanceOf(EventServiceProvider::class, $provider);
-=======
             Assert::assertInstanceOf(EventServiceProvider::class, $provider);
->>>>>>> laraxot/dev
         });
 
         it('extends BaseEventServiceProvider', function () {
@@ -100,20 +88,12 @@ describe('Job Providers Coverage', function () {
     describe('RouteServiceProvider', function () {
         it('can be instantiated', function () {
             $provider = new RouteServiceProvider(app());
-<<<<<<< HEAD
-           Assert::assertInstanceOf(RouteServiceProvider::class, $provider);
-=======
             Assert::assertInstanceOf(RouteServiceProvider::class, $provider);
->>>>>>> laraxot/dev
         });
 
         it('has correct name', function () {
             $provider = new RouteServiceProvider(app());
-<<<<<<< HEAD
-           Assert::assertSame('Job', $provider->name);
-=======
             Assert::assertSame('Job', $provider->name);
->>>>>>> laraxot/dev
         });
 
         it('has module namespace via reflection', function () {
@@ -140,20 +120,12 @@ describe('Job Providers Coverage', function () {
     describe('AdminPanelProvider', function () {
         it('can be instantiated', function () {
             $provider = new AdminPanelProvider(app());
-<<<<<<< HEAD
-           Assert::assertInstanceOf(AdminPanelProvider::class, $provider);
-=======
             Assert::assertInstanceOf(AdminPanelProvider::class, $provider);
->>>>>>> laraxot/dev
         });
 
         it('has module property', function () {
             $provider = new AdminPanelProvider(app());
-<<<<<<< HEAD
-           $reflection = new \ReflectionProperty(AdminPanelProvider::class, 'module');
-=======
             $reflection = new \ReflectionProperty(AdminPanelProvider::class, 'module');
->>>>>>> laraxot/dev
             Assert::assertTrue($reflection->isProtected());
             Assert::assertSame('Job', $reflection->getDefaultValue());
         });

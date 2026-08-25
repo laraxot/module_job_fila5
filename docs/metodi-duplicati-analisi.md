@@ -500,8 +500,4 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - **Sigma:** 5 metodi in comune
 
 ---
-<<<<<<< HEAD
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
-=======
-_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
->>>>>>> laraxot/dev

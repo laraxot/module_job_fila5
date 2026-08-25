@@ -15,11 +15,7 @@ class ScheduleRequest extends FormRequest
 
     /**
      * Get the validation rules that apply to the request.
-<<<<<<< HEAD
-    *
-=======
      *
->>>>>>> laraxot/dev
      * @return array<string, string>
      */
     public function rules(): array

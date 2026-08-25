@@ -25,11 +25,7 @@ class ScheduleArguments extends XotBaseTextColumn
 
     /**
      * Get the tags as an array.
-<<<<<<< HEAD
-    *
-=======
      *
->>>>>>> laraxot/dev
      * @return array<int, string>
      */
     public function getTags(): array
@@ -55,11 +51,7 @@ class ScheduleArguments extends XotBaseTextColumn
 
     /**
      * Format tags when they are in array format.
-<<<<<<< HEAD
-    *
-=======
      *
->>>>>>> laraxot/dev
      * @param  array<int|string, mixed>  $tags
      * @return array<int, string>
      */
@@ -86,20 +78,12 @@ class ScheduleArguments extends XotBaseTextColumn
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
-<<<<<<< HEAD
-                       $val = isset($value['value']) ? (string) Assert::scalar($value['value']) : '';
-=======
                         $val = isset($value['value']) ? (string) Assert::scalar($value['value']) : '';
->>>>>>> laraxot/dev
 
                         return $name.'='.$val;
                     }
 
-<<<<<<< HEAD
-                   return (string) $key.'='.(string) Assert::scalar($value);
-=======
                     return (string) $key.'='.(string) Assert::scalar($value);
->>>>>>> laraxot/dev
                 },
             )
             ->values()
@@ -108,11 +92,7 @@ class ScheduleArguments extends XotBaseTextColumn
 
     /**
      * Filter out empty tags from the array.
-<<<<<<< HEAD
-    *
-=======
      *
->>>>>>> laraxot/dev
      * @param  array<int, string>  $tags
      * @return array<int, string>
      */

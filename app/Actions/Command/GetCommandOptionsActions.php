@@ -11,11 +11,7 @@ class GetCommandOptionsActions
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return array{withValue: array<int, object>, withoutValue: array<int, string>}
      */
     public function execute(Command $command): array

@@ -11,11 +11,7 @@ class GetCommandArgumentsActions
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return array<int, array{name: string, default: mixed, required: bool}>
      */
     public function execute(Command $command): array

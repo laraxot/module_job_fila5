@@ -16,11 +16,7 @@ class ExportResource extends XotBaseResource
 {
     protected static ?string $model = Export::class;
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

@@ -11,11 +11,7 @@ use Filament\Support\Contracts\HasLabel;
 
 enum Status: string implements HasColor, HasIcon, HasLabel
 {
-<<<<<<< HEAD
-   use EnumTrait;
-=======
     use EnumTrait;
->>>>>>> laraxot/dev
 
     case Active = 'active';
     case Inactive = 'inactive';

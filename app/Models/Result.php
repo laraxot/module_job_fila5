@@ -54,11 +54,7 @@ class Result extends BaseModel
         'task_id',
     ];
 
-<<<<<<< HEAD
-   /**
-=======
     /**
->>>>>>> laraxot/dev
      * @return BelongsTo<Task, $this>
      */
     public function task(): BelongsTo
