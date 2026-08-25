@@ -52,7 +52,7 @@ class ListJobBatches extends XotBaseListRecords
                     /**
                      * @param  mixed  $record
                      */
-                    static function ($record): string {
+                    static function (mixed $record): string {
                         if (! $record instanceof JobBatch) {
                             return '';
                         }

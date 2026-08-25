@@ -39,7 +39,7 @@ class GetTaskCommandsAction
          * }
          */
         /** @var Collection<int, Command> $sorted */
-        $sorted = $all_commands->sortBy(static function ($command) {
+        $sorted = $all_commands->sortBy(static function (mixed $command) {
             /** @var Command $command */
             $name = $command->getName();
             Assert::string($name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));

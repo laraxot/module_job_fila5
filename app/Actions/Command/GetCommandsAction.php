@@ -34,7 +34,7 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $arguments */
                 $arguments = collect($command->getDefinition()->getArguments())
                     ->map(
-                        static fn ($argument): array => [
+                        static fn (mixed $argument): array => [
                             'name' => (string) $argument->getName(),
                             'description' => (string) $argument->getDescription(),
                             'required' => (bool) $argument->isRequired(),
@@ -45,7 +45,7 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $options */
                 $options = collect($command->getDefinition()->getOptions())
                     ->map(
-                        static fn ($option): array => [
+                        static fn (mixed $option): array => [
                             'name' => (string) $option->getName(),
                             'description' => (string) $option->getDescription(),
                             'required' => (bool) $option->isValueRequired(),
