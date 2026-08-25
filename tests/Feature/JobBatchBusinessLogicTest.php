@@ -27,7 +27,11 @@ it('can create job batch with basic information', function (): void {
         'pending_jobs' => 100,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [
+=======
+        'options' => [
+>>>>>>> laraxot/dev
             'priority' => 'high',
             'notify_on_completion' => true,
         ],
@@ -37,7 +41,11 @@ it('can create job batch with basic information', function (): void {
 
     $batch = JobBatch::create($batchData);
 
+<<<<<<< HEAD
    $this->assertDatabaseHasRow('job_batches', [
+=======
+    $this->assertDatabaseHasRow('job_batches', [
+>>>>>>> laraxot/dev
         'id' => $batchId,
         'name' => 'Processamento utenti batch',
         'total_jobs' => 100,
@@ -45,7 +53,11 @@ it('can create job batch with basic information', function (): void {
         'failed_jobs' => 0,
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame($batchId, $batch->id);
+=======
+    Assert::assertSame($batchId, $batch->id);
+>>>>>>> laraxot/dev
     Assert::assertSame('Processamento utenti batch', $batch->name);
     Assert::assertSame(100, $batch->total_jobs);
     Assert::assertSame(100, $batch->pending_jobs);
@@ -61,7 +73,11 @@ it('can manage batch job progression', function (): void {
         'pending_jobs' => 10,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
     ]);
 
     Assert::assertSame(10, $batch->pending_jobs);
@@ -71,7 +87,11 @@ it('can manage batch job progression', function (): void {
         'pending_jobs' => 7,
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame(7, $batch->pending_jobs);
+=======
+    Assert::assertSame(7, $batch->pending_jobs);
+>>>>>>> laraxot/dev
     Assert::assertSame(3, $batch->total_jobs - $batch->pending_jobs);
 });
 
@@ -84,7 +104,11 @@ it('can handle batch job failures', function (): void {
         'pending_jobs' => 5,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
     ]);
 
     // Simula fallimento di alcuni job
@@ -95,7 +119,11 @@ it('can handle batch job failures', function (): void {
         'pending_jobs' => 3,
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame(2, $batch->failed_jobs);
+=======
+    Assert::assertSame(2, $batch->failed_jobs);
+>>>>>>> laraxot/dev
     Assert::assertSame(3, $batch->pending_jobs);
     Assert::assertSame($failedJobIds, json_decode($batch->failed_job_ids, true));
 });
@@ -109,7 +137,11 @@ it('can manage batch completion status', function (): void {
         'pending_jobs' => 3,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
     ]);
 
     Assert::assertFalse($batch->finished());
@@ -120,7 +152,11 @@ it('can manage batch completion status', function (): void {
         'finished_at' => now(),
     ]);
 
+<<<<<<< HEAD
    Assert::assertTrue($batch->finished());
+=======
+    Assert::assertTrue($batch->finished());
+>>>>>>> laraxot/dev
     Assert::assertFalse($batch->cancelled());
 });
 
@@ -133,7 +169,11 @@ it('can handle batch cancellation', function (): void {
         'pending_jobs' => 5,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
     ]);
 
     Assert::assertFalse($batch->cancelled());
@@ -142,7 +182,11 @@ it('can handle batch cancellation', function (): void {
         'cancelled_at' => now(),
     ]);
 
+<<<<<<< HEAD
    Assert::assertTrue($batch->cancelled());
+=======
+    Assert::assertTrue($batch->cancelled());
+>>>>>>> laraxot/dev
 });
 
 it('can manage batch options and configuration', function (): void {
@@ -157,13 +201,21 @@ it('can manage batch options and configuration', function (): void {
     ];
 
     $batch = JobBatch::create([
+<<<<<<< HEAD
        'id' => uniqueJobBatchId('options'),
+=======
+        'id' => uniqueJobBatchId('options'),
+>>>>>>> laraxot/dev
         'name' => 'Test opzioni',
         'total_jobs' => 10,
         'pending_jobs' => 10,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => $options,
+=======
+        'options' => $options,
+>>>>>>> laraxot/dev
     ]);
 
     $storedOptions = $batch->options?->all() ?? [];
@@ -181,14 +233,22 @@ it('can calculate batch progress percentage', function (): void {
         'pending_jobs' => 75,
         'failed_jobs' => 5,
         'failed_job_ids' => json_encode(['job-1', 'job-2', 'job-3', 'job-4', 'job-5']),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
     ]);
 
     // Calcola progresso: (total - pending) / total
     $completedJobs = $batch->total_jobs - $batch->pending_jobs;
     $progressPercentage = ($completedJobs / $batch->total_jobs) * 100;
 
+<<<<<<< HEAD
    Assert::assertSame(25, $completedJobs);
+=======
+    Assert::assertSame(25, $completedJobs);
+>>>>>>> laraxot/dev
     Assert::assertSame(25.0, $progressPercentage);
 });
 
@@ -201,13 +261,21 @@ it('can handle batch job relationships', function (): void {
         'pending_jobs' => 3,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
     ]);
 
     // Crea job associati al batch
     $job1 = Job::create([
         'queue' => 'batch',
+<<<<<<< HEAD
        'payload' => [
+=======
+        'payload' => [
+>>>>>>> laraxot/dev
             'displayName' => 'BatchJob1',
             'batch_id' => $batch->id,
         ],
@@ -217,7 +285,11 @@ it('can handle batch job relationships', function (): void {
 
     $job2 = Job::create([
         'queue' => 'batch',
+<<<<<<< HEAD
        'payload' => [
+=======
+        'payload' => [
+>>>>>>> laraxot/dev
             'displayName' => 'BatchJob2',
             'batch_id' => $batch->id,
         ],
@@ -226,7 +298,11 @@ it('can handle batch job relationships', function (): void {
     ]);
 
     // Verifica che i job siano associati al batch
+<<<<<<< HEAD
    Assert::assertSame($batch->id, $job1->payload['batch_id'] ?? null);
+=======
+    Assert::assertSame($batch->id, $job1->payload['batch_id'] ?? null);
+>>>>>>> laraxot/dev
     Assert::assertSame($batch->id, $job2->payload['batch_id'] ?? null);
 });
 
@@ -239,7 +315,11 @@ it('can manage batch cleanup and maintenance', function (): void {
         'pending_jobs' => 0,
         'failed_jobs' => 2,
         'failed_job_ids' => json_encode(['job-1', 'job-2']),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
         'finished_at' => now()->subDays(7),
     ]);
 
@@ -258,7 +338,11 @@ it('can handle batch retry logic', function (): void {
         'pending_jobs' => 0,
         'failed_jobs' => 3,
         'failed_job_ids' => json_encode(['job-1', 'job-2', 'job-3']),
+<<<<<<< HEAD
        'options' => [
+=======
+        'options' => [
+>>>>>>> laraxot/dev
             'retry_failed_jobs' => true,
             'max_retries' => 2,
         ],
@@ -276,7 +360,11 @@ it('can handle batch retry logic', function (): void {
         'finished_at' => null,
     ]);
 
+<<<<<<< HEAD
    Assert::assertSame(0, $batch->failed_jobs);
+=======
+    Assert::assertSame(0, $batch->failed_jobs);
+>>>>>>> laraxot/dev
     Assert::assertSame(3, $batch->pending_jobs);
     Assert::assertFalse($batch->finished());
 });
@@ -290,12 +378,20 @@ it('can handle batch notification settings', function (): void {
         'pending_jobs' => 10,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [
+=======
+        'options' => [
+>>>>>>> laraxot/dev
             'notify_on_completion' => true,
             'notify_on_failure' => true,
             'notification_email' => 'admin@example.com',
             'notification_slack' => 'https://hooks.slack.com/...',
+<<<<<<< HEAD
        ],
+=======
+        ],
+>>>>>>> laraxot/dev
     ]);
 
     $options = $batch->options?->all() ?? [];
@@ -319,7 +415,11 @@ it('can handle batch bulk operations', function (): void {
             'pending_jobs' => $i * 5,
             'failed_jobs' => $i,
             'failed_job_ids' => json_encode(["failed-job-{$i}"]),
+<<<<<<< HEAD
            'options' => ['priority' => $priorities[$i - 1]],
+=======
+            'options' => ['priority' => $priorities[$i - 1]],
+>>>>>>> laraxot/dev
         ]);
     }
 
@@ -333,7 +433,11 @@ it('can handle batch bulk operations', function (): void {
 });
 
 it('can validate batch integrity', function (): void {
+<<<<<<< HEAD
    /** @var TestCase $this */
+=======
+    /** @var TestCase $this */
+>>>>>>> laraxot/dev
     // Test con batch valido
     $validBatch = JobBatch::create([
         'id' => uniqueJobBatchId('valid'),
@@ -342,7 +446,11 @@ it('can validate batch integrity', function (): void {
         'pending_jobs' => 10,
         'failed_jobs' => 0,
         'failed_job_ids' => json_encode([]),
+<<<<<<< HEAD
        'options' => [],
+=======
+        'options' => [],
+>>>>>>> laraxot/dev
     ]);
 
     Assert::assertNotNull($validBatch->id);

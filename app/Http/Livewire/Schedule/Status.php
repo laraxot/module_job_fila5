@@ -16,7 +16,11 @@ use Modules\Xot\Actions\GetViewAction;
  */
 class Status extends Component
 {
+<<<<<<< HEAD
    /** @var array<string, mixed> */
+=======
+    /** @var array<string, mixed> */
+>>>>>>> laraxot/dev
     public array $form_data = [];
 
     public string $out = '';
@@ -78,7 +82,11 @@ class Status extends Component
         $this->out .= '<hr/>';
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return Collection<int, \Illuminate\Console\Scheduling\Event>
      */
     public function getScheduledJobs(): Collection
@@ -93,7 +101,11 @@ class Status extends Component
         // new Kernel(app(), new Dispatcher);
         $schedule = app(Schedule::class);
 
+<<<<<<< HEAD
        /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $events */
+=======
+        /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $events */
+>>>>>>> laraxot/dev
         $events = collect($schedule->events())->values();
 
         return $events;

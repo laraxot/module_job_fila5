@@ -86,7 +86,11 @@ class ScheduleHistory extends BaseModel
      *
      */
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return BelongsTo<Schedule, $this>
      */
     public function command(): BelongsTo

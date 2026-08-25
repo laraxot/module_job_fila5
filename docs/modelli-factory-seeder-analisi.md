@@ -4,4 +4,8 @@ topic: modelli_factory_seeder_analisi
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
 ---
 
+<<<<<<< HEAD
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+>>>>>>> laraxot/dev

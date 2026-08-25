@@ -41,6 +41,10 @@ abstract class TestCase extends XotBaseTestCase
             JobServiceProvider::class,
         ];
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     protected function setUp(): void
     {
         parent::setUp();
@@ -107,4 +111,8 @@ abstract class TestCase extends XotBaseTestCase
             $this->expectThrowableMessage($message);
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> laraxot/dev

@@ -27,7 +27,11 @@ abstract class BaseModel extends XotBaseModel
         parent::__construct($attributes);
     }
 
+<<<<<<< HEAD
    public $incrementing = true;
+=======
+    public $incrementing = true;
+>>>>>>> laraxot/dev
 
     public $timestamps = true;
 
@@ -47,7 +51,11 @@ abstract class BaseModel extends XotBaseModel
     /** @return array<string, string> */
     protected function casts(): array
     {
+<<<<<<< HEAD
        return array_merge(parent::casts(), [
+=======
+        return array_merge(parent::casts(), [
+>>>>>>> laraxot/dev
             'published_at' => 'datetime',
         ]);
     }

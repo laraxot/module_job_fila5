@@ -111,7 +111,11 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
        'name' => [
+=======
+        'name' => [
+>>>>>>> laraxot/dev
             'label' => 'name',
             'placeholder' => 'name',
             'helper_text' => 'name',

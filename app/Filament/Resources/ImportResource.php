@@ -16,7 +16,11 @@ class ImportResource extends XotBaseResource
 {
     protected static ?string $model = Import::class;
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
 
 
      * @return array<string, mixed>

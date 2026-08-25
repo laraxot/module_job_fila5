@@ -26,7 +26,11 @@ describe('TaskEvent', function () {
     it('uses Dispatchable and SerializesModels traits', function () {
         $traits = class_uses(TaskEvent::class);
 
+<<<<<<< HEAD
        Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
+=======
+        Assert::assertContains('Illuminate\Foundation\Events\Dispatchable', $traits);
+>>>>>>> laraxot/dev
         Assert::assertContains('Illuminate\Queue\SerializesModels', $traits);
     });
 

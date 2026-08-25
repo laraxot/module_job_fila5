@@ -90,4 +90,8 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
+<<<<<<< HEAD
 **Modulo** `job` · **Laraxot** · **Job Module** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28
+=======
+**Modulo** `job` · **Laraxot** · **Job Module** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28
+>>>>>>> laraxot/dev

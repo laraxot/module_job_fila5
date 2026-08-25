@@ -110,7 +110,11 @@ class JobManager extends BaseModel
         return Hash::make($job->getRawBody());
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return Attribute<string, never>
      */
     public function status(): Attribute
@@ -153,7 +157,11 @@ class JobManager extends BaseModel
         return ! $this->hasFailed();
     }
 
+<<<<<<< HEAD
    /**
+=======
+    /**
+>>>>>>> laraxot/dev
      * @return Builder<static>
      */
     public function prunable(): Builder
@@ -164,7 +172,11 @@ class JobManager extends BaseModel
                 $retention_days = 365;
             }
 
+<<<<<<< HEAD
            return static::query()->where('created_at', '<=', now()->subDays($retention_days));
+=======
+            return static::query()->where('created_at', '<=', now()->subDays($retention_days));
+>>>>>>> laraxot/dev
         }
 
         /** @var Builder<static> $query */

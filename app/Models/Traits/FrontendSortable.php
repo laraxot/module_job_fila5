@@ -9,7 +9,11 @@ use Illuminate\Database\Eloquent\Builder;
 trait FrontendSortable
 {
     /**
+<<<<<<< HEAD
     * @param  Builder<static>  $query
+=======
+     * @param  Builder<static>  $query
+>>>>>>> laraxot/dev
      * @param  array<string>  $sortableColumns
      * @param  array<string, 'asc'|'desc'>  $defaultSort
      * @return Builder<static>
@@ -38,7 +42,11 @@ trait FrontendSortable
             },
             static function (Builder $query) use ($defaultSort): void {
                 foreach ($defaultSort as $key => $direction) {
+<<<<<<< HEAD
                    /** @var 'asc'|'desc' $direction */
+=======
+                    /** @var 'asc'|'desc' $direction */
+>>>>>>> laraxot/dev
                     $direction = in_array($direction, ['asc', 'desc'], true) ? $direction : 'asc';
                     $query->orderBy($key, $direction);
                 }

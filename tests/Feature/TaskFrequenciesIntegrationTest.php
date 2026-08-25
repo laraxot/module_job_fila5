@@ -16,7 +16,11 @@ describe('TaskFrequencies Integration', function () {
     });
 
     it('integrates with Laravel config system', function () {
+<<<<<<< HEAD
        /** @var TestCase $this */
+=======
+        /** @var TestCase $this */
+>>>>>>> laraxot/dev
         config(['totem.frequencies' => [
             'everyMinute' => 'Every Minute',
             'everyFiveMinutes' => 'Every 5 Minutes',
@@ -35,7 +39,11 @@ describe('TaskFrequencies Integration', function () {
             'yearly' => 'Yearly',
         ]]);
 
+<<<<<<< HEAD
        $action = $this->getAction(GetTaskFrequenciesAction::class);
+=======
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+>>>>>>> laraxot/dev
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -53,7 +61,11 @@ describe('TaskFrequencies Integration', function () {
             'monthly' => 'Monthly',
         ]]);
 
+<<<<<<< HEAD
        $action = $this->getAction(GetTaskFrequenciesAction::class);
+=======
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+>>>>>>> laraxot/dev
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -99,7 +111,11 @@ describe('TaskFrequencies Integration', function () {
             ],
         ]]);
 
+<<<<<<< HEAD
        $action = $this->getAction(GetTaskFrequenciesAction::class);
+=======
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+>>>>>>> laraxot/dev
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -127,7 +143,11 @@ describe('TaskFrequencies Integration', function () {
             'mixed_123' => 'Mixed Key Value',
         ]]);
 
+<<<<<<< HEAD
        $action = $this->getAction(GetTaskFrequenciesAction::class);
+=======
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+>>>>>>> laraxot/dev
         $result = $action->execute();
 
         Assert::assertIsArray($result);
@@ -167,7 +187,11 @@ describe('TaskFrequencies Integration', function () {
             new stdClass,
         ];
 
+<<<<<<< HEAD
        $action = $this->getAction(GetTaskFrequenciesAction::class);
+=======
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+>>>>>>> laraxot/dev
 
         foreach ($invalidConfigs as $invalidConfig) {
             config(['totem.frequencies' => $invalidConfig]);
@@ -181,13 +205,21 @@ describe('TaskFrequencies Integration', function () {
     });
 
     it('maintains consistency across multiple executions', function () {
+<<<<<<< HEAD
        /** @var TestCase $this */
+=======
+        /** @var TestCase $this */
+>>>>>>> laraxot/dev
         config(['totem.frequencies' => [
             'consistent_key' => 'Consistent Value',
             'another_key' => 'Another Value',
         ]]);
 
+<<<<<<< HEAD
        $action = $this->getAction(GetTaskFrequenciesAction::class);
+=======
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+>>>>>>> laraxot/dev
         $results = [];
         for ($i = 0; $i < 5; $i++) {
             $results[] = $action->execute();
@@ -199,7 +231,11 @@ describe('TaskFrequencies Integration', function () {
     });
 
     it('works with realistic totem configuration', function () {
+<<<<<<< HEAD
        /** @var TestCase $this */
+=======
+        /** @var TestCase $this */
+>>>>>>> laraxot/dev
         config(['totem.frequencies' => [
             'everyMinute' => 'Every Minute',
             'everyTwoMinutes' => 'Every Two Minutes',
@@ -229,7 +265,11 @@ describe('TaskFrequencies Integration', function () {
             'yearlyOn' => 'Yearly On',
         ]]);
 
+<<<<<<< HEAD
        $action = $this->getAction(GetTaskFrequenciesAction::class);
+=======
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+>>>>>>> laraxot/dev
         $result = $action->execute();
 
         Assert::assertIsArray($result);
