@@ -16,7 +16,7 @@ uses(TestCase::class)->group('no-job-db');
 
 describe('GetCommandArgumentsActions', function (): void {
     test('can be instantiated', function (): void {
-        $action = new GetCommandArgumentsActions;
+        $action = new GetCommandArgumentsActions();
         Assert::assertInstanceOf(GetCommandArgumentsActions::class, $action);
     });
 
@@ -28,7 +28,7 @@ describe('GetCommandArgumentsActions', function (): void {
     });
 
     test('returns array of arguments', function (): void {
-        $action = new GetCommandArgumentsActions;
+        $action = new GetCommandArgumentsActions();
         $command = new Command('test');
         $result = $action->execute($command);
         Assert::assertCount(0, $result);
