@@ -18,7 +18,7 @@ class JobBatchResource extends XotBaseResource
 
     // protected static ?string $model = JobBatch::class;
 
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [];
     }
