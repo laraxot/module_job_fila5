@@ -7,8 +7,6 @@ namespace Modules\Job\Tests\Unit;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
-use Mockery\Expectation;
-use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Job\Models\Policies\ExportPolicy;
 use Modules\Job\Models\Policies\FailedImportRowPolicy;
@@ -31,19 +29,6 @@ use Modules\Job\Tests\TestCase;
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-
-/**
- * Narrows Mockery's shouldReceive() union return type for PHPStan.
- *
- * @param  LegacyMockInterface|MockInterface  $mock
- */
-function expectMethod($mock, string $method): Expectation
-{
-    /** @var Expectation $expectation */
-    $expectation = $mock->shouldReceive($method);
-
-    return $expectation;
-}
 
 uses(TestCase::class)->group('no-job-db');
 
