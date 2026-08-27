@@ -61,7 +61,7 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
