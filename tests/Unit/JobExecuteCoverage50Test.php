@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Testing\PendingCommand;
 use Illuminate\Translation\PotentiallyTranslatedString;
 use Mockery;
-use Mockery\Expectation;
+use Mockery\CompositeExpectation;
 use Mockery\LegacyMockInterface;
 use Mockery\MockInterface;
 use Modules\Job\Actions\Command\GetCommandsAction;
@@ -64,9 +64,9 @@ use PHPUnit\Framework\Assert;
  *
  * @param  LegacyMockInterface|MockInterface  $mock
  */
-function expectMethod($mock, string $method): Expectation
+function expectMethod($mock, string $method): CompositeExpectation
 {
-    /** @var Expectation $expectation */
+    /** @var CompositeExpectation $expectation */
     $expectation = $mock->shouldReceive($method);
 
     return $expectation;

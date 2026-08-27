@@ -7,28 +7,12 @@ namespace Modules\Job\Tests\Unit;
 use Filament\Schemas\Components\Utilities\Get;
 use Filament\Schemas\Components\Utilities\Set;
 use Mockery;
-use Mockery\Expectation;
-use Mockery\LegacyMockInterface;
-use Mockery\MockInterface;
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Datas\CommandData;
 use Modules\Job\Filament\Resources\ScheduleResource\Schemas\ScheduleForm;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
-
-/**
- * Narrows Mockery's shouldReceive() union return type for PHPStan.
- *
- * @param  LegacyMockInterface|MockInterface  $mock
- */
-function expectMethod($mock, string $method): Expectation
-{
-    /** @var Expectation $expectation */
-    $expectation = $mock->shouldReceive($method);
-
-    return $expectation;
-}
 
 uses(TestCase::class)->group('no-job-db');
 
