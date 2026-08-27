@@ -4,33 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Filament\Columns;
 
-use Modules\Job\Filament\Columns\ScheduleArguments;
+use Modules\Job\Tests\Fixtures\ScheduleArgumentsProbe;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-
-/**
- * Sonda per `ScheduleArguments`.
- *
- * `getTags()` legge lo stato con `getState()`, che fuori da una tabella Filament risolve dal
- * record e qui varrebbe sempre `null`: senza controllarlo si testerebbe un solo ramo su cinque.
- * La sottoclasse espone lo stato come proprietà e lascia intatta tutta la logica sotto esame —
- * `formatArrayTags()` e `filterEmptyTags()` restano quelle di produzione.
- *
- * È una sottoclasse **nominata** di proposito: il nome di una classe anonima contiene un byte
- * NUL, e il codice Xot che ne deriva il path di un file di lingua muore con
- * `ValueError: must not contain any null bytes`.
- */
-final class ScheduleArgumentsProbe extends ScheduleArguments
-{
-    public mixed $fakeState = null;
-
-    public function getState(): mixed
-    {
-        return $this->fakeState;
-    }
-}
 
 describe('ScheduleArguments::getTags()', function (): void {
     test('con stato ad array e withValue scarta le voci senza valore', function (): void {
