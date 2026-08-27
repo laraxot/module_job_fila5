@@ -15,7 +15,7 @@ uses(TestCase::class)->group('no-job-db');
 
 describe('DummyAction', function (): void {
     test('can be instantiated', function (): void {
-        $action = new DummyAction;
+        $action = new DummyAction();
         Assert::assertInstanceOf(DummyAction::class, $action);
     });
 

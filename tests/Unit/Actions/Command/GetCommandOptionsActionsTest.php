@@ -16,7 +16,7 @@ uses(TestCase::class)->group('no-job-db');
 
 describe('GetCommandOptionsActions', function (): void {
     test('can be instantiated', function (): void {
-        $action = new GetCommandOptionsActions;
+        $action = new GetCommandOptionsActions();
         Assert::assertInstanceOf(GetCommandOptionsActions::class, $action);
     });
 
@@ -28,7 +28,7 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('returns array with structure', function (): void {
-        $action = new GetCommandOptionsActions;
+        $action = new GetCommandOptionsActions();
         $command = new Command('test');
         $result = $action->execute($command);
 
@@ -37,7 +37,7 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('includes default options in withoutValue', function (): void {
-        $action = new GetCommandOptionsActions;
+        $action = new GetCommandOptionsActions();
         $command = new Command('test');
         $result = $action->execute($command);
 

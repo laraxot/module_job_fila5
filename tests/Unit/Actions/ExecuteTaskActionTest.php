@@ -15,7 +15,7 @@ uses(TestCase::class)->group('no-job-db');
 
 describe('ExecuteTaskAction', function (): void {
     test('can be instantiated', function (): void {
-        $action = new ExecuteTaskAction;
+        $action = new ExecuteTaskAction();
         Assert::assertInstanceOf(ExecuteTaskAction::class, $action);
     });
 
