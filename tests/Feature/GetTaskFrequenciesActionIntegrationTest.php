@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-use Exception;
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
