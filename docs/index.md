@@ -410,3 +410,16 @@ Common issues and solutions:
 **Document:** INDEX.md  
 **Collection:** Job Module Documentation  
 **Status:** Active (updated 2026-07-28)
+
+
+---
+
+## Contenuto assorbito da `INDEX.md`
+
+# Documentation Index
+
+Modulo: Job
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
