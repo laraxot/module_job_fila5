@@ -88,7 +88,6 @@ class QueueListenWidget extends XotBaseWidget
 
         Artisan::call('route:list', [], $output);
         throw new \RuntimeException('Removed debug dddx');
-
         // dddx($output);
         // dddx($output->fetch());
         /*

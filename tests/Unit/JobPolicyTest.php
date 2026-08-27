@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit;
 
 use Mockery;
+use Mockery\Expectation;
+use Mockery\LegacyMockInterface;
+use Mockery\MockInterface;
 use Modules\Job\Models\Policies\FailedImportRowPolicy;
 use Modules\Job\Models\Policies\FailedJobPolicy;
 use Modules\Job\Models\Policies\ImportPolicy;
@@ -23,28 +26,41 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  LegacyMockInterface|MockInterface  $mock
+ */
+function expectMethod($mock, string $method): Expectation
+{
+    /** @var Expectation $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
+
 uses(TestCase::class)->group('no-job-db');
 
 /**
  * @param  list<string>  $permissions
  * @param  list<string>  $roles
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function jobFakeUser(array $permissions = [], bool $ownsTeam = false, bool $belongsToTeam = false, array $roles = []): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasPermissionTo')
+    expectMethod($user, 'hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
-    $user->shouldReceive('hasRole')
+    expectMethod($user, 'hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
             return array_intersect($normalizzati, $roles) !== [];
         });
-    $user->shouldReceive('ownsTeam')->andReturn($ownsTeam);
-    $user->shouldReceive('belongsToTeam')->andReturn($belongsToTeam);
+    expectMethod($user, 'ownsTeam')->andReturn($ownsTeam);
+    expectMethod($user, 'belongsToTeam')->andReturn($belongsToTeam);
 
     return $user;
 }
@@ -54,8 +70,8 @@ afterEach(function (): void {
 });
 
 test('TaskPolicy richiede permessi task.*', function (): void {
-    $policy = new TaskPolicy;
-    $task = new Task;
+    $policy = new TaskPolicy();
+    $task = new Task();
 
     Assert::assertTrue($policy->viewAny(jobFakeUser(['task.viewAny'])));
     Assert::assertTrue($policy->view(jobFakeUser(['task.view']), $task));
@@ -65,28 +81,28 @@ test('TaskPolicy richiede permessi task.*', function (): void {
 });
 
 test('SchedulePolicy e ScheduleHistoryPolicy espongono CRUD', function (): void {
-    $schedulePolicy = new SchedulePolicy;
-    $schedule = new Schedule;
+    $schedulePolicy = new SchedulePolicy();
+    $schedule = new Schedule();
     Assert::assertTrue($schedulePolicy->viewAny(jobFakeUser(['schedule.viewAny'])));
     Assert::assertTrue($schedulePolicy->view(jobFakeUser(['schedule.view']), $schedule));
 
-    $historyPolicy = new ScheduleHistoryPolicy;
-    $history = new ScheduleHistory;
+    $historyPolicy = new ScheduleHistoryPolicy();
+    $history = new ScheduleHistory();
     Assert::assertTrue($historyPolicy->viewAny(jobFakeUser(['schedule_history.viewAny'])));
     Assert::assertTrue($historyPolicy->view(jobFakeUser(['schedule_history.view']), $history));
 });
 
 test('TaskCommentPolicy espone CRUD', function (): void {
-    $policy = new TaskCommentPolicy;
-    $comment = new TaskComment;
+    $policy = new TaskCommentPolicy();
+    $comment = new TaskComment();
 
     Assert::assertTrue($policy->create(jobFakeUser(['task_comment.create'])));
     Assert::assertTrue($policy->update(jobFakeUser(['task_comment.update']), $comment));
 });
 
 test('JobPolicy delega su Team', function (): void {
-    $policy = new JobPolicy;
-    $team = new Team;
+    $policy = new JobPolicy();
+    $team = new Team();
 
     Assert::assertFalse($policy->viewAny(jobFakeUser()));
     Assert::assertTrue($policy->view(jobFakeUser(belongsToTeam: true), $team));
@@ -95,15 +111,15 @@ test('JobPolicy delega su Team', function (): void {
 });
 
 test('FailedJobPolicy e JobBatchPolicy espongono metodi team', function (): void {
-    foreach ([new FailedJobPolicy, new JobBatchPolicy] as $policy) {
-        $team = new Team;
+    foreach ([new FailedJobPolicy(), new JobBatchPolicy()] as $policy) {
+        $team = new Team();
         Assert::assertFalse($policy->viewAny(jobFakeUser()));
         Assert::assertTrue($policy->addTeamMember(jobFakeUser(ownsTeam: true), $team));
     }
 });
 
 test('policy stub ereditano JobBasePolicy', function (): void {
-    foreach ([new ImportPolicy, new FailedImportRowPolicy] as $policy) {
+    foreach ([new ImportPolicy(), new FailedImportRowPolicy()] as $policy) {
         Assert::assertTrue($policy->before(jobFakeUser(), 'viewAny') === null);
     }
 });

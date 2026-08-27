@@ -4,9 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit;
 
-use Mockery;
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Translation\PotentiallyTranslatedString;
+use Mockery;
+use Mockery\Expectation;
+use Mockery\LegacyMockInterface;
+use Mockery\MockInterface;
 use Modules\Job\Models\Policies\ExportPolicy;
 use Modules\Job\Models\Policies\FailedImportRowPolicy;
 use Modules\Job\Models\Policies\FailedJobPolicy;
@@ -29,28 +32,41 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  LegacyMockInterface|MockInterface  $mock
+ */
+function expectMethod($mock, string $method): Expectation
+{
+    /** @var Expectation $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
+
 uses(TestCase::class)->group('no-job-db');
 
 /**
  * @param  list<string>  $permissions
  * @param  list<string>  $roles
- * @return Mockery\MockInterface&UserContract
+ * @return MockInterface&UserContract
  */
 function jobBehaviorUser(array $permissions = [], array $roles = [], bool $ownsTeam = false, bool $belongsToTeam = false): UserContract
 {
-    /** @var Mockery\MockInterface&UserContract $user */
+    /** @var MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasPermissionTo')
+    expectMethod($user, 'hasPermissionTo')
         ->andReturnUsing(static fn (string $permission): bool => in_array($permission, $permissions, true));
-    $user->shouldReceive('hasRole')
+    expectMethod($user, 'hasRole')
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
             return array_intersect($normalizzati, $roles) !== [];
         });
-    $user->shouldReceive('ownsTeam')->andReturn($ownsTeam);
-    $user->shouldReceive('belongsToTeam')->andReturn($belongsToTeam);
+    expectMethod($user, 'ownsTeam')->andReturn($ownsTeam);
+    expectMethod($user, 'belongsToTeam')->andReturn($belongsToTeam);
 
     return $user;
 }
@@ -60,7 +76,6 @@ afterEach(function (): void {
 });
 
 /**
- * @param  string|null  $message
  * @return \Closure(string, ?string=): PotentiallyTranslatedString
  */
 function jobValidationFailure(?string &$message): \Closure
