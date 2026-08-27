@@ -30,7 +30,7 @@ describe('PublicEvent', function () {
     });
 
     it('has color property', function () {
-        $event = new PublicEvent;
+        $event = new PublicEvent();
 
         Assert::assertSame('black', $event->color);
     });

@@ -15,7 +15,7 @@ uses(TestCase::class)->group('no-job-db');
 
 describe('Event', function () {
     it('can be instantiated', function () {
-        $event = new class extends Event {};
+        $event = new class() extends Event {};
         Assert::assertInstanceOf(Event::class, $event);
     });
 

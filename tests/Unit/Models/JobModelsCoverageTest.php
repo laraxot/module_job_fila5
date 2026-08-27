@@ -25,7 +25,7 @@ uses(TestCase::class)->group('no-job-db');
 describe('Job Models Coverage', function () {
     describe('Task Model', function () {
         it('can be instantiated', function () {
-            $task = new Task;
+            $task = new Task();
             Assert::assertInstanceOf(Task::class, $task);
         });
 
@@ -42,14 +42,14 @@ describe('Job Models Coverage', function () {
         });
 
         it('has fillable fields defined', function () {
-            $task = new Task;
+            $task = new Task();
             Assert::assertContains('command', $task->getFillable());
             Assert::assertContains('description', $task->getFillable());
             Assert::assertContains('expression', $task->getFillable());
         });
 
         it('has appends defined', function () {
-            $task = new Task;
+            $task = new Task();
             Assert::assertContains('activated', $task->getAppends());
             Assert::assertContains('upcoming', $task->getAppends());
             Assert::assertContains('average_runtime', $task->getAppends());
@@ -93,7 +93,7 @@ describe('Job Models Coverage', function () {
 
     describe('Frequency Model', function () {
         it('can be instantiated', function () {
-            $model = new Frequency;
+            $model = new Frequency();
             Assert::assertInstanceOf(Frequency::class, $model);
         });
 
@@ -113,7 +113,7 @@ describe('Job Models Coverage', function () {
 
     describe('Result Model', function () {
         it('can be instantiated', function () {
-            $model = new Result;
+            $model = new Result();
             Assert::assertInstanceOf(Result::class, $model);
         });
 
@@ -133,7 +133,7 @@ describe('Job Models Coverage', function () {
 
     describe('Schedule Model', function () {
         it('can be instantiated', function () {
-            $model = new Schedule;
+            $model = new Schedule();
             Assert::assertInstanceOf(Schedule::class, $model);
         });
 
@@ -153,7 +153,7 @@ describe('Job Models Coverage', function () {
 
     describe('Import Model', function () {
         it('can be instantiated', function () {
-            $model = new Import;
+            $model = new Import();
             Assert::assertInstanceOf(Import::class, $model);
         });
 
@@ -173,7 +173,7 @@ describe('Job Models Coverage', function () {
 
     describe('Export Model', function () {
         it('can be instantiated', function () {
-            $model = new Export;
+            $model = new Export();
             Assert::assertInstanceOf(Export::class, $model);
         });
 
@@ -193,7 +193,7 @@ describe('Job Models Coverage', function () {
 
     describe('JobBatch Model', function () {
         it('can be instantiated', function () {
-            $model = new JobBatch;
+            $model = new JobBatch();
             Assert::assertInstanceOf(JobBatch::class, $model);
         });
 
@@ -213,7 +213,7 @@ describe('Job Models Coverage', function () {
 
     describe('JobManager Model', function () {
         it('can be instantiated', function () {
-            $model = new JobManager;
+            $model = new JobManager();
             Assert::assertInstanceOf(JobManager::class, $model);
         });
 
@@ -233,7 +233,7 @@ describe('Job Models Coverage', function () {
 
     describe('FailedJob Model', function () {
         it('can be instantiated', function () {
-            $model = new FailedJob;
+            $model = new FailedJob();
             Assert::assertInstanceOf(FailedJob::class, $model);
         });
 

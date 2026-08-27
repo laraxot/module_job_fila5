@@ -5,12 +5,28 @@ declare(strict_types=1);
 namespace Modules\Job\Tests\Unit;
 
 use Mockery;
+use Mockery\Expectation;
+use Mockery\LegacyMockInterface;
+use Mockery\MockInterface;
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Datas\CommandData;
 use Modules\Job\Filament\Resources\ScheduleResource\Schemas\ScheduleForm;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
+
+/**
+ * Narrows Mockery's shouldReceive() union return type for PHPStan.
+ *
+ * @param  LegacyMockInterface|MockInterface  $mock
+ */
+function expectMethod($mock, string $method): Expectation
+{
+    /** @var Expectation $expectation */
+    $expectation = $mock->shouldReceive($method);
+
+    return $expectation;
+}
 
 uses(TestCase::class)->group('no-job-db');
 
@@ -37,9 +53,9 @@ describe('ScheduleForm coverage', function (): void {
             ]),
         ]);
 
-        /** @var Mockery\MockInterface&GetCommandsAction $action */
+        /** @var MockInterface&GetCommandsAction $action */
         $action = Mockery::mock(GetCommandsAction::class);
-        $action->shouldReceive('execute')->andReturn($commands);
+        expectMethod($action, 'execute')->andReturn($commands);
         app()->instance(GetCommandsAction::class, $action);
 
         $schema = ScheduleForm::getFormSchema();
