@@ -13,22 +13,15 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Class TaskComment.
  *
- * @property ProfileContract|null $creator
- * @property Task|null $task
- * @property ProfileContract|null $updater
- * @property User|null $user
- *
+ * @property-read \Modules\WorkOrder\Models\Profile|null $creator
+ * @property-read \Modules\WorkOrder\Models\Profile|null $deleter
+ * @property-read \Modules\Job\Models\Task|null $task
+ * @property-read \Modules\WorkOrder\Models\Profile|null $updater
+ * @property-read User|null $user
+ * @method static \Modules\Job\Database\Factories\TaskCommentFactory factory($count = null, $state = [])
  * @method static Builder<static>|TaskComment newModelQuery()
  * @method static Builder<static>|TaskComment newQuery()
- * @method static Builder<static>|TaskComment onlyTrashed()
  * @method static Builder<static>|TaskComment query()
- * @method static Builder<static>|TaskComment withTrashed(bool $withTrashed = true)
- * @method static Builder<static>|TaskComment withoutTrashed()
- *
- * @property-read ProfileContract|null $deleter
- *
- * @method static TaskCommentFactory factory($count = null, $state = [])
- *
  * @mixin \Eloquent
  */
 class TaskComment extends BaseModel
