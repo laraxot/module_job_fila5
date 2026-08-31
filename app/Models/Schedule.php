@@ -19,77 +19,18 @@ use Override;
 /**
  * Modules\Job\Models\Schedule.
  *
- * @property string $id
- * @property string $command
- * @property string|null $command_custom
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $params
- * @property string $expression
- * @property array<array-key, bool|float|int|string|null>|null $environments
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null}|bool|float|int|string|null>|null $options
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $options_with_value
- * @property string|null $log_filename
- * @property int $even_in_maintenance_mode
- * @property int $without_overlapping
- * @property int $on_one_server
- * @property string|null $webhook_before
- * @property string|null $webhook_after
- * @property string|null $email_output
- * @property int $sendmail_error
- * @property int $log_success
- * @property int $log_error
  * @property Status $status
- * @property int $run_in_background
- * @property int $sendmail_success
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property Carbon|null $deleted_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_by
- * @property ProfileContract|null $creator
- * @property \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
- * @property int|null $histories_count
- * @property ProfileContract|null $updater
- *
+ * @property-read \Modules\WorkOrder\Models\Profile|null $creator
+ * @property-read \Modules\WorkOrder\Models\Profile|null $deleter
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Modules\Job\Models\ScheduleHistory> $histories
+ * @property-read int|null $histories_count
+ * @property-read \Modules\WorkOrder\Models\Profile|null $updater
  * @method static Builder<static>|Schedule active()
- * @method static ScheduleFactory factory($count = null, $state = [])
+ * @method static \Modules\Job\Database\Factories\ScheduleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Schedule inactive()
  * @method static Builder<static>|Schedule newModelQuery()
  * @method static Builder<static>|Schedule newQuery()
- * @method static Builder<static>|Schedule onlyTrashed()
  * @method static Builder<static>|Schedule query()
- * @method static Builder<static>|Schedule whereCommand($value)
- * @method static Builder<static>|Schedule whereCommandCustom($value)
- * @method static Builder<static>|Schedule whereCreatedAt($value)
- * @method static Builder<static>|Schedule whereCreatedBy($value)
- * @method static Builder<static>|Schedule whereDeletedAt($value)
- * @method static Builder<static>|Schedule whereDeletedBy($value)
- * @method static Builder<static>|Schedule whereEmailOutput($value)
- * @method static Builder<static>|Schedule whereEnvironments($value)
- * @method static Builder<static>|Schedule whereEvenInMaintenanceMode($value)
- * @method static Builder<static>|Schedule whereExpression($value)
- * @method static Builder<static>|Schedule whereId($value)
- * @method static Builder<static>|Schedule whereLogError($value)
- * @method static Builder<static>|Schedule whereLogFilename($value)
- * @method static Builder<static>|Schedule whereLogSuccess($value)
- * @method static Builder<static>|Schedule whereOnOneServer($value)
- * @method static Builder<static>|Schedule whereOptions($value)
- * @method static Builder<static>|Schedule whereOptionsWithValue($value)
- * @method static Builder<static>|Schedule whereParams($value)
- * @method static Builder<static>|Schedule whereRunInBackground($value)
- * @method static Builder<static>|Schedule whereSendmailError($value)
- * @method static Builder<static>|Schedule whereSendmailSuccess($value)
- * @method static Builder<static>|Schedule whereStatus($value)
- * @method static Builder<static>|Schedule whereUpdatedAt($value)
- * @method static Builder<static>|Schedule whereUpdatedBy($value)
- * @method static Builder<static>|Schedule whereWebhookAfter($value)
- * @method static Builder<static>|Schedule whereWebhookBefore($value)
- * @method static Builder<static>|Schedule whereWithoutOverlapping($value)
- * @method static Builder<static>|Schedule withTrashed(bool $withTrashed = true)
- * @method static Builder<static>|Schedule withoutTrashed()
- *
- * @property-read ProfileContract|null $deleter
- *
  * @mixin \Eloquent
  */
 class Schedule extends BaseModel
