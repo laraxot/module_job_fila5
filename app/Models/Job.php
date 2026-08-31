@@ -11,7 +11,7 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Webmozart\Assert\Assert;
 
@@ -20,10 +20,10 @@ use function Safe\json_decode;
 /**
  * Modules\Job\Models\Job.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string|null $display_name
  * @property-read string $status
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|Job newModelQuery()
  * @method static Builder<static>|Job newQuery()
