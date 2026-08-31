@@ -13,8 +13,8 @@ use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Modules\Job\Models\Traits\FrontendSortable;
-use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Webmozart\Assert\Assert;
 
@@ -23,7 +23,7 @@ use function Safe\json_decode;
 /**
  * Modules\Job\Models\Task.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read Collection<int, Frequency> $frequencies
  * @property-read int|null $frequencies_count
  * @property-read bool $activated
@@ -34,7 +34,7 @@ use function Safe\json_decode;
  * @property-read int|null $notifications_count
  * @property-read Collection<int, Result> $results
  * @property-read int|null $results_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static \Modules\Job\Database\Factories\TaskFactory factory($count = null, $state = [])
  * @method static Builder<static>|Task newModelQuery()

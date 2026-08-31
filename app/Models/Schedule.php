@@ -12,17 +12,17 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
 use Modules\Job\Enums\Status;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
 /**
  * Modules\Job\Models\Schedule.
  *
  * @property Status $status
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
  * @property-read int|null $histories_count
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|Schedule active()
  * @method static Builder<static>|Schedule inactive()

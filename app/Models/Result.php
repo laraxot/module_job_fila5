@@ -8,15 +8,15 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
 /**
  * Modules\Job\Models\Result.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read Task|null $task
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newQuery()

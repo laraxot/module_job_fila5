@@ -9,17 +9,17 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 
 // use Modules\Job\Models\Traits\HasParameters;
 /**
  * Modules\Job\Models\Frequency.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read Collection<int, Parameter> $parameters
  * @property-read int|null $parameters_count
  * @property-read Task|null $task
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|Frequency newModelQuery()
  * @method static Builder<static>|Frequency newQuery()

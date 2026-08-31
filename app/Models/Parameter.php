@@ -7,14 +7,14 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Modules\Job\Models\Parameter.
  *
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read Frequency|null $task
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|Parameter newModelQuery()
  * @method static Builder<static>|Parameter newQuery()

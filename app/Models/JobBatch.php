@@ -14,14 +14,14 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-use Modules\TechPlanner\Models\Profile;
+use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
 /**
  * Modules\Job\Models\JobBatch.
  *
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|JobBatch newModelQuery()
  * @method static Builder<static>|JobBatch newQuery()
