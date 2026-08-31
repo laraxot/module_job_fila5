@@ -10,7 +10,6 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Modules\Job\Database\Factories\JobManagerFactory;
-use Modules\TechPlanner\Models\Profile;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
@@ -53,9 +52,9 @@ use Override;
  * @mixin \Eloquent
  */
 /**
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string $status
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|JobManager newModelQuery()
  * @method static Builder<static>|JobManager newQuery()
