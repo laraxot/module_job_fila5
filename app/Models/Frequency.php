@@ -16,16 +16,35 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Job\Models\Frequency.
  *
- * @property-read \Modules\WorkOrder\Models\Profile|null $creator
- * @property-read \Modules\WorkOrder\Models\Profile|null $deleter
- * @property-read Collection<int, \Modules\Job\Models\Parameter> $parameters
+ * @property string $id
+ * @property int $task_id
+ * @property string $label
+ * @property string $interval
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property-read ProfileContract|null $creator
+ * @property-read Collection<int, Parameter> $parameters
  * @property-read int|null $parameters_count
- * @property-read \Modules\Job\Models\Task|null $task
- * @property-read \Modules\WorkOrder\Models\Profile|null $updater
- * @method static \Modules\Job\Database\Factories\FrequencyFactory factory($count = null, $state = [])
+ * @property-read Task|null $task
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static FrequencyFactory factory($count = null, $state = [])
  * @method static Builder<static>|Frequency newModelQuery()
  * @method static Builder<static>|Frequency newQuery()
  * @method static Builder<static>|Frequency query()
+ * @method static Builder<static>|Frequency whereCreatedAt($value)
+ * @method static Builder<static>|Frequency whereCreatedBy($value)
+ * @method static Builder<static>|Frequency whereId($value)
+ * @method static Builder<static>|Frequency whereInterval($value)
+ * @method static Builder<static>|Frequency whereLabel($value)
+ * @method static Builder<static>|Frequency whereTaskId($value)
+ * @method static Builder<static>|Frequency whereUpdatedAt($value)
+ * @method static Builder<static>|Frequency whereUpdatedBy($value)
+ *
+ * @property-read ProfileContract|null $deleter
+ *
  * @mixin \Eloquent
  */
 class Frequency extends BaseModel

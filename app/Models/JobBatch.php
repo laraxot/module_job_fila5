@@ -21,13 +21,36 @@ use Override;
 /**
  * Modules\Job\Models\JobBatch.
  *
- * @property-read \Modules\WorkOrder\Models\Profile|null $creator
- * @property-read \Modules\WorkOrder\Models\Profile|null $deleter
- * @property-read \Modules\WorkOrder\Models\Profile|null $updater
- * @method static \Modules\Job\Database\Factories\JobBatchFactory factory($count = null, $state = [])
+ * @property string $id
+ * @property string $name
+ * @property int $total_jobs
+ * @property int $pending_jobs
+ * @property int $failed_jobs
+ * @property string $failed_job_ids
+ * @property Collection<array-key, mixed>|null $options
+ * @property Carbon|null $cancelled_at
+ * @property Carbon $created_at
+ * @property Carbon|null $finished_at
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static JobBatchFactory factory($count = null, $state = [])
  * @method static Builder<static>|JobBatch newModelQuery()
  * @method static Builder<static>|JobBatch newQuery()
  * @method static Builder<static>|JobBatch query()
+ * @method static Builder<static>|JobBatch whereCancelledAt($value)
+ * @method static Builder<static>|JobBatch whereCreatedAt($value)
+ * @method static Builder<static>|JobBatch whereFailedJobIds($value)
+ * @method static Builder<static>|JobBatch whereFailedJobs($value)
+ * @method static Builder<static>|JobBatch whereFinishedAt($value)
+ * @method static Builder<static>|JobBatch whereId($value)
+ * @method static Builder<static>|JobBatch whereName($value)
+ * @method static Builder<static>|JobBatch whereOptions($value)
+ * @method static Builder<static>|JobBatch wherePendingJobs($value)
+ * @method static Builder<static>|JobBatch whereTotalJobs($value)
+ *
+ * @property-read ProfileContract|null $deleter
+ *
  * @mixin \Eloquent
  */
 class JobBatch extends BaseModel
