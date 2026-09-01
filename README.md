@@ -1,93 +1,121 @@
-# ⚙️ Job
+# ⚙️ Job — il posto dove il lavoro lento smette di essere un problema tuo
 
-[![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
-[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+[![PHP](https://img.shields.io/badge/PHP-%5E8.3-777BB4.svg)](composer.json)
+[![Laravel](https://img.shields.io/badge/Laravel-%5E13.0-FF2D20.svg)](composer.json)
+[![Filament](https://img.shields.io/badge/Filament-%5E5.0-FDAB3D.svg)](composer.json)
+[![PHPStan](https://img.shields.io/badge/PHPStan-level%20max%2C%200%20errori-brightgreen.svg)](../../phpstan.neon)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> **Lavoro pesante fuori dalla request.** Code, batch, retry — UX veloce anche sotto carico.
+> Un export CSV da 40.000 righe, un geocoding massivo, un batch di notifiche:
+> nessuna di queste cose deve tenere un utente a fissare uno spinner. Job è
+> il muro tra "l'utente clicca" e "il sistema fatica" — e un muro si giudica
+> da quanto resta in piedi sotto carico, non da com'è disegnato.
 
----
-
-## Perché esiste
-
-Geocoding, export, notifiche bulk non devono bloccare l’utente. Il modulo Job fornisce un’infrastruttura robusta per l’esecuzione asincrona di attività lunghe, garantendo affidabilità, monitorabilità e scalabilità.
-
-**Casi d’uso:**
-- Export dati bulk (CSV, PDF)
-- Elaborazione geocoding massiva
-- Notifiche email/SMS in batch
-- Sincronizzazione dati con servizi esterni
-- Elaborazione media (immagini, video)
-
-## Superpoteri
-
-- ✅ Job e queue Laravel con Redis/Database
-- ✅ Integrazione Horizon-ready per monitoring
-- ✅ Dashboard Filament per gestione job
-- ✅ Pattern idempotenti e retry intelligenti
-- ✅ Batch processing con progress tracking
-- ✅ Error handling robusto con recovery
-- ✅ Monitoraggio in tempo reale
-
-## Certificazioni
-
-| Certificazione | Stato |
-|----------------|-------|
-| PHPStan livello 10 | ✅ Compliant |
-| `declare(strict_types=1)` | ✅ Su nuovo codice PHP |
-| Filament 5 + XotBase | ✅ Admin enterprise-ready |
-| Test PHPUnit / Pest | ✅ Suite modulo con copertura |
-| Documentazione wiki | ✅ Cartella `docs/` |
-
-## Documentazione (Last updated: 2026-07-28)
-
-### 📖 Introduzione
-
-- **[INDEX.md](./docs/index.md)** — Indice completo e navigazione
-- **[ARCHITECTURE.md](./docs/ARCHITECTURE.md)** — Architettura e design patterns
-- **[PATTERNS.md](./docs/PATTERNS.md)** — 5 pattern architetturali + anti-pattern
-- **[COMPONENTS.md](./docs/COMPONENTS.md)** — Modelli, action, event, comandi
-
-### 🔧 Sviluppo
-
-- **[API.md](./docs/API.md)** — API pubblica e interfacce
-- **[CONTRIBUTING.md](./docs/CONTRIBUTING.md)** — Linee guida contributi
-- **[testing-rules.md](./docs/testing-rules.md)** — Disciplina testing
-- **[testing-philosophy-refactor.md](./docs/testing-philosophy-refactor.md)** — Filosofia TDD
-
-### ⚠️ Operazioni
-
-- **[TROUBLESHOOTING.md](./docs/TROUBLESHOOTING.md)** — Guida errori e soluzioni
-- **[PATTERNS.md#failure-handling](./docs/PATTERNS.md)** — Failure handling patterns
-- **[PERFORMANCE-OPTIMIZATION.md](./docs/PERFORMANCE-OPTIMIZATION.md)** — Ottimizzazione
-
-### 🏗️ Avanzate
-
-- **[MIGRATIONS.md](./docs/MIGRATIONS.md)** — Tracking migrazioni
-- **[enterprise-job-system-roadmap.md](./docs/enterprise-job-system-roadmap.md)** — Enterprise plan
-- **[phpstan-level-10-compliance.md](./docs/phpstan-level-10-compliance.md)** — Type safety
-- **[code-quality-report.md](./docs/code-quality-report.md)** — Qualità codice
-
-### 📚 Dipendenze
-
-| Dipendenza | Versione | Scopo |
-|------------|----------|-------|
-| `laravel/framework` | ^12.0 | Queue infrastructure |
-| `laravel/horizon` | ^2.0 | Queue monitoring (optional) |
-| `filament/filament` | ^5.0 | Admin dashboard |
-
-## Vuoi entrare nel team?
-
-Scala **senza paura** — async fatto bene.
-
-Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+I badge sopra sono verificati, non incollati: `phpstan analyse Modules/Job`
+a livello `max`, l'1 settembre 2026, a tree fermo. Rilanciabile:
+`cd laravel && ./vendor/bin/phpstan analyse Modules/Job`.
 
 ---
 
-**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28
+## Perché
+
+Ogni sistema con dati reali arriva al punto in cui un'operazione richiede
+secondi o minuti, non millisecondi. La domanda non è "come lo rendo veloce":
+è "come lo tolgo dalla request". Job dispatcha, monitora, ritenta — così il
+resto del progetto può trattare un export bulk o un geocoding massivo come
+un dettaglio infrastrutturale, non come un problema da risolvere ogni volta
+da capo in ogni modulo che ne ha bisogno.
+
+## Logica
+
+Un job non è "andato bene" solo perché non ha lanciato un'eccezione: deve
+essere ripetibile senza effetti doppi. Un retry su un export che ha già
+scritto metà file, o su una notifica già inviata, è un bug più subdolo di un
+crash — perché non si vede finché qualcuno non riceve due email uguali. La
+disciplina di questo modulo è: idempotenza prima di tutto, poi retry, poi
+monitoraggio.
+
+## Filosofia
+
+**La coverage è la prova di un contratto osservabile, non un numero da
+inseguire.** `docs/coverage.md` lo dice meglio di come lo direi io: un test
+che esegue un metodo per farlo comparire nel report, senza assertion vere
+sul risultato, non protegge da nessuna regressione — occupa solo spazio.
+Story 4.26 ha già applicato questo principio qui: 4 file di test cancellati
+perché ingoiavano eccezioni, chiamavano API protette o testavano classi
+immaginarie; 8 corretti perché avevano un contratto vero da verificare.
+
+## Religione
+
+**Un numero pubblicato deve essere riproducibile lo stesso giorno.** La
+tabella sotto viene da un comando lanciato l'1 settembre 2026, non da una
+stima "circa". Se non è misurabile, questo file lo dice — non arrotonda.
+
+## Politica
+
+`laravel/phpstan.neon` è sacro: nessun agente lo tocca per far sparire un
+errore. Ogni verifica gira nuda, senza `--level` custom.
+
+## Zen
+
+Un job che nessuno nota è un job che ha funzionato. Il giorno in cui qualcuno
+lo nota, è già tardi per essere eleganti — conta solo che riparta pulito.
+
+---
+
+## Stato misurato — 1 settembre 2026
+
+Fonte numeri quality gate: run isolata di `base-ptvx-fila5-80` dopo il
+ripristino di `vendor/` e `composer update -W` (autoloader 13.041 → 25.358
+classi — misure precedenti su questo modulo non sono comparabili).
+
+| Metrica | Valore | Comando |
+|---|---:|---|
+| PHPStan | **0 errori**, `level: max` | `./vendor/bin/phpstan analyse Modules/Job` |
+| `@phpstan-ignore` residui | 0 | `grep -rc "@phpstan-ignore" app/` |
+| PHPMD su `app/` | 116 rilievi | `./tools/phpmd.sh Modules/Job/app` |
+| PHPInsights — Code | 88.2 % | `./tools/phpinsights.sh Modules/Job` |
+| PHPInsights — Architecture | **71.4 %** — il valore più basso fra i moduli "puliti" del progetto (la media si aggira sul 92-93%) | idem |
+| Casi di test | 347 | `./vendor/bin/pest Modules/Job` |
+
+**71,4% di Architecture non è un dettaglio da ignorare**: è il segnale più
+concreto di dove intervenire dopo. Un modulo che orchestra job/queue/retry
+ha naturalmente più accoppiamento di uno che espone un CRUD — ma il numero
+va verificato leggendo l'output di PHPInsights, non giustificato a priori.
+
+## Debito noto, non risolto in questo giro
+
+`docs/a.git` è un file gitlink orfano (`gitdir:
+../../../../.git/modules/laravel/Modules/Job/modules/docs`) — residuo di un
+worktree o submodule rotto in passato. Non tocca il codice, ma è debito da
+pulire: fuori scope per un README.
+
+## Cosa contiene
+
+- **Dispatch e queue** — integrazione Laravel queue/Horizon per
+  l'esecuzione asincrona di export, geocoding, notifiche bulk.
+- **Dashboard Filament** — monitoraggio job in corso, falliti, in retry.
+- **Pattern idempotenti** — i job scritti qui sono pensati per essere
+  rilanciati senza effetti doppi.
+
+## Come si verifica (non fidarti di questo file)
+
+```bash
+cd laravel
+./vendor/bin/phpstan analyse Modules/Job   # 0 errori atteso
+./tools/phpmd.sh Modules/Job/app           # NON la root del modulo
+./tools/phpinsights.sh Modules/Job
+./vendor/bin/pest Modules/Job
+```
+
+## Documentazione
+
+| | |
+|---|---|
+| Contratto qualità/coverage (filosofia dei test) | [`docs/coverage.md`](docs/coverage.md) |
+| Architettura | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
+| Wiki tecnica | [`docs/`](docs/) |
+
+---
+
+**Modulo** `job` · **Laraxot / FixCity Platform** · licenza MIT
