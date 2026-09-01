@@ -30,7 +30,7 @@ rifare e contestare.
 | File `.md` sotto `docs/` | 484 |
 | `TODO`/`FIXME`/`HACK` | 1 |
 | Test con casi che non girano (senza suffisso `Test.php`) | 0 |
-| Collisioni di case nel codice | 3 |
+| Collisioni di case nel codice | 2 |
 | Collisioni di case nei docs | 13 |
 | Marker di conflitto | 0 |
 | File `.lock` committati | 0 |
@@ -43,7 +43,7 @@ da `ignoreErrors` e non vengono contate da nessun gate.
 
 ## Cosa non va
 
-### 3 collisioni di case nel codice
+### 2 collisioni di case nel codice
 
 Due percorsi che differiscono solo per maiuscole convivono su Linux e si
 fondono su macOS e Windows. Quando sono file di test, uno dei due non viene
@@ -53,7 +53,6 @@ Percorsi coinvolti:
 
 - `.github/SECURITY.md`
 - `.github/contributing.md`
-- `app/Entities`
 
 ### 13 collisioni di case nei docs
 
