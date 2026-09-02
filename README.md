@@ -17,6 +17,24 @@ a livello `max`, l'1 settembre 2026, a tree fermo. Rilanciabile:
 
 ---
 
+## Scopo e confini
+
+Job è il pannello di controllo delle code, non una libreria di job: 82 file Filament
+contro 15 Action, 9 Resource sulle 14 tabelle operative che possiede, e `require` in
+`composer.json` che contiene solo `php: ^8.3`. Non conosce nessun dominio (112 file
+toccano Xot, 4 toccano User, zero tutto il resto) e nessuno conosce lui: **un solo file
+in tutto il monorepo importa da `Modules\Job`**
+(`Modules/Media/.../ListMediaConverts.php:9`, per un widget).
+
+I confini rotti sono due, entrambi verificabili in un comando: `app/Services/ScheduleService.php`
+viola la policy no-services e duplica due Action che esistono già in doppia copia — e le
+20 chiamate a `config('job::…')` puntano a un namespace che nessun provider registra e
+nessun file di config definisce.
+
+Scopo esteso, misure e mosse: [docs/scopo.md](docs/scopo.md).
+
+---
+
 ## Perché
 
 Ogni sistema con dati reali arriva al punto in cui un'operazione richiede
@@ -119,3 +137,10 @@ cd laravel
 ---
 
 **Modulo** `job` · **Laraxot / FixCity Platform** · licenza MIT
+
+---
+
+## Scopo del modulo
+
+Perche' esiste, come raggiungere meglio il suo scopo e cosa **non** gli appartiene:
+[`docs/purpose.md`](./docs/purpose.md).
