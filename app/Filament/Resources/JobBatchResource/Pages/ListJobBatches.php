@@ -49,10 +49,7 @@ class ListJobBatches extends XotBaseListRecords
             'failed_jobs' => TextColumn::make('failed_jobs')->numeric()->sortable(),
             'progress' => TextColumn::make('progress')
                 ->formatStateUsing(
-                    /**
-                     * @param  mixed  $record
-                     */
-                    static function ($record): string {
+                    static function (mixed $record): string {
                         if (! $record instanceof JobBatch) {
                             return '';
                         }

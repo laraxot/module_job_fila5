@@ -91,3 +91,16 @@ related:
 
 
 ```
+
+## 2026-09-02 — typeCoverage residuo (story 5.80, sessione ee)
+
+Quattro parametri e tre costanti tipizzati alla sorgente (`InputArgument`/`InputOption`
+da `InputDefinition`, `Command` con `Assert::allIsInstanceOf` su `Artisan::all()`,
+`mixed $record` dove la guardia `instanceof JobBatch` c'è già, `const int STATUS_*`).
+Rimossa `lang/lang/it/` (8 copie corrotte, un `|` fra ogni carattere, UTF-8 spezzato):
+faceva morire PHPInsights sull'intero modulo con `iconv_strlen(): illegal character`.
+
+Gate: `phpstan analyse Modules/Job` (tmpDir isolata) `[OK] No errors`; PHPInsights torna a
+girare: Code 89.4, Complexity 100, Architecture 71.4, Style 90.1. Pest **non eseguito**:
+DB `10.100.200.53:3306` irraggiungibile (`nc -z`), la suite resterebbe appesa. Modifica di
+soli tipi nativi, nessun ramo nuovo da coprire: coverage invariato per costruzione.
