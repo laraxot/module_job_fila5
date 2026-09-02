@@ -14,7 +14,6 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\TaskFactory;
 use Modules\Job\Models\Traits\FrontendSortable;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Webmozart\Assert\Assert;
@@ -150,11 +149,10 @@ class Task extends BaseModel
         Assert::isArray($parameters);
 
         if ($forScheduler) {
-            /** @var array<string, string> $result */
+            /** @var array<int|string, string> $result */
             $result = [];
             foreach ($parameters as $key => $value) {
-                $stringKey = SafeStringCastAction::cast($key);
-                $result[$stringKey] = is_bool($value) ? ($value ? '1' : '0') : SafeStringCastAction::cast($value);
+                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) $value);
             }
 
             return $result;

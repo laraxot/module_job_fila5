@@ -24,7 +24,7 @@ class JobsWaitingResource extends XotBaseResource
     protected static bool $shouldRegisterNavigation = true;
 
     #[Override]
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         return [
             'job_id' => TextInput::make('job_id')->required()->maxLength(255),
