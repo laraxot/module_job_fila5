@@ -19,7 +19,9 @@ class GetTaskCommandsAction
      */
     public function execute(): Collection
     {
-        $all_commands = collect(Artisan::all());
+        $commands = Artisan::all();
+        Assert::allIsInstanceOf($commands, Command::class, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+        $all_commands = collect($commands);
 
         /*
          * $command_filter = config('totem.artisan.command_filter');
@@ -38,9 +40,7 @@ class GetTaskCommandsAction
          * });
          * }
          */
-        /** @var Collection<int, Command> $sorted */
-        $sorted = $all_commands->sortBy(static function ($command) {
-            /** @var Command $command */
+        $sorted = $all_commands->sortBy(static function (Command $command) {
             $name = $command->getName();
             Assert::string($name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
             if (mb_strpos($name, ':') === false) {
