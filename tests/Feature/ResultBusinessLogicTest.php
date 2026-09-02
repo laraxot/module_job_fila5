@@ -7,14 +7,7 @@ use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-uses(TestCase::class);
-
-beforeEach(function (): void {
-    /** @var TestCase $this */
-    if (TestCase::jobDbUnavailable()) {
-        $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
-    }
-});
+uses(\Modules\Job\Tests\TestCase::class);
 
 it('can create result with basic information', function (): void {
     $task = Task::create([

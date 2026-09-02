@@ -10,14 +10,7 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-uses(TestCase::class);
-
-beforeEach(function (): void {
-    /** @var TestCase $this */
-    if (TestCase::jobDbUnavailable()) {
-        $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
-    }
-});
+uses(\Modules\Job\Tests\TestCase::class);
 
 function uniqueJobBatchId(string $prefix = 'batch'): string
 {

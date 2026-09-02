@@ -61,7 +61,7 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
-    public static function getFormSchemaOld(): array
+    public static function getFormSchema(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
@@ -76,7 +76,7 @@ class ScheduleResource extends XotBaseResource
                     ->afterStateUpdated(function (Set $set, ?string $state): void {
                         Assert::string($state);
                         Assert::isInstanceOf(
-                            $command = static::$commands->toCollection()->firstWhere('name', $state),
+                            $command = static::$commands->where('name', $state)->first(),
                             CommandData::class,
                         );
                         $params = $command->arguments;
