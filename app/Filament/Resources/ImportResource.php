@@ -11,22 +11,13 @@ use Filament\Forms\Components\TextInput;
 use Modules\Job\Models\Import;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-use Filament\Forms\Components\Field;
+
 class ImportResource extends XotBaseResource
 {
     protected static ?string $model = Import::class;
 
-    /**
-
-
-     * @return array<string, mixed>
-
-
-     */
-
-
-    //#[Override]
-    public static function getFormSchemaOld(): array
+    #[Override]
+    public static function getFormSchema(): array
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

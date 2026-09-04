@@ -9,22 +9,13 @@ use Filament\Forms\Components\TextInput;
 use Modules\Job\Models\FailedImportRow;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-use Filament\Forms\Components\Field;
+
 class FailedImportRowResource extends XotBaseResource
 {
     protected static ?string $model = FailedImportRow::class;
 
-    /**
-
-
-     * @return array<string, mixed>
-
-
-     */
-
-
-    //#[Override]
-    public static function getFormSchemaOld(): array
+    #[Override]
+    public static function getFormSchema(): array
     {
         return [
             'import_class' => TextInput::make('import_class')->required()->maxLength(255),

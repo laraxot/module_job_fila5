@@ -31,7 +31,7 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
 use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
-use Filament\Forms\Components\Field;
+
 class ScheduleResource extends XotBaseResource
 {
     protected static ?string $model = Schedule::class;
@@ -60,17 +60,8 @@ class ScheduleResource extends XotBaseResource
         ];
     }
 
-    /**
-
-
-     * @return array<string, mixed>
-
-
-     */
-
-
-    //#[Override]
-    public static function getFormSchemaOld(): array
+    #[Override]
+    public static function getFormSchema(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
         $commands_opts = static::$commands->toCollection()->pluck('full_name', 'name')->toArray();
@@ -85,7 +76,7 @@ class ScheduleResource extends XotBaseResource
                     ->afterStateUpdated(function (Set $set, ?string $state): void {
                         Assert::string($state);
                         Assert::isInstanceOf(
-                            $command = static::$commands->toCollection()->where('name', $state)->first(),
+                            $command = static::$commands->toCollection()->firstWhere('name', $state),
                             CommandData::class,
                         );
                         $params = $command->arguments;
@@ -135,7 +126,7 @@ class ScheduleResource extends XotBaseResource
                     ->reorderable(false),
                 TextInput::make('expression')
                     ->placeholder('* * * * *')
-                    ->rules([new Corn])
+                    ->rules([new Corn()])
                     ->required(),
                 TagsInput::make('environments')->placeholder(null),
                 TextInput::make('log_filename')->helperText(static::trans('messages.help-log-filename')),
