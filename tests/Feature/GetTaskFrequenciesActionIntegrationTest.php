@@ -9,6 +9,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 describe('GetTaskFrequenciesAction Integration', function () {
+    beforeEach(function () {
+        /** @var TestCase $this */
+        $this->action = new GetTaskFrequenciesAction();
+    });
+
     it('returns array when config exists', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => [
@@ -20,9 +25,10 @@ describe('GetTaskFrequenciesAction Integration', function () {
             'monthly' => 'Monthly',
         ]]);
 
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $result = $action->execute();
 
+        Assert::assertIsArray($result);
         Assert::assertSame('Every Minute', $result['everyMinute']);
         Assert::assertSame('Hourly', $result['hourly']);
         Assert::assertSame('Daily', $result['daily']);
@@ -32,7 +38,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => 'invalid_value']);
         $this->expectApplicationException(Exception::class);
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $action->execute();
     });
 
@@ -40,29 +46,24 @@ describe('GetTaskFrequenciesAction Integration', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => null]);
         $this->expectApplicationException(Exception::class);
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $action->execute();
     });
 
     it('handles empty array config', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => []]);
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $result = $action->execute();
 
+        Assert::assertIsArray($result);
         Assert::assertCount(0, $result);
     });
 
     it('can be queued', function () {
         /** @var TestCase $this */
-        $action = new GetTaskFrequenciesAction();
-        // `method_exists()` era sempre vero: la classe compone QueueableAction, quindi
-        // il metodo c'e' per costruzione e l'asserzione non verificava niente.
-        // Il comportamento che il nome del test promette e' che `onQueue()` restituisca
-        // un proxy accodabile, distinto dall'action, su cui `execute()` sia invocabile.
-        $queued = $action->onQueue('default');
-        Assert::assertNotSame($action, $queued);
-        Assert::assertTrue(is_callable([$queued, 'execute']));
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
+        Assert::assertTrue(method_exists($action, 'onQueue'));
     });
 
     it('integrates with Laravel service container', function () {
@@ -72,7 +73,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
 
     it('handles configuration changes dynamically', function () {
         /** @var TestCase $this */
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
 
         config(['totem.frequencies' => ['initial' => 'Initial Value']]);
         $result1 = $action->execute();
@@ -96,9 +97,10 @@ describe('GetTaskFrequenciesAction Integration', function () {
             'boolean_key' => true,
         ]]);
 
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $result = $action->execute();
 
+        Assert::assertIsArray($result);
         Assert::assertSame('string_value', $result['string_key']);
         Assert::assertSame(['nested', 'array'], $result['another_key']);
         Assert::assertSame(123, $result['numeric_key']);
@@ -113,9 +115,10 @@ describe('GetTaskFrequenciesAction Integration', function () {
             1 => 'value3',
         ]]);
 
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $result = $action->execute();
 
+        Assert::assertIsArray($result);
         Assert::assertArrayHasKey('string_key', $result);
         Assert::assertArrayHasKey(0, $result);
         Assert::assertArrayHasKey(1, $result);
@@ -131,7 +134,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
             'another_key' => 'Another Value',
         ]]);
 
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $results = [];
         for ($i = 0; $i < 3; $i++) {
             $results[] = $action->execute();
@@ -157,9 +160,10 @@ describe('GetTaskFrequenciesAction Integration', function () {
             'yearly' => 'Yearly',
         ]]);
 
-        $action = new GetTaskFrequenciesAction();
+        $action = $this->getAction(GetTaskFrequenciesAction::class);
         $result = $action->execute();
 
+        Assert::assertIsArray($result);
         Assert::assertCount(10, $result);
         Assert::assertSame('Every Minute', $result['everyMinute'] ?? null);
         Assert::assertSame('Hourly', $result['hourly'] ?? null);

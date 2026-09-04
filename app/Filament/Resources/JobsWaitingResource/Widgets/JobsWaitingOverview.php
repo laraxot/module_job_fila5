@@ -42,20 +42,20 @@ class JobsWaitingOverview extends XotBaseStatsOverviewWidget
 
         $aggregatedInfo = JobManager::query()->select($aggregationColumns)->first();
 
-        $averageTime = '0';
-        $totalTime = '0';
-
-        if ($aggregatedInfo instanceof Model) {
+        if (! ($aggregatedInfo instanceof Model)) {
+            $averageTime = '0';
+            $totalTime = '0';
+        } else {
             $averageSeconds = (float) $cast->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0');
             $totalSeconds = (int) $cast->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0');
 
-            if ($averageSeconds > 0.0) {
-                $averageTime = (string) ceil($averageSeconds).'s';
-            }
+            $averageTime = $averageSeconds > 0.0
+                ? (string) ceil($averageSeconds).'s'
+                : '0';
 
-            if ($totalSeconds > 0) {
-                $totalTime = $this->formatSeconds($totalSeconds);
-            }
+            $totalTime = $totalSeconds > 0
+                ? $this->formatSeconds($totalSeconds)
+                : '0';
         }
 
         return [

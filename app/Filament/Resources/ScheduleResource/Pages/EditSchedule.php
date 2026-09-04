@@ -23,9 +23,9 @@ class EditSchedule extends XotBaseEditRecord
     protected static string $resource = ScheduleResource::class;
 
     #[Override]
-    protected function getFormSchemaOld(): array
+    protected function getFormSchema(): array
     {
-        $schema = $this->getResource()::getFormSchemaOld();
+        $schema = $this->getResource()::getFormSchema();
         Assert::isArray($schema);
 
         $components = array_values($schema);
