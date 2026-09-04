@@ -14,6 +14,40 @@ related:
 **Lines Coverage:** N/A (Failed to parse)
 **Test Exit Code:** 2
 
+## 2026-09-04 — Services → Actions (no-services-rule)
+
+Scope: convert every file under `app/Services/` to `Spatie\QueueableAction\QueueableAction`
+under `app/Actions/`, per `bashscripts/ai/wiki/rules/no-services-rule.md`. Story:
+`docs/stories/job-services-to-actions.story.md` (full per-file classification table there).
+
+**Census**: one file, `app/Services/ScheduleService.php` (2 public methods:
+`getActives()`, `clearCache()`).
+
+**Collision found live, mid-task**: a concurrent session was migrating the exact same
+file at the same time. Result found in the working tree: `ScheduleService.php` deleted by
+that session; **two** independent QueueableAction migrations already committed in HEAD
+(`634d334`) — a flat pair (`app/Actions/GetActiveSchedulesAction.php`,
+`ClearScheduleCacheAction.php`, with real call sites in
+`ScheduleClearCacheCommand`/`ScheduleObserver`) and a grouped pair
+(`app/Actions/Schedule/GetActiveSchedulesAction.php`, `ClearScheduleCacheAction.php`, no
+real call sites, only tests). Consolidated onto the grouped pair (matches the rule: "Actions
+are grouped by actor/context, not dumped flat in the Actions/ root"), updated the two real
+call sites to the grouped namespace, removed the flat duplicates + their redundant tests +
+two stray tracked `.php.bak` files.
+
+**PHPStan**: baseline (post `clear-result-cache`) 0 errors → final (post
+`clear-result-cache`) 0 errors.
+
+**PHPMD**: `./tools/phpmd.sh Modules/Job text ../docs/phpmd.ruleset.xml` — no new findings;
+`ScheduleObserver.php` only shows pre-existing `CamelCaseParameterName`/
+`UnusedFormalParameter` on `$_schedule` (line not touched, only the `use` import changed).
+
+**Pest**: `./vendor/bin/pest Modules/Job/tests -c Modules/Job/phpunit.xml --no-coverage`
+fails at bootstrap (`Cannot open bootstrap script
+".../Modules/Job/vendor/autoload.php"`) — pre-existing, caused by another session's
+uncommitted `phpunit.xml` edit (documented below in the mixed-type-reduction section), not
+touched here.
+
 ## 2026-09-04 — mixed type reduction (best-effort)
 
 Scope: reduce use of `mixed` where a more specific type is genuinely knowable
