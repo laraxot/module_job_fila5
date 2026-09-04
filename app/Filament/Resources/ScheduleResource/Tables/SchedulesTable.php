@@ -4,15 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\ScheduleResource\Tables;
 
-use Filament\Actions\Action;
-use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Models\Schedule;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
@@ -20,7 +17,7 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class SchedulesTable extends XotBaseResourceTable
 {
     /**
-     * @return array<string, Column>
+     * @return array<string, mixed>
      */
     public function getTableColumns(): array
     {
@@ -32,7 +29,7 @@ class SchedulesTable extends XotBaseResourceTable
     }
 
     /**
-     * @return array<string, Action>
+     * @return array<string, mixed>
      */
     public function getTableActions(): array
     {
@@ -53,7 +50,7 @@ class SchedulesTable extends XotBaseResourceTable
     }
 
     /**
-     * @return array<string, BulkAction>
+     * @return array<string, mixed>
      */
     public function getTableBulkActions(): array
     {

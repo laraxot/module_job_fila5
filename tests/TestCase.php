@@ -41,4 +41,71 @@ abstract class TestCase extends XotBaseTestCase
             JobServiceProvider::class,
         ];
     }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+
+        config(['auth.providers.users.model' => User::class]);
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
+    {
+        $this->assertDatabaseHas($table, $data, $connection);
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
+    {
+        $query = DB::connection($connection)->table($table);
+
+        foreach ($data as $column => $value) {
+            $query->where((string) $column, $value);
+        }
+
+        Assert::assertFalse($query->exists());
+    }
+
+    /**
+     * @template T of object
+     *
+     * @param  class-string<T>  $class
+     * @return T
+     */
+    public function getAction(string $class): object
+    {
+        Assert::assertInstanceOf($class, $this->action);
+
+        return $this->action;
+    }
+
+    /**
+     * @param  class-string<\Throwable>  $exceptionClass
+     */
+    public function expectApplicationException(string $exceptionClass, ?string $message = null): void
+    {
+        $this->expectException($exceptionClass);
+        if ($message !== null) {
+            $this->expectThrowableMessage($message);
+        }
+    }
 }

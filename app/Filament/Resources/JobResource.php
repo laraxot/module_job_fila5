@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
-use Filament\Forms\Components\DateTimePicker;
-use Filament\Forms\Components\TextInput;
 use Modules\Job\Filament\Resources\JobResource\Pages\BoardJobs;
 use Modules\Job\Filament\Resources\JobResource\Pages\CreateJob;
 use Modules\Job\Filament\Resources\JobResource\Pages\EditJob;
@@ -14,22 +12,13 @@ use Modules\Job\Filament\Resources\JobResource\Widgets\JobStatsOverview;
 use Modules\Job\Models\Job;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
-use Filament\Forms\Components\Field;
+
 class JobResource extends XotBaseResource
 {
     protected static ?string $model = Job::class;
 
-    /**
-
-
-     * @return array<string, mixed>
-
-
-     */
-
-
-    //#[Override]
-    public static function getFormSchemaOld(): array
+    #[Override]
+    public static function getFormSchema(): array
     {
         return [];
     }
