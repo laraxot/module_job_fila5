@@ -58,6 +58,7 @@ use Modules\Job\Traits\FormatSeconds;
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.

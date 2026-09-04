@@ -8,10 +8,11 @@ use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
 use Modules\Job\Providers\JobServiceProvider;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 /**
  * Base test case for Job module.
@@ -78,7 +79,7 @@ abstract class TestCase extends XotBaseTestCase
 
         parent::setUp();
 
-        config(['auth.providers.users.model' => User::class]);
+        config(['auth.providers.users.model' => \Modules\User\Models\User::class]);
 
         if ($this->shouldSkipForMissingJobDb()) {
             $this->markTestSkipped('DB `job` non disponibile in ambiente test condiviso.');
