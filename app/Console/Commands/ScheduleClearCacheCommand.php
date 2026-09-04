@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
-use Modules\Job\Actions\ClearScheduleCacheAction;
+use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
 
 class ScheduleClearCacheCommand extends Command
 {
@@ -28,9 +28,7 @@ class ScheduleClearCacheCommand extends Command
      */
     public function handle(): int
     {
-        /** @var ClearScheduleCacheAction $action */
-        $action = app(ClearScheduleCacheAction::class);
-        $action->execute();
+        app(ClearScheduleCacheAction::class)->execute();
         $this->info('Scheduling cache cleared.');
 
         return 0;
