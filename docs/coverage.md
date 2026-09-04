@@ -62,5 +62,14 @@ Campagna 4.26: `analyse Modules/Job` → **[OK] No errors**. B = tautologie canc
 o file interi di coverage-farming). G = callback di validazione e `id` stringa sul
 contratto utente, senza allargare le firme.
 
+## PHPStan L10 Phase 2 - 2026-09-04
+
+Session: Systematic module-by-module fixes (ascending error count).
+
+- Baseline: 1 error (class.notFound in TestCase.php line 81)
+- Fix: Qualified `Modules\User\Models\User::class` reference to resolve namespace ambiguity
+- Result: **[OK] No errors**
+- Commit: `c82962c` - phpstan L10 - resolved namespace conflict in TestCase (1 error)
+
 The canonical certification remains `phpstan analyse Modules`, because analysing only a
 module can omit cross-file and type-coverage diagnostics.
