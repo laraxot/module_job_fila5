@@ -29,6 +29,7 @@ use Modules\Job\Tests\TestCase;
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
+use Modules\User\Models\User;
 
 uses(TestCase::class)->group('no-job-db');
 

@@ -7,14 +7,12 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\User\Models\User;
-use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
 
 /**
  * Class TaskComment.
  *
- * @property-read ProfileContract|null $creator
- * @property-read Task|null $task
- * @property-read ProfileContract|null $updater
  * @property-read User|null $user
  *
  * @method static Builder<static>|TaskComment newModelQuery()
@@ -46,7 +44,10 @@ class TaskComment extends BaseModel
      */
     public function user(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        /** @var class-string<User> $userClass */
+        $userClass = XotData::make()->getUserClass();
+
+        return $this->belongsTo($userClass);
     }
 
     /**
