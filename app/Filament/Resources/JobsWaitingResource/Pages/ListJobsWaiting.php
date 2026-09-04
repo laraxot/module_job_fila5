@@ -8,7 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Pages;
 
-use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\JobsWaitingResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource\Widgets\JobsWaitingOverview;
@@ -26,10 +25,10 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
-    /**
-     * @return array<string, Column>
-     */
     #[Override]
+    /*
+     * @return array<string, mixed>
+     */
     public function getTableColumns(): array
     {
         return [
