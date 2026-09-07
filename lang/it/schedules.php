@@ -14,4 +14,7 @@ return [
             'label' => 'updated_at',
         ],
     ],
+    'buttons' => [
+        'history' => 'Cronologia',
+    ],
 ];
