@@ -45,7 +45,7 @@ class SchedulesTable extends XotBaseResourceTable
             'history' => ViewAction::make()
                 ->icon('history')
                 ->color('gray')
-                ->tooltip(static::trans('buttons.history')),
+                ->tooltip(__('job::schedules.buttons.history')),
         ];
     }
 
