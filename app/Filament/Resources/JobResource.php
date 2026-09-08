@@ -18,18 +18,6 @@ class JobResource extends XotBaseResource
     protected static ?string $model = Job::class;
 
     #[Override]
-    public function getFormSchema(): array
-    {
-        return [];
-    }
-
-    #[Override]
-    public static function getRelations(): array
-    {
-        return [];
-    }
-
-    #[Override]
     public static function getPages(): array
     {
         return [
