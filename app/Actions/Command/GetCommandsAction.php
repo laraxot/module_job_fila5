@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions\Command;
 
-use Illuminate\Console\Application;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Collection;
 use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
@@ -21,10 +21,13 @@ class GetCommandsAction
      */
     public function execute(): DataCollection
     {
-        $artisan = app(Application::class);
-
+        // `app(Illuminate\Console\Application::class)` non e' risolvibile fuori
+        // da una richiesta console: quel costruttore vuole ($app, $events, $version)
+        // e nessuno lo lega al container. La facade passa dal kernel, che l'Artisan
+        // lo costruisce gia'. Senza questo, ScheduleForm::getFormSchema() esplode
+        // ad ogni apertura della pagina web.
         /** @var array<string, Command> $commands */
-        $commands = $artisan->all();
+        $commands = Artisan::all();
 
         /** @var Collection<int, CommandData> $commandDataCollection */
         $commandDataCollection = collect($commands)->map(
