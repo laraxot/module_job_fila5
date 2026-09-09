@@ -1,20 +1,19 @@
 # ⚙️ Job
 
 [![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
 [![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+[![<nome progetto> Platform](https://img.shields.io/badge/Platform-<nome progetto>-008758.svg)](#)
 
 > **Lavoro pesante fuori dalla request.** Code, batch, retry — UX veloce anche sotto carico.
 
 ---
 
-<<<<<<< .merge_file_7fTtFn
 ## Scopo e confini
 
 Job è il pannello di controllo delle code, non una libreria di job: 82 file Filament
@@ -50,9 +49,7 @@ scritto metà file, o su una notifica già inviata, è un bug più subdolo di un
 crash — perché non si vede finché qualcuno non riceve due email uguali. La
 disciplina di questo modulo è: idempotenza prima di tutto, poi retry, poi
 monitoraggio.
-=======
 ## Perché esiste
->>>>>>> .merge_file_nzdFA7
 
 Geocoding, export, notifiche bulk non devono bloccare l’utente.
 
@@ -91,8 +88,7 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-<<<<<<< .merge_file_7fTtFn
-**Modulo** `job` · **Laraxot / FixCity Platform** · licenza MIT
+**Modulo** `job` · **Laraxot / <nome progetto> Platform** · licenza MIT
 
 ---
 
@@ -100,6 +96,4 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 Perche' esiste, come raggiungere meglio il suo scopo e cosa **non** gli appartiene:
 [`docs/purpose.md`](./docs/purpose.md).
-=======
-**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> .merge_file_nzdFA7
+**Modulo** `job` · **Laraxot** · **<nome progetto> Platform** · PHPStan 10 · Filament 5

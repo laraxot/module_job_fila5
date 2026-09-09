@@ -96,11 +96,11 @@
 - [filament.md](filament.md) - Filament integration (444 bytes)
 - [filament-widget-implementation.md](filament-widget-implementation.md) - Widget guide
 - [filament-best-practices.md](filament-best-practices.md) - Best practices
-- [filament-4x-compatibility.md](filament-4x-compatibility.md) - v4 compatibility
+- [Filament-5x-compatibility.md](Filament-5x-compatibility.md) - v4 compatibility
 - [filament-5x-compatibility.md](filament-5x-compatibility.md) - v5 compatibility (1.8KB)
 - [filament-version.md](filament-version.md) - Version tracking (862 bytes)
 - [migration-filament.md](migration-filament.md) - Filament migration
-- [migration-filament-4.md](migration-filament-4.md) - v4 migration
+- [migration-Filament-5.md](migration-Filament-5.md) - v4 migration
 
 ### Migration & Database
 - [MIGRATIONS.md](MIGRATIONS.md) - Migration tracking (10.9KB)
@@ -274,17 +274,17 @@
 - `filament-widget-implementation.md` (190 bytes)
 
 **Version-specific:**
-- `filament-4x-compatibility.md` / `filament_4x_compatibility.md` (232 bytes, **duplicated**)
+- `Filament-5x-compatibility.md` / `filament_4x_compatibility.md` (232 bytes, **duplicated**)
 - `filament-5x-compatibility.md` (1.8KB)
 
 **Migration:**
 - `migration-filament.md` (185 bytes)
-- `migration-filament-4.md` (185 bytes)
+- `migration-Filament-5.md` (185 bytes)
 - `migrazione-filament.md` (186 bytes - IT)
-- `migrazione-filament-4.md` (186 bytes - IT)
+- `migrazione-Filament-5.md` (186 bytes - IT)
 
 **Assessment:**
-- [ ] Remove underscore duplicates (`filament_4x_compatibility.md` vs `filament-4x-compatibility.md`)
+- [ ] Remove underscore duplicates (`filament_4x_compatibility.md` vs `Filament-5x-compatibility.md`)
 - [ ] Consolidate Italian/English migration guides
 - [ ] Expand `filament-5x-compatibility.md` with v5 guidelines
 
@@ -492,12 +492,12 @@
 #### 1.2 Filament Framework (8 files → 4 canonical)
 
 **Files to merge:**
-- `filament_4x_compatibility.md` → DELETE (duplicate of `filament-4x-compatibility.md`)
+- `filament_4x_compatibility.md` → DELETE (duplicate of `Filament-5x-compatibility.md`)
 - `migrazione-filament*.md` → CONSOLIDATE into English guides
 
 **Canonical set (keep):**
 1. `filament.md` - Framework overview
-2. `filament-4x-compatibility.md` - v4 guide
+2. `Filament-5x-compatibility.md` - v4 guide
 3. `filament-5x-compatibility.md` - v5 guide
 4. `filament-widget-implementation.md` - Widget patterns
 

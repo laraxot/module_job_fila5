@@ -15,7 +15,7 @@ related:
 
 ## Stato compatibilità
 
-Il modulo Job è **compatibile** con Filament 5.x. Nessun breaking change funzionale rispetto a Filament 4.x.
+Il modulo Job è **compatibile** con Filament 5.x. Nessun breaking change funzionale rispetto a Filament 5.x.
 
 ## Regole architetturali
 
