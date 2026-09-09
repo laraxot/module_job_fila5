@@ -399,7 +399,7 @@ fn (ModelType $item): ReturnType => ...
 - **Errori risolti**: 31
 - **Tempo impiegato**: ~2 ore
 - **Livello PHPStan**: 10 (massimo)
-- **Compatibilità**: PHP 8.2+, Laravel 12+
+- **Compatibilità**: PHP 8.2+, Laravel 13+
 
 ## 🔗 Collegamenti
 
