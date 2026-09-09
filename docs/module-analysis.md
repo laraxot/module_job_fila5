@@ -15,7 +15,7 @@ related:
 **Module Name**: Job  
 **Type**: Queue & Job Processing Module  
 **Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
+**Framework**: Laravel 13.x + Filament 5.x  
 **Queue System**: Laravel Queue with multiple drivers  
 **Language**: Multi-language (IT/EN/DE)  
 
@@ -68,7 +68,7 @@ The Job module provides comprehensive queue and background job processing:
 - Advanced queue security features
 
 ## Integration with Other Modules
-- **Quaeris**: Background PDF generation and report processing
+- **<nome progetto>**: Background PDF generation and report processing
 - **Limesurvey**: Survey data processing jobs
 - **Notify**: Notification queue management
 - **Media**: Media processing jobs
@@ -79,7 +79,7 @@ The Job module provides comprehensive queue and background job processing:
 - Xot module (for base classes)
 - Laravel queue system
 - Queue drivers (database, redis, etc.)
-- Filament 4.x (monitoring interface)
+- Filament 5.x (monitoring interface)
 - Database for job storage
 
 ## Key Metrics

@@ -224,9 +224,9 @@ public function retryUntil(): DateTime {
 
 ## SCOPO
 
-### Purpose in FixCity
+### Purpose in <nome progetto>
 
-The Job module enables FixCity to scale beyond single-threaded HTTP requests.
+The Job module enables <nome progetto> to scale beyond single-threaded HTTP requests.
 
 **Use cases:**
 
@@ -1060,7 +1060,7 @@ php artisan tinker
 
 ## LAST WORDS
 
-The Job module is not a generic queue abstraction. It is an **opinionated system for reliable, observable async work in FixCity.**
+The Job module is not a generic queue abstraction. It is an **opinionated system for reliable, observable async work in <nome progetto>.**
 
 Its religion: **Move work off the request, bring results back home.**
 Its philosophy: **Reliable > fast; observable > hidden; simple > magical.**
