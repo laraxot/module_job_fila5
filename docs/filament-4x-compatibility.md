@@ -1,6 +1,6 @@
 ---
 module: theme
-topic: filament-4x-compatibility
+topic: Filament-5x-compatibility
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
 ---
 

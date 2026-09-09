@@ -191,7 +191,7 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
-'database.connections.job.database' => 'Quaeris_data_test',
+'database.connections.job.database' => '<nome progetto>_data_test',
     ]);
     
     return $app;
@@ -271,7 +271,7 @@ protected function createApplication()
 
 ### External Resources
 
-- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 

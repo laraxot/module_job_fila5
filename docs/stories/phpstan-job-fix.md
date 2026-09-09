@@ -1,7 +1,7 @@
 ---
 id: phpstan-job-fix
 slug: phpstan-job
-scope: [module:Job, project:base_workorder_fila5]
+scope: [module:Job, project:<repo progetto>]
 status: Done
 priority: High
 created: 2026-09-06
