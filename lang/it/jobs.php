@@ -12,4 +12,7 @@ return [
         'status' => ['label' => 'status'],
         'name' => ['label' => 'name'],
     ],
+    'actions' => [
+        'delete' => ['tooltip' => 'delete'],
+    ],
 ];
