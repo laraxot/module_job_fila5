@@ -7,13 +7,8 @@ namespace Modules\Job\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
 use Modules\User\Models\User;
 use Modules\Job\Providers\JobServiceProvider;
-=======
-use Modules\Job\Providers\JobServiceProvider;
-use Modules\User\Models\User;
->>>>>>> laraxot/dev
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;

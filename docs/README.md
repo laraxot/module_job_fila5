@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Job
 
 [![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()
@@ -33,58 +32,3 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
----
-title: "Job Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
----
-
-# Modulo Job
-
-## Overview
-
-Il modulo **Job** gestisce i job asincroni e le code di elaborazione.
-
-## Funzionalità
-
-- Job queue management
-- Retry logic
-- Failed job handling
-- Job monitoring
-
-## Modelli Principali
-
-```php
-// Job
-Job\Models\Job
-
-// Failed Job
-Job\Models\FailedJob
-
-// Job Batch
-Job\Models\JobBatch
-```
-
-## Services
-
-```php
-// Job dispatcher
-Job\Services\JobDispatcher
-
-// Queue manager
-Job\Services\QueueManager
-```
-
-## Collegamenti
-
-- [Xot Base](../Xot/docs/)
-- [Notify Module](../Notify/docs/) - per notifiche job
-
-## Backlinks
-
-- [Queue Config](./queue/)
-- [Failed Jobs](./failed/)
->>>>>>> laraxot/dev
