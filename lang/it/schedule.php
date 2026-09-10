@@ -104,6 +104,10 @@ return [
         'delete' => ['label' => 'Elimina Schedule'],
     ],
     'sections' => [
+<<<<<<< HEAD
         'empty' => ['label' => '', 'heading' => ''],
+=======
+        'empty' => ['label' => 'empty', 'heading' => 'empty'],
+>>>>>>> laraxot/dev
     ],
 ];

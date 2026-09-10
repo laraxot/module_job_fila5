@@ -3,11 +3,16 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
+<<<<<<< HEAD
 use function Safe\class_uses;
+=======
+
+>>>>>>> laraxot/dev
 use Illuminate\Support\Collection;
 use Modules\Job\Actions\GetTaskCommandsAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
@@ -15,6 +20,17 @@ uses(\Modules\Job\Tests\TestCase::class);
 describe('GetTaskCommandsAction', function (): void {
     test('can be instantiated', function (): void {
         $action = new GetTaskCommandsAction;
+=======
+
+use function Safe\class_uses;
+use function Safe\file_get_contents;
+
+uses(TestCase::class);
+
+describe('GetTaskCommandsAction', function (): void {
+    test('can be instantiated', function (): void {
+        $action = new GetTaskCommandsAction();
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetTaskCommandsAction::class, $action);
     });
 

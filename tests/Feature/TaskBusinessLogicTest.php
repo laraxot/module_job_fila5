@@ -9,7 +9,11 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 it('can create task with basic information', function (): void {
     /** @var TestCase $this */

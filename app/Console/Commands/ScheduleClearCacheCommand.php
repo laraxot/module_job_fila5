@@ -9,7 +9,11 @@ declare(strict_types=1);
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
+<<<<<<< HEAD
 use Modules\Job\Actions\ClearScheduleCacheAction;
+=======
+use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
+>>>>>>> laraxot/dev
 
 class ScheduleClearCacheCommand extends Command
 {
