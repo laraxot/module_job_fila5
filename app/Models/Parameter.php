@@ -24,10 +24,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read ProfileContract|null $creator
  * @property-read Frequency|null $task
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
  *
-=======
->>>>>>> laraxot/dev
  * @method static ParameterFactory factory($count = null, $state = [])
  * @method static Builder<static>|Parameter newModelQuery()
  * @method static Builder<static>|Parameter newQuery()
@@ -40,13 +37,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Parameter whereUpdatedAt($value)
  * @method static Builder<static>|Parameter whereUpdatedBy($value)
  * @method static Builder<static>|Parameter whereValue($value)
-<<<<<<< HEAD
  *
  * @property-read ProfileContract|null $deleter
  *
-=======
- * @property-read ProfileContract|null $deleter
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Parameter extends BaseModel

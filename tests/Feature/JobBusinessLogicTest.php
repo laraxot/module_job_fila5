@@ -6,11 +6,7 @@ use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('Job Business Logic', function () {
     it('can instantiate job with basic attributes', function () {

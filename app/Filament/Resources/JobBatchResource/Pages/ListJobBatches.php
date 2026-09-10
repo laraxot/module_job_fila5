@@ -15,10 +15,6 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Notifications\Notification;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Filament\Resources\JobBatchResource;
 use Modules\Job\Models\JobBatch;
@@ -53,14 +49,10 @@ class ListJobBatches extends XotBaseListRecords
             'failed_jobs' => TextColumn::make('failed_jobs')->numeric()->sortable(),
             'progress' => TextColumn::make('progress')
                 ->formatStateUsing(
-<<<<<<< HEAD
                     /**
                      * @param  mixed  $record
                      */
                     static function ($record): string {
-=======
-                    static function (Model|array|null $record): string {
->>>>>>> laraxot/dev
                         if (! $record instanceof JobBatch) {
                             return '';
                         }
