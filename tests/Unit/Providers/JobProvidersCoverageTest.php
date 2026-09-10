@@ -3,15 +3,26 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Providers;
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Modules\Job\Providers\EventServiceProvider;
 use Modules\Job\Providers\Filament\AdminPanelProvider;
 use Modules\Job\Providers\JobServiceProvider;
 use Modules\Job\Providers\RouteServiceProvider;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+
+use function Safe\file_get_contents;
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('Job Providers Coverage', function () {
     describe('JobServiceProvider', function () {
@@ -44,8 +55,13 @@ describe('Job Providers Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(JobServiceProvider::class);
             $filename = $reflection->getFileName();
+<<<<<<< HEAD
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
+=======
+            Assert::assertNotFalse($filename);
+            $content = file_get_contents($filename);
+>>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -79,8 +95,13 @@ describe('Job Providers Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(EventServiceProvider::class);
             $filename = $reflection->getFileName();
+<<<<<<< HEAD
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
+=======
+            Assert::assertNotFalse($filename);
+            $content = file_get_contents($filename);
+>>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -111,8 +132,13 @@ describe('Job Providers Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(RouteServiceProvider::class);
             $filename = $reflection->getFileName();
+<<<<<<< HEAD
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
+=======
+            Assert::assertNotFalse($filename);
+            $content = file_get_contents($filename);
+>>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -138,8 +164,13 @@ describe('Job Providers Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(AdminPanelProvider::class);
             $filename = $reflection->getFileName();
+<<<<<<< HEAD
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
+=======
+            Assert::assertNotFalse($filename);
+            $content = file_get_contents($filename);
+>>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });

@@ -15,6 +15,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Job\Database\Factories\JobBatchFactory;
+<<<<<<< HEAD
+=======
+use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
@@ -33,7 +37,10 @@ use Override;
  * @property Carbon|null $finished_at
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
+<<<<<<< HEAD
  *
+=======
+>>>>>>> laraxot/dev
  * @method static JobBatchFactory factory($count = null, $state = [])
  * @method static Builder<static>|JobBatch newModelQuery()
  * @method static Builder<static>|JobBatch newQuery()
@@ -48,9 +55,13 @@ use Override;
  * @method static Builder<static>|JobBatch whereOptions($value)
  * @method static Builder<static>|JobBatch wherePendingJobs($value)
  * @method static Builder<static>|JobBatch whereTotalJobs($value)
+<<<<<<< HEAD
  *
  * @property-read ProfileContract|null $deleter
  *
+=======
+ * @property-read ProfileContract|null $deleter
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class JobBatch extends BaseModel
@@ -79,9 +90,19 @@ class JobBatch extends BaseModel
      *
      * @return int
      */
+<<<<<<< HEAD
     public function processedJobs(): int|float
     {
         return $this->total_jobs - $this->pending_jobs;
+=======
+    public function processedJobs(): int
+    {
+        $caster = app(SafeEloquentCastAction::class);
+        $totalJobs = $caster->getIntAttribute($this, 'total_jobs');
+        $pendingJobs = $caster->getIntAttribute($this, 'pending_jobs');
+
+        return $totalJobs - $pendingJobs;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -89,7 +110,11 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
+<<<<<<< HEAD
         $totalJobs = $this->total_jobs;
+=======
+        $totalJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'total_jobs');
+>>>>>>> laraxot/dev
         $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
 
         return (int) $progress;
@@ -100,7 +125,13 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
+<<<<<<< HEAD
         return $this->pending_jobs > 0;
+=======
+        $pendingJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'pending_jobs');
+
+        return $pendingJobs > 0;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -116,7 +147,13 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
+<<<<<<< HEAD
         return $this->failed_jobs > 0;
+=======
+        $failedJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'failed_jobs');
+
+        return $failedJobs > 0;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -124,7 +161,14 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
+<<<<<<< HEAD
         return $this->failed_jobs === $this->total_jobs;
+=======
+        $failedJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'failed_jobs');
+        $totalJobs = app(SafeEloquentCastAction::class)->getIntAttribute($this, 'total_jobs');
+
+        return $failedJobs === $totalJobs;
+>>>>>>> laraxot/dev
     }
 
     /**
