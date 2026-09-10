@@ -10,7 +10,11 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_decode;
 use function Safe\json_encode;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 function uniqueJobBatchId(string $prefix = 'batch'): string
 {

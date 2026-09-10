@@ -9,6 +9,11 @@ use Illuminate\Support\Collection;
 use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
 use Symfony\Component\Console\Command\Command;
+<<<<<<< HEAD
+=======
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputOption;
+>>>>>>> laraxot/dev
 
 class GetCommandsAction
 {
@@ -34,7 +39,11 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $arguments */
                 $arguments = collect($command->getDefinition()->getArguments())
                     ->map(
+<<<<<<< HEAD
                         static fn ($argument): array => [
+=======
+                        static fn (InputArgument $argument): array => [
+>>>>>>> laraxot/dev
                             'name' => (string) $argument->getName(),
                             'description' => (string) $argument->getDescription(),
                             'required' => (bool) $argument->isRequired(),
@@ -45,7 +54,11 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $options */
                 $options = collect($command->getDefinition()->getOptions())
                     ->map(
+<<<<<<< HEAD
                         static fn ($option): array => [
+=======
+                        static fn (InputOption $option): array => [
+>>>>>>> laraxot/dev
                             'name' => (string) $option->getName(),
                             'description' => (string) $option->getDescription(),
                             'required' => (bool) $option->isValueRequired(),

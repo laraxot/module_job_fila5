@@ -73,7 +73,11 @@ function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): 
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+uses(TestCase::class)->group('no-job-db');
+>>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();
@@ -126,7 +130,16 @@ describe('Job execute coverage — Filament resources', function (): void {
         }
     });
 
+<<<<<<< HEAD
     
+=======
+    test('ScheduleResource getFormSchema esegue GetCommandsAction', function (): void {
+        jobBindArtisan();
+        $schema = ScheduleResource::getFormSchema();
+        Assert::assertNotEmpty($schema);
+        Assert::assertArrayHasKey('index', ScheduleResource::getPages());
+    });
+>>>>>>> laraxot/dev
 });
 
 describe('Job execute coverage — policies', function (): void {

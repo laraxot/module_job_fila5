@@ -43,7 +43,11 @@ describe('ScheduleForm coverage', function (): void {
         expectMethod($action, 'execute')->andReturn($commands);
         app()->instance(GetCommandsAction::class, $action);
 
+<<<<<<< HEAD
         $schema = (new ScheduleForm())->getFormSchema();
+=======
+        $schema = ScheduleForm::getFormSchema();
+>>>>>>> laraxot/dev
         Assert::assertArrayHasKey('main_section', $schema);
         Assert::assertNotEmpty($schema);
     });
