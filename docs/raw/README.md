@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Job
 
 [![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()
@@ -33,12 +32,3 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
----
-module: theme
-topic: README
-canonical: ../../../../Themes/docs/shared-components/README-Modules.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
->>>>>>> laraxot/dev

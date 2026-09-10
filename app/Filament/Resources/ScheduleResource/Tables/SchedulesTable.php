@@ -11,10 +11,7 @@ use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
 use Modules\Job\Filament\Resources\ScheduleResource;
-=======
->>>>>>> laraxot/dev
 use Modules\Job\Models\Schedule;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
@@ -49,11 +46,7 @@ class SchedulesTable extends XotBaseResourceTable
             'history' => ViewAction::make()
                 ->icon('history')
                 ->color('gray')
-<<<<<<< HEAD
                 ->tooltip(ScheduleResource::trans('buttons.history')),
-=======
-                ->tooltip(static::trans('buttons.history')),
->>>>>>> laraxot/dev
         ];
     }
 

@@ -34,11 +34,7 @@ class ScheduleForm extends XotBaseResourceForm
      *
      * @return array<string, Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         if (static::$commands === null) {
             static::$commands = app(GetCommandsAction::class)->execute();
@@ -59,11 +55,7 @@ class ScheduleForm extends XotBaseResourceForm
                             static::$commands = app(GetCommandsAction::class)->execute();
                         }
                         Assert::isInstanceOf(
-<<<<<<< HEAD
                             $command = static::$commands->toCollection()->where('name', $state)->first(),
-=======
-                            $command = static::$commands->toCollection()->firstWhere('name', $state),
->>>>>>> laraxot/dev
                             CommandData::class,
                         );
                         $params = $command->arguments;

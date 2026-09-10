@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Storage Server"
 module: "Job"
 type: concept
@@ -10,19 +9,6 @@ qmd: "storage server"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
-title: 'Storage server'
-module: Job
-type: reference
-slug: storage-server
-description: 'Wasabi Hot Cloud Storage'
-tags: [migrato-da-txt, job]
-converted_from: storage_server.txt
-created: 2026-08-24
-updated: 2026-08-24
----
-
->>>>>>> laraxot/dev
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage
@@ -63,11 +49,8 @@ Minio
 https://laravel-news.com/minio-s3-compliant-storage
 https://github.com/amincheloh/cookbook/blob/master/docs/how-to-use-minio-as-laravel-file-storage.md
 ------------------------------------------------
-<<<<<<< HEAD
 
 
 
 
 
-=======
->>>>>>> laraxot/dev
