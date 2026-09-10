@@ -57,11 +57,7 @@ describe('Job ScheduleForm full schema coverage', function (): void {
             }
         });
 
-<<<<<<< HEAD
         $schema = (new ScheduleForm())->getFormSchema();
-=======
-        $schema = ScheduleForm::getFormSchema();
->>>>>>> laraxot/dev
         Assert::assertArrayHasKey('main_section', $schema);
 
         // Invoke nested closures via ModuleRemainingCoverage-style property walk

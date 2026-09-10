@@ -33,10 +33,7 @@ use Override;
  * @property string|null $deleted_by
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
-<<<<<<< HEAD
  *
-=======
->>>>>>> laraxot/dev
  * @method static ImportFactory factory($count = null, $state = [])
  * @method static Builder<static>|Import newModelQuery()
  * @method static Builder<static>|Import newQuery()
@@ -57,13 +54,9 @@ use Override;
  * @method static Builder<static>|Import whereUpdatedBy($value)
  * @method static Builder<static>|Import whereUserId($value)
  * @method static Builder<static>|Import whereUserType($value)
-<<<<<<< HEAD
  *
  * @property-read ProfileContract|null $deleter
  *
-=======
- * @property-read ProfileContract|null $deleter
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Import extends BaseModel

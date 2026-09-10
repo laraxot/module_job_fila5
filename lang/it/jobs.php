@@ -12,10 +12,4 @@ return [
         'status' => ['label' => 'status'],
         'name' => ['label' => 'name'],
     ],
-<<<<<<< HEAD
-=======
-    'actions' => [
-        'delete' => ['tooltip' => 'delete'],
-    ],
->>>>>>> laraxot/dev
 ];

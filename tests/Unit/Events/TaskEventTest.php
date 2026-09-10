@@ -3,26 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
-<<<<<<< HEAD
 use function Safe\class_uses;
-=======
-
->>>>>>> laraxot/dev
 use Modules\Job\Events\Event;
 use Modules\Job\Events\TaskEvent;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
-=======
-
-use function Safe\class_uses;
-use function Safe\file_get_contents;
-
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('TaskEvent', function () {
     it('extends Event base class', function () {

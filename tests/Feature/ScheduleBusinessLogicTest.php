@@ -10,11 +10,7 @@ use Modules\Job\Models\ScheduleHistory;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
-=======
-uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('Schedule Business Logic', function (): void {
     test('_can_create_schedule_with_basic_information', function (): void {

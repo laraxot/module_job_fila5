@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
-=======
->>>>>>> laraxot/dev
 use Modules\Job\Filament\Resources\JobResource\Pages\BoardJobs;
 use Modules\Job\Filament\Resources\JobResource\Pages\CreateJob;
 use Modules\Job\Filament\Resources\JobResource\Pages\EditJob;
@@ -23,15 +20,6 @@ class JobResource extends XotBaseResource
     protected static ?string $model = Job::class;
 
     #[Override]
-<<<<<<< HEAD
-=======
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
-
-    #[Override]
->>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

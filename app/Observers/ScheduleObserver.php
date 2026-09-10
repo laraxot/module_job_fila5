@@ -8,11 +8,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Observers;
 
-<<<<<<< HEAD
 use Modules\Job\Actions\ClearScheduleCacheAction;
-=======
-use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
->>>>>>> laraxot/dev
 use Modules\Job\Enums\Status;
 use Modules\Job\Models\Schedule;
 
