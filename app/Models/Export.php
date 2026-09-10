@@ -32,7 +32,10 @@ use Illuminate\Support\Carbon;
  * @property string|null $deleted_by
  * @property string|null $user_type
  * @property-read Model|Eloquent|null $user
+<<<<<<< HEAD
  *
+=======
+>>>>>>> laraxot/dev
  * @method static Builder<static>|Export newModelQuery()
  * @method static Builder<static>|Export newQuery()
  * @method static Builder<static>|Export query()
@@ -52,7 +55,10 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Export whereUpdatedBy($value)
  * @method static Builder<static>|Export whereUserId($value)
  * @method static Builder<static>|Export whereUserType($value)
+<<<<<<< HEAD
  *
+=======
+>>>>>>> laraxot/dev
  * @mixin Eloquent
  */
 class Export extends BaseExport

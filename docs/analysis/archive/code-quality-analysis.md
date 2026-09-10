@@ -5,7 +5,11 @@ type: concept
 tags: [code, quality, analysis]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
 qmd: "code quality analysis"
+=======
+qmd: "code quality analysis "
+>>>>>>> laraxot/dev
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
@@ -92,4 +96,8 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 ---
 
 **Report Generated**: 2025-11-11
+<<<<<<< HEAD
+=======
+**Next Review**: After fixing syntax errors
+>>>>>>> laraxot/dev
 **Target Completion**: 2025-11-15

@@ -14,7 +14,11 @@ class FailedImportRowForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'import_class' => TextInput::make('import_class')->required()->maxLength(255),

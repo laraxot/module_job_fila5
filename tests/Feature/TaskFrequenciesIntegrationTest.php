@@ -6,7 +6,11 @@ use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('TaskFrequencies Integration', function () {
     beforeEach(function () {
@@ -163,7 +167,11 @@ describe('TaskFrequencies Integration', function () {
             true,
             false,
             null,
+<<<<<<< HEAD
             new \stdClass(),
+=======
+            new stdClass(),
+>>>>>>> laraxot/dev
         ];
 
         $action = $this->getAction(GetTaskFrequenciesAction::class);
@@ -173,8 +181,13 @@ describe('TaskFrequencies Integration', function () {
             try {
                 $action->execute();
                 Assert::fail('Expected exception for invalid config');
+<<<<<<< HEAD
             } catch (\Exception $exception) {
                 Assert::assertInstanceOf(\Exception::class, $exception);
+=======
+            } catch (Exception $exception) {
+                Assert::assertInstanceOf(Exception::class, $exception);
+>>>>>>> laraxot/dev
             }
         }
     });
