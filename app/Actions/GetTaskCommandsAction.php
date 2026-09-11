@@ -19,7 +19,11 @@ class GetTaskCommandsAction
      */
     public function execute(): Collection
     {
+<<<<<<< HEAD
         $all_commands = collect(Artisan::all())->whereInstanceOf(Command::class);
+=======
+        $all_commands = collect(Artisan::all());
+>>>>>>> laraxot/dev
 
         /*
          * $command_filter = config('totem.artisan.command_filter');
@@ -39,7 +43,12 @@ class GetTaskCommandsAction
          * }
          */
         /** @var Collection<int, Command> $sorted */
+<<<<<<< HEAD
         $sorted = $all_commands->sortBy(static function (Command $command): string {
+=======
+        $sorted = $all_commands->sortBy(static function ($command) {
+            /** @var Command $command */
+>>>>>>> laraxot/dev
             $name = $command->getName();
             Assert::string($name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
             if (mb_strpos($name, ':') === false) {

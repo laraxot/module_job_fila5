@@ -7,12 +7,20 @@ namespace Modules\Job\Tests;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Modules\Job\Providers\JobServiceProvider;
 use Modules\Xot\Contracts\UserContract;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 use Modules\User\Models\User;
+=======
+use Modules\User\Models\User;
+use Modules\Job\Providers\JobServiceProvider;
+use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\Assert;
+>>>>>>> laraxot/dev
 
 /**
  * Base test case for Job module.
@@ -32,6 +40,7 @@ abstract class TestCase extends XotBaseTestCase
     public mixed $action = null;
 
     /**
+<<<<<<< HEAD
      * Lo sqlite condiviso non contiene per forza le tabelle del modulo Job.
      * Anche se le tabelle esistono, fixcity_data.sqlite non è uno schema di dominio
      * affidabile per i Feature (assert su seed/history falliscono): trattalo come offline.
@@ -62,6 +71,8 @@ abstract class TestCase extends XotBaseTestCase
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @return array<int, class-string>
      */
     protected function getPackageProviders(Application $app): array
@@ -75,6 +86,7 @@ abstract class TestCase extends XotBaseTestCase
 
     protected function setUp(): void
     {
+<<<<<<< HEAD
         $this->prepareSharedFixcitySqliteForTesting();
 
         parent::setUp();
@@ -116,6 +128,25 @@ abstract class TestCase extends XotBaseTestCase
         $file = (new \ReflectionClass($this))->getFileName();
 
         return $file !== false ? $file : null;
+=======
+        parent::setUp();
+
+        $database = database_path('fixcity_data.sqlite');
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+
+        config(['auth.providers.users.model' => User::class]);
+>>>>>>> laraxot/dev
     }
 
     /**

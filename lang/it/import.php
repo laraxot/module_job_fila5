@@ -31,6 +31,7 @@ return [
         'file_name' => ['label' => 'file_name'],
         'file_disk' => ['label' => 'file_disk'],
         'importer' => ['label' => 'importer'],
+<<<<<<< HEAD
         'processed_rows' => ['label' => 'processed_rows', 'placeholder' => 'processed_rows', 'helper_text' => 'processed_rows', 'description' => 'processed_rows'],
         'total_rows' => ['label' => 'total_rows', 'placeholder' => 'total_rows', 'helper_text' => 'total_rows', 'description' => 'total_rows'],
         'successful_rows' => ['label' => 'successful_rows'],
@@ -39,6 +40,13 @@ return [
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
         'status' => ['label' => 'status', 'placeholder' => 'status', 'helper_text' => 'status', 'description' => 'status'],
         'error_message' => ['label' => 'error_message', 'placeholder' => 'error_message', 'helper_text' => 'error_message', 'description' => 'error_message'],
+=======
+        'processed_rows' => ['label' => 'processed_rows'],
+        'total_rows' => ['label' => 'total_rows'],
+        'successful_rows' => ['label' => 'successful_rows'],
+        'created_at' => ['label' => 'created_at'],
+        'updated_at' => ['label' => 'updated_at'],
+>>>>>>> laraxot/dev
     ],
     'formats' => ['csv' => 'CSV', 'excel' => 'Excel', 'json' => 'JSON', 'xml' => 'XML'],
     'options' => ['headers' => 'Prima riga contiene intestazioni', 'delimiter' => 'Delimitatore', 'encoding' => 'Codifica', 'sheet' => 'Foglio di lavoro', 'chunk_size' => 'Dimensione chunk'],
@@ -94,7 +102,10 @@ return [
             'messages' => ['success' => 'Import eliminato con successo'],
             'icon' => 'trash',
             'color' => 'danger',
+<<<<<<< HEAD
             'tooltip' => 'delete',
+=======
+>>>>>>> laraxot/dev
         ],
         'download_errors' => [
             'label' => 'Scarica Errori',
@@ -107,10 +118,13 @@ return [
             'filename_prefix' => 'Aree al',
             'columns' => ['name' => 'Nome area', 'parent_name' => 'Nome area livello superiore'],
         ],
+<<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => ['no_imports' => 'Nessuna importazione presente', 'upload_success' => 'File caricato con successo', 'import_started' => 'Importazione avviata', 'import_completed' => 'Importazione completata', 'import_failed' => 'Importazione fallita', 'file_not_found' => 'File non trovato', 'invalid_format' => 'Formato non valido', 'row_error' => 'Errore alla riga :row: :message'],
     'statuses' => ['pending' => 'In Attesa', 'processing' => 'In Elaborazione', 'completed' => 'Completato', 'failed' => 'Fallito', 'partial' => 'Completato Parzialmente'],

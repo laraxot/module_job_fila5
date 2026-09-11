@@ -9,5 +9,11 @@ use Illuminate\Database\Seeder;
 /** Stub parità entità — regola 1 modello = 1 seeder. Dati da factory/test/runtime. */
 class JobBatchSeeder extends Seeder
 {
+<<<<<<< HEAD
     public function run(): void {}
+=======
+    public function run(): void
+    {
+    }
+>>>>>>> laraxot/dev
 }
