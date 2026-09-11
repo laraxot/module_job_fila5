@@ -7,10 +7,16 @@ namespace Modules\Job\Filament\Resources\JobsWaitingResource\Tables;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Carbon;
+use Modules\Job\Models\Job;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class JobsWaitingsTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<Job>
+     */
+    protected static string $model = Job::class;
+
     /**
      * @return array<string, Column>
      */
