@@ -13,4 +13,7 @@ return [
         'successful_rows' => ['label' => 'successful_rows'],
         'completed_at' => ['label' => 'completed_at'],
     ],
+    'actions' => [
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+    ],
 ];

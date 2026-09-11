@@ -9,5 +9,11 @@ return [
         'queue' => ['label' => 'queue'],
         'failed_at' => ['label' => 'failed_at'],
         'exception' => ['label' => 'exception'],
+        'uuid' => ['label' => 'uuid'],
+    ],
+    'actions' => [
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
 ];
