@@ -11,5 +11,6 @@ return [
         'created_at' => ['label' => 'created_at'],
         'status' => ['label' => 'status'],
         'name' => ['label' => 'name'],
+        'reserved_at' => ['label' => 'reserved_at'],
     ],
 ];

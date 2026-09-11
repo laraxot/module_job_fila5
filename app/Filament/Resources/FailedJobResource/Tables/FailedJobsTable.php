@@ -23,6 +23,7 @@ class FailedJobsTable extends XotBaseResourceTable
             'id' => TextColumn::make('id')->sortable(),
             'connection' => TextColumn::make('connection')->searchable()->sortable(),
             'queue' => TextColumn::make('queue')->searchable()->sortable(),
+            'exception' => TextColumn::make('exception')->wrap()->limit(120),
             'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
         ];
     }

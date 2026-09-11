@@ -16,9 +16,14 @@ class JobBatchsTable extends XotBaseResourceTable
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->sortable(),
-            'name' => TextColumn::make('name')->searchable(),
+            'name' => TextColumn::make('name')->searchable()->sortable(),
+            'total_jobs' => TextColumn::make('total_jobs')->numeric()->sortable(),
+            'pending_jobs' => TextColumn::make('pending_jobs')->numeric()->sortable(),
+            'failed_jobs' => TextColumn::make('failed_jobs')->numeric()->sortable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
+            'finished_at' => TextColumn::make('finished_at')->dateTime()->sortable(),
+            'cancelled_at' => TextColumn::make('cancelled_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => TextColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
         ];
     }
 }
