@@ -12,16 +12,24 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> laraxot/dev
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Job\Models\Schedule;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+<<<<<<< HEAD
 use Override;
+=======
+>>>>>>> laraxot/dev
 
 class ListSchedules extends XotBaseListRecords
 {
     protected static string $resource = ScheduleResource::class;
+<<<<<<< HEAD
 
     public function getTableColumns(): array
     {
@@ -47,6 +55,9 @@ class ListSchedules extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+=======
+   
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, EditAction|RestoreAction|DeleteAction|ForceDeleteAction|ViewAction|ActionGroup>

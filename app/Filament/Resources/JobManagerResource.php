@@ -25,6 +25,7 @@ class JobManagerResource extends XotBaseResource
     protected static ?string $model = JobManager::class;
 
     #[Override]
+<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return [
@@ -40,6 +41,8 @@ class JobManagerResource extends XotBaseResource
     }
 
     #[Override]
+=======
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

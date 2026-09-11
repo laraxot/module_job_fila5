@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Agent instructions"
 type: reference
 tags: [agents, coding-agent, llm-wiki]
@@ -11,6 +12,18 @@ related:
   - ./coding-agent-manifests.md
 ---
 
+=======
+title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
+module: "Job"
+type: concept
+tags: [AGENTS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "agents"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> laraxot/dev
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job

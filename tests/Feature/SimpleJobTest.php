@@ -6,6 +6,7 @@ use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 describe('Job Business Logic', function () {
@@ -16,6 +17,11 @@ describe('Job Business Logic', function () {
         }
     });
 
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+
+describe('Job Business Logic', function () {
+>>>>>>> laraxot/dev
     it('can create job with basic information', function () {
         $jobData = [
             'queue' => 'default',

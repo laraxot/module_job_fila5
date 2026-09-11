@@ -10,7 +10,11 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-job-db');
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('Schedule Actions', function () {
     it('GetActiveSchedulesAction uses QueueableAction and has execute method', function () {

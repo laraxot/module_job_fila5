@@ -9,7 +9,11 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-job-db');
+=======
+uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+>>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();

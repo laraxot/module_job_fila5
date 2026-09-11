@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "Schedule Crud Component"
+module: "Job"
+type: concept
+tags: [schedule, crud, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "schedule crud 1"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> laraxot/dev
 # Schedule Crud Component
 
 ## Panoramica

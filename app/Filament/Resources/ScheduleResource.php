@@ -61,6 +61,7 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
+<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
@@ -146,6 +147,8 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
+=======
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [
