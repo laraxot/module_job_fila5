@@ -10,10 +10,15 @@ namespace Modules\Job\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Job\Database\Factories\ImportFactory;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -21,6 +26,8 @@ use Override;
  * @method static Builder<static>|Import newQuery()
  * @method static Builder<static>|Import query()
  *
+=======
+>>>>>>> laraxot/dev
  * @property string $id
  * @property Carbon|null $completed_at
  * @property string $file_name
@@ -37,7 +44,17 @@ use Override;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
  *
+=======
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static ImportFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Import newModelQuery()
+ * @method static Builder<static>|Import newQuery()
+ * @method static Builder<static>|Import query()
+>>>>>>> laraxot/dev
  * @method static Builder<static>|Import whereCompletedAt($value)
  * @method static Builder<static>|Import whereCreatedAt($value)
  * @method static Builder<static>|Import whereCreatedBy($value)
@@ -55,6 +72,11 @@ use Override;
  * @method static Builder<static>|Import whereUserId($value)
  * @method static Builder<static>|Import whereUserType($value)
  *
+<<<<<<< HEAD
+=======
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Import extends BaseModel

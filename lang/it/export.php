@@ -26,9 +26,13 @@ return [
         'reorderRecords' => ['label' => 'reorderRecords', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'resetFilters' => ['label' => 'resetFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
+<<<<<<< HEAD
         'updated_at' => ['label' => 'updated_at', 'placeholder' => 'updated_at', 'helper_text' => 'updated_at', 'description' => 'updated_at'],
         'type' => ['label' => 'type', 'placeholder' => 'type', 'helper_text' => 'type', 'description' => 'type'],
         'error_message' => ['label' => 'error_message', 'placeholder' => 'error_message', 'helper_text' => 'error_message', 'description' => 'error_message'],
+=======
+        'updated_at' => ['label' => 'updated_at'],
+>>>>>>> laraxot/dev
     ],
     'formats' => ['csv' => 'CSV', 'excel' => 'Excel', 'json' => 'JSON', 'xml' => 'XML', 'pdf' => 'PDF', 'standard' => 'Standard', 'extended' => 'Esteso', 'minimal' => 'Minimo', 'custom' => 'Personalizzato'],
     'options' => ['include_headers' => 'Includi intestazioni', 'delimiter' => 'Delimitatore', 'encoding' => 'Codifica', 'worksheet_name' => 'Nome foglio di lavoro', 'chunk_size' => 'Dimensione chunk'],
@@ -37,10 +41,13 @@ return [
         'download' => ['label' => 'Scarica', 'icon' => 'download', 'color' => 'primary', 'tooltip' => 'Scarica il file esportato'],
         'cancel' => ['label' => 'Annulla', 'icon' => 'times', 'color' => 'danger', 'tooltip' => 'Annulla l\'operazione corrente'],
         'delete' => ['label' => 'Elimina', 'icon' => 'trash', 'color' => 'danger', 'tooltip' => 'Elimina l\'esportazione selezionata'],
+<<<<<<< HEAD
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => ['export_queued' => 'Esportazione in coda', 'export_processing' => 'Esportazione in corso', 'export_completed' => 'Esportazione completata', 'export_failed' => 'Esportazione fallita', 'export_started' => 'Esportazione avviata', 'no_exports' => 'Nessuna esportazione presente', 'file_not_found' => 'File non trovato', 'invalid_format' => 'Formato non valido'],
     'statuses' => ['pending' => 'In Attesa', 'processing' => 'In Elaborazione', 'completed' => 'Completato', 'failed' => 'Fallito', 'downloaded' => 'Scaricato'],

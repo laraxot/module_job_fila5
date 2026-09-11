@@ -48,6 +48,7 @@ Background task management, scheduling, and import/export processes are currentl
 - All 9+ Filament resources refactored into the `Schemas/Tables` structure.
 - Full quality pipeline (PHPStan L10) passes.
 - Documentation cleaned and archived.
+<<<<<<< HEAD
 
 ---
 
@@ -81,3 +82,5 @@ Job module for Laraxot platform providing core functionality.
 - Pest test coverage >90%
 - Integration testing
 
+=======
+>>>>>>> laraxot/dev

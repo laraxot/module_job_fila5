@@ -5,6 +5,7 @@ canonical: ../../../Themes/docs/shared-components/.gitkeep
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< HEAD
 
 ---
 
@@ -782,3 +783,5 @@ When a critical job failure occurs:
 **Document:** TROUBLESHOOTING.md  
 **Version:** 1.0  
 **Status:** Active (2026-07-28)
+=======
+>>>>>>> laraxot/dev
