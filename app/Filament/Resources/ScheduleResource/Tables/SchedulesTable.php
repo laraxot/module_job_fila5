@@ -19,6 +19,11 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class SchedulesTable extends XotBaseResourceTable
 {
     /**
+     * @var class-string<Schedule>
+     */
+    protected static string $model = Schedule::class;
+
+    /**
      * @return array<string, Column>
      */
     public function getTableColumns(): array

@@ -8,10 +8,16 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
+use Modules\Job\Models\JobManager;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class JobManagersTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<JobManager>
+     */
+    protected static string $model = JobManager::class;
+
     /**
      * @return array<string, Column>
      */

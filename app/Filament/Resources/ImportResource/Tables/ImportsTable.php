@@ -8,10 +8,16 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Modules\Job\Models\Import;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class ImportsTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<Import>
+     */
+    protected static string $model = Import::class;
+
     /**
      * @return array<string, Column>
      */

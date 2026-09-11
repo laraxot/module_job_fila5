@@ -10,6 +10,7 @@ use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
+use Modules\Job\Models\JobBatch;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 /**
@@ -17,6 +18,11 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
  */
 class JobBatchesTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<JobBatch>
+     */
+    protected static string $model = JobBatch::class;
+
     /**
      * @return array<string, Column>
      */
