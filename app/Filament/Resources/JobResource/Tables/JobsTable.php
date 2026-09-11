@@ -16,6 +16,11 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class JobsTable extends XotBaseResourceTable
 {
     /**
+     * @var class-string<Job>
+     */
+    protected static string $model = Job::class;
+
+    /**
      * @return array<string, Column>
      */
     public function getTableColumns(): array

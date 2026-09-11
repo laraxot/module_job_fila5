@@ -6,10 +6,16 @@ namespace Modules\Job\Filament\Resources\JobBatchResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Modules\Job\Models\JobBatch;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class JobBatchsTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<JobBatch>
+     */
+    protected static string $model = JobBatch::class;
+
     /**
      * @return array<string, Column>
      */

@@ -6,10 +6,16 @@ namespace Modules\Job\Filament\Resources\ExportResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Modules\Job\Models\Export;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class ExportsTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<Export>
+     */
+    protected static string $model = Export::class;
+
     /**
      * @return array<string, Column>
      */
