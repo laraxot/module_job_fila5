@@ -10,6 +10,7 @@ use Modules\Job\Models\ScheduleHistory;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
 
 describe('Schedule Business Logic', function (): void {
@@ -20,6 +21,11 @@ describe('Schedule Business Logic', function (): void {
         }
     });
 
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+
+describe('Schedule Business Logic', function (): void {
+>>>>>>> laraxot/dev
     test('_can_create_schedule_with_basic_information', function (): void {
         /** @var TestCase $this */
         $schedule = Schedule::create([
@@ -127,10 +133,14 @@ describe('Schedule Business Logic', function (): void {
 
         $options = $schedule->getOptions();
 
+<<<<<<< HEAD
         // `getOptions()` restituisce una lista di flag CLI con chiavi posizionali, non
         // una mappa nome => valore: chiedere la chiave 'verbose' contraddiceva il metodo,
         // che per quell'opzione produce la stringa '--verbose'.
         Assert::assertContains('--verbose', $options);
+=======
+        Assert::assertArrayHasKey('verbose', $options);
+>>>>>>> laraxot/dev
         Assert::assertStringContainsString('--queue=default', $options[1]);
     });
 

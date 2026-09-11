@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Job Batch',
@@ -130,9 +135,12 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'progress' => [
             'label' => 'progress',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'import' => [

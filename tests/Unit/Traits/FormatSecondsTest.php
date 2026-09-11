@@ -8,7 +8,11 @@ use Modules\Job\Tests\TestCase;
 use Modules\Job\Traits\FormatSeconds;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-job-db');
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('format_seconds_formats_minutes_and_seconds', function (): void {
     $probe = new class()

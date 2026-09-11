@@ -8,7 +8,11 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 use function Safe\file_get_contents;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-job-db');
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('GetTaskFrequenciesAction', function (): void {
     test('can be instantiated', function (): void {

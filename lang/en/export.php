@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'navigation' => [
         'name' => 'Esportazione',
@@ -101,6 +106,7 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< HEAD
         'id' => [
             'label' => 'id',
         ],
@@ -122,6 +128,8 @@ return [
             'helper_text' => 'error_message',
             'description' => 'error_message',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'formats' => [
         'csv' => 'CSV',

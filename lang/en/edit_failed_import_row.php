@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'items' => [
@@ -37,6 +42,7 @@ return [
             'description' => 'Icon',
             'tooltip' => '',
         ],
+<<<<<<< HEAD
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
@@ -55,10 +61,13 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
+<<<<<<< HEAD
         'group' => [
             'name' => 'General',
             'description' => 'General Settings',
@@ -67,12 +76,20 @@ return [
         'sort' => '100',
         'name' => 'Edit Failed Import Row',
         'plural' => 'Edit Failed Import Row',
+=======
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+>>>>>>> laraxot/dev
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
+<<<<<<< HEAD
         'delete' => [
             'label' => 'delete',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
 ];

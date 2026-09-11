@@ -3,11 +3,16 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
+<<<<<<< HEAD
 
+=======
+use function Safe\class_uses;
+>>>>>>> laraxot/dev
 use Modules\Job\Actions\Command\GetCommandOptionsActions;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\Console\Command\Command;
+<<<<<<< HEAD
 
 use function Safe\class_uses;
 use function Safe\file_get_contents;
@@ -17,6 +22,15 @@ uses(TestCase::class)->group('no-job-db');
 describe('GetCommandOptionsActions', function (): void {
     test('can be instantiated', function (): void {
         $action = new GetCommandOptionsActions();
+=======
+use function Safe\file_get_contents;
+
+uses(\Modules\Job\Tests\TestCase::class);
+
+describe('GetCommandOptionsActions', function (): void {
+    test('can be instantiated', function (): void {
+        $action = new GetCommandOptionsActions;
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(GetCommandOptionsActions::class, $action);
     });
 
@@ -28,7 +42,11 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('returns array with structure', function (): void {
+<<<<<<< HEAD
         $action = new GetCommandOptionsActions();
+=======
+        $action = new GetCommandOptionsActions;
+>>>>>>> laraxot/dev
         $command = new Command('test');
         $result = $action->execute($command);
 
@@ -37,7 +55,11 @@ describe('GetCommandOptionsActions', function (): void {
     });
 
     test('includes default options in withoutValue', function (): void {
+<<<<<<< HEAD
         $action = new GetCommandOptionsActions();
+=======
+        $action = new GetCommandOptionsActions;
+>>>>>>> laraxot/dev
         $command = new Command('test');
         $result = $action->execute($command);
 

@@ -11,12 +11,17 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Job\Database\Factories\ScheduleHistoryFactory;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
 /**
  * Modules\Job\Models\ScheduleHistory.
  *
+<<<<<<< HEAD
  * @property-read Schedule|null $command
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
@@ -32,11 +37,31 @@ use Override;
  * @property int|null $schedule_id
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
+=======
+ * @property string $id
+ * @property Schedule|null $command
+ * @property array<array-key, mixed>|null $params
+ * @property string $output
+ * @property array<array-key, mixed>|null $options
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property int|null $schedule_id
+>>>>>>> laraxot/dev
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
  *
+=======
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static ScheduleHistoryFactory factory($count = null, $state = [])
+ * @method static Builder<static>|ScheduleHistory newModelQuery()
+ * @method static Builder<static>|ScheduleHistory newQuery()
+ * @method static Builder<static>|ScheduleHistory query()
+>>>>>>> laraxot/dev
  * @method static Builder<static>|ScheduleHistory whereCommand($value)
  * @method static Builder<static>|ScheduleHistory whereCreatedAt($value)
  * @method static Builder<static>|ScheduleHistory whereCreatedBy($value)
@@ -50,6 +75,11 @@ use Override;
  * @method static Builder<static>|ScheduleHistory whereUpdatedAt($value)
  * @method static Builder<static>|ScheduleHistory whereUpdatedBy($value)
  *
+<<<<<<< HEAD
+=======
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class ScheduleHistory extends BaseModel
@@ -66,10 +96,13 @@ class ScheduleHistory extends BaseModel
         'params',
         'output',
         'options',
+<<<<<<< HEAD
         // Senza questa riga `ScheduleHistory::create(['schedule_id' => …])` scartava la
         // chiave in silenzio: la riga nasceva con `schedule_id` null e la relazione
         // `Schedule::histories()` non trovava mai niente.
         'schedule_id',
+=======
+>>>>>>> laraxot/dev
     ];
 
     /*

@@ -7,7 +7,11 @@ use Modules\Job\Models\BaseModel;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class)->group('no-job-db');
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('base model extends eloquent model', function () {
     $baseModel = new class() extends BaseModel
