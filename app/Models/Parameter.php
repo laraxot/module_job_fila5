@@ -7,15 +7,31 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Job\Database\Factories\ParameterFactory;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Modules\Job\Models\Parameter.
  *
+<<<<<<< HEAD
+=======
+ * @property string $id
+ * @property int $frequency_id
+ * @property string $name
+ * @property string $value
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+>>>>>>> laraxot/dev
  * @property-read ProfileContract|null $creator
  * @property-read Frequency|null $task
  * @property-read ProfileContract|null $updater
  *
+<<<<<<< HEAD
  * @method static Builder<static>|Parameter newModelQuery()
  * @method static Builder<static>|Parameter newQuery()
  * @method static Builder<static>|Parameter query()
@@ -29,6 +45,12 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $updated_by
  * @property string|null $created_by
  *
+=======
+ * @method static ParameterFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Parameter newModelQuery()
+ * @method static Builder<static>|Parameter newQuery()
+ * @method static Builder<static>|Parameter query()
+>>>>>>> laraxot/dev
  * @method static Builder<static>|Parameter whereCreatedAt($value)
  * @method static Builder<static>|Parameter whereCreatedBy($value)
  * @method static Builder<static>|Parameter whereFrequencyId($value)
@@ -38,6 +60,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Parameter whereUpdatedBy($value)
  * @method static Builder<static>|Parameter whereValue($value)
  *
+<<<<<<< HEAD
+=======
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Parameter extends BaseModel
@@ -60,6 +87,11 @@ class Parameter extends BaseModel
 
     /**
      * Get the attributes that should be cast.
+<<<<<<< HEAD
+=======
+     *
+     * @return array<string, string>
+>>>>>>> laraxot/dev
      */
     protected function casts(): array
     {

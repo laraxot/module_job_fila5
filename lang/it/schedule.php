@@ -32,11 +32,15 @@ return [
         'toggleColumns' => ['label' => 'toggleColumns', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'reorderRecords' => ['label' => 'reorderRecords', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'resetFilters' => ['label' => 'resetFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
+<<<<<<< HEAD
         'id' => ['label' => 'id'],
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => 'params', 'description' => 'params'],
         'is_active' => ['label' => 'is_active'],
         'without_overlapping' => ['label' => 'without_overlapping', 'placeholder' => 'without_overlapping', 'helper_text' => 'without_overlapping', 'description' => 'without_overlapping'],
         'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => 'on_one_server', 'description' => 'on_one_server'],
+=======
+        'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => 'params', 'description' => 'params'],
+>>>>>>> laraxot/dev
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
         'options_with_value' => ['label' => 'options_with_value', 'placeholder' => 'options_with_value', 'helper_text' => 'options_with_value', 'description' => 'options_with_value'],
         'type' => ['label' => 'type', 'placeholder' => 'type', 'helper_text' => 'type', 'description' => 'type'],
@@ -49,6 +53,13 @@ return [
         'log_success' => ['label' => 'log_success', 'placeholder' => 'log_success', 'helper_text' => 'log_success', 'description' => 'log_success'],
         'log_error' => ['label' => 'log_error', 'placeholder' => 'log_error', 'helper_text' => 'log_error', 'description' => 'log_error'],
         'even_in_maintenance_mode' => ['label' => 'even_in_maintenance_mode', 'placeholder' => 'even_in_maintenance_mode', 'helper_text' => 'even_in_maintenance_mode', 'description' => 'even_in_maintenance_mode'],
+<<<<<<< HEAD
+=======
+        'without_overlapping' => ['label' => 'without_overlapping', 'placeholder' => 'without_overlapping', 'helper_text' => 'without_overlapping', 'description' => 'without_overlapping'],
+        'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => 'on_one_server', 'description' => 'on_one_server'],
+        'id' => ['label' => 'id'],
+        'is_active' => ['label' => 'is_active'],
+>>>>>>> laraxot/dev
     ],
     'messages' => ['no-records-found' => 'No records found.', 'save-success' => 'Data saved successfully.', 'save-error' => 'Error saving data.', 'timezone' => 'All schedules will be executed in the timezone: ', 'select' => 'Select a command', 'custom' => 'Custom Command', 'custom-command-here' => 'Custom Command here (e.g. `cat /proc/cpuinfo` or `artisan db:migrate`]'],
     'status' => ['active' => 'Active', 'inactive' => 'Inactive', 'trashed' => 'Trashed', 'running' => 'In Esecuzione', 'failed' => 'Fallito'],
@@ -99,6 +110,7 @@ return [
     'label' => 'Schedule',
     'plural_label' => 'Schedule (Plurale)',
     'actions' => [
+<<<<<<< HEAD
         'create' => ['label' => 'Crea Schedule', 'icon' => 'create', 'tooltip' => 'create'],
         'edit' => ['label' => 'Modifica Schedule', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'Elimina Schedule', 'icon' => 'delete', 'tooltip' => 'delete'],
@@ -112,4 +124,13 @@ return [
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
     ],
     'test' => 'schedule',
+=======
+        'create' => ['label' => 'Crea Schedule'],
+        'edit' => ['label' => 'Modifica Schedule'],
+        'delete' => ['label' => 'Elimina Schedule'],
+    ],
+    'sections' => [
+        'empty' => ['label' => '', 'heading' => ''],
+    ],
+>>>>>>> laraxot/dev
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module Documentation"
 module: "Job"
@@ -416,6 +417,8 @@ Common issues and solutions:
 
 ## Contenuto assorbito da `INDEX.md`
 
+=======
+>>>>>>> laraxot/dev
 # Documentation Index
 
 Modulo: Job

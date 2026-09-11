@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
@@ -157,6 +162,7 @@ return [
                 'success' => 'Jobs falliti eliminati con successo',
             ],
         ],
+<<<<<<< HEAD
         'logout' => [
             'tooltip' => 'logout',
             'icon' => 'logout',
@@ -181,6 +187,8 @@ return [
             'tooltip' => 'submit',
             'icon' => 'submit',
         ],
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => [
         'no_failed_jobs' => 'Nessun job fallito',

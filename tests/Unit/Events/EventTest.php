@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
+<<<<<<< HEAD
 
 use Modules\Job\Events\Event;
 use Modules\Job\Tests\TestCase;
@@ -16,6 +17,19 @@ uses(TestCase::class)->group('no-job-db');
 describe('Event', function () {
     it('can be instantiated', function () {
         $event = new class() extends Event {};
+=======
+use function Safe\class_uses;
+use Modules\Job\Events\Event;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Safe\file_get_contents;
+
+uses(\Modules\Job\Tests\TestCase::class);
+
+describe('Event', function () {
+    it('can be instantiated', function () {
+        $event = new class extends Event {};
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(Event::class, $event);
     });
 

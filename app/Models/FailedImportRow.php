@@ -10,10 +10,15 @@ namespace Modules\Job\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Job\Database\Factories\FailedImportRowFactory;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
 /**
+<<<<<<< HEAD
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -21,6 +26,8 @@ use Override;
  * @method static Builder<static>|FailedImportRow newQuery()
  * @method static Builder<static>|FailedImportRow query()
  *
+=======
+>>>>>>> laraxot/dev
  * @property string $id
  * @property array<array-key, mixed> $data
  * @property int $import_id
@@ -29,7 +36,17 @@ use Override;
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
+<<<<<<< HEAD
  *
+=======
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static FailedImportRowFactory factory($count = null, $state = [])
+ * @method static Builder<static>|FailedImportRow newModelQuery()
+ * @method static Builder<static>|FailedImportRow newQuery()
+ * @method static Builder<static>|FailedImportRow query()
+>>>>>>> laraxot/dev
  * @method static Builder<static>|FailedImportRow whereCreatedAt($value)
  * @method static Builder<static>|FailedImportRow whereCreatedBy($value)
  * @method static Builder<static>|FailedImportRow whereData($value)
@@ -39,6 +56,11 @@ use Override;
  * @method static Builder<static>|FailedImportRow whereUpdatedBy($value)
  * @method static Builder<static>|FailedImportRow whereValidationError($value)
  *
+<<<<<<< HEAD
+=======
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class FailedImportRow extends BaseModel

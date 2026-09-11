@@ -17,6 +17,7 @@ class ImportResource extends XotBaseResource
     protected static ?string $model = Import::class;
 
     #[Override]
+<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return [
@@ -45,6 +46,8 @@ class ImportResource extends XotBaseResource
     }
 
     #[Override]
+=======
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

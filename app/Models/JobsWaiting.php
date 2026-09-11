@@ -10,11 +10,16 @@ namespace Modules\Job\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Job\Database\Factories\JobsWaitingFactory;
+>>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Modules\Job\Models\JobsWaiting.
  *
+<<<<<<< HEAD
  * @property-read ProfileContract|null $creator
  * @property-read string|null $display_name
  * @property-read string $status
@@ -24,6 +29,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|JobsWaiting newQuery()
  * @method static Builder<static>|JobsWaiting query()
  *
+=======
+>>>>>>> laraxot/dev
  * @property int $id
  * @property string $queue
  * @property array<array-key, mixed> $payload
@@ -31,10 +38,25 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property int|null $reserved_at
  * @property int $available_at
  * @property Carbon $created_at
+<<<<<<< HEAD
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  *
+=======
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $updated_at
+ * @property-read ProfileContract|null $creator
+ * @property-read string|null $display_name
+ * @property-read string $status
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static JobsWaitingFactory factory($count = null, $state = [])
+ * @method static Builder<static>|JobsWaiting newModelQuery()
+ * @method static Builder<static>|JobsWaiting newQuery()
+ * @method static Builder<static>|JobsWaiting query()
+>>>>>>> laraxot/dev
  * @method static Builder<static>|JobsWaiting whereAttempts($value)
  * @method static Builder<static>|JobsWaiting whereAvailableAt($value)
  * @method static Builder<static>|JobsWaiting whereCreatedAt($value)
@@ -46,6 +68,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|JobsWaiting whereUpdatedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedBy($value)
  *
+<<<<<<< HEAD
+=======
+ * @property-read ProfileContract|null $deleter
+ *
+>>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class JobsWaiting extends Job {}

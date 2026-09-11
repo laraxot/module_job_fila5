@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
+<<<<<<< HEAD
 
 use Modules\Job\Actions\DummyAction;
 use Modules\Job\Tests\TestCase;
@@ -16,6 +17,19 @@ uses(TestCase::class)->group('no-job-db');
 describe('DummyAction', function (): void {
     test('can be instantiated', function (): void {
         $action = new DummyAction();
+=======
+use function Safe\class_uses;
+use Modules\Job\Actions\DummyAction;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Safe\file_get_contents;
+
+uses(\Modules\Job\Tests\TestCase::class);
+
+describe('DummyAction', function (): void {
+    test('can be instantiated', function (): void {
+        $action = new DummyAction;
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(DummyAction::class, $action);
     });
 

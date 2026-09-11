@@ -35,10 +35,13 @@ return [
         'import_id' => ['label' => 'import_id'],
         'data' => ['label' => 'data'],
         'validation_error' => ['label' => 'validation_error'],
+<<<<<<< HEAD
         'import_class' => ['label' => 'import_class', 'placeholder' => 'import_class', 'helper_text' => 'import_class', 'description' => 'import_class'],
         'row_number' => ['label' => 'row_number', 'placeholder' => 'row_number', 'helper_text' => 'row_number', 'description' => 'row_number'],
         'row_data' => ['label' => 'row_data', 'placeholder' => 'row_data', 'helper_text' => 'row_data', 'description' => 'row_data'],
         'error_message' => ['label' => 'error_message', 'placeholder' => 'error_message', 'helper_text' => 'error_message', 'description' => 'error_message'],
+=======
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'retry' => [
@@ -55,8 +58,11 @@ return [
             'label' => 'Elimina',
             'modal' => ['heading' => 'Elimina Job', 'description' => 'Sei sicuro di voler eliminare questo job fallito?'],
             'messages' => ['success' => 'Job eliminato con successo', 'error' => 'Errore durante l\'eliminazione del job'],
+<<<<<<< HEAD
             'icon' => 'delete',
             'tooltip' => 'delete',
+=======
+>>>>>>> laraxot/dev
         ],
         'delete_all' => [
             'label' => 'Elimina Tutti',
@@ -68,11 +74,14 @@ return [
             'modal' => ['heading' => 'Pulisci Jobs Falliti', 'description' => 'Sei sicuro di voler eliminare tutti i jobs falliti?'],
             'messages' => ['success' => 'Jobs puliti con successo', 'error' => 'Errore durante la pulizia dei jobs'],
         ],
+<<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+=======
+>>>>>>> laraxot/dev
     ],
     'messages' => ['no_jobs' => 'Nessun job fallito trovato', 'import_success' => 'Importazione completata con successo', 'import_error' => 'Errore durante l\'importazione', 'row_error' => 'Errore nella riga :row: :error'],
     'status' => ['pending' => 'In attesa', 'processing' => 'In elaborazione', 'failed' => 'Fallito', 'completed' => 'Completato'],
