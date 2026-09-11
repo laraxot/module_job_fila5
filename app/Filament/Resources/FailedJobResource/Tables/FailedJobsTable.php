@@ -15,6 +15,11 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class FailedJobsTable extends XotBaseResourceTable
 {
     /**
+     * @var class-string<FailedJob>
+     */
+    protected static string $model = FailedJob::class;
+
+    /**
      * @return array<string, Column>
      */
     public function getTableColumns(): array

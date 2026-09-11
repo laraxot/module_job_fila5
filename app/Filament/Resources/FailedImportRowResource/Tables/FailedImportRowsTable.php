@@ -6,10 +6,16 @@ namespace Modules\Job\Filament\Resources\FailedImportRowResource\Tables;
 
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Modules\Job\Models\FailedImportRow;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class FailedImportRowsTable extends XotBaseResourceTable
 {
+    /**
+     * @var class-string<FailedImportRow>
+     */
+    protected static string $model = FailedImportRow::class;
+
     /**
      * @return array<string, Column>
      */
