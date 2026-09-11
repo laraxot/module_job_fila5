@@ -10,4 +10,9 @@ return [
         'import_id' => ['label' => 'import_id'],
         'validation_error' => ['label' => 'validation_error'],
     ],
+    'actions' => [
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+    ],
 ];

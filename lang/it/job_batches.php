@@ -13,4 +13,9 @@ return [
         'finished_at' => ['label' => 'finished_at'],
         'cancelled_at' => ['label' => 'cancelled_at'],
     ],
+    'actions' => [
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+    ],
 ];
