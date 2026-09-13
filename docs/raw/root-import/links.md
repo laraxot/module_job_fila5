@@ -27,7 +27,6 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
 
  https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs  !!!!
 
-<<<<<<< HEAD
 ---
 
 ## Appendice — contenuto migrato da `links.txt`
@@ -52,7 +51,3 @@ https://websolutionstuff.com/post/laravel-9-cron-job-task-scheduling-tutorial  !
 
 
  https://github.com/brendt/aggregate.stitcher.io/tree/v2/app/Jobs  !!!!
-=======
-
-
->>>>>>> laraxot/dev

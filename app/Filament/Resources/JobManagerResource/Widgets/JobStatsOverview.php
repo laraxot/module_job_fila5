@@ -39,17 +39,10 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
                 : '0';
 
             $totalTime = app(SafeEloquentCastAction::class)
-<<<<<<< HEAD
                 ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0') !== '0'
                 ? $this->formatSeconds(
                     app(SafeEloquentCastAction::class)
                         ->getIntAttribute($aggregatedInfo, 'total_time_elapsed', 0),
-=======
-                ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0')
-                ? $this->formatSeconds(
-                    (int) app(SafeEloquentCastAction::class)
-                        ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0'),
->>>>>>> laraxot/dev
                 )
                 : '0';
         } else {
@@ -57,7 +50,6 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
             $totalTime = '0';
         }
 
-<<<<<<< HEAD
         $jobCount = 0;
         if ($aggregatedInfo instanceof JobManager) {
             $jobCount = app(SafeEloquentCastAction::class)->getIntAttribute($aggregatedInfo, 'count', 0);
@@ -65,15 +57,6 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
 
         return [
             Stat::make((string) __('jobs::translations.total_jobs'), (string) $jobCount),
-=======
-        return [
-            Stat::make(
-                (string) __('jobs::translations.total_jobs'),
-                $aggregatedInfo
-                    ? app(SafeEloquentCastAction::class)->getIntAttribute($aggregatedInfo, 'count', 0)
-                    : 0,
-            ),
->>>>>>> laraxot/dev
             Stat::make((string) __('jobs::translations.execution_time'), (string) $totalTime),
             Stat::make((string) __('jobs::translations.average_time'), (string) $averageTime),
         ];

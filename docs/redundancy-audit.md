@@ -5,11 +5,8 @@ module: Job
 tags: [redundancy, duplicate-code, docs]
 created: 2026-05-21
 related:
-<<<<<<< HEAD
   - https://github.com/laraxot/base_ptv_fila5/issues/89
-=======
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
->>>>>>> laraxot/dev
 ---
 
 # Job redundancy audit 2026-05-21

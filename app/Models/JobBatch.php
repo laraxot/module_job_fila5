@@ -14,17 +14,12 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
-=======
-use Modules\Job\Database\Factories\JobBatchFactory;
->>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
 /**
  * Modules\Job\Models\JobBatch.
  *
-<<<<<<< HEAD
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -32,8 +27,6 @@ use Override;
  * @method static Builder<static>|JobBatch newQuery()
  * @method static Builder<static>|JobBatch query()
  *
-=======
->>>>>>> laraxot/dev
  * @property string $id
  * @property string $name
  * @property int $total_jobs
@@ -44,17 +37,7 @@ use Override;
  * @property Carbon|null $cancelled_at
  * @property Carbon $created_at
  * @property Carbon|null $finished_at
-<<<<<<< HEAD
  *
-=======
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
- * @method static JobBatchFactory factory($count = null, $state = [])
- * @method static Builder<static>|JobBatch newModelQuery()
- * @method static Builder<static>|JobBatch newQuery()
- * @method static Builder<static>|JobBatch query()
->>>>>>> laraxot/dev
  * @method static Builder<static>|JobBatch whereCancelledAt($value)
  * @method static Builder<static>|JobBatch whereCreatedAt($value)
  * @method static Builder<static>|JobBatch whereFailedJobIds($value)
@@ -66,20 +49,11 @@ use Override;
  * @method static Builder<static>|JobBatch wherePendingJobs($value)
  * @method static Builder<static>|JobBatch whereTotalJobs($value)
  *
-<<<<<<< HEAD
-=======
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class JobBatch extends BaseModel
 {
-<<<<<<< HEAD
     public const ?string UPDATED_AT = null;
-=======
-    public const UPDATED_AT = null;
->>>>>>> laraxot/dev
 
     public $incrementing = false;
 
@@ -100,19 +74,10 @@ class JobBatch extends BaseModel
 
     /**
      * Get the total number of jobs that have been processed by the batch thus far.
-<<<<<<< HEAD
      */
     public function processedJobs(): int
     {
         return (int) $this->total_jobs - (int) $this->pending_jobs;
-=======
-     *
-     * @return int
-     */
-    public function processedJobs(): int|float
-    {
-        return $this->total_jobs - $this->pending_jobs;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -120,19 +85,12 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
-<<<<<<< HEAD
         $total = (int) $this->total_jobs;
         if ($total <= 0) {
             return 0;
         }
 
         return (int) round(($this->processedJobs() / $total) * 100);
-=======
-        $totalJobs = $this->total_jobs;
-        $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
-
-        return (int) $progress;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -140,11 +98,7 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
-<<<<<<< HEAD
         return ((int) $this->pending_jobs) > 0;
-=======
-        return $this->pending_jobs > 0;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -160,11 +114,7 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
-<<<<<<< HEAD
         return ((int) $this->failed_jobs) > 0;
-=======
-        return $this->failed_jobs > 0;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -172,11 +122,7 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
-<<<<<<< HEAD
         return ((int) $this->failed_jobs) === ((int) $this->total_jobs);
-=======
-        return $this->failed_jobs === $this->total_jobs;
->>>>>>> laraxot/dev
     }
 
     /**

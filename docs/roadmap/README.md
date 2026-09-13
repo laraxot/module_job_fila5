@@ -1,6 +1,5 @@
 # Job Module Roadmap
 
-<<<<<<< HEAD
 > "Job queue and background processing system for the Laraxot ecosystem with job management and monitoring."
 
 ## 🎯 Vision
@@ -59,7 +58,6 @@ Provide a **robust job processing** system that includes:
 
 ---
 
-=======
 [![Module](https://img.shields.io/badge/Module-Job Module Roadmap-8B0000.svg)]()
 [![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
 [![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
@@ -92,4 +90,3 @@ Provide a **robust job processing** system that includes:
 ---
 
 **Modulo** `Job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> laraxot/dev

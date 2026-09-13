@@ -60,11 +60,8 @@ return [
             'icon' => 'trash',
             'color' => 'danger',
         ],
-<<<<<<< HEAD
         'prune_batches' => ['label' => 'prune_batches', 'icon' => 'prune_batches', 'tooltip' => 'prune_batches'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-=======
->>>>>>> laraxot/dev
     ],
     'messages' => ['no_failed_jobs' => 'Nessun job fallito', 'batch_cancelled' => 'Job batch cancellato', 'batch_finished' => 'Job batch completato', 'batch_processing' => 'Job batch in elaborazione'],
     'statuses' => ['pending' => 'In Attesa', 'processing' => 'In Elaborazione', 'completed' => 'Completato', 'failed' => 'Fallito', 'partial' => 'Completato Parzialmente'],

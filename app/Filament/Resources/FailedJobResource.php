@@ -8,11 +8,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\Textarea;
-use Filament\Forms\Components\TextInput;
->>>>>>> laraxot/dev
 use Modules\Job\Filament\Resources\FailedJobResource\Pages\ListFailedJobs;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -23,15 +18,12 @@ class FailedJobResource extends XotBaseResource
     protected static ?string $model = FailedJob::class;
 
     #[Override]
-<<<<<<< HEAD
     public static function getFormSchema(): array
     {
         return [];
     }
 
     #[Override]
-=======
->>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];

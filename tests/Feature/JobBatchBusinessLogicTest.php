@@ -10,7 +10,6 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -19,9 +18,6 @@ beforeEach(function (): void {
         $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
     }
 });
-=======
-uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 function uniqueJobBatchId(string $prefix = 'batch'): string
 {

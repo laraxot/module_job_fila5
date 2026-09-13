@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Job Module: Philosophy, Purpose, and Design Principles"
 module: "Job"
@@ -67,7 +66,6 @@ The `Job` module, as the orchestrator of background processes, can significantly
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex job chains or scheduled workflows, helping to break down and understand intricate asynchronous processes.
 
 By leveraging these MCPs, the `Job` module can ensure its critical role in orchestrating background operations is more efficient, verifiable, and transparent, ultimately contributing to a stable, scalable, and responsive application.
-=======
 # Job Module: Async Work & Scheduling
 
 > **Background Task Orchestration** — Deferred work (exports, bulk operations, cron jobs), failure tracking, retry logic.
@@ -181,4 +179,3 @@ Retry (exponential backoff) or DLQ
 - **Generated**: 2026-09-06
 - **Author**: Claude (eccentrico mode)
 
->>>>>>> laraxot/dev

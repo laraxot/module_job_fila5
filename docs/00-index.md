@@ -2,7 +2,6 @@
 title: "📚 **Indice Documentazione Modulo Job**"
 module: "Job"
 type: concept
-<<<<<<< HEAD
 tags: [00, index]
 created: 2026-07-14
 updated: 2026-07-14
@@ -58,8 +57,6 @@ related:
 title: "📚 **Indice Documentazione Modulo Job**"
 module: "Job"
 type: concept
-=======
->>>>>>> laraxot/dev
 tags: [00, INDEX]
 created: 2026-07-14
 updated: 2026-07-14

@@ -9,11 +9,7 @@ declare(strict_types=1);
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Log;
-=======
-use Log;
->>>>>>> laraxot/dev
 
 class TestJobCommand extends Command
 {
@@ -33,10 +29,7 @@ class TestJobCommand extends Command
     public function handle(): int
     {
         $this->info('Hello the test worked.');
-<<<<<<< HEAD
         Log::debug('Hello the test worked.');
-=======
->>>>>>> laraxot/dev
 
         return 0;
     }

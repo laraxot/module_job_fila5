@@ -7,7 +7,6 @@ use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -16,9 +15,6 @@ beforeEach(function (): void {
         $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
     }
 });
-=======
-uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 it('can create result with basic information', function (): void {
     $task = Task::create([

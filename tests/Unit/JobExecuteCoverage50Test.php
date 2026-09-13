@@ -58,10 +58,7 @@ use Modules\Job\Traits\FormatSeconds;
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 use Modules\User\Models\User;
-=======
->>>>>>> laraxot/dev
 
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.
@@ -77,11 +74,7 @@ function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): 
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
-<<<<<<< HEAD
 uses(TestCase::class)->group('no-job-db');
-=======
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
->>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();
@@ -134,16 +127,12 @@ describe('Job execute coverage — Filament resources', function (): void {
         }
     });
 
-<<<<<<< HEAD
     test('ScheduleResource getFormSchemaOld esegue GetCommandsAction', function (): void {
         jobBindArtisan();
         $schema = ScheduleResource::getFormSchemaOld();
         Assert::assertNotEmpty($schema);
         Assert::assertArrayHasKey('index', ScheduleResource::getPages());
     });
-=======
-    
->>>>>>> laraxot/dev
 });
 
 describe('Job execute coverage — policies', function (): void {

@@ -1,22 +1,18 @@
 ---
-<<<<<<< HEAD
 title: "Job Module - Product Launch Plan"
 module: "Job"
 type: concept
 tags: [PRODUCT, LAUNCH, PLAN]
-=======
 title: "Job - Product Launch Plan"
 module: "Job"
 type: concept
 tags: [product, launch, plan]
->>>>>>> laraxot/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product launch plan"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
 # Job Module - Product Launch Plan
 
 **Module:** Job  
@@ -100,7 +96,6 @@ related:
 ---
 
 *Last Updated: March 12, 2026*
-=======
 # Job - Product Launch Plan
 
 > Piano di lancio. Modulo.
@@ -157,4 +152,3 @@ Rilasciare **Job** in modo controllato, misurabile e coerente con il suo ruolo: 
 - [PRD](prd.md)
 - [User Research](user-research.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
->>>>>>> laraxot/dev

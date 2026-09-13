@@ -14,12 +14,10 @@ related:
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni:
-<<<<<<< HEAD
 
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
-=======
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
@@ -54,7 +52,6 @@ Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
->>>>>>> laraxot/dev
 
 ## Collegamento Bidirezionale
 
@@ -66,7 +63,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 
 ### Collegamenti tra versioni di lang-link.md
 
-<<<<<<< HEAD
 - [lang-link.md](../../../Chart/docs/lang-link.md)
 - [lang-link.md](../../../Reporting/docs/lang-link.md)
 - [lang-link.md](../../../Gdpr/docs/lang-link.md)
@@ -85,7 +81,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 ## Versione Incoming
 
 La versione incoming coincide con la versione HEAD ed eredita gli stessi collegamenti e linee guida.
-=======
 - [lang-link.md](../../../chart/docs/lang-link.md)
 - [lang-link.md](../../../reporting/docs/lang-link.md)
 - [lang-link.md](../../../gdpr/docs/lang-link.md)
@@ -104,4 +99,3 @@ La versione incoming coincide con la versione HEAD ed eredita gli stessi collega
 ## Versione Incoming
 
 La versione incoming coincide con la versione HEAD ed eredita gli stessi collegamenti e linee guida.
->>>>>>> laraxot/dev

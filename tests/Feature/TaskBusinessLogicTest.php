@@ -9,7 +9,6 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-<<<<<<< HEAD
 uses(TestCase::class);
 
 beforeEach(function (): void {
@@ -18,9 +17,6 @@ beforeEach(function (): void {
         $this->markTestSkipped('DB `job` non raggiungibile: blocco di ambiente.');
     }
 });
-=======
-uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 it('can create task with basic information', function (): void {
     /** @var TestCase $this */

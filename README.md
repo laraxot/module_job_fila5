@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ⚙️ Job
 
 [![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
@@ -92,7 +91,6 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5 · Last Updated: 2026-07-28
-=======
 # 📋 Job
 
 [![Stars](https://img.shields.io/github/stars/laraxot/module_job_fila5?style=plastic&color=yellow)]()
@@ -158,4 +156,3 @@ Importa, installa, configura. Il resto ci penseremo noi.
 ---
 
 **Modulo** `Job` · **Laraxot** · PHPStan 10 · Filament 5
->>>>>>> laraxot/dev

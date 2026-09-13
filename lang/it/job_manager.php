@@ -36,24 +36,17 @@ return [
         'resetFilters' => ['label' => 'resetFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'applyFilters' => ['label' => 'applyFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'openFilters' => ['label' => 'openFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
-<<<<<<< HEAD
         'queue' => ['label' => 'queue', 'placeholder' => 'queue', 'helper_text' => 'queue', 'description' => 'queue'],
-=======
-        'queue' => ['label' => 'queue'],
->>>>>>> laraxot/dev
         'payload' => ['label' => 'payload'],
         'attempts' => ['label' => 'attempts'],
         'reserved_at' => ['label' => 'reserved_at'],
         'available_at' => ['label' => 'available_at'],
-<<<<<<< HEAD
         'job_id' => ['label' => 'job_id', 'placeholder' => 'job_id', 'helper_text' => 'job_id', 'description' => 'job_id'],
         'started_at' => ['label' => 'started_at', 'placeholder' => 'started_at', 'helper_text' => 'started_at', 'description' => 'started_at'],
         'finished_at' => ['label' => 'finished_at', 'placeholder' => 'finished_at', 'helper_text' => 'finished_at', 'description' => 'finished_at'],
         'failed' => ['label' => 'failed', 'placeholder' => 'failed', 'helper_text' => 'failed', 'description' => 'failed'],
         'attempt' => ['label' => 'attempt', 'placeholder' => 'attempt', 'helper_text' => 'attempt', 'description' => 'attempt'],
         'exception_message' => ['label' => 'exception_message', 'placeholder' => 'exception_message', 'helper_text' => 'exception_message', 'description' => 'exception_message'],
-=======
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'import' => [
@@ -97,7 +90,6 @@ return [
             'messages' => ['success' => 'Job Manager eliminato con successo'],
             'icon' => 'trash',
             'color' => 'danger',
-<<<<<<< HEAD
             'tooltip' => 'delete',
         ],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
@@ -105,9 +97,6 @@ return [
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-=======
-        ],
->>>>>>> laraxot/dev
     ],
     'messages' => ['no_jobs' => 'Nessun Job Manager presente', 'manager_started' => 'Job Manager avviato', 'manager_paused' => 'Job Manager in pausa', 'manager_resumed' => 'Job Manager ripreso', 'manager_completed' => 'Job Manager completato', 'manager_failed' => 'Job Manager fallito'],
     'statuses' => ['active' => 'Attivo', 'paused' => 'In Pausa', 'completed' => 'Completato', 'failed' => 'Fallito'],

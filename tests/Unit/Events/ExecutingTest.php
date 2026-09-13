@@ -3,24 +3,15 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Events;
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
 use Modules\Job\Events\BroadcastingEvent;
 use Modules\Job\Events\Executing;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 
 use function Safe\file_get_contents;
 
 uses(TestCase::class)->group('no-job-db');
-=======
-use function Safe\file_get_contents;
-
-uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 describe('Executing', function () {
     it('extends BroadcastingEvent', function () {

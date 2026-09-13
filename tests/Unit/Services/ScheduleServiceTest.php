@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Services;
-<<<<<<< HEAD
 
 use Modules\Job\Services\ScheduleService;
 use Modules\Job\Tests\TestCase;
@@ -12,14 +11,6 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(TestCase::class)->group('no-job-db');
-=======
-use Modules\Job\Services\ScheduleService;
-use Modules\Job\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-use function Safe\file_get_contents;
-
-uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 describe('ScheduleService', function () {
     it('can be instantiated', function () {

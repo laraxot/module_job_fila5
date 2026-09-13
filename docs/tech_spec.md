@@ -23,11 +23,8 @@ Technical implementation details for the Job module.
 - PHPMD: 0 violations
 
 ## Dependencies
-<<<<<<< HEAD
 - Laravel 12.x
-=======
 - Laravel 13.x
->>>>>>> laraxot/dev
 - Filament 5.x
 - Xot Module
 

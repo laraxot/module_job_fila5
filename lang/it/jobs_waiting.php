@@ -14,15 +14,12 @@ return [
         'created_at' => ['label' => 'Created At', 'description' => 'When the job was created', 'helper_text' => 'Timestamp when job was added to queue', 'tooltip' => ''],
         'display_name' => ['label' => 'display_name'],
         'updated_at' => ['label' => 'updated_at'],
-<<<<<<< HEAD
         'job_id' => ['label' => 'job_id', 'placeholder' => 'job_id', 'helper_text' => 'job_id', 'description' => 'job_id'],
         'started_at' => ['label' => 'started_at', 'placeholder' => 'started_at', 'helper_text' => 'started_at', 'description' => 'started_at'],
         'finished_at' => ['label' => 'finished_at', 'placeholder' => 'finished_at', 'helper_text' => 'finished_at', 'description' => 'finished_at'],
         'failed' => ['label' => 'failed', 'placeholder' => 'failed', 'helper_text' => 'failed', 'description' => 'failed'],
         'attempt' => ['label' => 'attempt', 'placeholder' => 'attempt', 'helper_text' => 'attempt', 'description' => 'attempt'],
         'exception_message' => ['label' => 'exception_message', 'placeholder' => 'exception_message', 'helper_text' => 'exception_message', 'description' => 'exception_message'],
-=======
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'export' => [
@@ -60,15 +57,12 @@ return [
             'modal' => ['heading' => 'Riprova Job', 'description' => 'Vuoi riprovare questo job?'],
             'messages' => ['success' => 'Job riprovato con successo'],
         ],
-<<<<<<< HEAD
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'createAnother' => ['label' => 'createAnother', 'icon' => 'createAnother', 'tooltip' => 'createAnother'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
-=======
->>>>>>> laraxot/dev
     ],
     'messages' => ['no_jobs' => 'Nessun job in attesa', 'job_processed' => 'Job processato', 'job_cancelled' => 'Job cancellato', 'job_retried' => 'Job riprovato'],
     'statuses' => ['waiting' => 'In Attesa', 'reserved' => 'Riservato', 'delayed' => 'Ritardato', 'ready' => 'Pronto'],

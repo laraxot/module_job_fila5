@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: Job Module - Gestione Code Asincrone
 type: documentation
@@ -228,7 +227,6 @@ php artisan queue:prune-batches
 ---
 
 **Last Updated:** 2026-07-28 — Documentazione aggiornata a standard EXCELLENT
-=======
 # Job
 
 [![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()
@@ -263,4 +261,3 @@ Core module for the FixCity Platform.
 ---
 
 **Modulo** `Job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
->>>>>>> laraxot/dev
