@@ -171,6 +171,11 @@ class JobManager extends BaseModel
 
         return $query;
     }
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [
