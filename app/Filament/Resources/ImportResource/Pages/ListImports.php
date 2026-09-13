@@ -23,11 +23,43 @@ class ListImports extends XotBaseListRecords
     /**
      * @return array<string, Tables\Columns\Column>
      */
+<<<<<<< HEAD
     
+=======
+    #[Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'file_name' => TextColumn::make('file_name')
+                ->searchable()
+                ->sortable()
+                ->wrap(),
+            'file_disk' => TextColumn::make('file_disk')->searchable()->sortable(),
+            'importer' => TextColumn::make('importer')->searchable()->sortable(),
+            'processed_rows' => TextColumn::make('processed_rows')->numeric()->sortable(),
+            'total_rows' => TextColumn::make('total_rows')->numeric()->sortable(),
+            'successful_rows' => TextColumn::make('successful_rows')->numeric()->sortable(),
+            'completed_at' => TextColumn::make('completed_at')->dateTime()->sortable(),
+            'created_at' => TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            'updated_at' => TextColumn::make('updated_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+        ];
+    }
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, BaseFilter>
      */
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [];
@@ -36,6 +68,10 @@ class ListImports extends XotBaseListRecords
     /**
      * @return array<string, Action|ActionGroup>
      */
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> laraxot/dev
     public function getTableActions(): array
     {
         return [
@@ -46,6 +82,10 @@ class ListImports extends XotBaseListRecords
     /**
      * @return array<string, BulkAction>
      */
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> laraxot/dev
     public function getTableBulkActions(): array
     {
         return [
