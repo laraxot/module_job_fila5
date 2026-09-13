@@ -21,11 +21,40 @@ class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
 
+<<<<<<< HEAD
     
+=======
+    #[Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'uuid' => TextColumn::make('uuid')
+                ->searchable()
+                ->sortable()
+                ->copyable(),
+            'connection' => TextColumn::make('connection')->searchable()->sortable(),
+            'queue' => TextColumn::make('queue')->searchable()->sortable(),
+            'payload' => TextColumn::make('payload')
+                ->searchable()
+                ->wrap()
+                ->limit(50),
+            'exception' => TextColumn::make('exception')
+                ->searchable()
+                ->wrap()
+                ->limit(100),
+            'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
+        ];
+    }
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Action>
      */
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> laraxot/dev
     protected function getHeaderActions(): array
     {
         return [

@@ -49,6 +49,11 @@ class FailedImportRow extends BaseModel
         'import_id',
         'validation_error',
     ];
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

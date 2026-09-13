@@ -77,6 +77,11 @@ class Result extends BaseModel
             ->whereColumn('task_id', 'tasks.id')
             ->getQuery();
     }
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

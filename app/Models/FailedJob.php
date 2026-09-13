@@ -51,6 +51,11 @@ class FailedJob extends BaseModel
         'exception',
         'failed_at',
     ];
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [
