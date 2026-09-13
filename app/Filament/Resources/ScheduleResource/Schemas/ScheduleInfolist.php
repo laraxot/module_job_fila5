@@ -13,11 +13,7 @@ class ScheduleInfolist extends XotBaseResourceInfolist
     /**
      * @return array<string, Component>
      */
-<<<<<<< HEAD
     public function getInfolistSchema(): array
-=======
-    public static function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'command' => TextEntry::make('command'),

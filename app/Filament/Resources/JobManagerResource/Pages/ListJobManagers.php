@@ -19,49 +19,12 @@ use Override;
 class ListJobManagers extends XotBaseListRecords
 {
     protected static string $resource = JobManagerResource::class;
-<<<<<<< .merge_file_oyR57K
    
-=======
-
-    /**
-     * @return array<string, Tables\Columns\Column>
-     */
-<<<<<<< HEAD
-    
-=======
-    #[Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')
-                ->numeric()
-                ->sortable()
-                ->searchable(),
-            'queue' => TextColumn::make('queue')->sortable()->searchable(),
-            'payload' => TextColumn::make('payload')->wrap()->searchable(),
-            'attempts' => TextColumn::make('attempts')->numeric()->sortable(),
-            'reserved_at' => TextColumn::make('reserved_at')->dateTime()->sortable(),
-            'available_at' => TextColumn::make('available_at')->dateTime()->sortable(),
-            'created_at' => TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(isToggledHiddenByDefault: true),
-        ];
-    }
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Gei4fi
 
     /**
      * @return array<string, BulkAction>
      */
-<<<<<<< .merge_file_oyR57K
     #[Override]
-=======
-<<<<<<< HEAD
-=======
-    #[Override]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_Gei4fi
     public function getTableBulkActions(): array
     {
         return [
