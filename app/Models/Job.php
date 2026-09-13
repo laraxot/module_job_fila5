@@ -104,8 +104,16 @@ class Job extends BaseModel
 
         return $res;
     }
+<<<<<<< .merge_file_Qtjfk9
 
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_6u6lmU
     protected function casts(): array
     {
         return [
