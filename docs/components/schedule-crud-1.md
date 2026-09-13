@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "Schedule Crud Component"
 module: "Job"
@@ -11,7 +9,6 @@ qmd: "schedule crud 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
->>>>>>> laraxot/dev
 # Schedule Crud Component
 
 ## Panoramica

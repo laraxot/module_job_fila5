@@ -1,16 +1,4 @@
 ---
-title: "Agent instructions"
-type: reference
-tags: [agents, coding-agent, llm-wiki]
-created: 2026-07-01
-updated: 2026-07-01
-qmd: "istruzioni agenti LLM wiki modulo"
-issues: []
-discussions: []
-related:
-  - ./coding-agent-manifests.md
----
-
 title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Job"
 type: concept

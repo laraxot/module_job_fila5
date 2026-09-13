@@ -21,43 +21,10 @@ use Override;
 class ListJobs extends XotBaseListRecords
 {
     protected static string $resource = JobResource::class;
-
-    /**
-     * @return array<string, Tables\Columns\Column>
-     */
-<<<<<<< HEAD
-    
-=======
-    #[Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
-            'queue' => TextColumn::make('queue')->searchable()->sortable(),
-            'payload' => TextColumn::make('payload')->wrap()->searchable(),
-            'attempts' => TextColumn::make('attempts')->numeric()->sortable(),
-            'status' => TextColumn::make('status')
-                ->badge()
-                ->color(fn (string $state): string => match ($state) {
-                    'running' => 'primary',
-                    'waiting' => 'warning',
-                    default => 'danger',
-                }),
-            'reserved_at' => TextColumn::make('reserved_at')->dateTime()->sortable(),
-            'available_at' => TextColumn::make('available_at')->dateTime()->sortable(),
-            'created_at' => TextColumn::make('created_at')->dateTime()->sortable(),
-            'payload_view' => ViewColumn::make('payload')->view('job::filament.tables.columns.array'),
-        ];
-    }
->>>>>>> laraxot/dev
-
     /**
      * @return array<string, BaseFilter>
      */
-<<<<<<< HEAD
-=======
     #[Override]
->>>>>>> laraxot/dev
     public function getTableFilters(): array
     {
         return [
@@ -73,10 +40,7 @@ class ListJobs extends XotBaseListRecords
     /**
      * @return array<string, Action|ActionGroup>
      */
-<<<<<<< HEAD
-=======
     #[Override]
->>>>>>> laraxot/dev
     public function getTableActions(): array
     {
         return [

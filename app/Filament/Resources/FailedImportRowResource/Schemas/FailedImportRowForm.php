@@ -14,11 +14,7 @@ class FailedImportRowForm extends XotBaseResourceForm
     /**
      * @return array<int|string, Component>
      */
-<<<<<<< HEAD
     public function getFormSchema(): array
-=======
-    public static function getFormSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'import_class' => TextInput::make('import_class')->required()->maxLength(255),
@@ -26,5 +22,6 @@ class FailedImportRowForm extends XotBaseResourceForm
             'row_data' => Textarea::make('row_data')->required()->columnSpanFull(),
             'error_message' => Textarea::make('error_message')->required()->columnSpanFull(),
         ];
+
     }
 }

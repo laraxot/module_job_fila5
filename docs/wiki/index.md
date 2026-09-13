@@ -7,11 +7,6 @@ created: 2026-04-15
 updated: 2026-06-05
 qmd: "job module wiki index queue second brain"
 issues:
-  - "https://github.com/laraxot/base_ptv_fila5/issues/272"
-discussions:
-  - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
-related:
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
@@ -25,7 +20,6 @@ related:
 # Job Module Wiki
 ## AI / second brain
 
-- [hackernoon-ai-coding-tips-ptv-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-ptv-map.md)
 - [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
 - [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
 - [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
@@ -55,7 +49,6 @@ qmd search "Job <topic>" --limit 5
 
 ## Composer / nwidart
 
-- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello ptv)
 - [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello fixcity)
 
 ## Guardrail policy

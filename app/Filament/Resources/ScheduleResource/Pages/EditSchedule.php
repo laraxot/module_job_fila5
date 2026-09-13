@@ -21,11 +21,8 @@ class EditSchedule extends XotBaseEditRecord
     public Collection $commands;
 
     protected static string $resource = ScheduleResource::class;
-<<<<<<< HEAD
-=======
 
     #[Override]
->>>>>>> laraxot/dev
     protected function getFormSchema(): array
     {
         $schema = $this->getResource()::getFormSchema();

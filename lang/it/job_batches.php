@@ -10,10 +10,12 @@ return [
         'pending_jobs' => ['label' => 'pending_jobs'],
         'failed_jobs' => ['label' => 'failed_jobs'],
         'created_at' => ['label' => 'created_at'],
+        'finished_at' => ['label' => 'finished_at'],
+        'cancelled_at' => ['label' => 'cancelled_at'],
     ],
     'actions' => [
-        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
-        'prune_batches' => ['label' => 'prune_batches', 'icon' => 'prune_batches', 'tooltip' => 'prune_batches'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
     ],
 ];

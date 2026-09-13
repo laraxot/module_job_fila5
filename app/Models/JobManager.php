@@ -52,14 +52,6 @@ use Override;
  * @mixin \Eloquent
  */
 /**
- * @property-read ProfileContract|null $creator
- * @property-read string $status
- * @property-read ProfileContract|null $updater
- *
- * @method static Builder<static>|JobManager newModelQuery()
- * @method static Builder<static>|JobManager newQuery()
- * @method static Builder<static>|JobManager query()
- *
  * @property string $id
  * @property string $job_id
  * @property string|null $name
@@ -70,7 +62,14 @@ use Override;
  * @property int $attempt
  * @property int|null $progress
  * @property string|null $exception_message
+ * @property-read ProfileContract|null $creator
+ * @property-read string $status
+ * @property-read ProfileContract|null $updater
  *
+ * @method static JobManagerFactory factory($count = null, $state = [])
+ * @method static Builder<static>|JobManager newModelQuery()
+ * @method static Builder<static>|JobManager newQuery()
+ * @method static Builder<static>|JobManager query()
  * @method static Builder<static>|JobManager whereAttempt($value)
  * @method static Builder<static>|JobManager whereExceptionMessage($value)
  * @method static Builder<static>|JobManager whereFailed($value)
@@ -81,6 +80,8 @@ use Override;
  * @method static Builder<static>|JobManager whereProgress($value)
  * @method static Builder<static>|JobManager whereQueue($value)
  * @method static Builder<static>|JobManager whereStartedAt($value)
+ *
+ * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */
@@ -171,11 +172,8 @@ class JobManager extends BaseModel
 
         return $query;
     }
-<<<<<<< HEAD
-=======
 
     #[Override]
->>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

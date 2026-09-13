@@ -1,10 +1,3 @@
----
-module: theme
-topic: README
-canonical: ../../../../Themes/docs/shared-components/README-Modules.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md
 # Job
 
 [![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()

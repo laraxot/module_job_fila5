@@ -7,9 +7,6 @@ created: 2026-07-09
 updated: 2026-07-09
 qmd: "Job claude-audit static 80 score lang split job_meta"
 issues:
-  - "https://github.com/laraxot/base_ptv_fila5/issues/272"
-discussions:
-  - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
   - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"

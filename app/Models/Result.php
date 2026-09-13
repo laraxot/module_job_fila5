@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Carbon;
@@ -14,24 +15,23 @@ use Override;
 /**
  * Modules\Job\Models\Result.
  *
+ * @property string $id
+ * @property int $task_id
+ * @property Carbon $ran_at
+ * @property string $duration
+ * @property string $result
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @property-read ProfileContract|null $creator
  * @property-read Task|null $task
  * @property-read ProfileContract|null $updater
  *
+ * @method static Factory<static> factory($count = null, $state = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result query()
- *
- * @property string $id
- * @property int $task_id
- * @property Carbon $ran_at
- * @property numeric $duration
- * @property string $result
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- *
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereDuration($value)
@@ -41,6 +41,8 @@ use Override;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereTaskId($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedBy($value)
+ *
+ * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */
@@ -77,11 +79,8 @@ class Result extends BaseModel
             ->whereColumn('task_id', 'tasks.id')
             ->getQuery();
     }
-<<<<<<< HEAD
-=======
 
     #[Override]
->>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [
