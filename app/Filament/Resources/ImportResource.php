@@ -15,8 +15,44 @@ use Override;
 class ImportResource extends XotBaseResource
 {
     protected static ?string $model = Import::class;
+<<<<<<< .merge_file_QsffOO
 
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'name' => TextInput::make('name')->required()->maxLength(255),
+            'file' => FileUpload::make('file')
+                ->required()
+                ->acceptedFileTypes([
+                    'text/csv',
+                    'application/vnd.ms-excel',
+                    'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                ])
+                ->maxSize(10240),
+            'status' => Select::make('status')
+                ->required()
+                ->options([
+                    'pending' => 'Pending',
+                    'processing' => 'Processing',
+                    'completed' => 'Completed',
+                    'failed' => 'Failed',
+                ])
+                ->default('pending'),
+            'error_message' => Textarea::make('error_message')->maxLength(65535),
+            'total_rows' => TextInput::make('total_rows')->numeric(),
+            'processed_rows' => TextInput::make('processed_rows')->numeric(),
+        ];
+    }
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_vSczxD
     public static function getRelations(): array
     {
         return [];

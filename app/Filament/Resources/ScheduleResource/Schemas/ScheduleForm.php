@@ -34,7 +34,11 @@ class ScheduleForm extends XotBaseResourceForm
      *
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         if (static::$commands === null) {
             static::$commands = app(GetCommandsAction::class)->execute();
