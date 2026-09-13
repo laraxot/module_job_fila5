@@ -16,7 +16,11 @@ class ExportForm extends XotBaseResourceForm
     /**
      * @return array<string, Component>
      */
+<<<<<<< HEAD
     public function getFormSchema(): array
+=======
+    public static function getFormSchema(): array
+>>>>>>> laraxot/dev
     {
         return [
             'name' => TextInput::make('name')->required()->maxLength(255),

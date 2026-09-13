@@ -53,8 +53,16 @@ class FailedJob extends BaseModel
         'exception',
         'failed_at',
     ];
+<<<<<<< .merge_file_uUhp4P
 
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_VTiqvw
     protected function casts(): array
     {
         return [

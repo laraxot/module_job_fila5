@@ -18,14 +18,36 @@ use Override;
 class FailedJobResource extends XotBaseResource
 {
     protected static ?string $model = FailedJob::class;
+<<<<<<< .merge_file_e7uVTt
 
     #[Override]
-    public static function getRelations(): array
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+    public static function getFormSchema(): array
     {
         return [];
     }
 
     #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_u3NjNL
+    public static function getRelations(): array
+    {
+        return [];
+    }
+<<<<<<< .merge_file_e7uVTt
+
+    #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_u3NjNL
     public static function getPages(): array
     {
         return [

@@ -21,8 +21,16 @@ class EditSchedule extends XotBaseEditRecord
     public Collection $commands;
 
     protected static string $resource = ScheduleResource::class;
+<<<<<<< .merge_file_vGVEaG
 
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_NieFpo
     protected function getFormSchema(): array
     {
         $schema = $this->getResource()::getFormSchema();

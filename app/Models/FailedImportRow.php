@@ -51,8 +51,16 @@ class FailedImportRow extends BaseModel
         'import_id',
         'validation_error',
     ];
+<<<<<<< .merge_file_KuQp7S
 
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_J1YhRM
     protected function casts(): array
     {
         return [

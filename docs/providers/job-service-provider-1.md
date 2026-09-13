@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_elOQhK
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_MmecPo
 ---
 title: "JobServiceProvider"
 module: "Job"
@@ -9,6 +14,10 @@ qmd: "job service provider 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< .merge_file_elOQhK
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_MmecPo
 # JobServiceProvider
 
 ## Panoramica

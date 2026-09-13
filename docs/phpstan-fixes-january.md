@@ -1,4 +1,15 @@
 ---
+<<<<<<< .merge_file_FIpCOC
+=======
+<<<<<<< HEAD
+module: theme
+topic: phpstan-fixes-january
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-january-2025.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-january-2025.md
+=======
+>>>>>>> .merge_file_FtP3ua
 title: "PHPStan Fixes - Gennaio 2025"
 module: "Job"
 type: concept
@@ -41,3 +52,7 @@ related:
 - **Errori PHPStan**: 0
 - **File corretti**: 1
 - **Pattern applicati**: PHPDoc Contracts
+<<<<<<< .merge_file_FIpCOC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_FtP3ua

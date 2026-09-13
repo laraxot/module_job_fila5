@@ -136,7 +136,14 @@ class JobBatch extends BaseModel
     }
 
     /**  @return array<string, string>  */
+<<<<<<< .merge_file_kZ63hN
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_EQ4CFD
     protected function casts(): array
     {
         return [

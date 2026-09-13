@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_QGTTqC
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_OChDUY
 ---
 title: "Schedule Crud Component"
 module: "Job"
@@ -9,6 +14,10 @@ qmd: "schedule crud 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< .merge_file_QGTTqC
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_OChDUY
 # Schedule Crud Component
 
 ## Panoramica
