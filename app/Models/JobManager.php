@@ -172,16 +172,8 @@ class JobManager extends BaseModel
 
         return $query;
     }
-<<<<<<< .merge_file_dZpKEV
 
     #[Override]
-=======
-<<<<<<< HEAD
-=======
-
-    #[Override]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_klJG4T
     protected function casts(): array
     {
         return [
