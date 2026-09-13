@@ -70,6 +70,11 @@ class Import extends BaseModel
         'successful_rows',
         'user_id',
     ];
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

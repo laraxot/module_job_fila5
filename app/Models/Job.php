@@ -102,6 +102,11 @@ class Job extends BaseModel
 
         return $res;
     }
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [
