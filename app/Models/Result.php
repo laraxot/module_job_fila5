@@ -79,16 +79,8 @@ class Result extends BaseModel
             ->whereColumn('task_id', 'tasks.id')
             ->getQuery();
     }
-<<<<<<< .merge_file_ty7K8h
 
     #[Override]
-=======
-<<<<<<< HEAD
-=======
-
-    #[Override]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_cawLbt
     protected function casts(): array
     {
         return [

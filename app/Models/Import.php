@@ -72,16 +72,8 @@ class Import extends BaseModel
         'successful_rows',
         'user_id',
     ];
-<<<<<<< .merge_file_BYVc8o
 
     #[Override]
-=======
-<<<<<<< HEAD
-=======
-
-    #[Override]
->>>>>>> laraxot/dev
->>>>>>> .merge_file_KRDIjg
     protected function casts(): array
     {
         return [
