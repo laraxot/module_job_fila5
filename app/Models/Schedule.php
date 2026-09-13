@@ -251,7 +251,14 @@ class Schedule extends BaseModel
     }
 
     /** @return array<string, string> */
+<<<<<<< .merge_file_mNN7Om
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_zPsfL3
     protected function casts(): array
     {
         return [
