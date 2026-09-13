@@ -1,3 +1,22 @@
+<<<<<<< .merge_file_8k6YxP
+=======
+<<<<<<< HEAD
+https://github.com/codestudiohq/laravel-totem
+
+https://github.com/stylers-llc/laravel-task-manager
+
+https://github.com/robersonfaria/laravel-database-schedule
+
+
+
+https://filamentphp.com/plugins/husam-tariq-database-schedule
+
+
+https://filamentphp.com/plugins/mvenghaus-schedule-monitor
+
+
+=======
+>>>>>>> .merge_file_AK84u4
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring
@@ -27,5 +46,9 @@ https://www.thisprogrammingthing.com/what-the-f-ck-is-with-all-the-artisan-comma
 https://github.com/robersonfaria/laravel-database-schedule
 https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
+<<<<<<< .merge_file_8k6YxP
+=======
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_AK84u4
 
 
