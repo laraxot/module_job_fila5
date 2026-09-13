@@ -22,8 +22,16 @@ class JobServiceProvider extends XotBaseServiceProvider
     protected string $module_dir = __DIR__;
 
     protected string $module_ns = __NAMESPACE__;
+<<<<<<< .merge_file_mWsCdH
 
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_giQ7ii
     public function boot(): void
     {
         parent::boot();

@@ -93,8 +93,16 @@ class ScheduleHistory extends BaseModel
     {
         return $this->belongsTo(Schedule::class, 'schedule_id', 'id');
     }
+<<<<<<< .merge_file_hOdtUV
 
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_n9pRgS
     protected function casts(): array
     {
         return [
