@@ -15,10 +15,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Notifications\Notification;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Model;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Filament\Resources\JobBatchResource;
 use Modules\Job\Models\JobBatch;
@@ -29,7 +26,6 @@ use Webmozart\Assert\Assert;
 class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
-<<<<<<< HEAD
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -79,9 +75,6 @@ class ListJobBatches extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
-=======
-    
->>>>>>> laraxot/dev
 
     /**
      * @return array<string, Action|ActionGroup>

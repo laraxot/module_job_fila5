@@ -1,10 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-declare(strict_types=1);
-
->>>>>>> laraxot/dev
 return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
@@ -102,7 +97,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'resetFilters' => [
             'label' => 'resetFilters',
             'tooltip' => '',
@@ -163,8 +157,6 @@ return [
             'helper_text' => 'error_message',
             'description' => 'error_message',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'formats' => [
         'csv' => 'CSV',

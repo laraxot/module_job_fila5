@@ -1,22 +1,18 @@
 ---
-<<<<<<< HEAD
 title: "Job Module - Product Roadmap"
 module: "Job"
 type: concept
 tags: [PRODUCT, ROADMAP]
-=======
 title: "Job - Product Roadmap"
 module: "Job"
 type: concept
 tags: [product, roadmap]
->>>>>>> laraxot/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
 # Job Module - Product Roadmap
 
 **Module:** Job  
@@ -120,7 +116,6 @@ To build a **comprehensive job queue and background processing system** that ens
 ---
 
 *Last Updated: March 12, 2026*
-=======
 # Job - Product Roadmap
 
 > Documento vivente. Modulo.
@@ -167,4 +162,3 @@ Questo roadmap traduce il PRD in sequenza di rilascio per **Job**, che nel proge
 - [Product Strategy](product-strategy.md)
 - [Sprint Planning Meeting](sprint-planning-meeting.md)
 - [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)
->>>>>>> laraxot/dev

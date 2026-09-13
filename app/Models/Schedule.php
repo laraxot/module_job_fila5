@@ -11,10 +11,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use InvalidArgumentException;
-<<<<<<< HEAD
-=======
-use Modules\Job\Database\Factories\ScheduleFactory;
->>>>>>> laraxot/dev
 use Modules\Job\Enums\Status;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
@@ -22,7 +18,6 @@ use Override;
 /**
  * Modules\Job\Models\Schedule.
  *
-<<<<<<< HEAD
  * @property Status $status
  * @property-read ProfileContract|null $creator
  * @property-read \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
@@ -43,16 +38,6 @@ use Override;
  * @property array<array-key, mixed>|null $environments
  * @property array<array-key, mixed>|null $options
  * @property array<array-key, mixed>|null $options_with_value
-=======
- * @property string $id
- * @property string $command
- * @property string|null $command_custom
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $params
- * @property string $expression
- * @property array<array-key, bool|float|int|string|null>|null $environments
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null}|bool|float|int|string|null>|null $options
- * @property array<array-key, array{name?: string, value?: bool|float|int|string|null, required?: bool, type?: string}>|null $options_with_value
->>>>>>> laraxot/dev
  * @property string|null $log_filename
  * @property int $even_in_maintenance_mode
  * @property int $without_overlapping
@@ -63,7 +48,6 @@ use Override;
  * @property int $sendmail_error
  * @property int $log_success
  * @property int $log_error
-<<<<<<< HEAD
  * @property int $run_in_background
  * @property int $sendmail_success
  * @property Carbon|null $deleted_at
@@ -73,29 +57,6 @@ use Override;
  * @property string|null $created_by
  * @property string|null $deleted_by
  *
-=======
- * @property Status $status
- * @property int $run_in_background
- * @property int $sendmail_success
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property Carbon|null $deleted_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_by
- * @property ProfileContract|null $creator
- * @property \Illuminate\Database\Eloquent\Collection<int, ScheduleHistory> $histories
- * @property int|null $histories_count
- * @property ProfileContract|null $updater
- *
- * @method static Builder<static>|Schedule active()
- * @method static ScheduleFactory factory($count = null, $state = [])
- * @method static Builder<static>|Schedule inactive()
- * @method static Builder<static>|Schedule newModelQuery()
- * @method static Builder<static>|Schedule newQuery()
- * @method static Builder<static>|Schedule onlyTrashed()
- * @method static Builder<static>|Schedule query()
->>>>>>> laraxot/dev
  * @method static Builder<static>|Schedule whereCommand($value)
  * @method static Builder<static>|Schedule whereCommandCustom($value)
  * @method static Builder<static>|Schedule whereCreatedAt($value)
@@ -123,13 +84,6 @@ use Override;
  * @method static Builder<static>|Schedule whereWebhookAfter($value)
  * @method static Builder<static>|Schedule whereWebhookBefore($value)
  * @method static Builder<static>|Schedule whereWithoutOverlapping($value)
-<<<<<<< HEAD
-=======
- * @method static Builder<static>|Schedule withTrashed(bool $withTrashed = true)
- * @method static Builder<static>|Schedule withoutTrashed()
- *
- * @property-read ProfileContract|null $deleter
->>>>>>> laraxot/dev
  *
  * @mixin \Eloquent
  */
@@ -137,7 +91,6 @@ class Schedule extends BaseModel
 {
     use ManagesFrequencies;
 
-<<<<<<< HEAD
     /**
      * Valori storici, precedenti all'enum `Status`.
      *
@@ -155,12 +108,6 @@ class Schedule extends BaseModel
     public const int STATUS_ACTIVE = 1;
 
     /** @deprecated usare Status::Trashed */
-=======
-    public const int STATUS_INACTIVE = 0;
-
-    public const int STATUS_ACTIVE = 1;
-
->>>>>>> laraxot/dev
     public const int STATUS_TRASHED = 2;
 
     protected $fillable = [
@@ -221,11 +168,7 @@ class Schedule extends BaseModel
      */
     public function scopeInactive(Builder $query): Builder
     {
-<<<<<<< HEAD
         return $query->where('status', Status::Inactive);
-=======
-        return $query->where('status', self::STATUS_INACTIVE);
->>>>>>> laraxot/dev
     }
 
     /**
@@ -236,11 +179,7 @@ class Schedule extends BaseModel
      */
     public function scopeActive(Builder $query): Builder
     {
-<<<<<<< HEAD
         return $query->where('status', Status::Active);
-=======
-        return $query->where('status', self::STATUS_ACTIVE);
->>>>>>> laraxot/dev
     }
 
     /**
@@ -308,22 +247,14 @@ class Schedule extends BaseModel
                 $fallbackKey = (string) $normalizedKey;
                 $optionName = is_string($name) ? $name : $fallbackKey;
                 $optionValue = $value['value'] ?? null;
-<<<<<<< HEAD
                 $optionValueString = is_scalar($optionValue) ? (string) $optionValue : '';
                 $result[$normalizedKey] = '--'.$optionName.'='.$optionValueString;
-=======
-                $result[$normalizedKey] = '--'.$optionName.'='.(string) $optionValue;
->>>>>>> laraxot/dev
 
                 continue;
             }
 
-<<<<<<< HEAD
             $valueString = is_scalar($value) ? (string) $value : '';
             $result[$normalizedKey] = '--'.$valueString;
-=======
-            $result[$normalizedKey] = '--'.(string) $value;
->>>>>>> laraxot/dev
         }
 
         return $result;

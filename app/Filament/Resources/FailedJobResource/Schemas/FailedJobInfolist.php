@@ -18,11 +18,7 @@ class FailedJobInfolist extends XotBaseResourceInfolist
      *
      * @return array<int|string, Component>
      */
-<<<<<<< HEAD
     public static function getInfolistSchema(): array
-=======
-    public function getInfolistSchema(): array
->>>>>>> laraxot/dev
     {
         return [
             'id' => TextEntry::make('id'),

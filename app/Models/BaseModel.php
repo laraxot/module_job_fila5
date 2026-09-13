@@ -38,7 +38,6 @@ abstract class BaseModel extends XotBaseModel
 
     protected $primaryKey = 'id';
 
-<<<<<<< HEAD
     /**
      * Le tabelle del modulo hanno tutte `id integer primary key autoincrement`, e questa
      * classe dichiara `$incrementing = true`: il tipo della chiave è intero.
@@ -55,18 +54,10 @@ abstract class BaseModel extends XotBaseModel
      * @var string
      */
     protected $keyType = 'int';
-=======
-    /** @var string */
-    protected $keyType = 'string';
->>>>>>> laraxot/dev
 
     /** @var list<string> */
     protected $hidden = [];
 
-<<<<<<< HEAD
-=======
-    /** @return array<string, string> */
->>>>>>> laraxot/dev
     protected function casts(): array
     {
         return array_merge(parent::casts(), [

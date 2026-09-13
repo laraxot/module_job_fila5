@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 return [
     'pages' => [
         'index' => [
@@ -38,13 +37,6 @@ return [
             'description' => 'Jobs che hanno avuto errori',
         ],
     ],
-=======
-declare(strict_types=1);
-
-return [
-    'pages' => 'Pages',
-    'widgets' => 'Widgets',
->>>>>>> laraxot/dev
     'navigation' => [
         'name' => 'Job',
         'plural' => 'Jobs',
@@ -53,15 +45,10 @@ return [
             'description' => 'Background process management',
         ],
         'label' => 'jobs',
-<<<<<<< HEAD
         'sort' => '30',
         'icon' => 'heroicon-o-cog',
         'tooltip' => 'Gestisci i processi in background',
         'helper_text' => '',
-=======
-        'sort' => 30,
-        'icon' => 'heroicon-o-cog',
->>>>>>> laraxot/dev
     ],
     'fields' => [
         'id' => [
@@ -69,17 +56,13 @@ return [
             'tooltip' => 'Unique job identifier',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'help' => 'Identificatore univoco del job',
-=======
->>>>>>> laraxot/dev
         ],
         'queue' => [
             'label' => 'Queue',
             'tooltip' => 'The queue this job belongs to',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Seleziona la coda',
             'help' => 'La coda a cui appartiene il job',
             'options' => [
@@ -89,69 +72,51 @@ return [
                 'emails' => 'Email',
                 'notifications' => 'Notifiche',
             ],
-=======
->>>>>>> laraxot/dev
         ],
         'payload' => [
             'label' => 'Payload',
             'tooltip' => 'Data associated with the job',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Dati del job',
             'help' => 'Dati associati al job',
-=======
->>>>>>> laraxot/dev
         ],
         'attempts' => [
             'label' => 'Attempts',
             'tooltip' => 'Number of attempts to execute the job',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Numero di tentativi',
             'help' => 'Numero di tentativi per eseguire il job',
-=======
->>>>>>> laraxot/dev
         ],
         'reserved_at' => [
             'label' => 'Reserved at',
             'tooltip' => 'Date and time when the job was reserved',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Data e ora riserva',
             'help' => 'Data e ora in cui il job è stato riservato',
-=======
->>>>>>> laraxot/dev
         ],
         'available_at' => [
             'label' => 'Available at',
             'tooltip' => 'Date and time when the job became available',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Data e ora disponibilità',
             'help' => 'Data e ora in cui il job è diventato disponibile',
-=======
->>>>>>> laraxot/dev
         ],
         'created_at' => [
             'label' => 'Created at',
             'tooltip' => 'Job creation date',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'help' => 'Data di creazione del job',
-=======
->>>>>>> laraxot/dev
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Current job status',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Seleziona lo stato',
             'help' => 'Stato attuale del job',
             'options' => [
@@ -162,26 +127,20 @@ return [
                 'cancelled' => 'Annullato',
                 'retrying' => 'Riprova',
             ],
-=======
->>>>>>> laraxot/dev
         ],
         'progress' => [
             'label' => 'Progress',
             'tooltip' => 'Job completion percentage',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Percentuale completamento',
             'help' => 'Percentuale di completamento del job',
-=======
->>>>>>> laraxot/dev
         ],
         'type' => [
             'label' => 'Type',
             'tooltip' => 'Job type (e.g., import, export)',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Seleziona il tipo',
             'help' => 'Tipo di job (e.g., importazione, esportazione]',
             'options' => [
@@ -194,19 +153,14 @@ return [
                 'cleanup' => 'Pulizia',
                 'sync' => 'Sincronizzazione',
             ],
-=======
->>>>>>> laraxot/dev
         ],
         'name' => [
             'label' => 'Name',
             'tooltip' => 'Job name',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Inserisci il nome del job',
             'help' => 'Nome del job',
-=======
->>>>>>> laraxot/dev
         ],
         'description' => [
             'label' => 'Description',
@@ -214,64 +168,46 @@ return [
             'placeholder' => 'Enter a description',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'help' => 'Descrizione del job',
-=======
->>>>>>> laraxot/dev
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Job guardian',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Nome del guard',
             'help' => 'Guardiano del job',
-=======
->>>>>>> laraxot/dev
         ],
         'permissions' => [
             'label' => 'Permissions',
             'tooltip' => 'Permissions associated with the job',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Seleziona i permessi',
             'help' => 'Permessi associati al job',
-=======
->>>>>>> laraxot/dev
         ],
         'updated_at' => [
             'label' => 'Updated at',
             'tooltip' => 'Date of last job update',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'help' => 'Data dell\'ultimo aggiornamento del job',
-=======
->>>>>>> laraxot/dev
         ],
         'first_name' => [
             'label' => 'First Name',
             'tooltip' => 'Responsible person\'s first name',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome del responsabile',
-=======
->>>>>>> laraxot/dev
         ],
         'last_name' => [
             'label' => 'Last Name',
             'tooltip' => 'Responsible person\'s last name',
             'helper_text' => '',
             'description' => '',
-<<<<<<< HEAD
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome del responsabile',
-=======
->>>>>>> laraxot/dev
         ],
         'select_all' => [
             'label' => 'Select All',
@@ -315,7 +251,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
@@ -463,8 +398,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'import' => [
@@ -531,7 +464,6 @@ return [
             'messages' => [
                 'success' => 'Job deleted successfully',
             ],
-<<<<<<< HEAD
             'tooltip' => 'Elimina il job',
         ],
         'create' => [
@@ -578,8 +510,6 @@ return [
             'label' => 'Riprova Falliti',
             'icon' => 'heroicon-o-arrow-path',
             'tooltip' => 'Riprova tutti i job falliti',
-=======
->>>>>>> laraxot/dev
         ],
     ],
     'messages' => [
@@ -588,7 +518,6 @@ return [
         'job_stopped' => 'Job stopped',
         'job_completed' => 'Job completed',
         'job_failed' => 'Job failed',
-<<<<<<< HEAD
         'created' => 'Job creato con successo',
         'updated' => 'Job aggiornato con successo',
         'deleted' => 'Job eliminato con successo',
@@ -603,8 +532,6 @@ return [
         'already_running' => 'Il job è già in esecuzione',
         'cannot_cancel' => 'Impossibile annullare il job',
         'cannot_pause' => 'Impossibile mettere in pausa il job',
-=======
->>>>>>> laraxot/dev
     ],
     'statuses' => [
         'pending' => 'Pending',
@@ -612,12 +539,9 @@ return [
         'completed' => 'Completed',
         'failed' => 'Failed',
         'stopped' => 'Stopped',
-<<<<<<< HEAD
         'cancelled' => 'Annullato',
         'retrying' => 'Riprova',
         'paused' => 'In Pausa',
-=======
->>>>>>> laraxot/dev
     ],
     'types' => [
         'import' => 'Import',
@@ -625,7 +549,6 @@ return [
         'process' => 'Process',
         'notification' => 'Notification',
         'cleanup' => 'Cleanup',
-<<<<<<< HEAD
         'email' => 'Email',
         'report' => 'Report',
         'backup' => 'Backup',
@@ -726,9 +649,4 @@ return [
         'description' => 'Gestione dei processi in background',
     ],
     'search_placeholder' => 'Cerca per nome, tipo o stato...',
-=======
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
->>>>>>> laraxot/dev
 ];

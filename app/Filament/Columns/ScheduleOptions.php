@@ -4,15 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 
 class ScheduleOptions extends TextColumn
-=======
-use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
-
-class ScheduleOptions extends XotBaseTextColumn
->>>>>>> laraxot/dev
 {
     protected bool $withValue = true;
 

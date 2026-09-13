@@ -1,22 +1,18 @@
 ---
-<<<<<<< HEAD
 title: "Job Module - Product Strategy"
 module: "Job"
 type: concept
 tags: [PRODUCT, STRATEGY]
-=======
 title: "Job - Product Strategy"
 module: "Job"
 type: concept
 tags: [product, strategy]
->>>>>>> laraxot/dev
 created: 2026-07-14
 updated: 2026-07-14
 qmd: "product strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
 # Job Module - Product Strategy
 
 **Module:** Job  
@@ -108,7 +104,6 @@ Easy to use and operate.
 ---
 
 *Last Updated: March 12, 2026*
-=======
 # Job - Product Strategy
 
 > Strategia prodotto. Modulo.
@@ -162,4 +157,3 @@ Portare **Job** a uno stato in cui il progetto ottiene un vantaggio netto e misu
 - Action-first: niente generic `Services` per la business logic
 - Standard operativo: `spatie/laravel-queueable-action`
 - Convenzione: Action con metodo `execute()` e dispatch tramite container
->>>>>>> laraxot/dev

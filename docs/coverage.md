@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Quality and coverage contract: Job"
 module: "Job"
 type: concept
@@ -74,7 +73,6 @@ Session: Systematic module-by-module fixes (ascending error count).
 
 The canonical certification remains `phpstan analyse Modules`, because analysing only a
 module can omit cross-file and type-coverage diagnostics.
-=======
 title: "Code Coverage: Job"
 module: "Job"
 type: concept
@@ -275,4 +273,3 @@ Scope: `app/Filament/Columns/ScheduleArguments.php`,
 
 
 ```
->>>>>>> laraxot/dev

@@ -53,11 +53,8 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 
 #### `getActions` — 6 classi
 
-<<<<<<< HEAD
 - `Job` · `ActionGroup` · `Modules/Job/app/Filament/Tables/Columns/ActionGroup.php`
-=======
 - `Job` · `ActionGroup` · `Modules/Job/app/Filament/Columns/ActionGroup.php`
->>>>>>> laraxot/dev
 - `Job` · `ActionGroup` · `Modules/Job/app/Filament/Tables/Columns/ActionGroup.php`
 
 #### `rules` — 6 classi
@@ -95,13 +92,10 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 
 #### `getTags` — 2 classi
 
-<<<<<<< HEAD
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`
-=======
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
->>>>>>> laraxot/dev
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`
 
@@ -112,13 +106,10 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 
 #### `withValue` — 2 classi
 
-<<<<<<< HEAD
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`
-=======
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
->>>>>>> laraxot/dev
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`
 

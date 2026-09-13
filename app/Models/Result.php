@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Factories\Factory;
->>>>>>> laraxot/dev
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Carbon;
@@ -18,23 +14,10 @@ use Override;
 /**
  * Modules\Job\Models\Result.
  *
-<<<<<<< HEAD
-=======
- * @property string $id
- * @property int $task_id
- * @property Carbon $ran_at
- * @property string $duration
- * @property string $result
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
->>>>>>> laraxot/dev
  * @property-read ProfileContract|null $creator
  * @property-read Task|null $task
  * @property-read ProfileContract|null $updater
  *
-<<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result query()
@@ -49,12 +32,6 @@ use Override;
  * @property string|null $updated_by
  * @property string|null $created_by
  *
-=======
- * @method static Factory<static> factory($count = null, $state = [])
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Result newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder<static>|Result query()
->>>>>>> laraxot/dev
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereCreatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereCreatedBy($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereDuration($value)
@@ -65,11 +42,6 @@ use Override;
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Result whereUpdatedBy($value)
  *
-<<<<<<< HEAD
-=======
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Result extends BaseModel

@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Enums;
-<<<<<<< HEAD
 
 use Modules\Job\Enums\Status;
 use Modules\Job\Tests\TestCase;
@@ -12,14 +11,6 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(TestCase::class)->group('no-job-db');
-=======
-use Modules\Job\Enums\Status;
-use Modules\Job\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-use function Safe\file_get_contents;
-
-uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 describe('Status', function () {
     it('is an enum', function () {
@@ -49,7 +40,6 @@ describe('Status', function () {
     });
 
     it('getColor returns translation keys via EnumTrait', function () {
-<<<<<<< HEAD
         Assert::assertSame('fix:job::status.values.active.color', Status::Active->getColor());
         Assert::assertSame('fix:job::status.values.inactive.color', Status::Inactive->getColor());
         Assert::assertSame('fix:job::status.values.trashed.color', Status::Trashed->getColor());
@@ -61,19 +51,6 @@ describe('Status', function () {
         Assert::assertSame('fix:job::status.values.inactive.icon', Status::Inactive->getIcon());
         Assert::assertSame('fix:job::status.values.trashed.icon', Status::Trashed->getIcon());
         Assert::assertSame('fix:job::status.values.1.icon', Status::One->getIcon());
-=======
-        Assert::assertSame('job::status.values.active.color', Status::Active->getColor());
-        Assert::assertSame('job::status.values.inactive.color', Status::Inactive->getColor());
-        Assert::assertSame('job::status.values.trashed.color', Status::Trashed->getColor());
-        Assert::assertSame('job::status.values.1.color', Status::One->getColor());
-    });
-
-    it('getIcon returns translation keys via EnumTrait', function () {
-        Assert::assertSame('job::status.values.active.icon', Status::Active->getIcon());
-        Assert::assertSame('job::status.values.inactive.icon', Status::Inactive->getIcon());
-        Assert::assertSame('job::status.values.trashed.icon', Status::Trashed->getIcon());
-        Assert::assertSame('job::status.values.1.icon', Status::One->getIcon());
->>>>>>> laraxot/dev
     });
 
     it('getLabel returns a non-empty string', function () {

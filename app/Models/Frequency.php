@@ -9,34 +9,18 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\Job\Database\Factories\FrequencyFactory;
->>>>>>> laraxot/dev
 use Modules\Xot\Contracts\ProfileContract;
 
 // use Modules\Job\Models\Traits\HasParameters;
 /**
  * Modules\Job\Models\Frequency.
  *
-<<<<<<< HEAD
-=======
- * @property string $id
- * @property int $task_id
- * @property string $label
- * @property string $interval
- * @property string|null $created_by
- * @property string|null $updated_by
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
->>>>>>> laraxot/dev
  * @property-read ProfileContract|null $creator
  * @property-read Collection<int, Parameter> $parameters
  * @property-read int|null $parameters_count
  * @property-read Task|null $task
  * @property-read ProfileContract|null $updater
  *
-<<<<<<< HEAD
  * @method static Builder<static>|Frequency newModelQuery()
  * @method static Builder<static>|Frequency newQuery()
  * @method static Builder<static>|Frequency query()
@@ -50,12 +34,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $updated_by
  * @property string|null $created_by
  *
-=======
- * @method static FrequencyFactory factory($count = null, $state = [])
- * @method static Builder<static>|Frequency newModelQuery()
- * @method static Builder<static>|Frequency newQuery()
- * @method static Builder<static>|Frequency query()
->>>>>>> laraxot/dev
  * @method static Builder<static>|Frequency whereCreatedAt($value)
  * @method static Builder<static>|Frequency whereCreatedBy($value)
  * @method static Builder<static>|Frequency whereId($value)
@@ -65,11 +43,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Frequency whereUpdatedAt($value)
  * @method static Builder<static>|Frequency whereUpdatedBy($value)
  *
-<<<<<<< HEAD
-=======
- * @property-read ProfileContract|null $deleter
- *
->>>>>>> laraxot/dev
  * @mixin \Eloquent
  */
 class Frequency extends BaseModel
@@ -102,11 +75,6 @@ class Frequency extends BaseModel
 
     /**
      * Get the attributes that should be cast.
-<<<<<<< HEAD
-=======
-     *
-     * @return array<string, string>
->>>>>>> laraxot/dev
      */
     protected function casts(): array
     {

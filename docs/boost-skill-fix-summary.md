@@ -1,12 +1,10 @@
 ---
-<<<<<<< HEAD
 module: theme
 topic: boost_skill_fix_summary
 canonical: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/boost-skill-fix-summary-Modules.md
-=======
 title: "Boost Skill Fix Summary - Job Module"
 module: "Job"
 type: concept
@@ -50,4 +48,3 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Status monitoring
 - Task scheduling
 
->>>>>>> laraxot/dev

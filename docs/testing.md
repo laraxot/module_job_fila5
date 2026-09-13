@@ -271,11 +271,8 @@ protected function createApplication()
 
 ### External Resources
 
-<<<<<<< HEAD
 - [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
-=======
 - [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
->>>>>>> laraxot/dev
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
@@ -416,7 +413,6 @@ Remember: Good tests are the foundation of reliable software development.
 
 ---
 
-<<<<<<< HEAD
 *
 ## Story 5.26 — progress verso 100% (2026-08-20)
 
@@ -442,6 +438,3 @@ Interventi 2026-08-20:
 
 Prossimo step: coprire Filament Pages/Widgets/Livewire e Actions S3/Video rimanenti con mock; rieseguire gate in **sequenza** (sqlite condiviso si locka in parallelo).
 
-=======
-*
->>>>>>> laraxot/dev

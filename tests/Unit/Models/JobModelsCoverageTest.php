@@ -3,11 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Models;
-<<<<<<< HEAD
 
-=======
-use function Safe\class_uses;
->>>>>>> laraxot/dev
 use Modules\Job\Models\BaseModel;
 use Modules\Job\Models\Export;
 use Modules\Job\Models\FailedJob;
@@ -20,26 +16,16 @@ use Modules\Job\Models\Schedule;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
 
 use function Safe\class_uses;
 use function Safe\file_get_contents;
 
 uses(TestCase::class)->group('no-job-db');
-=======
-use function Safe\file_get_contents;
-
-uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 describe('Job Models Coverage', function () {
     describe('Task Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $task = new Task();
-=======
-            $task = new Task;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(Task::class, $task);
         });
 
@@ -56,22 +42,14 @@ describe('Job Models Coverage', function () {
         });
 
         it('has fillable fields defined', function () {
-<<<<<<< HEAD
             $task = new Task();
-=======
-            $task = new Task;
->>>>>>> laraxot/dev
             Assert::assertContains('command', $task->getFillable());
             Assert::assertContains('description', $task->getFillable());
             Assert::assertContains('expression', $task->getFillable());
         });
 
         it('has appends defined', function () {
-<<<<<<< HEAD
             $task = new Task();
-=======
-            $task = new Task;
->>>>>>> laraxot/dev
             Assert::assertContains('activated', $task->getAppends());
             Assert::assertContains('upcoming', $task->getAppends());
             Assert::assertContains('average_runtime', $task->getAppends());
@@ -107,24 +85,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Task::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('Frequency Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new Frequency();
-=======
-            $model = new Frequency;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(Frequency::class, $model);
         });
 
@@ -136,24 +105,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Frequency::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('Result Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new Result();
-=======
-            $model = new Result;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(Result::class, $model);
         });
 
@@ -165,24 +125,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Result::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('Schedule Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new Schedule();
-=======
-            $model = new Schedule;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(Schedule::class, $model);
         });
 
@@ -194,24 +145,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Schedule::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('Import Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new Import();
-=======
-            $model = new Import;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(Import::class, $model);
         });
 
@@ -223,24 +165,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Import::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('Export Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new Export();
-=======
-            $model = new Export;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(Export::class, $model);
         });
 
@@ -252,24 +185,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Export::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('JobBatch Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new JobBatch();
-=======
-            $model = new JobBatch;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(JobBatch::class, $model);
         });
 
@@ -281,24 +205,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(JobBatch::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('JobManager Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new JobManager();
-=======
-            $model = new JobManager;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(JobManager::class, $model);
         });
 
@@ -310,24 +225,15 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(JobManager::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
 
     describe('FailedJob Model', function () {
         it('can be instantiated', function () {
-<<<<<<< HEAD
             $model = new FailedJob();
-=======
-            $model = new FailedJob;
->>>>>>> laraxot/dev
             Assert::assertInstanceOf(FailedJob::class, $model);
         });
 
@@ -339,13 +245,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(FailedJob::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
             Assert::assertNotFalse($filename);
             $content = file_get_contents($filename);
-=======
-        Assert::assertNotFalse($filename);
-        $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });

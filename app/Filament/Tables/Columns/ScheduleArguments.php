@@ -9,11 +9,7 @@ use Webmozart\Assert\Assert;
 
 class ScheduleArguments extends XotBaseTextColumn
 {
-<<<<<<< HEAD
     protected string $view = 'job::filament.tables.columns.schedule-arguments';
-=======
-    protected string $view = 'job::filament.columns.schedule-arguments';
->>>>>>> laraxot/dev
 
     protected bool $withValue = true;
 

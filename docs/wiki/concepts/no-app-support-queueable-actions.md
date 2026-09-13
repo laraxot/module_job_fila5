@@ -6,15 +6,12 @@ created: 2026-07-12
 updated: 2026-07-12
 qmd: "Job module no Support AllowedArtisanCommands queue schedule whitelist"
 issues:
-<<<<<<< HEAD
   - "https://github.com/laraxot/base_ptv_fila5/issues/372"
 discussions:
   - "https://github.com/laraxot/base_ptv_fila5/discussions/273"
-=======
   - "https://github.com/laraxot/base_fixcity_fila5/issues/372"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
->>>>>>> laraxot/dev
 related:
   - ../../../../docs/wiki/concepts/no-app-support-monorepo-migration.md
 ---
