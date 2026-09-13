@@ -134,6 +134,10 @@ class JobBatch extends BaseModel
     }
 
     /**  @return array<string, string>  */
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

@@ -95,6 +95,11 @@ class ScheduleHistory extends BaseModel
     {
         return $this->belongsTo(Schedule::class, 'schedule_id', 'id');
     }
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     protected function casts(): array
     {
         return [

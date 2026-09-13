@@ -16,10 +16,26 @@ use Override;
 class JobResource extends XotBaseResource
 {
     protected static ?string $model = Job::class;
+<<<<<<< HEAD
+=======
+
+    #[Override]
+    public static function getFormSchema(): array
+    {
+        return [];
+    }
+
+    #[Override]
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [];
     }
+<<<<<<< HEAD
+=======
+
+    #[Override]
+>>>>>>> laraxot/dev
     public static function getPages(): array
     {
         return [
