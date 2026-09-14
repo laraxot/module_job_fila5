@@ -1,6 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 # 📋 Job
 
 [![Stars](https://img.shields.io/github/stars/laraxot/module_job_fila5?style=plastic&color=yellow)]()
@@ -67,6 +70,9 @@ Importa, installa, configura. Il resto ci penseremo noi.
 
 **Modulo** `Job` · **Laraxot** · PHPStan 10 · Filament 5
 =======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
+=======
 >>>>>>> laraxot/dev
 ---
 id: module-job-readme
@@ -131,6 +137,9 @@ Maintain `declare(strict_types=1);` in PHP, adhere to project PHPStan config, an
 
 **Modulo** `job` · **Laraxot ecosystem** · **Project-agnostic**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
