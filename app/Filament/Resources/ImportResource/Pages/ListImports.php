@@ -19,7 +19,11 @@ use Override;
 class ListImports extends XotBaseListRecords
 {
     protected static string $resource = ImportResource::class;
+<<<<<<< HEAD
    
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -49,7 +53,13 @@ class ListImports extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+<<<<<<< HEAD
    
+=======
+=======
+   
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, BaseFilter>

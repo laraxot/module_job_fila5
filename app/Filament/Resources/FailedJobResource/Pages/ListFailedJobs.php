@@ -10,7 +10,14 @@ namespace Modules\Job\Filament\Resources\FailedJobResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
+=======
+<<<<<<< HEAD
+use Filament\Tables\Columns\TextColumn;
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Filament\Resources\FailedJobResource;
 use Modules\Job\Models\FailedJob;
@@ -21,6 +28,10 @@ class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
     #[Override]
     public function getTableColumns(): array
     {
@@ -44,6 +55,11 @@ class ListFailedJobs extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     /**
      * @return array<string, Action>
      */

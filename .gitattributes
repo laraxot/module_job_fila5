@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Prototype: laravel/Modules/* e laravel/Themes/*
@@ -10,6 +13,9 @@
 # Git LFS VIETATO. Binari = blob git normali.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
@@ -21,6 +27,9 @@ CHANGELOG.md export-ignore
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # Binary files (regular git blobs — NO git-lfs)
@@ -50,6 +59,9 @@ CHANGELOG.md export-ignore
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
