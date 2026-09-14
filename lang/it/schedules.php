@@ -7,6 +7,13 @@ return [
         'id' => ['label' => 'id'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
+<<<<<<< HEAD
+=======
+        'command' => ['label' => 'command'],
+        'expression' => ['label' => 'expression'],
+        'status' => ['label' => 'status'],
+        'command_custom' => ['label' => 'command_custom'],
+>>>>>>> laraxot/dev
     ],
     'actions' => [
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
