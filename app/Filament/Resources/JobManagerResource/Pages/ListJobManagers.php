@@ -19,7 +19,11 @@ use Override;
 class ListJobManagers extends XotBaseListRecords
 {
     protected static string $resource = JobManagerResource::class;
+<<<<<<< HEAD
    
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -43,7 +47,13 @@ class ListJobManagers extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+<<<<<<< HEAD
    
+=======
+=======
+   
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, BulkAction>

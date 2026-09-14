@@ -16,7 +16,10 @@ use Modules\Job\Database\Factories\TaskFactory;
 use Modules\Job\Models\Traits\FrontendSortable;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
+<<<<<<< HEAD
 use Modules\Xot\Models\Traits\HasXotFactory;
+=======
+>>>>>>> laraxot/dev
 use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
@@ -96,10 +99,13 @@ class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
+<<<<<<< HEAD
 
     /** @use HasXotFactory<Factory<static>> */
     use HasXotFactory;
 
+=======
+>>>>>>> laraxot/dev
     use Notifiable;
 
     protected $fillable = [
@@ -153,9 +159,13 @@ class Task extends BaseModel
             /** @var array<int|string, string> $result */
             $result = [];
             foreach ($parameters as $key => $value) {
+<<<<<<< HEAD
                 $result[$key] = is_bool($value)
                     ? ($value ? '1' : '0')
                     : SafeStringCastAction::cast($value);
+=======
+                $result[$key] = SafeStringCastAction::cast($value);
+>>>>>>> laraxot/dev
             }
 
             return $result;

@@ -21,6 +21,10 @@ use Override;
 class ListJobs extends XotBaseListRecords
 {
     protected static string $resource = JobResource::class;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -47,6 +51,11 @@ class ListJobs extends XotBaseListRecords
         ];
     }
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
     /**
      * @return array<string, BaseFilter>
      */

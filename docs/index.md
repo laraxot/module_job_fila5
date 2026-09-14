@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Indice documentazione — Modulo Job"
 module: "Job"
@@ -378,3 +379,12 @@ Varianti a livello root di `schedule`/`soketi`/`storage-server`/`artisan`/`links
 
 *Indice aggiornato il 2026-09-03. Nessun file `.md` esistente e' stato
 cancellato, rinominato o spostato durante questo audit.*
+=======
+# Documentation Index
+
+Modulo: Job
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
+>>>>>>> laraxot/dev

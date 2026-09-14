@@ -41,6 +41,10 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
     {
         return [];
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> laraxot/dev
 
     /**
      * @return array<int, Split>
@@ -84,4 +88,9 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
             // ->collapsed(config('job::history_collapsed'))
         ];
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 }
