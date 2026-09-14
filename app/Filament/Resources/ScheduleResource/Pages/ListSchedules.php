@@ -22,6 +22,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListSchedules extends XotBaseListRecords
 {
     protected static string $resource = ScheduleResource::class;
+<<<<<<< HEAD
 
     public function getTableColumns(): array
     {
@@ -47,6 +48,9 @@ class ListSchedules extends XotBaseListRecords
                 ->toggleable(isToggledHiddenByDefault: true),
         ];
     }
+=======
+   
+>>>>>>> laraxot/dev
 
     /**
      * @return array<string, EditAction|RestoreAction|DeleteAction|ForceDeleteAction|ViewAction|ActionGroup>
