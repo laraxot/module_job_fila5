@@ -4,32 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
-        'id' => [
-            'label' => 'id',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'total_jobs' => [
-            'label' => 'total_jobs',
-        ],
-        'pending_jobs' => [
-            'label' => 'pending_jobs',
-        ],
-        'failed_jobs' => [
-            'label' => 'failed_jobs',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> laraxot/dev
         'id' => ['label' => 'id'],
         'name' => ['label' => 'name'],
         'total_jobs' => ['label' => 'total_jobs'],
@@ -43,9 +17,5 @@ return [
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
         'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
     ],
 ];

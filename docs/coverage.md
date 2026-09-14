@@ -11,14 +11,6 @@ related:
   - "./stories/01.Job-phpstan-fix.story.md"
 ---
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
 ## 2026-09-11 — Dead Table class + `$model` bug follow-up (`JobBatchResource`/`JobsWaitingResource`)
 
 Scope (story root, righe Job):
@@ -80,13 +72,6 @@ Verifica:
     "misurare mentre un altro scrive"); risolto da solo al retry + `composer
     dump-autoload`, non è mai stato un problema del modulo Job.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 ## 2026-09-06 — PHPStan zero-errors pass (this session)
 
 Scope: `app/Filament/Columns/ScheduleArguments.php`,
