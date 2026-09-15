@@ -14,19 +14,28 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionObject;
 use Spatie\LaravelData\DataCollection;
 use Throwable;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use Spatie\LaravelData\DataCollection;
 >>>>>>> laraxot/dev
 =======
 >>>>>>> 899602c6 (.)
+=======
+=======
+use Spatie\LaravelData\DataCollection;
+>>>>>>> laraxot/dev
+>>>>>>> laraxot/dev
 
 uses(TestCase::class)->group('no-job-db');
 
@@ -34,13 +43,19 @@ afterEach(function (): void {
     Mockery::close();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $ref = new ReflectionClass(ScheduleForm::class);
 =======
     $ref = new \ReflectionClass(ScheduleForm::class);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     $ref = new ReflectionClass(ScheduleForm::class);
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
     if ($ref->hasProperty('commands')) {
         $prop = $ref->getProperty('commands');
         $prop->setAccessible(true);
@@ -81,13 +96,19 @@ describe('Job ScheduleForm full schema coverage', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $schema = (new ScheduleForm)->getFormSchema();
 =======
         $schema = (new ScheduleForm())->getFormSchema();
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $schema = (new ScheduleForm)->getFormSchema();
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
         Assert::assertArrayHasKey('main_section', $schema);
 
         // Invoke nested closures via ModuleRemainingCoverage-style property walk
@@ -103,26 +124,38 @@ describe('Job ScheduleForm full schema coverage', function (): void {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         $ref = new ReflectionObject($schema['main_section']);
 =======
         $ref = new \ReflectionObject($schema['main_section']);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         $ref = new ReflectionObject($schema['main_section']);
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
         foreach ($ref->getProperties() as $property) {
             $property->setAccessible(true);
             try {
                 $val = $property->getValue($schema['main_section']);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             } catch (Throwable) {
 =======
             } catch (\Throwable) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             } catch (Throwable) {
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
                 continue;
             }
             jobInvokeClosures($val, $set, $get);
@@ -143,13 +176,19 @@ function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 
                 $value(...$args);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             } catch (Throwable) {
 =======
             } catch (\Throwable) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             } catch (Throwable) {
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             }
         }
 
@@ -167,26 +206,38 @@ function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     $ref = new ReflectionObject($value);
 =======
     $ref = new \ReflectionObject($value);
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
     $ref = new ReflectionObject($value);
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
     foreach ($ref->getProperties() as $property) {
         $property->setAccessible(true);
         try {
             jobInvokeClosures($property->getValue($value), $set, $get, $depth + 1);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
         } catch (Throwable) {
 =======
         } catch (\Throwable) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
         } catch (Throwable) {
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
         }
     }
     foreach (['getChildComponents', 'getDefaultChildComponents', 'getSchema', 'getActionFunction'] as $method) {
@@ -196,14 +247,20 @@ function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 
         try {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             $rm = new ReflectionMethod($value, $method);
             if ($rm->getNumberOfRequiredParameters() === 0) {
                 jobInvokeClosures($rm->invoke($value), $set, $get, $depth + 1);
             }
         } catch (Throwable) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
             $rm = new \ReflectionMethod($value, $method);
             if ($rm->getNumberOfRequiredParameters() === 0) {
@@ -211,8 +268,11 @@ function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 
             }
         } catch (\Throwable) {
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
         }
     }
 }

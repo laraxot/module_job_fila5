@@ -9,13 +9,19 @@ return [
             'placeholder' => 'uuid',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'uuid',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'uuid',
         ],
         'failed_at' => [
@@ -23,13 +29,19 @@ return [
             'placeholder' => 'failed_at',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'failed_at',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'failed_at',
         ],
         'id' => [
@@ -37,13 +49,19 @@ return [
             'placeholder' => 'id',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'id',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'id',
         ],
         'connection' => [
@@ -51,13 +69,19 @@ return [
             'placeholder' => 'connection',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'connection',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'connection',
         ],
         'queue' => [
@@ -65,13 +89,19 @@ return [
             'placeholder' => 'queue',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'queue',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'queue',
         ],
         'exception' => [
@@ -79,13 +109,19 @@ return [
             'placeholder' => 'exception',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'exception',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'exception',
         ],
         'payload' => [
@@ -93,13 +129,19 @@ return [
             'placeholder' => 'payload',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
             'helper_text' => '',
 =======
             'helper_text' => 'payload',
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
             'helper_text' => '',
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
             'description' => 'payload',
         ],
     ],

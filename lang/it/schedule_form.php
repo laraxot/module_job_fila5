@@ -6,8 +6,11 @@ return [
     'fields' => [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
         'command' => ['label' => 'command', 'placeholder' => 'command', 'helper_text' => '', 'description' => 'command'],
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => '', 'description' => 'params'],
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => '', 'description' => 'name'],
@@ -29,6 +32,9 @@ return [
         'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => '', 'description' => 'on_one_server'],
         'run_in_background' => ['label' => 'run_in_background', 'placeholder' => 'run_in_background', 'helper_text' => '', 'description' => 'run_in_background'],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
         'command' => ['label' => 'command', 'placeholder' => 'command', 'helper_text' => 'command', 'description' => 'command'],
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => 'params', 'description' => 'params'],
@@ -51,8 +57,11 @@ return [
         'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => 'on_one_server', 'description' => 'on_one_server'],
         'run_in_background' => ['label' => 'run_in_background', 'placeholder' => 'run_in_background', 'helper_text' => 'run_in_background', 'description' => 'run_in_background'],
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
     ],
     'sections' => [
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
