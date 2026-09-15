@@ -34,8 +34,11 @@ return [
         'resetFilters' => ['label' => 'resetFilters', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => '', 'description' => 'params'],
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => '', 'description' => 'value'],
         'options_with_value' => ['label' => 'options_with_value', 'placeholder' => 'options_with_value', 'helper_text' => '', 'description' => 'options_with_value'],
@@ -52,6 +55,9 @@ return [
         'without_overlapping' => ['label' => 'without_overlapping', 'placeholder' => 'without_overlapping', 'helper_text' => '', 'description' => 'without_overlapping'],
         'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => '', 'description' => 'on_one_server'],
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 =======
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => 'params', 'description' => 'params'],
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => 'value', 'description' => 'value'],
@@ -69,8 +75,11 @@ return [
         'without_overlapping' => ['label' => 'without_overlapping', 'placeholder' => 'without_overlapping', 'helper_text' => 'without_overlapping', 'description' => 'without_overlapping'],
         'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => 'on_one_server', 'description' => 'on_one_server'],
 >>>>>>> laraxot/dev
+<<<<<<< HEAD
 =======
 >>>>>>> 899602c6 (.)
+=======
+>>>>>>> laraxot/dev
         'id' => ['label' => 'id'],
         'is_active' => ['label' => 'is_active'],
     ],
