@@ -6,7 +6,10 @@ namespace Modules\Job\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
+=======
+>>>>>>> af4545e (.)
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
@@ -59,7 +62,11 @@ use function Safe\json_decode;
  * @method static Builder<static>|Task newModelQuery()
  * @method static Builder<static>|Task newQuery()
  * @method static Builder<static>|Task query()
+<<<<<<< HEAD
  * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, 'asc'|'desc'> $defaultSort = [])
+=======
+ * @method static Builder<static>|Task sortableBy(array<string> $sortableColumns, array<string, string> $defaultSort = [])
+>>>>>>> af4545e (.)
  * @method static Builder<static>|Task whereAutoCleanupNum($value)
  * @method static Builder<static>|Task whereAutoCleanupType($value)
  * @method static Builder<static>|Task whereCommand($value)
@@ -95,6 +102,18 @@ class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+    /** @phpstan-use HasXotFactory<Factory<static>> */
+    use HasXotFactory;
+
+=======
+    /** @phpstan-use HasXotFactory<\Illuminate\Database\Eloquent\Factories\Factory<static>> */
+    use HasXotFactory;
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
     use Notifiable;
 
     protected $fillable = [
@@ -148,7 +167,19 @@ class Task extends BaseModel
             /** @var array<int|string, string> $result */
             $result = [];
             foreach ($parameters as $key => $value) {
+<<<<<<< HEAD
                 $result[$key] = SafeStringCastAction::cast($value);
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) Assert::scalar($value));
+=======
+                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) $value);
+>>>>>>> f0c10529 (.)
+=======
+                $result[$key] = is_bool($value) ? ($value ? '1' : '0') : ((string) $value);
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
             }
 
             return $result;

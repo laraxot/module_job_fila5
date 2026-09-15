@@ -9,14 +9,24 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Widgets;
 
 use Exception;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Process;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
+=======
+use Filament\Widgets\Widget;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Process;
+>>>>>>> af4545e (.)
 use Symfony\Component\Console\Output\StreamOutput;
 
 use function Safe\fopen;
 
+<<<<<<< HEAD
 class ClockWidget extends XotBaseWidget
+=======
+class ClockWidget extends Widget
+>>>>>>> af4545e (.)
 {
     public string $time = '---';
 

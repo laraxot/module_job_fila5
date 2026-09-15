@@ -12,7 +12,11 @@ $finder = PhpCsFixer\Finder::create()
     ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true)
+<<<<<<< HEAD
 ;
+=======
+
+>>>>>>> laraxot/dev
 $config = new PhpCsFixer\Config();
 
 $config
@@ -39,5 +43,9 @@ $config
         'elseif' => true,
     ])
     ->setFinder($finder)
+<<<<<<< HEAD
 ;
+=======
+
+>>>>>>> laraxot/dev
 return $config;
