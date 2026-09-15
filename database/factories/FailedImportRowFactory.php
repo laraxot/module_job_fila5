@@ -22,8 +22,11 @@ class FailedImportRowFactory extends Factory
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
+=======
+>>>>>>> af4545e (.)
      */
     public function definition(): array
     {

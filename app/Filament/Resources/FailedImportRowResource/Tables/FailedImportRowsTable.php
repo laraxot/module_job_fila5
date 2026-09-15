@@ -11,6 +11,7 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class FailedImportRowsTable extends XotBaseResourceTable
 {
+<<<<<<< HEAD
     /**
      * @var class-string<FailedImportRow>
      */
@@ -19,6 +20,8 @@ class FailedImportRowsTable extends XotBaseResourceTable
     /**
      * @return array<string, Column>
      */
+=======
+>>>>>>> af4545e (.)
     public function getTableColumns(): array
     {
         return [

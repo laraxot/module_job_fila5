@@ -8,14 +8,27 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobManagerResource\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+>>>>>>> af4545e (.)
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
+<<<<<<< HEAD
+use Webmozart\Assert\Assert;
+=======
+>>>>>>> f0c10529 (.)
 
 class JobStatsOverview extends XotBaseStatsOverviewWidget
+=======
+
+class JobStatsOverview extends BaseWidget
+>>>>>>> af4545e (.)
 {
     use FormatSeconds;
 
@@ -51,12 +64,24 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
         }
 
         return [
+<<<<<<< HEAD
             Stat::make(
                 (string) __('jobs::translations.total_jobs'),
                 $aggregatedInfo
                     ? app(SafeEloquentCastAction::class)->getIntAttribute($aggregatedInfo, 'count', 0)
                     : 0,
             ),
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            Stat::make(Assert::string(__('jobs::translations.total_jobs')), (int) Assert::integerish($aggregatedInfo->count ?? 0)),
+=======
+            Stat::make((string) __('jobs::translations.total_jobs'), (int) ($aggregatedInfo->count ?? 0)),
+>>>>>>> f0c10529 (.)
+=======
+            Stat::make((string) __('jobs::translations.total_jobs'), (int) ($aggregatedInfo->count ?? 0)),
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
             Stat::make((string) __('jobs::translations.execution_time'), (string) $totalTime),
             Stat::make((string) __('jobs::translations.average_time'), (string) $averageTime),
         ];
