@@ -9,7 +9,6 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use PHPUnit\Framework\Assert;
 
-/** @phpstan-ignore-next-line method.nonObject, function.void (Pest uses()->group() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know uses() returns a bindable TestCase call) */
 uses(TestCase::class)->group('no-job-db');
 
 afterEach(function (): void {
