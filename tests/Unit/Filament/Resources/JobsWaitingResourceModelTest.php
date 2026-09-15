@@ -20,6 +20,7 @@ use PHPUnit\Framework\Assert;
  * `JobsWaiting::class`, rendendo `JobsWaitingsTable` e `JobsWaitingPolicy`
  * irraggiungibili per convenzione (`XotBaseResource::getModel()`/`getTableClass()`).
  */
+/** @phpstan-ignore-next-line method.nonObject, function.void (Pest uses()->group() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know uses() returns a bindable TestCase call) */
 uses(TestCase::class)->group('no-job-db');
 
 describe('JobsWaitingResource risolve JobsWaiting, non Job', function (): void {

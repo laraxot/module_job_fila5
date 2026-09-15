@@ -10,7 +10,8 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+/** @phpstan-ignore-next-line method.nonObject, function.void (Pest uses()->group() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know uses() returns a bindable TestCase call) */
+uses(TestCase::class)->group('no-job-db');
 
 /** @return list{string, string} */
 function jobFilamentContext(): array

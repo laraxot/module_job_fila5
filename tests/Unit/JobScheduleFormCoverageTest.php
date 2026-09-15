@@ -14,6 +14,7 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
 
+/** @phpstan-ignore-next-line method.nonObject, function.void (Pest uses()->group() chain: pest-plugin-phpstan extension is disabled in root phpstan.neon, so PHPStan does not know uses() returns a bindable TestCase call) */
 uses(TestCase::class)->group('no-job-db');
 
 afterEach(function (): void {
@@ -57,7 +58,7 @@ describe('Job ScheduleForm full schema coverage', function (): void {
             }
         });
 
-        $schema = (new ScheduleForm())->getFormSchema();
+        $schema = (new ScheduleForm)->getFormSchema();
         Assert::assertArrayHasKey('main_section', $schema);
 
         // Invoke nested closures via ModuleRemainingCoverage-style property walk
