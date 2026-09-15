@@ -31,19 +31,7 @@ use Modules\Job\Filament\Resources\JobBatchResource;
 use Modules\Job\Filament\Resources\JobManagerResource;
 use Modules\Job\Filament\Resources\JobResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 use Modules\Job\Filament\Resources\ScheduleResource;
->>>>>>> laraxot/dev
-=======
->>>>>>> 899602c6 (.)
-=======
-=======
-use Modules\Job\Filament\Resources\ScheduleResource;
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 use Modules\Job\Http\Livewire\Broad;
 use Modules\Job\Http\Requests\ScheduleRequest;
 use Modules\Job\Models\FailedJob;
@@ -70,20 +58,6 @@ use Modules\Job\Traits\FormatSeconds;
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-use ReflectionMethod;
-=======
->>>>>>> laraxot/dev
-=======
-use ReflectionMethod;
->>>>>>> 899602c6 (.)
-=======
-use ReflectionMethod;
-=======
->>>>>>> laraxot/dev
->>>>>>> laraxot/dev
 
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.
@@ -99,21 +73,7 @@ function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): 
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-uses(TestCase::class)->group('no-job-db');
-=======
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-uses(TestCase::class)->group('no-job-db');
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();
@@ -122,21 +82,7 @@ afterEach(function (): void {
 function jobBindArtisan(): void
 {
     $kernel = app(Kernel::class);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-    $method = new ReflectionMethod($kernel, 'getArtisan');
-=======
     $method = new \ReflectionMethod($kernel, 'getArtisan');
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-    $method = new ReflectionMethod($kernel, 'getArtisan');
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
     $method->setAccessible(true);
     app()->instance(Application::class, $method->invoke($kernel));
 }
@@ -179,39 +125,13 @@ describe('Job execute coverage — Filament resources', function (): void {
             Assert::assertTrue(class_exists($classe::getModel()));
         }
     });
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
 
     
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
 });
 
 describe('Job execute coverage — policies', function (): void {
     test('JobBasePolicy before apre super-admin e lascia gli altri', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $policy = new ResultPolicy;
-=======
         $policy = new ResultPolicy();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $policy = new ResultPolicy;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
 
         Assert::assertTrue($policy->before(jobUser(true), 'viewAny'));
         Assert::assertNull($policy->before(jobUser(false), 'viewAny'));
@@ -224,21 +144,7 @@ describe('Job execute coverage — policies', function (): void {
             SchedulePolicy::class,
             TaskPolicy::class,
         ] as $class) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-            $policy = new $class;
-=======
             $policy = new $class();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-            $policy = new $class;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
             Assert::assertNull($policy->before(jobUser(false), 'update'));
             Assert::assertTrue($policy->before(jobUser(true), 'delete'));
         }
@@ -247,21 +153,7 @@ describe('Job execute coverage — policies', function (): void {
 
 describe('Job execute coverage — Task e notification', function (): void {
     test('compileParameters gestisce null, json e formatter scheduler', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $task = new Task;
-=======
         $task = new Task();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $task = new Task;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertSame([], $task->compileParameters());
 
         $task->parameters = json_encode(['env' => true, 'name' => 'foo'], JSON_THROW_ON_ERROR);
@@ -270,21 +162,7 @@ describe('Job execute coverage — Task e notification', function (): void {
     });
 
     test('accessor e routeNotification non toccano il database', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $task = new Task;
-=======
         $task = new Task();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $task = new Task;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $task->is_active = 1;
         $task->notification_email_address = 'a@b.c';
         $task->notification_phone_number = '333';
@@ -302,41 +180,13 @@ describe('Job execute coverage — Task e notification', function (): void {
     test('TaskCompleted via e toMail coprono i canali configurati', function (): void {
         $notification = new TaskCompleted('done');
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $empty = new Task;
-=======
         $empty = new Task();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $empty = new Task;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $empty->notification_email_address = null;
         $empty->notification_phone_number = null;
         $empty->notification_slack_webhook = '0';
         Assert::assertSame([], $notification->via($empty));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $full = new Task;
-=======
         $full = new Task();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $full = new Task;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $full->description = 'Nightly';
         $full->notification_email_address = 'ops@example.com';
         $full->notification_phone_number = '111';
@@ -348,21 +198,7 @@ describe('Job execute coverage — Task e notification', function (): void {
     });
 
     test('autoCleanup no-op quando num è zero', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $task = new Task;
-=======
         $task = new Task();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $task = new Task;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $task->auto_cleanup_num = 0;
         $task->autoCleanup();
         Assert::assertSame(0, $task->auto_cleanup_num);
@@ -371,32 +207,10 @@ describe('Job execute coverage — Task e notification', function (): void {
 
 describe('Job execute coverage — events request rules columns', function (): void {
     test('eventi di broadcast espongono i canali', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
-        Assert::assertSame('public', (new PublicEvent)->broadcastOn()->name);
-        Assert::assertStringContainsString('private.', (new PrivateEvent('ciao'))->broadcastOn()->name);
-
-        $task = new Task;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
         Assert::assertSame('public', (new PublicEvent())->broadcastOn()->name);
         Assert::assertStringContainsString('private.', (new PrivateEvent('ciao'))->broadcastOn()->name);
 
         $task = new Task();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $event = new BroadcastingEvent($task);
         Assert::assertStringContainsString('task.events', $event->broadcastOn()->name);
         Assert::assertTrue($event->broadcastWhen());
@@ -413,21 +227,7 @@ describe('Job execute coverage — events request rules columns', function (): v
     });
 
     test('Corn valida espressione cron e rifiuta valori non stringa', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $rule = new Corn;
-=======
         $rule = new Corn();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $rule = new Corn;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $failed = false;
         $rule->validate('expression', ['not-string'], static function (string $message, ?string $attribute = null) use (&$failed): PotentiallyTranslatedString {
             $failed = true;
@@ -462,40 +262,12 @@ describe('Job execute coverage — events request rules columns', function (): v
 describe('Job execute coverage — actions enums commands livewire', function (): void {
     test('DummyAction e GetCommandsAction eseguono', function (): void {
         ob_start();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        (new DummyAction)->execute();
-=======
         (new DummyAction())->execute();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        (new DummyAction)->execute();
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $out = (string) ob_get_clean();
         Assert::assertStringContainsString('hello', $out);
 
         jobBindArtisan();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $commands = (new GetCommandsAction)->execute();
-=======
         $commands = (new GetCommandsAction())->execute();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $commands = (new GetCommandsAction)->execute();
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertGreaterThan(0, $commands->count());
     });
 
@@ -508,21 +280,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
     });
 
     test('FormatSeconds copre giorni ore minuti secondi', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $probe = new class
-=======
         $probe = new class()
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $probe = new class
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         {
             use FormatSeconds;
         };
@@ -542,79 +300,24 @@ describe('Job execute coverage — actions enums commands livewire', function ()
     });
 
     test('Livewire Broad try flasha sessione senza dd', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $component = new Broad;
-=======
         $component = new Broad();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $component = new Broad;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $component->try();
         Assert::assertTrue(session()->has('message'));
     });
 
     test('modelli foglia espongono tabella', function (): void {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
-        Assert::assertSame('jobs', (new Job)->getTable());
-        Assert::assertSame('failed_jobs', (new FailedJob)->getTable());
-        Assert::assertSame('job_batches', (new JobBatch)->getTable());
-        Assert::assertSame('schedules', (new Schedule)->getTable());
-        Assert::assertSame('results', (new Result)->getTable());
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
         Assert::assertSame('jobs', (new Job())->getTable());
         Assert::assertSame('failed_jobs', (new FailedJob())->getTable());
         Assert::assertSame('job_batches', (new JobBatch())->getTable());
         Assert::assertSame('schedules', (new Schedule())->getTable());
         Assert::assertSame('results', (new Result())->getTable());
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
     });
 
     test('policy CRUD con Team e hasPermissionTo', function (): void {
         $user = jobUser(false);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $team = new Team;
-
-        $failed = new FailedJobPolicy;
-=======
         $team = new Team();
 
         $failed = new FailedJobPolicy();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $team = new Team;
-
-        $failed = new FailedJobPolicy;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertFalse($failed->viewAny($user));
         Assert::assertTrue($failed->view($user, $team));
         Assert::assertTrue($failed->create($user));
@@ -624,64 +327,20 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertTrue($failed->removeTeamMember($user, $team));
         Assert::assertTrue($failed->delete($user, $team));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $jobPolicy = new JobPolicy;
-=======
         $jobPolicy = new JobPolicy();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $jobPolicy = new JobPolicy;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertFalse($jobPolicy->viewAny($user));
         Assert::assertTrue($jobPolicy->view($user, $team));
         Assert::assertTrue($jobPolicy->create($user));
         Assert::assertFalse($jobPolicy->update($user));
         Assert::assertTrue($jobPolicy->delete($user, $team));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $batch = new JobBatchPolicy;
-=======
         $batch = new JobBatchPolicy();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $batch = new JobBatchPolicy;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertFalse($batch->viewAny($user));
         Assert::assertTrue($batch->create($user));
         Assert::assertFalse($batch->update($user));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $schedule = new Schedule;
-        $schedulePolicy = new SchedulePolicy;
-=======
         $schedule = new Schedule();
         $schedulePolicy = new SchedulePolicy();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $schedule = new Schedule;
-        $schedulePolicy = new SchedulePolicy;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertTrue($schedulePolicy->viewAny($user));
         Assert::assertTrue($schedulePolicy->view($user, $schedule));
         Assert::assertTrue($schedulePolicy->create($user));
@@ -690,24 +349,8 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertTrue($schedulePolicy->restore($user, $schedule));
         Assert::assertTrue($schedulePolicy->forceDelete($user, $schedule));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $comment = new TaskComment;
-        $commentPolicy = new TaskCommentPolicy;
-=======
         $comment = new TaskComment();
         $commentPolicy = new TaskCommentPolicy();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $comment = new TaskComment;
-        $commentPolicy = new TaskCommentPolicy;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $commentPolicy->viewAny($user);
         $commentPolicy->view($user, $comment);
         $commentPolicy->create($user);
@@ -716,24 +359,8 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $commentPolicy->restore($user, $comment);
         $commentPolicy->forceDelete($user, $comment);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $historyPolicy = new ScheduleHistoryPolicy;
-        $history = new ScheduleHistory;
-=======
         $historyPolicy = new ScheduleHistoryPolicy();
         $history = new ScheduleHistory();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $historyPolicy = new ScheduleHistoryPolicy;
-        $history = new ScheduleHistory;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         foreach (['viewAny', 'create'] as $m) {
             if (method_exists($historyPolicy, $m)) {
                 $historyPolicy->{$m}($user);
@@ -750,88 +377,27 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $q = Task::query()->sortableBy(['description'], ['description' => 'asc']);
         Assert::assertInstanceOf(Builder::class, $q);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-        $job = new Job;
-=======
         $job = new Job();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
-        $job = new Job;
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         $job->setRawAttributes(['reserved_at' => 10, 'payload' => json_encode(['displayName' => 'Foo'], JSON_THROW_ON_ERROR)]);
         Assert::assertSame('running', $job->status);
         Assert::assertSame('Foo', $job->display_name);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
-        $waiting = new Job;
-        $waiting->setRawAttributes(['reserved_at' => null, 'payload' => json_encode(['displayName' => 'Bar'], JSON_THROW_ON_ERROR)]);
-        Assert::assertSame('waiting', $waiting->status);
-
-        $result = new Result;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
         $waiting = new Job();
         $waiting->setRawAttributes(['reserved_at' => null, 'payload' => json_encode(['displayName' => 'Bar'], JSON_THROW_ON_ERROR)]);
         Assert::assertSame('waiting', $waiting->status);
 
         $result = new Result();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertInstanceOf(BelongsTo::class, $result->task());
         $result->getLastRun();
         $result->getAverageRunTime();
 
         config(['job::cache.enabled' => false]);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
-        $observer = new ScheduleObserver;
-        $observer->created();
-        $observer->updated(new Schedule);
-        $observer->saved(new Schedule);
-
-        $lw = new \Modules\Job\Http\Livewire\Schedule\Status;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
-=======
         $observer = new ScheduleObserver();
         $observer->created();
         $observer->updated(new Schedule());
         $observer->saved(new Schedule());
 
         $lw = new \Modules\Job\Http\Livewire\Schedule\Status();
->>>>>>> laraxot/dev
-<<<<<<< HEAD
-=======
->>>>>>> 899602c6 (.)
-=======
->>>>>>> laraxot/dev
         Assert::assertCount(0, $lw->getScheduledJobs());
     });
 });
