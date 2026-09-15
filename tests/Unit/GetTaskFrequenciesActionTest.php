@@ -12,7 +12,15 @@ uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetTaskFrequenciesAction', function (): void {
     test('can be instantiated', function (): void {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $action = new GetTaskFrequenciesAction;
+=======
         $action = new GetTaskFrequenciesAction();
+>>>>>>> f0c10529 (.)
+=======
+        $action = new GetTaskFrequenciesAction;
+>>>>>>> af4545e (.)
         Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $action);
     });
 
@@ -102,4 +110,8 @@ describe('GetTaskFrequenciesAction', function (): void {
         $content = file_get_contents($filename);
         Assert::assertStringContainsString('config(', $content);
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> af4545e (.)

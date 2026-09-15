@@ -17,6 +17,13 @@ use Illuminate\Support\Collection;
 use Modules\Job\Database\Factories\JobBatchFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Webmozart\Assert\Assert;
+=======
+>>>>>>> f0c10529 (.)
+=======
+>>>>>>> af4545e (.)
 
 /**
  * Modules\Job\Models\JobBatch.
@@ -81,7 +88,24 @@ class JobBatch extends BaseModel
      */
     public function processedJobs(): int|float
     {
+<<<<<<< HEAD
         return $this->total_jobs - $this->pending_jobs;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $totalJobs = (int) Assert::integerish($this->attributes['total_jobs'] ?? 0);
+        $pendingJobs = (int) Assert::integerish($this->attributes['pending_jobs'] ?? 0);
+=======
+        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+>>>>>>> f0c10529 (.)
+=======
+        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+>>>>>>> af4545e (.)
+
+        return $totalJobs - $pendingJobs;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -89,7 +113,19 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
+<<<<<<< HEAD
         $totalJobs = $this->total_jobs;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $totalJobs = (int) Assert::integerish($this->attributes['total_jobs'] ?? 0);
+=======
+        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+>>>>>>> f0c10529 (.)
+=======
+        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+>>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
         $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
 
         return (int) $progress;
@@ -100,7 +136,21 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
+<<<<<<< HEAD
         return $this->pending_jobs > 0;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $pendingJobs = (int) Assert::integerish($this->attributes['pending_jobs'] ?? 0);
+=======
+        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+>>>>>>> f0c10529 (.)
+=======
+        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+>>>>>>> af4545e (.)
+
+        return $pendingJobs > 0;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -116,7 +166,21 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
+<<<<<<< HEAD
         return $this->failed_jobs > 0;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $failedJobs = (int) Assert::integerish($this->attributes['failed_jobs'] ?? 0);
+=======
+        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
+>>>>>>> f0c10529 (.)
+=======
+        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
+>>>>>>> af4545e (.)
+
+        return $failedJobs > 0;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -124,7 +188,24 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
+<<<<<<< HEAD
         return $this->failed_jobs === $this->total_jobs;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        $failedJobs = (int) Assert::integerish($this->attributes['failed_jobs'] ?? 0);
+        $totalJobs = (int) Assert::integerish($this->attributes['total_jobs'] ?? 0);
+=======
+        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
+        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+>>>>>>> f0c10529 (.)
+=======
+        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
+        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+>>>>>>> af4545e (.)
+
+        return $failedJobs === $totalJobs;
+>>>>>>> laraxot/dev
     }
 
     /**

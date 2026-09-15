@@ -8,6 +8,10 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+>>>>>>> af4545e (.)
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -15,12 +19,19 @@ use Modules\Job\Models\Job;
 use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
+=======
+>>>>>>> af4545e (.)
 
 /**
  * --....
  */
+<<<<<<< HEAD
 class JobsWaitingOverview extends XotBaseStatsOverviewWidget
+=======
+class JobsWaitingOverview extends BaseWidget
+>>>>>>> af4545e (.)
 {
     use FormatSeconds;
 
