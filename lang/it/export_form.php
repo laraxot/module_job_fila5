@@ -8,10 +8,14 @@ return [
             'label' => 'name',
             'placeholder' => 'name',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'helper_text' => '',
 =======
             'helper_text' => 'name',
 >>>>>>> laraxot/dev
+=======
+            'helper_text' => '',
+>>>>>>> 899602c6 (.)
             'description' => 'name',
         ],
     ],

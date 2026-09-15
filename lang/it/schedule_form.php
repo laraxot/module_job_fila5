@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 899602c6 (.)
         'command' => ['label' => 'command', 'placeholder' => 'command', 'helper_text' => '', 'description' => 'command'],
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => '', 'description' => 'params'],
         'name' => ['label' => 'name', 'placeholder' => 'name', 'helper_text' => '', 'description' => 'name'],
@@ -25,6 +28,7 @@ return [
         'without_overlapping' => ['label' => 'without_overlapping', 'placeholder' => 'without_overlapping', 'helper_text' => '', 'description' => 'without_overlapping'],
         'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => '', 'description' => 'on_one_server'],
         'run_in_background' => ['label' => 'run_in_background', 'placeholder' => 'run_in_background', 'helper_text' => '', 'description' => 'run_in_background'],
+<<<<<<< HEAD
 =======
         'command' => ['label' => 'command', 'placeholder' => 'command', 'helper_text' => 'command', 'description' => 'command'],
         'params' => ['label' => 'params', 'placeholder' => 'params', 'helper_text' => 'params', 'description' => 'params'],
@@ -47,6 +51,8 @@ return [
         'on_one_server' => ['label' => 'on_one_server', 'placeholder' => 'on_one_server', 'helper_text' => 'on_one_server', 'description' => 'on_one_server'],
         'run_in_background' => ['label' => 'run_in_background', 'placeholder' => 'run_in_background', 'helper_text' => 'run_in_background', 'description' => 'run_in_background'],
 >>>>>>> laraxot/dev
+=======
+>>>>>>> 899602c6 (.)
     ],
     'sections' => [
         'empty' => ['label' => 'empty', 'heading' => 'empty'],
