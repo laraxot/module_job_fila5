@@ -18,7 +18,6 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class SchedulesTable extends XotBaseResourceTable
 {
-<<<<<<< HEAD
     /**
      * @var class-string<Schedule>
      */
@@ -27,8 +26,6 @@ class SchedulesTable extends XotBaseResourceTable
     /**
      * @return array<string, Column>
      */
-=======
->>>>>>> af4545e (.)
     public function getTableColumns(): array
     {
         return [
@@ -41,12 +38,9 @@ class SchedulesTable extends XotBaseResourceTable
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
-=======
->>>>>>> af4545e (.)
     public function getTableActions(): array
     {
         return [
@@ -65,12 +59,9 @@ class SchedulesTable extends XotBaseResourceTable
         ];
     }
 
-<<<<<<< HEAD
     /**
      * @return array<string, mixed>
      */
-=======
->>>>>>> af4545e (.)
     public function getTableBulkActions(): array
     {
         return [

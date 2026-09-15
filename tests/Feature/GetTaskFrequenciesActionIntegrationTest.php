@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -18,15 +11,7 @@ uses(\Modules\Job\Tests\TestCase::class);
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
         /** @var TestCase $this */
-<<<<<<< HEAD
-<<<<<<< HEAD
-        $this->action = new GetTaskFrequenciesAction;
-=======
         $this->action = new GetTaskFrequenciesAction();
->>>>>>> f0c10529 (.)
-=======
-        $this->action = new GetTaskFrequenciesAction;
->>>>>>> af4545e (.)
     });
 
     it('returns array when config exists', function () {
@@ -187,8 +172,4 @@ describe('GetTaskFrequenciesAction Integration', function () {
         Assert::assertSame('Monthly', $result['monthly'] ?? null);
         Assert::assertSame('Yearly', $result['yearly'] ?? null);
     });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> af4545e (.)

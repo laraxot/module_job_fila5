@@ -4,18 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
 class ScheduleArguments extends XotBaseTextColumn
-=======
-use Filament\Tables\Columns\TextColumn;
-use Webmozart\Assert\Assert;
-
-class ScheduleArguments extends TextColumn
->>>>>>> laraxot/dev
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 
@@ -86,36 +79,12 @@ class ScheduleArguments extends TextColumn
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
-<<<<<<< HEAD
                         $val = SafeStringCastAction::cast($value['value'] ?? null);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        $val = isset($value['value']) ? (string) Assert::scalar($value['value']) : '';
-=======
-                        $val = isset($value['value']) ? (string) $value['value'] : '';
->>>>>>> f0c10529 (.)
-=======
-                        $val = isset($value['value']) ? (string) $value['value'] : '';
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
 
                         return $name.'='.$val;
                     }
 
-<<<<<<< HEAD
                     return (string) $key.'='.SafeStringCastAction::cast($value);
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    return (string) $key.'='.(string) Assert::scalar($value);
-=======
-                    return (string) $key.'='.(string) $value;
->>>>>>> f0c10529 (.)
-=======
-                    return (string) $key.'='.(string) $value;
->>>>>>> af4545e (.)
->>>>>>> laraxot/dev
                 },
             )
             ->values()
@@ -125,13 +94,8 @@ class ScheduleArguments extends TextColumn
     /**
      * Filter out empty tags from the array.
      *
-<<<<<<< HEAD
      * @param  list<string>  $tags
      * @return list<string>
-=======
-     * @param  array<int, string>  $tags
-     * @return array<int, string>
->>>>>>> laraxot/dev
      */
     protected function filterEmptyTags(array $tags): array
     {
