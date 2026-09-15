@@ -13,11 +13,7 @@ class JobDatabaseSeeder extends Seeder
 {
     public function run(): void
     {
-<<<<<<< HEAD
         $this->command->info('JobDatabaseSeeder: entity seeders…');
-=======
-        $this->command?->info('JobDatabaseSeeder: entity seeders…');
->>>>>>> af4545e (.)
 
         $this->call([
             ExportSeeder::class,
@@ -37,10 +33,6 @@ class JobDatabaseSeeder extends Seeder
             TaskCommentSeeder::class,
         ]);
 
-<<<<<<< HEAD
         $this->command->info('JobDatabaseSeeder: completato.');
-=======
-        $this->command?->info('JobDatabaseSeeder: completato.');
->>>>>>> af4545e (.)
     }
 }
