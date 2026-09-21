@@ -8,4 +8,4 @@ related:
 
 # UX
 
-Nessuna regressione visiva: queste classi non sono montate. Queue UI resta il widget esistente.
+Unico impatto visivo possibile: `job.status` è il body della pagina `JobMonitor` (`job::admin`). Il ritiro Cluster B sostituisce quel contenuto con la pagina nativa `JobStatus` (stessa tabella acts `queue:*`, stesso chrome Filament) → nessuna regressione percepita. `Schedule\*` e `Broad` non sono montati in nessuna UI raggiungibile: rimozione invisibile. Queue UI resta `QueueListenWidget`/`ClockWidget`.
