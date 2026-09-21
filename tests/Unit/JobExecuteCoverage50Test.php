@@ -32,7 +32,6 @@ use Modules\Job\Filament\Resources\JobManagerResource;
 use Modules\Job\Filament\Resources\JobResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource;
 use Modules\Job\Filament\Resources\ScheduleResource;
-use Modules\Job\Http\Livewire\Broad;
 use Modules\Job\Http\Requests\ScheduleRequest;
 use Modules\Job\Models\FailedJob;
 use Modules\Job\Models\Job;
@@ -299,10 +298,10 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $schedule->assertExitCode(0);
     });
 
-    test('Livewire Broad try flasha sessione senza dd', function (): void {
-        $component = new Broad();
-        $component->try();
-        Assert::assertTrue(session()->has('message'));
+    test('Http Livewire Broad e ritirato', function (): void {
+        $path = dirname(__DIR__, 2).'/app/Http/Livewire/Broad.php';
+        Assert::assertFileDoesNotExist($path);
+        Assert::assertFalse(class_exists(\Modules\Job\Http\Livewire\Broad::class, false));
     });
 
     test('modelli foglia espongono tabella', function (): void {
