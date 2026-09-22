@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Analisi Metodi Duplicati - Modulo Job"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "duplicate methods analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Analisi Metodi Duplicati - Modulo Job
 
 **Totale Gruppi di Duplicati**:

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Current State - Job"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "01 current state"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Current State - Job
 
 ## Baseline
