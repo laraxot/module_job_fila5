@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "MCP Server Configuration - Job Module"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "mcp configuration"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # MCP Server Configuration - Job Module
 
 
