@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "agents"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job

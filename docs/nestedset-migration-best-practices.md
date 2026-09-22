@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "NestedSet Migration Best Practices - Job Module"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "nestedset migration best practices"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview
