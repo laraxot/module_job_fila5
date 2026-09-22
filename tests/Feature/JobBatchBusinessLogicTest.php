@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Job\Models\Job;
 use Modules\Job\Models\JobBatch;
 use Modules\Job\Tests\TestCase;

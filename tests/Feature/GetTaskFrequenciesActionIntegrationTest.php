@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -11,7 +10,7 @@ uses(TestCase::class);
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
         /** @var TestCase $this */
-        $this->action = new GetTaskFrequenciesAction();
+        $this->action = new GetTaskFrequenciesAction;
     });
 
     it('returns array when config exists', function () {

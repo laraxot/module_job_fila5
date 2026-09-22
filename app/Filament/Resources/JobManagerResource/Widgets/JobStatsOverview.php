@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobManagerResource\Widgets;
 
@@ -51,7 +50,12 @@ class JobStatsOverview extends XotBaseStatsOverviewWidget
         }
 
         return [
-            Stat::make((string) __('jobs::translations.total_jobs'), (int) ($aggregatedInfo->count ?? 0)),
+            Stat::make(
+                (string) __('jobs::translations.total_jobs'),
+                $aggregatedInfo
+                    ? app(SafeEloquentCastAction::class)->getIntAttribute($aggregatedInfo, 'count', 0)
+                    : 0,
+            ),
             Stat::make((string) __('jobs::translations.execution_time'), (string) $totalTime),
             Stat::make((string) __('jobs::translations.average_time'), (string) $averageTime),
         ];

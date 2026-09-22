@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Testing Documentation"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "testing"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> af4545e (.)
 # Testing Documentation
 
 ## Overview
@@ -271,7 +274,7 @@ protected function createApplication()
 
 ### External Resources
 
-- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
