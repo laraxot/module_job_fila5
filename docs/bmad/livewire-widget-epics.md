@@ -13,5 +13,6 @@ Nessuna story di conversione: zero candidati Cluster A (vedi [livewire-inventory
 
 | ID | Intent | Status |
 |----|--------|--------|
-| 12.1 | Ritiro Broad + gate orfani Status/Crud | **da riaprire**: story `done` ma i file sono tornati su disco (git-clean = HEAD, restore 21/09 16:15) — `Broad`/`dd('fine')` di nuovo registrati |
+| 12.1 | Ritiro Broad + gate orfani Status/Crud | **done (ri-verificato 2026-09-22):** `Broad.php` assente, `_components.json` senza `broad`, `dd(` zero in Livewire |
 | 12.2 (proposta, docs only) | Ritiro Cluster B: `Job\Status` + `JobMonitor`/`job-monitor.blade.php` → pagina nativa `JobStatus` (decidere gap `saveEnv`/`dummyAction`) | candidate |
+| 12.3 | Marker conflitto README + igiene root | **done** — [story](./stories/12.3.root-hygiene-conflict-markers.story.md) |
