@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-# Job Module: Async Work & Scheduling
+# Job Module: Philosophy, Purpose, and Design Principles
 
 > **Background Task Orchestration** — Deferred work (exports, bulk operations, cron jobs), failure tracking, retry logic.
 
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 
 ## Zen
@@ -15,12 +11,6 @@
 Job module turns synchronous pain into async progress. No user waits for a 10-minute export; it queues, they get notified.
 
 ---
-<<<<<<< HEAD
-=======
-=======
->>>>>>> af4545e (.)
-# Job Module: Philosophy, Purpose, and Design Principles
->>>>>>> laraxot/dev
 
 ## Architecture (Quick)
 

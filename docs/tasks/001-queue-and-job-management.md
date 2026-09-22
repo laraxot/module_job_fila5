@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task 001: Implement Queue and Job Management System"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "001 queue and job management"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Task 001: Implement Queue and Job Management System
 
 ## Description

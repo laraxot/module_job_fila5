@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Job Module Analysis"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Job Module Analysis
 
 ## Overview

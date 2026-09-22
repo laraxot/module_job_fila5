@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Job Module Wiki Index"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "index"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Job Module Wiki Index
 
 > **Module**: Job
