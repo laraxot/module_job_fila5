@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Console/Commands/ScheduleClearCacheCommand.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Console\Commands;
 
@@ -28,9 +27,7 @@ class ScheduleClearCacheCommand extends Command
      */
     public function handle(): int
     {
-        /** @var ClearScheduleCacheAction $action */
-        $action = app(ClearScheduleCacheAction::class);
-        $action->execute();
+        app(ClearScheduleCacheAction::class)->execute();
         $this->info('Scheduling cache cleared.');
 
         return 0;
