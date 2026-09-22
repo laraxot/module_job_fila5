@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "Repo"
 module: "Job"
 type: concept
@@ -11,12 +10,3 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://github.com/mooxphp/jobs/tree/main
-
-=======
-module: theme
-topic: repo
-canonical: ../../../Themes/docs/shared-components/repo.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/repo.txt
->>>>>>> af4545e (.)
