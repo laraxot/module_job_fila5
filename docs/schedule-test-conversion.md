@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "ScheduleBusinessLogicTest Conversion - PHPUnit to Pest"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "schedule test conversion"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
 
 ## Problem

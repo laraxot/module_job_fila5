@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Queue"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "queue"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Queue
 
 ## Pacchetti Utilizzati
