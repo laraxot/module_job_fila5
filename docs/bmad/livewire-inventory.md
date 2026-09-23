@@ -2,7 +2,8 @@
 title: "Inventario Http/Livewire → Filament widget — Job"
 type: inventory
 module: Job
-status: approved
+status: verified
+updated: 2026-09-22
 track: campaign
 related:
   - ./livewire-widget-conversion.md
@@ -43,20 +44,15 @@ git status --short -- laravel/Modules/Job/app/Http/Livewire                # sta
 
 `Modules/Xot/app/Providers/XotBaseServiceProvider.php:140-145` chiama `registerLivewireComponents()` con `$prefix = ''` per ogni modulo. `RegisterLivewireComponentsAction.php:15-22` delega a `GetComponentsAction`, che calcola il nome con `Str::slug(Str::snake(...))` su path relativo + classe (`GetComponentsAction.php:83-95`) e lo registra via `Livewire::component($comp->name, $comp->ns)` — **registro globale piatto**, nessun namespace `job::`. La cache su disco è `Modules/Job/app/Http/Livewire/_components.json`.
 
-Stato verificato di `_components.json` (484 byte, identico a HEAD): **4 alias registrati** — `broad` → `Modules\Job\Http\Livewire\Broad`, `job.status` → `...\Job\Status`, `schedule.crud` → `...\Schedule\Crud`, `schedule.status` → `...\Schedule\Status`.
+Stato verificato di `_components.json` (2026-09-22): **3 alias** — `job.status` → `Modules\Job\Http\Livewire\Job\Status`, `schedule.crud` → `...\Schedule\Crud`, `schedule.status` → `...\Schedule\Status`. Nessun alias `broad`.
 
-## Classi trovate (4 su tutto il modulo)
+## Classi trovate (3 su disco; Broad ritirato)
 
-### `Modules\Job\Http\Livewire\Broad`
+### `Modules\Job\Http\Livewire\Broad` — ritirato
 
-File: `app/Http/Livewire/Broad.php` (38 righe), vista `resources/views/livewire/broad.blade.php` (14 righe, un bottone `wire:click="try()"`).
+**Verificato 2026-09-22:** `app/Http/Livewire/Broad.php` assente; `resources/views/livewire/broad.blade.php` assente; `_components.json` elenca solo `job.status`, `schedule.crud`, `schedule.status`. `rg 'dd\\(' app/Http/Livewire` = zero. Story [12.1](../stories/12.1.retire-job-http-livewire.story.md) resta `done`.
 
-- `extends \Livewire\Component` (riga 11); listener Echo `echo:public,PublicEvent` → `notifyEvent` (righe 16-18).
-- `render()` (righe 21-26) risolve la vista via `GetViewAction` → `job::livewire.broad` (derivazione vista: `GetViewAction.php:30-60`).
-- `try()` (righe 28-34) dispatch `PublicEvent`.
-- `notifyEvent()` (righe 36-41): `session()->flash(...)` seguito da **`dd('fine')` alla riga 39** — terminazione del processo se l'evento broadcast arriva.
-
-⚠️ **Regressione rilevata rispetto alla story 12.1.** La story [12.1.retire-job-http-livewire](../stories/12.1.retire-job-http-livewire.story.md) (status `done`, AC #1 "Broad.php assente") dichiara il ritiro di PHP + vista + entry `_components.json`. Al momento di questo audit (21/09/2026, ore ~16:17) tutti e tre gli artefatti **sono di nuovo presenti su disco e git-clean** — cioè identici a HEAD, quindi la cancellazione non è mai stata committata oppure è stata ripristinata (mtime dei tre file: 21/09 16:15:02, identici → restore atomico tipo `git checkout`). Anche il test è tornato alla versione HEAD: `tests/Unit/JobExecuteCoverage50Test.php:35` importa `Broad`, riga 303 fa `new Broad()` (non la `class_exists(..., false)` che la story dice di aver scritto). `Broad` è quindi **registrato e pericoloso oggi**: l'alias `broad` è nel registro globale e `dd('fine')` è raggiungibile da un evento Echo pubblico, anche se nessuna vista lo monta.
+Un audit del 21/09 aveva visto i tre artefatti tornare sul disco (restore vs HEAD). Lo stato attuale **non** li contiene.
 
 ### `Modules\Job\Http\Livewire\Job\Status`
 

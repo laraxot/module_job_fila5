@@ -149,7 +149,7 @@ tests/AuditCoverage/
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
-graphify-out
+graphify-out/
 
 # Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
 /rector.php
@@ -162,3 +162,6 @@ graphify-out
 /.vscode/
 .cursor~*
 .windsurf~*
+
+# Runtime PID files (never track process ids)
+*.pid
