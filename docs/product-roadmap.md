@@ -112,6 +112,11 @@ To build a **comprehensive job queue and background processing system** that ens
 ---
 
 *Last Updated: March 12, 2026*
+
+---
+
+## Versione italiana (roadmap con maturita' stimata)
+
 # Job - Product Roadmap
 
 > Documento vivente. Modulo.
