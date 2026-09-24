@@ -265,12 +265,16 @@ it('can handle task status transitions', function (): void {
 
     // Testiamo solo il campo is_active che esiste veramente
     Assert::assertSame(1, $task->is_active);
-    // Cambia is_active a 0
-    $task->update(['is_active' => 0]);
-    Assert::assertSame(0, $task->is_active);
-    // Ripristina is_active a 1
-    $task->update(['is_active' => 1]);
-    Assert::assertSame(1, $task->is_active);
+    // Cambia is_active a 0 e verifica lo stato persistito
+    Assert::assertTrue($task->update(['is_active' => 0]));
+    $deactivated = $task->fresh();
+    Assert::assertInstanceOf(Task::class, $deactivated);
+    Assert::assertSame(0, $deactivated->is_active);
+    // Ripristina is_active a 1 e verifica lo stato persistito
+    Assert::assertTrue($deactivated->update(['is_active' => 1]));
+    $reactivated = $deactivated->fresh();
+    Assert::assertInstanceOf(Task::class, $reactivated);
+    Assert::assertSame(1, $reactivated->is_active);
 });
 
 it('can handle task ordering and sorting', function (): void {
