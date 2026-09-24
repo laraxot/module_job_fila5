@@ -1,16 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_Pic8Dd
-=======
-<<<<<<< .merge_file_4s7vx6
-=======
-<<<<<<< .merge_file_w19LLz
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_IFiEcm
->>>>>>> .merge_file_S4ZDMO
->>>>>>> .merge_file_H8V7gy
 return [
     'fields' => [
         'id' => [
