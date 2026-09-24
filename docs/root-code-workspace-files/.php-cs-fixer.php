@@ -1,8 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_IzGBOl
 
 
+=======
+>>>>>>> .merge_file_fRK70z
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')

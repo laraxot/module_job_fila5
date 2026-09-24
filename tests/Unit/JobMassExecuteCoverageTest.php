@@ -9,7 +9,11 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_H8hfsa
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+uses(TestCase::class)->group('no-job-db');
+>>>>>>> .merge_file_zfYJME
 
 afterEach(function (): void {
     Mockery::close();

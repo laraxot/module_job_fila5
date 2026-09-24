@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_UrgPjw
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_expREb
 return [
     'fields' => [
         'id' => [

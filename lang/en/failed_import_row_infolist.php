@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_xSTdU9
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_GOrTR8
 return [
     'fields' => [
         'id' => [

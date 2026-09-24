@@ -57,7 +57,11 @@ describe('Job ScheduleForm full schema coverage', function (): void {
             }
         });
 
+<<<<<<< .merge_file_8XkPf9
         $schema = (new ScheduleForm())->getFormSchema();
+=======
+        $schema = (new ScheduleForm)->getFormSchema();
+>>>>>>> .merge_file_Dpkm0K
         Assert::assertArrayHasKey('main_section', $schema);
 
         // Invoke nested closures via ModuleRemainingCoverage-style property walk
@@ -86,6 +90,14 @@ describe('Job ScheduleForm full schema coverage', function (): void {
     });
 });
 
+<<<<<<< .merge_file_8XkPf9
+=======
+/**
+ * Percorre ricorsivamente il grafo di $value invocando le Closure trovate.
+ *
+ * @param  mixed  $value  Nodo eterogeneo del grafo: Closure|array|object|scalar|null.
+ */
+>>>>>>> .merge_file_Dpkm0K
 function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 0): void
 {
     if ($depth > 8) {

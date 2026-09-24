@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_XnYQgQ
 
+=======
+>>>>>>> .merge_file_yZNEKF
 use function Safe\define;
 
 // use Nwidart\Modules\Contracts\RepositoryInterface;

@@ -9,7 +9,11 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_hAaQRa
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+uses(TestCase::class)->group('no-job-db');
+>>>>>>> .merge_file_mrjIqw
 
 /** @return array{0: string, 1: string} */
 /** @return list{string, string} */
@@ -21,7 +25,11 @@ function jobDeepContext(): array
 describe('Job deep coverage — execute code paths', function (): void {
     test('GetTaskFrequenciesAction execute returns config array', function (): void {
         config(['totem.frequencies' => ['daily' => 'Daily']]);
+<<<<<<< .merge_file_hAaQRa
         $result = (new GetTaskFrequenciesAction())->execute();
+=======
+        $result = (new GetTaskFrequenciesAction)->execute();
+>>>>>>> .merge_file_mrjIqw
         Assert::assertSame(['daily' => 'Daily'], $result);
     });
 
