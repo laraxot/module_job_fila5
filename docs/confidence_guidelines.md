@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_oRnxzB
+=======
 ---
 title: "Massimizzare il livello di confidenza"
 module: "Job"
@@ -9,6 +11,7 @@ qmd: "confidence guidelines"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+>>>>>>> .merge_file_JNxUpb
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

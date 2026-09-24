@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_9lIA7I
+=======
 ---
 title: "Root files hygiene"
 module: "Job"
@@ -9,6 +11,7 @@ qmd: "root files hygiene"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+>>>>>>> .merge_file_V48RUH
 # Root files hygiene
 
 ## 2026-07-08 16:51

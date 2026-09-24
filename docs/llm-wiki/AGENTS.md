@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_KKL6rF
+=======
 ---
 title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Job"
@@ -155,6 +157,7 @@ Related:
 
 ## Contenuto assorbito da `agents.md`
 
+>>>>>>> .merge_file_x63EMp
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job
