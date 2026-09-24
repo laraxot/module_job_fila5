@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_KYF3vY
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_YeKvE0
 return [
     'fields' => [
         'import_class' => [
