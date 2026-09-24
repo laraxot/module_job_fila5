@@ -86,14 +86,11 @@ describe('Job ScheduleForm full schema coverage', function (): void {
     });
 });
 
-<<<<<<< .merge_file_14GfiI
 /**
  * Percorre ricorsivamente il grafo di $value invocando le Closure trovate.
  *
  * @param  mixed  $value  Nodo eterogeneo del grafo: Closure|array|object|scalar|null.
  */
-=======
->>>>>>> .merge_file_cV2xS1
 function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 0): void
 {
     if ($depth > 8) {

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Product Strategy: Job Module"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Product Strategy: Job Module
 
 ## 🌍 Market Context

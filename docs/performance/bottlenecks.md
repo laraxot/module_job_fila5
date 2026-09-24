@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Job Module Performance Bottlenecks"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "bottlenecks"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Job Module Performance Bottlenecks
 
 ## Queue Management

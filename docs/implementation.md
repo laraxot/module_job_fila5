@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Implementazione Job"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "implementation"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Implementazione Job
 
 ## Struttura del Codice
