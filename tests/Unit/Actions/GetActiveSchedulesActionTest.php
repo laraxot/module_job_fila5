@@ -9,7 +9,11 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< .merge_file_S2RPQW
+uses(\Modules\Job\Tests\TestCase::class);
+=======
 uses(TestCase::class);
+>>>>>>> .merge_file_KdYrn9
 
 describe('GetActiveSchedulesAction', function () {
     it('can be instantiated', function () {
