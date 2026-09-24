@@ -3,6 +3,19 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Services;
+<<<<<<< .merge_file_9coosJ
+=======
+<<<<<<< .merge_file_q2At3I
+>>>>>>> .merge_file_5FIy2A
+use Modules\Job\Services\ScheduleService;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Safe\file_get_contents;
+
+uses(\Modules\Job\Tests\TestCase::class);
+<<<<<<< .merge_file_9coosJ
+=======
+=======
 
 use Modules\Job\Services\ScheduleService;
 use Modules\Job\Tests\TestCase;
@@ -11,6 +24,8 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
+>>>>>>> .merge_file_tu4hat
+>>>>>>> .merge_file_5FIy2A
 
 describe('ScheduleService', function () {
     it('can be instantiated', function () {

@@ -1,6 +1,26 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_OjFxWv
+
+
+=======
+<<<<<<< .merge_file_xlol1D
+
+
+=======
+<<<<<<< .merge_file_bNIXCh
+
+
+=======
+<<<<<<< .merge_file_IzGBOl
+
+
+=======
+>>>>>>> .merge_file_fRK70z
+>>>>>>> .merge_file_o3CeHO
+>>>>>>> .merge_file_711Q0M
+>>>>>>> .merge_file_dyBRXE
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
