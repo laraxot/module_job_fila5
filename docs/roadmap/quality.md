@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Checklist qualità - Job Module"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "quality"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Checklist qualità - Job Module
 
 - [x] PHPStan Level 10
