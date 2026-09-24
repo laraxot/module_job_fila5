@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_6Jatxl
 declare(strict_types=1);
 
-=======
->>>>>>> .merge_file_PrJRIL
 return [
     'fields' => [
         'id' => [

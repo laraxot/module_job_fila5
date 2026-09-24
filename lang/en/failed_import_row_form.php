@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_ozr78A
 declare(strict_types=1);
 
-=======
->>>>>>> .merge_file_JXQ8ow
 return [
     'fields' => [
         'import_class' => [
