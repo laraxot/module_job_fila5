@@ -43,19 +43,7 @@ describe('ScheduleForm coverage', function (): void {
         expectMethod($action, 'execute')->andReturn($commands);
         app()->instance(GetCommandsAction::class, $action);
 
-<<<<<<< .merge_file_uzSVrb
         $schema = (new ScheduleForm())->getFormSchema();
-=======
-<<<<<<< .merge_file_Bved79
-        $schema = (new ScheduleForm())->getFormSchema();
-=======
-<<<<<<< .merge_file_n0Ce4n
-        $schema = (new ScheduleForm())->getFormSchema();
-=======
-        $schema = (new ScheduleForm)->getFormSchema();
->>>>>>> .merge_file_WMThEc
->>>>>>> .merge_file_ohlYiO
->>>>>>> .merge_file_3XTCTS
         Assert::assertArrayHasKey('main_section', $schema);
         Assert::assertNotEmpty($schema);
     });
