@@ -19,6 +19,7 @@ related:
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 [![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 
 > **Heavy work off the request.** Queues, batches, retries — fast UX under load.
 
@@ -49,7 +50,7 @@ Geocoding, exports, bulk notifications must not block users.
 
 Scale **without fear** — async done right.
 
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [Xot frontend-stack-canonical](../../Xot/docs/wiki/rules/frontend-stack-canonical.md) (the STORY-133 file it in turn links to does not exist yet in this repo).
+Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
 
 ---
 
@@ -63,4 +64,4 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 
 ---
 
-**Module** `job` · **Laraxot** · PHPStan 10 · Filament 5
+**Module** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

@@ -76,7 +76,3 @@ Implement core job queue infrastructure with basic processing and retry capabili
 ---
 
 *Last Updated: March 12, 2026*
-# Sprint Planning: Job Module
-
-## 🏁 Sprint Goal
-Finalize documentation and validation for Job.

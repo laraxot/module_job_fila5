@@ -195,7 +195,6 @@ public function __construct(string $output)
 
 ### **Documentazione Correlata**
 - [README.md Modulo Job](README.md)
-- [README.md Modulo Job](./readme.md)
 - [Queue Management](./queue/readme.md)
 - [Best Practices](./best-practices.md)
 

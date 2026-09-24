@@ -1,6 +1,18 @@
-# Job — Documentation index
+---
+title: "Job Module Documentation"
+module: "Job"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "index"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+# Job Module Documentation
 
-Bridge stub. The curated, verified index for this module's docs is
-[00-index.md](./00-index.md); read that first.
+Modulo: Job
 
-See also the wiki entry point: [wiki/index.md](./wiki/index.md).
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
