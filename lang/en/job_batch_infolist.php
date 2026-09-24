@@ -1,10 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_mIzpni
 declare(strict_types=1);
 
-=======
->>>>>>> .merge_file_OBmqaG
 return [
     'fields' => [
         'id' => [
