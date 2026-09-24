@@ -1,5 +1,4 @@
-<<<<<<< .merge_file_E2EfTF
-=======
+<<<<<<< HEAD
 ---
 title: "Job Module - User Research"
 module: "Job"
@@ -11,7 +10,8 @@ qmd: "user research"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
->>>>>>> .merge_file_F1Jzf6
+=======
+>>>>>>> af4545e (.)
 # Job Module - User Research
 
 **Module:** Job  
