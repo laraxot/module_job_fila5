@@ -9,7 +9,11 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< .merge_file_GsZV9E
+uses(\Modules\Job\Tests\TestCase::class);
+=======
 uses(TestCase::class);
+>>>>>>> .merge_file_NZLVHz
 
 describe('ClearScheduleCacheAction', function () {
     it('can be instantiated', function () {

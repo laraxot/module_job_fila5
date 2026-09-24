@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_DDG6xV
+=======
 ---
 title: "Optimization"
 module: "Job"
@@ -9,5 +11,6 @@ qmd: "optimization"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+>>>>>>> .merge_file_FLHJjs
 https://filamentphp.com/community/danharrin-fast-table-pagination
 
