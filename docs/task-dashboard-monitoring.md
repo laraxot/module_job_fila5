@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Migliorare Dashboard Monitoring - Job"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "task dashboard monitoring"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Task: Migliorare Dashboard Monitoring - Job
 
 **Modulo**: Job

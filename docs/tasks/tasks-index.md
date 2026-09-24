@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Indice task - Modulo Job"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "tasks index"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Indice task - Modulo Job
 
 Lista dei task del modulo. Ogni task può essere un file .md separato nella cartella `tasks/`. Dettagli dalla [roadmap](../roadmap.md).

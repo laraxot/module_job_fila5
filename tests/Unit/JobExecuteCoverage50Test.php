@@ -73,12 +73,6 @@ function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): 
     return $expectation;
 }
 
-<<<<<<< .merge_file_eioB5y
-=======
-use function Safe\ob_get_clean;
-use function Safe\ob_start;
-
->>>>>>> .merge_file_BSbCSm
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
 
 afterEach(function (): void {
@@ -131,11 +125,6 @@ describe('Job execute coverage — Filament resources', function (): void {
             Assert::assertTrue(class_exists($classe::getModel()));
         }
     });
-<<<<<<< .merge_file_eioB5y
-=======
-
-    
->>>>>>> .merge_file_BSbCSm
 });
 
 describe('Job execute coverage — policies', function (): void {

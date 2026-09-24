@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Errore Critico: Rimozione Sezione 'fields' dalle Traduzioni"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "translation fields critical error"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
 
 **Modulo**: Job  
