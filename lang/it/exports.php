@@ -2,20 +2,22 @@
 
 declare(strict_types=1);
 
-// Job translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
-// claude-audit static: ≥5% comment lines on files >100 LOC.
-// Canon: Modules/Job/docs/wiki — domain i18n only.
-// File: lang/it/exports.php
 return [
     'fields' => [
-        'id' => [
-            'label' => 'id',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
+        'id' => ['label' => 'id'],
+        'name' => ['label' => 'name'],
+        'created_at' => ['label' => 'created_at'],
+        'file_name' => ['label' => 'file_name'],
+        'processed_rows' => ['label' => 'processed_rows'],
+        'total_rows' => ['label' => 'total_rows'],
+        'successful_rows' => ['label' => 'successful_rows'],
+        'completed_at' => ['label' => 'completed_at'],
+    ],
+    'actions' => [
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'edit' => ['label' => 'edit', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
     ],
 ];

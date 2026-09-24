@@ -22,11 +22,71 @@ This document describes the core architectural patterns used in the Job module f
 
 **Purpose:** Execute long-running operations asynchronously while keeping the request-response cycle fast.
 
+<<<<<<< .merge_file_zZwdBE
+=======
+<<<<<<< .merge_file_RKwqpf
+**Correction (2026-09-17):** the example below previously showed a plain Laravel
+`ShouldQueue` job (`Dispatchable, SerializesModels`, `handle()`). That is *not*
+what this module actually uses. Every real action under `app/Actions/` (e.g.
+`app/Actions/Schedule/GetActiveSchedulesAction.php`) follows Spatie's
+`QueueableAction` package instead — no `ShouldQueue` interface, an `execute()`
+method rather than `handle()`, dispatched via `app(SomeAction::class)->onQueue()->execute(...)`.
+This also matches the repo-wide no-Services rule (`wiki/concepts/no-services-no-support-queueable-actions.md`).
+
+=======
+>>>>>>> .merge_file_nl3QdF
+>>>>>>> .merge_file_xvjnHF
 ### Structure
 
 ```php
 <?php
 
+<<<<<<< .merge_file_zZwdBE
+=======
+<<<<<<< .merge_file_RKwqpf
+declare(strict_types=1);
+
+namespace Modules\Job\Actions;
+
+use Spatie\QueueableAction\QueueableAction;
+
+class ProcessLargeExportAction
+{
+    use QueueableAction;
+
+    public function __construct(
+        private int $datasetId,
+        private string $format = 'csv',
+    ) {}
+
+    public function execute(): void
+    {
+        // Processing logic here — reload data from the database using the
+        // serialized IDs above; do not pass full models into the constructor.
+    }
+}
+```
+
+Call it synchronously with `app(ProcessLargeExportAction::class)->execute(...)`,
+or queue it with `->onQueue('jobs')->execute(...)` — `QueueableAction` decides
+whether `execute()` runs inline or gets dispatched as a job based on that call.
+
+### Implementation Checklist
+
+- [ ] Use the `Spatie\QueueableAction\QueueableAction` trait, not `ShouldQueue`
+- [ ] Expose a single public `execute()` method (constructor for dependencies/config)
+- [ ] Serialize only essential data (IDs, not full models) in the constructor
+- [ ] Call `->onQueue(...)` at the call site when the action should run async
+- [ ] Add monitoring/logging for start/completion inside `execute()`
+
+### Best Practices
+
+1. **Serialize IDs, not objects:** Pass only identifiers; reload from database in `execute()`
+2. **One action, one job:** Keep `execute()` focused — no unrelated side effects
+3. **Handle failures gracefully:** Wrap risky calls in try/catch and log with context, don't swallow errors
+4. **Test synchronously first:** Call `execute()` directly in tests to isolate logic from the queue
+=======
+>>>>>>> .merge_file_xvjnHF
 namespace Modules\Job\Actions;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -67,6 +127,10 @@ class ProcessLargeExportAction implements ShouldQueue
 2. **Set appropriate timeouts:** Long jobs should have explicit `$timeout` values
 3. **Handle failures gracefully:** Use `failed()` method for exception handling
 4. **Test synchronously first:** Test action logic without queue to isolate bugs
+<<<<<<< .merge_file_zZwdBE
+=======
+>>>>>>> .merge_file_nl3QdF
+>>>>>>> .merge_file_xvjnHF
 
 ---
 
