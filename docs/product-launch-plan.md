@@ -92,6 +92,11 @@ related:
 ---
 
 *Last Updated: March 12, 2026*
+
+---
+
+## Versione italiana (piano di lancio con readiness stimata)
+
 # Job - Product Launch Plan
 
 > Piano di lancio. Modulo.
