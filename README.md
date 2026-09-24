@@ -1,56 +1,47 @@
+---
+id: module-job-readme
+title: "Job — Gestione dei Lavori Asincroni"
+type: module-readme
+category: module-documentation
+module: Job
+status: active
+tags: [job, queue, async, retries]
+created: 2026-09-14
+updated: 2026-09-22
+qmd: "job queue async actions retries module documentation"
+issues:
+  - "https://github.com/laraxot/module_job_fila5/issues/54"
+  - "https://github.com/laraxot/module_job_fila5/issues/59"
+discussions:
+  - "https://github.com/laraxot/module_job_fila5/discussions/55"
+related:
+  - "./docs/architecture.md"
+  - "./docs/bmad/livewire-inventory.md"
+  - "./docs/stories/12.1.retire-job-http-livewire.story.md"
+sources: []
+---
+
 # ⚙️ Job
 
-[![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
-[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+> **Gestione dei lavori asincroni.**
 
-> **Lavoro pesante fuori dalla request.** Code, batch, retry — UX veloce anche sotto carico.
+Pattern per job, code e monitoraggio delle elaborazioni differite.
 
----
+## Cosa offre
 
-## Perché esiste
+- **Job Laravel** – definizione e scheduling
+- **Azioni accodabili** – azioni da eseguire dopo completamento
+- **Retry e stato** – gestione fallimenti e riorganizzazione
+- **Activity/Notify** – integrazione con altri moduli
 
-Geocoding, export, notifiche bulk non devono bloccare l’utente.
+## Confini architetturali
 
-## Superpoteri
+```bash
+cd laravel
+php artisan module:list
+./vendor/bin/phpstan analyse Modules/Job
+```
 
-- Job e queue Laravel
-- Integrazione Horizon-ready
-- Monitoring Filament
-- Pattern idempotenti
+See [architecture](./docs/architecture.md) and [livewire inventory](./docs/bmad/livewire-inventory.md).
 
-## Certificazioni
-
-| Certificazione | Stato |
-|----------------|-------|
-| PHPStan livello 10 | Target progetto |
-| `declare(strict_types=1)` | Su nuovo codice PHP |
-| Filament 5 + XotBase | Admin enterprise |
-| Test PHPUnit / Pest | Suite modulo |
-| Documentazione wiki | Cartella `docs/` |
-
-## Vuoi entrare nel team?
-
-Scala **senza paura** — async fatto bene.
-
-Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
-
----
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
----
-
-**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+**Modulo** `job` · **Laraxot** · PHPStan max · Filament 5

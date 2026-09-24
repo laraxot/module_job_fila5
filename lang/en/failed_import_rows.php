@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< .merge_file_u3NSwf
+=======
+<<<<<<< .merge_file_UOEWQs
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_VRRVc4
+>>>>>>> .merge_file_WtrHCe
 return [
     'fields' => [
         'id' => [

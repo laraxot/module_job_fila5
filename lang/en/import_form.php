@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< .merge_file_g4WVDf
+=======
+<<<<<<< .merge_file_sdCPEB
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_BAVFRo
+>>>>>>> .merge_file_8yiddf
 return [
     'fields' => [
         'name' => [
