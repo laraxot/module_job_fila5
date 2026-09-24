@@ -8,13 +8,46 @@
 		"editor.formatOnSave": true,
 		"php-cs-fixer.onsave": true,
 		"php-cs-fixer.formatHtml": true,
+<<<<<<< .merge_file_ErG6a1
+=======
+<<<<<<< .merge_file_2JCa8p
+=======
+<<<<<<< .merge_file_UT7vp3
+>>>>>>> .merge_file_0MTzZH
+>>>>>>> .merge_file_A1uhmI
+		//"php-cs-fixer.config": "/var/.php_cs",
+		"//vscode-php-cs-fixer.config": "/var/.php_cs",
+		//"php-cs-fixer.configFile": "/var/.php_cs",
 		"php-cs-fixer.executable": "php-cs-fixer",
+		//"php-cs-fixer.executablePath": "/var/php-cs-fixer.phar",
+		//"php-cs-fixer.executablePathWindows": "/var/php-cs-fixer.phar",
+<<<<<<< .merge_file_ErG6a1
+=======
+<<<<<<< .merge_file_2JCa8p
+=======
+=======
+		"php-cs-fixer.executable": "php-cs-fixer",
+>>>>>>> .merge_file_sbBCPs
+>>>>>>> .merge_file_0MTzZH
+>>>>>>> .merge_file_A1uhmI
 		"php-cs-fixer.executablePath":"",
 		"php-cs-fixer.executablePathWindows": "php-cs-fixer.bat",
 		"vscode-php-cs-fixer.allowRisky": true,
 		"phpmd.enabled": false,
 		"phpmd.validate.rulesets": "cleancode,codesize,controversial,design,naming,unusedcode",
+<<<<<<< .merge_file_ErG6a1
+		"phpmd.SuppressWarnings":true,
+=======
+<<<<<<< .merge_file_2JCa8p
+		"phpmd.SuppressWarnings":true,
+=======
+<<<<<<< .merge_file_UT7vp3
+		"phpmd.SuppressWarnings":true,
+=======
 		"phpmd.SuppressWarnings": true,
+>>>>>>> .merge_file_sbBCPs
+>>>>>>> .merge_file_0MTzZH
+>>>>>>> .merge_file_A1uhmI
 		"phpmd.verbose": false,
 		"php-cs-fixer.allowRisky": true,
 		"editor.defaultFormatter": "junstyle.php-cs-fixer",
@@ -31,4 +64,16 @@
 		"editor.wordWrapColumn": 120,
 		"git.autofetch": "all"
 	}
+<<<<<<< .merge_file_ErG6a1
 }
+=======
+<<<<<<< .merge_file_2JCa8p
+}
+=======
+<<<<<<< .merge_file_UT7vp3
+}
+=======
+}
+>>>>>>> .merge_file_sbBCPs
+>>>>>>> .merge_file_0MTzZH
+>>>>>>> .merge_file_A1uhmI

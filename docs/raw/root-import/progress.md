@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_NhdXxd
+=======
 ---
 title: "Progress"
 module: "Job"
@@ -9,5 +11,6 @@ qmd: "progress"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+>>>>>>> .merge_file_LxAnNG
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
 
