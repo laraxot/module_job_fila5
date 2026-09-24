@@ -19,6 +19,17 @@ The Job module handles background jobs, task scheduling, and queue management.
 - Filament Admin
 - Spatie Activity Log
 
+<<<<<<< .merge_file_xC836g
+=======
+<<<<<<< .merge_file_NKg4uQ
+See also:
+- Filament integration: `docs/wiki/concepts/Job-filament-integration.md`
+- Schedule/Cron: `docs/wiki/how-to/Job-schedule-cron.md`
+- WebSocket support: `docs/wiki/how-to/Job-websocket-soketi.md`
+- Storage servers: `docs/wiki/how-to/Job-storage-server.md`
+- Optimization: `docs/wiki/tips/Job-optimization-tips.md`
+=======
+>>>>>>> .merge_file_p7XBLx
 See also (paths below are relative to this `docs/` folder — the previous
 `docs/wiki/...` prefixes pointed one level too deep and at filenames that were
 never created):
@@ -27,3 +38,7 @@ never created):
 - WebSocket support: [soketi.md](./soketi.md)
 - Storage servers: [storage-server.md](./storage-server.md)
 - Optimization: [wiki/tips/optimization-tips.md](./wiki/tips/optimization-tips.md)
+<<<<<<< .merge_file_xC836g
+=======
+>>>>>>> .merge_file_3e7z8i
+>>>>>>> .merge_file_p7XBLx

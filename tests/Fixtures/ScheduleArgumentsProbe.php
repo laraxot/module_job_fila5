@@ -20,9 +20,27 @@ use Modules\Job\Filament\Columns\ScheduleArguments;
  */
 final class ScheduleArgumentsProbe extends ScheduleArguments
 {
+<<<<<<< .merge_file_SVQdjV
     public mixed $fakeState = null;
 
     public function getState(): mixed
+=======
+<<<<<<< .merge_file_239ZE0
+    public mixed $fakeState = null;
+
+    public function getState(): mixed
+=======
+    /**
+     * @var array<int|string, mixed>|string|null
+     */
+    public array|string|null $fakeState = null;
+
+    /**
+     * @return array<int|string, mixed>|string|null
+     */
+    public function getState(): array|string|null
+>>>>>>> .merge_file_jay0ar
+>>>>>>> .merge_file_oVuCcy
     {
         return $this->fakeState;
     }

@@ -22,6 +22,7 @@ This document describes the core architectural patterns used in the Job module f
 
 **Purpose:** Execute long-running operations asynchronously while keeping the request-response cycle fast.
 
+<<<<<<< .merge_file_RKwqpf
 **Correction (2026-09-17):** the example below previously showed a plain Laravel
 `ShouldQueue` job (`Dispatchable, SerializesModels`, `handle()`). That is *not*
 what this module actually uses. Every real action under `app/Actions/` (e.g.
@@ -30,11 +31,14 @@ what this module actually uses. Every real action under `app/Actions/` (e.g.
 method rather than `handle()`, dispatched via `app(SomeAction::class)->onQueue()->execute(...)`.
 This also matches the repo-wide no-Services rule (`wiki/concepts/no-services-no-support-queueable-actions.md`).
 
+=======
+>>>>>>> .merge_file_nl3QdF
 ### Structure
 
 ```php
 <?php
 
+<<<<<<< .merge_file_RKwqpf
 declare(strict_types=1);
 
 namespace Modules\Job\Actions;
@@ -76,6 +80,48 @@ whether `execute()` runs inline or gets dispatched as a job based on that call.
 2. **One action, one job:** Keep `execute()` focused — no unrelated side effects
 3. **Handle failures gracefully:** Wrap risky calls in try/catch and log with context, don't swallow errors
 4. **Test synchronously first:** Call `execute()` directly in tests to isolate logic from the queue
+=======
+namespace Modules\Job\Actions;
+
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Foundation\Bus\Dispatchable;
+
+class ProcessLargeExportAction implements ShouldQueue
+{
+    use Dispatchable, SerializesModels;
+
+    public function __construct(
+        private int $datasetId,
+        private string $format = 'csv'
+    ) {}
+
+    public function handle(): void
+    {
+        // Processing logic here
+        $data = collect()->range(0, 10000)->map(fn($i) => $i * 2);
+        // Write to storage, send notification, etc.
+    }
+}
+```
+
+### Implementation Checklist
+
+- [ ] Implement `ShouldQueue` interface
+- [ ] Use `Dispatchable` trait for `.dispatch()` method
+- [ ] Serialize only essential data (IDs, not full models)
+- [ ] Use `SerializesModels` for Eloquent models if needed
+- [ ] Add timeout configuration in job's `$timeout` property
+- [ ] Implement retry logic with `$maxExceptions`, `$tries`
+- [ ] Add monitoring/logging for job start/completion
+
+### Best Practices
+
+1. **Serialize IDs, not objects:** Pass only identifiers; reload from database in `handle()`
+2. **Set appropriate timeouts:** Long jobs should have explicit `$timeout` values
+3. **Handle failures gracefully:** Use `failed()` method for exception handling
+4. **Test synchronously first:** Test action logic without queue to isolate bugs
+>>>>>>> .merge_file_nl3QdF
 
 ---
 
