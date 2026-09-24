@@ -1,14 +1,3 @@
----
-title: "Soluzioni Tecniche - Modulo Job"
-module: "Job"
-type: concept
-tags: [solutions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "solutions"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni
@@ -183,7 +172,7 @@ class Job extends Model {
 
 ### 1. Cache Configuration
 ```php
-// In: Modules/Job/config/cache.php
+// In: Modules/Job/Config/cache.php
 return [
     'ttl' => [
         'job_status' => 300,      // 5 minutes
