@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_ZIdGeg
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_k8oAgv
 return [
     'fields' => [
         'uuid' => [

@@ -1,5 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_sdCPEB
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_BAVFRo
 return [
     'fields' => [
         'name' => [
