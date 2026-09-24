@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_zdTl9N
+=======
+---
+title: "Links"
+module: "Job"
+type: concept
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> .merge_file_xdLaDo
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 

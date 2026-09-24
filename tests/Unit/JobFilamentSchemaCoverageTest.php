@@ -10,7 +10,11 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 
+<<<<<<< .merge_file_WhLYCL
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+uses(TestCase::class)->group('no-job-db');
+>>>>>>> .merge_file_dIuybp
 
 /** @return list{string, string} */
 function jobFilamentContext(): array
