@@ -1,0 +1,41 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Job\Tests\Unit\Actions\Schedule;
+
+use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
+use Modules\Job\Actions\Schedule\GetActiveSchedulesAction;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use Spatie\QueueableAction\QueueableAction;
+
+<<<<<<< .merge_file_BvXVqU
+uses(\Modules\Job\Tests\TestCase::class);
+=======
+<<<<<<< .merge_file_xwnCfn
+uses(\Modules\Job\Tests\TestCase::class);
+=======
+<<<<<<< .merge_file_TuTYzr
+uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> .merge_file_D4uC5y
+>>>>>>> .merge_file_KLZZbg
+>>>>>>> .merge_file_2IgO8T
+
+describe('Schedule Actions', function () {
+    it('GetActiveSchedulesAction uses QueueableAction and has execute method', function () {
+        $reflection = new \ReflectionClass(GetActiveSchedulesAction::class);
+        Assert::assertTrue($reflection->isInstantiable());
+        Assert::assertTrue($reflection->hasMethod('execute'));
+        Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
+    });
+
+    it('ClearScheduleCacheAction uses QueueableAction and has execute method', function () {
+        $reflection = new \ReflectionClass(ClearScheduleCacheAction::class);
+        Assert::assertTrue($reflection->isInstantiable());
+        Assert::assertTrue($reflection->hasMethod('execute'));
+        Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
+    });
+});
