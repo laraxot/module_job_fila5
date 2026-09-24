@@ -18,7 +18,7 @@ Il modulo Job è responsabile della gestione dei processi in background e delle 
 
 ```
 Job/
-├── Config/
+├── config/
 │   └── config.php           # Configurazione base del modulo
 ├── Http/
 │   └── Controllers/

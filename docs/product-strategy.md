@@ -100,6 +100,11 @@ Easy to use and operate.
 ---
 
 *Last Updated: March 12, 2026*
+
+---
+
+## Versione italiana (strategia con allineamento stimato)
+
 # Job - Product Strategy
 
 > Strategia prodotto. Modulo.

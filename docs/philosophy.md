@@ -109,4 +109,5 @@ Retry (exponential backoff) or DLQ
 ---
 
 - **Generated**: 2026-09-06
-- **Resolved (conflict markers removed)**: 2026-09-17
+- **Author**: Claude (eccentrico mode)
+

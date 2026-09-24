@@ -22,60 +22,51 @@ This document describes the core architectural patterns used in the Job module f
 
 **Purpose:** Execute long-running operations asynchronously while keeping the request-response cycle fast.
 
-**Correction (2026-09-17):** the example below previously showed a plain Laravel
-`ShouldQueue` job (`Dispatchable, SerializesModels`, `handle()`). That is *not*
-what this module actually uses. Every real action under `app/Actions/` (e.g.
-`app/Actions/Schedule/GetActiveSchedulesAction.php`) follows Spatie's
-`QueueableAction` package instead — no `ShouldQueue` interface, an `execute()`
-method rather than `handle()`, dispatched via `app(SomeAction::class)->onQueue()->execute(...)`.
-This also matches the repo-wide no-Services rule (`wiki/concepts/no-services-no-support-queueable-actions.md`).
-
 ### Structure
 
 ```php
 <?php
 
-declare(strict_types=1);
-
 namespace Modules\Job\Actions;
 
-use Spatie\QueueableAction\QueueableAction;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Foundation\Bus\Dispatchable;
 
-class ProcessLargeExportAction
+class ProcessLargeExportAction implements ShouldQueue
 {
-    use QueueableAction;
+    use Dispatchable, SerializesModels;
 
     public function __construct(
         private int $datasetId,
-        private string $format = 'csv',
+        private string $format = 'csv'
     ) {}
 
-    public function execute(): void
+    public function handle(): void
     {
-        // Processing logic here — reload data from the database using the
-        // serialized IDs above; do not pass full models into the constructor.
+        // Processing logic here
+        $data = collect()->range(0, 10000)->map(fn($i) => $i * 2);
+        // Write to storage, send notification, etc.
     }
 }
 ```
 
-Call it synchronously with `app(ProcessLargeExportAction::class)->execute(...)`,
-or queue it with `->onQueue('jobs')->execute(...)` — `QueueableAction` decides
-whether `execute()` runs inline or gets dispatched as a job based on that call.
-
 ### Implementation Checklist
 
-- [ ] Use the `Spatie\QueueableAction\QueueableAction` trait, not `ShouldQueue`
-- [ ] Expose a single public `execute()` method (constructor for dependencies/config)
-- [ ] Serialize only essential data (IDs, not full models) in the constructor
-- [ ] Call `->onQueue(...)` at the call site when the action should run async
-- [ ] Add monitoring/logging for start/completion inside `execute()`
+- [ ] Implement `ShouldQueue` interface
+- [ ] Use `Dispatchable` trait for `.dispatch()` method
+- [ ] Serialize only essential data (IDs, not full models)
+- [ ] Use `SerializesModels` for Eloquent models if needed
+- [ ] Add timeout configuration in job's `$timeout` property
+- [ ] Implement retry logic with `$maxExceptions`, `$tries`
+- [ ] Add monitoring/logging for job start/completion
 
 ### Best Practices
 
-1. **Serialize IDs, not objects:** Pass only identifiers; reload from database in `execute()`
-2. **One action, one job:** Keep `execute()` focused — no unrelated side effects
-3. **Handle failures gracefully:** Wrap risky calls in try/catch and log with context, don't swallow errors
-4. **Test synchronously first:** Call `execute()` directly in tests to isolate logic from the queue
+1. **Serialize IDs, not objects:** Pass only identifiers; reload from database in `handle()`
+2. **Set appropriate timeouts:** Long jobs should have explicit `$timeout` values
+3. **Handle failures gracefully:** Use `failed()` method for exception handling
+4. **Test synchronously first:** Test action logic without queue to isolate bugs
 
 ---
 

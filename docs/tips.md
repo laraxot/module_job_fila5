@@ -10,10 +10,3 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://dudi.dev/optimize-laravel-database-queries/
-
-module: theme
-topic: tips
-canonical: ../../../Themes/docs/shared-components/tips.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/tips.txt

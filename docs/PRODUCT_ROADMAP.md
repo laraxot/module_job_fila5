@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_GP3Qw7
+=======
+---
+title: "Job Module - Product Roadmap"
+module: "Job"
+type: concept
+tags: [PRODUCT, ROADMAP]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "product roadmap"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> .merge_file_iHWJaN
 # Job Module - Product Roadmap
 
 **Module:** Job  
