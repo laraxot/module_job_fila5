@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_hTmlUL
+=======
 ---
 title: "Metodi duplicati — Job"
 module: "Job"
@@ -9,6 +11,7 @@ qmd: "duplicate methods"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+>>>>>>> .merge_file_ic68qX
 # Metodi duplicati — Job
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

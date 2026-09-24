@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_hMhfrY
+=======
 ---
 title: "Job Module - Roadmap"
 module: "Job"
@@ -9,6 +11,7 @@ qmd: "00 index"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+>>>>>>> .merge_file_UZJ6uR
 # Job Module - Roadmap
 
 > Infrastruttura robusta per code e processi in background.
