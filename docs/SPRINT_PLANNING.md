@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_uD4Gj8
+=======
+---
+title: "Job Module - Sprint Planning"
+module: "Job"
+type: concept
+tags: [SPRINT, PLANNING]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sprint planning"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> .merge_file_uPVgy1
 # Job Module - Sprint Planning
 
 **Module:** Job  

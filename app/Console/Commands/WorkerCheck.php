@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://gist.github.com/ivanvermeyen/b72061c5d70c61e86875
  * @see https://gist.github.com/BenCavens/810758e74718a981c4cd2d2cf532407e
@@ -51,12 +50,16 @@ class WorkerCheck extends Command
      */
     private function isQueueListenerRunning(): bool
     {
-        $pid = $this->getLastQueueListenerPID();
-        if ($pid === '' || $pid === '0' || $pid === false || $pid === null) {
+        if (
+            ($pid = $this->getLastQueueListenerPID()) === '' ||
+                ($pid = $this->getLastQueueListenerPID()) === '0' ||
+                ($pid = $this->getLastQueueListenerPID()) === false ||
+                ($pid = $this->getLastQueueListenerPID()) === null
+        ) {
             return false;
         }
 
-        $process_cmd = sprintf('ps -p %s -opid=,cmd=', escapeshellarg((string) $pid));
+        $process_cmd = sprintf('ps -p %s -opid=,cmd=', $pid);
         $this->comment($process_cmd);
         $output = null;
         $process = exec($process_cmd, $output);
@@ -122,9 +125,10 @@ class WorkerCheck extends Command
         // $command = 'php-cli ' . base_path() . '/artisan queue:listen --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!'; // 5.1
         // $command = 'php-cli '.base_path().'/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo //$!'; // 5.6 - see comments
 
-        $command = escapeshellarg(PHP_BINARY).' '.
-            escapeshellarg(base_path('artisan')).
-            ' queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!';
+        $command =
+            ' /usr/local/bin/php '.
+            base_path().
+            '/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!';
         // $this->comment($command);
 
         $pid = exec($command);

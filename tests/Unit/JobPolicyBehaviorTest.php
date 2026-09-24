@@ -30,7 +30,19 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_KybaGW
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+<<<<<<< .merge_file_NvkOKu
+uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+<<<<<<< .merge_file_qs8lsv
+uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+uses(TestCase::class)->group('no-job-db');
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
 
 /**
  * @param  list<string>  $permissions
@@ -73,7 +85,19 @@ function jobValidationFailure(?string &$message): \Closure
 }
 
 test('JobBasePolicy before concede tutto al super-admin e passa oltre altrimenti', function (): void {
+<<<<<<< .merge_file_KybaGW
     $policy = new TaskPolicy();
+=======
+<<<<<<< .merge_file_NvkOKu
+    $policy = new TaskPolicy();
+=======
+<<<<<<< .merge_file_qs8lsv
+    $policy = new TaskPolicy();
+=======
+    $policy = new TaskPolicy;
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
     $super = jobBehaviorUser([], ['super-admin']);
     Assert::assertTrue($policy->before($super, 'viewAny'));
 
@@ -83,8 +107,23 @@ test('JobBasePolicy before concede tutto al super-admin e passa oltre altrimenti
 });
 
 test('TaskPolicy rifiuta utente senza permessi e concede con permessi', function (): void {
+<<<<<<< .merge_file_KybaGW
     $policy = new TaskPolicy();
     $task = new Task();
+=======
+<<<<<<< .merge_file_NvkOKu
+    $policy = new TaskPolicy();
+    $task = new Task();
+=======
+<<<<<<< .merge_file_qs8lsv
+    $policy = new TaskPolicy();
+    $task = new Task();
+=======
+    $policy = new TaskPolicy;
+    $task = new Task;
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
     $denied = jobBehaviorUser();
     $allowed = jobBehaviorUser([
         'task.viewAny', 'task.view', 'task.create', 'task.update', 'task.delete',
@@ -105,8 +144,23 @@ test('TaskPolicy rifiuta utente senza permessi e concede con permessi', function
 });
 
 test('JobPolicy: viewAny e update sempre false; create true; team ops solo owner', function (): void {
+<<<<<<< .merge_file_KybaGW
     $policy = new JobPolicy();
     $team = new Team();
+=======
+<<<<<<< .merge_file_NvkOKu
+    $policy = new JobPolicy();
+    $team = new Team();
+=======
+<<<<<<< .merge_file_qs8lsv
+    $policy = new JobPolicy();
+    $team = new Team();
+=======
+    $policy = new JobPolicy;
+    $team = new Team;
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
     $outsider = jobBehaviorUser(ownsTeam: false, belongsToTeam: false);
     $member = jobBehaviorUser(ownsTeam: false, belongsToTeam: true);
     $owner = jobBehaviorUser(ownsTeam: true, belongsToTeam: true);
@@ -128,10 +182,29 @@ test('JobPolicy: viewAny e update sempre false; create true; team ops solo owner
 });
 
 test('Schedule e history policy rispettano permessi specifici', function (): void {
+<<<<<<< .merge_file_KybaGW
+=======
+<<<<<<< .merge_file_NvkOKu
+=======
+<<<<<<< .merge_file_qs8lsv
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
     $schedule = new Schedule();
     $history = new ScheduleHistory();
     $sp = new SchedulePolicy();
     $hp = new ScheduleHistoryPolicy();
+<<<<<<< .merge_file_KybaGW
+=======
+<<<<<<< .merge_file_NvkOKu
+=======
+=======
+    $schedule = new Schedule;
+    $history = new ScheduleHistory;
+    $sp = new SchedulePolicy;
+    $hp = new ScheduleHistoryPolicy;
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
 
     Assert::assertFalse($sp->viewAny(jobBehaviorUser()));
     Assert::assertTrue($sp->viewAny(jobBehaviorUser(['schedule.viewAny'])));
@@ -142,15 +215,45 @@ test('Schedule e history policy rispettano permessi specifici', function (): voi
 });
 
 test('TaskCommentPolicy deny/allow su permesso task_comment.view', function (): void {
+<<<<<<< .merge_file_KybaGW
     $policy = new TaskCommentPolicy();
     $comment = new TaskComment();
+=======
+<<<<<<< .merge_file_NvkOKu
+    $policy = new TaskCommentPolicy();
+    $comment = new TaskComment();
+=======
+<<<<<<< .merge_file_qs8lsv
+    $policy = new TaskCommentPolicy();
+    $comment = new TaskComment();
+=======
+    $policy = new TaskCommentPolicy;
+    $comment = new TaskComment;
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
     Assert::assertFalse($policy->view(jobBehaviorUser(), $comment));
     Assert::assertTrue($policy->view(jobBehaviorUser(['task_comment.view']), $comment));
 });
 
 test('FailedJobPolicy e JobBatchPolicy legano view al membership del team', function (): void {
+<<<<<<< .merge_file_KybaGW
     $team = new Team();
     foreach ([new FailedJobPolicy(), new JobBatchPolicy()] as $policy) {
+=======
+<<<<<<< .merge_file_NvkOKu
+    $team = new Team();
+    foreach ([new FailedJobPolicy(), new JobBatchPolicy()] as $policy) {
+=======
+<<<<<<< .merge_file_qs8lsv
+    $team = new Team();
+    foreach ([new FailedJobPolicy(), new JobBatchPolicy()] as $policy) {
+=======
+    $team = new Team;
+    foreach ([new FailedJobPolicy, new JobBatchPolicy] as $policy) {
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
         Assert::assertFalse($policy->viewAny(jobBehaviorUser(belongsToTeam: true)));
         Assert::assertTrue($policy->create(jobBehaviorUser()));
         Assert::assertFalse($policy->view(jobBehaviorUser(belongsToTeam: false), $team));
@@ -160,11 +263,31 @@ test('FailedJobPolicy e JobBatchPolicy legano view al membership del team', func
 
 test('Export Import JobsWaiting JobManager FailedImportRow: solo before super-admin (policy vuote)', function (): void {
     foreach ([
+<<<<<<< .merge_file_KybaGW
+=======
+<<<<<<< .merge_file_NvkOKu
+=======
+<<<<<<< .merge_file_qs8lsv
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
         new ExportPolicy(),
         new ImportPolicy(),
         new JobsWaitingPolicy(),
         new JobManagerPolicy(),
         new FailedImportRowPolicy(),
+<<<<<<< .merge_file_KybaGW
+=======
+<<<<<<< .merge_file_NvkOKu
+=======
+=======
+        new ExportPolicy,
+        new ImportPolicy,
+        new JobsWaitingPolicy,
+        new JobManagerPolicy,
+        new FailedImportRowPolicy,
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
     ] as $policy) {
         Assert::assertTrue($policy->before(jobBehaviorUser(roles: ['super-admin']), 'viewAny'));
         Assert::assertNull($policy->before(jobBehaviorUser(), 'viewAny'));
@@ -172,7 +295,19 @@ test('Export Import JobsWaiting JobManager FailedImportRow: solo before super-ad
 });
 
 test('Corn rule: rifiuta non-stringa e cron invalido; accetta espressione valida', function (): void {
+<<<<<<< .merge_file_KybaGW
     $rule = new Corn();
+=======
+<<<<<<< .merge_file_NvkOKu
+    $rule = new Corn();
+=======
+<<<<<<< .merge_file_qs8lsv
+    $rule = new Corn();
+=======
+    $rule = new Corn;
+>>>>>>> .merge_file_RnGmZt
+>>>>>>> .merge_file_MKNuE7
+>>>>>>> .merge_file_bjhURO
 
     $msg = null;
     $rule->validate('expression', 123, jobValidationFailure($msg));
