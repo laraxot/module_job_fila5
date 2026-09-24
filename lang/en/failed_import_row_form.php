@@ -1,16 +1,7 @@
 <?php
 
-<<<<<<< .merge_file_rorerg
-=======
-<<<<<<< .merge_file_Iu4q2D
-=======
-<<<<<<< .merge_file_KYF3vY
-=======
 declare(strict_types=1);
 
->>>>>>> .merge_file_YeKvE0
->>>>>>> .merge_file_e2k33b
->>>>>>> .merge_file_GGx40i
 return [
     'fields' => [
         'import_class' => [
