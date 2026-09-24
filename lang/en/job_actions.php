@@ -1,5 +1,13 @@
 <?php
 
+<<<<<<< .merge_file_L1c1jD
+=======
+<<<<<<< .merge_file_gukX7v
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_N3ytqk
+>>>>>>> .merge_file_iF9aQ2
 return [
     'actions' => [
         'create' => [

@@ -1,3 +1,20 @@
+<<<<<<< .merge_file_EtmQNk
+=======
+<<<<<<< .merge_file_e6jhfH
+=======
+---
+title: "⚙️ Job Module - Code Quality Analysis Report"
+module: "Job"
+type: concept
+tags: [code, quality, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "code quality analysis "
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> .merge_file_DSLHnd
+>>>>>>> .merge_file_nl1NWH
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
