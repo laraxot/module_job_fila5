@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+// Job translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Job/docs/wiki — domain i18n only.
+// File: lang/it/job_batches.php
+return [
+    'fields' => [
+        'id' => [
+            'label' => 'id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'total_jobs' => [
+            'label' => 'total_jobs',
+        ],
+        'pending_jobs' => [
+            'label' => 'pending_jobs',
+        ],
+        'failed_jobs' => [
+            'label' => 'failed_jobs',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+    ],
+];
