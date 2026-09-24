@@ -8,18 +8,11 @@ use PHPUnit\Framework\Assert;
 use function Safe\class_uses;
 use function Safe\file_get_contents;
 
-uses(TestCase::class);
-// Laraxot — see module docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
-// Laraxot module file — see docs/wiki for domain contract.
+uses(\Modules\Job\Tests\TestCase::class);
 
 describe('GetTaskFrequenciesAction', function (): void {
     test('can be instantiated', function (): void {
-        $action = new GetTaskFrequenciesAction;
+        $action = new GetTaskFrequenciesAction();
         Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $action);
     });
 

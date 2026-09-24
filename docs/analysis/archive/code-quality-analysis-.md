@@ -1,4 +1,11 @@
+<<<<<<< .merge_file_U2nfhJ
 <<<<<<< HEAD
+=======
+<<<<<<< .merge_file_EtmQNk
+=======
+<<<<<<< .merge_file_e6jhfH
+=======
+>>>>>>> .merge_file_kMtWkl
 ---
 title: "⚙️ Job Module - Code Quality Analysis Report"
 module: "Job"
@@ -10,8 +17,13 @@ qmd: "code quality analysis "
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+<<<<<<< .merge_file_U2nfhJ
 =======
 >>>>>>> laraxot/dev
+=======
+>>>>>>> .merge_file_DSLHnd
+>>>>>>> .merge_file_nl1NWH
+>>>>>>> .merge_file_kMtWkl
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
