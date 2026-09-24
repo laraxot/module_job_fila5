@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
@@ -8,7 +9,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-uses(TestCase::class);
+uses(\Modules\Job\Tests\TestCase::class);
 
 it('can create task with basic information', function (): void {
     /** @var TestCase $this */

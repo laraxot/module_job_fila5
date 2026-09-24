@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_9xWUP9
-=======
 ---
 title: "Test3"
 module: "Job"
@@ -11,5 +9,4 @@ qmd: "test3"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
->>>>>>> .merge_file_fqmXAz
 aa
