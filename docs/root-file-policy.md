@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_d53nOU
+=======
+---
+title: "Root file policy"
+module: "Job"
+type: rule
+tags: [root, file, policy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "root file policy"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+>>>>>>> .merge_file_3q8wB0
 # Root file policy
 
 Updated: 2026-07-08
