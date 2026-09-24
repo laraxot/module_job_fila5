@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 Job Module Documentation Index
 
 **Last updated:** 2026-07-28
@@ -173,3 +174,12 @@
 **Document:** INDEX.md  
 **Collection:** Job Module Documentation  
 **Status:** Active (updated 2026-07-28)
+=======
+# Documentation Index
+
+Modulo: Job
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
+>>>>>>> af4545e (.)

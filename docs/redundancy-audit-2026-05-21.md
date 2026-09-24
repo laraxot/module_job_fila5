@@ -13,11 +13,7 @@ related:
 Static metrics: 956 files scanned, 6 case-only groups, 49 duplicate hash groups, 0 duplicate FQCN.
 
 Findings:
-<<<<<<< .merge_file_ZHpsuN
 - `Config/` and `config/` contain case-only duplicate config files.
-=======
-- `Config/` and `config/` contain case-only duplicate config files. **Risolto**: `Config/` (maiuscolo) eliminato — vedi `docs/stories/uppercase-root-dir-config-regression.story.md`; resta solo `config/` (minuscolo, canonico).
->>>>>>> .merge_file_wVlNQ7
 - Docs include duplicate active/archive pages for Filament migration, schedules, optimization, PHPStan fixes, and integration notes.
 - `artisan.md` exists at module root and under `docs/`.
 - `.github` files have case-only duplicates.
