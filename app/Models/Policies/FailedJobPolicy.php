@@ -4,33 +4,75 @@ declare(strict_types=1);
 
 namespace Modules\Job\Models\Policies;
 
-use Modules\Job\Models\FailedJob;
+use Modules\User\Models\Policies\UserBasePolicy;
+use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 
-class FailedJobPolicy extends JobBasePolicy
+class FailedJobPolicy extends UserBasePolicy
 {
+    /**
+     * Determine whether the user can view any models.
+     */
     public function viewAny(UserContract $user): bool
     {
-        return $user->hasPermissionTo('failed_job.viewAny');
+        return false;
     }
 
-    public function view(UserContract $user, FailedJob $_failedJob): bool
+    /**
+     * Determine whether the user can view the model.
+     */
+    public function view(UserContract $user, Team $team): bool
     {
-        return $user->hasPermissionTo('failed_job.view');
+        return $user->belongsToTeam($team);
     }
 
-    public function create(UserContract $user): bool
+    /**
+     * Determine whether the user can create models.
+     */
+    public function create(UserContract $_user): bool
     {
-        return $user->hasPermissionTo('failed_job.create');
+        return true;
     }
 
-    public function update(UserContract $user, FailedJob $_failedJob): bool
+    /**
+     * Determine whether the user can update the model.
+     */
+    // public function update(UserContract $user, Team $team): bool
+    public function update(UserContract $_user): bool
     {
-        return $user->hasPermissionTo('failed_job.update');
+        // return $user->ownsTeam($team);
+        return false;
     }
 
-    public function delete(UserContract $user, FailedJob $_failedJob): bool
+    /**
+     * Determine whether the user can add team members.
+     */
+    public function addTeamMember(UserContract $user, Team $team): bool
     {
-        return $user->hasPermissionTo('failed_job.delete');
+        return $user->ownsTeam($team);
+    }
+
+    /**
+     * Determine whether the user can update team member permissions.
+     */
+    public function updateTeamMember(UserContract $user, Team $team): bool
+    {
+        return $user->ownsTeam($team);
+    }
+
+    /**
+     * Determine whether the user can remove team members.
+     */
+    public function removeTeamMember(UserContract $user, Team $team): bool
+    {
+        return $user->ownsTeam($team);
+    }
+
+    /**
+     * Determine whether the user can delete the model.
+     */
+    public function delete(UserContract $user, Team $team): bool
+    {
+        return $user->ownsTeam($team);
     }
 }

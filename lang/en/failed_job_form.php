@@ -1,5 +1,16 @@
 <?php
 
+<<<<<<< .merge_file_JG5nwo
+=======
+<<<<<<< .merge_file_HqAuLz
+=======
+<<<<<<< .merge_file_ZIdGeg
+=======
+declare(strict_types=1);
+
+>>>>>>> .merge_file_k8oAgv
+>>>>>>> .merge_file_Mi4vcl
+>>>>>>> .merge_file_uRWiCz
 return [
     'fields' => [
         'uuid' => [

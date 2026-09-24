@@ -1,3 +1,14 @@
+---
+title: "Storage Server"
+module: "Job"
+type: concept
+tags: [storage, server]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "storage server"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage
@@ -38,8 +49,3 @@ Minio
 https://laravel-news.com/minio-s3-compliant-storage
 https://github.com/amincheloh/cookbook/blob/master/docs/how-to-use-minio-as-laravel-file-storage.md
 ------------------------------------------------
-
-
-
-
-
