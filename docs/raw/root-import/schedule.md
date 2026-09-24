@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_tPdr22
+=======
 ---
 title: "Schedule"
 module: "Job"
@@ -9,6 +11,7 @@ qmd: "schedule"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+>>>>>>> .merge_file_FhW6zJ
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring

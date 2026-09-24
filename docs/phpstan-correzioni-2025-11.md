@@ -1,3 +1,5 @@
+<<<<<<< .merge_file_6uC5Ps
+=======
 ---
 title: "Correzioni PHPStan Livello 10 - Modulo Job"
 type: concept
@@ -6,6 +8,7 @@ created: 2026-07-14
 updated: 2025-11-05
 qmd: "phpstan correzioni 2025 11"
 ---
+>>>>>>> .merge_file_eKGnYJ
 # Correzioni PHPStan Livello 10 - Modulo Job
 **Data**: 2025-11-05  
 **Errori iniziali**: 31  
@@ -415,3 +418,7 @@ fn (ModelType $item): ReturnType => ...
 ---
 
 **Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
+<<<<<<< .merge_file_6uC5Ps
+
+=======
+>>>>>>> .merge_file_eKGnYJ
