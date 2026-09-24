@@ -1,30 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< .merge_file_D163DO
-=======
-<<<<<<< .merge_file_4qtBUE
-=======
-<<<<<<< .merge_file_6soPix
->>>>>>> .merge_file_VlNeSY
->>>>>>> .merge_file_4DTZwV
 
-use Illuminate\Database\Schema\Blueprint;
-use Modules\Xot\Database\Migrations\XotBaseMigration;
-
-return new class() extends XotBaseMigration
-<<<<<<< .merge_file_D163DO
-=======
-<<<<<<< .merge_file_4qtBUE
-=======
-=======
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class extends XotBaseMigration
->>>>>>> .merge_file_PuWMZ9
->>>>>>> .merge_file_VlNeSY
->>>>>>> .merge_file_4DTZwV
 {
     /**
      * Run the migrations.
