@@ -24,11 +24,7 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_UBW8AK
 uses(TestCase::class)->group('no-job-db');
-=======
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
->>>>>>> .merge_file_pPPLtt
 
 /**
  * @param  list<string>  $permissions
