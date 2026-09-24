@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Task: Job Filament v5 Alignment (Clusters)"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "job filament v5"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 # Task: Job Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo

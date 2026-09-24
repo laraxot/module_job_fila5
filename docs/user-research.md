@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Job Module - User Research"
 module: "Job"
@@ -98,9 +97,3 @@ Proactive failure notification appreciated.
 ---
 
 *Last Updated: March 12, 2026*
-=======
-# User Research: Job Module
-
-## 🔬 Research Goals
-Identify user needs for Job functionality.
->>>>>>> af4545e (.)

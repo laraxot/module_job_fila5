@@ -7,14 +7,17 @@ module: Job
 status: active
 tags: [job, queue, async, retries]
 created: 2026-09-14
-updated: 2026-09-14
+updated: 2026-09-22
 qmd: "job queue async actions retries module documentation"
 issues:
   - "https://github.com/laraxot/module_job_fila5/issues/54"
+  - "https://github.com/laraxot/module_job_fila5/issues/59"
 discussions:
   - "https://github.com/laraxot/module_job_fila5/discussions/55"
 related:
-  - "./docs/"
+  - "./docs/architecture.md"
+  - "./docs/bmad/livewire-inventory.md"
+  - "./docs/stories/12.1.retire-job-http-livewire.story.md"
 sources: []
 ---
 
@@ -32,6 +35,7 @@ Pattern per job, code e monitoraggio delle elaborazioni differite.
 - **Activity/Notify** – integrazione con altri moduli
 
 ## Confini architetturali
+<<<<<<< .merge_file_DpyEPW
 
 Geocoding, export, notifiche bulk non devono bloccare l’utente. Il modulo Job fornisce un’infrastruttura robusta per l’esecuzione asincrona di attività lunghe, garantendo affidabilità, monitorabilità e scalabilità.
 
@@ -55,6 +59,8 @@ This module publishes contracts usable by other modules. Logic lives in `Actions
 - ✅ Monitoraggio in tempo reale
 
 ## Integrazione rapida
+=======
+>>>>>>> .merge_file_NVEaec
 
 ```bash
 cd laravel
@@ -62,6 +68,7 @@ php artisan module:list
 ./vendor/bin/phpstan analyse Modules/Job
 ```
 
+<<<<<<< .merge_file_DpyEPW
 See local docs for integration patterns.
 
 ## Documentazione
@@ -125,3 +132,8 @@ Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Modulo** `job` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+=======
+See [architecture](./docs/architecture.md) and [livewire inventory](./docs/bmad/livewire-inventory.md).
+
+**Modulo** `job` · **Laraxot** · PHPStan max · Filament 5
+>>>>>>> .merge_file_NVEaec

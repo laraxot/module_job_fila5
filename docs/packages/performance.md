@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Performance"
 module: "Job"
@@ -10,8 +9,6 @@ qmd: "performance"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-=======
->>>>>>> af4545e (.)
 ### Versione HEAD
 
 ### Versione HEAD

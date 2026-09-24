@@ -18,5 +18,7 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'forceDelete' => ['label' => 'forceDelete', 'icon' => 'forceDelete', 'tooltip' => 'forceDelete'],
         'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
+        'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
     ],
 ];
