@@ -8,7 +8,15 @@ use Modules\Job\Tests\Fixtures\ScheduleArgumentsProbe;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< .merge_file_nTPGsV
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+<<<<<<< .merge_file_VIT4y3
+uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> .merge_file_B5cd4m
+>>>>>>> .merge_file_Mp1tYM
 
 describe('ScheduleArguments::getTags()', function (): void {
     test('con stato ad array e withValue scarta le voci senza valore', function (): void {
