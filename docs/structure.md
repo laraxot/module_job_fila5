@@ -1,14 +1,3 @@
----
-title: "Struttura del Modulo Job"
-module: "Job"
-type: concept
-tags: [structure]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "structure"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
 # Struttura del Modulo Job
 
 ## Panoramica
@@ -18,7 +7,7 @@ Il modulo Job è responsabile della gestione dei processi in background e delle 
 
 ```
 Job/
-├── config/
+├── Config/
 │   └── config.php           # Configurazione base del modulo
 ├── Http/
 │   └── Controllers/
