@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_hXlDpS
 declare(strict_types=1);
 
+=======
+>>>>>>> .merge_file_UHhCdo
 return [
     'fields' => [
         'id' => [

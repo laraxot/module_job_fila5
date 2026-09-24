@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_h81JMa
 declare(strict_types=1);
 
+=======
+>>>>>>> .merge_file_WunrmR
 return [
     'actions' => [
         'create' => [

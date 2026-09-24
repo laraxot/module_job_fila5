@@ -1,5 +1,4 @@
-<<<<<<< .merge_file_kAqX3j
-=======
+<<<<<<< HEAD
 ---
 title: "Job Module - Product Strategy"
 module: "Job"
@@ -11,7 +10,8 @@ qmd: "product strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
->>>>>>> .merge_file_HqLlBo
+=======
+>>>>>>> af4545e (.)
 # Job Module - Product Strategy
 
 **Module:** Job  

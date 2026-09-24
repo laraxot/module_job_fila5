@@ -1,5 +1,4 @@
-<<<<<<< .merge_file_uD4Gj8
-=======
+<<<<<<< HEAD
 ---
 title: "Job Module - Sprint Planning"
 module: "Job"
@@ -11,7 +10,8 @@ qmd: "sprint planning"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
->>>>>>> .merge_file_uPVgy1
+=======
+>>>>>>> af4545e (.)
 # Job Module - Sprint Planning
 
 **Module:** Job  

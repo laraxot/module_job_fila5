@@ -1,7 +1,10 @@
 <?php
 
+<<<<<<< .merge_file_OSCuiO
 declare(strict_types=1);
 
+=======
+>>>>>>> .merge_file_4snf9p
 return [
     'fields' => [
         'uuid' => [
