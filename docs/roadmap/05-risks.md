@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Risks - Job"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Risks - Job
 
 ## Top Risks

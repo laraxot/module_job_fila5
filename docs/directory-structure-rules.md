@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Directory Structure Rules"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Directory Structure Rules
 
 Per il modulo Job valgono queste regole:

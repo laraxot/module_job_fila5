@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Job Module - User Research"
 module: "Job"
@@ -99,8 +100,13 @@ Proactive failure notification appreciated.
 
 *Last Updated: March 12, 2026*
 =======
+=======
+>>>>>>> laraxot/dev
 # User Research: Job Module
 
 ## 🔬 Research Goals
 Identify user needs for Job functionality.
+<<<<<<< HEAD
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Job Module Performance Bottlenecks"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Job Module Performance Bottlenecks
 
 ## Queue Management

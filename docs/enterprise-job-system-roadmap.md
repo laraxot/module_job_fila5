@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Job Module - Comprehensive Job Management System"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Job Module - Comprehensive Job Management System
 
 ## Overview

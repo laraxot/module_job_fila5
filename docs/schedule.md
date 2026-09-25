@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 <<<<<<< HEAD
 title: "Schedule"
@@ -10,6 +11,8 @@ qmd: "schedule"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring
@@ -41,6 +44,7 @@ https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
 
 
+<<<<<<< HEAD
 =======
 module: theme
 topic: schedule
@@ -49,3 +53,5 @@ canonical: ../../../Themes/docs/shared-components/schedule.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/schedule.txt
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev

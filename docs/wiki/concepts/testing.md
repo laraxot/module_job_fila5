@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Testing in Job"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Testing in Job
 
 Questo componente segue lo standard globale di progetto per il testing.

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "DRY & KISS Analysis - Modulo Job"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025
@@ -48,7 +51,11 @@ abstract class BaseModel extends XotBaseModel
 
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 =======
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 >>>>>>> af4545e (.)
+=======
+[DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+>>>>>>> laraxot/dev

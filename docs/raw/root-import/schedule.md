@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Schedule"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "schedule"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring

@@ -54,6 +54,7 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 #### `getActions` — 6 classi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Job` · `ActionGroup` · `Modules/Job/app/Filament/Columns/ActionGroup.php`
 =======
 <<<<<<< HEAD
@@ -61,6 +62,9 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 =======
 - `Job` · `ActionGroup` · `Modules/Job/app/Filament/Columns/ActionGroup.php`
 >>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
+=======
+- `Job` · `ActionGroup` · `Modules/Job/app/Filament/Columns/ActionGroup.php`
 >>>>>>> laraxot/dev
 - `Job` · `ActionGroup` · `Modules/Job/app/Filament/Tables/Columns/ActionGroup.php`
 
@@ -100,6 +104,7 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 #### `getTags` — 2 classi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
 =======
@@ -110,6 +115,10 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
 >>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
+=======
+- `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
+- `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
 >>>>>>> laraxot/dev
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`
@@ -122,6 +131,7 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 #### `withValue` — 2 classi
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
 =======
@@ -132,6 +142,10 @@ Hook Filament/Laravel ripetuti — **non** debito. Elenco omesso.
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
 >>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
+=======
+- `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Columns/ScheduleArguments.php`
+- `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Columns/ScheduleOptions.php`
 >>>>>>> laraxot/dev
 - `Job` · `ScheduleArguments` · `Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
 - `Job` · `ScheduleOptions` · `Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`

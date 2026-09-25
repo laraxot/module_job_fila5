@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Report: Metodi con nome duplicato nei moduli e nei temi"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

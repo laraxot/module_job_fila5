@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 <<<<<<< HEAD
 title: "Optimization"
@@ -20,3 +21,7 @@ canonical: ../../../Themes/docs/shared-components/optimization.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/optimization.txt
 >>>>>>> af4545e (.)
+=======
+https://filamentphp.com/community/danharrin-fast-table-pagination
+
+>>>>>>> laraxot/dev

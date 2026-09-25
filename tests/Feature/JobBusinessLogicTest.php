@@ -5,8 +5,12 @@ declare(strict_types=1);
 use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('Job Business Logic', function () {
     it('can instantiate job with basic attributes', function () {
@@ -117,7 +121,11 @@ describe('Job Business Logic', function () {
     });
 
     it('model has correct fillable attributes', function () {
+<<<<<<< HEAD
         $job = new Job();
+=======
+        $job = new Job;
+>>>>>>> laraxot/dev
         $fillable = $job->getFillable();
 
         Assert::assertContains('queue', $fillable);

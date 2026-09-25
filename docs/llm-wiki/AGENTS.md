@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job
@@ -152,6 +155,7 @@ Related:
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)
+<<<<<<< HEAD
 
 
 ---
@@ -298,3 +302,5 @@ Related:
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
 - [Module Documentation](../README.md)
+=======
+>>>>>>> laraxot/dev

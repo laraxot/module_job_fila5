@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Fasi di sviluppo - Job Module"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Fasi di sviluppo - Job Module
 
 ## Fase 1: Infrastruttura Core (Completata)

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Job Module - Product Strategy"
 module: "Job"
@@ -102,6 +103,8 @@ Easy to use and operate.
 
 *Last Updated: March 12, 2026*
 =======
+=======
+>>>>>>> laraxot/dev
 # Job - Product Strategy
 
 > Strategia prodotto. Modulo.
@@ -155,4 +158,7 @@ Portare **Job** a uno stato in cui il progetto ottiene un vantaggio netto e misu
 - Action-first: niente generic `Services` per la business logic
 - Standard operativo: `spatie/laravel-queueable-action`
 - Convenzione: Action con metodo `execute()` e dispatch tramite container
+<<<<<<< HEAD
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev

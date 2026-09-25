@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Ponytail audit — Job (over-engineering)"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Ponytail audit — Job (over-engineering)
 
 **Ultimo run:** 2026-06-30 (re-run #2)  

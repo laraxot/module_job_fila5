@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Links"
 module: "Job"
@@ -12,5 +13,7 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 https://gist.github.com/milon/5173255b58564a0e50548cfbe879181e
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "⚙️ Job Module - Code Quality Analysis Report"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11

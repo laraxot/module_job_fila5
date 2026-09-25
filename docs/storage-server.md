@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 <<<<<<< HEAD
 title: "Storage Server"
@@ -10,6 +11,8 @@ qmd: "storage server"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage
@@ -55,6 +58,7 @@ https://github.com/amincheloh/cookbook/blob/master/docs/how-to-use-minio-as-lara
 
 
 
+<<<<<<< HEAD
 =======
 module: theme
 topic: storage-server
@@ -63,3 +67,5 @@ canonical: ../../../Themes/docs/shared-components/storage-server-1.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/storage-server-1.md
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev

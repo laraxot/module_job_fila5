@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Job
 
 [![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()
@@ -52,6 +53,8 @@ Documentation should be:
 - Updated with code changes
 - Use Markdown format (.md)
 =======
+=======
+>>>>>>> laraxot/dev
 ---
 title: "Job Module Documentation"
 type: documentation
@@ -105,6 +108,10 @@ Job\Services\QueueManager
 ## Backlinks
 
 - [Queue Config](./queue/)
+<<<<<<< HEAD
 - [Failed Jobs](./failed/)
 >>>>>>> af4545e (.)
+>>>>>>> laraxot/dev
+=======
+- [Failed Jobs](./failed/)
 >>>>>>> laraxot/dev
