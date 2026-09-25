@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-title: "Navigation Translations Completion Roadmap - Job Module"
-module: "Job"
-type: concept
-tags: [navigation, translations, completion, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "navigation translations completion roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> af4545e (.)
-=======
->>>>>>> laraxot/dev
 # Navigation Translations Completion Roadmap - Job Module
 
 **Modulo**: Job  

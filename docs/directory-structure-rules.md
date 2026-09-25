@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-title: "Directory Structure Rules"
-module: "Job"
-type: rule
-tags: [directory, structure, rules]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "directory structure rules"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> af4545e (.)
-=======
->>>>>>> laraxot/dev
 # Directory Structure Rules
 
 Per il modulo Job valgono queste regole:

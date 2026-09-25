@@ -1,29 +1,3 @@
-<<<<<<< HEAD
-# Auto-generated forbidden paths — do not edit manually
-# Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
-
-bashscripts
-_bmad-output
-.circleci
-.claude-audit
-.devcontainer
-_docs
-docs/archive
-docs/archived
-docs/legacy
-docs/workbench
-.kilocode
-.kiro
-.ralph
-scripts
-test-results
-tests/.claude-audit
-# ==============================================
-# LARAXOT MODULE JOB - .GITIGNORE
-# Modulo Job Laraxot - Template standardizzato
-# Ultimo aggiornamento: 2025-01-06
-# DEPENDENCIES & PACKAGES
-=======
 # ==============================================
 # LARAXOT MODULE JOB - .GITIGNORE
 # ==============================================
@@ -34,33 +8,24 @@ tests/.claude-audit
 # ==============================================
 # DEPENDENCIES & PACKAGES
 # ==============================================
->>>>>>> laraxot/dev
 vendor/
 node_modules/
 package-lock.json
 yarn.lock
 composer.lock
-<<<<<<< HEAD
-# BUILD & COMPILED FILES
-=======
 
 # ==============================================
 # BUILD & COMPILED FILES
 # ==============================================
->>>>>>> laraxot/dev
 /build
 build/
 dist/
 docs/cache/
 cache/
-<<<<<<< HEAD
-# CACHE & TEMPORARY FILES
-=======
 
 # ==============================================
 # CACHE & TEMPORARY FILES
 # ==============================================
->>>>>>> laraxot/dev
 *.cache
 *.lock
 *.phar
@@ -73,27 +38,19 @@ cache/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
-<<<<<<< HEAD
-# LOG FILES
-=======
 
 # ==============================================
 # LOG FILES
 # ==============================================
->>>>>>> laraxot/dev
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
-<<<<<<< HEAD
-# LARAVEL SPECIFIC
-=======
 
 # ==============================================
 # LARAVEL SPECIFIC
 # ==============================================
->>>>>>> laraxot/dev
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -104,26 +61,15 @@ storage/*.key
 .env
 .env.*
 !.env.example
-<<<<<<< HEAD
-# ENVIRONMENT & CONFIGURATION
-=======
 
 # ==============================================
 # ENVIRONMENT & CONFIGURATION
 # ==============================================
->>>>>>> laraxot/dev
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
-<<<<<<< HEAD
-# GIT SPECIFIC
-.git-rewrite/
-.git-rewrite
-.git-blame-ignore-revs
-# SYSTEM FILES
-=======
 
 # ==============================================
 # GIT SPECIFIC
@@ -135,7 +81,6 @@ Homestead.json
 # ==============================================
 # SYSTEM FILES
 # ==============================================
->>>>>>> laraxot/dev
 .DS_Store
 .DS_Store?
 ._*
@@ -143,14 +88,10 @@ Homestead.json
 .Trashes
 ehthumbs.db
 Thumbs.db
-<<<<<<< HEAD
-# BACKUP FILES
-=======
 
 # ==============================================
 # BACKUP FILES
 # ==============================================
->>>>>>> laraxot/dev
 *.old
 *.old1
 *.old2
@@ -161,21 +102,12 @@ Thumbs.db
 *.bak
 *.bakcup
 *.new
-<<<<<<< HEAD
-# DEVELOPMENT TOOLS
-.windsurf/
-.cursor/
-.phpstorm.meta.php
-# DOCUMENTATION CACHE
-docs/phpstan/
-/docs/cache
-# OLD DIRECTORIES (LEGACY CLEANUP)
-=======
 
 # ==============================================
 # DEVELOPMENT TOOLS
 # ==============================================
 .windsurf/
+.cursor/
 .phpstorm.meta.php
 
 # ==============================================
@@ -190,7 +122,6 @@ docs/archive/**
 # ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
 # ==============================================
->>>>>>> laraxot/dev
 resources/views/Components_old/
 resources/views/Components_old
 database/Migrations_old/
@@ -202,19 +133,6 @@ database/Factories_old
 database/Factories_
 database_old/
 database_old
-<<<<<<< HEAD
-# MODULE SPECIFIC - JOB
-# File di configurazione locale
-config/local.php
-config/development.php
-# Queue e job
-storage/queue/
-storage/jobs/
-# File di test job
-job_test_data.json
-test_jobs.sql
-# END OF JOB .GITIGNORE
-=======
 
 # ==============================================
 # MODULE SPECIFIC - JOB
@@ -236,23 +154,17 @@ test_jobs.sql
 # ==============================================
 
 
->>>>>>> laraxot/dev
 # 🚫 File specifici del progetto
 *.fila2
 laravel
 public_html
 lang/lang/
-<<<<<<< HEAD
-# -----------------------------------------------------------------------------
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-=======
 _docs/
 _docs/
 
 # -----------------------------------------------------------------------------
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
 # -----------------------------------------------------------------------------
->>>>>>> laraxot/dev
 *~HEAD
 *~BASE
 *~LOCAL
@@ -260,61 +172,14 @@ _docs/
 *.orig
 *.rej
 *~head
-<<<<<<< HEAD
-# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
-lang/lang
-.vscode/
-tests/AuditCoverage
-# AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
-
-# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
-.devcontainer/
-tests/AuditCoverage/
-
-# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
-phpinsights.php
-rector.php
-graphify-out
-=======
 
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 docs/archive/agentdb.rvf
 lang/lang
+audit-coverage/
 tests/AuditCoverage/
 .claude-audit/
 .vscode/
 .devcontainer/
 .vscode/
->>>>>>> laraxot/dev
-
-# Agent tooling and local audit output
-
-# Module-local quality tool configuration
-.rector.php
-.phpinsights.php
-
-# Root agent tooling and PHP quality configuration
-/.agents/
-/.codex/
-/.cursor/
-/.opencode/
-/.qwen/
-/rector.php
-/phpinsights.php
-<<<<<<< HEAD
-/.cursor
-/.cursor/
-/.windsurf
-/.windsurf/
-/.vscode
-/.vscode/
-.cursor~*
-.windsurf~*
-=======
-/.php-cs-fixer.php
-/.php-cs-fixer.dist.php
-
-# Generated Claude audit coverage scaffold (never commit)
-/audit-coverage/
->>>>>>> laraxot/dev

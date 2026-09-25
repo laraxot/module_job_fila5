@@ -85,11 +85,7 @@ use Override;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-final class JobManager extends BaseModel
-=======
 class JobManager extends BaseModel
->>>>>>> laraxot/dev
 {
     // protected $table = 'job_manager';
 
@@ -105,16 +101,9 @@ class JobManager extends BaseModel
         'exception_message',
     ];
 
-<<<<<<< HEAD
-    public static function getJobId(JobContract $job): string
-    {
-        $jobId = $job->getJobId();
-        if ($jobId !== '') {
-=======
     public static function getJobId(JobContract $job): string|int
     {
         if ($jobId = $job->getJobId()) {
->>>>>>> laraxot/dev
             return $jobId;
         }
 
@@ -173,19 +162,6 @@ class JobManager extends BaseModel
         $query = $this->newQuery();
 
         if (config('jobs.pruning.activate')) {
-<<<<<<< HEAD
-            $retentionDays = config('jobs.pruning.retention_days');
-            if (! is_int($retentionDays)) {
-                $retentionDays = 365;
-            }
-
-            $query = self::query()->where('created_at', '<=', now()->subDays($retentionDays));
-
-            return $query;
-        }
-
-        return self::query()->whereNotNull('id');
-=======
             $retention_days = config('jobs.pruning.retention_days');
             if (! is_int($retention_days)) {
                 $retention_days = 365;
@@ -195,7 +171,6 @@ class JobManager extends BaseModel
         }
 
         return $query;
->>>>>>> laraxot/dev
     }
 
     #[Override]

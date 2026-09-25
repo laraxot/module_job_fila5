@@ -9,11 +9,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-<<<<<<< HEAD
-uses(\Modules\Job\Tests\TestCase::class);
-=======
 uses(TestCase::class);
->>>>>>> laraxot/dev
 
 it('can create task with basic information', function (): void {
     /** @var TestCase $this */
@@ -274,13 +270,9 @@ it('can handle task status transitions', function (): void {
     Assert::assertSame(0, $task->is_active);
     // Ripristina is_active a 1 e verifica il valore persistito
     $task->update(['is_active' => 1]);
-<<<<<<< HEAD
-    Assert::assertSame(1, $task->is_active);
-=======
     $reactivatedTask = $task->fresh();
     Assert::assertNotNull($reactivatedTask);
     Assert::assertSame(1, $reactivatedTask->is_active);
->>>>>>> laraxot/dev
 });
 
 it('can handle task ordering and sorting', function (): void {
