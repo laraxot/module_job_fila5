@@ -55,11 +55,7 @@ class ScheduleForm extends XotBaseResourceForm
                             static::$commands = app(GetCommandsAction::class)->execute();
                         }
                         Assert::isInstanceOf(
-<<<<<<< HEAD
-                            $command = static::$commands->toCollection()->where('name', $state)->first(),
-=======
                             $command = static::$commands->toCollection()->firstWhere('name', $state),
->>>>>>> laraxot/dev
                             CommandData::class,
                         );
                         $params = $command->arguments;
@@ -109,11 +105,7 @@ class ScheduleForm extends XotBaseResourceForm
                     ->reorderable(false),
                 TextInput::make('expression')
                     ->placeholder('* * * * *')
-<<<<<<< HEAD
-                    ->rules([new Corn()])
-=======
                     ->rules([new Corn])
->>>>>>> laraxot/dev
                     ->required(),
                 TagsInput::make('environments')->placeholder(null),
                 TextInput::make('log_filename'),

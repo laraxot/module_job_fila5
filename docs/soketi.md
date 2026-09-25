@@ -1,18 +1,3 @@
-<<<<<<< HEAD
----
-<<<<<<< HEAD
-title: "Soketi"
-module: "Job"
-type: concept
-tags: [soketi]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "soketi"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> laraxot/dev
 https://github.com/Safemood/REAL-TIME-LARAVEL-9-SOKETI/
 
 https://medium.com/@tthdvd/laravel-reactjs-soketi-triumvirates-step-by-step-guide-to-build-a-real-time-webapp-part-2-f1ed815ec539
@@ -45,14 +30,3 @@ https://www.youtube.com/watch?v=mDnsC-sfG7I
 
 
 
-<<<<<<< HEAD
-=======
-module: theme
-topic: soketi
-canonical: ../../../Themes/docs/shared-components/soketi.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/soketi.txt
->>>>>>> af4545e (.)
-=======
->>>>>>> laraxot/dev
