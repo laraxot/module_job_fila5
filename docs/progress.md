@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 <<<<<<< HEAD
 title: "Progress"
@@ -20,3 +21,7 @@ canonical: ../../../Themes/docs/shared-components/progress.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/progress.txt
 >>>>>>> af4545e (.)
+=======
+https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
+
+>>>>>>> laraxot/dev

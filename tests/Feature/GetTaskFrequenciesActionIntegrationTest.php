@@ -2,16 +2,28 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
+=======
+use Exception;
+>>>>>>> laraxot/dev
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $this->action = new GetTaskFrequenciesAction();
+=======
+        $this->action = new GetTaskFrequenciesAction;
+>>>>>>> laraxot/dev
     });
 
     it('returns array when config exists', function () {
@@ -37,7 +49,11 @@ describe('GetTaskFrequenciesAction Integration', function () {
     it('throws exception when config is not array', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => 'invalid_value']);
+<<<<<<< HEAD
         $this->expectApplicationException(\Exception::class);
+=======
+        $this->expectApplicationException(Exception::class);
+>>>>>>> laraxot/dev
         $action = $this->getAction(GetTaskFrequenciesAction::class);
         $action->execute();
     });
@@ -45,7 +61,11 @@ describe('GetTaskFrequenciesAction Integration', function () {
     it('throws exception when config is null', function () {
         /** @var TestCase $this */
         config(['totem.frequencies' => null]);
+<<<<<<< HEAD
         $this->expectApplicationException(\Exception::class);
+=======
+        $this->expectApplicationException(Exception::class);
+>>>>>>> laraxot/dev
         $action = $this->getAction(GetTaskFrequenciesAction::class);
         $action->execute();
     });

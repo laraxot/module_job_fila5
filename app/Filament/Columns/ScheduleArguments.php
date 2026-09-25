@@ -4,11 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
 class ScheduleArguments extends XotBaseTextColumn
+=======
+use Filament\Tables\Columns\TextColumn;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Webmozart\Assert\Assert;
+
+class ScheduleArguments extends TextColumn
+>>>>>>> laraxot/dev
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 
@@ -79,7 +87,11 @@ class ScheduleArguments extends XotBaseTextColumn
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
+<<<<<<< HEAD
                         $val = SafeStringCastAction::cast($value['value'] ?? null);
+=======
+                        $val = isset($value['value']) ? SafeStringCastAction::cast($value['value']) : '';
+>>>>>>> laraxot/dev
 
                         return $name.'='.$val;
                     }
@@ -94,8 +106,13 @@ class ScheduleArguments extends XotBaseTextColumn
     /**
      * Filter out empty tags from the array.
      *
+<<<<<<< HEAD
      * @param  list<string>  $tags
      * @return list<string>
+=======
+     * @param  array<int, string>  $tags
+     * @return array<int, string>
+>>>>>>> laraxot/dev
      */
     protected function filterEmptyTags(array $tags): array
     {

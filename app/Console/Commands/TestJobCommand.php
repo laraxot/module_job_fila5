@@ -29,6 +29,10 @@ class TestJobCommand extends Command
     public function handle(): int
     {
         $this->info('Hello the test worked.');
+<<<<<<< HEAD
+=======
+        Log::debug('Hello the test worked.');
+>>>>>>> laraxot/dev
 
         return 0;
     }

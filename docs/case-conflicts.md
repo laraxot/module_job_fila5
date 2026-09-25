@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Case-Insensitive File Conflicts"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Case-Insensitive File Conflicts
 
 File duplicati nel modulo `Job` che differiscono solo per la capitalizzazione:

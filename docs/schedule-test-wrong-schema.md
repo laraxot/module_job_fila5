@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "ScheduleBusinessLogicTest - Wrong Database Schema"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # ScheduleBusinessLogicTest - Wrong Database Schema
 
 ## Problem Discovery

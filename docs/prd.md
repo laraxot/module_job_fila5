@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "PRD - Job Module (2025-2026 Lean Standard)"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # PRD - Job Module (2025-2026 Lean Standard)
 
 ## 1. Problem Statement

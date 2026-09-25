@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "ScheduleBusinessLogicTest Conversion - PHPUnit to Pest"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
 
 ## Problem
