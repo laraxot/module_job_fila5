@@ -107,7 +107,6 @@ Thumbs.db
 # DEVELOPMENT TOOLS
 # ==============================================
 .windsurf/
-.cursor/
 .phpstorm.meta.php
 
 # ==============================================
@@ -177,9 +176,28 @@ _docs/
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 docs/archive/agentdb.rvf
 lang/lang
-audit-coverage/
 tests/AuditCoverage/
 .claude-audit/
 .vscode/
 .devcontainer/
 .vscode/
+
+# Agent tooling and local audit output
+
+# Module-local quality tool configuration
+.rector.php
+.phpinsights.php
+
+# Root agent tooling and PHP quality configuration
+/.agents/
+/.codex/
+/.cursor/
+/.opencode/
+/.qwen/
+/rector.php
+/phpinsights.php
+/.php-cs-fixer.php
+/.php-cs-fixer.dist.php
+
+# Generated Claude audit coverage scaffold (never commit)
+/audit-coverage/
