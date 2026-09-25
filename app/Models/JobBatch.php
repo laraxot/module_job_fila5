@@ -55,11 +55,7 @@ use Override;
  */
 class JobBatch extends BaseModel
 {
-<<<<<<< HEAD
     public const ?string UPDATED_AT = null;
-=======
-    public const UPDATED_AT = null;
->>>>>>> laraxot/dev
 
     public $incrementing = false;
 
