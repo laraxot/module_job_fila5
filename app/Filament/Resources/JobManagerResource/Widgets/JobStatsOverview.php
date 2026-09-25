@@ -14,15 +14,9 @@ use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
-<<<<<<< HEAD
-use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
-
-class JobStatsOverview extends XotBaseStatsOverviewWidget
-=======
 use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 
 class JobStatsOverview extends BaseWidget
->>>>>>> laraxot/dev
 {
     use FormatSeconds;
 
@@ -50,20 +44,9 @@ class JobStatsOverview extends BaseWidget
         }
 
         return [
-<<<<<<< HEAD
-            Stat::make(
-                (string) __('jobs::translations.total_jobs'),
-                $aggregatedInfo
-                    ? app(SafeEloquentCastAction::class)->getIntAttribute($aggregatedInfo, 'count', 0)
-                    : 0,
-            ),
-            Stat::make((string) __('jobs::translations.execution_time'), (string) $totalTime),
-            Stat::make((string) __('jobs::translations.average_time'), (string) $averageTime),
-=======
             Stat::make(__('jobs::translations.total_jobs'), $totalJobs),
             Stat::make(__('jobs::translations.execution_time'), $totalTime),
             Stat::make(__('jobs::translations.average_time'), $averageTime),
->>>>>>> laraxot/dev
         ];
     }
 }

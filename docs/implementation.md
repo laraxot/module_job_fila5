@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-title: "Implementazione Job"
-module: "Job"
-type: concept
-tags: [implementation]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "implementation"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> af4545e (.)
-=======
->>>>>>> laraxot/dev
 # Implementazione Job
 
 ## Struttura del Codice

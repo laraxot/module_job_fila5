@@ -13,8 +13,6 @@ class ListFailedImportRows extends XotBaseListRecords
 {
     protected static string $resource = FailedImportRowResource::class;
 
-<<<<<<< HEAD
-=======
     #[Override]
     public function getTableColumns(): array
     {
@@ -36,5 +34,4 @@ class ListFailedImportRows extends XotBaseListRecords
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
         ];
     }
->>>>>>> laraxot/dev
 }

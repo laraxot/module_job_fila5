@@ -22,9 +22,6 @@ class ClockWidget extends XotBaseWidget
 
     public bool $run = false;
 
-<<<<<<< HEAD
-    protected string $view = 'job::filament.widgets.clock-widget';
-=======
     /** @var view-string */
     protected string $view;
 
@@ -36,7 +33,6 @@ class ClockWidget extends XotBaseWidget
 
         parent::__construct();
     }
->>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 

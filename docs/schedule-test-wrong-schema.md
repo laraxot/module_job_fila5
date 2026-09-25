@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
----
-title: "ScheduleBusinessLogicTest - Wrong Database Schema"
-module: "Job"
-type: concept
-tags: [schedule, test, wrong, schema]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "schedule test wrong schema"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> af4545e (.)
-=======
->>>>>>> laraxot/dev
 # ScheduleBusinessLogicTest - Wrong Database Schema
 
 ## Problem Discovery
