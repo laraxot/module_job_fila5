@@ -8,12 +8,13 @@ use Illuminate\Console\Application;
 use Illuminate\Support\Collection;
 use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
+use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Input\InputArgument;
-use Symfony\Component\Console\Input\InputOption;
 
 class GetCommandsAction
 {
+    use QueueableAction;
+
     /**
      * Execute the action.
      *
@@ -26,8 +27,8 @@ class GetCommandsAction
         /** @var array<string, Command> $commands */
         $commands = $artisan->all();
 
-        /** @var Collection<int, CommandData> $commandDataCollection */
-        $commandDataCollection = collect($commands)->map(
+        /** @var Collection<int, CommandData> $commandsData */
+        $commandsData = collect($commands)->map(
             static function (Command $command): CommandData {
                 $name = (string) $command->getName();
                 $description = (string) $command->getDescription();
@@ -36,7 +37,7 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $arguments */
                 $arguments = collect($command->getDefinition()->getArguments())
                     ->map(
-                        static fn (InputArgument $argument): array => [
+                        static fn ($argument): array => [
                             'name' => (string) $argument->getName(),
                             'description' => (string) $argument->getDescription(),
                             'required' => (bool) $argument->isRequired(),
@@ -47,7 +48,7 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $options */
                 $options = collect($command->getDefinition()->getOptions())
                     ->map(
-                        static fn (InputOption $option): array => [
+                        static fn ($option): array => [
                             'name' => (string) $option->getName(),
                             'description' => (string) $option->getDescription(),
                             'required' => (bool) $option->isValueRequired(),
@@ -71,6 +72,6 @@ class GetCommandsAction
             },
         );
 
-        return new DataCollection(CommandData::class, $commandDataCollection->values()->all());
+        return new DataCollection(CommandData::class, $commandsData->values()->all());
     }
 }
