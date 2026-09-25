@@ -270,7 +270,11 @@ it('can handle task status transitions', function (): void {
     Assert::assertSame(0, $task->is_active);
     // Ripristina is_active a 1
     $task->update(['is_active' => 1]);
+<<<<<<< HEAD
     Assert::assertSame(1, Task::query()->findOrFail($task->getKey())->is_active);
+=======
+    Assert::assertSame(1, $task->is_active);
+>>>>>>> laraxot/dev
 });
 
 it('can handle task ordering and sorting', function (): void {
