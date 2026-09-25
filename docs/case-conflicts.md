@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+---
+title: "Case-Insensitive File Conflicts"
+module: "Job"
+type: concept
+tags: [case, conflicts]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "case conflicts"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+=======
+>>>>>>> af4545e (.)
 # Case-Insensitive File Conflicts
 
 File duplicati nel modulo `Job` che differiscono solo per la capitalizzazione:

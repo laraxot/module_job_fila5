@@ -22,17 +22,7 @@ class QueueListenWidget extends XotBaseWidget
 
     public bool $run = false;
 
-    /** @var view-string */
-    protected string $view;
-
-    public function __construct()
-    {
-        /** @var view-string $view */
-        $view = 'job::filament.widgets.queue-listen';
-        $this->view = $view;
-
-        parent::__construct();
-    }
+    protected string $view = 'job::filament.widgets.queue-listen';
 
     protected int|string|array $columnSpan = 'full';
 

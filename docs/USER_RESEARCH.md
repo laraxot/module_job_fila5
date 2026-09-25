@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+---
+title: "Job Module - User Research"
+module: "Job"
+type: concept
+tags: [USER, RESEARCH]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user research"
+related:
+  - "./phpstan-fixes-archive-2.md"
+---
+=======
+>>>>>>> af4545e (.)
 # Job Module - User Research
 
 **Module:** Job  
