@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "🎯 JOB MODULE - ROADMAP 2025"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # 🎯 JOB MODULE - ROADMAP 2025
 
 **Modulo**: Job ([Description])  

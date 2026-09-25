@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Test3"
 module: "Job"
@@ -9,4 +10,6 @@ qmd: "test3"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 aa

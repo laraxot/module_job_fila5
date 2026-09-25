@@ -8,10 +8,19 @@ use Illuminate\Console\Application;
 use Illuminate\Support\Collection;
 use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
+<<<<<<< HEAD
+=======
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> laraxot/dev
 use Symfony\Component\Console\Command\Command;
 
 class GetCommandsAction
 {
+<<<<<<< HEAD
+=======
+    use QueueableAction;
+
+>>>>>>> laraxot/dev
     /**
      * Execute the action.
      *
@@ -24,8 +33,13 @@ class GetCommandsAction
         /** @var array<string, Command> $commands */
         $commands = $artisan->all();
 
+<<<<<<< HEAD
         /** @var Collection<int, CommandData> $commandDataCollection */
         $commandDataCollection = collect($commands)->map(
+=======
+        /** @var Collection<int, CommandData> $commandsData */
+        $commandsData = collect($commands)->map(
+>>>>>>> laraxot/dev
             static function (Command $command): CommandData {
                 $name = (string) $command->getName();
                 $description = (string) $command->getDescription();
@@ -69,6 +83,10 @@ class GetCommandsAction
             },
         );
 
+<<<<<<< HEAD
         return new DataCollection(CommandData::class, $commandDataCollection->values()->all());
+=======
+        return new DataCollection(CommandData::class, $commandsData->values()->all());
+>>>>>>> laraxot/dev
     }
 }

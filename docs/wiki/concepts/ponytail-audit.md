@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Ponytail audit — Job"
 module: "Job"
@@ -10,6 +11,8 @@ qmd: "ponytail audit"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Ponytail audit — Job
 
 **Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.
@@ -19,6 +22,7 @@ related:
 - [Findings Job](../../ponytail-audit-over-engineering.md)
 
 Aggiornare solo finding e stato specifici di questo modulo.
+<<<<<<< HEAD
 =======
 # Ponytail audit — Job
 
@@ -32,3 +36,5 @@ Documento canonico: [ponytail-audit-over-engineering.md](../../ponytail-audit-ov
 - `TaskInterface` — già rinominato `.bak` (run precedente)
 - ~~policy stub~~ — **rimosso da perimetro**: policy modello sono contratto Laravel (vedi [model-policy-laravel-contract.md](./model-policy-laravel-contract.md))
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev

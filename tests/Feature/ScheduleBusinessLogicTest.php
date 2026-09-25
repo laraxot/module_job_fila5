@@ -10,11 +10,18 @@ use Modules\Job\Models\ScheduleHistory;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
 
 describe('Schedule Business Logic', function (): void {
     test('_can_create_schedule_with_basic_information', function (): void {
         /** @var TestCase $this */
+=======
+uses(TestCase::class);
+
+describe('Schedule Business Logic', function (): void {
+    test('_can_create_schedule_with_basic_information', function (): void {
+>>>>>>> laraxot/dev
         $schedule = Schedule::create([
             'command' => 'inspire',
             'expression' => '0 2 * * *',
@@ -22,12 +29,15 @@ describe('Schedule Business Logic', function (): void {
             'log_filename' => 'backup.log',
         ]);
 
+<<<<<<< HEAD
         $this->assertDatabaseHasRow('schedules', [
             'id' => $schedule->id,
             'command' => 'inspire',
             'expression' => '0 2 * * *',
         ]);
 
+=======
+>>>>>>> laraxot/dev
         Assert::assertSame('inspire', $schedule->command);
         Assert::assertSame('0 2 * * *', $schedule->expression);
         Assert::assertSame(Status::Active, $schedule->status);

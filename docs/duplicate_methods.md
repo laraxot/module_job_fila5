@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Metodi duplicati — Job"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Metodi duplicati — Job
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

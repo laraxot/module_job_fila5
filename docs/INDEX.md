@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 📚 Job Module Documentation Index
 
 **Last updated:** 2026-07-28
@@ -175,6 +176,8 @@
 **Collection:** Job Module Documentation  
 **Status:** Active (updated 2026-07-28)
 =======
+=======
+>>>>>>> laraxot/dev
 # Documentation Index
 
 Modulo: Job
@@ -182,4 +185,7 @@ Modulo: Job
 ## File disponibili
 
 <!-- auto-generato: elencare i file .md presenti -->
+<<<<<<< HEAD
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev

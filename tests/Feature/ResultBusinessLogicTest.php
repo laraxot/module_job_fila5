@@ -7,7 +7,11 @@ use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 it('can create result with basic information', function (): void {
     $task = Task::create([

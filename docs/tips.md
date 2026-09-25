@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 <<<<<<< HEAD
 title: "Tips"
@@ -19,3 +20,6 @@ canonical: ../../../Themes/docs/shared-components/tips.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/tips.txt
 >>>>>>> af4545e (.)
+=======
+https://dudi.dev/optimize-laravel-database-queries/
+>>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Root files hygiene"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "root files hygiene"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Root files hygiene
 
 ## 2026-07-08 16:51

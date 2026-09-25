@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Cyclomatic Complexity Report - Module: Job"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Cyclomatic Complexity Report - Module: Job
 
 **Analyzer:** Super Mucca 🐮

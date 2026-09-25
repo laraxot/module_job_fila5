@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Optimization"
 module: "Job"
@@ -9,5 +10,7 @@ qmd: "optimization"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 https://filamentphp.com/community/danharrin-fast-table-pagination
 

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "DRY & KISS Analysis - Modulo Job"
 module: "Job"
@@ -10,6 +11,8 @@ qmd: "dry kiss analysis conflict"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 =======
 >>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo Job

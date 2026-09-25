@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 <<<<<<< HEAD
 title: "Repo"
@@ -20,3 +21,7 @@ canonical: ../../../Themes/docs/shared-components/repo.txt
 
 See canonical documentation: ../../../Themes/docs/shared-components/repo.txt
 >>>>>>> af4545e (.)
+=======
+https://github.com/mooxphp/jobs/tree/main
+
+>>>>>>> laraxot/dev

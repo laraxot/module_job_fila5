@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ---
 title: "Task: Job Filament v5 Alignment (Clusters)"
 module: "Job"
@@ -12,6 +13,8 @@ related:
 ---
 =======
 >>>>>>> af4545e (.)
+=======
+>>>>>>> laraxot/dev
 # Task: Job Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo
