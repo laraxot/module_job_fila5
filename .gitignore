@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -22,18 +23,44 @@ tests/.claude-audit
 # Modulo Job Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-06
 # DEPENDENCIES & PACKAGES
+=======
+# ==============================================
+# LARAXOT MODULE JOB - .GITIGNORE
+# ==============================================
+# Modulo Job Laraxot - Template standardizzato
+# Ultimo aggiornamento: 2025-01-06
+# ==============================================
+
+# ==============================================
+# DEPENDENCIES & PACKAGES
+# ==============================================
+>>>>>>> laraxot/dev
 vendor/
 node_modules/
 package-lock.json
 yarn.lock
 composer.lock
+<<<<<<< HEAD
 # BUILD & COMPILED FILES
+=======
+
+# ==============================================
+# BUILD & COMPILED FILES
+# ==============================================
+>>>>>>> laraxot/dev
 /build
 build/
 dist/
 docs/cache/
 cache/
+<<<<<<< HEAD
 # CACHE & TEMPORARY FILES
+=======
+
+# ==============================================
+# CACHE & TEMPORARY FILES
+# ==============================================
+>>>>>>> laraxot/dev
 *.cache
 *.lock
 *.phar
@@ -46,13 +73,27 @@ cache/
 v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
+<<<<<<< HEAD
 # LOG FILES
+=======
+
+# ==============================================
+# LOG FILES
+# ==============================================
+>>>>>>> laraxot/dev
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
+<<<<<<< HEAD
 # LARAVEL SPECIFIC
+=======
+
+# ==============================================
+# LARAVEL SPECIFIC
+# ==============================================
+>>>>>>> laraxot/dev
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -63,17 +104,38 @@ storage/*.key
 .env
 .env.*
 !.env.example
+<<<<<<< HEAD
 # ENVIRONMENT & CONFIGURATION
+=======
+
+# ==============================================
+# ENVIRONMENT & CONFIGURATION
+# ==============================================
+>>>>>>> laraxot/dev
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
+<<<<<<< HEAD
 # GIT SPECIFIC
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
 # SYSTEM FILES
+=======
+
+# ==============================================
+# GIT SPECIFIC
+# ==============================================
+.git-rewrite/
+.git-rewrite
+.git-blame-ignore-revs
+
+# ==============================================
+# SYSTEM FILES
+# ==============================================
+>>>>>>> laraxot/dev
 .DS_Store
 .DS_Store?
 ._*
@@ -81,7 +143,14 @@ Homestead.json
 .Trashes
 ehthumbs.db
 Thumbs.db
+<<<<<<< HEAD
 # BACKUP FILES
+=======
+
+# ==============================================
+# BACKUP FILES
+# ==============================================
+>>>>>>> laraxot/dev
 *.old
 *.old1
 *.old2
@@ -92,6 +161,7 @@ Thumbs.db
 *.bak
 *.bakcup
 *.new
+<<<<<<< HEAD
 # DEVELOPMENT TOOLS
 .windsurf/
 .cursor/
@@ -100,6 +170,28 @@ Thumbs.db
 docs/phpstan/
 /docs/cache
 # OLD DIRECTORIES (LEGACY CLEANUP)
+=======
+
+# ==============================================
+# DEVELOPMENT TOOLS
+# ==============================================
+.windsurf/
+.cursor/
+.phpstorm.meta.php
+
+# ==============================================
+# DOCUMENTATION CACHE
+# ==============================================
+docs/phpstan/
+docs/cache/
+/docs/cache
+docs/archive/
+docs/archive/**
+
+# ==============================================
+# OLD DIRECTORIES (LEGACY CLEANUP)
+# ==============================================
+>>>>>>> laraxot/dev
 resources/views/Components_old/
 resources/views/Components_old
 database/Migrations_old/
@@ -111,6 +203,7 @@ database/Factories_old
 database/Factories_
 database_old/
 database_old
+<<<<<<< HEAD
 # MODULE SPECIFIC - JOB
 # File di configurazione locale
 config/local.php
@@ -122,13 +215,45 @@ storage/jobs/
 job_test_data.json
 test_jobs.sql
 # END OF JOB .GITIGNORE
+=======
+
+# ==============================================
+# MODULE SPECIFIC - JOB
+# ==============================================
+# File di configurazione locale
+config/local.php
+config/development.php
+
+# Queue e job
+storage/queue/
+storage/jobs/
+
+# File di test job
+job_test_data.json
+test_jobs.sql
+
+# ==============================================
+# END OF JOB .GITIGNORE
+# ==============================================
+
+
+>>>>>>> laraxot/dev
 # 🚫 File specifici del progetto
 *.fila2
 laravel
 public_html
 lang/lang/
+<<<<<<< HEAD
 # -----------------------------------------------------------------------------
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+=======
+_docs/
+_docs/
+
+# -----------------------------------------------------------------------------
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# -----------------------------------------------------------------------------
+>>>>>>> laraxot/dev
 *~HEAD
 *~BASE
 *~LOCAL
@@ -136,6 +261,7 @@ lang/lang/
 *.orig
 *.rej
 *~head
+<<<<<<< HEAD
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 lang/lang
 .vscode/
@@ -165,3 +291,16 @@ graphify-out/
 
 # Runtime PID files (never track process ids)
 *.pid
+=======
+
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+docs/archive/agentdb.rvf
+lang/lang
+audit-coverage/
+tests/AuditCoverage/
+.claude-audit/
+.vscode/
+.devcontainer/
+.vscode/
+>>>>>>> laraxot/dev

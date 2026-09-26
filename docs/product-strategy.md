@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module - Product Strategy"
 module: "Job"
@@ -105,6 +106,8 @@ Easy to use and operate.
 
 ## Versione italiana (strategia con allineamento stimato)
 
+=======
+>>>>>>> laraxot/dev
 # Job - Product Strategy
 
 > Strategia prodotto. Modulo.

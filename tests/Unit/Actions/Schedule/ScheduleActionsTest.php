@@ -10,6 +10,7 @@ use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_BvXVqU
 uses(\Modules\Job\Tests\TestCase::class);
 =======
@@ -23,6 +24,9 @@ uses(TestCase::class);
 >>>>>>> .merge_file_D4uC5y
 >>>>>>> .merge_file_KLZZbg
 >>>>>>> .merge_file_2IgO8T
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('Schedule Actions', function () {
     it('GetActiveSchedulesAction uses QueueableAction and has execute method', function () {

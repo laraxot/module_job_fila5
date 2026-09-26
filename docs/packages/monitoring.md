@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Monitoraggio"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "monitoring"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Monitoraggio
 
 ## Pacchetti Utilizzati

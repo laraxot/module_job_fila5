@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Dependencies (Module Job)"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "dependencies"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Dependencies (Module Job)
 
 Canonical dependency map:

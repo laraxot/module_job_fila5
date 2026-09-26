@@ -43,6 +43,7 @@ describe('ScheduleForm coverage', function (): void {
         expectMethod($action, 'execute')->andReturn($commands);
         app()->instance(GetCommandsAction::class, $action);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_uzSVrb
         $schema = (new ScheduleForm())->getFormSchema();
 =======
@@ -56,6 +57,9 @@ describe('ScheduleForm coverage', function (): void {
 >>>>>>> .merge_file_WMThEc
 >>>>>>> .merge_file_ohlYiO
 >>>>>>> .merge_file_3XTCTS
+=======
+        $schema = (new ScheduleForm())->getFormSchema();
+>>>>>>> laraxot/dev
         Assert::assertArrayHasKey('main_section', $schema);
         Assert::assertNotEmpty($schema);
     });

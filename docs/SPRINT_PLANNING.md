@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_uD4Gj8
 =======
 ---
@@ -12,6 +13,8 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_uPVgy1
+=======
+>>>>>>> laraxot/dev
 # Job Module - Sprint Planning
 
 **Module:** Job  

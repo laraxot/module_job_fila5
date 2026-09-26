@@ -1,6 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
@@ -267,9 +271,17 @@ it('can handle task status transitions', function (): void {
     // Cambia is_active a 0
     $task->update(['is_active' => 0]);
     Assert::assertSame(0, $task->is_active);
+<<<<<<< HEAD
     // Ripristina is_active a 1
     $task->update(['is_active' => 1]);
     Assert::assertSame(1, $task->is_active);
+=======
+    // Ripristina is_active a 1 e verifica il valore persistito
+    $task->update(['is_active' => 1]);
+    $reactivatedTask = $task->fresh();
+    Assert::assertNotNull($reactivatedTask);
+    Assert::assertSame(1, $reactivatedTask->is_active);
+>>>>>>> laraxot/dev
 });
 
 it('can handle task ordering and sorting', function (): void {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_KKL6rF
 =======
 ---
@@ -158,6 +159,8 @@ Related:
 ## Contenuto assorbito da `agents.md`
 
 >>>>>>> .merge_file_x63EMp
+=======
+>>>>>>> laraxot/dev
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job

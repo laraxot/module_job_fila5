@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Traduzioni del Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "translations"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Traduzioni del Modulo Job
 
 ## Collegamenti

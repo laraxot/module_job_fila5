@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risks - Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "05 risks"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Risks - Job
 
 ## Top Risks

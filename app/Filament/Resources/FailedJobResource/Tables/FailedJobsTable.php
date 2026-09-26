@@ -15,21 +15,29 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class FailedJobsTable extends XotBaseResourceTable
 {
     /**
+<<<<<<< HEAD
      * @var class-string<FailedJob>
      */
     protected static string $model = FailedJob::class;
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
         return [
             'id' => TextColumn::make('id')->sortable(),
+<<<<<<< HEAD
             'uuid' => TextColumn::make('uuid')->searchable()->copyable()->toggleable(isToggledHiddenByDefault: true),
             'connection' => TextColumn::make('connection')->searchable()->sortable(),
             'queue' => TextColumn::make('queue')->searchable()->sortable(),
             'exception' => TextColumn::make('exception')->searchable()->wrap()->limit(120),
+=======
+            'connection' => TextColumn::make('connection')->searchable()->sortable(),
+            'queue' => TextColumn::make('queue')->searchable()->sortable(),
+>>>>>>> laraxot/dev
             'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
         ];
     }

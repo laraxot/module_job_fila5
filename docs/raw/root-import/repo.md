@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_HKWDLA
 =======
 ---
@@ -12,5 +13,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_dCGw8D
+=======
+>>>>>>> laraxot/dev
 https://github.com/mooxphp/jobs/tree/main
 

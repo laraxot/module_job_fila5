@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Progress"
 module: "Job"
@@ -10,3 +11,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
+=======
+https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
+
+>>>>>>> laraxot/dev

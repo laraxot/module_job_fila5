@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module Wiki Index"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "index"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Job Module Wiki Index
 
 > **Module**: Job

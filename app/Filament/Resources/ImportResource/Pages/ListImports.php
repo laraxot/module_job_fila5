@@ -9,6 +9,11 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
+<<<<<<< HEAD
+=======
+use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
+>>>>>>> laraxot/dev
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Job\Filament\Resources\ImportResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -19,6 +24,38 @@ class ListImports extends XotBaseListRecords
     protected static string $resource = ImportResource::class;
 
     /**
+<<<<<<< HEAD
+=======
+     * @return array<string, Tables\Columns\Column>
+     */
+    #[Override]
+    public function getTableColumns(): array
+    {
+        return [
+            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'file_name' => TextColumn::make('file_name')
+                ->searchable()
+                ->sortable()
+                ->wrap(),
+            'file_disk' => TextColumn::make('file_disk')->searchable()->sortable(),
+            'importer' => TextColumn::make('importer')->searchable()->sortable(),
+            'processed_rows' => TextColumn::make('processed_rows')->numeric()->sortable(),
+            'total_rows' => TextColumn::make('total_rows')->numeric()->sortable(),
+            'successful_rows' => TextColumn::make('successful_rows')->numeric()->sortable(),
+            'completed_at' => TextColumn::make('completed_at')->dateTime()->sortable(),
+            'created_at' => TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            'updated_at' => TextColumn::make('updated_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+        ];
+    }
+
+    /**
+>>>>>>> laraxot/dev
      * @return array<string, BaseFilter>
      */
     #[Override]

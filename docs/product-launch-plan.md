@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module - Product Launch Plan"
 module: "Job"
@@ -97,6 +98,8 @@ related:
 
 ## Versione italiana (piano di lancio con readiness stimata)
 
+=======
+>>>>>>> laraxot/dev
 # Job - Product Launch Plan
 
 > Piano di lancio. Modulo.

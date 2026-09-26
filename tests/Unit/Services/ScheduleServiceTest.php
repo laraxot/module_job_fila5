@@ -3,16 +3,20 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Services;
+<<<<<<< HEAD
 <<<<<<< .merge_file_9coosJ
 =======
 <<<<<<< .merge_file_q2At3I
 >>>>>>> .merge_file_5FIy2A
+=======
+>>>>>>> laraxot/dev
 use Modules\Job\Services\ScheduleService;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
+<<<<<<< HEAD
 <<<<<<< .merge_file_9coosJ
 =======
 =======
@@ -26,6 +30,8 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 >>>>>>> .merge_file_tu4hat
 >>>>>>> .merge_file_5FIy2A
+=======
+>>>>>>> laraxot/dev
 
 describe('ScheduleService', function () {
     it('can be instantiated', function () {

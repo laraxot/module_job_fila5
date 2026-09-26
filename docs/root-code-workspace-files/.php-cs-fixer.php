@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_xlol1D
 
 
@@ -16,6 +17,10 @@ declare(strict_types=1);
 >>>>>>> .merge_file_fRK70z
 >>>>>>> .merge_file_o3CeHO
 >>>>>>> .merge_file_711Q0M
+=======
+
+
+>>>>>>> laraxot/dev
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')

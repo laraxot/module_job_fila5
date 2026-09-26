@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Changelog"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "changelog"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Changelog
 
 Tutte le variazioni importanti di Job saranno generate automaticamente da semantic-release.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_Pyu6fg
 =======
 <<<<<<< .merge_file_y5EndJ
@@ -25,6 +26,8 @@ related:
 >>>>>>> .merge_file_Ro2Cdz
 >>>>>>> .merge_file_HixCwz
 >>>>>>> .merge_file_v2z7C2
+=======
+>>>>>>> laraxot/dev
 # Job Module Architecture
 
 ## Overview

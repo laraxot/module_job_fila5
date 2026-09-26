@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_tPdr22
 =======
 ---
@@ -12,6 +13,8 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_FhW6zJ
+=======
+>>>>>>> laraxot/dev
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring

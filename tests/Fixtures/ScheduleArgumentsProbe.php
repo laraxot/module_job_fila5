@@ -20,6 +20,7 @@ use Modules\Job\Filament\Columns\ScheduleArguments;
  */
 final class ScheduleArgumentsProbe extends ScheduleArguments
 {
+<<<<<<< HEAD
 <<<<<<< .merge_file_vwlMmE
     public mixed $fakeState = null;
 
@@ -47,6 +48,11 @@ final class ScheduleArgumentsProbe extends ScheduleArguments
 >>>>>>> .merge_file_jay0ar
 >>>>>>> .merge_file_oVuCcy
 >>>>>>> .merge_file_VNlgcC
+=======
+    public mixed $fakeState = null;
+
+    public function getState(): mixed
+>>>>>>> laraxot/dev
     {
         return $this->fakeState;
     }
