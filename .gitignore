@@ -1,0 +1,88 @@
+
+._*
+audit-coverage/
+# --- Audit coverage bridge (never commit) ---
+*.backup
+*.backup_*
+*.backup-*
+*.backup.*
+# --- Backup files ---
+*.bak
+*.bakcup
+/build
+build/
+# --- Build & compiled ---
+*.cache
+cache/
+# --- Cache & temporary ---
+composer.lock
+config/development.php
+config/local.php
+.cursor/
+database/Factories_old/
+database/Migrations_old/
+database_old/
+database/Seeders_old/
+# --- Dependencies & packages ---
+# --- Development tools ---
+dist/
+docs/cache/
+docs/phpstan/
+# --- Documentation cache ---
+.DS_Store
+.DS_Store?
+ehthumbs.db
+# --- End of JOB .gitignore ---
+# --- Environment & configuration ---
+error_log
+*.fila2
+.git-blame-ignore-revs
+.git-rewrite/
+# --- Git specific ---
+# Grouped, deduped. See docs/wiki/rules/module-theme-root-cleanup.md
+Homestead.json
+Homestead.yaml
+.idea
+*.jar
+laravel
+# LARAXOT MODULE: JOB — .gitignore (organized)
+lerna-debug.log*
+*.lock
+*.log
+# --- Log files ---
+# --- Module specific ---
+*.new
+node_modules/
+npm-debug.log*
+*.old
+*.old1
+*.old2
+# --- Old directories (legacy cleanup) ---
+package-lock.json
+*.phar
+php-cs-fixer.cache
+.phpintel
+.phpstorm.meta.php
+phpunit.result.cache
+# --- Project specific ---
+public_html
+# Queue e job
+resources/views/Components_old/
+*.stackdump
+storage/jobs/
+storage/queue/
+*.swo
+*.swp
+# --- System files ---
+tests/AuditCoverage/
+Thumbs.db
+*.tmp
+.Trashes
+v8-compile-cache-*
+.vagrant
+vendor/
+.vscode
+.windsurf/
+yarn-error.log*
+yarn.lock
+*:Zone.Identifier
