@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;

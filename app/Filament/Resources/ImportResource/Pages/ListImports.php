@@ -9,11 +9,8 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
-<<<<<<< HEAD
-=======
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
 use Filament\Tables\Filters\BaseFilter;
 use Modules\Job\Filament\Resources\ImportResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -24,8 +21,6 @@ class ListImports extends XotBaseListRecords
     protected static string $resource = ImportResource::class;
 
     /**
-<<<<<<< HEAD
-=======
      * @return array<string, Tables\Columns\Column>
      */
     #[Override]
@@ -55,7 +50,6 @@ class ListImports extends XotBaseListRecords
     }
 
     /**
->>>>>>> laraxot/dev
      * @return array<string, BaseFilter>
      */
     #[Override]

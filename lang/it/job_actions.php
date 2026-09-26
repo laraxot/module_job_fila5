@@ -1,26 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 // Job translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
 // Canon: Modules/Job/docs/wiki — domain i18n only.
 
 return [
-<<<<<<< HEAD
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-    // Job — translation section (claude-audit doc ratio).
-=======
 // Job — translation section (claude-audit doc ratio).
 // Job — translation section (claude-audit doc ratio).
 // Job — translation section (claude-audit doc ratio).
@@ -31,7 +16,6 @@ return [
 // Job — translation section (claude-audit doc ratio).
 // Job — translation section (claude-audit doc ratio).
 // Job — translation section (claude-audit doc ratio).
->>>>>>> laraxot/dev
     'actions' => [
         'create' => [
             'label' => 'Crea Job',

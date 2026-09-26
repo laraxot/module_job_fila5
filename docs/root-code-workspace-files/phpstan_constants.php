@@ -1,22 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-<<<<<<< .merge_file_uUNPNc
 
-=======
-<<<<<<< .merge_file_7UhcdQ
-
-=======
-<<<<<<< .merge_file_XnYQgQ
-
-=======
->>>>>>> .merge_file_yZNEKF
->>>>>>> .merge_file_Pyd8MI
->>>>>>> .merge_file_5wTVtf
-=======
-
->>>>>>> laraxot/dev
 use function Safe\define;
 
 // use Nwidart\Modules\Contracts\RepositoryInterface;

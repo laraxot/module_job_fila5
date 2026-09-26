@@ -5,13 +5,6 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
 use Filament\Forms\Concerns\InteractsWithForms;
-<<<<<<< HEAD
-use Filament\Tables\Concerns\InteractsWithTable;
-use Filament\Tables\Contracts\HasTable;
-use Livewire\Attributes\Url;
-use Modules\Job\Filament\Resources\ScheduleResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseResourcePage;
-=======
 use Filament\Tables\Columns\Layout\Panel;
 use Filament\Tables\Columns\Layout\Split;
 use Filament\Tables\Columns\TextColumn;
@@ -24,7 +17,6 @@ use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Job\Models\ScheduleHistory;
 use Modules\Xot\Filament\Resources\Pages\XotBaseResourcePage;
 use Webmozart\Assert\Assert;
->>>>>>> laraxot/dev
 
 class ViewSchedule extends XotBaseResourcePage implements HasTable
 {
@@ -49,8 +41,6 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
     {
         return [];
     }
-<<<<<<< HEAD
-=======
 
     /**
      * @return array<int, Split>
@@ -94,5 +84,4 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
             // ->collapsed(config('job::history_collapsed'))
         ];
     }
->>>>>>> laraxot/dev
 }

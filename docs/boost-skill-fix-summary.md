@@ -1,10 +1,6 @@
 # Boost Skill Fix Summary - Job Module
 
-<<<<<<< HEAD
-**Date**: 2026-03-02
-=======
 **Date**: 2026-03-02  
->>>>>>> laraxot/dev
 **Module**: Job (Job Queue & Processing)
 
 ## Issue Overview
@@ -34,7 +30,4 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Job processing
 - Status monitoring
 - Task scheduling
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev

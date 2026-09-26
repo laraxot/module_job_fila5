@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Http\Livewire\Schedule;
 
-<<<<<<< HEAD
-use Illuminate\Console\Scheduling\Event;
-=======
->>>>>>> laraxot/dev
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
@@ -20,11 +16,7 @@ use Modules\Xot\Actions\GetViewAction;
  */
 class Status extends Component
 {
-<<<<<<< HEAD
-    /** @var array<string, string> */
-=======
     /** @var array<string, mixed> */
->>>>>>> laraxot/dev
     public array $form_data = [];
 
     public string $out = '';
@@ -87,20 +79,12 @@ class Status extends Component
     }
 
     /**
-<<<<<<< HEAD
-     * @return Collection<int, Event>
-=======
      * @return Collection<int, \Illuminate\Console\Scheduling\Event>
->>>>>>> laraxot/dev
      */
     public function getScheduledJobs(): Collection
     {
         if (app()->runningInConsole()) {
-<<<<<<< HEAD
-            /** @var Collection<int, Event> $empty */
-=======
             /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $empty */
->>>>>>> laraxot/dev
             $empty = collect([]);
 
             return $empty;
@@ -109,11 +93,7 @@ class Status extends Component
         // new Kernel(app(), new Dispatcher);
         $schedule = app(Schedule::class);
 
-<<<<<<< HEAD
-        /** @var Collection<int, Event> $events */
-=======
         /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $events */
->>>>>>> laraxot/dev
         $events = collect($schedule->events())->values();
 
         return $events;

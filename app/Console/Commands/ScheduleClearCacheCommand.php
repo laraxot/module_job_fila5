@@ -1,18 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Console/Commands/ScheduleClearCacheCommand.php
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
