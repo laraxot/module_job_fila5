@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_hMhfrY
 =======
 ---
@@ -12,6 +13,8 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_UZJ6uR
+=======
+>>>>>>> laraxot/dev
 # Job Module - Roadmap
 
 > Infrastruttura robusta per code e processi in background.

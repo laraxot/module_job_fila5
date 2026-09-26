@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_0mHorK
 
 =======
@@ -13,6 +14,9 @@ declare(strict_types=1);
 >>>>>>> .merge_file_e5rnFm
 >>>>>>> .merge_file_Ka00ZW
 >>>>>>> .merge_file_ijIP2w
+=======
+
+>>>>>>> laraxot/dev
 ?>
 <div>
     {{ print_r($getState(), true) }}

@@ -8,6 +8,7 @@ use Modules\Job\Tests\Fixtures\ScheduleArgumentsProbe;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_BHbBMI
 uses(\Modules\Job\Tests\TestCase::class);
 =======
@@ -21,6 +22,9 @@ uses(TestCase::class);
 >>>>>>> .merge_file_B5cd4m
 >>>>>>> .merge_file_Mp1tYM
 >>>>>>> .merge_file_5rokCc
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('ScheduleArguments::getTags()', function (): void {
     test('con stato ad array e withValue scarta le voci senza valore', function (): void {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Repo"
 module: "Job"
@@ -10,3 +11,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://github.com/mooxphp/jobs/tree/main
+=======
+https://github.com/mooxphp/jobs/tree/main
+
+>>>>>>> laraxot/dev

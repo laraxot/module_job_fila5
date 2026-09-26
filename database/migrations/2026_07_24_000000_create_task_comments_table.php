@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 <<<<<<< .merge_file_D163DO
 =======
 <<<<<<< .merge_file_4qtBUE
@@ -8,11 +9,14 @@ declare(strict_types=1);
 <<<<<<< .merge_file_6soPix
 >>>>>>> .merge_file_VlNeSY
 >>>>>>> .merge_file_4DTZwV
+=======
+>>>>>>> laraxot/dev
 
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class() extends XotBaseMigration
+<<<<<<< HEAD
 <<<<<<< .merge_file_D163DO
 =======
 <<<<<<< .merge_file_4qtBUE
@@ -25,6 +29,8 @@ return new class extends XotBaseMigration
 >>>>>>> .merge_file_PuWMZ9
 >>>>>>> .merge_file_VlNeSY
 >>>>>>> .merge_file_4DTZwV
+=======
+>>>>>>> laraxot/dev
 {
     /**
      * Run the migrations.

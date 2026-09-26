@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module - Comprehensive Analysis"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "module analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Job Module - Comprehensive Analysis
 
 ## Module Overview

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_8DzWlq
+=======
+>>>>>>> laraxot/dev
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025  
@@ -36,6 +39,7 @@ abstract class BaseModel extends XotBaseModel
 ---
 [DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
 
+<<<<<<< HEAD
 =======
 ---
 title: "Dry Kiss Analysis"
@@ -54,3 +58,5 @@ related:
 
 Vedi il file canonico: [dry-kiss-analysis.md](./dry-kiss-analysis.md)
 >>>>>>> .merge_file_JoYVPh
+=======
+>>>>>>> laraxot/dev

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Risoluzione Conflitti - Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "conflicts"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Risoluzione Conflitti - Job
 
 ## File modificati

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Soluzioni Tecniche - Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "solutions"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni
@@ -183,7 +186,11 @@ class Job extends Model {
 
 ### 1. Cache Configuration
 ```php
+<<<<<<< HEAD
 // In: Modules/Job/config/cache.php
+=======
+// In: Modules/Job/Config/cache.php
+>>>>>>> laraxot/dev
 return [
     'ttl' => [
         'job_status' => 300,      // 5 minutes

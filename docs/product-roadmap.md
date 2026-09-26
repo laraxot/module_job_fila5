@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module - Product Roadmap"
 module: "Job"
@@ -117,6 +118,8 @@ To build a **comprehensive job queue and background processing system** that ens
 
 ## Versione italiana (roadmap con maturita' stimata)
 
+=======
+>>>>>>> laraxot/dev
 # Job - Product Roadmap
 
 > Documento vivente. Modulo.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_9xWUP9
 =======
 ---
@@ -12,4 +13,6 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_fqmXAz
+=======
+>>>>>>> laraxot/dev
 aa

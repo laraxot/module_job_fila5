@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Pacchetti del Modulo Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "packages"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Pacchetti del Modulo Job
 
 ## Pacchetti Utilizzati

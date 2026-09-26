@@ -1,10 +1,17 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+=======
+
+use Modules\Job\Models\Job;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+>>>>>>> laraxot/dev
 uses(TestCase::class);
 
 describe('Job Business Logic', function () {

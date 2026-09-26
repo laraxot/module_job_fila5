@@ -31,6 +31,7 @@ use Modules\Job\Filament\Resources\JobBatchResource;
 use Modules\Job\Filament\Resources\JobManagerResource;
 use Modules\Job\Filament\Resources\JobResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource;
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Job\Http\Livewire\Broad;
@@ -46,6 +47,10 @@ use Modules\Job\Http\Livewire\Broad;
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+use Modules\Job\Filament\Resources\ScheduleResource;
+use Modules\Job\Http\Livewire\Broad;
+>>>>>>> laraxot/dev
 use Modules\Job\Http\Requests\ScheduleRequest;
 use Modules\Job\Models\FailedJob;
 use Modules\Job\Models\Job;
@@ -86,6 +91,7 @@ function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): 
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
 =======
@@ -99,6 +105,9 @@ uses(TestCase::class)->group('no-job-db');
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+>>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();
@@ -151,6 +160,7 @@ describe('Job execute coverage — Filament resources', function (): void {
         }
     });
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
     
 =======
@@ -163,10 +173,14 @@ describe('Job execute coverage — Filament resources', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+    
+>>>>>>> laraxot/dev
 });
 
 describe('Job execute coverage — policies', function (): void {
     test('JobBasePolicy before apre super-admin e lascia gli altri', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $policy = new ResultPolicy();
 =======
@@ -180,6 +194,9 @@ describe('Job execute coverage — policies', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $policy = new ResultPolicy();
+>>>>>>> laraxot/dev
 
         Assert::assertTrue($policy->before(jobUser(true), 'viewAny'));
         Assert::assertNull($policy->before(jobUser(false), 'viewAny'));
@@ -192,6 +209,7 @@ describe('Job execute coverage — policies', function (): void {
             SchedulePolicy::class,
             TaskPolicy::class,
         ] as $class) {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
             $policy = new $class();
 =======
@@ -205,6 +223,9 @@ describe('Job execute coverage — policies', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+            $policy = new $class();
+>>>>>>> laraxot/dev
             Assert::assertNull($policy->before(jobUser(false), 'update'));
             Assert::assertTrue($policy->before(jobUser(true), 'delete'));
         }
@@ -213,6 +234,7 @@ describe('Job execute coverage — policies', function (): void {
 
 describe('Job execute coverage — Task e notification', function (): void {
     test('compileParameters gestisce null, json e formatter scheduler', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $task = new Task();
 =======
@@ -226,6 +248,9 @@ describe('Job execute coverage — Task e notification', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $task = new Task();
+>>>>>>> laraxot/dev
         Assert::assertSame([], $task->compileParameters());
 
         $task->parameters = json_encode(['env' => true, 'name' => 'foo'], JSON_THROW_ON_ERROR);
@@ -234,6 +259,7 @@ describe('Job execute coverage — Task e notification', function (): void {
     });
 
     test('accessor e routeNotification non toccano il database', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $task = new Task();
 =======
@@ -247,6 +273,9 @@ describe('Job execute coverage — Task e notification', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $task = new Task();
+>>>>>>> laraxot/dev
         $task->is_active = 1;
         $task->notification_email_address = 'a@b.c';
         $task->notification_phone_number = '333';
@@ -264,6 +293,7 @@ describe('Job execute coverage — Task e notification', function (): void {
     test('TaskCompleted via e toMail coprono i canali configurati', function (): void {
         $notification = new TaskCompleted('done');
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $empty = new Task();
 =======
@@ -277,11 +307,15 @@ describe('Job execute coverage — Task e notification', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $empty = new Task();
+>>>>>>> laraxot/dev
         $empty->notification_email_address = null;
         $empty->notification_phone_number = null;
         $empty->notification_slack_webhook = '0';
         Assert::assertSame([], $notification->via($empty));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $full = new Task();
 =======
@@ -295,6 +329,9 @@ describe('Job execute coverage — Task e notification', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $full = new Task();
+>>>>>>> laraxot/dev
         $full->description = 'Nightly';
         $full->notification_email_address = 'ops@example.com';
         $full->notification_phone_number = '111';
@@ -306,6 +343,7 @@ describe('Job execute coverage — Task e notification', function (): void {
     });
 
     test('autoCleanup no-op quando num è zero', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $task = new Task();
 =======
@@ -319,6 +357,9 @@ describe('Job execute coverage — Task e notification', function (): void {
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $task = new Task();
+>>>>>>> laraxot/dev
         $task->auto_cleanup_num = 0;
         $task->autoCleanup();
         Assert::assertSame(0, $task->auto_cleanup_num);
@@ -327,6 +368,7 @@ describe('Job execute coverage — Task e notification', function (): void {
 
 describe('Job execute coverage — events request rules columns', function (): void {
     test('eventi di broadcast espongono i canali', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -334,10 +376,13 @@ describe('Job execute coverage — events request rules columns', function (): v
 <<<<<<< .merge_file_SacQT0
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
         Assert::assertSame('public', (new PublicEvent())->broadcastOn()->name);
         Assert::assertStringContainsString('private.', (new PrivateEvent('ciao'))->broadcastOn()->name);
 
         $task = new Task();
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -350,6 +395,8 @@ describe('Job execute coverage — events request rules columns', function (): v
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
         $event = new BroadcastingEvent($task);
         Assert::assertStringContainsString('task.events', $event->broadcastOn()->name);
         Assert::assertTrue($event->broadcastWhen());
@@ -366,6 +413,7 @@ describe('Job execute coverage — events request rules columns', function (): v
     });
 
     test('Corn valida espressione cron e rifiuta valori non stringa', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $rule = new Corn();
 =======
@@ -379,6 +427,9 @@ describe('Job execute coverage — events request rules columns', function (): v
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $rule = new Corn();
+>>>>>>> laraxot/dev
         $failed = false;
         $rule->validate('expression', ['not-string'], static function (string $message, ?string $attribute = null) use (&$failed): PotentiallyTranslatedString {
             $failed = true;
@@ -413,6 +464,7 @@ describe('Job execute coverage — events request rules columns', function (): v
 describe('Job execute coverage — actions enums commands livewire', function (): void {
     test('DummyAction e GetCommandsAction eseguono', function (): void {
         ob_start();
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         (new DummyAction())->execute();
 =======
@@ -426,10 +478,14 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        (new DummyAction())->execute();
+>>>>>>> laraxot/dev
         $out = (string) ob_get_clean();
         Assert::assertStringContainsString('hello', $out);
 
         jobBindArtisan();
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $commands = (new GetCommandsAction())->execute();
 =======
@@ -443,6 +499,9 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $commands = (new GetCommandsAction())->execute();
+>>>>>>> laraxot/dev
         Assert::assertGreaterThan(0, $commands->count());
     });
 
@@ -455,6 +514,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
     });
 
     test('FormatSeconds copre giorni ore minuti secondi', function (): void {
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $probe = new class()
 =======
@@ -468,6 +528,9 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $probe = new class()
+>>>>>>> laraxot/dev
         {
             use FormatSeconds;
         };
@@ -486,6 +549,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $schedule->assertExitCode(0);
     });
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -493,6 +557,8 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 <<<<<<< .merge_file_SacQT0
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
     test('Livewire Broad try flasha sessione senza dd', function (): void {
         $component = new Broad();
         $component->try();
@@ -505,6 +571,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertSame('job_batches', (new JobBatch())->getTable());
         Assert::assertSame('schedules', (new Schedule())->getTable());
         Assert::assertSame('results', (new Result())->getTable());
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -525,10 +592,13 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
     });
 
     test('policy CRUD con Team e hasPermissionTo', function (): void {
         $user = jobUser(false);
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $team = new Team();
 
@@ -550,6 +620,11 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $team = new Team();
+
+        $failed = new FailedJobPolicy();
+>>>>>>> laraxot/dev
         Assert::assertFalse($failed->viewAny($user));
         Assert::assertTrue($failed->view($user, $team));
         Assert::assertTrue($failed->create($user));
@@ -559,6 +634,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertTrue($failed->removeTeamMember($user, $team));
         Assert::assertTrue($failed->delete($user, $team));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $jobPolicy = new JobPolicy();
 =======
@@ -572,12 +648,16 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $jobPolicy = new JobPolicy();
+>>>>>>> laraxot/dev
         Assert::assertFalse($jobPolicy->viewAny($user));
         Assert::assertTrue($jobPolicy->view($user, $team));
         Assert::assertTrue($jobPolicy->create($user));
         Assert::assertFalse($jobPolicy->update($user));
         Assert::assertTrue($jobPolicy->delete($user, $team));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $batch = new JobBatchPolicy();
 =======
@@ -591,10 +671,14 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $batch = new JobBatchPolicy();
+>>>>>>> laraxot/dev
         Assert::assertFalse($batch->viewAny($user));
         Assert::assertTrue($batch->create($user));
         Assert::assertFalse($batch->update($user));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $schedule = new Schedule();
         $schedulePolicy = new SchedulePolicy();
@@ -612,6 +696,10 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $schedule = new Schedule();
+        $schedulePolicy = new SchedulePolicy();
+>>>>>>> laraxot/dev
         Assert::assertTrue($schedulePolicy->viewAny($user));
         Assert::assertTrue($schedulePolicy->view($user, $schedule));
         Assert::assertTrue($schedulePolicy->create($user));
@@ -620,6 +708,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         Assert::assertTrue($schedulePolicy->restore($user, $schedule));
         Assert::assertTrue($schedulePolicy->forceDelete($user, $schedule));
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $comment = new TaskComment();
         $commentPolicy = new TaskCommentPolicy();
@@ -637,6 +726,10 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $comment = new TaskComment();
+        $commentPolicy = new TaskCommentPolicy();
+>>>>>>> laraxot/dev
         $commentPolicy->viewAny($user);
         $commentPolicy->view($user, $comment);
         $commentPolicy->create($user);
@@ -645,6 +738,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $commentPolicy->restore($user, $comment);
         $commentPolicy->forceDelete($user, $comment);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $historyPolicy = new ScheduleHistoryPolicy();
         $history = new ScheduleHistory();
@@ -662,6 +756,10 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $historyPolicy = new ScheduleHistoryPolicy();
+        $history = new ScheduleHistory();
+>>>>>>> laraxot/dev
         foreach (['viewAny', 'create'] as $m) {
             if (method_exists($historyPolicy, $m)) {
                 $historyPolicy->{$m}($user);
@@ -678,6 +776,7 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $q = Task::query()->sortableBy(['description'], ['description' => 'asc']);
         Assert::assertInstanceOf(Builder::class, $q);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
         $job = new Job();
 =======
@@ -691,10 +790,14 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+        $job = new Job();
+>>>>>>> laraxot/dev
         $job->setRawAttributes(['reserved_at' => 10, 'payload' => json_encode(['displayName' => 'Foo'], JSON_THROW_ON_ERROR)]);
         Assert::assertSame('running', $job->status);
         Assert::assertSame('Foo', $job->display_name);
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -702,11 +805,14 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 <<<<<<< .merge_file_SacQT0
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
         $waiting = new Job();
         $waiting->setRawAttributes(['reserved_at' => null, 'payload' => json_encode(['displayName' => 'Bar'], JSON_THROW_ON_ERROR)]);
         Assert::assertSame('waiting', $waiting->status);
 
         $result = new Result();
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -720,11 +826,14 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
         Assert::assertInstanceOf(BelongsTo::class, $result->task());
         $result->getLastRun();
         $result->getAverageRunTime();
 
         config(['job::cache.enabled' => false]);
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -732,12 +841,15 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 <<<<<<< .merge_file_SacQT0
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
         $observer = new ScheduleObserver();
         $observer->created();
         $observer->updated(new Schedule());
         $observer->saved(new Schedule());
 
         $lw = new \Modules\Job\Http\Livewire\Schedule\Status();
+<<<<<<< HEAD
 <<<<<<< .merge_file_f75mWY
 =======
 <<<<<<< .merge_file_Ssa7Ti
@@ -752,6 +864,8 @@ describe('Job execute coverage — actions enums commands livewire', function ()
 >>>>>>> .merge_file_1zhIRq
 >>>>>>> .merge_file_QQgG04
 >>>>>>> .merge_file_T9RGSS
+=======
+>>>>>>> laraxot/dev
         Assert::assertCount(0, $lw->getScheduledJobs());
     });
 });

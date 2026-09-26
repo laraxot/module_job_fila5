@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_rorerg
 =======
 <<<<<<< .merge_file_Iu4q2D
@@ -11,6 +12,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_YeKvE0
 >>>>>>> .merge_file_e2k33b
 >>>>>>> .merge_file_GGx40i
+=======
+>>>>>>> laraxot/dev
 return [
     'fields' => [
         'import_class' => [

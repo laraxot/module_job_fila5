@@ -7,7 +7,11 @@ namespace Modules\Job\Tests\Feature;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 uses(TestCase::class);
+=======
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 test('default database connection is configured', function () {
     Assert::assertNotEmpty(config('database.default'));
