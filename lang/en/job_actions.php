@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_9Q7SaS
 =======
 <<<<<<< .merge_file_L1c1jD
@@ -11,6 +12,8 @@ declare(strict_types=1);
 >>>>>>> .merge_file_N3ytqk
 >>>>>>> .merge_file_iF9aQ2
 >>>>>>> .merge_file_ZcUOIl
+=======
+>>>>>>> laraxot/dev
 return [
     'actions' => [
         'create' => [

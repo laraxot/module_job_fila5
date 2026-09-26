@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Root file policy"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "root file policy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Root file policy
 
 Updated: 2026-07-08

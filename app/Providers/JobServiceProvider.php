@@ -1,12 +1,20 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * Class Modules\Job\Providers\JobServiceProvider.
  *
  * @see https://github.com/mooxphp/jobs/blob/main/src/JobManagerProvider.php
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\Job\Providers;
 
 use Filament\Actions\Exports\Models\Export;

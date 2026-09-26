@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_U2nfhJ
 <<<<<<< HEAD
 =======
@@ -24,6 +25,8 @@ related:
 >>>>>>> .merge_file_DSLHnd
 >>>>>>> .merge_file_nl1NWH
 >>>>>>> .merge_file_kMtWkl
+=======
+>>>>>>> laraxot/dev
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11

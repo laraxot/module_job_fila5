@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_NhdXxd
 =======
 ---
@@ -12,5 +13,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_LxAnNG
+=======
+>>>>>>> laraxot/dev
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
 

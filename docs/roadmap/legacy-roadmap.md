@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Job Module Roadmap"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "legacy roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Job Module Roadmap
 
 Vedi [roadmap/00-index](roadmap/00-index.md).

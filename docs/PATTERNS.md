@@ -22,6 +22,7 @@ This document describes the core architectural patterns used in the Job module f
 
 **Purpose:** Execute long-running operations asynchronously while keeping the request-response cycle fast.
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_zZwdBE
 =======
 <<<<<<< .merge_file_RKwqpf
@@ -36,11 +37,14 @@ This also matches the repo-wide no-Services rule (`wiki/concepts/no-services-no-
 =======
 >>>>>>> .merge_file_nl3QdF
 >>>>>>> .merge_file_xvjnHF
+=======
+>>>>>>> laraxot/dev
 ### Structure
 
 ```php
 <?php
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_zZwdBE
 =======
 <<<<<<< .merge_file_RKwqpf
@@ -87,6 +91,8 @@ whether `execute()` runs inline or gets dispatched as a job based on that call.
 4. **Test synchronously first:** Call `execute()` directly in tests to isolate logic from the queue
 =======
 >>>>>>> .merge_file_xvjnHF
+=======
+>>>>>>> laraxot/dev
 namespace Modules\Job\Actions;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -127,10 +133,13 @@ class ProcessLargeExportAction implements ShouldQueue
 2. **Set appropriate timeouts:** Long jobs should have explicit `$timeout` values
 3. **Handle failures gracefully:** Use `failed()` method for exception handling
 4. **Test synchronously first:** Test action logic without queue to isolate bugs
+<<<<<<< HEAD
 <<<<<<< .merge_file_zZwdBE
 =======
 >>>>>>> .merge_file_nl3QdF
 >>>>>>> .merge_file_xvjnHF
+=======
+>>>>>>> laraxot/dev
 
 ---
 

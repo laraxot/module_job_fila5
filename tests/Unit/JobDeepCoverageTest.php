@@ -9,6 +9,7 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_v1d4JL
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
 =======
@@ -22,6 +23,9 @@ uses(TestCase::class)->group('no-job-db');
 >>>>>>> .merge_file_mrjIqw
 >>>>>>> .merge_file_3tgDoz
 >>>>>>> .merge_file_Q02qYL
+=======
+uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+>>>>>>> laraxot/dev
 
 /** @return array{0: string, 1: string} */
 /** @return list{string, string} */
@@ -33,6 +37,7 @@ function jobDeepContext(): array
 describe('Job deep coverage — execute code paths', function (): void {
     test('GetTaskFrequenciesAction execute returns config array', function (): void {
         config(['totem.frequencies' => ['daily' => 'Daily']]);
+<<<<<<< HEAD
 <<<<<<< .merge_file_v1d4JL
         $result = (new GetTaskFrequenciesAction())->execute();
 =======
@@ -46,6 +51,9 @@ describe('Job deep coverage — execute code paths', function (): void {
 >>>>>>> .merge_file_mrjIqw
 >>>>>>> .merge_file_3tgDoz
 >>>>>>> .merge_file_Q02qYL
+=======
+        $result = (new GetTaskFrequenciesAction())->execute();
+>>>>>>> laraxot/dev
         Assert::assertSame(['daily' => 'Daily'], $result);
     });
 

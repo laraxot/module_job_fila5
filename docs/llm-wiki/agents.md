@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Job"
 type: concept
@@ -9,6 +10,20 @@ qmd: "agents"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "Agent instructions"
+type: reference
+tags: [agents, coding-agent, llm-wiki]
+created: 2026-07-01
+updated: 2026-07-01
+qmd: "istruzioni agenti LLM wiki modulo"
+issues: []
+discussions: []
+related:
+  - ./coding-agent-manifests.md
+---
+
+>>>>>>> laraxot/dev
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job
@@ -148,4 +163,8 @@ Related:
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
+<<<<<<< HEAD
 - [Module Documentation](../README.md)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> laraxot/dev

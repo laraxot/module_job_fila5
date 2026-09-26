@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_xQEPEP
 =======
 ---
@@ -12,6 +13,8 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_xRjm3i
+=======
+>>>>>>> laraxot/dev
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

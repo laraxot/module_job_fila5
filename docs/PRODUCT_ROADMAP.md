@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_GP3Qw7
 =======
 ---
@@ -12,6 +13,8 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_iHWJaN
+=======
+>>>>>>> laraxot/dev
 # Job Module - Product Roadmap
 
 **Module:** Job  

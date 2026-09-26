@@ -1,6 +1,9 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  *
@@ -8,6 +11,11 @@ declare(strict_types=1);
  * @see https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
  */
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+
+>>>>>>> laraxot/dev
 namespace Modules\Job\Models;
 
 use Illuminate\Database\Eloquent\Builder;
@@ -54,7 +62,11 @@ use Override;
  */
 class JobBatch extends BaseModel
 {
+<<<<<<< HEAD
     public const UPDATED_AT = null;
+=======
+    public const ?string UPDATED_AT = null;
+>>>>>>> laraxot/dev
 
     public $incrementing = false;
 
@@ -80,7 +92,14 @@ class JobBatch extends BaseModel
      */
     public function processedJobs(): int|float
     {
+<<<<<<< HEAD
         return $this->total_jobs - $this->pending_jobs;
+=======
+        $totalJobs = $this->integerAttribute('total_jobs');
+        $pendingJobs = $this->integerAttribute('pending_jobs');
+
+        return $totalJobs - $pendingJobs;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -88,7 +107,11 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
+<<<<<<< HEAD
         $totalJobs = $this->total_jobs;
+=======
+        $totalJobs = $this->integerAttribute('total_jobs');
+>>>>>>> laraxot/dev
         $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
 
         return (int) $progress;
@@ -99,7 +122,13 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
+<<<<<<< HEAD
         return $this->pending_jobs > 0;
+=======
+        $pendingJobs = $this->integerAttribute('pending_jobs');
+
+        return $pendingJobs > 0;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -115,7 +144,13 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
+<<<<<<< HEAD
         return $this->failed_jobs > 0;
+=======
+        $failedJobs = $this->integerAttribute('failed_jobs');
+
+        return $failedJobs > 0;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -123,7 +158,14 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
+<<<<<<< HEAD
         return $this->failed_jobs === $this->total_jobs;
+=======
+        $failedJobs = $this->integerAttribute('failed_jobs');
+        $totalJobs = $this->integerAttribute('total_jobs');
+
+        return $failedJobs === $totalJobs;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -134,6 +176,16 @@ class JobBatch extends BaseModel
         return $this->cancelled_at !== null;
     }
 
+<<<<<<< HEAD
+=======
+    private function integerAttribute(string $attribute): int
+    {
+        $value = $this->getAttribute($attribute);
+
+        return is_numeric($value) ? (int) $value : 0;
+    }
+
+>>>>>>> laraxot/dev
     /**  @return array<string, string>  */
     #[Override]
     protected function casts(): array

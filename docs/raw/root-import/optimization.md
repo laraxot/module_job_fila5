@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_DDG6xV
 =======
 ---
@@ -12,5 +13,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_FLHJjs
+=======
+>>>>>>> laraxot/dev
 https://filamentphp.com/community/danharrin-fast-table-pagination
 

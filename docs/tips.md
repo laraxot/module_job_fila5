@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Tips"
 module: "Job"
@@ -10,3 +11,6 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 https://dudi.dev/optimize-laravel-database-queries/
+=======
+https://dudi.dev/optimize-laravel-database-queries/
+>>>>>>> laraxot/dev

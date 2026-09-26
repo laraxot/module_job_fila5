@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_E2EfTF
 =======
 ---
@@ -12,6 +13,8 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_F1Jzf6
+=======
+>>>>>>> laraxot/dev
 # Job Module - User Research
 
 **Module:** Job  

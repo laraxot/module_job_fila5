@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
+<<<<<<< HEAD
 
 use Modules\Job\Actions\ExecuteTaskAction;
 use Modules\Job\Tests\TestCase;
@@ -12,6 +13,15 @@ use function Safe\class_uses;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
+=======
+use function Safe\class_uses;
+use Modules\Job\Actions\ExecuteTaskAction;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use function Safe\file_get_contents;
+
+uses(\Modules\Job\Tests\TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('ExecuteTaskAction', function (): void {
     test('can be instantiated', function (): void {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< .merge_file_zdTl9N
 =======
 ---
@@ -12,6 +13,8 @@ related:
   - "./phpstan-fixes-archive-2.md"
 ---
 >>>>>>> .merge_file_xdLaDo
+=======
+>>>>>>> laraxot/dev
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Implementazione Job"
 module: "Job"
@@ -9,6 +10,8 @@ qmd: "implementation"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+>>>>>>> laraxot/dev
 # Implementazione Job
 
 ## Struttura del Codice
