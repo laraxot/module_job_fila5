@@ -1,17 +1,3 @@
-<<<<<<< HEAD
----
-title: "Job - Wiki Activity Log"
-module: "Job"
-type: concept
-tags: [log]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "log"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
->>>>>>> laraxot/dev
 ## [2026-06-30] docs | Second brain — policy incident consolidato
 
 - Memoria datata rimossa; canon in [policy-restoration-incident.md](./concepts/policy-restoration-incident.md)
@@ -39,12 +25,9 @@ module: "Job"
 - Created module index.md
 - Ready for on-demand loading via QMD
 
-<<<<<<< HEAD
-=======
 
 ---
 
 ## [2026-09-25] phpstan | TaskBusinessLogicTest staticMethod.alreadyNarrowedType fix
 - `tests/Feature/TaskBusinessLogicTest.php`: replaced `Assert::assertSame(1, $task->is_active)` after `update(['is_active' => 1])` with `$reactivatedTask = $task->fresh()` + `Assert::assertNotNull()` + `Assert::assertSame(1, $reactivatedTask->is_active)` to avoid the "already narrowed type" false positive.
 - Cleared `staticMethod.alreadyNarrowedType` error.
->>>>>>> laraxot/dev

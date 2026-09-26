@@ -1,11 +1,8 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
 use Exception;
->>>>>>> laraxot/dev
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;

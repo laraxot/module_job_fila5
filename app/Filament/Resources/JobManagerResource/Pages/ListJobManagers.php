@@ -1,27 +1,17 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * ---.
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\Job\Filament\Resources\JobManagerResource\Pages;
 
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
-<<<<<<< HEAD
-=======
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
->>>>>>> laraxot/dev
 use Modules\Job\Filament\Resources\JobManagerResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
@@ -31,8 +21,6 @@ class ListJobManagers extends XotBaseListRecords
     protected static string $resource = JobManagerResource::class;
 
     /**
-<<<<<<< HEAD
-=======
      * @return array<string, Tables\Columns\Column>
      */
     #[Override]
@@ -56,7 +44,6 @@ class ListJobManagers extends XotBaseListRecords
     }
 
     /**
->>>>>>> laraxot/dev
      * @return array<string, BulkAction>
      */
     #[Override]

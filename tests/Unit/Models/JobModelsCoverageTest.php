@@ -3,11 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Models;
-<<<<<<< HEAD
-
-=======
 use function Safe\class_uses;
->>>>>>> laraxot/dev
 use Modules\Job\Models\BaseModel;
 use Modules\Job\Models\Export;
 use Modules\Job\Models\FailedJob;
@@ -20,17 +16,9 @@ use Modules\Job\Models\Schedule;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-
-use function Safe\class_uses;
-use function Safe\file_get_contents;
-
-uses(TestCase::class);
-=======
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 describe('Job Models Coverage', function () {
     describe('Task Model', function () {
@@ -95,13 +83,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Task::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -120,13 +103,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Frequency::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -145,13 +123,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Result::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -170,13 +143,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Schedule::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -195,13 +163,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Import::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -220,13 +183,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(Export::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -245,13 +203,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(JobBatch::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -270,13 +223,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(JobManager::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });
@@ -295,13 +243,8 @@ describe('Job Models Coverage', function () {
         it('uses strict types', function () {
             $reflection = new \ReflectionClass(FailedJob::class);
             $filename = $reflection->getFileName();
-<<<<<<< HEAD
-            Assert::assertNotFalse($filename);
-            $content = file_get_contents($filename);
-=======
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
->>>>>>> laraxot/dev
             Assert::assertStringContainsString('', $content);
         });
     });

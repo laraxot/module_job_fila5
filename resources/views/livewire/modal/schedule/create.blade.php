@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 ?>
 <x-filament::modal on-submit="save" :content-padding="false">
     <x-slot name="title">Add Schedule</x-slot>

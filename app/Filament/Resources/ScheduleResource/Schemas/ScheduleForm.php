@@ -55,11 +55,7 @@ class ScheduleForm extends XotBaseResourceForm
                             static::$commands = app(GetCommandsAction::class)->execute();
                         }
                         Assert::isInstanceOf(
-<<<<<<< HEAD
-                            $command = static::$commands->toCollection()->where('name', $state)->first(),
-=======
                             $command = static::$commands->toCollection()->firstWhere('name', $state),
->>>>>>> laraxot/dev
                             CommandData::class,
                         );
                         $params = $command->arguments;

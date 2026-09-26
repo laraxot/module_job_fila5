@@ -1,18 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/resources/JobBatchesResource/Pages/ListJobBatches.php?ref_type=heads
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\Job\Filament\Resources\JobBatchResource\Pages;
 
 use Filament\Actions\Action;
@@ -20,12 +13,6 @@ use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Notifications\Notification;
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Artisan;
-use Modules\Job\Filament\Resources\JobBatchResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Override;
-=======
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
@@ -34,15 +21,12 @@ use Modules\Job\Models\JobBatch;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
 use Webmozart\Assert\Assert;
->>>>>>> laraxot/dev
 
 class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
 
     /**
-<<<<<<< HEAD
-=======
      * @return array<string, Tables\Columns\Column>
      */
     #[Override]
@@ -65,10 +49,7 @@ class ListJobBatches extends XotBaseListRecords
             'failed_jobs' => TextColumn::make('failed_jobs')->numeric()->sortable(),
             'progress' => TextColumn::make('progress')
                 ->formatStateUsing(
-                    /**
-                     * @param  mixed  $record
-                     */
-                    static function ($record): string {
+                    static function (mixed $record): string {
                         if (! $record instanceof JobBatch) {
                             return '';
                         }
@@ -95,7 +76,6 @@ class ListJobBatches extends XotBaseListRecords
     }
 
     /**
->>>>>>> laraxot/dev
      * @return array<string, Action|ActionGroup>
      */
     #[Override]

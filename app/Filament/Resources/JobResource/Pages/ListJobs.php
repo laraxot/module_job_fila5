@@ -8,12 +8,9 @@ use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\ViewAction;
-<<<<<<< HEAD
-=======
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ViewColumn;
->>>>>>> laraxot/dev
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\SelectFilter;
 use Modules\Job\Filament\Resources\JobResource;
@@ -26,8 +23,6 @@ class ListJobs extends XotBaseListRecords
     protected static string $resource = JobResource::class;
 
     /**
-<<<<<<< HEAD
-=======
      * @return array<string, Tables\Columns\Column>
      */
     #[Override]
@@ -56,7 +51,6 @@ class ListJobs extends XotBaseListRecords
     }
 
     /**
->>>>>>> laraxot/dev
      * @return array<string, BaseFilter>
      */
     #[Override]

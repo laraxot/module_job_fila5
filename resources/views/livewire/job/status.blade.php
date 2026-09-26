@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-<?php
-
-declare(strict_types=1);
-?>
-=======
->>>>>>> laraxot/dev
 <div>
     {{-- <x-filament::section></x-filament::section>
     <x-filament::section>

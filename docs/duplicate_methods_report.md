@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< .merge_file_xQEPEP
-=======
----
-title: "Report: Metodi con nome duplicato nei moduli e nei temi"
-module: "Job"
-type: concept
-tags: [duplicate, methods, report]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "duplicate methods report"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
->>>>>>> .merge_file_xRjm3i
-=======
->>>>>>> laraxot/dev
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

@@ -1,18 +1,11 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 use Modules\Job\Models\Job;
 use Modules\Job\Models\JobBatch;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-
-=======
->>>>>>> laraxot/dev
 use function Safe\json_decode;
 use function Safe\json_encode;
 
@@ -24,11 +17,7 @@ function uniqueJobBatchId(string $prefix = 'batch'): string
 }
 
 it('can create job batch with basic information', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batchId = uniqueJobBatchId('basic');
     $batchData = [
         'id' => $batchId,
@@ -63,11 +52,7 @@ it('can create job batch with basic information', function (): void {
 });
 
 it('can manage batch job progression', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('progression'),
         'name' => 'Test progressione',
@@ -90,11 +75,7 @@ it('can manage batch job progression', function (): void {
 });
 
 it('can handle batch job failures', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('failure'),
         'name' => 'Test fallimenti',
@@ -119,11 +100,7 @@ it('can handle batch job failures', function (): void {
 });
 
 it('can manage batch completion status', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('completion'),
         'name' => 'Test completamento',
@@ -147,11 +124,7 @@ it('can manage batch completion status', function (): void {
 });
 
 it('can handle batch cancellation', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('cancellation'),
         'name' => 'Test cancellazione',
@@ -172,11 +145,7 @@ it('can handle batch cancellation', function (): void {
 });
 
 it('can manage batch options and configuration', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $options = [
         'priority' => 'high',
         'notify_on_completion' => true,
@@ -203,11 +172,7 @@ it('can manage batch options and configuration', function (): void {
 });
 
 it('can calculate batch progress percentage', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('progress'),
         'name' => 'Test progresso',
@@ -227,11 +192,7 @@ it('can calculate batch progress percentage', function (): void {
 });
 
 it('can handle batch job relationships', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('relationships'),
         'name' => 'Test relazioni',
@@ -269,11 +230,7 @@ it('can handle batch job relationships', function (): void {
 });
 
 it('can manage batch cleanup and maintenance', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('cleanup'),
         'name' => 'Test pulizia',
@@ -292,11 +249,7 @@ it('can manage batch cleanup and maintenance', function (): void {
 });
 
 it('can handle batch retry logic', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('retry'),
         'name' => 'Test retry',
@@ -328,11 +281,7 @@ it('can handle batch retry logic', function (): void {
 });
 
 it('can handle batch notification settings', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     $batch = JobBatch::create([
         'id' => uniqueJobBatchId('notification'),
         'name' => 'Test notifiche',
@@ -356,11 +305,7 @@ it('can handle batch notification settings', function (): void {
 });
 
 it('can handle batch bulk operations', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     // Crea un batch di batch per testare operazioni bulk
     $batchList = [];
     $priorities = ['active', 'completed', 'failed'];
@@ -387,11 +332,7 @@ it('can handle batch bulk operations', function (): void {
 });
 
 it('can validate batch integrity', function (): void {
-<<<<<<< HEAD
-    /** @var TestCase $this */
-=======
         /** @var TestCase $this */
->>>>>>> laraxot/dev
     // Test con batch valido
     $validBatch = JobBatch::create([
         'id' => uniqueJobBatchId('valid'),
