@@ -4,21 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\FailedImportRowResource\Pages;
 
-<<<<<<< HEAD
-use Modules\Job\Filament\Resources\FailedImportRowResource;
-use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-=======
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\FailedImportRowResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
->>>>>>> laraxot/dev
 
 class ListFailedImportRows extends XotBaseListRecords
 {
     protected static string $resource = FailedImportRowResource::class;
-<<<<<<< HEAD
-=======
 
     #[Override]
     public function getTableColumns(): array
@@ -41,5 +34,4 @@ class ListFailedImportRows extends XotBaseListRecords
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
         ];
     }
->>>>>>> laraxot/dev
 }

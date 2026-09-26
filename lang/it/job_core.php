@@ -1,10 +1,7 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev
 // Job translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
 // Canon: Modules/Job/docs/wiki — domain i18n only.
 

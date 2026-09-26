@@ -3,26 +3,14 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions\Command;
-<<<<<<< HEAD
-
-=======
 use function Safe\class_uses;
->>>>>>> laraxot/dev
 use Modules\Job\Actions\Command\GetCommandArgumentsActions;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\Console\Command\Command;
-<<<<<<< HEAD
-
-use function Safe\class_uses;
-use function Safe\file_get_contents;
-
-uses(TestCase::class);
-=======
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
->>>>>>> laraxot/dev
 
 describe('GetCommandArgumentsActions', function (): void {
     test('can be instantiated', function (): void {

@@ -1,19 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_IVAPLG
-=======
-<<<<<<< .merge_file_QzBUL1
-=======
-<<<<<<< .merge_file_MM5UMQ
-=======
-declare(strict_types=1);
-
->>>>>>> .merge_file_ihXQVh
->>>>>>> .merge_file_l1sh8p
->>>>>>> .merge_file_JI6azP
-=======
->>>>>>> laraxot/dev
 return [
     'fields' => [
         'id' => [

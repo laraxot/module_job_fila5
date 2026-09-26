@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
 module: "Job"
@@ -13,10 +10,7 @@ qmd: "phpstan fixes archive 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 

@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
-<<<<<<< HEAD
-use Modules\Job\Models\Export;
-use Modules\Xot\Filament\Resources\XotBaseResource;
-=======
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
@@ -15,13 +11,10 @@ use Filament\Forms\Components\TextInput;
 use Modules\Job\Models\Export;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
->>>>>>> laraxot/dev
 
 class ExportResource extends XotBaseResource
 {
     protected static ?string $model = Export::class;
-<<<<<<< HEAD
-=======
 
     #[Override]
     public function getFormSchemaOld(): array
@@ -52,5 +45,4 @@ class ExportResource extends XotBaseResource
             'updated_at' => DateTimePicker::make('updated_at')->disabled(),
         ];
     }
->>>>>>> laraxot/dev
 }

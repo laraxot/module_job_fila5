@@ -1,18 +1,11 @@
 <?php
 
-<<<<<<< HEAD
-declare(strict_types=1);
-=======
->>>>>>> laraxot/dev
 /**
  * @see https://www.freshleafmedia.co.uk/blog/streaming-laravel-command-output-to-the-browser
  */
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
 
->>>>>>> laraxot/dev
 namespace Modules\Job\Filament\Widgets;
 
 use Exception;
@@ -29,9 +22,6 @@ class ClockWidget extends XotBaseWidget
 
     public bool $run = false;
 
-<<<<<<< HEAD
-    protected string $view = 'job::filament.widgets.clock-widget';
-=======
     /** @var view-string */
     protected string $view;
 
@@ -43,7 +33,6 @@ class ClockWidget extends XotBaseWidget
 
         parent::__construct();
     }
->>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 

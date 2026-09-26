@@ -9,23 +9,7 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\ModuleBusinessCoverage;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_nXj4wf
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
-=======
-<<<<<<< .merge_file_jHXo7x
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
-=======
-<<<<<<< .merge_file_mWyVr5
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
-=======
-uses(TestCase::class)->group('no-job-db');
->>>>>>> .merge_file_zNjTqQ
->>>>>>> .merge_file_ezPjky
->>>>>>> .merge_file_afeDtG
-=======
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
->>>>>>> laraxot/dev
 
 afterEach(function (): void {
     Mockery::close();

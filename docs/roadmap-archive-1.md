@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> laraxot/dev
 ---
 title: "🎯 JOB MODULE - ROADMAP 2025"
 module: "Job"
@@ -13,10 +10,7 @@ qmd: "roadmap archive 1"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
-<<<<<<< HEAD
 =======
-=======
->>>>>>> laraxot/dev
 >>>>>>> laraxot/dev
 # 🎯 JOB MODULE - ROADMAP 2025
 

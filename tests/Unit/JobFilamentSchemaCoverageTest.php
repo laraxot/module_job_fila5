@@ -10,23 +10,7 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 
-<<<<<<< HEAD
-<<<<<<< .merge_file_vuqMVE
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
-=======
-<<<<<<< .merge_file_ioBDFy
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
-=======
-<<<<<<< .merge_file_WhLYCL
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
-=======
-uses(TestCase::class)->group('no-job-db');
->>>>>>> .merge_file_dIuybp
->>>>>>> .merge_file_R5yikp
->>>>>>> .merge_file_ONnNmo
-=======
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
->>>>>>> laraxot/dev
 
 /** @return list{string, string} */
 function jobFilamentContext(): array
