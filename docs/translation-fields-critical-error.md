@@ -1,3 +1,14 @@
+---
+title: "translation fields critical error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation fields critical error"
+issues: []
+discussions: []
+---
+
 # Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
 
 **Modulo**: Job  
@@ -5,6 +16,14 @@
 
 ---
 
+title: "translation fields critical error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation fields critical error"
+issues: []
+discussions: []
 ## 🔴 Errore Commesso
 
 Durante il completamento delle traduzioni navigation, **ho rimosso la sezione `fields`** da molti file di traduzione, causando un errore gravissimo.

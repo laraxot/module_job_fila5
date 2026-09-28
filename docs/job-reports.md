@@ -1,3 +1,14 @@
+---
+title: "job reports"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "job reports"
+issues: []
+discussions: []
+---
+
 # Job Module PDF Reports
 
 ## 📋 Overview
@@ -6,6 +17,14 @@ Guida completa per generare report PDF del sistema di code e job utilizzando HTM
 
 ---
 
+title: "job reports"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "job reports"
+issues: []
+discussions: []
 ## 🎯 Tipi di Report Disponibili
 
 ### 1. Queue System Report

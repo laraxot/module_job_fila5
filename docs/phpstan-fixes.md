@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+---
+
 # PHPStan Fixes — Job
 
 ## 2026-06-10 — STORY-307 · L10 · 0 errori codice
@@ -6,6 +17,14 @@
 
 ---
 
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
 ## Storico — Gennaio 2025
 
 ## ✅ Stato complessivo

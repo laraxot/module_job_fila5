@@ -1,4 +1,7 @@
 ---
+qmd: "INDEX"
+issues: []
+discussions: []
 title: "job — product"
 module: job
 type: product

@@ -1,3 +1,14 @@
+---
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bottlenecks"
+issues: []
+discussions: []
+---
+
 # Job Module Performance Bottlenecks
 
 ## Queue Management
@@ -204,6 +215,14 @@ Implementare:
 
 ---
 
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bottlenecks"
+issues: []
+discussions: []
 ### Versione Incoming
 
 ---

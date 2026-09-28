@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Storage Server"
 module: "Job"
 type: concept

@@ -1,4 +1,7 @@
 ---
+qmd: "artisan dup"
+issues: []
+discussions: []
 title: 'Artisan dup — risorse esterne'
 module: Job
 type: reference

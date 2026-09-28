@@ -1,3 +1,14 @@
+---
+title: "translation navigation structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation navigation structure"
+issues: []
+discussions: []
+---
+
 # Translation Navigation Structure - Job Module
 
 ## Problema Identificato
@@ -117,5 +128,13 @@ Verificare che User abbia le stesse 6 lingue per i file `.navigation` (passport.
 
 ---
 
+title: "translation navigation structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation navigation structure"
+issues: []
+discussions: []
 **Autore**: Cascade AI  
 **Status**: 🟡 In Progress

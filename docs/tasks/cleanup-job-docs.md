@@ -1,3 +1,14 @@
+---
+title: "cleanup job docs"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cleanup job docs"
+issues: []
+discussions: []
+---
+
 # Task: Job Docs Consolidation & Cleanup
 
 ## 📋 Obiettivo

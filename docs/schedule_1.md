@@ -1,4 +1,7 @@
 ---
+qmd: "schedule 1"
+issues: []
+discussions: []
 title: 'Schedule 1 — risorse esterne'
 module: Job
 type: reference

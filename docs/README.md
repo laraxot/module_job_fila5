@@ -1,4 +1,7 @@
 ---
+qmd: "README"
+issues: []
+discussions: []
 title: "Job Module Documentation"
 type: documentation
 tags: [module, documentation]

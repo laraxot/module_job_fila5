@@ -1,4 +1,7 @@
 ---
+qmd: "phpstan format seconds trait probe"
+issues: []
+discussions: []
 title: PHPStan trait probe FormatSeconds
 type: concept
 module: Job

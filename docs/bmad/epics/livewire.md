@@ -1,4 +1,10 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "livewire"
+issues: []
+discussions: []
 title: "Epic 12 Job Livewire (puntatore)"
 type: epics
 module: Job

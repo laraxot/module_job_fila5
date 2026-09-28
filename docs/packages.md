@@ -1,3 +1,14 @@
+---
+title: "packages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "packages"
+issues: []
+discussions: []
+---
+
 # Pacchetti del Modulo Job
 
 ## Pacchetti Utilizzati
@@ -78,6 +89,14 @@
 
 ---
 
+title: "packages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "packages"
+issues: []
+discussions: []
 ### Versione Incoming
 
 ---

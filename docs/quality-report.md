@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Quality Report — Job"
 type: report
 tags: [quality, phpstan, pest, coverage]
