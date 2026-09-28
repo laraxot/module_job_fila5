@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Copilot Redundancy Audit"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "copilot redundancy audit"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "copilot redundancy audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "copilot redundancy audit"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi

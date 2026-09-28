@@ -7,7 +7,10 @@ namespace Modules\Job\Tests\Unit\Actions;
 use Modules\Job\Actions\GetActiveSchedulesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
+=======
+>>>>>>> laraxot/dev
 
 uses(\Modules\Job\Tests\TestCase::class);
 
@@ -24,7 +27,11 @@ describe('GetActiveSchedulesAction', function () {
 
     it('uses QueueableAction trait', function () {
         $reflection = new \ReflectionClass(GetActiveSchedulesAction::class);
+<<<<<<< HEAD
         Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
+=======
+        Assert::assertContains(\Spatie\QueueableAction\QueueableAction::class, $reflection->getTraitNames());
+>>>>>>> laraxot/dev
     });
 
     it('has private getFromCache method', function () {

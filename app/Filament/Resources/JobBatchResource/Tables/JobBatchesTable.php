@@ -10,7 +10,10 @@ use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
+<<<<<<< HEAD
 use Modules\Job\Models\JobBatch;
+=======
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 /**
@@ -19,16 +22,21 @@ use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 class JobBatchesTable extends XotBaseResourceTable
 {
     /**
+<<<<<<< HEAD
      * @var class-string<JobBatch>
      */
     protected static string $model = JobBatch::class;
 
     /**
      * @return array<string, Column>
+=======
+     * @return array<int|string, Column>
+>>>>>>> laraxot/dev
      */
     public function getTableColumns(): array
     {
         return [
+<<<<<<< HEAD
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'total_jobs' => TextColumn::make('total_jobs')->numeric()->sortable(),
             'pending_jobs' => TextColumn::make('pending_jobs')->numeric()->sortable(),
@@ -37,6 +45,14 @@ class JobBatchesTable extends XotBaseResourceTable
             'finished_at' => TextColumn::make('finished_at')->dateTime()->sortable(),
             'cancelled_at' => TextColumn::make('cancelled_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),
             'id' => TextColumn::make('id')->searchable()->sortable()->toggleable(isToggledHiddenByDefault: true),
+=======
+            TextColumn::make('id')->sortable(),
+            TextColumn::make('name')->searchable()->sortable(),
+            TextColumn::make('total_jobs')->sortable(),
+            TextColumn::make('pending_jobs')->sortable(),
+            TextColumn::make('failed_jobs')->sortable(),
+            TextColumn::make('created_at')->dateTime()->sortable(),
+>>>>>>> laraxot/dev
         ];
     }
 

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Queue"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "queue"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "queue"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "queue"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Queue
 
 ## Pacchetti Utilizzati

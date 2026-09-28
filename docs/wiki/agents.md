@@ -1,4 +1,15 @@
 ---
+<<<<<<< HEAD
+=======
+title: "agents"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 module: theme
 topic: AGENTS
 canonical: ../../../../Themes/docs/shared-components/AGENTS-Modules.md

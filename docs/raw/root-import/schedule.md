@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Schedule"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "schedule"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "schedule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring

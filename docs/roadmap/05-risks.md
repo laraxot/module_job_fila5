@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Risks - Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "05 risks"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "05 risks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "05 risks"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Risks - Job
 
 ## Top Risks

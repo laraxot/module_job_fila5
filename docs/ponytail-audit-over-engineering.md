@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Ponytail audit — Job (over-engineering)"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "ponytail audit over engineering"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "ponytail audit over engineering"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ponytail audit over engineering"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Ponytail audit — Job (over-engineering)
 
 **Ultimo run:** 2026-06-30 (re-run #2)  

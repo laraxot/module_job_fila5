@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Task: Job Docs Consolidation & Cleanup"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "cleanup job docs"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "cleanup job docs"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cleanup job docs"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Task: Job Docs Consolidation & Cleanup
 
 ## 📋 Obiettivo

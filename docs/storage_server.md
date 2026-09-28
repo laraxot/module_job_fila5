@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "storage server"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: 'Storage server'
 module: Job
 type: reference

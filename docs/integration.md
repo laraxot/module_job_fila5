@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Integrazione Documentazione"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "integration"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "integration"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Integrazione Documentazione
 
 ## Documentazione Collegata
@@ -88,6 +101,17 @@ related:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "integration"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

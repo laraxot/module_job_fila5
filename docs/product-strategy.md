@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job Module - Product Strategy"
 module: "Job"
 type: concept
@@ -104,6 +105,17 @@ Easy to use and operate.
 ---
 
 ## Versione italiana (strategia con allineamento stimato)
+=======
+title: "product strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "product strategy"
+issues: []
+discussions: []
+---
+>>>>>>> laraxot/dev
 
 # Job - Product Strategy
 

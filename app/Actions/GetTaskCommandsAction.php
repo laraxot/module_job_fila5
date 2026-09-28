@@ -19,6 +19,7 @@ class GetTaskCommandsAction
      */
     public function execute(): Collection
     {
+<<<<<<< HEAD
         $all_commands = collect(Artisan::all());
 
         /*
@@ -40,6 +41,12 @@ class GetTaskCommandsAction
          */
         /** @var Collection<int, Command> $sorted */
         $sorted = $all_commands->sortBy(static function ($command) {
+=======
+        $allCommands = collect(Artisan::all());
+
+                /** @var Collection<int, Command> $sorted */
+        $sorted = $allCommands->sortBy(static function ($command) {
+>>>>>>> laraxot/dev
             /** @var Command $command */
             $name = $command->getName();
             Assert::string($name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));

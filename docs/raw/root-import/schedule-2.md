@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "schedule 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring

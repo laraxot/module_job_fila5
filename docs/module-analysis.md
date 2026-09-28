@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job Module - Comprehensive Analysis"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "module analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "module analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module analysis"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Job Module - Comprehensive Analysis
 
 ## Module Overview

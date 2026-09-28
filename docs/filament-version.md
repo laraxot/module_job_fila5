@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Filament Version Declaration — Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "filament version"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "filament version"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament version"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Filament Version Declaration — Job
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

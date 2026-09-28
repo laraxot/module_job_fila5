@@ -1,4 +1,15 @@
 ---
+<<<<<<< HEAD
+=======
+title: "module job"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module job"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 module: theme
 topic: module-job
 canonical: ../../../Themes/docs/shared-components/.gitkeep

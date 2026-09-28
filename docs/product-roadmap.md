@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job Module - Product Roadmap"
 module: "Job"
 type: concept
@@ -116,6 +117,17 @@ To build a **comprehensive job queue and background processing system** that ens
 ---
 
 ## Versione italiana (roadmap con maturita' stimata)
+=======
+title: "product roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "product roadmap"
+issues: []
+discussions: []
+---
+>>>>>>> laraxot/dev
 
 # Job - Product Roadmap
 

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PHPStan Fixes — Job
 
 ## 2026-06-10 — STORY-307 · L10 · 0 errori codice
@@ -6,6 +20,17 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Storico — Gennaio 2025
 
 ## ✅ Stato complessivo

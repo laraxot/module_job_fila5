@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "phpstan sessione completa"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan sessione completa"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Sessione PHPStan Completa - Tutti i Moduli
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)  
 **Status**: ⏳ IN CORSO
@@ -180,5 +194,16 @@ $media = $record->getFirstMedia($attachment);
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "phpstan sessione completa"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan sessione completa"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
 

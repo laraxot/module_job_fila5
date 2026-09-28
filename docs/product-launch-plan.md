@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job Module - Product Launch Plan"
 module: "Job"
 type: concept
@@ -96,6 +97,17 @@ related:
 ---
 
 ## Versione italiana (piano di lancio con readiness stimata)
+=======
+title: "product launch plan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "product launch plan"
+issues: []
+discussions: []
+---
+>>>>>>> laraxot/dev
 
 # Job - Product Launch Plan
 

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Current State - Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "01 current state"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "01 current state"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "01 current state"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Current State - Job
 
 ## Baseline

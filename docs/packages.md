@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Pacchetti del Modulo Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "packages"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "packages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "packages"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Pacchetti del Modulo Job
 
 ## Pacchetti Utilizzati
@@ -89,6 +102,17 @@ related:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "packages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "packages"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

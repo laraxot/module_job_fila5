@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Task: Consolidare Documentazione - Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "task consolidare documentazione"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "task consolidare documentazione"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task consolidare documentazione"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Task: Consolidare Documentazione - Job
 
 **Modulo**: Job
@@ -17,6 +30,17 @@ related:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "task consolidare documentazione"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task consolidare documentazione"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Criteri di Completamento
 
 - [ ] Rimossi duplicati da 113 docs

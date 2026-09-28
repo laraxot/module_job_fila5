@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "PRD - Job Module (2025-2026 Lean Standard)"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "prd"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "prd"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prd"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # PRD - Job Module (2025-2026 Lean Standard)
 
 ## 1. Problem Statement

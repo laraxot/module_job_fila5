@@ -1,4 +1,14 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "job services to actions.story"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 id: story-job-services-to-actions
 slug: job-services-to-actions
 status: done

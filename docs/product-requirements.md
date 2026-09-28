@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Product Requirements Document (PRD)"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "product requirements"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "product requirements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "product requirements"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Product Requirements Document (PRD)
 
 ## Metadata
@@ -24,6 +37,17 @@ related:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "product requirements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "product requirements"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 1. Panoramica del Prodotto
 
 ### Descrizione Breve

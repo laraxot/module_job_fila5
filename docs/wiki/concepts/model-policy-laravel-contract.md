@@ -1,4 +1,11 @@
 ---
+<<<<<<< HEAD
+=======
+created: 2026-09-26
+qmd: "model policy laravel contract"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: Policy modello — contratto Laravel (Job)
 type: concept
 module: Job

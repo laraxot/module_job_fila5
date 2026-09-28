@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Roadmap overview (Module Job)"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "00 overview"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "00 overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 overview"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Roadmap overview (Module Job)
 
 ## Scope

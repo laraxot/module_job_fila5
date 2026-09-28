@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "INDEX"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "job — product"
 module: job
 type: product

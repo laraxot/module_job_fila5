@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MCP Server Consigliati per il Modulo Job
 
 ## Scopo del Modulo
@@ -21,3 +22,20 @@ Gestione code, job asincroni, schedulazione e workflow.
 
 ## Note
 - Personalizza la configurazione in base ai workflow e ai servizi esterni utilizzati.
+=======
+---
+title: "mcp server recommended"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp server recommended"
+issues: []
+discussions: []
+module: theme
+topic: mcp_server_recommended
+canonical: ../../../Themes/docs/shared-components/mcp_server_recommended.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/mcp_server_recommended.md
+>>>>>>> laraxot/dev

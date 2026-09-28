@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "phpstan format seconds trait probe"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: PHPStan trait probe FormatSeconds
 type: concept
 module: Job

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job Module Performance Bottlenecks"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "bottlenecks"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bottlenecks"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Job Module Performance Bottlenecks
 
 ## Queue Management
@@ -215,6 +228,17 @@ Implementare:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bottlenecks"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

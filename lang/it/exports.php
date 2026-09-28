@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+<<<<<<< HEAD
         'id' => ['label' => 'id'],
         'name' => ['label' => 'name'],
         'created_at' => ['label' => 'created_at'],
@@ -19,5 +20,16 @@ return [
         'delete' => ['label' => 'delete', 'icon' => 'delete', 'tooltip' => 'delete'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
         'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+=======
+        'id' => [
+            'label' => 'id',
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+>>>>>>> laraxot/dev
     ],
 ];

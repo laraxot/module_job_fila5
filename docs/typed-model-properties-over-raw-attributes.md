@@ -1,4 +1,9 @@
 ---
+<<<<<<< HEAD
+=======
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Proprietà tipizzate invece di $this->attributes[...]"
 module: "Job"
 type: rule

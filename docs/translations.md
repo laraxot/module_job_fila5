@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Traduzioni del Modulo Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "translations"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Traduzioni del Modulo Job
 
 ## Collegamenti
@@ -89,3 +102,14 @@ return [
 ```
 
 ---
+<<<<<<< HEAD
+=======
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

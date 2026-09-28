@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "artisan dup"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: 'Artisan dup — risorse esterne'
 module: Job
 type: reference

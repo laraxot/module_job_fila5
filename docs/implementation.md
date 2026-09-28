@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Implementazione Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "implementation"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementation"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Implementazione Job
 
 ## Struttura del Codice
@@ -315,6 +328,17 @@ class JobPageTest extends TestCase
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementation"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

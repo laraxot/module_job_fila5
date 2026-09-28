@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job Module - Roadmap"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "00 index"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "00 index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 index"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Job Module - Roadmap
 
 > Infrastruttura robusta per code e processi in background.
