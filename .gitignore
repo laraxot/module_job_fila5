@@ -86,3 +86,8 @@ vendor/
 yarn-error.log*
 yarn.lock
 *:Zone.Identifier
+graphify-out/
+.claude/
+.claude-audit/
+test-results/
+job.code-workspace
