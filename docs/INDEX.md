@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 Job Module Documentation Index
 
 **Last updated:** 2026-07-28
@@ -173,3 +174,23 @@
 **Document:** INDEX.md  
 **Collection:** Job Module Documentation  
 **Status:** Active (updated 2026-07-28)
+=======
+---
+title: "INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "INDEX"
+issues: []
+discussions: []
+---
+
+# Documentation Index
+
+Modulo: Job
+
+## File disponibili
+
+<!-- auto-generato: elencare i file .md presenti -->
+>>>>>>> laraxot/dev

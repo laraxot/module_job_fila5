@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Cyclomatic Complexity Report - Module: Job"
 module: "Job"
 type: concept
@@ -9,12 +10,35 @@ qmd: "cyclomatic complexity report"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "cyclomatic complexity report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cyclomatic complexity report"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Cyclomatic Complexity Report - Module: Job
 
 **Analyzer:** Super Mucca 🐮
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "cyclomatic complexity report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cyclomatic complexity report"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 Summary Statistics
 
 | Metric | Value |

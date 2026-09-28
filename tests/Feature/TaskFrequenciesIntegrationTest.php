@@ -2,16 +2,30 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+use Exception;
+use Modules\Job\Actions\GetTaskFrequenciesAction;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use stdClass;
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('TaskFrequencies Integration', function () {
     beforeEach(function () {
         /** @var TestCase $this */
+<<<<<<< HEAD
         $this->action = new GetTaskFrequenciesAction();
+=======
+        $this->action = new GetTaskFrequenciesAction;
+>>>>>>> laraxot/dev
     });
 
     it('integrates with Laravel config system', function () {
@@ -163,7 +177,11 @@ describe('TaskFrequencies Integration', function () {
             true,
             false,
             null,
+<<<<<<< HEAD
             new \stdClass(),
+=======
+            new stdClass,
+>>>>>>> laraxot/dev
         ];
 
         $action = $this->getAction(GetTaskFrequenciesAction::class);
@@ -173,8 +191,13 @@ describe('TaskFrequencies Integration', function () {
             try {
                 $action->execute();
                 Assert::fail('Expected exception for invalid config');
+<<<<<<< HEAD
             } catch (\Exception $exception) {
                 Assert::assertInstanceOf(\Exception::class, $exception);
+=======
+            } catch (Exception $exception) {
+                Assert::assertInstanceOf(Exception::class, $exception);
+>>>>>>> laraxot/dev
             }
         }
     });

@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "links dup"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: 'Links dup — risorse esterne'
 module: Job
 type: reference

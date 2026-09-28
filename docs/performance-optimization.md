@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "performance optimization"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Performance Optimization — Module Job"
 type: documentation
 created: 2026-05-11

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Collegamento alle Traduzioni del Modulo Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "lang link"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "lang link"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "lang link"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Collegamento alle Traduzioni del Modulo Job
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

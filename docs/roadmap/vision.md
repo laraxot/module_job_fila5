@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Visione - Job Module"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "vision"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "vision"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "vision"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Visione - Job Module
 
 Fornire un'infrastruttura robusta e scalabile per:

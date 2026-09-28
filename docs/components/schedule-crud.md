@@ -1,4 +1,15 @@
 ---
+<<<<<<< HEAD
+=======
+title: "schedule crud"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule crud"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 module: theme
 topic: schedule-crud
 canonical: ../../../../Themes/docs/shared-components/.gitkeep

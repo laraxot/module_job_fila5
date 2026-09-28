@@ -28,7 +28,11 @@ describe('Executing', function () {
 
         Assert::assertNotFalse($filename);
         $content = file_get_contents($filename);
+<<<<<<< HEAD
         Assert::assertStringContainsString('', $content);
+=======
+        Assert::assertStringContainsString('declare(strict_types=1);', $content);
+>>>>>>> laraxot/dev
     });
 
     it('is instantiable', function () {

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Task: Migliorare Dashboard Monitoring - Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "task dashboard monitoring"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "task dashboard monitoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task dashboard monitoring"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Task: Migliorare Dashboard Monitoring - Job
 
 **Modulo**: Job
@@ -17,6 +30,17 @@ related:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "task dashboard monitoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task dashboard monitoring"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Criteri di Completamento
 
 - [ ] Grafici real-time per throughput

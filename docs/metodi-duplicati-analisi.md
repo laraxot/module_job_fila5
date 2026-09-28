@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 module: Job
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
@@ -501,3 +502,19 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+=======
+title: "metodi duplicati analisi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "metodi duplicati analisi"
+issues: []
+discussions: []
+module: theme
+topic: metodi-duplicati-analisi
+canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
+>>>>>>> laraxot/dev

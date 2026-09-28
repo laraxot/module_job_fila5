@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "schedule 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: 'Schedule 1 — risorse esterne'
 module: Job
 type: reference

@@ -21,8 +21,11 @@ class TaskCommentFactory extends Factory
 
     /**
      * Define the model's default state.
+<<<<<<< HEAD
      *
      * @return array<string, mixed>
+=======
+>>>>>>> laraxot/dev
      */
     public function definition(): array
     {

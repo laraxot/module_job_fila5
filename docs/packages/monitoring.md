@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Monitoraggio"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "monitoring"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "monitoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "monitoring"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Monitoraggio
 
 ## Pacchetti Utilizzati
@@ -104,6 +117,17 @@ Artisan::call('queue:forget', ['id' => 'all']);
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "monitoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "monitoring"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

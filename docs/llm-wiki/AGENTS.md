@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job {{TYPE^}} LLM Wiki Agent Instructions"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "agents"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "AGENTS"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "AGENTS"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job
@@ -33,6 +46,7 @@ You are the **Job Wiki Maintainer**. Your job is to:
 
 ```yaml
 ---
+<<<<<<< HEAD
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
 sources: ["raw/articles/filename.md"]
@@ -179,6 +193,11 @@ You are the **Job Wiki Maintainer**. Your job is to:
 
 ```yaml
 ---
+=======
+qmd: "AGENTS"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
 sources: ["raw/articles/filename.md"]

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "ScheduleBusinessLogicTest - Wrong Database Schema"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "schedule test wrong schema"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "schedule test wrong schema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule test wrong schema"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # ScheduleBusinessLogicTest - Wrong Database Schema
 
 ## Problem Discovery
@@ -115,6 +128,17 @@ File `tests/Feature/ScheduleBusinessLogicTest.php` will be DELETED because:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "schedule test wrong schema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule test wrong schema"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Date**: [DATE]
 **Status**: Test File Deleted
 **Reason**: Complete schema mismatch - test was fiction, not reality

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 id: module-job-readme
 title: "Job — Gestione dei Lavori Asincroni"
@@ -45,3 +46,14 @@ php artisan module:list
 See [architecture](./docs/architecture.md) and [livewire inventory](./docs/bmad/livewire-inventory.md).
 
 **Modulo** `job` · **Laraxot** · PHPStan max · Filament 5
+=======
+# Job Module (BMAD Fix — Second Brain)
+## Score
+73/100 | Grade C
+## Fixes
+- Added README (docs 0->60)
+- Deep nesting reduced (GetTaskCommandsAction.php)
+- QA gate passed
+## Next
+Batch 4: UI/Comment/Rating/SEO
+>>>>>>> laraxot/dev

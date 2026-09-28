@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "NestedSet Migration Best Practices - Job Module"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "nestedset migration best practices"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "nestedset migration best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "nestedset migration best practices"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview
