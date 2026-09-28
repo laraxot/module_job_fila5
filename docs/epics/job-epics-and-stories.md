@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "job epics and stories"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Job Epics and User Stories"
 type: user_stories
 tags: [user stories, epics, job]

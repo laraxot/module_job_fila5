@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Analisi Metodi Duplicati - Modulo Job"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "duplicate methods analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "duplicate methods analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "duplicate methods analysis"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi Metodi Duplicati - Modulo Job
 
 **Totale Gruppi di Duplicati**:
@@ -65,6 +78,17 @@ public function scopeActive($query): void
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "duplicate methods analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "duplicate methods analysis"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### 2. Metodo: `task`
 
 **Tipo Refactoring**: `BaseClass` | **Complessità**: 🟡 Medium | **Confidenza**: ✅ 75%

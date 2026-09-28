@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Performance"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "performance"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "performance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "performance"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 ### Versione HEAD
 
 ### Versione HEAD
@@ -27,6 +40,17 @@ related:
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "performance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "performance"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

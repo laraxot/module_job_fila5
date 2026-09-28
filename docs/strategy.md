@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Product Strategy: Job Module"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "strategy"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Product Strategy: Job Module
 
 ## 🌍 Market Context

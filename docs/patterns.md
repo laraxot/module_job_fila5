@@ -1,4 +1,13 @@
 ---
+<<<<<<< HEAD
+=======
+type: note
+tags: [documentation]
+created: 2026-09-26
+qmd: "patterns"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Job Module Architectural Patterns"
 category: "architecture"
 owner: "Job"

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Git Conflict Inventory"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "git merge conflict inventory"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "git merge conflict inventory"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git merge conflict inventory"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Git Conflict Inventory
 
 - Date: 2026-04-28

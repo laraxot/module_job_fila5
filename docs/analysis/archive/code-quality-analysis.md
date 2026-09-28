@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "⚙️ Job Module - Code Quality Analysis Report"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "code quality analysis"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "code quality analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality analysis"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -91,5 +104,16 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "code quality analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality analysis"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Report Generated**: 2025-11-11
 **Target Completion**: 2025-11-15

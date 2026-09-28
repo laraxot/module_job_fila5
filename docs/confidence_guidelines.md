@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Massimizzare il livello di confidenza"
 module: "Job"
 type: how-to
@@ -9,6 +10,18 @@ qmd: "confidence guidelines"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "confidence guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "confidence guidelines"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

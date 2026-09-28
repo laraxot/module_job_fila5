@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "PRD"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: "Product Requirements Document (PRD) - Job Module"
 module: "Job"
 type: concept

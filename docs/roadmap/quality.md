@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Checklist qualità - Job Module"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "quality"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "quality"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Checklist qualità - Job Module
 
 - [x] PHPStan Level 10

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "INDEX GENERATED"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "INDEX GENERATED"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Job Module Documentation Index (Generated)
 
 **Generated:** 2026-07-28  
@@ -8,6 +22,17 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "INDEX GENERATED"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "INDEX GENERATED"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Table of Contents
 
 1. [Statistics](#statistics)
@@ -135,6 +160,10 @@
 ### Audits & Analysis
 - [code-redundancy-audit.md](code-redundancy-audit.md) - Redundancy audit (2.9KB)
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - Copilot audit (581 bytes)
+<<<<<<< HEAD
+=======
+---
+>>>>>>> laraxot/dev
 - [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit-2026-05-25.md) - 2026 audit (420 bytes)
 - [redundancy-audit.md](redundancy-audit.md) - General redundancy (1.2KB)
 - [redundancy-report.md](redundancy-report.md) - Redundancy report (1.6KB)

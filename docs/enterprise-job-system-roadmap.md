@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job Module - Comprehensive Job Management System"
 module: "Job"
 type: concept
@@ -9,6 +10,18 @@ qmd: "enterprise job system roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
 ---
+=======
+title: "enterprise job system roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "enterprise job system roadmap"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Job Module - Comprehensive Job Management System
 
 ## Overview
@@ -518,5 +531,16 @@ class JobPermission
 ---
 
 
+<<<<<<< HEAD
+=======
+title: "enterprise job system roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "enterprise job system roadmap"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Priority**: Critical Development Need  
 **Estimated Completion**: 16-18 weeks with full team

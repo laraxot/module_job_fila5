@@ -1,4 +1,10 @@
 ---
+<<<<<<< HEAD
+=======
+qmd: "optimization dup"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 title: 'Optimization dup — risorse esterne'
 module: Job
 type: reference
