@@ -1,3 +1,14 @@
+---
+title: "index generated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index generated"
+issues: []
+discussions: []
+---
+
 # Job Module Documentation Index (Generated)
 
 **Generated:** 2026-07-28  
@@ -8,6 +19,14 @@
 
 ---
 
+title: "index generated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index generated"
+issues: []
+discussions: []
 ## Table of Contents
 
 1. [Statistics](#statistics)

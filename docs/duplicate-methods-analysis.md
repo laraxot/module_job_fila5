@@ -1,3 +1,14 @@
+---
+title: "duplicate methods analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "duplicate methods analysis"
+issues: []
+discussions: []
+---
+
 # Analisi Metodi Duplicati - Modulo Job
 
 **Totale Gruppi di Duplicati**:
@@ -54,6 +65,14 @@ public function scopeActive($query): void
 
 ---
 
+title: "duplicate methods analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "duplicate methods analysis"
+issues: []
+discussions: []
 ### 2. Metodo: `task`
 
 **Tipo Refactoring**: `BaseClass` | **Complessità**: 🟡 Medium | **Confidenza**: ✅ 75%

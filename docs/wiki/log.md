@@ -1,3 +1,14 @@
+---
+title: "log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
+---
+
 ## [2026-06-30] docs | Second brain — policy incident consolidato
 
 - Memoria datata rimossa; canon in [policy-restoration-incident.md](./concepts/policy-restoration-incident.md)
@@ -12,6 +23,13 @@
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
 title: "Job Wiki Activity Log"
 module: "Job"
 ---
