@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "filament dup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Filament dup — risorse esterne'
 module: Job
 type: reference

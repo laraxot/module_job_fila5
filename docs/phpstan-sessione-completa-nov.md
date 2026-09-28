@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan sessione completa nov"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan sessione completa nov"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan-sessione-completa-nov
 canonical: ../../../Themes/docs/shared-components/phpstan-sessione-completa-2025-11.md

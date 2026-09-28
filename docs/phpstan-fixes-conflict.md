@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
-module: "Job"
-type: concept
-tags: [phpstan, fixes, conflict]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "phpstan fixes conflict"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "phpstan fixes conflict"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Status**: ✅ COMPLETATO CON SUCCESSO
@@ -206,11 +193,7 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< HEAD
-- [README.md Modulo Job](README.md)
-=======
 - [README.md Modulo Job](./readme.md)
->>>>>>> laraxot/dev
 - [Queue Management](./queue/readme.md)
 - [Best Practices](./best-practices.md)
 
@@ -221,8 +204,6 @@ public function __construct(string $output)
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan fixes conflict"
 type: note
 tags: [documentation]
@@ -231,7 +212,6 @@ updated: 2026-09-26
 qmd: "phpstan fixes conflict"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 2.0
 **🐛 PHPStan Level**: 9 ✅

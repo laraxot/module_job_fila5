@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Milestones - Job"
-module: "Job"
-type: concept
-tags: [04, milestones]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "04 milestones"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "04 milestones"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Milestones - Job
 
 ## M1 Documentation Baseline

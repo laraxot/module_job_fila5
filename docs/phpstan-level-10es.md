@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "phpstan level 10es"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "phpstan level 10es"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: phpstan-level-10es
 canonical: ../../../Themes/docs/shared-components/phpstan-level-10-fixes.md

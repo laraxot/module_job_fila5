@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "PHPStan iterable types nel modulo Job"
 type: rule
 tags: [phpstan, iterable, job, laraxot]

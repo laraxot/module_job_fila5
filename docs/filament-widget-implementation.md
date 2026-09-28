@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "filament widget implementation"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "filament widget implementation"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: filament-widget-implementation
 canonical: ../../../Themes/docs/shared-components/.gitkeep

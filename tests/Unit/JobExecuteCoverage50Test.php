@@ -59,12 +59,6 @@ use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-use function Safe\ob_get_clean;
-use function Safe\ob_start;
-
-=======
->>>>>>> laraxot/dev
 /**
  * Narrows Mockery's shouldReceive() union return type for PHPStan.
  */
@@ -76,12 +70,9 @@ function expectMethod(LegacyMockInterface|MockInterface $mock, string $method): 
     return $expectation;
 }
 
-<<<<<<< HEAD
-=======
 use function Safe\ob_get_clean;
 use function Safe\ob_start;
 
->>>>>>> laraxot/dev
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
 
 afterEach(function (): void {
@@ -134,11 +125,8 @@ describe('Job execute coverage — Filament resources', function (): void {
             Assert::assertTrue(class_exists($classe::getModel()));
         }
     });
-<<<<<<< HEAD
-=======
 
     
->>>>>>> laraxot/dev
 });
 
 describe('Job execute coverage — policies', function (): void {

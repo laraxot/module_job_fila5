@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module Wiki Index"
-module: "Job"
-type: concept
-tags: [index]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "index"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "index"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module Wiki Index
 
 > **Module**: Job
@@ -30,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "index"
 type: note
 tags: [documentation]
@@ -40,7 +25,6 @@ updated: 2026-09-26
 qmd: "index"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Concepts
 
 _No concept pages created yet_

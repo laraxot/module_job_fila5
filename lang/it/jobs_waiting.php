@@ -3,19 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-    'navigation' => ['label' => 'Navigation Label', 'group' => 'Job', 'icon' => 'heroicon-o-cog', 'sort' => 50],
-    'fields' => [
-        'id' => ['label' => 'ID', 'description' => 'Unique identifier for the job', 'helper_text' => 'Auto-generated job identifier', 'tooltip' => ''],
-        'queue' => ['label' => 'Queue', 'description' => 'Queue name where the job is waiting', 'helper_text' => 'Name of the queue this job belongs to', 'tooltip' => ''],
-        'payload' => ['label' => 'Payload', 'description' => 'Job data and parameters', 'helper_text' => 'Serialized job data and parameters', 'tooltip' => ''],
-        'attempts' => ['label' => 'Attempts', 'description' => 'Number of execution attempts', 'helper_text' => 'How many times this job has been attempted', 'tooltip' => ''],
-        'reserved_at' => ['label' => 'Reserved At', 'description' => 'When the job was reserved for processing', 'helper_text' => 'Timestamp when job was picked up for processing', 'tooltip' => ''],
-        'available_at' => ['label' => 'Available At', 'description' => 'When the job becomes available for processing', 'helper_text' => 'Timestamp when job becomes available for execution', 'tooltip' => ''],
-        'created_at' => ['label' => 'Created At', 'description' => 'When the job was created', 'helper_text' => 'Timestamp when job was added to queue', 'tooltip' => ''],
-        'display_name' => ['label' => 'display_name'],
-        'updated_at' => ['label' => 'updated_at'],
-=======
     'navigation' => [
         'label' => 'Navigation Label',
         'group' => 'Job',
@@ -65,7 +52,6 @@ return [
             'helper_text' => 'Timestamp when job was added to queue',
             'tooltip' => '',
         ],
->>>>>>> laraxot/dev
     ],
     'actions' => [
         'export' => [
@@ -75,10 +61,6 @@ return [
             'color' => 'green',
             'filename_prefix' => 'Aree al',
             'columns' => [
-<<<<<<< HEAD
-                'name' => ['label' => 'Nome area', 'tooltip' => 'Nome dell\'area da esportare'],
-                'parent_name' => ['label' => 'Nome area livello superiore', 'tooltip' => 'Nome dell\'area di livello superiore'],
-=======
                 'name' => [
                     'label' => 'Nome area',
                     'tooltip' => 'Nome dell\'area da esportare',
@@ -87,7 +69,6 @@ return [
                     'label' => 'Nome area livello superiore',
                     'tooltip' => 'Nome dell\'area di livello superiore',
                 ],
->>>>>>> laraxot/dev
             ],
         ],
         'process' => [
@@ -95,10 +76,6 @@ return [
             'tooltip' => 'Processa il job in attesa',
             'icon' => 'play-circle',
             'color' => 'green',
-<<<<<<< HEAD
-            'modal' => ['heading' => 'Processa Job', 'description' => 'Vuoi processare questo job in attesa?'],
-            'messages' => ['success' => 'Job processato con successo'],
-=======
             'modal' => [
                 'heading' => 'Processa Job',
                 'description' => 'Vuoi processare questo job in attesa?',
@@ -106,17 +83,12 @@ return [
             'messages' => [
                 'success' => 'Job processato con successo',
             ],
->>>>>>> laraxot/dev
         ],
         'cancel' => [
             'label' => 'Cancella',
             'tooltip' => 'Cancella il job in attesa',
             'icon' => 'delete-icon',
             'color' => 'red',
-<<<<<<< HEAD
-            'modal' => ['heading' => 'Cancella Job', 'description' => 'Vuoi cancellare questo job in attesa?'],
-            'messages' => ['success' => 'Job cancellato con successo'],
-=======
             'modal' => [
                 'heading' => 'Cancella Job',
                 'description' => 'Vuoi cancellare questo job in attesa?',
@@ -124,23 +96,12 @@ return [
             'messages' => [
                 'success' => 'Job cancellato con successo',
             ],
->>>>>>> laraxot/dev
         ],
         'retry' => [
             'label' => 'Riprova',
             'tooltip' => 'Riprova il job fallito',
             'icon' => 'redo',
             'color' => 'yellow',
-<<<<<<< HEAD
-            'modal' => ['heading' => 'Riprova Job', 'description' => 'Vuoi riprovare questo job?'],
-            'messages' => ['success' => 'Job riprovato con successo'],
-        ],
-    ],
-    'messages' => ['no_jobs' => 'Nessun job in attesa', 'job_processed' => 'Job processato', 'job_cancelled' => 'Job cancellato', 'job_retried' => 'Job riprovato'],
-    'statuses' => ['waiting' => 'In Attesa', 'reserved' => 'Riservato', 'delayed' => 'Ritardato', 'ready' => 'Pronto'],
-    'priorities' => ['low' => 'Bassa', 'normal' => 'Normale', 'high' => 'Alta', 'urgent' => 'Urgente'],
-    'types' => ['default' => 'Default', 'scheduled' => 'Schedulato', 'recurring' => 'Ricorrente', 'batch' => 'Batch'],
-=======
             'modal' => [
                 'heading' => 'Riprova Job',
                 'description' => 'Vuoi riprovare questo job?',
@@ -174,7 +135,6 @@ return [
         'recurring' => 'Ricorrente',
         'batch' => 'Batch',
     ],
->>>>>>> laraxot/dev
     'label' => 'Jobs Waiting',
     'plural_label' => 'Jobs Waiting (Plurale)',
 ];

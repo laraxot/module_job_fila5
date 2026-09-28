@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "bottlenecks detailed"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "bottlenecks detailed"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: bottlenecks-detailed
 canonical: ../../../Themes/docs/shared-components/.gitkeep

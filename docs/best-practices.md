@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "best practices"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "best practices"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: best-practices
 canonical: ../../../Themes/docs/shared-components/.gitkeep

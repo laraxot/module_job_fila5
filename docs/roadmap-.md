@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module Roadmap 2026"
-module: "Job"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "roadmap "
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "roadmap "
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module Roadmap 2026
 
 ## ⚙️ Sacred Philosophy: "Automation is Liberation"
@@ -38,8 +25,6 @@ Transform task management from a technical burden into an **automation superpowe
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "roadmap "
 type: note
 tags: [documentation]
@@ -48,7 +33,6 @@ updated: 2026-09-26
 qmd: "roadmap "
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Current Architecture Assessment
 
 ### ✅ Architectural Strengths

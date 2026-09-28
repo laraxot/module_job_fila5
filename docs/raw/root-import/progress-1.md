@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "progress 1"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
 

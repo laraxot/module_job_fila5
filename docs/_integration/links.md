@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "links"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "links"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: links
 canonical: ../../../../Themes/docs/shared-components/.gitkeep

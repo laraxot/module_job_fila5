@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Integrazioni"
-module: "Job"
-type: concept
-tags: [integrations]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "integrations"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "integrations"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Integrazioni
 
 ## Pacchetti Utilizzati
@@ -119,8 +106,6 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "integrations"
 type: note
 tags: [documentation]
@@ -129,7 +114,6 @@ updated: 2026-09-26
 qmd: "integrations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

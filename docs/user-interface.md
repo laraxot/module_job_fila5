@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "user interface"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "user interface"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: user-interface
 canonical: ../../../Themes/docs/shared-components/.gitkeep

@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module Analysis"
-module: "Job"
-type: concept
-tags: [analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "analysis"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "analysis"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module Analysis
 
 ## Overview
@@ -105,8 +92,6 @@ Modules/Job/
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "analysis"
 type: note
 tags: [documentation]
@@ -115,7 +100,6 @@ updated: 2026-09-26
 qmd: "analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Versione Incoming
 
 ---

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "optimization 1"
 type: note
@@ -11,6 +9,5 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://filamentphp.com/community/danharrin-fast-table-pagination
 

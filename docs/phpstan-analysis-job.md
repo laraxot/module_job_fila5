@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan analysis job"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Analysis - Job Module
 
 ## 📊 Status
@@ -172,8 +169,6 @@ $result = $value['key']; // Now safe
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan analysis job"
 type: note
 tags: [documentation]
@@ -182,7 +177,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis job"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1

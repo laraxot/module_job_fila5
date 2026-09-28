@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "release marketing standard"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Release e README marketing — Job"
 type: reference
 status: approved

@@ -26,17 +26,6 @@ class GetCommandOptionsActions
             ],
         ];
         foreach ($command->getDefinition()->getOptions() as $option) {
-<<<<<<< HEAD
-            if ($option->acceptValue()) {
-                $options['withValue'][] = (object) [
-                    'name' => $option->getName(),
-                    'default' => $option->getDefault(),
-                    'required' => $option->isValueRequired(),
-                ];
-            } else {
-                $options['withoutValue'][] = $option->getName();
-            }
-=======
             if (! $option->acceptValue()) {
                 $options['withoutValue'][] = $option->getName();
 
@@ -48,7 +37,6 @@ class GetCommandOptionsActions
                 'default' => $option->getDefault(),
                 'required' => $option->isValueRequired(),
             ];
->>>>>>> laraxot/dev
         }
 
         return $options;

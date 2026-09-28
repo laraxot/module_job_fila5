@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "artisan 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://fly.io/laravel-bytes/streaming-to-the-browser-with-livewire/
 
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/

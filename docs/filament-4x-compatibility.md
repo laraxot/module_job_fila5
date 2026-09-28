@@ -1,12 +1,4 @@
 ---
-<<<<<<< HEAD
-module: theme
-topic: filament-4x-compatibility
-canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
-=======
 title: "filament 4x compatibility"
 type: note
 tags: [documentation]
@@ -21,4 +13,3 @@ canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
->>>>>>> laraxot/dev

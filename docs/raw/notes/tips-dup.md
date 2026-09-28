@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "tips dup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Tips dup — risorse esterne'
 module: Job
 type: reference

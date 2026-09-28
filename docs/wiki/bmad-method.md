@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "bmad method"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "bmad method"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: bmad-method
 canonical: ../../../../Themes/docs/shared-components/bmad-method.md

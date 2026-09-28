@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Activity Log"
-module: "Job"
-type: concept
-tags: [log]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "log"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "log"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Activity Log
 
 > **Module**: Job
@@ -30,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "log"
 type: note
 tags: [documentation]
@@ -40,7 +25,6 @@ updated: 2026-09-26
 qmd: "log"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## [2026-04-15] maintenance | Initial wiki setup
 - Created: llm-wiki/ directory structure
 - Created: AGENTS.md (agent instructions)

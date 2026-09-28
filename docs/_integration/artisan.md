@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "artisan"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "artisan"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: artisan
 canonical: ../../../../Themes/docs/shared-components/.gitkeep

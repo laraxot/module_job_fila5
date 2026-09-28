@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module PDF Reports"
-module: "Job"
-type: concept
-tags: [job, reports]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "job reports"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "job reports"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module PDF Reports
 
 ## 📋 Overview
@@ -30,8 +17,6 @@ Guida completa per generare report PDF del sistema di code e job utilizzando HTM
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "job reports"
 type: note
 tags: [documentation]
@@ -40,7 +25,6 @@ updated: 2026-09-26
 qmd: "job reports"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Tipi di Report Disponibili
 
 ### 1. Queue System Report
@@ -872,11 +856,7 @@ public function generateWithErrorHandling(array $options = []): string
 ## 📚 References
 
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
-<<<<<<< HEAD
-- [Job Module README](README.md)
-=======
 - [Job Module README](./readme.md)
->>>>>>> laraxot/dev
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 

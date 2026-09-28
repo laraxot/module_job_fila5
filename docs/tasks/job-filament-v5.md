@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Task: Job Filament v5 Alignment (Clusters)"
-module: "Job"
-type: concept
-tags: [job, filament, v5]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "job filament v5"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "job filament v5"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Job Filament v5 Alignment (Clusters)
 
 ## 📋 Obiettivo
