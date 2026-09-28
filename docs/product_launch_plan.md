@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Job Module - Product Launch Plan"
 module: "Job"
 type: concept

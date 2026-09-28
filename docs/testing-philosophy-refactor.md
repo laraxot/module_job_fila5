@@ -1,3 +1,14 @@
+---
+title: "testing philosophy refactor"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing philosophy refactor"
+issues: []
+discussions: []
+---
+
 # Job Module Testing Refactor - The Journey to Zen
 
 ## The Problem (Before Refactor)
@@ -251,6 +262,14 @@ This is the way.
 
 ---
 
+title: "testing philosophy refactor"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing philosophy refactor"
+issues: []
+discussions: []
 **Date**: [DATE]
 **Author**: Claude Sonnet 4.5
 **Status**: Implementation Ready

@@ -1,3 +1,14 @@
+---
+title: "phpstan sessione completa 11"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan sessione completa 11"
+issues: []
+discussions: []
+---
+
 # Sessione PHPStan Completa - Tutti i Moduli
 **Data**: 2025-11-05
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)
@@ -181,4 +192,12 @@ $media = $record->getFirstMedia($attachment);
 
 ---
 
+title: "phpstan sessione completa 11"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan sessione completa 11"
+issues: []
+discussions: []
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.

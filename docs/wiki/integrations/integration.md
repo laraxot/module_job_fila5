@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Integrazione Documentazione"
 module: "Job"
 type: concept
