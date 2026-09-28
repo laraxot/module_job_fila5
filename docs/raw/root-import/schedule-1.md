@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "schedule 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://github.com/codestudiohq/laravel-totem
 
 https://github.com/stylers-llc/laravel-task-manager

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "migrations"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module — Migrations Documentation
 
 ## Overview
@@ -24,8 +21,6 @@ This document describes the migration strategy for the Job module, which manages
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "migrations"
 type: note
 tags: [documentation]
@@ -34,7 +29,6 @@ updated: 2026-09-26
 qmd: "migrations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Philosophy
 
 Each migration represents the schema lifecycle for one or more models. Migrations follow the **XotBaseMigration pattern**:

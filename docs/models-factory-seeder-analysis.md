@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "models factory seeder analysis"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "models factory seeder analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: models-factory-seeder-analysis
 canonical: ../../../Themes/docs/shared-components/.gitkeep

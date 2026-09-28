@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan completion job"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ✅ PHPStan Completion - Modulo Job
 
 ## 🎉 Status: COMPLETATO - 0 Errori
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan completion job"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "phpstan completion job"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Riepilogo Correzioni
 
 | Categoria | Errori Risolti | Tempo |

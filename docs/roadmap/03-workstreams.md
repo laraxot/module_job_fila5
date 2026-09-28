@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Workstreams - Job"
-module: "Job"
-type: concept
-tags: [03, workstreams]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "03 workstreams"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "03 workstreams"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Workstreams - Job
 
 ## WS1 Architecture

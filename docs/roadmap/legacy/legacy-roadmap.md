@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "legacy roadmap"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module Roadmap 2026
 
 ## ⚙️ Sacred Philosophy: "Automation is Liberation"
@@ -28,8 +25,6 @@ Transform task management from a technical burden into an **automation superpowe
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "legacy roadmap"
 type: note
 tags: [documentation]
@@ -38,7 +33,6 @@ updated: 2026-09-26
 qmd: "legacy roadmap"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Current Architecture Assessment
 
 ### ✅ Architectural Strengths

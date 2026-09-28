@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "file naming rules"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "file naming rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: file-naming-rules
 canonical: ../../../Themes/docs/shared-components/file-naming-rules.md

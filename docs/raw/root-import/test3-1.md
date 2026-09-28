@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "test3 1"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 aa

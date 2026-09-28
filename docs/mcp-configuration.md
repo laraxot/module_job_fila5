@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "MCP Server Configuration - Job Module"
-module: "Job"
-type: concept
-tags: [mcp, configuration]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "mcp configuration"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "mcp configuration"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # MCP Server Configuration - Job Module
 
 
@@ -30,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "mcp configuration"
 type: note
 tags: [documentation]
@@ -40,7 +25,6 @@ updated: 2026-09-26
 qmd: "mcp configuration"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📋 Overview
 
 The Job module's MCP configuration enables AI assistants to interact with:

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "xotbase table columns enforcement"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "XotBaseResourceTable Columns Enforcement — Job Module"
 type: concept
 sources: []

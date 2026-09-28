@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Upgrade Laravel 13 - Job 🐄✨"
 module: "Job"
 type: concept

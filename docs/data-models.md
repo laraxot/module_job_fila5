@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "data models"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "data models"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: data-models
 canonical: ../../../Themes/docs/shared-components/.gitkeep

@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "schedule 1"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "schedule 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: schedule_1
 canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules

@@ -16,10 +16,6 @@ class ExportResource extends XotBaseResource
 {
     protected static ?string $model = Export::class;
 
-<<<<<<< HEAD
-    
-
-=======
     #[Override]
     public function getFormSchemaOld(): array
     {
@@ -49,5 +45,4 @@ class ExportResource extends XotBaseResource
             'updated_at' => DateTimePicker::make('updated_at')->disabled(),
         ];
     }
->>>>>>> laraxot/dev
 }

@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "ScheduleBusinessLogicTest Conversion - PHPUnit to Pest"
-module: "Job"
-type: concept
-tags: [schedule, test, conversion]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "schedule test conversion"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "schedule test conversion"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
 
 ## Problem
@@ -100,8 +87,6 @@ Total: 12 tests, 10 converted from PHPUnit to Pest
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "schedule test conversion"
 type: note
 tags: [documentation]
@@ -110,6 +95,5 @@ updated: 2026-09-26
 qmd: "schedule test conversion"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Date**: [DATE]
 **Status**: Complete

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level 10 fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Fixes - Modulo Job
 
 ## Data: [DATE]
@@ -199,8 +196,6 @@ if ($someCondition) {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan level 10 fixes"
 type: note
 tags: [documentation]
@@ -209,5 +204,4 @@ updated: 2026-09-26
 qmd: "phpstan level 10 fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Conclusione:** Il modulo Job è ora completamente compliant con PHPStan Level 10, dimostrando eccellenza nella qualità del codice e type safety.

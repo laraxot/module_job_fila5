@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module - User Research"
-module: "Job"
-type: concept
-tags: [USER, RESEARCH]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "user research"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "USER RESEARCH"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module - User Research
 
 **Module:** Job  
@@ -31,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "USER RESEARCH"
 type: note
 tags: [documentation]
@@ -41,7 +26,6 @@ updated: 2026-09-26
 qmd: "USER RESEARCH"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Research Goals
 
 1. Understand job processing pain points

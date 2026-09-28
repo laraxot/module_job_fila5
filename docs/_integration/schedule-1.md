@@ -1,12 +1,4 @@
 ---
-<<<<<<< HEAD
-module: theme
-topic: schedule-1
-canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep-Modules
-=======
 title: "schedule 1"
 type: note
 tags: [documentation]
@@ -21,4 +13,3 @@ canonical: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.m
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
->>>>>>> laraxot/dev

@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Navigation Translations Completion Roadmap - Job Module"
-module: "Job"
-type: concept
-tags: [navigation, translations, completion, roadmap]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "navigation translations completion roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "navigation translations completion roadmap"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Navigation Translations Completion Roadmap - Job Module
 
 **Modulo**: Job  
@@ -29,8 +16,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "navigation translations completion roadmap"
 type: note
 tags: [documentation]
@@ -39,7 +24,6 @@ updated: 2026-09-26
 qmd: "navigation translations completion roadmap"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Executive Summary
 
 Completamento e miglioramento delle traduzioni per i file con sezione `.navigation` nel modulo Job per le **6 lingue più parlate al mondo**:

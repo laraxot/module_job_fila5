@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "guida migrazione step by step"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "guida migrazione step by step"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: guida-migrazione-step-by-step
 canonical: ../../../Themes/docs/shared-components/.gitkeep

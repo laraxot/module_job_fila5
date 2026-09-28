@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "ottimizzazioni correzioni"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "ottimizzazioni correzioni"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: ottimizzazioni-correzioni
 canonical: ../../../Themes/docs/shared-components/.gitkeep

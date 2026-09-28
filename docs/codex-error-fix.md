@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "codex error fix"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "codex error fix"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: codex-error-fix
 canonical: ../../../Themes/docs/shared-components/codex-error-fix.md

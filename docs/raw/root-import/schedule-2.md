@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "schedule 2"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring

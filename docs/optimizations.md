@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "optimizations"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "optimizations"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: optimizations
 canonical: ../../../Themes/docs/shared-components/.gitkeep

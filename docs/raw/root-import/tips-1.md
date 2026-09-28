@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "tips 1"
 type: note
@@ -11,5 +9,4 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 https://dudi.dev/optimize-laravel-database-queries/

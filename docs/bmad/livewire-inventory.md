@@ -1,12 +1,9 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 qmd: "livewire inventory"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Inventario Http/Livewire → Filament widget — Job"
 type: inventory
 module: Job

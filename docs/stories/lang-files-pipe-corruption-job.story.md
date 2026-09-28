@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "lang files pipe corruption job.story"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Story: file di lingua Job corrotti da una pipe prima di ogni carattere
 
 Status: done

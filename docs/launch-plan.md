@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Product Launch Plan: Job Module"
-module: "Job"
-type: concept
-tags: [launch, plan]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "launch plan"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "launch plan"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Product Launch Plan: Job Module
 
 ## 🚀 Launch Overview
