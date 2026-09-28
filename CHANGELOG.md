@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "CHANGELOG"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Changelog
 
 Tutte le variazioni importanti di Job saranno generate automaticamente da semantic-release.

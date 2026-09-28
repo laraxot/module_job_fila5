@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan fixes session"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Fixes - Modulo Job
 
 ## 🔄 Status: IN PROGRESS - 49 Errori Rimanenti
@@ -21,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan fixes session"
 type: note
 tags: [documentation]
@@ -31,7 +26,6 @@ updated: 2026-09-26
 qmd: "phpstan fixes session"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## 📊 Correzioni Implementate
 
 ### 1. Rimozione Generic Type da HasXotFactory ✅

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "queue and job management"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task 001: Implement Queue and Job Management System
 
 ## Description
@@ -236,8 +233,6 @@ The Job module needs robust queue management for background processing with moni
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "queue and job management"
 type: note
 tags: [documentation]
@@ -246,6 +241,5 @@ updated: 2026-09-26
 qmd: "queue and job management"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Status**: Pending
 **Assignee**: TBD

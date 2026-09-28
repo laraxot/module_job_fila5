@@ -25,9 +25,6 @@ class ListJobsWaiting extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-   
-=======
     #[Override]
     public function getTableColumns(): array
     {
@@ -54,5 +51,4 @@ class ListJobsWaiting extends XotBaseListRecords
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
         ];
     }
->>>>>>> laraxot/dev
 }

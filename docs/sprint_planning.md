@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Job Module - Sprint Planning"
 module: "Job"
 type: concept

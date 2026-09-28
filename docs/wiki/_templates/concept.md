@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "concept"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "concept"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: concept
 canonical: ../../../../../Themes/docs/shared-components/concept.md

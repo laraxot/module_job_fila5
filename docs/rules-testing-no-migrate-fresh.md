@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "rules testing no migrate fresh"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "rules testing no migrate fresh"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: rules-testing-no-migrate-fresh
 canonical: ../../../Themes/docs/shared-components/rules-testing-no-migrate-fresh.md

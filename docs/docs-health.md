@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Docs Health - Job"
-module: "Job"
-type: concept
-tags: [docs, health]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "docs health"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "docs health"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Docs Health - Job
 
 ## Snapshot
@@ -52,8 +39,6 @@ discussions: []
 - Update this file when major cleanup is executed.
 
 ---
-<<<<<<< HEAD
-=======
 title: "docs health"
 type: note
 tags: [documentation]
@@ -62,5 +47,4 @@ updated: 2026-09-26
 qmd: "docs health"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 Generated during docs confidence hardening batch (2026-03-07).

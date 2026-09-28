@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module - Product Roadmap"
-module: "Job"
-type: concept
-tags: [PRODUCT, ROADMAP]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "product roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "PRODUCT ROADMAP"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module - Product Roadmap
 
 **Module:** Job  
@@ -32,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "PRODUCT ROADMAP"
 type: note
 tags: [documentation]
@@ -42,7 +27,6 @@ updated: 2026-09-26
 qmd: "PRODUCT ROADMAP"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Vision Statement
 
 To build a **comprehensive job queue and background processing system** that ensures reliable, scalable, and observable asynchronous task execution across the platform.

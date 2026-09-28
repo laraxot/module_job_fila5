@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "actions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Job Module — QueueableActions Architecture (Consolidated)"
 type: guide
 tags: [actions, architecture, queueable]

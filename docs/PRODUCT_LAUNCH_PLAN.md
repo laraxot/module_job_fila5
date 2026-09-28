@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module - Product Launch Plan"
-module: "Job"
-type: concept
-tags: [PRODUCT, LAUNCH, PLAN]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "product launch plan"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "PRODUCT LAUNCH PLAN"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module - Product Launch Plan
 
 **Module:** Job  
@@ -31,8 +18,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "PRODUCT LAUNCH PLAN"
 type: note
 tags: [documentation]
@@ -41,7 +26,6 @@ updated: 2026-09-26
 qmd: "PRODUCT LAUNCH PLAN"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Launch Objectives
 
 1. **Product:** Deploy queue infrastructure

@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Job — ScheduleService → Actions"
 type: concept
 tags: [job, actions, queueable-action, schedule, migration]
@@ -38,8 +35,4 @@ No caller of `getActives()` existed outside the service itself; `GetActiveSchedu
 - `Modules/Job/tests/Unit/Actions/ClearScheduleCacheActionTest.php`
 - `Modules/Job/tests/Unit/Actions/GetActiveSchedulesActionTest.php`
 
-<<<<<<< HEAD
-Legacy `app/Services/ScheduleService.php` and its test (`tests/Unit/Services/ScheduleServiceTest.php`) were renamed to `.bak` (never `git rm`, per repo policy) once no code referenced them.
-=======
 Legacy `app/Services/ScheduleService.php` and its test were removed once no code referenced them.
->>>>>>> laraxot/dev

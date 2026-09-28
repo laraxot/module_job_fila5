@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "tips"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "tips"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: tips
 canonical: ../../../../Themes/docs/shared-components/.gitkeep

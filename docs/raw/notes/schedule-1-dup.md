@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "schedule 1 dup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Schedule 1 dup — risorse esterne'
 module: Job
 type: reference

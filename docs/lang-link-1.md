@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "lang link 1"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "lang link 1"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: lang-link-1
 canonical: ../../../Themes/docs/shared-components/lang-link-1-Modules.md

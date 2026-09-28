@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "ai methodologies"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "ai methodologies"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: ai-methodologies
 canonical: ../../../Themes/docs/shared-components/ai-methodologies.md

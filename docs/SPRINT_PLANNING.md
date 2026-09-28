@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Job Module - Sprint Planning"
-module: "Job"
-type: concept
-tags: [SPRINT, PLANNING]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "sprint planning"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "SPRINT PLANNING"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module - Sprint Planning
 
 **Module:** Job  
@@ -30,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "SPRINT PLANNING"
 type: note
 tags: [documentation]
@@ -40,7 +25,6 @@ updated: 2026-09-26
 qmd: "SPRINT PLANNING"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Sprint Goal
 
 Implement core job queue infrastructure with basic processing and retry capabilities.

@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "optimization tips"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Job optimization tips"
 type: tip
 tags: [tips]

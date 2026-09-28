@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "README"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job
 
 [![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()
@@ -45,8 +42,6 @@ Core module for the FixCity Platform.
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "README"
 type: note
 tags: [documentation]
@@ -55,5 +50,4 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Modulo** `Job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

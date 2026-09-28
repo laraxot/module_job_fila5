@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Metodi duplicati — Job"
 module: "Job"
 type: concept

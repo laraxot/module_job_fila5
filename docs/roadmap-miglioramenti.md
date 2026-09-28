@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "roadmap miglioramenti"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job — cosa migliorerei se questo modulo fosse mio da domani mattina
 
 I numeri sono già misurati e fermi in [`docs/cosa-migliorare.md`](cosa-migliorare.md)

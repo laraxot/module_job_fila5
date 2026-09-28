@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "migrazione filament"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "migrazione filament"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: migrazione-filament
 canonical: ../../../Themes/docs/shared-components/.gitkeep

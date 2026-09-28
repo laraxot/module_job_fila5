@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "architecture rules"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "architecture rules"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: architecture-rules
 canonical: ../../../Themes/docs/shared-components/architecture-rules-Modules.md

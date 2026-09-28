@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "soketi dup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Soketi dup — risorse esterne'
 module: Job
 type: reference

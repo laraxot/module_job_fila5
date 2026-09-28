@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Task: Aumentare Copertura Test - Job"
-module: "Job"
-type: concept
-tags: [task, aumentare, copertura, test]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "task aumentare copertura test"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "task aumentare copertura test"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Task: Aumentare Copertura Test - Job
 
 **Modulo**: Job
@@ -30,8 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "task aumentare copertura test"
 type: note
 tags: [documentation]
@@ -40,7 +25,6 @@ updated: 2026-09-26
 qmd: "task aumentare copertura test"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Test da Implementare
 
 - [ ] Scheduling: test espressioni cron

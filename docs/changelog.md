@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "changelog"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Changelog
 
 All notable changes to this project will be documented in this file.

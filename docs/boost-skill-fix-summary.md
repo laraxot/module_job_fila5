@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Boost Skill Fix Summary - Job Module
-
-**Date**: 2026-03-02
-=======
 ---
 title: "boost skill fix summary"
 type: note
@@ -17,7 +12,6 @@ discussions: []
 # Boost Skill Fix Summary - Job Module
 
 **Date**: 2026-03-02  
->>>>>>> laraxot/dev
 **Module**: Job (Job Queue & Processing)
 
 ## Issue Overview
@@ -47,7 +41,4 @@ See `/docs/BOOST_SKILL_SOLUTION_PLAN.md` for complete solution details.
 - Job processing
 - Status monitoring
 - Task scheduling
-<<<<<<< HEAD
-=======
 
->>>>>>> laraxot/dev

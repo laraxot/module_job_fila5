@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -8,7 +6,6 @@ updated: 2026-09-26
 qmd: "uppercase root dir config regression.story"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 id: story-uppercase-root-dir-config-regression
 slug: uppercase-root-dir-config-regression
 status: investigated

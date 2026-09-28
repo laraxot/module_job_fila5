@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Metodi duplicati — Job"
-module: "Job"
-type: concept
-tags: [duplicate, methods]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "duplicate methods"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "duplicate methods"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Metodi duplicati — Job
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

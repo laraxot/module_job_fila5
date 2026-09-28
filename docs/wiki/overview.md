@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 qmd: "overview"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Wiki Overview"
 module: "Job"
 type: overview

@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "TestCase Philosophy Analysis - Job Module"
-module: "Job"
-type: concept
-tags: [testcase, philosophy, analysis]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "testcase philosophy analysis"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "testcase philosophy analysis"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # TestCase Philosophy Analysis - Job Module
 
 ## Il Problema Attuale
@@ -81,8 +68,6 @@ protected function configureTestConnections(): void
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "testcase philosophy analysis"
 type: note
 tags: [documentation]
@@ -91,7 +76,6 @@ updated: 2026-09-26
 qmd: "testcase philosophy analysis"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## La Filosofia CORRETTA
 
 ### Principio Fondamentale

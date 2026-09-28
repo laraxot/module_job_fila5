@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan syntax fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Syntax Fixes - Modulo Job
 
 **Versione PHPStan**: 1.12.x
@@ -228,8 +225,6 @@ $traits = class_uses($obj);    // ❌ Può ritornare false!
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "phpstan syntax fixes"
 type: note
 tags: [documentation]
@@ -238,7 +233,6 @@ updated: 2026-09-26
 qmd: "phpstan syntax fixes"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 **Fix Completato**: [DATE]
 **Priority**: ALTA
 **Impact**: BASSO (Solo 1 test file)

@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 type: note
 tags: [documentation]
 created: 2026-09-26
 qmd: "PHILOSOPHY"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: Job Module Philosophy
 category: foundation
 owner: Job

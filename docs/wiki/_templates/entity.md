@@ -1,6 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
 title: "entity"
 type: note
 tags: [documentation]
@@ -9,7 +7,6 @@ updated: 2026-09-26
 qmd: "entity"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 module: theme
 topic: entity
 canonical: ../../../../../Themes/docs/shared-components/entity-Modules.md

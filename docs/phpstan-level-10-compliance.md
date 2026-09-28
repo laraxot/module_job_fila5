@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level 10 compliance"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # PHPStan Level 10 Compliance - Job Module
 
 **Ultimo aggiornamento**: [DATE]

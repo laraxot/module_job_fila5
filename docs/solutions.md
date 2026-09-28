@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Soluzioni Tecniche - Modulo Job"
-module: "Job"
-type: concept
-tags: [solutions]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "solutions"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "solutions"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni
@@ -196,11 +183,7 @@ class Job extends Model {
 
 ### 1. Cache Configuration
 ```php
-<<<<<<< HEAD
-// In: Modules/Job/config/cache.php
-=======
 // In: Modules/Job/Config/cache.php
->>>>>>> laraxot/dev
 return [
     'ttl' => [
         'job_status' => 300,      // 5 minutes
@@ -387,8 +370,6 @@ class RetryTest extends TestCase {
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "solutions"
 type: note
 tags: [documentation]
@@ -397,7 +378,6 @@ updated: 2026-09-26
 qmd: "solutions"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ### Versione Incoming
 
    - Aggiornamento strategie retry

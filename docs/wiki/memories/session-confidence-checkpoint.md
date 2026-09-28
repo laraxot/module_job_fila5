@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 qmd: "session confidence checkpoint"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: checkpoint confidenza sessione Job
 type: memory
 module: Job

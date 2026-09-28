@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-title: "Goals - Job"
-module: "Job"
-type: concept
-tags: [02, goals]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "02 goals"
-related:
-  - "./phpstan-fixes-archive-2.md"
----
-=======
 title: "02 goals"
 type: note
 tags: [documentation]
@@ -21,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Goals - Job
 
 ## Short Term

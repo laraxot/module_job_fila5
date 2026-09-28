@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "INDEX"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module - concepts Index
 
 ## Purpose
@@ -44,8 +41,6 @@ qmd search "Job policy Laravel" --limit 5
 ```
 
 ---
-<<<<<<< HEAD
-=======
 title: "INDEX"
 type: note
 tags: [documentation]
@@ -54,5 +49,4 @@ updated: 2026-09-26
 qmd: "INDEX"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 *Updated: 2026-06-30*

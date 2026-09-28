@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Job Module - Product Roadmap"
 module: "Job"
 type: concept

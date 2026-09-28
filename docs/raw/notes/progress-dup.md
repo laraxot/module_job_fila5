@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "progress dup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Progress dup — risorse esterne'
 module: Job
 type: reference

@@ -1,13 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "livewire widget ux"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "UX — Job"
 type: ux-design
 module: Job

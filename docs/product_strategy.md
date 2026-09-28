@@ -1,9 +1,6 @@
 ---
-<<<<<<< HEAD
-=======
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: "Job Module - Product Strategy"
 module: "Job"
 type: concept

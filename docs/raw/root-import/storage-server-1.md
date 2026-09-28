@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "storage server 1"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage

@@ -1,11 +1,8 @@
 ---
-<<<<<<< HEAD
-=======
 created: 2026-09-26
 qmd: "policy restoration incident"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: ripristino policy dopo errore ponytail
 type: troubleshooting
 confidence: high

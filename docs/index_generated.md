@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "index generated"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Job Module Documentation Index (Generated)
 
 **Generated:** 2026-07-28  
@@ -22,8 +19,6 @@ discussions: []
 
 ---
 
-<<<<<<< HEAD
-=======
 title: "index generated"
 type: note
 tags: [documentation]
@@ -32,7 +27,6 @@ updated: 2026-09-26
 qmd: "index generated"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 ## Table of Contents
 
 1. [Statistics](#statistics)

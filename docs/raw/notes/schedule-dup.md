@@ -1,10 +1,7 @@
 ---
-<<<<<<< HEAD
-=======
 qmd: "schedule dup"
 issues: []
 discussions: []
->>>>>>> laraxot/dev
 title: 'Schedule dup'
 module: Job
 type: reference

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 ---
 title: "phpstan level10 fixes"
 type: note
@@ -11,7 +9,6 @@ issues: []
 discussions: []
 ---
 
->>>>>>> laraxot/dev
 # Correzioni PHPStan Livello 10 - Modulo Job
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Job e le relative soluzioni implementate.
