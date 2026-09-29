@@ -1,8 +1,4 @@
 ---
-updated: 2026-09-26
-qmd: "redundancy audit 2026 05 21"
-issues: []
-discussions: []
 title: "Job redundancy audit 2026-05-21"
 type: audit
 module: Job
@@ -17,7 +13,7 @@ related:
 Static metrics: 956 files scanned, 6 case-only groups, 49 duplicate hash groups, 0 duplicate FQCN.
 
 Findings:
-- `Config/` and `config/` contain case-only duplicate config files.
+- `Config/` and `config/` contain case-only duplicate config files. **Risolto**: `Config/` (maiuscolo) eliminato — vedi `docs/stories/uppercase-root-dir-config-regression.story.md`; resta solo `config/` (minuscolo, canonico).
 - Docs include duplicate active/archive pages for Filament migration, schedules, optimization, PHPStan fixes, and integration notes.
 - `artisan.md` exists at module root and under `docs/`.
 - `.github` files have case-only duplicates.

@@ -1,14 +1,14 @@
 ---
-title: "nestedset migration best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "NestedSet Migration Best Practices - Job Module"
+module: "Job"
+type: concept
+tags: [nestedset, migration, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "nestedset migration best practices"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview

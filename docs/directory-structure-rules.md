@@ -1,14 +1,14 @@
 ---
-title: "directory structure rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Directory Structure Rules"
+module: "Job"
+type: rule
+tags: [directory, structure, rules]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "directory structure rules"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Directory Structure Rules
 
 Per il modulo Job valgono queste regole:

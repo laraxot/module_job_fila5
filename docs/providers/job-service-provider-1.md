@@ -1,14 +1,3 @@
----
-title: "job service provider 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "job service provider 1"
-issues: []
-discussions: []
----
-
 # JobServiceProvider
 
 ## Panoramica

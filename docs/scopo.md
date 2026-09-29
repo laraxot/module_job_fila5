@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Job — scopo, confini e come servirlo meglio"
 type: concept
 module: Job

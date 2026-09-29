@@ -1,14 +1,14 @@
 ---
-title: "testing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Testing in Job"
+module: "Job"
+type: concept
+tags: [testing]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "testing"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Testing in Job
 
 Questo componente segue lo standard globale di progetto per il testing.

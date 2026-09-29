@@ -1,7 +1,4 @@
 ---
-qmd: "filament dup"
-issues: []
-discussions: []
 title: 'Filament dup — risorse esterne'
 module: Job
 type: reference

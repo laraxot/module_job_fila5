@@ -1,14 +1,14 @@
 ---
-title: "filament version"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Filament Version Declaration — Job"
+module: "Job"
+type: concept
+tags: [filament, version]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "filament version"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Filament Version Declaration — Job
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)
