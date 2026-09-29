@@ -17,5 +17,18 @@ class ListJobManagers extends XotBaseListRecords
 {
     protected static string $resource = JobManagerResource::class;
 
+<<<<<<< .merge_file_BRF5vc
 
+=======
+    /**
+     * @return array<string, BulkAction>
+     */
+    #[Override]
+    public function getTableBulkActions(): array
+    {
+        return [
+            'delete' => DeleteBulkAction::make(),
+        ];
+    }
+>>>>>>> .merge_file_9bqw38
 }
