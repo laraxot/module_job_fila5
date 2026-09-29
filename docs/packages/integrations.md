@@ -1,14 +1,14 @@
 ---
-title: "Integrazioni"
-module: "Job"
-type: concept
-tags: [integrations]
-created: 2026-07-14
-updated: 2026-07-14
+title: "integrations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "integrations"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Integrazioni
 
 ## Pacchetti Utilizzati
@@ -106,6 +106,14 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 ---
 
+title: "integrations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "integrations"
+issues: []
+discussions: []
 ### Versione Incoming
 
 ---

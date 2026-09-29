@@ -1,4 +1,7 @@
 ---
+qmd: "links dup"
+issues: []
+discussions: []
 title: 'Links dup — risorse esterne'
 module: Job
 type: reference

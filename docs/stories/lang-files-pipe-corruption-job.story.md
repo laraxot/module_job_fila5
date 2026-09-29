@@ -1,3 +1,14 @@
+---
+title: "lang files pipe corruption job.story"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "lang files pipe corruption job.story"
+issues: []
+discussions: []
+---
+
 # Story: file di lingua Job corrotti da una pipe prima di ogni carattere
 
 Status: done

@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-use Illuminate\Support\Collection;
+use Filament\Tables\Columns\TextColumn;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
-class ScheduleArguments extends XotBaseTextColumn
+class ScheduleArguments extends TextColumn
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 
@@ -59,12 +58,11 @@ class ScheduleArguments extends XotBaseTextColumn
      */
     protected function formatArrayTags(array $tags): array
     {
-        /** @var Collection<int|string, array<array-key, mixed>|bool|float|int|string|null> $collection */
         $collection = collect($tags);
 
         if ($this->withValue) {
             $collection = $collection->filter(
-                static function (array|bool|float|int|string|null $value): bool {
+                static function (mixed $value): bool {
                     if (! is_array($value)) {
                         return false;
                     }
@@ -76,12 +74,12 @@ class ScheduleArguments extends XotBaseTextColumn
 
         return $collection
             ->map(
-                function (array|bool|float|int|string|null $value, int|string $key): string {
+                function (mixed $value, int|string $key): string {
                     if ($this->withValue && is_array($value)) {
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
-                        $val = SafeStringCastAction::cast($value['value'] ?? null);
+                        $val = isset($value['value']) ? SafeStringCastAction::cast($value['value']) : '';
 
                         return $name.'='.$val;
                     }
@@ -96,8 +94,8 @@ class ScheduleArguments extends XotBaseTextColumn
     /**
      * Filter out empty tags from the array.
      *
-     * @param  list<string>  $tags
-     * @return list<string>
+     * @param  array<int, string>  $tags
+     * @return array<int, string>
      */
     protected function filterEmptyTags(array $tags): array
     {

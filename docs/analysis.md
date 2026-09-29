@@ -1,14 +1,14 @@
 ---
-title: "Job Module Analysis"
-module: "Job"
-type: concept
-tags: [analysis]
-created: 2026-07-14
-updated: 2026-07-14
+title: "analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "analysis"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Job Module Analysis
 
 ## Overview
@@ -92,6 +92,14 @@ Modules/Job/
 
 ---
 
+title: "analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis"
+issues: []
+discussions: []
 ### Versione Incoming
 
 ---
