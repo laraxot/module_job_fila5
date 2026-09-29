@@ -1,4 +1,10 @@
 ---
+title: "phpstan job fix"
+type: note
+tags: [documentation]
+qmd: "phpstan job fix"
+issues: []
+discussions: []
 id: phpstan-job-fix
 slug: phpstan-job
 scope: [module:Job, project:base_workorder_fila5]

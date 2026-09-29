@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Job — mai Filament\*, sempre XotBase*"
 type: concept
 module: Job

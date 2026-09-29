@@ -1,4 +1,7 @@
 ---
+qmd: "phpstan compliance"
+issues: []
+discussions: []
 title: "Job Module - PHPStan Type Compliance"
 type: concept
 tags: [job, phpstan, types, compliance, quality, static-analysis]

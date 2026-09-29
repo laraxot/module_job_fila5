@@ -1,14 +1,14 @@
 ---
-title: "Job Activity Log"
-module: "Job"
-type: concept
-tags: [log]
-created: 2026-07-14
-updated: 2026-07-14
+title: "log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "log"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Job Activity Log
 
 > **Module**: Job
@@ -17,6 +17,14 @@ related:
 
 ---
 
+title: "log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
 ## [2026-04-15] maintenance | Initial wiki setup
 - Created: llm-wiki/ directory structure
 - Created: AGENTS.md (agent instructions)
