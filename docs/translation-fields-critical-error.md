@@ -1,14 +1,14 @@
 ---
-title: "translation fields critical error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Errore Critico: Rimozione Sezione 'fields' dalle Traduzioni"
+module: "Job"
+type: concept
+tags: [translation, fields, critical, error]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "translation fields critical error"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
 
 **Modulo**: Job  
@@ -16,14 +16,6 @@ discussions: []
 
 ---
 
-title: "translation fields critical error"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation fields critical error"
-issues: []
-discussions: []
 ## 🔴 Errore Commesso
 
 Durante il completamento delle traduzioni navigation, **ho rimosso la sezione `fields`** da molti file di traduzione, causando un errore gravissimo.

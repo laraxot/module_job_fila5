@@ -1,14 +1,14 @@
 ---
-title: "00 overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Roadmap overview (Module Job)"
+module: "Job"
+type: concept
+tags: [00, overview]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "00 overview"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Roadmap overview (Module Job)
 
 ## Scope

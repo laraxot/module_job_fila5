@@ -1,14 +1,14 @@
 ---
-title: "SPRINT PLANNING"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "SPRINT PLANNING"
-issues: []
-discussions: []
+title: "Job Module - Sprint Planning"
+module: "Job"
+type: concept
+tags: [SPRINT, PLANNING]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sprint planning"
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Job Module - Sprint Planning
 
 **Module:** Job  
@@ -17,14 +17,6 @@ discussions: []
 
 ---
 
-title: "SPRINT PLANNING"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "SPRINT PLANNING"
-issues: []
-discussions: []
 ## Sprint Goal
 
 Implement core job queue infrastructure with basic processing and retry capabilities.

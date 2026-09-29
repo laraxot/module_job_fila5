@@ -1,14 +1,14 @@
 ---
-title: "storage server"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Storage Server"
+module: "Job"
+type: concept
+tags: [storage, server]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "storage server"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage

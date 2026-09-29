@@ -1,14 +1,9 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "livewire inventory"
-issues: []
-discussions: []
 title: "Inventario Http/Livewire → Filament widget — Job"
 type: inventory
 module: Job
-status: verified
-updated: 2026-09-22
+status: superseded
+updated: 2026-09-29
 track: campaign
 related:
   - ./livewire-widget-conversion.md
@@ -139,7 +134,41 @@ Conclusione: **un solo mount vivo in tutto il modulo** — `job.status` dentro `
 
 **Cluster C: 3 componenti, esclusi.** `Broad` (orfano, P0 `dd`), `Schedule\Status` e `Schedule\Crud` (mount solo in viste legacy `adm_theme` senza renderer; shape = admin tool a tutto schermo, non frammento di chrome). Nessuno è un widget candidato.
 
-## Verdetto
+## Verdetto — SUPERSEDED 2026-09-29
+
+**Il verdetto originale sotto (Cluster A/B/C, "zero candidati widget") è superato da un
+mandato fleet-wide successivo e non riflette più lo stato del codice.** Non cancellato:
+resta come registro dell'analisi del 21-22/09, che era corretta per il contesto di allora
+(nessun requisito di conversione universale, solo "ritira l'orfano, tieni il resto se ha
+chiamanti reali").
+
+Il 2026-09-29 lo standing order utente `Fleet/livewire-to-filament-widgets-conversion-2026-09-29`
+("non ci devono essere più `Modules/*/app/Http/Livewire/`, usiamo Filament widget", canone
+`laravel/Modules/Xot/docs/bmad/livewire-to-filament-conversion.md`) ha esplicitamente
+**annullato** l'esclusione "Cluster C" per `Schedule\Status`/`Schedule\Crud` e la
+riclassificazione "verso pagina nativa" per `Job\Status` (Cluster B): tutti e tre sono
+stati convertiti in widget Filament, indipendentemente dal fatto che i chiamanti fossero
+raggiungibili o no. Dettaglio completo, incluso il ciclo di regressione/re-fix ripetuto
+causato da un processo concorrente instabile (PID 5418, loop `git pull`/`commit -am .`),
+in [12.1.retire-job-http-livewire.story.md](../stories/12.1.retire-job-http-livewire.story.md)
+Dev Agent Record 2026-09-29.
+
+Stato finale (verificato 2026-09-29, in questa sessione):
+
+| Classe | Esito 2026-09-29 |
+|---|---|
+| `Http\Livewire\Broad` | Cancellato (nessun sostituto: zero chiamanti reali fleet-wide) |
+| `Http\Livewire\Job\Status` | → `Filament\Widgets\JobStatusWidget`, caller `job-monitor.blade.php` + `admin/home.blade.php` in `@livewire(FQCN::class)` |
+| `Http\Livewire\Schedule\Status` | → `Filament\Widgets\ScheduleStatusWidget`, caller `admin/home.blade.php` + `admin/acts/schedule_{status,manager}.blade.php` in `@livewire(FQCN::class)` |
+| `Http\Livewire\Schedule\Crud` | → `Filament\Widgets\ScheduleCrudWidget`, caller `admin/home/acts/task.blade.php` in `@livewire(FQCN::class)` |
+
+`app/Http/Livewire/` e `resources/views/livewire/` assenti su disco a fine sessione
+(guardia Pest in `tests/Unit/JobExecuteCoverage50Test.php`). Nota: il processo concorrente
+sopra citato può resuscitarli a runtime finché il remoto `laraxot/dev` non incorpora la
+cancellazione — verificare lo stato reale prima di assumere questa tabella valida senza
+un nuovo controllo su disco.
+
+## Verdetto originale (21-22/09, superseded ma non cancellato)
 
 - **Zero story di conversione** (nessun candidato Cluster A reale), coerente col verdetto di Cms.
 - **Una story di ritiro da riaprire**: 12.1 è `done` su carta ma il worktree è tornato allo stato pre-ritiro — `Broad.php`, `broad.blade.php`, alias `broad` in `_components.json` e il test originale sono tutti presenti e git-clean (ripristino del 21/09 ore 16:15). Il `dd('fine')` è di nuovo un P0 latente: alias registrato globalmente, trigger via evento Echo pubblico.

@@ -1,14 +1,14 @@
 ---
-title: "conflicts"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Risoluzione Conflitti - Job"
+module: "Job"
+type: concept
+tags: [conflicts]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "conflicts"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Risoluzione Conflitti - Job
 
 ## File modificati

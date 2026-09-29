@@ -1,13 +1,13 @@
 ---
-title: "optimization"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Optimization"
+module: "Job"
+type: concept
+tags: [optimization]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "optimization"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 https://filamentphp.com/community/danharrin-fast-table-pagination
 

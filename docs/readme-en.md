@@ -1,18 +1,18 @@
 ---
-title: "readme en"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "⚙️ Job — English presentation"
+module: "Job"
+type: concept
+tags: [readme, en]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "readme en"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # ⚙️ Job — English presentation
 
 [![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Laravel 13](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
 [![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
@@ -25,14 +25,6 @@ discussions: []
 
 ---
 
-title: "readme en"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme en"
-issues: []
-discussions: []
 ## Why it exists
 
 Geocoding, exports, bulk notifications must not block users.

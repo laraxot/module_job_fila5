@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Job Module - Sprint Planning"
 module: "Job"
 type: concept

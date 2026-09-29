@@ -1,14 +1,14 @@
 ---
-title: "packages"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Pacchetti del Modulo Job"
+module: "Job"
+type: concept
+tags: [packages]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "packages"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Pacchetti del Modulo Job
 
 ## Pacchetti Utilizzati
@@ -89,14 +89,6 @@ discussions: []
 
 ---
 
-title: "packages"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "packages"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---

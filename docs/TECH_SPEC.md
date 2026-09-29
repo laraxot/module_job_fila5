@@ -1,7 +1,4 @@
 ---
-qmd: "TECH SPEC"
-issues: []
-discussions: []
 title: "Technical Specification - Job Module"
 type: technical_spec
 tags: [tech spec, job]

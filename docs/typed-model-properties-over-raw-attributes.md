@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Proprietà tipizzate invece di $this->attributes[...]"
 module: "Job"
 type: rule

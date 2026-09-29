@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbaseresourcetable dead code followup job.story"
-issues: []
-discussions: []
 id: story-job-xotbaseresourcetable-dead-code-followup
 slug: xotbaseresourcetable-dead-code-followup-job
 status: done

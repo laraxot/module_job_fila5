@@ -27,6 +27,9 @@ class ScheduleCrudWidget extends XotBaseWidget
 
     protected int|string|array $columnSpan = 'full';
 
+    /**
+     * @return LengthAwarePaginator<int, Task>
+     */
     public function getTasks(): LengthAwarePaginator
     {
         return Task::query()->paginate(20);

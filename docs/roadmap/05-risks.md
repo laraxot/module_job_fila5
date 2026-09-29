@@ -1,14 +1,14 @@
 ---
-title: "05 risks"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Risks - Job"
+module: "Job"
+type: concept
+tags: [05, risks]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "05 risks"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Risks - Job
 
 ## Top Risks

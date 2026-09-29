@@ -1,10 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-qmd: "TROUBLESHOOTING"
-issues: []
-discussions: []
 title: "Job Module Troubleshooting Guide"
 category: "operations"
 owner: "Job"

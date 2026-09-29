@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "corpi metodo duplicati — Job"
 type: analysis
 module: Job
