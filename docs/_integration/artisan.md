@@ -1,12 +1,4 @@
 ---
-title: "artisan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "artisan"
-issues: []
-discussions: []
 module: theme
 topic: artisan
 canonical: ../../../../Themes/docs/shared-components/.gitkeep

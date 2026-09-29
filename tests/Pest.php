@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Modules\Job\Database\Factories\JobBatchFactory;
 use Modules\Job\Database\Factories\JobFactory;
 use Modules\Job\Models\Job;
@@ -9,12 +8,12 @@ use Modules\Job\Models\JobBatch;
 
 /*
  * Bootstrap Pest — modulo Job.
- * Ogni file test dichiara uses(Modules\Job\Tests\TestCase::class).
+ * Ogni file test dichiara uses(\Modules\Job\Tests\TestCase::class).
  * Vietato pest()->extend() / expect()->extend() (PHPStan method.internalClass).
  */
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createJob(array $attributes = []): Job
 {
@@ -22,7 +21,7 @@ function createJob(array $attributes = []): Job
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function makeJob(array $attributes = []): Job
 {
@@ -35,7 +34,7 @@ function makeJob(array $attributes = []): Job
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function createJobBatch(array $attributes = []): JobBatch
 {
@@ -43,7 +42,7 @@ function createJobBatch(array $attributes = []): JobBatch
 }
 
 /**
- * @param array<string, mixed> $attributes
+ * @param  array<string, mixed>  $attributes
  */
 function makeJobBatch(array $attributes = []): JobBatch
 {

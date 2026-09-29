@@ -1,7 +1,4 @@
 ---
-qmd: "optimization dup"
-issues: []
-discussions: []
 title: 'Optimization dup — risorse esterne'
 module: Job
 type: reference

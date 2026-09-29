@@ -1,6 +1,4 @@
 ---
-issues: []
-discussions: []
 title: "Job Module - User Research"
 module: "Job"
 type: concept

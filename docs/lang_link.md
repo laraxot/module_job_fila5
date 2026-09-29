@@ -1,14 +1,14 @@
 ---
-title: "lang link"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Collegamento alle Traduzioni del Modulo Job"
+module: "Job"
+type: concept
+tags: [lang, link]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "lang link"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Collegamento alle Traduzioni del Modulo Job
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

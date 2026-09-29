@@ -1,14 +1,14 @@
 ---
-title: "performance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Performance"
+module: "Job"
+type: concept
+tags: [performance]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "performance"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 ### Versione HEAD
 
 ### Versione HEAD
@@ -27,14 +27,6 @@ discussions: []
 
 ---
 
-title: "performance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "performance"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---
