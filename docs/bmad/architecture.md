@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_eTOkBB
 <<<<<<< .merge_file_JhYAhI
 ---
 title: "Job — Architettura BMAD"
@@ -124,6 +125,8 @@ Filament, `ScheduleService` e `FormatSeconds`. Esistono directory `tests/unit/` 
 `tests/feature/` (minuscole) in aggiunta a `tests/Unit/` e `tests/Feature/`, con file
 duplicati per differenza di casing.
 =======
+=======
+>>>>>>> .merge_file_SXg8Bw
 # Architettura del modulo Job
 
 ## Overview
@@ -157,4 +160,7 @@ Interfacce per l'iniezione di dipendenze.
 - Filament Widget invece di Livewire
 - Array una chiave per riga
 - Schema-driven Forms (XotBaseSchemaWidget)
+<<<<<<< .merge_file_eTOkBB
 >>>>>>> .merge_file_Hhql2f
+=======
+>>>>>>> .merge_file_SXg8Bw
