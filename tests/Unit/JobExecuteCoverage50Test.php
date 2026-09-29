@@ -32,6 +32,10 @@ use Modules\Job\Filament\Resources\JobManagerResource;
 use Modules\Job\Filament\Resources\JobResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource;
 use Modules\Job\Filament\Resources\ScheduleResource;
+<<<<<<< .merge_file_gQ2Yn5
+=======
+use Modules\Job\Http\Livewire\Broad;
+>>>>>>> .merge_file_BVfuHN
 use Modules\Job\Http\Requests\ScheduleRequest;
 use Modules\Job\Models\FailedJob;
 use Modules\Job\Models\Job;
@@ -298,6 +302,15 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $schedule->assertExitCode(0);
     });
 
+<<<<<<< .merge_file_gQ2Yn5
+=======
+    test('Livewire Broad try flasha sessione senza dd', function (): void {
+        $component = new Broad();
+        $component->try();
+        Assert::assertTrue(session()->has('message'));
+    });
+
+>>>>>>> .merge_file_BVfuHN
     test('modelli foglia espongono tabella', function (): void {
         Assert::assertSame('jobs', (new Job())->getTable());
         Assert::assertSame('failed_jobs', (new FailedJob())->getTable());
@@ -389,5 +402,11 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $observer->created();
         $observer->updated(new Schedule());
         $observer->saved(new Schedule());
+<<<<<<< .merge_file_gQ2Yn5
+=======
+
+        $lw = new \Modules\Job\Http\Livewire\Schedule\Status();
+        Assert::assertCount(0, $lw->getScheduledJobs());
+>>>>>>> .merge_file_BVfuHN
     });
 });
