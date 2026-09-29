@@ -1,14 +1,14 @@
 ---
-title: "strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Product Strategy: Job Module"
+module: "Job"
+type: concept
+tags: [strategy]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "strategy"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Product Strategy: Job Module
 
 ## 🌍 Market Context

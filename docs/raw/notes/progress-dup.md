@@ -1,7 +1,4 @@
 ---
-qmd: "progress dup"
-issues: []
-discussions: []
 title: 'Progress dup — risorse esterne'
 module: Job
 type: reference

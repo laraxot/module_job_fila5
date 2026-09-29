@@ -1,14 +1,3 @@
----
-title: "roadmap miglioramenti"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap miglioramenti"
-issues: []
-discussions: []
----
-
 # Job — cosa migliorerei se questo modulo fosse mio da domani mattina
 
 I numeri sono già misurati e fermi in [`docs/cosa-migliorare.md`](cosa-migliorare.md)

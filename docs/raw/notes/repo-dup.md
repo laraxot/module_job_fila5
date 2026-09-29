@@ -1,7 +1,4 @@
 ---
-qmd: "repo dup"
-issues: []
-discussions: []
 title: 'Repo dup — risorse esterne'
 module: Job
 type: reference
