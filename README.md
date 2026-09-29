@@ -1,5 +1,6 @@
 ---
 id: module-job-readme
+<<<<<<< .merge_file_PBYQX6
 <<<<<<< .merge_file_00gLhO
 title: "Job — documentazione del modulo"
 type: module-readme
@@ -47,6 +48,8 @@ La responsabilità del modulo, le decisioni architetturali e le opportunità son
 documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
 rigenerati quando il modulo cambia; non copiarli in badge non verificati.
 =======
+=======
+>>>>>>> .merge_file_z7Ln0Y
 title: "Job — Gestione dei Lavori Asincroni"
 type: module-readme
 category: module-documentation
@@ -92,4 +95,7 @@ php artisan module:list
 See [architecture](./docs/architecture.md) and [livewire inventory](./docs/bmad/livewire-inventory.md).
 
 **Modulo** `job` · **Laraxot** · PHPStan max · Filament 5
+<<<<<<< .merge_file_PBYQX6
 >>>>>>> .merge_file_Vi6Stw
+=======
+>>>>>>> .merge_file_z7Ln0Y

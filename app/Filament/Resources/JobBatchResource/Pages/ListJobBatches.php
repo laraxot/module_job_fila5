@@ -21,7 +21,29 @@ class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
 
+<<<<<<< .merge_file_Ki4YPd
 
+=======
+    /**
+     * @return array<string, Action|ActionGroup>
+     */
+    #[Override]
+    public function getTableActions(): array
+    {
+        return [];
+    }
+
+    /**
+     * @return array<string, BulkAction>
+     */
+    #[Override]
+    public function getTableBulkActions(): array
+    {
+        return [
+            'delete' => DeleteBulkAction::make(),
+        ];
+    }
+>>>>>>> .merge_file_m0L6vs
 
     /**
      * @return array<Action>

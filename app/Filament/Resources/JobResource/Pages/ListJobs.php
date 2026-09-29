@@ -19,7 +19,25 @@ class ListJobs extends XotBaseListRecords
 {
     protected static string $resource = JobResource::class;
 
+<<<<<<< .merge_file_aNvpZB
 
 
+=======
+    /**
+     * @return array<string, BaseFilter>
+     */
+    #[Override]
+    public function getTableFilters(): array
+    {
+        return [
+            'status' => SelectFilter::make('status')->options([
+                'running' => 'Running',
+                'waiting' => 'Waiting',
+                'failed' => 'Failed',
+            ]),
+            'queue' => SelectFilter::make('queue')->options(Job::distinct()->pluck('queue', 'queue')->toArray(...)),
+        ];
+    }
+>>>>>>> .merge_file_2bOJUJ
 
 }

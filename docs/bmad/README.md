@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_UId4Kt
 <<<<<<< .merge_file_Sk6Jll
 ---
 title: "Job — indice BMAD"
@@ -71,6 +72,8 @@ widget Livewire a pagine Filament; lo stato corrente e' in [livewire-inventory.m
 - [../../../Xot/docs/bmad-method.md](../../../Xot/docs/bmad-method.md)
 - [../../../Xot/docs/bmad/stories/5.249-bmad-docs-fleet-completion.story.md](../../../Xot/docs/bmad/stories/5.249-bmad-docs-fleet-completion.story.md)
 =======
+=======
+>>>>>>> .merge_file_puBXVl
 # Job Module
 
 Modulo del sistema PTVX per la gestione delle risorse umane e valutazione delle performance nelle pubbliche amministrazioni.
@@ -104,4 +107,7 @@ Il modulo Job si occupa di [DESCRIZIONE DA COMPLETARE].
 ## Licenza
 
 Proprietario - Laraxot
+<<<<<<< .merge_file_UId4Kt
 >>>>>>> .merge_file_W6NafN
+=======
+>>>>>>> .merge_file_puBXVl

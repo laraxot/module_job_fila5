@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_KR59wk
 <<<<<<< .merge_file_CtBtJa
 ---
 title: "Job — Brainstorming BMAD (indice e decisioni)"
@@ -68,6 +69,8 @@ Pack di prodotto collegati: `livewire-widget-product-brief.md`, `livewire-widget
 | Un'unica Action per schedulazioni, in un solo namespace | la duplicazione esiste ma non e' ancora stata ricondotta: scelta pendente |
 | Widget Livewire per monitor e stato | pack `livewire-widget-*.md` e [brainstorming/livewire-to-page.md](brainstorming/livewire-to-page.md) sul passaggio a pagine Filament |
 =======
+=======
+>>>>>>> .merge_file_tzokqW
 # Brainstorming - Modulo Job
 
 ## Idee iniziali
@@ -90,4 +93,7 @@ Pack di prodotto collegati: `livewire-widget-product-brief.md`, `livewire-widget
 
 - [DOMANDA 1]
 - [DOMANDA 2]
+<<<<<<< .merge_file_KR59wk
 >>>>>>> .merge_file_x9KSvW
+=======
+>>>>>>> .merge_file_tzokqW
