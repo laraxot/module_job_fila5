@@ -1,7 +1,4 @@
 ---
-qmd: "PRD"
-issues: []
-discussions: []
 title: "Product Requirements Document (PRD) - Job Module"
 module: "Job"
 type: concept

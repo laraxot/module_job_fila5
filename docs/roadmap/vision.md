@@ -1,14 +1,14 @@
 ---
-title: "vision"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Visione - Job Module"
+module: "Job"
+type: concept
+tags: [vision]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "vision"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Visione - Job Module
 
 Fornire un'infrastruttura robusta e scalabile per:

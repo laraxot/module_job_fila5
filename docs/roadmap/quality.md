@@ -1,14 +1,14 @@
 ---
-title: "quality"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Checklist qualità - Job Module"
+module: "Job"
+type: concept
+tags: [quality]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "quality"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Checklist qualità - Job Module
 
 - [x] PHPStan Level 10

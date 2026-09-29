@@ -1,14 +1,3 @@
----
-title: "phpstan syntax fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan syntax fixes"
-issues: []
-discussions: []
----
-
 # PHPStan Syntax Fixes - Modulo Job
 
 **Versione PHPStan**: 1.12.x
@@ -225,14 +214,6 @@ $traits = class_uses($obj);    // ❌ Può ritornare false!
 
 ---
 
-title: "phpstan syntax fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan syntax fixes"
-issues: []
-discussions: []
 **Fix Completato**: [DATE]
 **Priority**: ALTA
 **Impact**: BASSO (Solo 1 test file)

@@ -1,14 +1,14 @@
 ---
-title: "testing rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Testing Rules Summary"
+module: "Job"
+type: rule
+tags: [testing, rules]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "testing rules"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

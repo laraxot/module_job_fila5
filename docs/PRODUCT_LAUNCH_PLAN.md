@@ -1,14 +1,14 @@
 ---
-title: "PRODUCT LAUNCH PLAN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PRODUCT LAUNCH PLAN"
-issues: []
-discussions: []
+title: "Job Module - Product Launch Plan"
+module: "Job"
+type: concept
+tags: [PRODUCT, LAUNCH, PLAN]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "product launch plan"
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Job Module - Product Launch Plan
 
 **Module:** Job  
@@ -18,14 +18,6 @@ discussions: []
 
 ---
 
-title: "PRODUCT LAUNCH PLAN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PRODUCT LAUNCH PLAN"
-issues: []
-discussions: []
 ## Launch Objectives
 
 1. **Product:** Deploy queue infrastructure

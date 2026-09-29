@@ -1,8 +1,4 @@
 ---
-created: 2026-09-26
-qmd: "phpstan schedule schema return type"
-issues: []
-discussions: []
 title: "PHPStan Schedule Schema Return Type"
 type: concept
 updated: 2026-05-06

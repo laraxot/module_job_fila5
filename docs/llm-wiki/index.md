@@ -1,14 +1,14 @@
 ---
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Job Module Wiki Index"
+module: "Job"
+type: concept
+tags: [index]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "index"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Job Module Wiki Index
 
 > **Module**: Job
@@ -17,14 +17,6 @@ discussions: []
 
 ---
 
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
 ## Concepts
 
 _No concept pages created yet_

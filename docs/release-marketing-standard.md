@@ -1,7 +1,4 @@
 ---
-qmd: "release marketing standard"
-issues: []
-discussions: []
 title: "Release e README marketing — Job"
 type: reference
 status: approved

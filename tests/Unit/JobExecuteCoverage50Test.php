@@ -295,6 +295,15 @@ describe('Job execute coverage — actions enums commands livewire', function ()
         $schedule->assertExitCode(0);
     });
 
+    test('Http/Livewire e resources/views/livewire sono ritirati (nessuna eccezione)', function (): void {
+        Assert::assertFalse(class_exists('Modules\\Job\\Http\\Livewire\\Broad', false));
+        Assert::assertFalse(class_exists('Modules\\Job\\Http\\Livewire\\Job\\Status', false));
+        Assert::assertFalse(class_exists('Modules\\Job\\Http\\Livewire\\Schedule\\Crud', false));
+        Assert::assertFalse(class_exists('Modules\\Job\\Http\\Livewire\\Schedule\\Status', false));
+        Assert::assertDirectoryDoesNotExist(base_path('Modules/Job/app/Http/Livewire'));
+        Assert::assertDirectoryDoesNotExist(base_path('Modules/Job/resources/views/livewire'));
+    });
+
     test('modelli foglia espongono tabella', function (): void {
         Assert::assertSame('jobs', (new Job)->getTable());
         Assert::assertSame('failed_jobs', (new FailedJob)->getTable());
