@@ -7,28 +7,10 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobManagerResource\Pages;
 
-use Filament\Actions\BulkAction;
-use Filament\Actions\DeleteBulkAction;
 use Modules\Job\Filament\Resources\JobManagerResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Override;
 
 class ListJobManagers extends XotBaseListRecords
 {
     protected static string $resource = JobManagerResource::class;
-
-<<<<<<< .merge_file_BRF5vc
-
-=======
-    /**
-     * @return array<string, BulkAction>
-     */
-    #[Override]
-    public function getTableBulkActions(): array
-    {
-        return [
-            'delete' => DeleteBulkAction::make(),
-        ];
-    }
->>>>>>> .merge_file_9bqw38
 }
