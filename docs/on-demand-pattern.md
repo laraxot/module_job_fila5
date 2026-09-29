@@ -1,7 +1,4 @@
 ---
-qmd: "on demand pattern"
-issues: []
-discussions: []
 title: "On-Demand Pattern — Module Job"
 type: documentation
 created: 2026-05-11

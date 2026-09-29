@@ -1,14 +1,14 @@
 ---
-title: "cleanup job docs"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Task: Job Docs Consolidation & Cleanup"
+module: "Job"
+type: concept
+tags: [cleanup, job, docs]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "cleanup job docs"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Task: Job Docs Consolidation & Cleanup
 
 ## 📋 Obiettivo

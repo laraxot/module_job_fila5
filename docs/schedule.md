@@ -1,14 +1,14 @@
 ---
-title: "schedule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Schedule"
+module: "Job"
+type: concept
+tags: [schedule]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "schedule"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring
@@ -38,5 +38,3 @@ https://www.thisprogrammingthing.com/what-the-f-ck-is-with-all-the-artisan-comma
 https://github.com/robersonfaria/laravel-database-schedule
 https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
-
-

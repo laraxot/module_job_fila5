@@ -1,14 +1,14 @@
 ---
-title: "monitoring"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Monitoraggio"
+module: "Job"
+type: concept
+tags: [monitoring]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "monitoring"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Monitoraggio
 
 ## Pacchetti Utilizzati
@@ -104,14 +104,6 @@ Artisan::call('queue:forget', ['id' => 'all']);
 
 ---
 
-title: "monitoring"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "monitoring"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---

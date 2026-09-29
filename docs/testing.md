@@ -1,14 +1,14 @@
 ---
-title: "testing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Testing Documentation"
+module: "Job"
+type: concept
+tags: [testing]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "testing"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Testing Documentation
 
 ## Overview
@@ -271,7 +271,7 @@ protected function createApplication()
 
 ### External Resources
 
-- [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
@@ -412,12 +412,4 @@ Remember: Good tests are the foundation of reliable software development.
 
 ---
 
-title: "testing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing"
-issues: []
-discussions: []
 *

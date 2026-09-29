@@ -1,14 +1,14 @@
 ---
-title: "duplicate methods report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Report: Metodi con nome duplicato nei moduli e nei temi"
+module: "Job"
+type: concept
+tags: [duplicate, methods, report]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "duplicate methods report"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

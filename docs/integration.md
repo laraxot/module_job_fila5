@@ -1,14 +1,14 @@
 ---
-title: "integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
+title: "Integrazione Documentazione"
+module: "Job"
+type: concept
+tags: [integration]
+created: 2026-07-14
+updated: 2026-07-14
 qmd: "integration"
-issues: []
-discussions: []
+related:
+  - "./phpstan-fixes-archive-2.md"
 ---
-
 # Integrazione Documentazione
 
 ## Documentazione Collegata
@@ -88,14 +88,6 @@ discussions: []
 
 ---
 
-title: "integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "integration"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---

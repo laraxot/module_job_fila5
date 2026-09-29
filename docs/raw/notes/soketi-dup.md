@@ -1,7 +1,4 @@
 ---
-qmd: "soketi dup"
-issues: []
-discussions: []
 title: 'Soketi dup — risorse esterne'
 module: Job
 type: reference

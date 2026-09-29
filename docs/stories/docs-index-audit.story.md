@@ -1,11 +1,4 @@
 ---
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "docs index audit.story"
-issues: []
-discussions: []
 id: story-docs-index-audit
 slug: docs-index-audit
 status: done
