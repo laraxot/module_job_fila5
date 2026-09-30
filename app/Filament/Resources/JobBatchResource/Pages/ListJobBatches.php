@@ -8,9 +8,6 @@ declare(strict_types=1);
 namespace Modules\Job\Filament\Resources\JobBatchResource\Pages;
 
 use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
-use Filament\Actions\BulkAction;
-use Filament\Actions\DeleteBulkAction;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Filament\Resources\JobBatchResource;
@@ -20,26 +17,6 @@ use Override;
 class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
-
-    /**
-     * @return array<string, Action|ActionGroup>
-     */
-    #[Override]
-    public function getTableActions(): array
-    {
-        return [];
-    }
-
-    /**
-     * @return array<string, BulkAction>
-     */
-    #[Override]
-    public function getTableBulkActions(): array
-    {
-        return [
-            'delete' => DeleteBulkAction::make(),
-        ];
-    }
 
     /**
      * @return array<Action>
