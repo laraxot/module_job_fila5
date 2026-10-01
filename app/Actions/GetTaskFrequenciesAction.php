@@ -18,10 +18,8 @@ class GetTaskFrequenciesAction
     {
         $res = config('totem.frequencies');
         if (\is_array($res)) {
-            /** @var array<int|string, mixed> $frequencies */
-            $frequencies = $res;
-
-            return $frequencies;
+            /** @var array<int|string, mixed> */
+            return $res;
         }
 
         throw new Exception('['.__LINE__.']['.class_basename($this).']');
