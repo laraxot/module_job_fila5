@@ -1,15 +1,13 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Console/Commands/TestJobCommand.php
  */
 
-declare(strict_types=1);
-
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
-use Log;
 
 class TestJobCommand extends Command
 {
@@ -29,7 +27,6 @@ class TestJobCommand extends Command
     public function handle(): int
     {
         $this->info('Hello the test worked.');
-        Log::debug('Hello the test worked.');
 
         return 0;
     }
