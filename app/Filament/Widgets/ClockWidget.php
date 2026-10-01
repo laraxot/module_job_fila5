@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://www.freshleafmedia.co.uk/blog/streaming-laravel-command-output-to-the-browser
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Filament\Widgets;
 
@@ -22,17 +21,7 @@ class ClockWidget extends XotBaseWidget
 
     public bool $run = false;
 
-    /** @var view-string */
-    protected string $view;
-
-    public function __construct()
-    {
-        /** @var view-string $view */
-        $view = 'job::filament.widgets.clock-widget';
-        $this->view = $view;
-
-        parent::__construct();
-    }
+    protected string $view = 'job::filament.widgets.clock-widget';
 
     protected int|string|array $columnSpan = 'full';
 

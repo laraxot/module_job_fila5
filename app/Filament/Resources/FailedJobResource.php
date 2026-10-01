@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/resources/FailedJobsResource.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
@@ -16,12 +15,6 @@ use Override;
 class FailedJobResource extends XotBaseResource
 {
     protected static ?string $model = FailedJob::class;
-
-    #[Override]
-    public function getFormSchemaOld(): array
-    {
-        return [];
-    }
 
     #[Override]
     public static function getRelations(): array
