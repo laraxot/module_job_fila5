@@ -10,6 +10,7 @@ namespace Modules\Job\Filament\Resources\FailedJobResource\Pages;
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\DB;
 use Modules\Job\Filament\Resources\FailedJobResource;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -39,7 +40,7 @@ class ListFailedJobs extends XotBaseListRecords
                 ->requiresConfirmation()
                 ->color('danger')
                 ->action(static function (): void {
-                    FailedJob::truncate();
+                    DB::table((new FailedJob())->getTable())->truncate();
                     Notification::make()
                         ->title('All failed jobs have been removed.')
                         ->success()

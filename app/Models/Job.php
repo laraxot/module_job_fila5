@@ -77,7 +77,7 @@ class Job extends BaseModel
     }
 
     /**
-     * @return Attribute<string, never>
+     * @return Attribute
      */
     public function status(): Attribute
     {
