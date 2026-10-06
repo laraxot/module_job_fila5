@@ -24,7 +24,9 @@ class GetActiveSchedulesAction
         }
 
         /** @var Collection<int, Schedule> $result */
-        $result = Schedule::query()->active()->get();
+        $result = Schedule::query()
+            ->where('status', Schedule::STATUS_ACTIVE)
+            ->get();
 
         return $result;
     }
@@ -39,7 +41,9 @@ class GetActiveSchedulesAction
 
         $result = Cache::store($store)->rememberForever(
             $key,
-            fn (): Collection => Schedule::query()->active()->get()
+            fn (): Collection => Schedule::query()
+                ->where('status', Schedule::STATUS_ACTIVE)
+                ->get()
         );
         Assert::isInstanceOf($result, Collection::class);
 
