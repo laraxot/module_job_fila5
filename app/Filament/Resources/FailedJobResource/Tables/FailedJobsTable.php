@@ -53,7 +53,7 @@ class FailedJobsTable extends XotBaseResourceTable
                 ->requiresConfirmation()
                 ->color('danger')
                 ->action(static function (): void {
-                    FailedJob::truncate();
+                    FailedJob::query()->truncate();
                     Notification::make()
                         ->title('All failed jobs have been removed.')
                         ->success()
