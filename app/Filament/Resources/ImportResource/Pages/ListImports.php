@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\ImportResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
@@ -15,10 +16,15 @@ use Filament\Tables\Filters\BaseFilter;
 use Modules\Job\Filament\Resources\ImportResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
+=======
+use Modules\Job\Filament\Resources\ImportResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> laraxot/dev
 
 class ListImports extends XotBaseListRecords
 {
     protected static string $resource = ImportResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -79,4 +85,6 @@ class ListImports extends XotBaseListRecords
             'delete' => DeleteBulkAction::make(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

@@ -131,7 +131,11 @@ return [
         'job_stopped' => 'Monitoraggio del job fermato',
         'job_exported' => 'Dati esportati correttamente',
     ],
+<<<<<<< HEAD
     'title' => 'job status',
+=======
+    'title' => 'Stato del job',
+>>>>>>> laraxot/dev
     'label' => 'Job Status',
     'plural_label' => 'Job Status (Plurale)',
 ];

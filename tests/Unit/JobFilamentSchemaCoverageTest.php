@@ -10,7 +10,11 @@ use PHPUnit\Framework\Assert;
 
 use function Safe\glob;
 
+<<<<<<< HEAD
 uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
+=======
+uses(TestCase::class)->group('no-job-db');
+>>>>>>> laraxot/dev
 
 /** @return list{string, string} */
 function jobFilamentContext(): array

@@ -1,7 +1,10 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
@@ -265,6 +268,7 @@ it('can handle task status transitions', function (): void {
 
     // Testiamo solo il campo is_active che esiste veramente
     Assert::assertSame(1, $task->is_active);
+<<<<<<< HEAD
     // Cambia is_active a 0
     $task->update(['is_active' => 0]);
     Assert::assertSame(0, $task->is_active);
@@ -273,6 +277,17 @@ it('can handle task status transitions', function (): void {
     $reactivatedTask = $task->fresh();
     Assert::assertNotNull($reactivatedTask);
     Assert::assertSame(1, $reactivatedTask->is_active);
+=======
+    // Ogni transizione si rilegge dal database: l'attributo in memoria di $task
+    // vale il valore passato a update() anche se il salvataggio non avvenisse.
+    $task->update(['is_active' => 0]);
+    $deactivated = Task::findOrFail($task->id);
+    Assert::assertSame(0, $deactivated->is_active);
+
+    $task->update(['is_active' => 1]);
+    $reactivated = Task::findOrFail($task->id);
+    Assert::assertSame(1, $reactivated->is_active);
+>>>>>>> laraxot/dev
 });
 
 it('can handle task ordering and sorting', function (): void {

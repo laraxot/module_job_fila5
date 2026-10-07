@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "changelog"
 type: note
 tags: [documentation]
@@ -14,3 +15,9 @@ discussions: []
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
+=======
+title: Changelog
+module: Job
+---
+See canonical documentation: ../../../Themes/docs/shared-components/CHANGELOG.md
+>>>>>>> laraxot/dev

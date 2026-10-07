@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "architecture"
 type: note
 tags: [documentation]
@@ -9,6 +10,11 @@ issues: []
 discussions: []
 ---
 
+=======
+title: Architecture
+module: Job
+---
+>>>>>>> laraxot/dev
 # Job Module Architecture
 
 ## Overview

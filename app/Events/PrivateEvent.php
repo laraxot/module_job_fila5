@@ -10,6 +10,10 @@ use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Facades\Auth;
+>>>>>>> laraxot/dev
 
 class PrivateEvent implements ShouldBroadcast
 {
@@ -31,6 +35,10 @@ class PrivateEvent implements ShouldBroadcast
      */
     public function broadcastOn(): Channel
     {
+<<<<<<< HEAD
         return new PrivateChannel('private.'.auth()->id());
+=======
+        return new PrivateChannel('private.'.Auth::id());
+>>>>>>> laraxot/dev
     }
 }
