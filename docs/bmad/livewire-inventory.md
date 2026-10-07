@@ -1,9 +1,4 @@
 ---
-tags: [documentation]
-created: 2026-09-26
-qmd: "livewire inventory"
-issues: []
-discussions: []
 title: "Inventario Http/Livewire → Filament widget — Job"
 type: inventory
 module: Job

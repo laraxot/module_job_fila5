@@ -33,15 +33,9 @@ use Override;
  * @property ProfileContract|null $updater
  *
  * @method static JobManagerFactory factory($count = null, $state = [])
-<<<<<<< HEAD
  * @method static Builder<static> newModelQuery()
  * @method static Builder<static> newQuery()
  * @method static Builder<static> query()
-=======
- * @method static Builder<static>|JobManager newModelQuery()
- * @method static Builder<static>|JobManager newQuery()
- * @method static Builder<static>|JobManager query()
->>>>>>> laraxot/dev
  * @method static Builder<static>|JobManager whereAttempt($value)
  * @method static Builder<static>|JobManager whereCreatedAt($value)
  * @method static Builder<static>|JobManager whereExceptionMessage($value)
@@ -73,15 +67,9 @@ use Override;
  * @property-read ProfileContract|null $updater
  *
  * @method static JobManagerFactory factory($count = null, $state = [])
-<<<<<<< HEAD
  * @method static Builder<static> newModelQuery()
  * @method static Builder<static> newQuery()
  * @method static Builder<static> query()
-=======
- * @method static Builder<static>|JobManager newModelQuery()
- * @method static Builder<static>|JobManager newQuery()
- * @method static Builder<static>|JobManager query()
->>>>>>> laraxot/dev
  * @method static Builder<static>|JobManager whereAttempt($value)
  * @method static Builder<static>|JobManager whereExceptionMessage($value)
  * @method static Builder<static>|JobManager whereFailed($value)
@@ -97,11 +85,7 @@ use Override;
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
-class JobManager extends BaseModel
-=======
 final class JobManager extends BaseModel
->>>>>>> laraxot/dev
 {
     // protected $table = 'job_manager';
 
@@ -117,16 +101,10 @@ final class JobManager extends BaseModel
         'exception_message',
     ];
 
-<<<<<<< HEAD
-    public static function getJobId(JobContract $job): string|int
-    {
-        if ($jobId = $job->getJobId()) {
-=======
     public static function getJobId(JobContract $job): string
     {
         $jobId = $job->getJobId();
         if ($jobId !== '') {
->>>>>>> laraxot/dev
             return $jobId;
         }
 
@@ -177,38 +155,23 @@ final class JobManager extends BaseModel
     }
 
     /**
-     * @return Builder<static>
+     * @return Builder<JobManager>
      */
     public function prunable(): Builder
     {
-<<<<<<< HEAD
-        /** @var Builder<static> $query */
+        /** @var Builder<JobManager> $query */
         $query = $this->newQuery();
 
-        if (config('jobs.pruning.activate')) {
-            $retention_days = config('jobs.pruning.retention_days');
-            if (! is_int($retention_days)) {
-                $retention_days = 365;
-            }
-
-            return $query->where('created_at', '<=', now()->subDays($retention_days));
-        }
-
-        return $query;
-=======
         if (config('jobs.pruning.activate')) {
             $retentionDays = config('jobs.pruning.retention_days');
             if (! is_int($retentionDays)) {
                 $retentionDays = 365;
             }
 
-            $query = self::query()->where('created_at', '<=', now()->subDays($retentionDays));
-
-            return $query;
+            return $query->where('created_at', '<=', now()->subDays($retentionDays));
         }
 
-        return self::query()->whereNotNull('id');
->>>>>>> laraxot/dev
+        return $query;
     }
 
     #[Override]

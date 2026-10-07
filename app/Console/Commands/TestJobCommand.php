@@ -1,25 +1,14 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Console/Commands/TestJobCommand.php
  */
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
 namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
-use Log;
-=======
-namespace Modules\Job\Console\Commands;
-
-use Illuminate\Console\Command;
->>>>>>> laraxot/dev
+use Illuminate\Support\Facades\Log;
 
 class TestJobCommand extends Command
 {
@@ -39,10 +28,7 @@ class TestJobCommand extends Command
     public function handle(): int
     {
         $this->info('Hello the test worked.');
-<<<<<<< HEAD
         Log::debug('Hello the test worked.');
-=======
->>>>>>> laraxot/dev
 
         return 0;
     }

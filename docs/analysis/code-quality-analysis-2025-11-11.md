@@ -1,14 +1,3 @@
----
-title: "code quality analysis 2025 11 11"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality analysis 2025 11 11"
-issues: []
-discussions: []
----
-
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -91,14 +80,6 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 
 ---
 
-title: "code quality analysis 2025 11 11"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code quality analysis 2025 11 11"
-issues: []
-discussions: []
 **Report Generated**: 2025-11-11
 **Next Review**: After fixing syntax errors
 **Target Completion**: 2025-11-15

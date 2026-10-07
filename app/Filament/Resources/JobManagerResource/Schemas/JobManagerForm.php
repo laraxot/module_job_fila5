@@ -4,36 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobManagerResource\Schemas;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Section;
-=======
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component;
->>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class JobManagerForm extends XotBaseResourceForm
 {
     /**
-<<<<<<< HEAD
-     * @return array<int|string, Component>
-=======
      * @return array<string, Component>
->>>>>>> laraxot/dev
      */
     public function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
-            Section::make([
-                'name' => TextInput::make('name'),
-            ]),
-=======
             'job_id' => TextInput::make('job_id')->required()->maxLength(255),
             'name' => TextInput::make('name')->maxLength(255),
             'queue' => TextInput::make('queue')->maxLength(255),
@@ -42,7 +27,6 @@ class JobManagerForm extends XotBaseResourceForm
             'failed' => Toggle::make('failed')->required(),
             'attempt' => TextInput::make('attempt')->required(),
             'exception_message' => Textarea::make('exception_message')->maxLength(65535),
->>>>>>> laraxot/dev
         ];
     }
 }

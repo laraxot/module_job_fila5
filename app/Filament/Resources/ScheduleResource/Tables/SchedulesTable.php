@@ -10,29 +10,14 @@ use Filament\Actions\EditAction;
 use Filament\Actions\ForceDeleteAction;
 use Filament\Actions\RestoreAction;
 use Filament\Actions\ViewAction;
-<<<<<<< HEAD
-use Filament\Tables\Columns\TextColumn;
-=======
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\ScheduleResource;
->>>>>>> laraxot/dev
 use Modules\Job\Models\Schedule;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class SchedulesTable extends XotBaseResourceTable
 {
-<<<<<<< HEAD
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
-            'created_at' => TextColumn::make('created_at')->dateTime(),
-            'updated_at' => TextColumn::make('updated_at')->dateTime(),
-        ];
-    }
-
-=======
     /**
      * @var class-string<Schedule>
      */
@@ -56,7 +41,6 @@ class SchedulesTable extends XotBaseResourceTable
     /**
      * @return array<string, mixed>
      */
->>>>>>> laraxot/dev
     public function getTableActions(): array
     {
         return [
@@ -71,12 +55,6 @@ class SchedulesTable extends XotBaseResourceTable
             'history' => ViewAction::make()
                 ->icon('history')
                 ->color('gray')
-<<<<<<< HEAD
-                ->tooltip(__('buttons.history')),
-        ];
-    }
-
-=======
                 ->tooltip(ScheduleResource::trans('buttons.history')),
         ];
     }
@@ -84,7 +62,6 @@ class SchedulesTable extends XotBaseResourceTable
     /**
      * @return array<string, mixed>
      */
->>>>>>> laraxot/dev
     public function getTableBulkActions(): array
     {
         return [
