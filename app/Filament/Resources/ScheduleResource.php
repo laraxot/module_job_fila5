@@ -1,9 +1,14 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/main/src/Filament/resources/ScheduleResource.php
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
@@ -20,17 +25,29 @@ use Filament\Schemas\Components\Utilities\Set;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\Job\Actions\Command\GetCommandsAction;
+=======
+namespace Modules\Job\Filament\Resources;
+
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
+>>>>>>> laraxot/dev
 use Modules\Job\Datas\CommandData;
 use Modules\Job\Filament\Resources\ScheduleResource\Pages\CreateSchedule;
 use Modules\Job\Filament\Resources\ScheduleResource\Pages\EditSchedule;
 use Modules\Job\Filament\Resources\ScheduleResource\Pages\ListSchedules;
 use Modules\Job\Filament\Resources\ScheduleResource\Pages\ViewSchedule;
 use Modules\Job\Models\Schedule;
+<<<<<<< HEAD
 use Modules\Job\Rules\Corn;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 use Override;
 use Spatie\LaravelData\DataCollection;
 use Webmozart\Assert\Assert;
+=======
+use Modules\Xot\Filament\Resources\XotBaseResource;
+use Override;
+use Spatie\LaravelData\DataCollection;
+>>>>>>> laraxot/dev
 
 class ScheduleResource extends XotBaseResource
 {
@@ -61,6 +78,7 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
+<<<<<<< HEAD
     public function getFormSchemaOld(): array
     {
         static::$commands = app(GetCommandsAction::class)->execute();
@@ -146,6 +164,8 @@ class ScheduleResource extends XotBaseResource
     }
 
     #[Override]
+=======
+>>>>>>> laraxot/dev
     public static function getRelations(): array
     {
         return [

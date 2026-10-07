@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
@@ -17,10 +18,15 @@ use Modules\Job\Filament\Resources\JobResource;
 use Modules\Job\Models\Job;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
+=======
+use Modules\Job\Filament\Resources\JobResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> laraxot/dev
 
 class ListJobs extends XotBaseListRecords
 {
     protected static string $resource = JobResource::class;
+<<<<<<< HEAD
 
     /**
      * @return array<string, Tables\Columns\Column>
@@ -77,4 +83,6 @@ class ListJobs extends XotBaseListRecords
             'delete' => DeleteAction::make(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

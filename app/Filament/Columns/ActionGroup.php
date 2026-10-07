@@ -1,11 +1,18 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Filament/Columns/ActionGroup.php
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> laraxot/dev
 namespace Modules\Job\Filament\Columns;
 
 use Filament\Actions\Concerns\InteractsWithRecord;

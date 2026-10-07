@@ -1,18 +1,27 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
 /**
  * ---.
  */
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\JobsWaitingResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource\Widgets\JobsWaitingOverview;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
+=======
+use Modules\Job\Filament\Resources\JobsWaitingResource;
+use Modules\Job\Filament\Resources\JobsWaitingResource\Widgets\JobsWaitingOverview;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+>>>>>>> laraxot/dev
 
 class ListJobsWaiting extends XotBaseListRecords
 {
@@ -24,6 +33,7 @@ class ListJobsWaiting extends XotBaseListRecords
             JobsWaitingOverview::class,
         ];
     }
+<<<<<<< HEAD
 
     #[Override]
     public function getTableColumns(): array
@@ -51,4 +61,6 @@ class ListJobsWaiting extends XotBaseListRecords
             'updated_at' => TextColumn::make('updated_at')->dateTime()->sortable(),
         ];
     }
+=======
+>>>>>>> laraxot/dev
 }

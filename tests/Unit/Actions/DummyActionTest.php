@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
+<<<<<<< HEAD
 use function Safe\class_uses;
 use Modules\Job\Actions\DummyAction;
 use Modules\Job\Tests\TestCase;
@@ -10,6 +11,17 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
+=======
+
+use Modules\Job\Actions\DummyAction;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+use function Safe\file_get_contents;
+
+uses(TestCase::class);
+>>>>>>> laraxot/dev
 
 describe('DummyAction', function (): void {
     test('can be instantiated', function (): void {

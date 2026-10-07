@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\ScheduleResource\Pages;
 
+<<<<<<< HEAD
 use Closure;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\DeleteAction;
@@ -17,11 +18,15 @@ use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
 use Modules\Job\Filament\Resources\ScheduleResource;
 use Modules\Job\Models\Schedule;
+=======
+use Modules\Job\Filament\Resources\ScheduleResource;
+>>>>>>> laraxot/dev
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListSchedules extends XotBaseListRecords
 {
     protected static string $resource = ScheduleResource::class;
+<<<<<<< HEAD
 
     public function getTableColumns(): array
     {
@@ -85,4 +90,6 @@ class ListSchedules extends XotBaseListRecords
     {
         return static fn (): ?string => null;
     }
+=======
+>>>>>>> laraxot/dev
 }
