@@ -4,20 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-<<<<<<< HEAD
-use Filament\Tables\Columns\TextColumn;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Webmozart\Assert\Assert;
-
-class ScheduleArguments extends TextColumn
-=======
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
 class ScheduleArguments extends XotBaseTextColumn
->>>>>>> laraxot/dev
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 
@@ -67,19 +59,12 @@ class ScheduleArguments extends XotBaseTextColumn
      */
     protected function formatArrayTags(array $tags): array
     {
-<<<<<<< HEAD
-=======
         /** @var Collection<int|string, array<array-key, mixed>|bool|float|int|string|null> $collection */
->>>>>>> laraxot/dev
         $collection = collect($tags);
 
         if ($this->withValue) {
             $collection = $collection->filter(
-<<<<<<< HEAD
-                static function (mixed $value): bool {
-=======
                 static function (array|bool|float|int|string|null $value): bool {
->>>>>>> laraxot/dev
                     if (! is_array($value)) {
                         return false;
                     }
@@ -91,20 +76,12 @@ class ScheduleArguments extends XotBaseTextColumn
 
         return $collection
             ->map(
-<<<<<<< HEAD
-                function (mixed $value, int|string $key): string {
-=======
                 function (array|bool|float|int|string|null $value, int|string $key): string {
->>>>>>> laraxot/dev
                     if ($this->withValue && is_array($value)) {
                         $name = isset($value['name']) && is_string($value['name'])
                             ? $value['name']
                             : (string) $key;
-<<<<<<< HEAD
-                        $val = isset($value['value']) ? SafeStringCastAction::cast($value['value']) : '';
-=======
                         $val = SafeStringCastAction::cast($value['value'] ?? null);
->>>>>>> laraxot/dev
 
                         return $name.'='.$val;
                     }
@@ -119,13 +96,8 @@ class ScheduleArguments extends XotBaseTextColumn
     /**
      * Filter out empty tags from the array.
      *
-<<<<<<< HEAD
-     * @param  array<int, string>  $tags
-     * @return array<int, string>
-=======
      * @param  list<string>  $tags
      * @return list<string>
->>>>>>> laraxot/dev
      */
     protected function filterEmptyTags(array $tags): array
     {

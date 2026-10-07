@@ -10,10 +10,7 @@ use Mockery;
 use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Datas\CommandData;
 use Modules\Job\Filament\Resources\ScheduleResource\Schemas\ScheduleForm;
-<<<<<<< HEAD
-=======
 use Modules\Job\Tests\Fixtures\StubGetCommandsAction;
->>>>>>> laraxot/dev
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
@@ -49,25 +46,9 @@ describe('Job ScheduleForm full schema coverage', function (): void {
         ]);
 
         $collection = new DataCollection(CommandData::class, [$command]);
-<<<<<<< HEAD
-        app()->instance(GetCommandsAction::class, new class($collection)
-        {
-            /** @param DataCollection<int, CommandData> $commands */
-            public function __construct(private DataCollection $commands) {}
-
-            /** @return DataCollection<int, CommandData> */
-            public function execute(): DataCollection
-            {
-                return $this->commands;
-            }
-        });
-
-        $schema = (new ScheduleForm())->getFormSchema();
-=======
         app()->instance(GetCommandsAction::class, new StubGetCommandsAction($collection));
 
         $schema = (new ScheduleForm)->getFormSchema();
->>>>>>> laraxot/dev
         Assert::assertArrayHasKey('main_section', $schema);
 
         // Invoke nested closures via ModuleRemainingCoverage-style property walk
@@ -96,14 +77,11 @@ describe('Job ScheduleForm full schema coverage', function (): void {
     });
 });
 
-<<<<<<< HEAD
-=======
 /**
  * Percorre ricorsivamente il grafo di $value invocando le Closure trovate.
  *
  * @param  mixed  $value  Nodo eterogeneo del grafo: Closure|array|object|scalar|null.
  */
->>>>>>> laraxot/dev
 function jobInvokeClosures(mixed $value, object $set, object $get, int $depth = 0): void
 {
     if ($depth > 8) {

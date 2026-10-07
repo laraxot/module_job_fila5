@@ -1,29 +1,16 @@
 <?php
 
-<<<<<<< HEAD
-=======
 declare(strict_types=1);
->>>>>>> laraxot/dev
 /**
  * @see https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/resources/FailedJobsResource/Pages/ListFailedJobs.php?ref_type=heads
  */
 
-<<<<<<< HEAD
-declare(strict_types=1);
-
-=======
->>>>>>> laraxot/dev
 namespace Modules\Job\Filament\Resources\FailedJobResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
-<<<<<<< HEAD
-use Filament\Tables\Columns\TextColumn;
-use Illuminate\Support\Facades\Artisan;
-=======
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
->>>>>>> laraxot/dev
 use Modules\Job\Filament\Resources\FailedJobResource;
 use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -33,32 +20,6 @@ class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
 
-<<<<<<< HEAD
-    #[Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
-            'uuid' => TextColumn::make('uuid')
-                ->searchable()
-                ->sortable()
-                ->copyable(),
-            'connection' => TextColumn::make('connection')->searchable()->sortable(),
-            'queue' => TextColumn::make('queue')->searchable()->sortable(),
-            'payload' => TextColumn::make('payload')
-                ->searchable()
-                ->wrap()
-                ->limit(50),
-            'exception' => TextColumn::make('exception')
-                ->searchable()
-                ->wrap()
-                ->limit(100),
-            'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
-        ];
-    }
-
-=======
->>>>>>> laraxot/dev
     /**
      * @return array<string, Action>
      */
@@ -79,11 +40,7 @@ class ListFailedJobs extends XotBaseListRecords
                 ->requiresConfirmation()
                 ->color('danger')
                 ->action(static function (): void {
-<<<<<<< HEAD
-                    FailedJob::truncate();
-=======
-                    DB::table((new FailedJob())->getTable())->truncate();
->>>>>>> laraxot/dev
+                    DB::table((new FailedJob)->getTable())->truncate();
                     Notification::make()
                         ->title('All failed jobs have been removed.')
                         ->success()

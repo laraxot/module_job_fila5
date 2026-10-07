@@ -3,14 +3,6 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Enums;
-<<<<<<< HEAD
-use Modules\Job\Enums\Status;
-use Modules\Job\Tests\TestCase;
-use PHPUnit\Framework\Assert;
-use function Safe\file_get_contents;
-
-uses(\Modules\Job\Tests\TestCase::class);
-=======
 
 use Modules\Job\Enums\Status;
 use Modules\Job\Tests\TestCase;
@@ -19,7 +11,6 @@ use PHPUnit\Framework\Assert;
 use function Safe\file_get_contents;
 
 uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('Status', function () {
     it('is an enum', function () {

@@ -108,11 +108,7 @@ return [
         'job_resumed' => 'Monitoraggio del job ripreso',
         'job_stopped' => 'Monitoraggio del job fermato',
     ],
-<<<<<<< HEAD
-    'title' => 'job monitor',
-=======
     'title' => 'Job-Monitor',
->>>>>>> laraxot/dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 ];

@@ -131,11 +131,7 @@ return [
         'job_stopped' => 'Monitoraggio del job fermato',
         'job_exported' => 'Dati esportati correttamente',
     ],
-<<<<<<< HEAD
-    'title' => 'job status',
-=======
     'title' => 'Job status',
->>>>>>> laraxot/dev
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
 ];

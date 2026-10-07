@@ -1,7 +1,3 @@
----
-title: Readme
-module: Job
----
 # Job
 
 [![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()

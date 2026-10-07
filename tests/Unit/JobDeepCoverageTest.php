@@ -9,11 +9,7 @@ use Modules\Job\Tests\TestCase;
 use Modules\Xot\Tests\ModuleDeepCoverage;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< HEAD
-uses(\Modules\Job\Tests\TestCase::class)->group('no-job-db');
-=======
 uses(TestCase::class)->group('no-job-db');
->>>>>>> laraxot/dev
 
 /** @return array{0: string, 1: string} */
 /** @return list{string, string} */
@@ -25,11 +21,7 @@ function jobDeepContext(): array
 describe('Job deep coverage — execute code paths', function (): void {
     test('GetTaskFrequenciesAction execute returns config array', function (): void {
         config(['totem.frequencies' => ['daily' => 'Daily']]);
-<<<<<<< HEAD
-        $result = (new GetTaskFrequenciesAction())->execute();
-=======
         $result = (new GetTaskFrequenciesAction)->execute();
->>>>>>> laraxot/dev
         Assert::assertSame(['daily' => 'Daily'], $result);
     });
 

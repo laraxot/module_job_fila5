@@ -7,14 +7,9 @@ namespace Modules\Job\Tests\Unit\Actions;
 use Modules\Job\Actions\ClearScheduleCacheAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-<<<<<<< HEAD
-
-uses(\Modules\Job\Tests\TestCase::class);
-=======
 use Spatie\QueueableAction\QueueableAction;
 
 uses(TestCase::class);
->>>>>>> laraxot/dev
 
 describe('ClearScheduleCacheAction', function () {
     it('can be instantiated', function () {
@@ -29,11 +24,7 @@ describe('ClearScheduleCacheAction', function () {
 
     it('uses QueueableAction trait', function () {
         $reflection = new \ReflectionClass(ClearScheduleCacheAction::class);
-<<<<<<< HEAD
-        Assert::assertContains(\Spatie\QueueableAction\QueueableAction::class, $reflection->getTraitNames());
-=======
         Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
->>>>>>> laraxot/dev
     });
 
     it('has correct namespace', function () {
