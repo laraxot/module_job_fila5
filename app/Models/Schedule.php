@@ -51,6 +51,7 @@ use Override;
  * @property int|null $histories_count
  * @property ProfileContract|null $updater
  *
+<<<<<<< HEAD
  * @method static Builder<static>|Schedule active()
  * @method static ScheduleFactory factory($count = null, $state = [])
  * @method static Builder<static>|Schedule inactive()
@@ -87,6 +88,44 @@ use Override;
  * @method static Builder<static>|Schedule whereWithoutOverlapping($value)
  * @method static Builder<static>|Schedule withTrashed(bool $withTrashed = true)
  * @method static Builder<static>|Schedule withoutTrashed()
+=======
+ * @method static Builder<static> active()
+ * @method static ScheduleFactory factory($count = null, $state = [])
+ * @method static Builder<static> inactive()
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> onlyTrashed()
+ * @method static Builder<static> query()
+ * @method static Builder<static> whereCommand($value)
+ * @method static Builder<static> whereCommandCustom($value)
+ * @method static Builder<static> whereCreatedAt($value)
+ * @method static Builder<static> whereCreatedBy($value)
+ * @method static Builder<static> whereDeletedAt($value)
+ * @method static Builder<static> whereDeletedBy($value)
+ * @method static Builder<static> whereEmailOutput($value)
+ * @method static Builder<static> whereEnvironments($value)
+ * @method static Builder<static> whereEvenInMaintenanceMode($value)
+ * @method static Builder<static> whereExpression($value)
+ * @method static Builder<static> whereId($value)
+ * @method static Builder<static> whereLogError($value)
+ * @method static Builder<static> whereLogFilename($value)
+ * @method static Builder<static> whereLogSuccess($value)
+ * @method static Builder<static> whereOnOneServer($value)
+ * @method static Builder<static> whereOptions($value)
+ * @method static Builder<static> whereOptionsWithValue($value)
+ * @method static Builder<static> whereParams($value)
+ * @method static Builder<static> whereRunInBackground($value)
+ * @method static Builder<static> whereSendmailError($value)
+ * @method static Builder<static> whereSendmailSuccess($value)
+ * @method static Builder<static> whereStatus($value)
+ * @method static Builder<static> whereUpdatedAt($value)
+ * @method static Builder<static> whereUpdatedBy($value)
+ * @method static Builder<static> whereWebhookAfter($value)
+ * @method static Builder<static> whereWebhookBefore($value)
+ * @method static Builder<static> whereWithoutOverlapping($value)
+ * @method static Builder<static> withTrashed(bool $withTrashed = true)
+ * @method static Builder<static> withoutTrashed()
+>>>>>>> laraxot/dev
  *
  * @property-read ProfileContract|null $deleter
  *
@@ -96,12 +135,15 @@ class Schedule extends BaseModel
 {
     use ManagesFrequencies;
 
+<<<<<<< HEAD
     public const int STATUS_INACTIVE = 0;
 
     public const int STATUS_ACTIVE = 1;
 
     public const int STATUS_TRASHED = 2;
 
+=======
+>>>>>>> laraxot/dev
     protected $fillable = [
         'command',
         'command_custom',
@@ -139,7 +181,14 @@ class Schedule extends BaseModel
      */
     public static function getEnvironments(): Collection
     {
+<<<<<<< HEAD
         return static::whereNotNull('environments')->groupBy('environments')->pluck('environments', 'environments');
+=======
+        /** @var Collection<int|string, mixed> $result */
+        $result = static::query()->whereNotNull('environments')->groupBy('environments')->pluck('environments', 'environments');
+
+        return $result;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -160,7 +209,11 @@ class Schedule extends BaseModel
      */
     public function scopeInactive(Builder $query): Builder
     {
+<<<<<<< HEAD
         return $query->where('status', self::STATUS_INACTIVE);
+=======
+        return $query->where('status', Status::Inactive);
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -171,7 +224,11 @@ class Schedule extends BaseModel
      */
     public function scopeActive(Builder $query): Builder
     {
+<<<<<<< HEAD
         return $query->where('status', self::STATUS_ACTIVE);
+=======
+        return $query->whereIn('status', Status::activeCases());
+>>>>>>> laraxot/dev
     }
 
     /**

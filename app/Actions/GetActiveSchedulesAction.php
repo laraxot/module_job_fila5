@@ -14,6 +14,7 @@ class GetActiveSchedulesAction
 {
     use QueueableAction;
 
+<<<<<<< HEAD
     private Schedule $model;
 
     public function __construct()
@@ -25,6 +26,8 @@ class GetActiveSchedulesAction
         $this->model = $model;
     }
 
+=======
+>>>>>>> laraxot/dev
     /**
      * @return Collection<int, Schedule>
      */
@@ -34,7 +37,14 @@ class GetActiveSchedulesAction
             return $this->getFromCache();
         }
 
+<<<<<<< HEAD
         return $this->model->active()->get();
+=======
+        /** @var Collection<int, Schedule> $result */
+        $result = Schedule::query()->active()->get();
+
+        return $result;
+>>>>>>> laraxot/dev
     }
 
     /**
@@ -45,7 +55,14 @@ class GetActiveSchedulesAction
         Assert::string($store = config('job::cache.store'), '['.__LINE__.']['.class_basename($this).']');
         Assert::string($key = config('job::cache.key'), '['.__LINE__.']['.class_basename($this).']');
 
+<<<<<<< HEAD
         $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->model->active()->get());
+=======
+        $result = Cache::store($store)->rememberForever(
+            $key,
+            fn (): Collection => Schedule::query()->active()->get()
+        );
+>>>>>>> laraxot/dev
         Assert::isInstanceOf($result, Collection::class);
 
         /** @var Collection<int, Schedule> $result */

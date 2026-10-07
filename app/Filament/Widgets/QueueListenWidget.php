@@ -1,11 +1,18 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://www.freshleafmedia.co.uk/blog/streaming-laravel-command-output-to-the-browser
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
+=======
+>>>>>>> laraxot/dev
 namespace Modules\Job\Filament\Widgets;
 
 use Exception;
@@ -22,6 +29,7 @@ class QueueListenWidget extends XotBaseWidget
 
     public bool $run = false;
 
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view;
 
@@ -33,6 +41,9 @@ class QueueListenWidget extends XotBaseWidget
 
         parent::__construct();
     }
+=======
+    protected string $view = 'job::filament.widgets.queue-listen';
+>>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 

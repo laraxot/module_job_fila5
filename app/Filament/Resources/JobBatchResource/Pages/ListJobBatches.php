@@ -1,9 +1,14 @@
 <?php
 
+<<<<<<< HEAD
+=======
+declare(strict_types=1);
+>>>>>>> laraxot/dev
 /**
  * @see https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/resources/JobBatchesResource/Pages/ListJobBatches.php?ref_type=heads
  */
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobBatchResource\Pages;
@@ -21,12 +26,23 @@ use Modules\Job\Models\JobBatch;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
 use Webmozart\Assert\Assert;
+=======
+namespace Modules\Job\Filament\Resources\JobBatchResource\Pages;
+
+use Filament\Actions\Action;
+use Filament\Notifications\Notification;
+use Illuminate\Support\Facades\Artisan;
+use Modules\Job\Filament\Resources\JobBatchResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
+use Override;
+>>>>>>> laraxot/dev
 
 class ListJobBatches extends XotBaseListRecords
 {
     protected static string $resource = JobBatchResource::class;
 
     /**
+<<<<<<< HEAD
      * @return array<string, Tables\Columns\Column>
      */
     #[Override]
@@ -96,6 +112,8 @@ class ListJobBatches extends XotBaseListRecords
     }
 
     /**
+=======
+>>>>>>> laraxot/dev
      * @return array<Action>
      */
     #[Override]

@@ -1,12 +1,18 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 use Exception;
 use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use stdClass;
+=======
+use Modules\Job\Actions\GetTaskFrequenciesAction;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
