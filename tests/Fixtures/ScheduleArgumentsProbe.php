@@ -20,11 +20,6 @@ use Modules\Job\Filament\Columns\ScheduleArguments;
  */
 final class ScheduleArgumentsProbe extends ScheduleArguments
 {
-<<<<<<< HEAD
-    public mixed $fakeState = null;
-
-    public function getState(): mixed
-=======
     /**
      * @var array<int|string, mixed>|string|null
      */
@@ -34,7 +29,6 @@ final class ScheduleArgumentsProbe extends ScheduleArguments
      * @return array<int|string, mixed>|string|null
      */
     public function getState(): array|string|null
->>>>>>> laraxot/dev
     {
         return $this->fakeState;
     }

@@ -23,26 +23,12 @@ class GetActiveSchedulesAction
             return $this->getFromCache();
         }
 
-<<<<<<< HEAD
-        return $this->getModel()->active()->get();
-    }
-
-    private function getModel(): Schedule
-    {
-        Assert::string($modelClass = config('job::model'), '['.__LINE__.']['.class_basename($this).']');
-
-        $model = app($modelClass);
-        Assert::isInstanceOf($model, Schedule::class, '['.__LINE__.']['.class_basename($this).']');
-
-        return $model;
-=======
         /** @var Collection<int, Schedule> $result */
         $result = Schedule::query()
             ->active()
             ->get();
 
         return $result;
->>>>>>> laraxot/dev
     }
 
     /**
@@ -53,16 +39,12 @@ class GetActiveSchedulesAction
         Assert::string($store = config('job::cache.store'), '['.__LINE__.']['.class_basename($this).']');
         Assert::string($key = config('job::cache.key'), '['.__LINE__.']['.class_basename($this).']');
 
-<<<<<<< HEAD
-        $result = Cache::store($store)->rememberForever($key, fn (): Collection => $this->getModel()->active()->get());
-=======
         $result = Cache::store($store)->rememberForever(
             $key,
             fn (): Collection => Schedule::query()
                 ->active()
                 ->get()
         );
->>>>>>> laraxot/dev
         Assert::isInstanceOf($result, Collection::class);
 
         /** @var Collection<int, Schedule> $result */
