@@ -450,7 +450,7 @@ public function handle(Invoice $invoice): void
 
 - [Laravel Queues Documentation](https://laravel.com/docs/queues)
 - [Queue Best Practices](./best-practices.md)
-- [Troubleshooting Guide](./TROUBLESHOOTING.md)
+- [Troubleshooting Guide](./job-module-troubleshooting-guide.md)
 - [Job Monitor Filament Resource](./COMPONENTS.md#filament-resources)
 
 ---
