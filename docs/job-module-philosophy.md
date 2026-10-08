@@ -1078,7 +1078,7 @@ Do not use it for: real-time messaging (use WebSocket), event streaming (use Kaf
 
 ---
 
-**Document:** PHILOSOPHY.md  
+**Document:** job-module-philosophy.md  
 **Version:** 1.0  
 **Status:** Active (2026-09-06)  
 **Owner:** Job Module  
