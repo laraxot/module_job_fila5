@@ -1,14 +1,14 @@
 ---
-title: "Job Module - Comprehensive Analysis"
-module: "Job"
-type: concept
-tags: [module, analysis]
-created: 2026-07-14
-updated: 2026-07-14
+title: "module analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "module analysis"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Job Module - Comprehensive Analysis
 
 ## Module Overview

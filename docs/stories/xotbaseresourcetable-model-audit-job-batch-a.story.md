@@ -1,4 +1,11 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresourcetable model audit job batch a.story"
+issues: []
+discussions: []
 id: story-job-xotbaseresourcetable-model-audit-batch-a
 slug: xotbaseresourcetable-model-audit-job-batch-a
 status: done

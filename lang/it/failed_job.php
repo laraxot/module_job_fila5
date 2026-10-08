@@ -79,11 +79,11 @@ return [
     'statuses' => ['pending' => 'In Attesa', 'processing' => 'In Elaborazione', 'failed' => 'Fallito', 'completed' => 'Completato', 'cancelled' => 'Annullato', 'max_attempts' => 'Tentativi Massimi Superati'],
     'error_types' => ['max_attempts' => 'Tentativi Massimi Superati', 'timeout' => 'Timeout', 'memory_limit' => 'Limite Memoria Superato', 'connection' => 'Errore di Connessione', 'queue' => 'Errore di Coda', 'payload' => 'Errore nel Payload', 'system' => 'Errore di Sistema'],
     'plural' => [
-        'model' => ['label' => 'failed job.plural.model'],
+        'model' => ['label' => 'Jobs Falliti'],
         'label' => 'Jobs Falliti',
         'sort' => 93,
         'icon' => 'job-failed-job',
     ],
-    'label' => 'failed job',
-    'plural_label' => 'Failed Job (Plurale)',
+    'label' => 'Job fallito',
+    'plural_label' => 'Jobs Falliti',
 ];

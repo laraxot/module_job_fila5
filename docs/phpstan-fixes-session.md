@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes session"
+issues: []
+discussions: []
+---
+
 # PHPStan Fixes - Modulo Job
 
 ## 🔄 Status: IN PROGRESS - 49 Errori Rimanenti
@@ -7,6 +18,14 @@
 
 ---
 
+title: "phpstan fixes session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes session"
+issues: []
+discussions: []
 ## 📊 Correzioni Implementate
 
 ### 1. Rimozione Generic Type da HasXotFactory ✅

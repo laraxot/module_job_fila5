@@ -1,20 +1,28 @@
 ---
-title: "Cyclomatic Complexity Report - Module: Job"
-module: "Job"
-type: concept
-tags: [cyclomatic, complexity, report]
-created: 2026-07-14
-updated: 2026-07-14
+title: "cyclomatic complexity report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "cyclomatic complexity report"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Cyclomatic Complexity Report - Module: Job
 
 **Analyzer:** Super Mucca 🐮
 
 ---
 
+title: "cyclomatic complexity report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cyclomatic complexity report"
+issues: []
+discussions: []
 ## 📊 Summary Statistics
 
 | Metric | Value |
