@@ -55,6 +55,7 @@ related:
 - [Codice morto XotBaseResourceTable](./stories/xotbaseresourcetable-dead-code-followup-job.story.md)
 - [01 PHPStan fix](./stories/01.Job-phpstan-fix.story.md)
 - [2026-10-06 PHPStan cleanup](./stories/2026-10-06-phpstan-cleanup-job.story.md)
+- [2026-10-08 Services -> Actions (residuo ScheduleService)](./stories/2026-10-08-services-to-actions-job.story.md)
 
 ## Pacchetti Composer
 
