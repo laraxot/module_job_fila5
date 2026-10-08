@@ -1,4 +1,7 @@
 ---
+qmd: "optimization tips"
+issues: []
+discussions: []
 title: "Job optimization tips"
 type: tip
 tags: [tips]

@@ -1,14 +1,14 @@
 ---
-title: "Task: Consolidare Documentazione - Job"
-module: "Job"
-type: concept
-tags: [task, consolidare, documentazione]
-created: 2026-07-14
-updated: 2026-07-14
+title: "task consolidare documentazione"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "task consolidare documentazione"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Task: Consolidare Documentazione - Job
 
 **Modulo**: Job
@@ -17,6 +17,14 @@ related:
 
 ---
 
+title: "task consolidare documentazione"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task consolidare documentazione"
+issues: []
+discussions: []
 ## Criteri di Completamento
 
 - [ ] Rimossi duplicati da 113 docs

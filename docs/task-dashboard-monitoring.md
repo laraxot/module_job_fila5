@@ -1,14 +1,14 @@
 ---
-title: "Task: Migliorare Dashboard Monitoring - Job"
-module: "Job"
-type: concept
-tags: [task, dashboard, monitoring]
-created: 2026-07-14
-updated: 2026-07-14
+title: "task dashboard monitoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "task dashboard monitoring"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Task: Migliorare Dashboard Monitoring - Job
 
 **Modulo**: Job
@@ -17,6 +17,14 @@ related:
 
 ---
 
+title: "task dashboard monitoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task dashboard monitoring"
+issues: []
+discussions: []
 ## Criteri di Completamento
 
 - [ ] Grafici real-time per throughput

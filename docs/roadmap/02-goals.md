@@ -1,14 +1,14 @@
 ---
-title: "Goals - Job"
-module: "Job"
-type: concept
-tags: [02, goals]
-created: 2026-07-14
-updated: 2026-07-14
+title: "02 goals"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "02 goals"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Goals - Job
 
 ## Short Term

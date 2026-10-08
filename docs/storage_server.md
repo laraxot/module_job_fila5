@@ -1,4 +1,7 @@
 ---
+qmd: "storage server"
+issues: []
+discussions: []
 title: 'Storage server'
 module: Job
 type: reference

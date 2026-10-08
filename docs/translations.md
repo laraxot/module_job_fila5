@@ -1,14 +1,14 @@
 ---
-title: "Traduzioni del Modulo Job"
-module: "Job"
-type: concept
-tags: [translations]
-created: 2026-07-14
-updated: 2026-07-14
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "translations"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Traduzioni del Modulo Job
 
 ## Collegamenti
@@ -89,3 +89,11 @@ return [
 ```
 
 ---
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations"
+issues: []
+discussions: []

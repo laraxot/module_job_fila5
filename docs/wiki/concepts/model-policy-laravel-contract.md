@@ -1,4 +1,8 @@
 ---
+created: 2026-09-26
+qmd: "model policy laravel contract"
+issues: []
+discussions: []
 title: Policy modello — contratto Laravel (Job)
 type: concept
 module: Job

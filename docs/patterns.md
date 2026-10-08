@@ -1,4 +1,10 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+qmd: "patterns"
+issues: []
+discussions: []
 title: "Job Module Architectural Patterns"
 category: "architecture"
 owner: "Job"

@@ -1,4 +1,7 @@
 ---
+qmd: "actions"
+issues: []
+discussions: []
 title: "Job Module — QueueableActions Architecture (Consolidated)"
 type: guide
 tags: [actions, architecture, queueable]
