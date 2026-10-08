@@ -1,14 +1,14 @@
 ---
-title: "Soluzioni Tecniche - Modulo Job"
-module: "Job"
-type: concept
-tags: [solutions]
-created: 2026-07-14
-updated: 2026-07-14
+title: "solutions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "solutions"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni
@@ -183,7 +183,7 @@ class Job extends Model {
 
 ### 1. Cache Configuration
 ```php
-// In: Modules/Job/config/cache.php
+// In: Modules/Job/Config/cache.php
 return [
     'ttl' => [
         'job_status' => 300,      // 5 minutes
@@ -370,6 +370,14 @@ class RetryTest extends TestCase {
 
 ---
 
+title: "solutions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "solutions"
+issues: []
+discussions: []
 ### Versione Incoming
 
    - Aggiornamento strategie retry

@@ -1,14 +1,14 @@
 ---
-title: "Workstreams - Job"
-module: "Job"
-type: concept
-tags: [03, workstreams]
-created: 2026-07-14
-updated: 2026-07-14
+title: "03 workstreams"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "03 workstreams"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Workstreams - Job
 
 ## WS1 Architecture

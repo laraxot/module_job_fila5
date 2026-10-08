@@ -1,14 +1,14 @@
 ---
-title: "Dependency Intelligence - Module Job"
-module: "Job"
-type: concept
-tags: [dependency, intelligence]
-created: 2026-07-14
-updated: 2026-07-14
+title: "dependency intelligence"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "dependency intelligence"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Dependency Intelligence - Module Job
 
 Aggiornato da `composer show` il 2026-03-02.

@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Schedule 1"
 module: "Job"
 type: concept

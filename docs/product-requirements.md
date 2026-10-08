@@ -1,14 +1,14 @@
 ---
-title: "Product Requirements Document (PRD)"
-module: "Job"
-type: concept
-tags: [product, requirements]
-created: 2026-07-14
-updated: 2026-07-14
+title: "product requirements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "product requirements"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Product Requirements Document (PRD)
 
 ## Metadata
@@ -24,6 +24,14 @@ related:
 
 ---
 
+title: "product requirements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "product requirements"
+issues: []
+discussions: []
 ## 1. Panoramica del Prodotto
 
 ### Descrizione Breve

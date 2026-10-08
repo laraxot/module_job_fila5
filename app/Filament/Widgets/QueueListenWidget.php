@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://www.freshleafmedia.co.uk/blog/streaming-laravel-command-output-to-the-browser
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Filament\Widgets;
 
@@ -22,6 +21,7 @@ class QueueListenWidget extends XotBaseWidget
 
     public bool $run = false;
 
+    /** @var view-string */
     protected string $view = 'job::filament.widgets.queue-listen';
 
     protected int|string|array $columnSpan = 'full';

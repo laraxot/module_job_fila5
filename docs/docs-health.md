@@ -1,14 +1,14 @@
 ---
-title: "Docs Health - Job"
-module: "Job"
-type: concept
-tags: [docs, health]
-created: 2026-07-14
-updated: 2026-07-14
+title: "docs health"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "docs health"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Docs Health - Job
 
 ## Snapshot
@@ -39,4 +39,12 @@ related:
 - Update this file when major cleanup is executed.
 
 ---
+title: "docs health"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs health"
+issues: []
+discussions: []
 Generated during docs confidence hardening batch (2026-03-07).

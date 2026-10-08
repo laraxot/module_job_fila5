@@ -1,14 +1,14 @@
 ---
-title: "Job - Wiki Activity Log"
-module: "Job"
-type: concept
-tags: [log]
-created: 2026-07-14
-updated: 2026-07-14
+title: "log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "log"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 ## [2026-06-30] docs | Second brain — policy incident consolidato
 
 - Memoria datata rimossa; canon in [policy-restoration-incident.md](./concepts/policy-restoration-incident.md)
@@ -23,6 +23,13 @@ related:
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
 title: "Job Wiki Activity Log"
 module: "Job"
 ---
@@ -36,3 +43,9 @@ module: "Job"
 - Created module index.md
 - Ready for on-demand loading via QMD
 
+
+---
+
+## [2026-09-25] phpstan | TaskBusinessLogicTest staticMethod.alreadyNarrowedType fix
+- `tests/Feature/TaskBusinessLogicTest.php`: replaced `Assert::assertSame(1, $task->is_active)` after `update(['is_active' => 1])` with `$reactivatedTask = $task->fresh()` + `Assert::assertNotNull()` + `Assert::assertSame(1, $reactivatedTask->is_active)` to avoid the "already narrowed type" false positive.
+- Cleared `staticMethod.alreadyNarrowedType` error.

@@ -1,14 +1,14 @@
 ---
-title: "Ponytail audit — Job (over-engineering)"
-module: "Job"
-type: concept
-tags: [ponytail, audit, over, engineering]
-created: 2026-07-14
-updated: 2026-07-14
+title: "ponytail audit over engineering"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "ponytail audit over engineering"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Ponytail audit — Job (over-engineering)
 
 **Ultimo run:** 2026-06-30 (re-run #2)  

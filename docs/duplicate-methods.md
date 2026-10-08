@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Metodi duplicati — Job"
 module: "Job"
 type: concept

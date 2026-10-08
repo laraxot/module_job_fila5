@@ -1,14 +1,14 @@
 ---
-title: "Redundancy Report — Modulo Job"
-module: "Job"
-type: concept
-tags: [redundancy, report]
-created: 2026-07-14
-updated: 2026-07-14
+title: "redundancy report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "redundancy report"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 - Inventario [ridondanze cross-modulo](../docs/redundancy-report.md)
 - Concetti [ridondanze cross-cutting](../Xot/docs/wiki/concepts/ridondanze-cross-cutting-codebase.md)
 

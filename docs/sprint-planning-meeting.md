@@ -1,14 +1,14 @@
 ---
-title: "Job - Sprint Planning Meeting"
-module: "Job"
-type: concept
-tags: [sprint, planning, meeting]
-created: 2026-07-14
-updated: 2026-07-14
+title: "sprint planning meeting"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "sprint planning meeting"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Job - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo.

@@ -1,14 +1,14 @@
 ---
-title: "Queue"
-module: "Job"
-type: concept
-tags: [queue]
-created: 2026-07-14
-updated: 2026-07-14
+title: "queue"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "queue"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Queue
 
 ## Pacchetti Utilizzati

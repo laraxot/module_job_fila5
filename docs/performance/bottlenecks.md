@@ -1,14 +1,14 @@
 ---
-title: "Job Module Performance Bottlenecks"
-module: "Job"
-type: concept
-tags: [bottlenecks]
-created: 2026-07-14
-updated: 2026-07-14
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "bottlenecks"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Job Module Performance Bottlenecks
 
 ## Queue Management
@@ -215,6 +215,14 @@ Implementare:
 
 ---
 
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bottlenecks"
+issues: []
+discussions: []
 ### Versione Incoming
 
 ---

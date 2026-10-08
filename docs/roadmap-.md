@@ -1,14 +1,14 @@
 ---
-title: "Job Module Roadmap 2026"
-module: "Job"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
+title: "roadmap "
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "roadmap "
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # Job Module Roadmap 2026
 
 ## ⚙️ Sacred Philosophy: "Automation is Liberation"
@@ -25,6 +25,14 @@ Transform task management from a technical burden into an **automation superpowe
 
 ---
 
+title: "roadmap "
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap "
+issues: []
+discussions: []
 ## 📊 Current Architecture Assessment
 
 ### ✅ Architectural Strengths

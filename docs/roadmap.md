@@ -1,14 +1,14 @@
 ---
-title: "🎯 JOB MODULE - ROADMAP 2025"
-module: "Job"
-type: concept
-tags: [roadmap]
-created: 2026-07-14
-updated: 2026-07-14
+title: "roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
 qmd: "roadmap"
-related:
-  - "./phpstan-fixes-archive-2.md"
+issues: []
+discussions: []
 ---
+
 # 🎯 JOB MODULE - ROADMAP 2025
 
 **Modulo**: Job ([Description])  
@@ -19,6 +19,14 @@ related:
 
 ---
 
+title: "roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap"
+issues: []
+discussions: []
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Job** [descrizione del modulo].

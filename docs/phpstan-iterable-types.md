@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "PHPStan iterable types nel modulo Job"
 type: rule
 tags: [phpstan, iterable, job, laraxot]
