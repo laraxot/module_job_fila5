@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: module-job-1
 canonical: ../../../Themes/docs/shared-components/module-job-1.md
+status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/module-job-1.md

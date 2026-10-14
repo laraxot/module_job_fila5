@@ -13,6 +13,7 @@ related:
   - ../../ponytail-audit-over-engineering.md
   - ../../../../../../docs/wiki/concepts/model-policy-laravel-contract.md
   - ../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md
+status: draft
 ---
 
 # Ripristino policy Job — incidente ponytail

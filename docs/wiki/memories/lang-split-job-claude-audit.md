@@ -12,6 +12,7 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/304"
 related:
   - ../../Xot/docs/wiki/concepts/claude-audit-static-all-modules.md
+status: draft
 ---
 
 # Split `lang/it/job.php` (claude-audit)

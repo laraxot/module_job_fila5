@@ -1,3 +1,11 @@
+---
+title: "Decision Log — Job"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, job]
+qmd: "decision log   job job"
+---
 # Decision Log — Job
 
 A threaded, append-only record of decisions made across BMAD planning workflows.

@@ -7,6 +7,7 @@ type: user_stories
 tags: [user stories, epics, job]
 created: 2026-08-04
 updated: 2026-08-04
+status: draft
 ---
 # Job Epics and User Stories
 
