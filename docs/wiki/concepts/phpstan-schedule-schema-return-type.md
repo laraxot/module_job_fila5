@@ -7,6 +7,7 @@ title: "PHPStan Schedule Schema Return Type"
 type: concept
 updated: 2026-05-06
 tags: [phpstan, filament, schema, schedule]
+status: draft
 ---
 
 # PHPStan Schedule Schema Return Type

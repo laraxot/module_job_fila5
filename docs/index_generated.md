@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "index generated"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Job Module Documentation Index (Generated)
@@ -18,15 +19,6 @@ discussions: []
 **Status:** Generated with intelligent categorization and deduplication analysis
 
 ---
-
-title: "index generated"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index generated"
-issues: []
-discussions: []
 ## Table of Contents
 
 1. [Statistics](#statistics)

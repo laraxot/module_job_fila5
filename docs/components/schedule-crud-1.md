@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "schedule crud 1"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Schedule Crud Component

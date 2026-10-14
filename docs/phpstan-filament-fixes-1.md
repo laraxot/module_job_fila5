@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: phpstan-filament-fixes-1
 canonical: ../../../Themes/docs/shared-components/phpstan-filament-fixes-1.md
+status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-filament-fixes-1.md

@@ -3,6 +3,8 @@ title: "Riorganizzazione docs core Job"
 type: story
 tags: [docs, bmad, job, reorganization]
 qmd: "riorganizzazione docs core Job"
+status: draft
+updated: 2026-10-09
 ---
 
 # Story — riorganizzazione docs core: Job

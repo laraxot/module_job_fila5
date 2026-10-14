@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "product strategy"
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---
 # Job Module - Product Strategy
 

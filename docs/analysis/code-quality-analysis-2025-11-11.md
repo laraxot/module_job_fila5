@@ -1,3 +1,11 @@
+---
+title: "Job Module - Code Quality Analysis Report"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, job, analysis]
+qmd: "job module - code quality analysis report job"
+---
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11

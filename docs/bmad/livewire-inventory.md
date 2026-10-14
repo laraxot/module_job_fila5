@@ -12,7 +12,7 @@ related:
   - ./livewire-widget-decision-log.md
   - ./livewire-widget-epics.md
   - ../stories/12.1.retire-job-http-livewire.story.md
-  - ../../Cms/docs/bmad/livewire-inventory.md
+  - ../../../Cms/docs/bmad/livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-inventory.md
 ---
 
@@ -20,7 +20,7 @@ related:
 
 **Solo documentazione. Nessun PHP toccato in questo audit.**
 
-Questo file è la SSoT del modulo Job per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md) e [Modules/Xot/docs/bmad/livewire-inventory.md](../../Xot/docs/bmad/livewire-inventory.md).
+Questo file è la SSoT del modulo Job per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../../Cms/docs/bmad/livewire-inventory.md) e [Modules/Xot/docs/bmad/livewire-inventory.md](../../Xot/docs/bmad/livewire-inventory.md).
 
 Differenza rispetto a Cms/Xot: in Job **esistono mount reali** (`<livewire:...>` in viste Blade), quindi la classificazione non è "tutto orfano": un componente è montato dentro una pagina del panel `job::admin`, gli altri solo in viste legacy `adm_theme` prive di renderer.
 

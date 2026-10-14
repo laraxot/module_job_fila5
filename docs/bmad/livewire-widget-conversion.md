@@ -4,6 +4,10 @@ type: pointer
 module: Job
 related:
   - ./livewire-inventory.md
+status: draft
+updated: 2026-10-07
+tags: [docs, job, bmad]
+qmd: "job   canone job"
 ---
 
 # Job — canone

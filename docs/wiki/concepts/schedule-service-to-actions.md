@@ -9,7 +9,7 @@ updated: 2026-07-13
 qmd: "Job module ScheduleService to QueueableAction schedule cache active schedules"
 related:
   - ../../../Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md
-  - ../../../User/docs/wiki/concepts/no-app-support-queueable-actions.md
+  - ../../../../User/docs/wiki/concepts/no-app-support-queueable-actions.md
 ---
 
 # Job — `ScheduleService` → Actions
