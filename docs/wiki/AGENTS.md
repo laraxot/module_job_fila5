@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: AGENTS
 canonical: ../../../../Themes/docs/shared-components/AGENTS-Modules.md
+status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/AGENTS-Modules.md

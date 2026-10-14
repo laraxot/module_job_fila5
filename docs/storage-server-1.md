@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: storage-server-1
 canonical: ../../../Themes/docs/shared-components/storage-server-1.md
+status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/storage-server-1.md
