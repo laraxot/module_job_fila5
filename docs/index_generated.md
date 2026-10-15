@@ -111,7 +111,7 @@ status: draft
 - [filament-5x-compatibility.md](filament-5x-compatibility.md) - v5 compatibility (1.8KB)
 - [filament-version.md](filament-version.md) - Version tracking (862 bytes)
 - [migration-filament.md](migration-filament.md) - Filament migration
-- [migration-filament-4.md](migration-filament-4.md) - v4 migration
+- [migration-filament-4.md](migration-filament.md) - v4 migration
 
 ### Migration & Database
 - [MIGRATIONS.md](MIGRATIONS.md) - Migration tracking (10.9KB)
@@ -146,7 +146,7 @@ status: draft
 ### Audits & Analysis
 - [code-redundancy-audit.md](code-redundancy-audit.md) - Redundancy audit (2.9KB)
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - Copilot audit (581 bytes)
-- [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit-2026-05-25.md) - 2026 audit (420 bytes)
+- [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit.md) - 2026 audit (420 bytes)
 - [redundancy-audit.md](redundancy-audit.md) - General redundancy (1.2KB)
 - [redundancy-report.md](redundancy-report.md) - Redundancy report (1.6KB)
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) - Method duplication (37KB - comprehensive)
@@ -291,9 +291,9 @@ status: draft
 
 **Migration:**
 - `migration-filament.md` (185 bytes)
-- `migration-filament-4.md` (185 bytes)
+- `migration-filament.md` (185 bytes)
 - `migrazione-filament.md` (186 bytes - IT)
-- `migrazione-filament-4.md` (186 bytes - IT)
+- `migrazione-filament.md` (186 bytes - IT)
 
 **Assessment:**
 - [ ] Remove underscore duplicates (`filament_4x_compatibility.md` vs `filament-4x-compatibility.md`)
@@ -353,7 +353,7 @@ status: draft
 - `redundancy-audit.md` (1.2KB)
 - `redundancy-audit-job.md` (372 bytes)
 - `copilot-redundancy-audit.md` (581 bytes)
-- `copilot-redundancy-audit-2026-05-25.md` (420 bytes)
+- `copilot-redundancy-audit.md` (420 bytes)
 - `redundancy-report.md` (1.6KB)
 
 **Method/code duplication (5 variants):**
@@ -560,7 +560,7 @@ status: draft
 - `redundancy-audit.md` (old)
 - `redundancy-audit-job.md` (dated)
 - `copilot-redundancy-audit.md` (outdated)
-- `copilot-redundancy-audit-2026-05-25.md` (dated)
+- `copilot-redundancy-audit.md` (dated)
 
 **Keep:**
 1. `code-redundancy-audit.md` (2.9KB - general audit)
