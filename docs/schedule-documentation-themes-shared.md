@@ -14,11 +14,8 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_iT7IMW
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_WLFK5Q

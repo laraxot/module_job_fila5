@@ -111,7 +111,6 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 - [2026-10-06 PHPStan cleanup - Job](./stories/phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job.dev.md)
 - [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
 - [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
-<<<<<<< .merge_file_m7Yraj
 
 ## Stato dell'organizzazione della cartella
 
@@ -125,13 +124,3 @@ questo repo e non e' oggetto della story di merge.
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
-
-## Stato dell'organizzazione della cartella
-
-Upstream (`laraxot/dev`) dichiara che `docs/wiki/` e `build_local/` sono stati
-rimossi e che il contenuto di `_archive` e' in `docs-archive-2026/` alla radice del
-modulo. Verificato il 2026-10-07: `docs/wiki/` e `docs/build_local/` esistono ancora,
-`docs-archive-2026/` non esiste nel modulo. La pulizia non e' stata applicata in
-questo repo e non e' oggetto della story di merge.
->>>>>>> .merge_file_fFLeU2

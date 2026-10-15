@@ -37,11 +37,8 @@ Vedi [wiki/concepts/model-policy-laravel-contract.md](./wiki/concepts/model-poli
 - [Xot audit](../../Xot/docs/ponytail-audit-over-engineering.md)
 - [model-policy-laravel-contract.md](./wiki/concepts/model-policy-laravel-contract.md)
 - [policy-restoration-incident.md](./wiki/concepts/policy-restoration-incident.md)
-<<<<<<< .merge_file_T6cEHg
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_5jPKGD

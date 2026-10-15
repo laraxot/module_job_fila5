@@ -26,11 +26,8 @@ status: draft
 - <https://github.com/robersonfaria/laravel-database-schedule>
 - <https://filamentphp.com/plugins/husam-tariq-database-schedule>
 - <https://filamentphp.com/plugins/mvenghaus-schedule-monitor>
-<<<<<<< .merge_file_pmyQFG
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_Zct0qq

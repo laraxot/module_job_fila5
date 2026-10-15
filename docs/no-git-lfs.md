@@ -180,11 +180,8 @@ problema.
 
 `bashscripts/ai/wiki/rules/no-git-lfs.md` — regola completa, storico degli incidenti e
 procedura per gli oggetti mancanti in push.
-<<<<<<< .merge_file_LtSPNR
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_600AKU

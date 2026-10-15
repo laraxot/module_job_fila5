@@ -103,11 +103,8 @@ Easy to use and operate.
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< .merge_file_w67wvB
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_vwS9g4

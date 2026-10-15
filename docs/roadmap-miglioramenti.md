@@ -101,11 +101,8 @@ ammette candidamente di non fare ancora nulla.
    trait o in un'Action comune, poi cancellare i commenti di debug.
 4. Popolare `require-dev` (almeno `larastan/larastan`, `pestphp/pest`) così
    il modulo può certificarsi da solo, non solo come parte del monorepo.
-<<<<<<< .merge_file_JfBe8T
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_VI7ePR
