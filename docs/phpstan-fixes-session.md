@@ -47,3 +47,8 @@ status: draft
 
 **Status**: 🔄 IN PROGRESS
 **Prossimo**: Gdpr (94 errori)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

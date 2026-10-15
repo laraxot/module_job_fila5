@@ -43,3 +43,8 @@ class SendWelcomeEmailAction
 
 - [Documentazione ufficiale](https://github.com/spatie/laravel-queueable-action)
 - [README Notify](../../Notify/docs/readme.md)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

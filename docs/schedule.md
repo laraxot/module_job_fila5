@@ -41,3 +41,8 @@ https://github.com/spatie/laravel-schedule-monitor
 https://github.com/hmazter/laravel-schedule-list
 
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

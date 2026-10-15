@@ -77,3 +77,8 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 ## Versione Incoming
 
 La versione incoming coincide con la versione HEAD ed eredita gli stessi collegamenti e linee guida.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
