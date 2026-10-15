@@ -51,11 +51,8 @@ Seguire sync multi-org e mantenere docs allineate alla story.
 - `laraxot/dev` e `provtv/dev`: entrambi già al tip locale (`4e91cf6`), **0 avanti / 0 dietro** su entrambi.
 - Nessuna azione necessaria: nessun commit, nessun merge, nessun push (già allineato).
 - Finale `git status`: `On branch dev`, up to date con `laraxot/dev` (e `provtv/dev`), working tree clean.
-<<<<<<< .merge_file_0lB86U
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_u0MtxA

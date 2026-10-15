@@ -112,11 +112,8 @@ protected function getHeaderActions(): array
 - [lang-link.md](../../Activity/docs/lang-link.md)
 - [lang-link.md](../../../patient/docs/lang-link.md)
 - [lang-link.md](../../Cms/docs/lang-link.md)
-<<<<<<< .merge_file_4ycR0D
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_b5IF6d
