@@ -229,3 +229,8 @@ $traits = class_uses($obj);    // ❌ Può ritornare false!
 **Priority**: ALTA
 **Impact**: BASSO (Solo 1 test file)
 **Type Safety**: MIGLIORATA ✅
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -237,4 +237,9 @@ grep -rn 'extends \(Resource\|Page\|ListRecords\|CreateRecord\|EditRecord\|Widge
 - [migration-filename-from-model-name](../../../../docs/wiki/rules/migration-filename-from-model-name.md) — 1 modello = 1 migrazione
 - [Sigma — scopo](../../Sigma/docs/scopo.md) — lo stesso esercizio sul modulo adattatore
 - [coverage.md](coverage.md) — il contratto di qualità dei test di questo modulo
-- [ARCHITECTURE.md](ARCHITECTURE.md) — l'architettura già documentata
+- [ARCHITECTURE.md](architecture.md) — l'architettura già documentata
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

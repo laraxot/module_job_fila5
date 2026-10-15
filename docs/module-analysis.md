@@ -104,3 +104,7 @@ The Job module provides comprehensive queue and background job processing:
 - Queue optimization
 - Security enhancements
 - Workflow management
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

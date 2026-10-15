@@ -252,3 +252,8 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
 **Ultimo aggiornamento**: [DATE]
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -20,3 +20,8 @@ Raccomandazioni
 - Documentare convenzioni di naming per classi Job e per i file di configurazione.
 
 Autore: Copilot CLI
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
