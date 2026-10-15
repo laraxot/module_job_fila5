@@ -20,7 +20,7 @@ status: active
 
 Cartella `docs/` del modulo Job: documentazione a livello modulo. Per la panoramica
 del modulo vedi il [README del modulo](../README.md); per la navigazione vedi
-l'[indice](./00-INDEX.md).
+l'[indice](./00-index.md).
 
 ## Panoramica
 

@@ -2,7 +2,7 @@
 type: note
 tags: [documentation]
 created: 2026-09-26
-qmd: "patterns"
+qmd: "PATTERNS"
 issues: []
 discussions: []
 title: "Job Module Architectural Patterns"
@@ -458,11 +458,11 @@ public function handle(Invoice $invoice): void
 **Document:** PATTERNS.md  
 **Version:** 1.0  
 **Status:** Active (2026-07-28)
-<<<<<<< .merge_file_wC1Yd4
+<<<<<<< .merge_file_2t2zZg
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
 =======
->>>>>>> .merge_file_ToKEYN
+>>>>>>> .merge_file_2O32Iu

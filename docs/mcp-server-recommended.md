@@ -8,7 +8,7 @@ qmd: "mcp server recommended"
 issues: []
 discussions: []
 module: theme
-topic: mcp-server-recommended
+topic: mcp_server_recommended
 canonical: ../../../Themes/docs/shared-components/mcp_server_recommended.md
 status: stub
 ---
