@@ -1,3 +1,15 @@
+---
+title: "phpstan level 10 fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan level 10 fixes"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Level 10 Fixes - Modulo Job
 
 ## Data: [DATE]
@@ -184,5 +196,9 @@ if ($someCondition) {
 - [Webmozart Assert](https://github.com/webmozarts/assert)
 
 ---
-
 **Conclusione:** Il modulo Job è ora completamente compliant con PHPStan Level 10, dimostrando eccellenza nella qualità del codice e type safety.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -1,7 +1,14 @@
 ---
+type: note
+tags: [documentation]
+updated: 2026-09-26
+qmd: "schema"
+issues: []
+discussions: []
 title: "Module Schema"
 module: "Job"
 created: "2026-04-15T08:28:44Z"
+status: draft
 ---
 
 # Job Module Schema
@@ -75,3 +82,8 @@ confidence: high|medium|low
 
 **Maintained By:** All AI agents working on Job  
 **Last Updated:** 2026-04-15T08:28:44Z
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

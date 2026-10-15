@@ -1,3 +1,15 @@
+---
+title: "PRODUCT ROADMAP"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PRODUCT ROADMAP"
+issues: []
+discussions: []
+status: draft
+---
+
 # Job Module - Product Roadmap
 
 **Module:** Job  
@@ -7,7 +19,6 @@
 **Status:** In Development
 
 ---
-
 ## Vision Statement
 
 To build a **comprehensive job queue and background processing system** that ensures reliable, scalable, and observable asynchronous task execution across the platform.
@@ -101,3 +112,8 @@ To build a **comprehensive job queue and background processing system** that ens
 ---
 
 *Last Updated: March 12, 2026*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

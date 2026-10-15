@@ -1,3 +1,15 @@
+---
+title: "nestedset migration best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "nestedset migration best practices"
+issues: []
+discussions: []
+status: draft
+---
+
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview
@@ -491,3 +503,8 @@ class MyTreeModel extends BaseTreeModel
 - **2026-03**: Rimozione completa di `kalnoy/nestedset`
 
 *Ultimo aggiornamento: marzo 2026*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

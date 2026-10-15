@@ -1,27 +1,27 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://www.freshleafmedia.co.uk/blog/streaming-laravel-command-output-to-the-browser
  */
 
-declare(strict_types=1);
-
 namespace Modules\Job\Filament\Widgets;
 
 use Exception;
-use Filament\Widgets\Widget;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Process;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Symfony\Component\Console\Output\StreamOutput;
 
 use function Safe\fopen;
 
-class ClockWidget extends Widget
+class ClockWidget extends XotBaseWidget
 {
     public string $time = '---';
 
     public bool $run = false;
 
+    /** @var view-string */
     protected string $view = 'job::filament.widgets.clock-widget';
 
     protected int|string|array $columnSpan = 'full';

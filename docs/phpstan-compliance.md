@@ -1,3 +1,15 @@
+---
+title: "phpstan compliance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan compliance"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Compliance - Job Module
 
 ## Status: ✅ FULLY COMPLIANT
@@ -42,3 +54,8 @@ The module adheres to:
 - Comprehensive type hints
 - Employment data handling best practices
 - Modern PHP 8.2+ feature usage
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

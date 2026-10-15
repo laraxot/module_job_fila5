@@ -1,3 +1,15 @@
+---
+title: "phpstan level10 fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan level10 fixes"
+issues: []
+discussions: []
+status: draft
+---
+
 # Correzioni PHPStan Livello 10 - Modulo Job
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo Job e le relative soluzioni implementate.
@@ -118,3 +130,8 @@ private function evaluateFunction(string $functionString): mixed
 1. Applicare principi simili agli altri file identificati nel modulo.
 2. Eseguire l'analisi PHPStan a livello 10 per verificare che le correzioni risolvano effettivamente gli errori.
 3. Documentare gli schemi e i pattern utilizzati per risolvere problemi simili in futuro.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

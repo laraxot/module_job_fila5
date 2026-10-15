@@ -1,3 +1,15 @@
+---
+title: "phpstan analysis job"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis job"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Analysis - Job Module
 
 ## 📊 Status
@@ -157,9 +169,13 @@ $result = $value['key']; // Now safe
 - [ ] Share successful patterns with other module teams
 
 ---
-
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ✅ Fully PHPStan Level 10 Compliant
 **Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

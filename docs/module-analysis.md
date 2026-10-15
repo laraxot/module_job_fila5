@@ -1,3 +1,15 @@
+---
+title: "module analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Job Module - Comprehensive Analysis
 
 ## Module Overview
@@ -92,3 +104,7 @@ The Job module provides comprehensive queue and background job processing:
 - Queue optimization
 - Security enhancements
 - Workflow management
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

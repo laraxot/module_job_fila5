@@ -1,3 +1,15 @@
+---
+title: "phpstan compliance status"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan compliance status"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Level 10 Compliance Status
 
 
@@ -53,3 +65,12 @@ To maintain PHPStan compliance:
 - [Laravel Collections Best Practices](laravel-collections.md)
 - [Queueable Actions Pattern](queueable-actions.md)
 - [Task Management Architecture](task-architecture.md)
+<!-- stub-get-commands -->
+## StubGetCommandsAction
+
+Generics Spatie `DataCollection<int, CommandData>` vanno su proprietà tipizzata (`@var`), non solo sul constructor promoted parameter: altrimenti `missingType.generics` a level max.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
