@@ -785,8 +785,11 @@ The Job module's documentation is **functionally complete but organizationally f
 **Generated:** 2026-07-28 11:28  
 **Scope:** `/laravel/Modules/Job/docs/` (483 files, 25 dirs)  
 **Status:** Ready for review and deduplication
+<<<<<<< .merge_file_Aq8i48
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_60mV1F

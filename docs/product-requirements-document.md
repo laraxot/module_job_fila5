@@ -30,8 +30,11 @@ Job module for Laraxot platform providing core functionality.
 - Pest test coverage >90%
 - Integration testing
 
+<<<<<<< .merge_file_mMbfFi
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_M1Kz7a

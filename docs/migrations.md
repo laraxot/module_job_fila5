@@ -300,8 +300,11 @@ php artisan migrate:rollback --path=Modules/Job/database/migrations/
 **XotBaseMigration Status:** 14/14 migrations conform  
 
 ---
+<<<<<<< .merge_file_rwK2bA
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_OQ1zCJ

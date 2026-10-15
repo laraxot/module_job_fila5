@@ -123,8 +123,11 @@ git commit -m "docs: add wiki structure for Job"
 
 ---
 *Pattern: On-Demand | Source: docs/wiki/*
+<<<<<<< .merge_file_WSwFiV
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_EmOnnm
