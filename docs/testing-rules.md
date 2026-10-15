@@ -3,7 +3,7 @@ title: "testing rules"
 type: note
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-15
 qmd: "testing rules"
 issues: []
 discussions: []
@@ -118,3 +118,15 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
+
+## Cartella `tests/` (minuscolo obbligatorio)
+
+- Nei moduli Laravel la directory dei test e' **`tests/`** (tutto minuscolo).
+- **`Tests/` e' vietato**: su filesystem case-insensitive collide con `tests/`, rompe autoload PSR-4 e confonde Pest/PHPUnit.
+- Path canonici: `laravel/Modules/<Modulo>/tests/`, `laravel/Themes/<Tema>/tests/`, `laravel/tests/`.
+
+## PHPStan standing order
+
+- Obiettivo: **zero errori** PHPStan sul codice del modulo.
+- Non modificare `phpstan.neon` del progetto per "far passare" i fail.
+- Qualita' + documentazione del modulo + BMAD vanno avanti insieme al fix, non dopo.

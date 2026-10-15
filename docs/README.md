@@ -4,7 +4,7 @@ type: documentation
 module: Job
 tags: [module, documentation]
 created: 2026-06-05
-updated: 2026-10-14
+updated: 2026-10-15
 qmd: "job docs README ownership code map limiti scheduler code"
 issues: []
 discussions: []
@@ -120,7 +120,14 @@ modulo. Verificato il 2026-10-07: `docs/wiki/` e `docs/build_local/` esistono an
 `docs-archive-2026/` non esiste nel modulo. La pulizia non e' stata applicata in
 questo repo e non e' oggetto della story di merge.
 
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+
+## Standing order (qualita' + docs)
+
+- **PHPStan a zero** sul codice del modulo: non ignorare errori, non abbassare il livello, non modificare `phpstan.neon` del progetto. Qualita' + docs + BMAD sono standing order, non opzionali.
+- **Cartella test**: solo `tests/` (minuscolo). `Tests/` e' vietato (case-collision su macOS/Windows e confusione PSR-4).
+- **Nomi `.md`**: kebab-case minuscolo, niente date/timestamp nel nome, unica eccezione `README.md`. Se esistono `readme.md` e `README.md`, resta solo `README.md`.
+- **Docs**: solo dentro `docs/` gia' esistente; consolida invece di moltiplicare file; link relativi; focus su scopo/perche'/business logic (DRY + KISS).
+- **Git**: forward-only (patch in avanti); no reset/revert/checkout come scorciatoia.
+- **BMAD + second brain**: indici e decisioni vivono in `docs/` del modulo; aggiornali quando cambia il perche', non solo il come.
+
+Vedi anche: [00-index.md](./00-index.md) · [index.md](./index.md)
