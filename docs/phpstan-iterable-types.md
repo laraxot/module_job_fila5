@@ -1,10 +1,13 @@
 ---
+issues: []
+discussions: []
 title: "PHPStan iterable types nel modulo Job"
 type: rule
 tags: [phpstan, iterable, job, laraxot]
 created: 2026-07-07
 updated: 2026-07-07
 qmd: "job phpstan iterable value type array schedule arguments frontend sortable"
+status: draft
 ---
 
 # PHPStan iterable types nel modulo Job
@@ -41,3 +44,8 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Job --no-progress --error-for
 ```
 
 Esito atteso codice: 0 errori. Se resta solo `Ignored error pattern larastan.noEnvCallsOutsideOfConfig was not matched`, il residuo e' in `phpstan.neon` e puo' modificarlo solo l'utente.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

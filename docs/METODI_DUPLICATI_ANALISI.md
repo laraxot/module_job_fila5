@@ -1,8 +1,16 @@
 ---
+title: "METODI DUPLICATI ANALISI"
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "METODI DUPLICATI ANALISI"
+issues: []
+discussions: []
 module: Job
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+status: stub
 ---
 
 # Metodi Duplicati — Analisi Job
@@ -501,3 +509,8 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 ---
 _Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

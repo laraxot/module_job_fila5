@@ -2,11 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
     'name' => 'Job',
-    'icon' => 'heroicon-o-briefcase',
+    'icon' => 'job-icon',
 ];
-=======
-return [];
->>>>>>> laraxot/dev

@@ -1,3 +1,15 @@
+---
+title: "phpstan syntax fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan syntax fixes"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Syntax Fixes - Modulo Job
 
 **Versione PHPStan**: 1.12.x
@@ -213,8 +225,12 @@ $traits = class_uses($obj);    // ❌ Può ritornare false!
 4. **Explicit > Implicit**: FQN rende esplicita la provenienza della funzione
 
 ---
-
 **Fix Completato**: [DATE]
 **Priority**: ALTA
 **Impact**: BASSO (Solo 1 test file)
 **Type Safety**: MIGLIORATA ✅
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

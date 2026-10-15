@@ -1,3 +1,15 @@
+---
+title: "phpstan fixes gennaio"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes gennaio"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025  
@@ -193,7 +205,6 @@ public function __construct(string $output)
 - [Laravel Queue Best Practices](https://laravel.com/docs/queues)
 
 ---
-
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 2.0  
 **🐛 PHPStan Level**: 9 ✅  
@@ -204,3 +215,8 @@ public function __construct(string $output)
 
 
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

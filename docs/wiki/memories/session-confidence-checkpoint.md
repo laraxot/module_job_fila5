@@ -1,4 +1,8 @@
 ---
+created: 2026-09-26
+qmd: "session confidence checkpoint"
+issues: []
+discussions: []
 title: checkpoint confidenza sessione Job
 type: memory
 module: Job
@@ -9,6 +13,7 @@ related:
   - ../../merge-conflicts-list.md
   - ../../code-redundancy-audit.md
   - ../../../../../../docs/chat/handoff-job-lang-merge-phpstan-confidence.md
+status: draft
 ---
 
 # Checkpoint confidenza — modulo Job

@@ -1,3 +1,15 @@
+---
+title: "roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🎯 JOB MODULE - ROADMAP 2025
 
 **Modulo**: Job ([Description])  
@@ -7,7 +19,6 @@
 **Filament**: 🚧 4.x Compatibile  
 
 ---
-
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Job** [descrizione del modulo].
@@ -214,3 +225,8 @@ Job Module
 ---
 
 *Questa roadmap è specifica per il modulo Job e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

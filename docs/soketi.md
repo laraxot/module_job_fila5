@@ -1,3 +1,15 @@
+---
+title: "soketi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "soketi"
+issues: []
+discussions: []
+status: draft
+---
+
 https://github.com/Safemood/REAL-TIME-LARAVEL-9-SOKETI/
 
 https://medium.com/@tthdvd/laravel-reactjs-soketi-triumvirates-step-by-step-guide-to-build-a-real-time-webapp-part-2-f1ed815ec539
@@ -30,3 +42,8 @@ https://www.youtube.com/watch?v=mDnsC-sfG7I
 
 
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

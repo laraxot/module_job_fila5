@@ -1,3 +1,15 @@
+---
+title: "prd"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prd"
+issues: []
+discussions: []
+status: draft
+---
+
 # PRD - Job Module (2025-2026 Lean Standard)
 
 ## 1. Problem Statement
@@ -37,3 +49,8 @@ Background task management, scheduling, and import/export processes are currentl
 - All 9+ Filament resources refactored into the `Schemas/Tables` structure.
 - Full quality pipeline (PHPStan L10) passes.
 - Documentation cleaned and archived.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

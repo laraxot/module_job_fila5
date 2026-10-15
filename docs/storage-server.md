@@ -1,3 +1,15 @@
+---
+title: "storage server"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "storage server"
+issues: []
+discussions: []
+status: draft
+---
+
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage
@@ -43,3 +55,8 @@ https://github.com/amincheloh/cookbook/blob/master/docs/how-to-use-minio-as-lara
 
 
 
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
