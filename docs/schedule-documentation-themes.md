@@ -14,11 +14,8 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/schedule-documentation-themes.md
-<<<<<<< .merge_file_fLXmcB
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_B2UzxY

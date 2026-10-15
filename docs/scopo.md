@@ -238,11 +238,8 @@ grep -rn 'extends \(Resource\|Page\|ListRecords\|CreateRecord\|EditRecord\|Widge
 - [Sigma — scopo](../../Sigma/docs/scopo.md) — lo stesso esercizio sul modulo adattatore
 - [coverage.md](coverage.md) — il contratto di qualità dei test di questo modulo
 - [ARCHITECTURE.md](architecture.md) — l'architettura già documentata
-<<<<<<< .merge_file_PX2Z9B
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_ajHXxo

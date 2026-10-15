@@ -79,11 +79,8 @@ Implement core job queue infrastructure with basic processing and retry capabili
 ---
 
 *Last Updated: March 12, 2026*
-<<<<<<< .merge_file_0d5sGG
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
-=======
->>>>>>> .merge_file_Ur1vVi
