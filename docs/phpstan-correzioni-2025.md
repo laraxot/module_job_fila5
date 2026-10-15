@@ -419,8 +419,11 @@ fn (ModelType $item): ReturnType => ...
 
 **Nota**: Tutte le correzioni seguono i principi DRY + KISS e mantengono la business logic invariata, migliorando solo la type safety e la verificabilità statica del codice.
 
+<<<<<<< .merge_file_XeWNew
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_02Fxd6

@@ -31,8 +31,11 @@ Technical implementation details for the Job module.
 - Filament 5.x
 - Xot Module
 
+<<<<<<< .merge_file_LowZvC
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_DUYTn2

@@ -776,8 +776,11 @@ When a critical job failure occurs:
 **Document:** job-module-troubleshooting-guide.md  
 **Version:** 1.0  
 **Status:** Active (2026-07-28)
+<<<<<<< .merge_file_I6feMc
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_v5p8Kw

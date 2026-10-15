@@ -122,8 +122,11 @@ context-mode ctx-stats
 
 ---
 *Status: Ottimizzato | Token risparmiati: ~48K per session*
+<<<<<<< .merge_file_OL6NDU
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_Zo30Cb
