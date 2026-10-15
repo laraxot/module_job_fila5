@@ -9,8 +9,8 @@ issues: []
 discussions: []
 module: theme
 topic: schedule-1-1
-canonical: ../../../Themes/docs/shared-components/schedule-1-1.md
+canonical: ../../../Themes/docs/shared-components/schedule-documentation-themes.md
 status: stub
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/schedule-1-1.md
+See canonical documentation: ../../../Themes/docs/shared-components/schedule-documentation-themes.md

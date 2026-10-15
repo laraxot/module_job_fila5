@@ -12,7 +12,7 @@ related:
   - "../README.md"
   - "./00-INDEX.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
-  - "./stories/2026-10-14-docs-ingressi-job.story.md"
+  - "./stories/docs-ingressi-job.story.md"
 status: active
 ---
 
@@ -58,7 +58,7 @@ Import::class       // + Export, FailedImportRow
 
 La logica di business nuova vive in Spatie Queueable Actions (`app/Actions/**`,
 metodo `execute()`). Non esiste piu' nessun service: `Modules\Job\Services\ScheduleService`
-e' stato eliminato (story [2026-10-08 services-to-actions](./stories/2026-10-08-services-to-actions-job.story.md);
+e' stato eliminato (story [2026-10-08 services-to-actions](./stories/services-to-actions-job.story.md);
 verificato il 2026-10-14: `app/Services/` non esiste e nessun file di `app/` o `tests/` cita
 `ScheduleService`). Le classi `JobDispatcher`, `QueueManager`, `JobService`, `JobScheduler`,
 `JobMonitor` (come classe di servizio) e `FailureHandler`, citate in versioni precedenti di
@@ -108,9 +108,9 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 ## Stories
 
 - [02 Job - risoluzione marker di merge (2026-10)](./stories/02.Job-merge-conflict-resolution.story.md)
-- [2026-10-06 PHPStan cleanup - Job](./stories/2026-10-06-phpstan-cleanup-job.story.md) | [dev](./stories/2026-10-06-phpstan-cleanup-job.dev.md)
-- [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/2026-10-08-services-to-actions-job.story.md)
-- [2026-10-14 Ingressi docs rivisti sul codice](./stories/2026-10-14-docs-ingressi-job.story.md)
+- [2026-10-06 PHPStan cleanup - Job](./stories/phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job.dev.md)
+- [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
+- [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
 
 ## Stato dell'organizzazione della cartella
 

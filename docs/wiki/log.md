@@ -16,7 +16,7 @@ status: draft
 - `00-INDEX.md`: tolta la "versione 2.3.0" senza fonte; corrette le descrizioni di `queueable-action.md`, `schedule.md`, `analysis.md`, `filament.md`, `soketi.md`, `roadmap.md` (appunti o segnaposto, non guide); dichiarate directory canoniche, evidence e le famiglie dei 250 file della radice, senza spostare nulla.
 - `index.md` marcato `stale` (descrive classi inesistenti); `wiki/00-index.md` marcato `stale` (copia parziale di `../00-INDEX.md`, 5 link riscritti).
 - Limite principale emerso: lo scheduler su DB non e' registrato (`JobServiceProvider::registerSchedule()` tutto commentato, `ScheduleObserver` non collegato), le chiavi `job::model`, `job::cache.*`, `jobs.pruning.*` non sono definite.
-- Story: [2026-10-14-docs-ingressi-job](../stories/2026-10-14-docs-ingressi-job.story.md). Nota durevole: `bashscripts/ai/wiki/memories/2026-10-14-docs-notify-activity-media-job-studio.md`.
+- Story: [2026-10-14-docs-ingressi-job](../stories/docs-ingressi-job.story.md). Nota durevole: `bashscripts/ai/wiki/memories/docs-notify-activity-media-job-studio.md`.
 
 ## [2026-06-30] docs | Second brain — policy incident consolidato
 

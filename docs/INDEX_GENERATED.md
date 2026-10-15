@@ -352,7 +352,7 @@ status: draft
 **Redundancy audits (6 variants):**
 - `code-redundancy-audit.md` (2.9KB)
 - `redundancy-audit.md` (1.2KB)
-- `redundancy-audit-2026-05-21.md` (372 bytes)
+- `redundancy-audit-job.md` (372 bytes)
 - `copilot-redundancy-audit.md` (581 bytes)
 - `copilot-redundancy-audit-2026-05-25.md` (420 bytes)
 - `redundancy-report.md` (1.6KB)
@@ -559,7 +559,7 @@ status: draft
 
 **Archive:**
 - `redundancy-audit.md` (old)
-- `redundancy-audit-2026-05-21.md` (dated)
+- `redundancy-audit-job.md` (dated)
 - `copilot-redundancy-audit.md` (outdated)
 - `copilot-redundancy-audit-2026-05-25.md` (dated)
 

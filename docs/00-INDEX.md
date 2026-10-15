@@ -10,7 +10,7 @@ issues: []
 discussions: []
 related:
   - "./stories/02.Job-merge-conflict-resolution.story.md"
-  - "./stories/2026-10-14-docs-ingressi-job.story.md"
+  - "./stories/docs-ingressi-job.story.md"
 ---
 
 # Indice documentazione modulo Job
@@ -61,9 +61,9 @@ Le pagine tematiche sotto sono per la maggior parte note di appunti. Contenuto r
 - [12.1 Ritiro Http/Livewire](./stories/12.1.retire-job-http-livewire.story.md)
 - [Codice morto XotBaseResourceTable](./stories/xotbaseresourcetable-dead-code-followup-job.story.md)
 - [01 PHPStan fix](./stories/01.Job-phpstan-fix.story.md)
-- [2026-10-06 PHPStan cleanup](./stories/2026-10-06-phpstan-cleanup-job.story.md)
-- [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/2026-10-08-services-to-actions-job.story.md)
-- [2026-10-14 Ingressi docs rivisti sul codice](./stories/2026-10-14-docs-ingressi-job.story.md)
+- [2026-10-06 PHPStan cleanup](./stories/phpstan-cleanup-job.story.md)
+- [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
+- [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
 - Elenco completo: 27 file in [stories/](./stories/) (non cancellare ne' rinumerare: policy `bashscripts/docs/modular-bmad-story-policy.md`).
 
 ## Pacchetti Composer

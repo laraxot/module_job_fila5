@@ -8,9 +8,9 @@ module: Job
 tags: [docs, organizzazione, indice, bmad, verifica-codice]
 qmd: "job docs ingressi README 00-INDEX index.md stale scheduler non collegato ScheduleService eliminato famiglie radice DOC-010 DOC-002"
 related:
-  - ../../../Fixcity/docs/stories/2026-10-13-dcp-56-organizzazione-docs-moduli-e-temi.story.md
+  - ../../../Fixcity/docs/stories/dcp-56-organizzazione-docs-moduli-e-temi.story.md
   - ../../../../../bmad-output/docs-architecture/module-theme-docs-contract.md
-  - ./2026-10-08-services-to-actions-job.story.md
+  - ./services-to-actions-job.story.md
 ---
 
 # Ingressi della cartella docs di Job rivisti sul codice

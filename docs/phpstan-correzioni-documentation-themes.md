@@ -9,8 +9,8 @@ issues: []
 discussions: []
 module: theme
 topic: phpstan-correzioni-11
-canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-11.md
+canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-documentation-themes.md
 status: stub
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-11.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-documentation-themes.md
