@@ -458,8 +458,11 @@ public function handle(Invoice $invoice): void
 **Document:** PATTERNS.md  
 **Version:** 1.0  
 **Status:** Active (2026-07-28)
+<<<<<<< .merge_file_wC1Yd4
 
 --- BMAD + Second Brain ---
 - Scopo: documentazione tecnica del modulo.
 - Utilità: riferimento sviluppatori/audit.
 - Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+=======
+>>>>>>> .merge_file_ToKEYN
