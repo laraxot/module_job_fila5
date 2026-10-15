@@ -19,7 +19,7 @@ Fase BMAD: documentazione e qualita' (DOC-010 e DOC-002 del piano `bmad-output/s
 
 ## Richiesta
 
-Ordine del 2026-10-14: studiare il modulo vero, confrontare ogni affermazione degli ingressi (`README.md`, `00-INDEX.md`,
+Ordine del 2026-10-14: studiare il modulo vero, confrontare ogni affermazione degli ingressi (`README.md`, `00-index.md`,
 `index.md`, wiki di primo livello) con il codice, correggere solo con fatti verificati, dichiarare directory canoniche,
 evidence e legacy, senza spostare, rinominare o cancellare file. Contratto: `bmad-output/docs-architecture/module-theme-docs-contract.md`.
 
@@ -45,19 +45,19 @@ di schedule su DB. Verificato il 2026-10-14 con `ls`/`grep` su `laravel/Modules/
 | `README.md` | "unico service rimasto: ScheduleService" | falso, eliminato |
 | `README.md` | `JobsWaiting`: "vista sulla stessa tabella" | impreciso: sottoclasse vuota di `Job` |
 | `README.md` | "Scheduler su DB" come funzione attiva | non collegato (vedi sopra) |
-| `00-INDEX.md` | "Module version 2.3.0" | nessuna fonte (`composer.json`, `module.json`, `CHANGELOG.md`) |
-| `00-INDEX.md` | `queueable-action.md` = guida a code e worker | e' una regola con segnaposto `<nome progetto>` |
-| `00-INDEX.md` | `schedule.md`, `filament.md`, `soketi.md` = configurazione/dashboard/real-time | tre elenchi di URL esterni |
-| `00-INDEX.md` | `analysis.md` = batch processing | analisi generica con albero di cartelle |
-| `00-INDEX.md` | `roadmap.md` = obiettivi 2026 | modello 2025 con segnaposto e "0% COMPLETATO" |
-| `00-INDEX.md` | `README.md` = `./readme.md` | sono due file distinti (badge business card vs README cartella) |
+| `00-index.md` | "Module version 2.3.0" | nessuna fonte (`composer.json`, `module.json`, `changelog.md`) |
+| `00-index.md` | `queueable-action.md` = guida a code e worker | e' una regola con segnaposto `<nome progetto>` |
+| `00-index.md` | `schedule.md`, `filament.md`, `soketi.md` = configurazione/dashboard/real-time | tre elenchi di URL esterni |
+| `00-index.md` | `analysis.md` = batch processing | analisi generica con albero di cartelle |
+| `00-index.md` | `roadmap.md` = obiettivi 2026 | modello 2025 con segnaposto e "0% COMPLETATO" |
+| `00-index.md` | `README.md` = `./readme.md` | sono due file distinti (badge business card vs README cartella) |
 | `index.md` | JobService, JobScheduler, JobMonitor (servizio), JobDispatcher, FailureHandler, JobSchedule, JobScheduleResource | nessuna esiste; `JobMonitor` e' solo una Page Filament |
 
 ## Modifiche
 
 - `README.md`: frontmatter (`status: active`, `qmd`, `updated`), ownership, mappa del codice con path veri, limiti verificati,
   quick start, nota sul README di modulo (`../README.md` elenca `Services` e `Phpstan` fra le aree di `app/`: non esistono; fuori perimetro, non toccato).
-- `00-INDEX.md`: `status: active`, descrizioni corrette, followups aggiornati (ScheduleService eliminato, Http/Livewire ancora presente,
+- `00-index.md`: `status: active`, descrizioni corrette, followups aggiornati (ScheduleService eliminato, Http/Livewire ancora presente,
   `getFormSchemaOld()` di istanza chiamato in modo statico a `tests/Unit/JobExecuteCoverage50Test.php:120`), tabella
   canoniche/evidence/legacy con conteggi, famiglie dei 250 file della radice classificate per nome file, sezione duplicati.
 - `index.md`: `docs-organizer stale --fix` (status `stale` + nota), link a Xot corretto (`../xot/docs/index.md` -> `../../Xot/docs/README.md`).
@@ -79,7 +79,7 @@ Misura con `python3 bashscripts/tools/docs/docs-organizer.py --busy-minutes 0 li
 | `wiki/INDEX.md` | 2 | 0 |
 | `wiki/index.md` | 2 | 0 |
 | `wiki/log.md` | 1 | 0 |
-| `README.md`, `00-INDEX.md` | 0 | 0 |
+| `README.md`, `00-index.md` | 0 | 0 |
 
 Totale sui file toccati: 12 -> 1. Il totale del modulo era 593 eventi `unresolved` alle 07:40 (10 se misurato con il filtro di
 default alle 07:38, vedi Decisioni). Ogni file linkato dall'indice e' stato verificato con `ls`.
@@ -87,7 +87,7 @@ PHPStan e Pest NON sono stati rieseguiti: l'ultimo esito noto (PHPStan exit 0, 2
 
 ## Decisioni
 
-- Non si crea un indice alternativo: `00-INDEX.md` resta il solo indice; `index.md`, `INDEX.md`, `wiki/00-index.md` sono dichiarati non canonici.
+- Non si crea un indice alternativo: `00-index.md` resta il solo indice; `index.md`, `index.md`, `wiki/00-index.md` sono dichiarati non canonici.
 - Nessun `dups --fix`, nessun trasferimento: i 250 file della radice restano dove sono (DOC-004/006 richiedono revisione umana).
 - Difetto di `docs-organizer.py`: `links`, `frontmatter` e `dups` scartano in silenzio i file con mtime < 10 minuti
   (riga `files = [p for p in md_files(docs) if not is_busy(p)]`, senza evento): subito dopo una passata `--fix` la misura
