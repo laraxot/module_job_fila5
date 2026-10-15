@@ -173,3 +173,8 @@ php artisan schedule:clear-cache
 **Consolidation Date:** 2026-07-21  
 **Status:** ✅ Complete  
 **Namespace Standard:** `Modules\Job\Actions\*` (unified)
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

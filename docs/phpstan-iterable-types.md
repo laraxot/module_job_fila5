@@ -44,3 +44,8 @@ cd laravel && ./vendor/bin/phpstan analyse Modules/Job --no-progress --error-for
 ```
 
 Esito atteso codice: 0 errori. Se resta solo `Ignored error pattern larastan.noEnvCallsOutsideOfConfig was not matched`, il residuo e' in `phpstan.neon` e puo' modificarlo solo l'utente.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

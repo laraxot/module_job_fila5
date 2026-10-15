@@ -194,7 +194,7 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-- [README.md Modulo Job](./readme.md)
+- [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/readme.md)
 - [Best Practices](./best-practices.md)
 
@@ -210,3 +210,8 @@ public function __construct(string $output)
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

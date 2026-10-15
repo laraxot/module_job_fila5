@@ -22,3 +22,8 @@ Per il modulo Job valgono queste regole:
 Le vecchie cartelle duplicate individuate erano `Job/lang/lang` e `Job/_docs`.
 
 Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

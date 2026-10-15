@@ -67,3 +67,8 @@ The `Job` module, as the orchestrator of background processes, can significantly
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex job chains or scheduled workflows, helping to break down and understand intricate asynchronous processes.
 
 By leveraging these MCPs, the `Job` module can ensure its critical role in orchestrating background operations is more efficient, verifiable, and transparent, ultimately contributing to a stable, scalable, and responsive application.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

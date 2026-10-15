@@ -18,3 +18,8 @@ File duplicati nel modulo `Job` che differiscono solo per la capitalizzazione:
 - `Modules/Job/.github`: `SECURITY.md`, `security.md`
 
 Uniformare i nomi (preferibilmente tutto maiuscolo come nello standard GitHub) e aggiornare eventuali riferimenti.
+
+--- BMAD + Second Brain ---
+- Scopo: documentazione tecnica del modulo.
+- Utilità: riferimento sviluppatori/audit.
+- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
