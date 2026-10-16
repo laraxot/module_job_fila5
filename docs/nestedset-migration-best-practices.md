@@ -503,8 +503,3 @@ class MyTreeModel extends BaseTreeModel
 - **2026-03**: Rimozione completa di `kalnoy/nestedset`
 
 *Ultimo aggiornamento: marzo 2026*
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

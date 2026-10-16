@@ -1,5 +1,5 @@
 ---
-qmd: "TECH SPEC"
+qmd: "tech spec"
 issues: []
 discussions: []
 title: "Technical Specification - Job Module"
@@ -27,12 +27,7 @@ Technical implementation details for the Job module.
 - PHPMD: 0 violations
 
 ## Dependencies
-- Laravel 13.x
+- Laravel 12.x
 - Filament 5.x
 - Xot Module
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

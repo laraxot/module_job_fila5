@@ -49,7 +49,7 @@ Non esiste una terza opzione confortevole.
 
 ## 2. `docs/` che si documenta due volte da sola
 
-`00-index.md` e `00-index.md` esistono entrambi. `actions.md` e `actions.md`
+`00-index.md` e `00-INDEX.md` esistono entrambi. `actions.md` e `ACTIONS.md`
 pure. Su un filesystem case-insensitive (Mac, la maggior parte dei setup
 Windows) uno dei due letteralmente sovrascrive l'altro al checkout — la
 collisione non è teorica, è già in corso silenziosamente per chiunque non
@@ -93,7 +93,7 @@ ammette candidamente di non fare ancora nulla.
 
 ## In ordine di rischio/sforzo
 
-1. Rimuovere `docs/ACTIONS.md`/`00-index.md` duplicati (dopo aver verificato
+1. Rimuovere `docs/ACTIONS.md`/`00-INDEX.md` duplicati (dopo aver verificato
    quale dei due è aggiornato — non a caso, con `git log -p` su entrambi).
 2. Decidere il destino di `ExecuteTaskAction::execute()` — implementare o
    eliminare, non lasciare un TODO che mente su cosa fa il modulo.
@@ -101,8 +101,3 @@ ammette candidamente di non fare ancora nulla.
    trait o in un'Action comune, poi cancellare i commenti di debug.
 4. Popolare `require-dev` (almeno `larastan/larastan`, `pestphp/pest`) così
    il modulo può certificarsi da solo, non solo come parte del monorepo.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

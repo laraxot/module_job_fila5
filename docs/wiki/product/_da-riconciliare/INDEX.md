@@ -13,7 +13,7 @@ Documentation for `job` module categorized as **product**.
 
 ## Files
 
-- [`index.md`](./index.md)
+- [`INDEX.md`](./index.md)
 - [`configuration.md`](../../../configuration.md)
 
 ---

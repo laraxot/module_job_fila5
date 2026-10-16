@@ -27,7 +27,7 @@ related:
 - `12.3-root-hygiene-conflict-markers` (**done**): marker annidati in
   `README.md`/`.github/contributing.md` risolti da un agente concorrente
   (`cursor-grok`, via lock `Job/README.md.lock` 18:18–18:23), poi
-  formalizzato/committato in `02ac30c0` (rimozione `architecture.md`,
+  formalizzato/committato in `02ac30c0` (rimozione `ARCHITECTURE.md`,
   `README.md.backup_20251210_092006`, `Untitled`, 2 blade/php backup datati,
   `lang/it/.php` stub). PHPStan 0 errori.
 - `12.4-git-hygiene-queue-pid-graphify-out-aaa` (**done**): `queue.pid`
@@ -42,9 +42,9 @@ related:
   una story, ma con backlog concreto): ririverificata oggi riga per riga,
   **tutti i problemi elencati sono ancora presenti sul disco**, nessuno
   risolto dalle story 12.3/12.4 (che erano su scope diverso, git-hygiene):
-  duplicati case-sensitive in `docs/` (`00-index.md`/`00-index.md`,
-  `actions.md`/`actions.md`, e non menzionato dal doc ma trovato ora anche
-  `index-generated.md`/`index-generated.md`/`index-generated.md`, tripli),
+  duplicati case-sensitive in `docs/` (`00-index.md`/`00-INDEX.md`,
+  `actions.md`/`ACTIONS.md`, e non menzionato dal doc ma trovato ora anche
+  `index-generated.md`/`index_generated.md`/`INDEX_GENERATED.md`, tripli),
   relitto submodule `docs/a.git` (66 byte, punta a
   `../../../../.git/modules/laravel/Modules/Job/modules/docs`),
   `composer.json` con `require-dev: {}` (nessun `larastan`/`pest` locale al
@@ -85,9 +85,9 @@ related:
    se si procede, crearlo seguendo il formato di 12.3/12.4 invece di
    lasciarlo come riga di tabella.
 4. **Duplicati case-sensitive in `docs/`** (rischio concreto su filesystem
-   case-insensitive, non solo estetico): `00-index.md`/`00-index.md`,
-   `actions.md`/`actions.md`, `index-generated.md`/`index-generated.md`/
-   `index-generated.md` (tris, non solo doppio). Verificare quale versione è
+   case-insensitive, non solo estetico): `00-index.md`/`00-INDEX.md`,
+   `actions.md`/`ACTIONS.md`, `index-generated.md`/`index_generated.md`/
+   `INDEX_GENERATED.md` (tris, non solo doppio). Verificare quale versione è
    aggiornata con `git log -p` su ciascuna coppia prima di eliminare (non
    assumere che la maiuscola vinca — memoria
    `feedback-case-collision-decide-per-pair.md`).

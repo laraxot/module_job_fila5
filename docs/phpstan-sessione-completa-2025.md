@@ -194,8 +194,3 @@ $media = $record->getFirstMedia($attachment);
 ---
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
