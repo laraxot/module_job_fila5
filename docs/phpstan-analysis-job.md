@@ -174,8 +174,3 @@ $result = $value['key']; // Now safe
 **Laravel Version**: 12.31.1
 **Status**: ✅ Fully PHPStan Level 10 Compliant
 **Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

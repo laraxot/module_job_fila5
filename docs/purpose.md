@@ -99,8 +99,3 @@ questo lavoro gira due volte.
 
 - `laravel/Modules/Notify/docs/purpose.md` — per notificare i fallimenti
 - `docs/wiki/rules/queueable-actions.md` — Action accodabili
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

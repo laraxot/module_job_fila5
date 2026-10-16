@@ -130,8 +130,3 @@ Xot, Tenant, Activity
 
 ### Esterne
 Laravel Queue (built-in)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

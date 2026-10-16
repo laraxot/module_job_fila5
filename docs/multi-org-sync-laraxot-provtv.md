@@ -52,8 +52,3 @@ Niente reset/squash/force: sempre forward-only.
 `module_user_fila5`: `laraxot` tip `3ea7273a` (`0 0`); `provtv` **merge-base vuoto** → STOP (no merge/force).
 Canon: [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

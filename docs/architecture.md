@@ -44,8 +44,3 @@ See also:
 - WebSocket support: `docs/wiki/how-to/Job-websocket-soketi.md`
 - Storage servers: `docs/wiki/how-to/Job-storage-server.md`
 - Optimization: `docs/wiki/tips/Job-optimization-tips.md`
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

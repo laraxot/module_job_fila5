@@ -848,7 +848,7 @@ public function generateWithErrorHandling(array $options = []): string
 ## 📚 References
 
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
-- [Job Module README](./README.md)
+- [Job Module README](./readme.md)
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 
@@ -858,8 +858,3 @@ public function generateWithErrorHandling(array $options = []): string
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

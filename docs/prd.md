@@ -49,8 +49,3 @@ Background task management, scheduling, and import/export processes are currentl
 - All 9+ Filament resources refactored into the `Schemas/Tables` structure.
 - Full quality pipeline (PHPStan L10) passes.
 - Documentation cleaned and archived.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
