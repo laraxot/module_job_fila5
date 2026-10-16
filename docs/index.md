@@ -233,8 +233,3 @@ Common issues and solutions:
 - Database connection issues
 - Retry loop problems
 - Worker process crashes
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

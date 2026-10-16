@@ -118,8 +118,3 @@ File `tests/Feature/ScheduleBusinessLogicTest.php` will be DELETED because:
 **Date**: [DATE]
 **Status**: Test File Deleted
 **Reason**: Complete schema mismatch - test was fiction, not reality
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

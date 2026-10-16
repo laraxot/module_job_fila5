@@ -1,10 +1,10 @@
 ---
-title: "FRAMEWORKS"
+title: "frameworks"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "FRAMEWORKS"
+qmd: "frameworks"
 issues: []
 discussions: []
 status: draft
@@ -46,8 +46,3 @@ Efficiency principles:
 
 ---
 *Generated: 2026-08-04*
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
