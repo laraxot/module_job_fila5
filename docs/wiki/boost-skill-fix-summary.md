@@ -1,3 +1,11 @@
+---
+title: "Boost Skill Fix Summary - Job Module"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, job, wiki]
+qmd: "boost skill fix summary - job module job"
+---
 # Boost Skill Fix Summary - Job Module
 
 **Date**: 2026-03-02

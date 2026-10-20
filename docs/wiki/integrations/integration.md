@@ -82,9 +82,9 @@ related:
 ### Versione HEAD
 
 ## Collegamenti tra versioni di integration.md
-* [integration.md](../../../gdpr/docs/integration.md)
+* [integration.md](../../../../Gdpr/docs/integration.md)
 * [integration.md](../../../xot/docs/integration.md)
-* [integration.md](../../../job/docs/integration.md)
+* [integration.md](../../integration.md)
 
 ### Versione Incoming
 

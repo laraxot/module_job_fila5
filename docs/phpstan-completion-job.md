@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan completion job"
 issues: []
 discussions: []
+status: draft
 ---
 
 # ✅ PHPStan Completion - Modulo Job
@@ -17,15 +18,6 @@ discussions: []
 **Errori Risolti**: 58 → 0 ✅ (-100%)
 
 ---
-
-title: "phpstan completion job"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan completion job"
-issues: []
-discussions: []
 ## 📊 Riepilogo Correzioni
 
 | Categoria | Errori Risolti | Tempo |

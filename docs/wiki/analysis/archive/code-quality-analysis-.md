@@ -8,6 +8,7 @@ updated: 2026-07-14
 qmd: "code quality analysis "
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---
 # ⚙️ Job Module - Code Quality Analysis Report
 

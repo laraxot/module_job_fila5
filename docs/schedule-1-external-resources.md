@@ -11,6 +11,7 @@ tags: [migrato-da-txt, job]
 converted_from: schedule_1.txt
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # Schedule 1 — risorse esterne

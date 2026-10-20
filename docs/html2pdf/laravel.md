@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: laravel
 canonical: ../../../../Themes/docs/shared-components/laravel.md
+status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/laravel.md

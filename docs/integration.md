@@ -21,7 +21,7 @@ discussions: []
 ### Struttura e Convenzioni
 - [Namespace Convention](../../docs/namespace-convention.md)
 - [Namespace Structure](../../docs/namespace-structure.md)
-- [Namespace Rules](../../docs/namespace-rules.md)
+- [Namespace Rules](../../../../docs/namespace-rules.md)
 
 ### Implementazione
 - [Standard Codice](../../docs/standard-codice.md)
@@ -80,7 +80,7 @@ discussions: []
 ### Versione HEAD
 
 ## Collegamenti tra versioni di integration.md
-* [integration.md](../../../gdpr/docs/integration.md)
+* [integration.md](../../Gdpr/docs/integration.md)
 * [integration.md](../../../xot/docs/integration.md)
 * [integration.md](../../../job/docs/integration.md)
 

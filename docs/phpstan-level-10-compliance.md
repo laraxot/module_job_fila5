@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan level 10 compliance"
 issues: []
 discussions: []
+status: draft
 ---
 
 # PHPStan Level 10 Compliance - Job Module

@@ -8,6 +8,7 @@ type: report
 module: Job
 updated: 2026-09-01
 qmd: "audit qualita job phpstan phpmd phpinsights pest coverage soppressioni collisioni case"
+status: draft
 ---
 
 # Audit di qualita — modulo Job

@@ -1,55 +1,40 @@
 <?php
 
 declare(strict_types=1);
+
+namespace Modules\Job\Tests\Unit\Models;
+
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Modules\Job\Models\BaseModel;
-use Modules\Job\Tests\TestCase;
-use PHPUnit\Framework\Assert;
+use Tests\TestCase;
 
-uses(TestCase::class);
+uses(TestCase::class, RefreshDatabase::class);
 
-test('base model extends eloquent model', function () {
-    $baseModel = new class extends BaseModel
+beforeEach(function () {
+    $this->baseModel = new class extends BaseModel
     {
         protected $table = 'test_job_table';
     };
+});
 
-    Assert::assertInstanceOf(Model::class, $baseModel);
+test('base model extends eloquent model', function () {
+    expect($this->baseModel)->toBeInstanceOf(Model::class);
 });
 
 test('base model has correct table name', function () {
-    $baseModel = new class extends BaseModel
-    {
-        protected $table = 'test_job_table';
-    };
-
-    Assert::assertSame('test_job_table', $baseModel->getTable());
+    expect($this->baseModel->getTable())->toBe('test_job_table');
 });
 
 test('base model can be instantiated', function () {
-    $baseModel = new class extends BaseModel
-    {
-        protected $table = 'test_job_table';
-    };
-
-    Assert::assertInstanceOf(BaseModel::class, $baseModel);
+    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
 });
 
 test('base model has proper inheritance chain', function () {
-    $baseModel = new class extends BaseModel
-    {
-        protected $table = 'test_job_table';
-    };
-
-    Assert::assertInstanceOf(BaseModel::class, $baseModel);
-    Assert::assertInstanceOf(Model::class, $baseModel);
+    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
+    expect($this->baseModel)->toBeInstanceOf(Model::class);
 });
 
 test('base model has timestamps enabled', function () {
-    $baseModel = new class extends BaseModel
-    {
-        protected $table = 'test_job_table';
-    };
-
-    Assert::assertTrue($baseModel->usesTimestamps());
+    expect($this->baseModel->usesTimestamps())->toBeTrue();
 });
