@@ -41,6 +41,10 @@ ispezionare `$output->fetch()` nello stesso punto del ciclo di vita?". Se la
 risposta è "perché fanno la stessa cosa con un comando diverso", quella è
 un'astrazione che manca, non un debug da pulire.
 
+Nota 2026-10-20: oltre alle sequenze commentate c'era un `dddx($output)` attivo in `beginStream()` di entrambi i widget (riga 90). Il
+metodo, un esperimento mai funzionante e senza chiamanti, ora lancia `LogicException`; il percorso reale e' `beginProcess()`. La
+duplicazione tra i due widget resta aperta. Vedi [debug-calls-removal-job](./stories/debug-calls-removal-job.story.md).
+
 `app/Actions/ExecuteTaskAction.php:15` ha un `// TODO: Implement task
 execution` — per un'Action che si chiama letteralmente "esegui il task", è
 la cosa più onesta e più preoccupante che si possa scrivere in un commento.

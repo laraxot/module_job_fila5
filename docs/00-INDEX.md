@@ -58,6 +58,7 @@ Le pagine tematiche sotto sono per la maggior parte note di appunti. Contenuto r
   3. `getFormSchemaOld()` chiamato in modo statico in `tests/Unit/JobExecuteCoverage50Test.php:120` (verificato: in `XotBaseResource` il metodo e' di istanza).
   4. Modello dati di `Schedule.status` (scope `active` vs `Status::activeCases()`).
   5. Form, tabelle e lang da riallineare (`ImportForm`, `ViewSchedule`, `JobsTable`, codice morto, lang en/de/it).
+- [2026-10-20 Chiamate di debug (dddx) in produzione](./stories/debug-calls-removal-job.story.md): `beginStream()` dei due widget, esperimento mai funzionante, ora errore esplicito invece di un dump
 - [12.1 Ritiro Http/Livewire](./stories/12.1.retire-job-http-livewire.story.md)
 - [Codice morto XotBaseResourceTable](./stories/xotbaseresourcetable-dead-code-followup-job.story.md)
 - [01 PHPStan fix](./stories/01.Job-phpstan-fix.story.md)
