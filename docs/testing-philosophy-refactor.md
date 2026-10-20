@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "testing philosophy refactor"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Job Module Testing Refactor - The Journey to Zen
@@ -261,15 +262,6 @@ This is the way.
 - `.env.testing` - Single source of truth for test configuration
 
 ---
-
-title: "testing philosophy refactor"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing philosophy refactor"
-issues: []
-discussions: []
 **Date**: [DATE]
 **Author**: Claude Sonnet 4.5
 **Status**: Implementation Ready

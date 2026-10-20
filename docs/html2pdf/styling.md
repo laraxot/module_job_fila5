@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: styling
 canonical: ../../../../Themes/docs/shared-components/styling-Modules.md
+status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/styling-Modules.md
