@@ -4,6 +4,10 @@ type: constitution
 module: Job
 related:
   - ./livewire-inventory.md
+status: draft
+updated: 2026-10-07
+tags: [docs, job, bmad]
+qmd: "context job job"
 ---
 
 # Context Job
