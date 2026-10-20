@@ -57,3 +57,13 @@ direttamente. Il censimento del working tree conferma che `app/Services/` è vuo
 `Actions/Schedule/`. `Actions/GetActiveSchedulesAction` era invece un duplicato root senza caller applicativo: sono
 stati rimossi la classe e il relativo test reflection-only. Non è stata introdotta una nuova action per un caso d’uso
 non osservato.
+
+## Nota di verifica 2026-10-20
+
+Epic: [epic-services-to-queueable-actions](../../../../../bmad-output/epic-services-to-queueable-actions.md). Misura delle 13:00 UTC circa, righe volatili.
+
+- Su disco `Job/app/Services/` non esiste e `ScheduleService.php` e' cancellato (commit `da6ccced`, 12:17 UTC). `git -C Modules/Job ls-tree -r --name-only laraxot/dev -- app/Services | wc -l` restituisce 0. `GetActiveSchedulesAction` non esiste piu'.
+- Sostituito da `Actions/ClearScheduleCacheAction` per `clearCache`; `getActives` non ha successore. Chiamanti del Service: zero. La Action ha 2 file di produzione (`Observers/ScheduleObserver`, `Console/Commands/ScheduleClearCacheCommand`).
+- Parita' da verificare: il Service leggeva e scriveva la cache `job::cache.{enabled,store,key}`. La config del modulo (`config/config.php`: solo `name` e `icon`; `config/Config/config.php`: `[]`) non definisce nessuna chiave `cache.*` e nessun codice scrive piu' quella cache.
+- Conseguenza se non c'e' un override per tenant (non cercato): `ScheduleObserver::clearCache` non chiama mai l'Action (guard su `job::cache.enabled`, null) e `ScheduleClearCacheCommand` fallirebbe sull'`Assert::string` di `job::cache.store`. Decisione W3: togliere cache e comando, oppure ripristinare config e scrittore.
+- Nessuna Action nuova in W0; le decisioni sono in W2 e W3 dell'epic.

@@ -1,3 +1,12 @@
+---
+title: legacy snapshot (ex readme.md)
+status: archive
+canonical: README.md
+---
+
+> Snapshot recuperato da git dopo unificazione `readme.md` verso `README.md`.
+> Ingresso attivo: [README.md](./README.md).
+
 # LLM Wiki (module)
 
 [![Module](https://img.shields.io/badge/Module-LLM Wiki (module)-8B0000.svg)]()
