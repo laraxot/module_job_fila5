@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "duplicate methods"
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---
 # Metodi duplicati — Job
 

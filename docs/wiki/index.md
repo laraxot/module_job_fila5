@@ -11,19 +11,22 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-  - ../../../../docs/wiki/bmad/architecture.md
-  - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
-  - ../../docs/wiki/concepts/ai-harness-module-discipline.md
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../../docs/wiki/bmad/architecture.md
+  - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
+  - ../../../Fixcity/docs/wiki/concepts/ai-harness-module-discipline.md
 ---
 
 # Job Module Wiki
+
+Indice operativo del modulo: [00-INDEX.md](../00-INDEX.md). Registro cronologico di questa wiki: [log.md](./log.md).
+
 ## AI / second brain
 
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
-- [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
-- [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md)
+- [frontmatter + GitHub](../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
+- [ai-harness-module-discipline](../../../Fixcity/docs/wiki/concepts/ai-harness-module-discipline.md)
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
 

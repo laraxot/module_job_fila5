@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "roadmap miglioramenti"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Job — cosa migliorerei se questo modulo fosse mio da domani mattina

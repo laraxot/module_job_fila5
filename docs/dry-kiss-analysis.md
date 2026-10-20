@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: dry-kiss-analysis
 canonical: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
+status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/dry-kiss-analysis-.md
