@@ -9,7 +9,7 @@ status: in-progress
 related:
   - ./12.3.root-hygiene-conflict-markers.story.md
   - ./12.4.git-hygiene-queue-pid-graphify-out-aaa.story.md
-  - ../roadmap-miglioramenti.md
+  - ../../roadmap-miglioramenti.md
   - ../livewire-widget-epics.md
   - ../livewire-inventory.md
 ---
