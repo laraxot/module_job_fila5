@@ -15,7 +15,7 @@ related:
 
 # Indice documentazione modulo Job
 
-**Status**: PHPStan su `Modules/Job` exit 0 il 2026-10-07 (dopo la risoluzione dei marker di merge); non rieseguito il 2026-10-14.
+**Status**: PHPStan su `Modules/Job` exit 0 il 2026-10-07 (dopo la risoluzione dei marker di merge); non rieseguito il 2026-10-14. Dopo il pull del 2026-10-20 i test erano a 190 errori; ripristinati, `phpstan analyse Modules/Job` esce di nuovo a 0 (vedi [phpstan-test-wave-job](./stories/phpstan-test-wave-job.story.md)). Questa wave rimuove la facciata `ScheduleService`, senza cambiare gli use-case Action.
 **Versione**: non dichiarata (ne' `composer.json` ne' `module.json` ne' `CHANGELOG.md` contengono "2.3.0", valore che questo indice riportava senza fonte).
 
 Cosa fa il codice, con path veri e limiti: [README.md](./README.md) (sezioni "Mappa del codice" e "Limiti verificati").
@@ -53,7 +53,7 @@ Le pagine tematiche sotto sono per la maggior parte note di appunti. Contenuto r
 ## Stories e followups aperti
 
 - **[02 Risoluzione marker di merge (2026-10)](./stories/02.Job-merge-conflict-resolution.story.md)** - Esito per area, decisioni e followups ordinati per priorita':
-  1. `config('job::model')` e `job::cache.*` non definite (ancora vero il 2026-10-14; `ScheduleService`, citato dalla story, e' stato eliminato l'8 ottobre: restano `GetActiveSchedulesAction` e `ClearScheduleCacheAction`).
+  1. `config('job::model')` e `job::cache.*` non definite (ancora vero il 2026-10-14; `GetActiveSchedulesAction` e `ClearScheduleCacheAction` validano le chiavi al runtime).
   2. `Http/Livewire` e `resources/views/livewire` ancora presenti (verificato il 2026-10-14: 4 file in `app/Http/Livewire`).
   3. `getFormSchemaOld()` chiamato in modo statico in `tests/Unit/JobExecuteCoverage50Test.php:120` (verificato: in `XotBaseResource` il metodo e' di istanza).
   4. Modello dati di `Schedule.status` (scope `active` vs `Status::activeCases()`).
@@ -63,8 +63,9 @@ Le pagine tematiche sotto sono per la maggior parte note di appunti. Contenuto r
 - [01 PHPStan fix](./stories/01.Job-phpstan-fix.story.md)
 - [2026-10-06 PHPStan cleanup](./stories/phpstan-cleanup-job.story.md)
 - [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
+- [2026-10-20 PHPStan, test regrediti dal pull](./stories/phpstan-test-wave-job.story.md): 190 errori a 0 ripristinando 11 file di test scambiati dal remoto
 - [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
-- Elenco completo: 27 file in [stories/](./stories/) (non cancellare ne' rinumerare: policy `bashscripts/docs/modular-bmad-story-policy.md`).
+- Elenco completo: 29 file in [stories/](./stories/) (alla misura del 2026-10-14 erano 27) (non cancellare ne' rinumerare: policy `bashscripts/docs/modular-bmad-story-policy.md`).
 
 ## Pacchetti Composer
 

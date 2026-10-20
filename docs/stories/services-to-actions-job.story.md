@@ -4,7 +4,7 @@ type: story
 status: done
 priority: medium
 created: 2026-10-08
-updated: 2026-10-08
+updated: 2026-10-20
 module: Job
 tags: [bmad, services, queueable-actions, no-services-rule, schedule, cleanup]
 qmd: "job ScheduleService residuo GetActiveSchedulesAction ClearScheduleCacheAction duplicati Actions Schedule"
@@ -49,12 +49,11 @@ istanziabile, avesse un certo namespace e un metodo privato: nessun comportament
   `resources`, `tests` (esclusi docs/vendor): zero risultati.
 - PHPStan (`phpstan.neon`, da `laravel/`) su `Modules/Job/app/Actions`: `[OK] No errors` (esecuzione unica per i cinque moduli, dettaglio nella story Media).
 
-## Aperto
+## Aggiornamento 2026-10-20
 
-- Duplicati dentro `app/Actions`: `GetActiveSchedulesAction` e `ClearScheduleCacheAction` esistono due volte, in
-  `Actions/` e in `Actions/Schedule/`. Il codice e' uguale tranne che la copia in `Schedule/` ignora `config('job::model')`
-  e usa `Schedule::query()`. Le produzioni (`ScheduleObserver`, `ScheduleClearCacheCommand`) usano la copia in `Actions/`.
-  Fuori perimetro di questa story: consolidare in una sola (quella con `config('job::model')`) aggiornando
-  `tests/Unit/Actions/Schedule/ScheduleActionsTest.php`.
-- `GetActiveSchedulesAction` non ha chiamanti di produzione: chi pianifica gli `Schedule` attivi non la usa. Verificare
-  che il caricamento degli schedule attivi non ignori la cache configurata.
+Il pull aveva ricomparso `app/Services/ScheduleService.php` senza alcun caller. La facciata e' stata rimossa di nuovo:
+lo use-case live resta in `Actions/ClearScheduleCacheAction`, già Queueable, e i caller reali continuano a usarlo
+direttamente. Il censimento del working tree conferma che `app/Services/` è vuota e che non esiste alcuna action
+`Actions/Schedule/`. `Actions/GetActiveSchedulesAction` era invece un duplicato root senza caller applicativo: sono
+stati rimossi la classe e il relativo test reflection-only. Non è stata introdotta una nuova action per un caso d’uso
+non osservato.
