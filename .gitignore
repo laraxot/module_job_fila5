@@ -149,6 +149,7 @@ tests/AuditCoverage/
 # Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
 phpinsights.php
 rector.php
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
 graphify-out/
 
 # Laraxot — forbidden at module/theme root (rector.php, phpinsights.php, .cursor, .windsurf, .vscode)
@@ -165,7 +166,6 @@ graphify-out/
 
 # Runtime PID files (never track process ids)
 *.pid
-graphify-out
 tools
 .agents
 .vscode
@@ -173,7 +173,6 @@ build
 .claude
 tests/graphify-out
 /bashscripts/
-/graphify-out/
 /tools/
 /scripts/
 /.agents/
@@ -185,7 +184,6 @@ tests/graphify-out
 /tests/graphify-out/
 /.github/skills/
 .github/skills
-docs/graphify
 resources/lang
 
 # docs/chat — coordination notes replaced by BMAD stories in docs/bmad/
