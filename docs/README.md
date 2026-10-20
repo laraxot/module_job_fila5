@@ -57,10 +57,10 @@ Import::class       // + Export, FailedImportRow
 ## Servizi e Actions
 
 La logica di business nuova vive in Spatie Queueable Actions (`app/Actions/**`,
-metodo `execute()`). Non esiste piu' nessun service: `Modules\Job\Services\ScheduleService`
-e' stato eliminato (story [2026-10-08 services-to-actions](./stories/services-to-actions-job.story.md);
-verificato il 2026-10-14: `app/Services/` non esiste e nessun file di `app/` o `tests/` cita
-`ScheduleService`). Le classi `JobDispatcher`, `QueueManager`, `JobService`, `JobScheduler`,
+metodo `execute()`). Non esiste piu' nessun service: `ScheduleService` e' stato eliminato
+(story [2026-10-08 services-to-actions](./stories/services-to-actions-job.story.md));
+`ScheduleObserver` e `ScheduleClearCacheCommand` usano direttamente
+`ClearScheduleCacheAction`. Le classi `JobDispatcher`, `QueueManager`, `JobService`, `JobScheduler`,
 `JobMonitor` (come classe di servizio) e `FailureHandler`, citate in versioni precedenti di
 questi docs (in particolare [index.md](./index.md)), non esistono nel modulo.
 
