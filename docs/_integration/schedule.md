@@ -1,4 +1,12 @@
 ---
+title: "schedule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule"
+issues: []
+discussions: []
 module: theme
 topic: schedule
 canonical: ../../../../Themes/docs/shared-components/.gitkeep
