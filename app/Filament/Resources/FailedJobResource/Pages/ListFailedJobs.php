@@ -40,7 +40,7 @@ class ListFailedJobs extends XotBaseListRecords
                 ->requiresConfirmation()
                 ->color('danger')
                 ->action(static function (): void {
-                    DB::table((new FailedJob())->getTable())->truncate();
+                    DB::table((new FailedJob)->getTable())->truncate();
                     Notification::make()
                         ->title('All failed jobs have been removed.')
                         ->success()
