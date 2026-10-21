@@ -8,6 +8,10 @@ updated: "2026-05-26"
 related:
   - "../../Xot/docs/wiki/concepts/agent-confidence-discipline.md"
 issue: "152"
+<<<<<<< .merge_file_EQOlNe
+=======
+qmd: "disciplina agenti per massimizzare la confidenza job"
+>>>>>>> .merge_file_QDBnm2
 ---
 
 # Disciplina agenti per massimizzare la confidenza

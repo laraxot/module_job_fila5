@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "user research"
 issues: []
 discussions: []
+<<<<<<< .merge_file_LZteJN
+=======
+status: draft
+>>>>>>> .merge_file_ypX3Lp
 ---
 
 # User Research: Job Module

@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan correzioni"
 issues: []
 discussions: []
+<<<<<<< .merge_file_TfLfJT
+=======
+status: draft
+>>>>>>> .merge_file_rtgOp6
 ---
 
 # Correzioni PHPStan Livello 10 - Modulo Job
@@ -46,6 +50,7 @@ $signature = method_exists($command, 'getSignature')
 **Principio**: Garantire che il tipo sia sempre string attraverso cast espliciti.
 
 ---
+<<<<<<< .merge_file_TfLfJT
 
 title: "phpstan correzioni"
 type: note
@@ -55,6 +60,8 @@ updated: 2026-09-26
 qmd: "phpstan correzioni"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_rtgOp6
 ### 2. GetTaskCommandsAction.php
 **Errore**: sortBy callback con parametro tipo mixed  
 **Soluzione**: PHPDoc per tipizzare la Collection

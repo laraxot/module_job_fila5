@@ -3,6 +3,11 @@ title: Job — indice BMAD
 type: index
 tags: [docs, bmad, job]
 qmd: "Job indice BMAD documentazione"
+<<<<<<< .merge_file_QgOcD5
+=======
+status: draft
+updated: 2026-10-09
+>>>>>>> .merge_file_mzCUvT
 ---
 
 # Job — indice BMAD

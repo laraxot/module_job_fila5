@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_kYsCV0
 ---
 title: "schedule 1"
 type: note
@@ -13,3 +14,5 @@ canonical: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.m
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+=======
+>>>>>>> .merge_file_iQh8Pt

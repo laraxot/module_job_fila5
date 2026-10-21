@@ -6,7 +6,11 @@ module: Job
 status: active
 updated: 2026-09-22
 related:
+<<<<<<< .merge_file_2Tko7D
   - ./bmad/stories/12.3.root-hygiene-conflict-markers.story.md
+=======
+  - ../bmad/stories/12.3.root-hygiene-conflict-markers.story.md
+>>>>>>> .merge_file_c6jR8O
   - ./bmad/stories/12.4.git-hygiene-queue-pid-graphify-out-aaa.story.md
 ---
 

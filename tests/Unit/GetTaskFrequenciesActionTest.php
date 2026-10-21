@@ -84,7 +84,7 @@ describe('GetTaskFrequenciesAction', function (): void {
 
     test('can be used with dependency injection', function (): void {
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
-        Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $actionFromContainer);
+        Assert::assertSame(GetTaskFrequenciesAction::class, $actionFromContainer::class);
     });
 
     test('has proper error handling implementation', function (): void {

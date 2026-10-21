@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan roadmap"
 issues: []
 discussions: []
+<<<<<<< .merge_file_5FaQgO
+=======
+status: draft
+>>>>>>> .merge_file_ZDelho
 ---
 
 # PHPStan Level 10 Roadmap - Job Module

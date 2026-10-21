@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "testing rules"
 issues: []
 discussions: []
+<<<<<<< .merge_file_zgFxWt
+=======
+status: draft
+>>>>>>> .merge_file_6pqJrP
 ---
 
 # Testing Rules Summary

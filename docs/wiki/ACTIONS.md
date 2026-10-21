@@ -4,6 +4,11 @@ type: guide
 tags: [actions, architecture, queueable]
 created: 2026-07-21
 updated: 2026-07-21
+<<<<<<< .merge_file_ySA7xc
+=======
+status: draft
+qmd: "job module   queueableactions architecture job"
+>>>>>>> .merge_file_C61tUo
 ---
 
 # Job Module — QueueableActions Architecture
@@ -25,9 +30,13 @@ The Job module uses **QueueableActions** to manage schedule operations, command 
 
 ```
 app/Actions/
+<<<<<<< .merge_file_ySA7xc
 ├── Schedule/                       # Schedule-related actions
 │   ├── ClearScheduleCacheAction.php
 │   └── GetActiveSchedulesAction.php
+=======
+├── ClearScheduleCacheAction.php    # Schedule cache invalidation
+>>>>>>> .merge_file_C61tUo
 ├── Command/                        # Command discovery & execution
 │   ├── GetCommandsAction.php
 │   ├── GetCommandArgumentsActions.php
@@ -43,6 +52,7 @@ app/Actions/
 └── DummyAction.php                 # Placeholder
 ```
 
+<<<<<<< .merge_file_ySA7xc
 ### Schedule Actions
 
 **Location:** `app/Actions/Schedule/`
@@ -67,13 +77,20 @@ $schedules = app(GetActiveSchedulesAction::class)->execute();
 ```php
 public function execute(): Collection<int, Schedule>
 ```
+=======
+### Schedule cache action
+>>>>>>> .merge_file_C61tUo
 
 #### ClearScheduleCacheAction
 
 Clear the schedules cache.
 
 ```php
+<<<<<<< .merge_file_ySA7xc
 use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
+=======
+use Modules\Job\Actions\ClearScheduleCacheAction;
+>>>>>>> .merge_file_C61tUo
 
 app(ClearScheduleCacheAction::class)->execute();
 // Clears cache using config('job::cache.store') and config('job::cache.key')
@@ -94,7 +111,11 @@ public function execute(): void
 Actions use config from `config/job.php`:
 
 ```php
+<<<<<<< .merge_file_ySA7xc
 'model' => \App\Models\Schedule::class,  // For GetActiveSchedulesAction
+=======
+'model' => \App\Models\Schedule::class,
+>>>>>>> .merge_file_C61tUo
 'cache' => [
     'enabled' => true,
     'store' => 'default',

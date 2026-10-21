@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: troubleshooting
 canonical: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_jEjIVY
+=======
+status: stub
+>>>>>>> .merge_file_Q463W5
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

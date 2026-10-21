@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan session complete"
 issues: []
 discussions: []
+<<<<<<< .merge_file_sWGLQl
+=======
+status: draft
+>>>>>>> .merge_file_8BpEPr
 ---
 
 # Sessione PHPStan Completa - Tutti i Moduli
@@ -190,6 +194,7 @@ $media = $record->getFirstMedia($attachment);
 - [Business Logic Overview](business-logic-overview.md)
 
 ---
+<<<<<<< .merge_file_sWGLQl
 
 title: "phpstan session complete"
 type: note
@@ -199,4 +204,6 @@ updated: 2026-09-26
 qmd: "phpstan session complete"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_8BpEPr
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.

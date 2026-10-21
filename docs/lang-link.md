@@ -14,8 +14,13 @@ discussions: []
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni:
+<<<<<<< .merge_file_uFGRvS
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
+=======
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+>>>>>>> .merge_file_9zdXZb
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
@@ -27,6 +32,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 ## Collegamenti tra versioni di lang-link.md
 * [lang-link.md](../../../chart/docs/lang-link.md)
 * [lang-link.md](../../../reporting/docs/lang-link.md)
+<<<<<<< .merge_file_uFGRvS
 * [lang-link.md](../../../gdpr/docs/lang-link.md)
 * [lang-link.md](../../../notify/docs/lang-link.md)
 * [lang-link.md](../../../xot/docs/lang-link.md)
@@ -39,14 +45,33 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](../../../activity/docs/lang-link.md)
 * [lang-link.md](../../../patient/docs/lang-link.md)
 * [lang-link.md](../../../cms/docs/lang-link.md)
+=======
+* [lang-link.md](../../Gdpr/docs/lang-link.md)
+* [lang-link.md](../../Notify/docs/lang-link.md)
+* [lang-link.md](../../../xot/docs/lang-link.md)
+* [lang-link.md](../../../dental/docs/lang-link.md)
+* [lang-link.md](../../User/docs/lang-link.md)
+* [lang-link.md](../../../ui/docs/lang-link.md)
+* [lang-link.md](../../../job/docs/lang-link.md)
+* [lang-link.md](../../Media/docs/lang-link.md)
+* [lang-link.md](../../Tenant/docs/lang-link.md)
+* [lang-link.md](../../Activity/docs/lang-link.md)
+* [lang-link.md](../../../patient/docs/lang-link.md)
+* [lang-link.md](../../Cms/docs/lang-link.md)
+>>>>>>> .merge_file_9zdXZb
 # Collegamento alle Traduzioni del Modulo Job
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni:
 
+<<<<<<< .merge_file_uFGRvS
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
+=======
+- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
+- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+>>>>>>> .merge_file_9zdXZb
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale
@@ -61,6 +86,7 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 
 - [lang-link.md](../../../chart/docs/lang-link.md)
 - [lang-link.md](../../../reporting/docs/lang-link.md)
+<<<<<<< .merge_file_uFGRvS
 - [lang-link.md](../../../gdpr/docs/lang-link.md)
 - [lang-link.md](../../../notify/docs/lang-link.md)
 - [lang-link.md](../../../xot/docs/lang-link.md)
@@ -73,6 +99,20 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 - [lang-link.md](../../../activity/docs/lang-link.md)
 - [lang-link.md](../../../patient/docs/lang-link.md)
 - [lang-link.md](../../../cms/docs/lang-link.md)
+=======
+- [lang-link.md](../../Gdpr/docs/lang-link.md)
+- [lang-link.md](../../Notify/docs/lang-link.md)
+- [lang-link.md](../../../xot/docs/lang-link.md)
+- [lang-link.md](../../../dental/docs/lang-link.md)
+- [lang-link.md](../../User/docs/lang-link.md)
+- [lang-link.md](../../../ui/docs/lang-link.md)
+- [lang-link.md](../../../job/docs/lang-link.md)
+- [lang-link.md](../../Media/docs/lang-link.md)
+- [lang-link.md](../../Tenant/docs/lang-link.md)
+- [lang-link.md](../../Activity/docs/lang-link.md)
+- [lang-link.md](../../../patient/docs/lang-link.md)
+- [lang-link.md](../../Cms/docs/lang-link.md)
+>>>>>>> .merge_file_9zdXZb
 
 ## Versione Incoming
 

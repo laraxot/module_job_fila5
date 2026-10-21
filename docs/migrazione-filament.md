@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: migrazione-filament
 canonical: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_BdYNy3
+=======
+status: stub
+>>>>>>> .merge_file_P8X7Oc
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

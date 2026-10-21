@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "05 risks"
 issues: []
 discussions: []
+<<<<<<< .merge_file_Vtei0p
+=======
+status: draft
+>>>>>>> .merge_file_UYmsWe
 ---
 
 # Risks - Job

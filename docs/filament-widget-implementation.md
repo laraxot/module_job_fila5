@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: filament-widget-implementation
 canonical: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_3gZWiX
+=======
+status: stub
+>>>>>>> .merge_file_fUxlL0
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

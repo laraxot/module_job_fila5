@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phases"
 issues: []
 discussions: []
+<<<<<<< .merge_file_Fon42b
+=======
+status: draft
+>>>>>>> .merge_file_664nbO
 ---
 
 # Fasi di sviluppo - Job Module

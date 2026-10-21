@@ -7,6 +7,10 @@ type: user_stories
 tags: [user stories, epics, job]
 created: 2026-08-04
 updated: 2026-08-04
+<<<<<<< .merge_file_6kYPuy
+=======
+status: draft
+>>>>>>> .merge_file_ZinzsY
 ---
 # Job Epics and User Stories
 

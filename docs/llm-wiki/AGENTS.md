@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "AGENTS"
 issues: []
 discussions: []
+<<<<<<< .merge_file_hOewwk
+=======
+status: draft
+>>>>>>> .merge_file_uOEAkk
 ---
 
 # Job {{TYPE^}} LLM Wiki Agent Instructions

@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "git merge conflict inventory"
 issues: []
 discussions: []
+<<<<<<< .merge_file_LKAsDN
+=======
+status: draft
+>>>>>>> .merge_file_QLKsqO
 ---
 
 # Git Conflict Inventory

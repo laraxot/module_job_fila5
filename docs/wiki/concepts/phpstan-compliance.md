@@ -8,7 +8,11 @@ tags: [job, phpstan, types, compliance, quality, static-analysis]
 created: 2026-06-10
 updated: 2026-06-10
 related:
+<<<<<<< .merge_file_rsoCd4
   - ../../../../Themes/Sixteen/docs/wiki/concepts/phpstan-compliance.md
+=======
+  - ../../../../../Themes/Sixteen/docs/wiki/concepts/phpstan-compliance.md
+>>>>>>> .merge_file_KxurLV
   - ../../../../../docs/wiki/concepts/phpstan-level-max-compliance.md
 ---
 

@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: module-job
 canonical: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_l7Liz8
+=======
+status: stub
+>>>>>>> .merge_file_IjyQvu
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

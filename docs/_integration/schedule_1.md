@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_JHZx7Z
 ---
 title: "schedule 1"
 type: note
@@ -13,3 +14,5 @@ canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep-Modules
+=======
+>>>>>>> .merge_file_S06mzr

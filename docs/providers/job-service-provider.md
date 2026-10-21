@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: job-service-provider
 canonical: ../../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_SGxM6m
+=======
+status: stub
+>>>>>>> .merge_file_AdfcNp
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep

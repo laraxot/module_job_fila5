@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: file-naming-rules
 canonical: ../../../Themes/docs/shared-components/file-naming-rules.md
+<<<<<<< .merge_file_EQwIlh
+=======
+status: stub
+>>>>>>> .merge_file_obfn9S
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/file-naming-rules.md

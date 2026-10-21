@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan fixes january "
 issues: []
 discussions: []
+<<<<<<< .merge_file_Vur3IF
+=======
+status: draft
+>>>>>>> .merge_file_JqVqbF
 ---
 
 # PHPStan Fixes - Gennaio 2025

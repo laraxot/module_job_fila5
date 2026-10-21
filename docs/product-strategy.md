@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "product strategy"
 issues: []
 discussions: []
+<<<<<<< .merge_file_QYMlLV
+=======
+status: draft
+>>>>>>> .merge_file_bmxxgC
 ---
 
 # Job - Product Strategy

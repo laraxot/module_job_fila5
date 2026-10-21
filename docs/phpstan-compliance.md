@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan compliance"
 issues: []
 discussions: []
+<<<<<<< .merge_file_7sZEHH
+=======
+status: draft
+>>>>>>> .merge_file_ZmXi1h
 ---
 
 # PHPStan Compliance - Job Module

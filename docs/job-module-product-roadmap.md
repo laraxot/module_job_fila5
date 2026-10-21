@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "product roadmap"
 related:
   - "./phpstan-fixes-archive-2.md"
+<<<<<<< .merge_file_PFy4b9
+=======
+status: draft
+>>>>>>> .merge_file_GvMwnT
 ---
 # Job Module - Product Roadmap
 

@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "confidence guidelines"
 related:
   - "./phpstan-fixes-archive-2.md"
+<<<<<<< .merge_file_FtWa2Z
+=======
+status: draft
+>>>>>>> .merge_file_GnLNEX
 ---
 # Massimizzare il livello di confidenza
 

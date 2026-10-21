@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: laravel
 canonical: ../../../../Themes/docs/shared-components/laravel.md
+<<<<<<< .merge_file_qnpByN
+=======
+status: stub
+>>>>>>> .merge_file_0a0mPW
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/laravel.md

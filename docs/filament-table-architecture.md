@@ -8,6 +8,10 @@ type: guideline
 module: Job
 updated: 2026-09-01
 qmd: "tabella filament resource table class getTableFilters XotBaseResourceTable HasXotTable list page job"
+<<<<<<< .merge_file_hHO8uz
+=======
+status: draft
+>>>>>>> .merge_file_fvyvPb
 ---
 
 # La tabella si configura nella Table class, non nella pagina

@@ -11,6 +11,10 @@ tags:
   - conventions
   - llm-instructions
 created: 2026-04-15
+<<<<<<< .merge_file_ZhXaRO
+=======
+status: draft
+>>>>>>> .merge_file_XPjfiC
 ---
 
 # Wiki Schema - Job

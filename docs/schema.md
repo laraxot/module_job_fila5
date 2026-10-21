@@ -8,6 +8,10 @@ discussions: []
 title: "Module Schema"
 module: "Job"
 created: "2026-04-15T08:28:44Z"
+<<<<<<< .merge_file_HgfgNi
+=======
+status: draft
+>>>>>>> .merge_file_YxGwxe
 ---
 
 # Job Module Schema

@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: REDUNDANCY_ANALYSIS
 canonical: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
+<<<<<<< .merge_file_Q2ibu7
+=======
+status: stub
+>>>>>>> .merge_file_65x2tD
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md

@@ -9,6 +9,10 @@ updated: 2026-07-12
 tags: [contract, naming, architecture, laraxot, job]
 related:
   - ../../../../docs/wiki/rules/module-contracts-naming-placement.md
+<<<<<<< .merge_file_sZSZY2
+=======
+status: draft
+>>>>>>> .merge_file_6NbYRO
 ---
 
 # Contracts Naming & Placement in Job

@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+<<<<<<< .merge_file_6f1248
+=======
+status: draft
+>>>>>>> .merge_file_3V4Yqz
 ---
 
 # Job Module Roadmap
@@ -68,6 +72,7 @@ Provide a **robust job processing** system that includes:
 - Resource usage
 
 ---
+<<<<<<< .merge_file_6f1248
 
 title: "README"
 type: note
@@ -77,3 +82,5 @@ updated: 2026-09-26
 qmd: "README"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_3V4Yqz

@@ -12,6 +12,10 @@ qmd: "duplicate method bodies Job identical hash DRY"
 related:
   - ../../../../../../docs/wiki/duplicate-method-bodies-census.md
   - ./method-name-homonyms.md
+<<<<<<< .merge_file_v0fyDX
+=======
+status: draft
+>>>>>>> .merge_file_K8s2Yj
 ---
 
 # Corpi metodo duplicati — Job

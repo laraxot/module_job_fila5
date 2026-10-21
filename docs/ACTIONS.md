@@ -7,6 +7,7 @@ type: guide
 tags: [actions, architecture, queueable]
 created: 2026-07-21
 updated: 2026-07-21
+status: draft
 ---
 
 # Job Module — QueueableActions Architecture
@@ -28,9 +29,7 @@ The Job module uses **QueueableActions** to manage schedule operations, command 
 
 ```
 app/Actions/
-├── Schedule/                       # Schedule-related actions
-│   ├── ClearScheduleCacheAction.php
-│   └── GetActiveSchedulesAction.php
+├── ClearScheduleCacheAction.php    # Schedule cache invalidation
 ├── Command/                        # Command discovery & execution
 │   ├── GetCommandsAction.php
 │   ├── GetCommandArgumentsActions.php
@@ -46,37 +45,14 @@ app/Actions/
 └── DummyAction.php                 # Placeholder
 ```
 
-### Schedule Actions
-
-**Location:** `app/Actions/Schedule/`
-
-#### GetActiveSchedulesAction
-
-Retrieve active schedules with optional cache support.
-
-```php
-use Modules\Job\Actions\Schedule\GetActiveSchedulesAction;
-
-$schedules = app(GetActiveSchedulesAction::class)->execute();
-// Returns: Collection<int, Schedule>
-```
-
-**Behavior:**
-- If `config('job::cache.enabled')` is true, returns cached result (persists forever until cleared)
-- If caching disabled, queries database directly
-- Uses `config('job::cache.store')` and `config('job::cache.key')` for cache configuration
-
-**Signature:**
-```php
-public function execute(): Collection<int, Schedule>
-```
+### Schedule cache action
 
 #### ClearScheduleCacheAction
 
 Clear the schedules cache.
 
 ```php
-use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
+use Modules\Job\Actions\ClearScheduleCacheAction;
 
 app(ClearScheduleCacheAction::class)->execute();
 // Clears cache using config('job::cache.store') and config('job::cache.key')
@@ -97,7 +73,7 @@ public function execute(): void
 Actions use config from `config/job.php`:
 
 ```php
-'model' => \App\Models\Schedule::class,  // For GetActiveSchedulesAction
+'model' => \App\Models\Schedule::class,
 'cache' => [
     'enabled' => true,
     'store' => 'default',

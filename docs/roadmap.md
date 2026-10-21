@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "roadmap"
 issues: []
 discussions: []
+<<<<<<< .merge_file_OuXdYX
+=======
+status: draft
+>>>>>>> .merge_file_AJEl77
 ---
 
 # 🎯 JOB MODULE - ROADMAP 2025
@@ -18,6 +22,7 @@ discussions: []
 **Filament**: 🚧 4.x Compatibile  
 
 ---
+<<<<<<< .merge_file_OuXdYX
 
 title: "roadmap"
 type: note
@@ -27,6 +32,8 @@ updated: 2026-09-26
 qmd: "roadmap"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_AJEl77
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Job** [descrizione del modulo].

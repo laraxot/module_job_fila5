@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan level 10 compliance"
 issues: []
 discussions: []
+<<<<<<< .merge_file_rQiIvZ
+=======
+status: draft
+>>>>>>> .merge_file_pYJtBG
 ---
 
 # PHPStan Level 10 Compliance - Job Module

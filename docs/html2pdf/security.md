@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: security
 canonical: ../../../../Themes/docs/shared-components/security.md
+<<<<<<< .merge_file_etHMqX
+=======
+status: stub
+>>>>>>> .merge_file_nZsxoB
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/security.md

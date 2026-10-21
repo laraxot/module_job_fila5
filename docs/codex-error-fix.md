@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: codex-error-fix
 canonical: ../../../Themes/docs/shared-components/codex-error-fix.md
+<<<<<<< .merge_file_QklxWg
+=======
+status: stub
+>>>>>>> .merge_file_0IEP3b
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/codex-error-fix.md

@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "roadmap miglioramenti"
 issues: []
 discussions: []
+<<<<<<< .merge_file_HNdx19
+=======
+status: draft
+>>>>>>> .merge_file_6G6CEW
 ---
 
 # Job — cosa migliorerei se questo modulo fosse mio da domani mattina
@@ -40,6 +44,13 @@ ispezionare `$output->fetch()` nello stesso punto del ciclo di vita?". Se la
 risposta è "perché fanno la stessa cosa con un comando diverso", quella è
 un'astrazione che manca, non un debug da pulire.
 
+<<<<<<< .merge_file_HNdx19
+=======
+Nota 2026-10-20: oltre alle sequenze commentate c'era un `dddx($output)` attivo in `beginStream()` di entrambi i widget (riga 90). Il
+metodo, un esperimento mai funzionante e senza chiamanti, ora lancia `LogicException`; il percorso reale e' `beginProcess()`. La
+duplicazione tra i due widget resta aperta. Vedi [debug-calls-removal-job](./stories/debug-calls-removal-job.story.md).
+
+>>>>>>> .merge_file_6G6CEW
 `app/Actions/ExecuteTaskAction.php:15` ha un `// TODO: Implement task
 execution` — per un'Action che si chiama letteralmente "esegui il task", è
 la cosa più onesta e più preoccupante che si possa scrivere in un commento.

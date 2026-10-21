@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: migration-patterns
 canonical: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_xR41df
+=======
+status: stub
+>>>>>>> .merge_file_N4AkU0
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

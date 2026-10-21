@@ -8,6 +8,10 @@ qmd: "no phpstan probe policy"
 issues: []
 discussions: []
 description: Divieto di creare cartelle o file probe per PHPStan in questo modulo.
+<<<<<<< .merge_file_StaJFy
+=======
+status: draft
+>>>>>>> .merge_file_dwPMBr
 ---
 
 # No PHPStan probe files in Job

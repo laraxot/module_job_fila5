@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "PRODUCT STRATEGY"
 issues: []
 discussions: []
+<<<<<<< .merge_file_BfF8tu
+=======
+status: draft
+>>>>>>> .merge_file_P1mDMY
 ---
 
 # Job Module - Product Strategy
@@ -17,6 +21,7 @@ discussions: []
 **Owner:** Product Team
 
 ---
+<<<<<<< .merge_file_BfF8tu
 
 title: "PRODUCT STRATEGY"
 type: note
@@ -26,6 +31,8 @@ updated: 2026-09-26
 qmd: "PRODUCT STRATEGY"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_P1mDMY
 ## Executive Summary
 
 The Job module provides essential background processing capabilities, enabling reliable asynchronous task execution for all platform operations.

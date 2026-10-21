@@ -8,6 +8,10 @@ type: guideline
 module: Job
 updated: 2026-09-01
 qmd: "git lfs vietato gitattributes prototipo binari blob normali job puntatori immagini"
+<<<<<<< .merge_file_Rj5Bkv
+=======
+status: draft
+>>>>>>> .merge_file_neEmE5
 ---
 
 # Git LFS non si usa in questo progetto

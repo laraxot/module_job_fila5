@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan completion job"
 issues: []
 discussions: []
+<<<<<<< .merge_file_HOknu8
+=======
+status: draft
+>>>>>>> .merge_file_SjlD0X
 ---
 
 # ✅ PHPStan Completion - Modulo Job
@@ -17,6 +21,7 @@ discussions: []
 **Errori Risolti**: 58 → 0 ✅ (-100%)
 
 ---
+<<<<<<< .merge_file_HOknu8
 
 title: "phpstan completion job"
 type: note
@@ -26,6 +31,8 @@ updated: 2026-09-26
 qmd: "phpstan completion job"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_SjlD0X
 ## 📊 Riepilogo Correzioni
 
 | Categoria | Errori Risolti | Tempo |

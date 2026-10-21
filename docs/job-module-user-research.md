@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "user research"
 related:
   - "./phpstan-fixes-archive-2.md"
+<<<<<<< .merge_file_WM33e6
+=======
+status: draft
+>>>>>>> .merge_file_hsmUmm
 ---
 # Job Module - User Research
 
