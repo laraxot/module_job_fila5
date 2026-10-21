@@ -4,6 +4,10 @@ type: prd
 module: Job
 related:
   - ./livewire-inventory.md
+status: draft
+updated: 2026-10-07
+tags: [docs, job, bmad]
+qmd: "prd job job"
 ---
 
 # PRD Job

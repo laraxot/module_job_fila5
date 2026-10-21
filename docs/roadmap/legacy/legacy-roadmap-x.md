@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: legacy-roadmap-x
 canonical: ../../../../../Themes/docs/shared-components/roadmap-2025-Modules.md
+<<<<<<< .merge_file_EWSlth
+=======
+status: stub
+>>>>>>> .merge_file_Kf6MTW
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/roadmap-2025-Modules.md

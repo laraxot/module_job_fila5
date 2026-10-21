@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan syntax fixes"
 issues: []
 discussions: []
+<<<<<<< .merge_file_lTc7QP
+=======
+status: draft
+>>>>>>> .merge_file_xC6StR
 ---
 
 # PHPStan Syntax Fixes - Modulo Job
@@ -224,6 +228,7 @@ $traits = class_uses($obj);    // ❌ Può ritornare false!
 4. **Explicit > Implicit**: FQN rende esplicita la provenienza della funzione
 
 ---
+<<<<<<< .merge_file_lTc7QP
 
 title: "phpstan syntax fixes"
 type: note
@@ -233,6 +238,8 @@ updated: 2026-09-26
 qmd: "phpstan syntax fixes"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_xC6StR
 **Fix Completato**: [DATE]
 **Priority**: ALTA
 **Impact**: BASSO (Solo 1 test file)

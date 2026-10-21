@@ -3,6 +3,11 @@ title: "Riorganizzazione docs core Job"
 type: story
 tags: [docs, bmad, job, reorganization]
 qmd: "riorganizzazione docs core Job"
+<<<<<<< .merge_file_GvIFJU
+=======
+status: draft
+updated: 2026-10-09
+>>>>>>> .merge_file_nDPpLB
 ---
 
 # Story — riorganizzazione docs core: Job

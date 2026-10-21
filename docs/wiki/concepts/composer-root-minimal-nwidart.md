@@ -12,7 +12,11 @@ discussions:
 related:
   - ../../../Xot/docs/wiki/concepts/composer-root-skeleton-modular.md
   - ../../../../../../docs/wiki/concepts/composer-root-minimal-nwidart.md
+<<<<<<< .merge_file_yQpeVL
   - ../../composer.json
+=======
+  - ../../../composer.json
+>>>>>>> .merge_file_RSzlO2
 ---
 
 # Job e composer root minimale

@@ -5,6 +5,10 @@ module: Job
 related:
   - ../stories/12.1.retire-job-http-livewire.story.md
   - ./livewire-inventory.md
+status: draft
+updated: 2026-10-07
+tags: [docs, job, bmad]
+qmd: "epic 12 job"
 ---
 
 # Epic 12

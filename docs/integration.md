@@ -21,7 +21,11 @@ discussions: []
 ### Struttura e Convenzioni
 - [Namespace Convention](../../docs/namespace-convention.md)
 - [Namespace Structure](../../docs/namespace-structure.md)
+<<<<<<< .merge_file_D9A6G0
 - [Namespace Rules](../../docs/namespace-rules.md)
+=======
+- [Namespace Rules](../../../../docs/namespace-rules.md)
+>>>>>>> .merge_file_Ysm85L
 
 ### Implementazione
 - [Standard Codice](../../docs/standard-codice.md)
@@ -80,7 +84,11 @@ discussions: []
 ### Versione HEAD
 
 ## Collegamenti tra versioni di integration.md
+<<<<<<< .merge_file_D9A6G0
 * [integration.md](../../../gdpr/docs/integration.md)
+=======
+* [integration.md](../../Gdpr/docs/integration.md)
+>>>>>>> .merge_file_Ysm85L
 * [integration.md](../../../xot/docs/integration.md)
 * [integration.md](../../../job/docs/integration.md)
 

@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: filament-4x-compatibility
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+<<<<<<< .merge_file_rPWVEP
+=======
+status: stub
+>>>>>>> .merge_file_PTOtEQ
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md

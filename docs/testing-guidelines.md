@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: testing-guidelines
 canonical: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_098nEj
+=======
+status: stub
+>>>>>>> .merge_file_N3yIGK
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

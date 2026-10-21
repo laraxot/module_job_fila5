@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "sprint planning meeting"
 issues: []
 discussions: []
+<<<<<<< .merge_file_gZU9CE
+=======
+status: draft
+>>>>>>> .merge_file_4YLUui
 ---
 
 # Job - Sprint Planning Meeting

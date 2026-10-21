@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "directory structure rules"
 issues: []
 discussions: []
+<<<<<<< .merge_file_esVZG2
+=======
+status: draft
+>>>>>>> .merge_file_RLqqLf
 ---
 
 # Directory Structure Rules

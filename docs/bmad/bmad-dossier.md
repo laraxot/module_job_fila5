@@ -7,6 +7,10 @@ tags: [bmad, job, queues, operations]
 qmd: "Job module product brief PRD architecture UX security epics gaps release"
 issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
+<<<<<<< .merge_file_hT7l92
+=======
+status: draft
+>>>>>>> .merge_file_YDG63D
 ---
 # Job — BMAD dossier
 ## Product brief / PRD

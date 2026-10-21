@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "prd"
 issues: []
 discussions: []
+<<<<<<< .merge_file_m7kGhh
+=======
+status: draft
+>>>>>>> .merge_file_CqIReM
 ---
 
 # PRD - Job Module (2025-2026 Lean Standard)

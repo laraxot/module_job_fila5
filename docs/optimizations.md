@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: optimizations
 canonical: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_iONsUi
+=======
+status: stub
+>>>>>>> .merge_file_ao4a4j
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

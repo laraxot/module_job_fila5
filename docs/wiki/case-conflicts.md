@@ -8,6 +8,10 @@ updated: 2026-07-14
 qmd: "case conflicts"
 related:
   - "./phpstan-fixes-archive-2.md"
+<<<<<<< .merge_file_twdOMq
+=======
+status: draft
+>>>>>>> .merge_file_VbvjFW
 ---
 # Case-Insensitive File Conflicts
 

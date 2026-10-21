@@ -10,7 +10,11 @@ created: 2026-07-01
 updated: 2026-07-01
 related:
   - ../../../Xot/docs/wiki/concepts/phpstan-trait-probes.md
+<<<<<<< .merge_file_CW9a06
   - ../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md
+=======
+  - ../../../../../../docs/wiki/concepts/nwidart-module-skeleton-contract.md
+>>>>>>> .merge_file_Q6MMkM
 ---
 
 # PHPStan trait probe — FormatSeconds

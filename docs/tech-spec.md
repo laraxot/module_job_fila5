@@ -7,6 +7,10 @@ type: technical_spec
 tags: [tech spec, job]
 created: 2026-08-04
 updated: 2026-08-04
+<<<<<<< .merge_file_Pj7CUn
+=======
+status: draft
+>>>>>>> .merge_file_OZGIJD
 ---
 # Technical Specification - Job Module
 

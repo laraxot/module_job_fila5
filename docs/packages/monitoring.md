@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "monitoring"
 issues: []
 discussions: []
+<<<<<<< .merge_file_yozw4s
+=======
+status: draft
+>>>>>>> .merge_file_c5YTZv
 ---
 
 # Monitoraggio
@@ -103,6 +107,7 @@ Artisan::call('queue:forget', ['id' => 'all']);
 ### Versione Incoming
 
 ---
+<<<<<<< .merge_file_yozw4s
 
 title: "monitoring"
 type: note
@@ -112,6 +117,8 @@ updated: 2026-09-26
 qmd: "monitoring"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_c5YTZv
 ### Versione Incoming
 
 ---

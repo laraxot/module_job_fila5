@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "phpstan fixes session"
 issues: []
 discussions: []
+<<<<<<< .merge_file_CEZmVt
+=======
+status: draft
+>>>>>>> .merge_file_loUT00
 ---
 
 # PHPStan Fixes - Modulo Job
@@ -17,6 +21,7 @@ discussions: []
 **Errori Risolti**: 58 → 49 (-9 errori) ✅
 
 ---
+<<<<<<< .merge_file_CEZmVt
 
 title: "phpstan fixes session"
 type: note
@@ -26,6 +31,8 @@ updated: 2026-09-26
 qmd: "phpstan fixes session"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_loUT00
 ## 📊 Correzioni Implementate
 
 ### 1. Rimozione Generic Type da HasXotFactory ✅

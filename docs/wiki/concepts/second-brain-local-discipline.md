@@ -15,6 +15,10 @@ related:
   - ../../../../docs/wiki/concepts/ai-harness-module-discipline.md
   - ../../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
   - ../../../../../../bashscripts/tools/prompts/llm-wiki.txt
+<<<<<<< .merge_file_S3y2QS
+=======
+status: draft
+>>>>>>> .merge_file_fpezHh
 ---
 
 # Contratto wiki locale — stub Job
