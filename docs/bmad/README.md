@@ -1,32 +1,18 @@
-# Job
-
-[![Module](https://img.shields.io/badge/Module-Job-8B0000.svg)]()
-[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)
-[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)
-[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)
-[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)
-
-> **Core module for the FixCity Platform.**
-
-## Perché esiste
-
-Core module for the FixCity Platform.
-
-## Superpoteri
-
-- Modular component with XotBase patterns
-- Professional-grade implementation
-- Integrated with FixCity Platform
-
-## Documentazione
-
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
-
 ---
-
-**Modulo** `Job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+title: "Job — BMAD dossier"
+type: bmad-module-dossier
+module: Job
+status: baseline
+updated: 2026-10-07
+tags: [bmad, queues, scheduler, operations]
+qmd: "Job module purpose architecture PRD epics gaps release"
+issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
+discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
+---
+# Job BMAD dossier
+**Purpose / product brief:** run and observe asynchronous work, imports, exports, retries and schedules without losing domain transactions.
+**Architecture:** Laravel queues/jobs/actions with idempotency and after-commit dispatch; Job must not own Fixcity semantics.
+**PRD:** queue health, retry/backoff, failed-job replay, scheduler visibility, import/export progress and safe cancellation.
+**Epics:** worker reliability; operations dashboard; replay/retention.
+**Discovered gaps:** candidate worker/failed_jobs/alerts are unverified; define idempotency keys, retention, replay ownership and RPO/RTO.
+**Release gate:** injected failure, replay without duplication, queue-depth alert and runbook evidence.

@@ -33,9 +33,9 @@ use Override;
  * @property ProfileContract|null $updater
  *
  * @method static JobManagerFactory factory($count = null, $state = [])
- * @method static Builder<static>|JobManager newModelQuery()
- * @method static Builder<static>|JobManager newQuery()
- * @method static Builder<static>|JobManager query()
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
  * @method static Builder<static>|JobManager whereAttempt($value)
  * @method static Builder<static>|JobManager whereCreatedAt($value)
  * @method static Builder<static>|JobManager whereExceptionMessage($value)
@@ -67,9 +67,9 @@ use Override;
  * @property-read ProfileContract|null $updater
  *
  * @method static JobManagerFactory factory($count = null, $state = [])
- * @method static Builder<static>|JobManager newModelQuery()
- * @method static Builder<static>|JobManager newQuery()
- * @method static Builder<static>|JobManager query()
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
  * @method static Builder<static>|JobManager whereAttempt($value)
  * @method static Builder<static>|JobManager whereExceptionMessage($value)
  * @method static Builder<static>|JobManager whereFailed($value)
@@ -155,22 +155,23 @@ final class JobManager extends BaseModel
     }
 
     /**
-     * @return Builder<static>
+     * @return Builder<JobManager>
      */
     public function prunable(): Builder
     {
+        /** @var Builder<JobManager> $query */
+        $query = $this->newQuery();
+
         if (config('jobs.pruning.activate')) {
             $retentionDays = config('jobs.pruning.retention_days');
             if (! is_int($retentionDays)) {
                 $retentionDays = 365;
             }
 
-            $query = self::query()->where('created_at', '<=', now()->subDays($retentionDays));
-
-            return $query;
+            return $query->where('created_at', '<=', now()->subDays($retentionDays));
         }
 
-        return self::query()->whereNotNull('id');
+        return $query;
     }
 
     #[Override]
