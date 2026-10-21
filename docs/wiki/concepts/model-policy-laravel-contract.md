@@ -14,6 +14,10 @@ related:
   - ../../../Xot/docs/wiki/concepts/policy-inheritance-strategy.md
   - ../../ponytail-audit-over-engineering.md
   - ./policy-restoration-incident.md
+<<<<<<< .merge_file_PCt8N4
+=======
+status: draft
+>>>>>>> .merge_file_bkGBr7
 ---
 
 # Policy modello — contratto Laravel (Job)

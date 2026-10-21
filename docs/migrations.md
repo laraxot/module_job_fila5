@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "migrations"
 issues: []
 discussions: []
+<<<<<<< .merge_file_xr1Q80
+=======
+status: draft
+>>>>>>> .merge_file_1Urkpp
 ---
 
 # Job Module — Migrations Documentation
@@ -20,6 +24,7 @@ This document describes the migration strategy for the Job module, which manages
 **Parity Status:** 15 concrete models, 14 migrations — full parity (as of 2026-07-24). The only remaining "gap", `JobsWaiting`, is an intentional subclass of `Job` that shares the `jobs` table.
 
 ---
+<<<<<<< .merge_file_xr1Q80
 
 title: "migrations"
 type: note
@@ -29,6 +34,8 @@ updated: 2026-09-26
 qmd: "migrations"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_1Urkpp
 ## Philosophy
 
 Each migration represents the schema lifecycle for one or more models. Migrations follow the **XotBaseMigration pattern**:

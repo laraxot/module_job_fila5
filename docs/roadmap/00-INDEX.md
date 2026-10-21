@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "00 INDEX"
 issues: []
 discussions: []
+<<<<<<< .merge_file_lHKr1m
+=======
+status: draft
+>>>>>>> .merge_file_0kVclP
 ---
 
 # Job Module - Roadmap

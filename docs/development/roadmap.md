@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: roadmap
 canonical: ../../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_bJ7TZ5
+=======
+status: stub
+>>>>>>> .merge_file_GriqE6
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep

@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "storage server"
 issues: []
 discussions: []
+<<<<<<< .merge_file_yu1jNm
+=======
+status: draft
+>>>>>>> .merge_file_dhLQiS
 ---
 
 Wasabi Hot Cloud Storage

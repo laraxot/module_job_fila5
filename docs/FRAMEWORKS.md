@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "FRAMEWORKS"
 issues: []
 discussions: []
+<<<<<<< .merge_file_6b8hwe
+=======
+status: draft
+>>>>>>> .merge_file_5LoWda
 ---
 
 # Job — Framework Integration Notes
@@ -44,6 +48,7 @@ Efficiency principles:
 - Simplification opportunities: [TBD]
 
 ---
+<<<<<<< .merge_file_6b8hwe
 title: "FRAMEWORKS"
 type: note
 tags: [documentation]
@@ -52,4 +57,6 @@ updated: 2026-09-26
 qmd: "FRAMEWORKS"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_5LoWda
 *Generated: 2026-08-04*

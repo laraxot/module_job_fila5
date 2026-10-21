@@ -98,10 +98,17 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
+<<<<<<< .merge_file_M51mu8
 - [Global Rules](../../docs/wiki/rules/)
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
+=======
+- [Global Rules](wiki/rules)
+- [Global Skills](wiki/skills)
+- [Global Commands](wiki/commands)
+- [Global Memories](wiki/memories)
+>>>>>>> .merge_file_1SrNMi
 
 ## Setup Iniziale (per nuovi moduli)
 

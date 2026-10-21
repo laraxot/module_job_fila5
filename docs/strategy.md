@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "strategy"
 issues: []
 discussions: []
+<<<<<<< .merge_file_uAymyi
+=======
+status: draft
+>>>>>>> .merge_file_b1x8z9
 ---
 
 # Product Strategy: Job Module

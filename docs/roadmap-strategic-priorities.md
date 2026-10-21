@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "roadmap "
 issues: []
 discussions: []
+<<<<<<< .merge_file_JFY7DV
+=======
+status: draft
+>>>>>>> .merge_file_OEsbPb
 ---
 
 # Job Module Roadmap 2026
@@ -24,6 +28,7 @@ Transform task management from a technical burden into an **automation superpowe
 - **Developer Joy**: Intuitive APIs for complex automation scenarios
 
 ---
+<<<<<<< .merge_file_JFY7DV
 
 title: "roadmap "
 type: note
@@ -33,6 +38,8 @@ updated: 2026-09-26
 qmd: "roadmap "
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_OEsbPb
 ## 📊 Current Architecture Assessment
 
 ### ✅ Architectural Strengths

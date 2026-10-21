@@ -10,6 +10,10 @@ discussions: []
 module: theme
 topic: second-brain
 canonical: ../../../Themes/docs/shared-components/second-brain.md
+<<<<<<< .merge_file_m8y6t2
+=======
+status: stub
+>>>>>>> .merge_file_D9XZVS
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/second-brain.md

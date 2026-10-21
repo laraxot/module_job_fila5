@@ -14,6 +14,7 @@ related:
   - "./bmad/livewire-widget-architecture.md"
   - "./bmad/livewire-inventory.md"
   - "../README.md"
+tags: [docs, job]
 ---
 
 # Job Module Architecture

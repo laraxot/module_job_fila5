@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "filament version"
 issues: []
 discussions: []
+<<<<<<< .merge_file_9oShJr
+=======
+status: draft
+>>>>>>> .merge_file_VSJBMS
 ---
 
 # Filament Version Declaration — Job

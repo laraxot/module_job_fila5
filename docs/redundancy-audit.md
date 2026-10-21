@@ -10,6 +10,10 @@ tags: [redundancy, duplicate-code, docs]
 created: 2026-05-21
 related:
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
+<<<<<<< .merge_file_gWuofl
+=======
+status: draft
+>>>>>>> .merge_file_JGpapT
 ---
 
 # Job redundancy audit 2026-05-21

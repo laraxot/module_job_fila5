@@ -10,6 +10,10 @@ updated: 2026-07-14
 qmd: "sprint planning"
 related:
   - "./phpstan-fixes-archive-2.md"
+<<<<<<< .merge_file_uvBG2W
+=======
+status: draft
+>>>>>>> .merge_file_dADiu8
 ---
 # Job Module - Sprint Planning
 

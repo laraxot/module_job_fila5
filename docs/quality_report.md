@@ -8,6 +8,10 @@ module: Job
 created: 2026-08-24
 updated: 2026-08-24
 qmd: "Job quality report phpstan pest coverage test ratio"
+<<<<<<< .merge_file_EGTeVX
+=======
+status: draft
+>>>>>>> .merge_file_ODmyd8
 ---
 
 # Quality Report — Job

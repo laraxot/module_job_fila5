@@ -7,6 +7,10 @@ updated: 2026-09-26
 qmd: "testing philosophy refactor"
 issues: []
 discussions: []
+<<<<<<< .merge_file_plmpQG
+=======
+status: draft
+>>>>>>> .merge_file_7ejs4c
 ---
 
 # Job Module Testing Refactor - The Journey to Zen
@@ -261,6 +265,7 @@ This is the way.
 - `.env.testing` - Single source of truth for test configuration
 
 ---
+<<<<<<< .merge_file_plmpQG
 
 title: "testing philosophy refactor"
 type: note
@@ -270,6 +275,8 @@ updated: 2026-09-26
 qmd: "testing philosophy refactor"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_7ejs4c
 **Date**: [DATE]
 **Author**: Claude Sonnet 4.5
 **Status**: Implementation Ready
