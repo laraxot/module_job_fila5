@@ -13,7 +13,7 @@ uses(TestCase::class);
 describe('GetTaskFrequenciesAction', function (): void {
     test('can be instantiated', function (): void {
         $action = new GetTaskFrequenciesAction;
-        Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $action);
+        Assert::assertSame(GetTaskFrequenciesAction::class, $action::class);
     });
 
     test('has queueable action trait', function (): void {
