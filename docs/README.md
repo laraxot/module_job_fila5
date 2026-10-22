@@ -142,7 +142,7 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 
 - [02 Job - risoluzione marker di merge (2026-10)](./stories/02.Job-merge-conflict-resolution.story.md)
 <<<<<<< .merge_file_p68SWT
-- [2026-10-06 PHPStan cleanup - Job](./stories/2026-10-06-phpstan-cleanup-job.story.md) | [dev](./stories/2026-10-06-phpstan-cleanup-job.dev.md)
+- [2026-10-06 PHPStan cleanup - Job](./stories/2026-10-06-phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job-dev.dev.md)
 =======
 - [2026-10-06 PHPStan cleanup - Job](./stories/phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job.dev.md)
 - [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
