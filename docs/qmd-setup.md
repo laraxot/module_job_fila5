@@ -8,11 +8,7 @@ created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
-<<<<<<< .merge_file_EtTOuu
-  - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
-=======
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
->>>>>>> .merge_file_BuW8G8
 ---
 
 # QMD Setup per Module **Job**
@@ -70,11 +66,7 @@ qmd search "form" -c job  # Solo questo modulo
 ## Riferimenti
 
 - [Global QMD Config](../qmd.md) (root docs)
-<<<<<<< .merge_file_EtTOuu
-- [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-=======
 - [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
->>>>>>> .merge_file_BuW8G8
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---

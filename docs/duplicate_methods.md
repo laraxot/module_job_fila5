@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "duplicate methods"
 issues: []
 discussions: []
-<<<<<<< .merge_file_BDPyHa
-=======
 status: draft
->>>>>>> .merge_file_sTdjkM
 ---
 
 # Metodi duplicati — Job

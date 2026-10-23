@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan analysis job"
 issues: []
 discussions: []
-<<<<<<< .merge_file_OEcgCl
-=======
 status: draft
->>>>>>> .merge_file_dJtPsY
 ---
 
 # PHPStan Analysis - Job Module
@@ -172,7 +169,6 @@ $result = $value['key']; // Now safe
 - [ ] Share successful patterns with other module teams
 
 ---
-<<<<<<< .merge_file_OEcgCl
 
 title: "phpstan analysis job"
 type: note
@@ -182,8 +178,6 @@ updated: 2026-09-26
 qmd: "phpstan analysis job"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_dJtPsY
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1

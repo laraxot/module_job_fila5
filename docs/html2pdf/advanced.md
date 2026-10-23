@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: advanced
 canonical: ../../../../Themes/docs/shared-components/advanced-Modules.md
-<<<<<<< .merge_file_0SnCKU
-=======
 status: stub
->>>>>>> .merge_file_k5CjqP
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/advanced-Modules.md

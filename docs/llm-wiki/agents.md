@@ -9,10 +9,7 @@ issues: []
 discussions: []
 related:
   - ./coding-agent-manifests.md
-<<<<<<< .merge_file_XeAtRf
-=======
 status: draft
->>>>>>> .merge_file_3Bb8FR
 ---
 
 # Job {{TYPE^}} LLM Wiki Agent Instructions

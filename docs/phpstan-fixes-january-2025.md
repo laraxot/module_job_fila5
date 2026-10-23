@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan fixes january 2025"
 issues: []
 discussions: []
-<<<<<<< .merge_file_KMeHhE
-=======
 status: draft
->>>>>>> .merge_file_mh0IZ0
 ---
 
 # PHPStan Fixes - Gennaio 2025

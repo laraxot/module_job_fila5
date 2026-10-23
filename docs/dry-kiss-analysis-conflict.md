@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "dry kiss analysis conflict"
 issues: []
 discussions: []
-<<<<<<< .merge_file_bUHc5y
-=======
 status: draft
->>>>>>> .merge_file_X7GUqD
 ---
 
 # DRY & KISS Analysis - Modulo Job
@@ -48,7 +45,6 @@ abstract class BaseModel extends XotBaseModel
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
-<<<<<<< .merge_file_bUHc5y
 title: "dry kiss analysis conflict"
 type: note
 tags: [documentation]
@@ -57,6 +53,4 @@ updated: 2026-09-26
 qmd: "dry kiss analysis conflict"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_X7GUqD
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)

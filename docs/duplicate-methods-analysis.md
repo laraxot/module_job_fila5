@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "duplicate methods analysis"
 issues: []
 discussions: []
-<<<<<<< .merge_file_cXGSiy
-=======
 status: draft
->>>>>>> .merge_file_HGLVja
 ---
 
 # Analisi Metodi Duplicati - Modulo Job
@@ -68,7 +65,6 @@ public function scopeActive($query): void
 **Procedere con refactoring** - Alta confidenza e bassa complessità rendono questa ottimizzazione sicura.
 
 ---
-<<<<<<< .merge_file_cXGSiy
 
 title: "duplicate methods analysis"
 type: note
@@ -78,8 +74,6 @@ updated: 2026-09-26
 qmd: "duplicate methods analysis"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_HGLVja
 ### 2. Metodo: `task`
 
 **Tipo Refactoring**: `BaseClass` | **Complessità**: 🟡 Medium | **Confidenza**: ✅ 75%

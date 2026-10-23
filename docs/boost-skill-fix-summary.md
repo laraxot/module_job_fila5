@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "boost skill fix summary"
 issues: []
 discussions: []
-<<<<<<< .merge_file_pgPWMu
-=======
 status: draft
->>>>>>> .merge_file_LUikAP
 ---
 
 # Boost Skill Fix Summary - Job Module

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "legacy roadmap"
 issues: []
 discussions: []
-<<<<<<< .merge_file_d5AWDN
-=======
 status: draft
->>>>>>> .merge_file_KR6DIG
 ---
 
 # Job Module Roadmap 2026
@@ -28,7 +25,6 @@ Transform task management from a technical burden into an **automation superpowe
 - **Developer Joy**: Intuitive APIs for complex automation scenarios
 
 ---
-<<<<<<< .merge_file_d5AWDN
 
 title: "legacy roadmap"
 type: note
@@ -38,8 +34,6 @@ updated: 2026-09-26
 qmd: "legacy roadmap"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_KR6DIG
 ## 📊 Current Architecture Assessment
 
 ### ✅ Architectural Strengths

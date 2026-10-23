@@ -10,11 +10,7 @@ issues:
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-<<<<<<< .merge_file_RvzgiZ
-  - ../../../../docs/wiki/concepts/no-app-support-monorepo-migration.md
-=======
   - ../../../../../../docs/wiki/concepts/no-app-support-monorepo-migration.md
->>>>>>> .merge_file_0kgHNJ
 ---
 
 # Job — `app/Support/` eliminato
@@ -34,8 +30,4 @@ Consumer: `Job/Status`, `Schedule/Status`, `Filament/Pages/JobStatus`.
 
 ## Collegamenti
 
-<<<<<<< .merge_file_RvzgiZ
-- [no-app-support-monorepo-migration](../../../../docs/wiki/concepts/no-app-support-monorepo-migration.md)
-=======
 - [no-app-support-monorepo-migration](../../../../../../docs/wiki/concepts/no-app-support-monorepo-migration.md)
->>>>>>> .merge_file_0kgHNJ

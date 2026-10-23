@@ -4,11 +4,8 @@ type: guide
 tags: [actions, architecture, queueable]
 created: 2026-07-21
 updated: 2026-07-21
-<<<<<<< .merge_file_n8J8dH
-=======
 status: draft
 qmd: "job module   queueableactions architecture job"
->>>>>>> .merge_file_mfeBii
 ---
 
 # Job Module — QueueableActions Architecture

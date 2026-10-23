@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: core-functionality
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_DT48Ij
-=======
 status: stub
->>>>>>> .merge_file_UMrXPZ
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

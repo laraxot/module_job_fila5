@@ -360,11 +360,7 @@ class RetryTest extends TestCase {
 
    - Aggiornamento strategie retry
 ## Collegamenti tra versioni di solutions.md
-<<<<<<< .merge_file_zrkYYr
-* [solutions.md](../../../gdpr/docs/solutions.md)
-=======
 * [solutions.md](../../Gdpr/docs/solutions.md)
->>>>>>> .merge_file_7ZReMR
 * [solutions.md](../../../xot/docs/solutions.md)
 * [solutions.md](../../../job/docs/solutions.md)
 

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "task aumentare copertura test"
 issues: []
 discussions: []
-<<<<<<< .merge_file_hHPfwT
-=======
 status: draft
->>>>>>> .merge_file_Y7oqCA
 ---
 
 # Task: Aumentare Copertura Test - Job
@@ -20,7 +17,6 @@ status: draft
 **Completamento**: 20%
 
 ---
-<<<<<<< .merge_file_hHPfwT
 
 title: "task aumentare copertura test"
 type: note
@@ -30,8 +26,6 @@ updated: 2026-09-26
 qmd: "task aumentare copertura test"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_Y7oqCA
 ## Test da Implementare
 
 - [ ] Scheduling: test espressioni cron

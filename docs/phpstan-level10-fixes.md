@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan level10 fixes"
 issues: []
 discussions: []
-<<<<<<< .merge_file_FmLeqe
-=======
 status: draft
->>>>>>> .merge_file_ONu5cS
 ---
 
 # Correzioni PHPStan Livello 10 - Modulo Job

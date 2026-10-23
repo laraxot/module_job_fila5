@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan correzioni 2025 11"
 issues: []
 discussions: []
-<<<<<<< .merge_file_K9txwY
-=======
 status: draft
->>>>>>> .merge_file_bbgqsN
 ---
 
 # Correzioni PHPStan Livello 10 - Modulo Job
@@ -51,7 +48,6 @@ $signature = method_exists($command, 'getSignature')
 **Principio**: Garantire che il tipo sia sempre string attraverso cast espliciti.
 
 ---
-<<<<<<< .merge_file_K9txwY
 
 title: "phpstan correzioni 2025 11"
 type: note
@@ -61,8 +57,6 @@ updated: 2026-09-26
 qmd: "phpstan correzioni 2025 11"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_bbgqsN
 ### 2. GetTaskCommandsAction.php
 **Errore**: sortBy callback con parametro tipo mixed  
 **Soluzione**: PHPDoc per tipizzare la Collection

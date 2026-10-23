@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: conflict-resolution
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_55lNzH
-=======
 status: stub
->>>>>>> .merge_file_7SwLCf
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

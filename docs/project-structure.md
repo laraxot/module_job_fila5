@@ -98,17 +98,10 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
-<<<<<<< .merge_file_zybmi7
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
-=======
-- [Global Rules](wiki/rules)
-- [Global Skills](wiki/skills)
-- [Global Commands](wiki/commands)
-- [Global Memories](wiki/memories)
->>>>>>> .merge_file_YDCTRm
+- [Global Rules](../../../../docs/wiki/rules/)
+- [Global Skills](../../../../docs/wiki/skills/)
+- [Global Commands](../../../../bashscripts/ai/wiki/commands/)
+- [Global Memories](../../../../docs/wiki/memories/)
 
 ## Setup Iniziale (per nuovi moduli)
 

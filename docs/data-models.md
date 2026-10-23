@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: data-models
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_iZXXsj
-=======
 status: stub
->>>>>>> .merge_file_ZfaccQ
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

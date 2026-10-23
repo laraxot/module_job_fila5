@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "enterprise job system roadmap"
 issues: []
 discussions: []
-<<<<<<< .merge_file_0hGzaH
-=======
 status: draft
->>>>>>> .merge_file_dCmSSm
 ---
 
 # Job Module - Comprehensive Job Management System

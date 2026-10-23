@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: filament-best-practices
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_oJxrj2
-=======
 status: stub
->>>>>>> .merge_file_h83nNR
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

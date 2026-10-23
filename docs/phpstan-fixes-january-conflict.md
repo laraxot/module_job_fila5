@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan fixes january conflict"
 issues: []
 discussions: []
-<<<<<<< .merge_file_22tpdJ
-=======
 status: draft
->>>>>>> .merge_file_Cy0fMd
 ---
 
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
@@ -208,7 +205,6 @@ public function __construct(string $output)
 - [Laravel Queue Best Practices](https://laravel.com/docs/queues)
 
 ---
-<<<<<<< .merge_file_22tpdJ
 
 title: "phpstan fixes january conflict"
 type: note
@@ -218,8 +214,6 @@ updated: 2026-09-26
 qmd: "phpstan fixes january conflict"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_Cy0fMd
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 2.0
 **🐛 PHPStan Level**: 9 ✅

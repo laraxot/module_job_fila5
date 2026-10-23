@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_BewYwA
-=======
 ---
 title: "Changelog"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, job, wiki]
 qmd: "changelog job"
 ---
->>>>>>> .merge_file_QBLenX
 # Changelog
 
 All notable changes to this project will be documented in this file.
