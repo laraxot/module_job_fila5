@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "translation fields critical error"
 issues: []
 discussions: []
-<<<<<<< .merge_file_nSmEDD
-=======
 status: draft
->>>>>>> .merge_file_1VwAaB
 ---
 
 # Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
@@ -19,7 +16,6 @@ status: draft
 **Status**: 🔴 **ERRORE IDENTIFICATO E CORRETTO**
 
 ---
-<<<<<<< .merge_file_nSmEDD
 
 title: "translation fields critical error"
 type: note
@@ -29,8 +25,6 @@ updated: 2026-09-26
 qmd: "translation fields critical error"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_1VwAaB
 ## 🔴 Errore Commesso
 
 Durante il completamento delle traduzioni navigation, **ho rimosso la sezione `fields`** da molti file di traduzione, causando un errore gravissimo.

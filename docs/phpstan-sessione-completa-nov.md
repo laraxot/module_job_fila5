@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: phpstan-sessione-completa-nov
 canonical: ../../../Themes/docs/shared-components/phpstan-sessione-completa-tutti-moduli.md
-<<<<<<< .merge_file_zESYNI
-=======
 status: stub
->>>>>>> .merge_file_F1oNWs
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-sessione-completa-tutti-moduli.md

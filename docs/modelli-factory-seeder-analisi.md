@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
-<<<<<<< .merge_file_Z61TRj
-=======
 status: stub
->>>>>>> .merge_file_83JLm7
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md

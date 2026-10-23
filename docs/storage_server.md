@@ -11,10 +11,7 @@ tags: [migrato-da-txt, job]
 converted_from: storage_server.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_Ml9PEV
-=======
 status: draft
->>>>>>> .merge_file_GKvZph
 ---
 
 Wasabi Hot Cloud Storage

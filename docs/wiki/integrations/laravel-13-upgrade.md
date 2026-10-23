@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "laravel 13 upgrade"
 related:
   - "./phpstan-fixes-archive-2.md"
-<<<<<<< .merge_file_gjdbLV
-=======
 status: draft
->>>>>>> .merge_file_OqExXo
 ---
 # Upgrade Laravel 13 - Job 🐄✨
 

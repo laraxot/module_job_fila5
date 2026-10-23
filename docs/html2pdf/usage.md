@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: usage
 canonical: ../../../../Themes/docs/shared-components/usage.md
-<<<<<<< .merge_file_2hfVK9
-=======
 status: stub
->>>>>>> .merge_file_ijefvP
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/usage.md

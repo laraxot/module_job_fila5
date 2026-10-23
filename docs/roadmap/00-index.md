@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "00 index"
 issues: []
 discussions: []
-<<<<<<< .merge_file_r8cCfd
-=======
 status: draft
->>>>>>> .merge_file_UKRmuK
 ---
 
 # Job Module - Roadmap

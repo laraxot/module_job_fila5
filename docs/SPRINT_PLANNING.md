@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "SPRINT PLANNING"
 issues: []
 discussions: []
-<<<<<<< .merge_file_qCFgnE
-=======
 status: draft
->>>>>>> .merge_file_j71YoQ
 ---
 
 # Job Module - Sprint Planning
@@ -20,7 +17,6 @@ status: draft
 **Version:** 1.0.0
 
 ---
-<<<<<<< .merge_file_qCFgnE
 
 title: "SPRINT PLANNING"
 type: note
@@ -30,8 +26,6 @@ updated: 2026-09-26
 qmd: "SPRINT PLANNING"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_j71YoQ
 ## Sprint Goal
 
 Implement core job queue infrastructure with basic processing and retry capabilities.

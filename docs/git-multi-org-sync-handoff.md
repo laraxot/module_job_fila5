@@ -10,10 +10,7 @@ issues:
   - "https://github.com/provtv/module_job_fila5/issues/16"
 discussions:
   - "https://github.com/provtv/base_ptv_fila5/discussions/204"
-<<<<<<< .merge_file_1Owjeg
-=======
 status: draft
->>>>>>> .merge_file_QpurFn
 ---
 
 # Handoff — multi-org sync (STORY-003)

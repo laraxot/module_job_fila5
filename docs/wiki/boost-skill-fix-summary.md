@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_Mr238r
-=======
 ---
 title: "Boost Skill Fix Summary - Job Module"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, job, wiki]
 qmd: "boost skill fix summary - job module job"
 ---
->>>>>>> .merge_file_XIQb0y
 # Boost Skill Fix Summary - Job Module
 
 **Date**: 2026-03-02

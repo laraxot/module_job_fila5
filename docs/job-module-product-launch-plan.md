@@ -10,10 +10,7 @@ updated: 2026-07-14
 qmd: "product launch plan"
 related:
   - "./phpstan-fixes-archive-2.md"
-<<<<<<< .merge_file_aJQ9aC
-=======
 status: draft
->>>>>>> .merge_file_HX51R3
 ---
 # Job Module - Product Launch Plan
 

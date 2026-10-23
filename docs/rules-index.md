@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: rules-index
 canonical: ../../../Themes/docs/shared-components/rules-index.md
-<<<<<<< .merge_file_qJaPDo
-=======
 status: stub
->>>>>>> .merge_file_Jnc68i
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/rules-index.md

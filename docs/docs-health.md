@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "docs health"
 issues: []
 discussions: []
-<<<<<<< .merge_file_KsqvVJ
-=======
 status: draft
->>>>>>> .merge_file_ZWRLlw
 ---
 
 # Docs Health - Job
@@ -43,7 +40,6 @@ status: draft
 - Update this file when major cleanup is executed.
 
 ---
-<<<<<<< .merge_file_KsqvVJ
 title: "docs health"
 type: note
 tags: [documentation]
@@ -52,6 +48,4 @@ updated: 2026-09-26
 qmd: "docs health"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_ZWRLlw
 Generated during docs confidence hardening batch (2026-03-07).
