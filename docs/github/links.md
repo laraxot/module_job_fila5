@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: links
 canonical: ../../../../Themes/docs/shared-components/links-Modules.md
-<<<<<<< .merge_file_P0dDdm
-=======
 status: stub
->>>>>>> .merge_file_fPwn9e
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/links-Modules.md

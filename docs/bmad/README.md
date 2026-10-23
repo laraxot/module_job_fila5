@@ -10,8 +10,6 @@ issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
 ---
 # Job BMAD dossier
-<<<<<<< .merge_file_wiyVKc
-=======
 
 ## Kit BMAD owner (canonico)
 
@@ -20,14 +18,9 @@ discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
 - [Filament blueprint](./filament-blueprint.md)
 - [Project context](./project-context.md)
 - [Decision log](./decision-log.md)
->>>>>>> .merge_file_Syhp16
 **Purpose / product brief:** run and observe asynchronous work, imports, exports, retries and schedules without losing domain transactions.
 **Architecture:** Laravel queues/jobs/actions with idempotency and after-commit dispatch; Job must not own Fixcity semantics.
 **PRD:** queue health, retry/backoff, failed-job replay, scheduler visibility, import/export progress and safe cancellation.
 **Epics:** worker reliability; operations dashboard; replay/retention.
 **Discovered gaps:** candidate worker/failed_jobs/alerts are unverified; define idempotency keys, retention, replay ownership and RPO/RTO.
-<<<<<<< .merge_file_wiyVKc
 **Release gate:** injected failure, replay without duplication, queue-depth alert and runbook evidence.
-=======
-**Release gate:** injected failure, replay without duplication, queue-depth alert and runbook evidence.
->>>>>>> .merge_file_Syhp16

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "current state"
 issues: []
 discussions: []
-<<<<<<< .merge_file_KUx6KA
-=======
 status: draft
->>>>>>> .merge_file_LwEEM9
 ---
 
 # Current State - Job

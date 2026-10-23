@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan errors roadmap"
 issues: []
 discussions: []
-<<<<<<< .merge_file_bNvvAv
-=======
 status: draft
->>>>>>> .merge_file_OcBa7D
 ---
 
 # PHPStan Level 10 Errors Roadmap - Job Module
@@ -20,7 +17,6 @@ status: draft
 **Status**: 🧘 **IN ANALISI**
 
 ---
-<<<<<<< .merge_file_bNvvAv
 
 title: "phpstan errors roadmap"
 type: note
@@ -30,8 +26,6 @@ updated: 2026-09-26
 qmd: "phpstan errors roadmap"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_OcBa7D
 ## 📊 Errori Identificati
 
 ### Totale Errori: 3

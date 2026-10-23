@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "duplicate methods report"
 issues: []
 discussions: []
-<<<<<<< .merge_file_7MxYEj
-=======
 status: draft
->>>>>>> .merge_file_Iwna7m
 ---
 
 # Report: Metodi con nome duplicato nei moduli e nei temi

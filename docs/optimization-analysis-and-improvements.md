@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: optimization-analysis-and-improvements
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_WkaxdT
-=======
 status: stub
->>>>>>> .merge_file_gjp8yH
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

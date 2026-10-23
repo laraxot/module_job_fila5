@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: mcp_server_recommended
 canonical: ../../../Themes/docs/shared-components/mcp_server_recommended.md
-<<<<<<< .merge_file_pI3nXK
-=======
 status: stub
->>>>>>> .merge_file_3XfbGg
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp_server_recommended.md

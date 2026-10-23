@@ -4,24 +4,16 @@ type: documentation
 module: Job
 tags: [module, documentation]
 created: 2026-06-05
-<<<<<<< .merge_file_p68SWT
-updated: 2026-10-07
-qmd: "README"
-=======
-updated: 2026-10-14
+updated: 2026-10-23
 qmd: "job docs README ownership code map limiti scheduler code"
->>>>>>> .merge_file_9mix9u
 issues: []
 discussions: []
 related:
   - "../README.md"
   - "./00-INDEX.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
-<<<<<<< .merge_file_p68SWT
-=======
   - "./stories/docs-ingressi-job.story.md"
 status: active
->>>>>>> .merge_file_9mix9u
 ---
 
 # Job docs
@@ -35,23 +27,6 @@ l'[indice](./00-INDEX.md).
 Il modulo **Job** gestisce i job asincroni, le code di elaborazione e lo scheduler
 di task persistiti su database (connessione dedicata `job`).
 
-<<<<<<< .merge_file_p68SWT
-## Funzionalita'
-
-- Gestione code e job (tabella `jobs`), job in attesa
-- Retry e gestione dei job falliti (`failed_jobs`)
-- Batch (`job_batches`) e monitoraggio esecuzioni (`JobManager`)
-- Scheduler su DB (`Schedule`, `ScheduleHistory`, `Task`)
-- Import/Export Filament (`Import`, `Export`, `FailedImportRow`)
-
-## Modelli principali
-
-Namespace `Modules\Job\Models`:
-
-```php
-Job::class          // tabella jobs
-JobsWaiting::class  // vista sulla stessa tabella jobs (job in attesa)
-=======
 Ownership: pacchetto `laraxot/module_job_fila5` (`composer.json`), repo git separato in
 `laravel/Modules/Job`; provider `Modules\Job\Providers\JobServiceProvider` e
 `Providers\Filament\AdminPanelProvider` (`module.json`), entrambi su base `Xot`.
@@ -72,7 +47,6 @@ Namespace `Modules\Job\Models`:
 ```php
 Job::class          // tabella jobs
 JobsWaiting::class  // sottoclasse vuota di Job (stessa tabella jobs), per la Resource dei job in attesa
->>>>>>> .merge_file_9mix9u
 FailedJob::class
 JobBatch::class
 JobManager::class   // tracciamento esecuzioni
@@ -83,12 +57,6 @@ Import::class       // + Export, FailedImportRow
 ## Servizi e Actions
 
 La logica di business nuova vive in Spatie Queueable Actions (`app/Actions/**`,
-<<<<<<< .merge_file_p68SWT
-metodo `execute()`). L'unico service rimasto e' `Modules\Job\Services\ScheduleService`
-(vedi story [job-services-to-actions](./stories/job-services-to-actions.story.md)).
-Le classi `JobDispatcher` e `QueueManager`, citate in una versione precedente di
-questo file, non esistono nel modulo.
-=======
 metodo `execute()`). Non esiste piu' nessun service: `ScheduleService` e' stato eliminato
 (story [2026-10-08 services-to-actions](./stories/services-to-actions-job.story.md));
 `ScheduleObserver` e `ScheduleClearCacheCommand` usano direttamente
@@ -128,7 +96,6 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 - `ExecuteTaskAction` e' invocata solo da `ScheduleCrudWidget` e dal vecchio `Http/Livewire/Schedule/Crud`.
 - Il README del modulo (`../README.md`) elenca ancora `Services` e `Phpstan` fra le aree di `app/`:
   non esistono piu' (fuori dal perimetro `docs/`, non modificato).
->>>>>>> .merge_file_9mix9u
 
 ## Collegamenti
 
@@ -141,13 +108,9 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 ## Stories
 
 - [02 Job - risoluzione marker di merge (2026-10)](./stories/02.Job-merge-conflict-resolution.story.md)
-<<<<<<< .merge_file_p68SWT
-- [2026-10-06 PHPStan cleanup - Job](./stories/2026-10-06-phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job-dev.dev.md)
-=======
 - [2026-10-06 PHPStan cleanup - Job](./stories/phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job.dev.md)
 - [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
 - [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
->>>>>>> .merge_file_9mix9u
 
 ## Stato dell'organizzazione della cartella
 

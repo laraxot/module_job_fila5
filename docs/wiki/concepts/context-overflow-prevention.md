@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: context-overflow-prevention
 canonical: ../../../../../Themes/docs/shared-components/context-overflow-prevention.md
-<<<<<<< .merge_file_Qr7ixB
-=======
 status: stub
->>>>>>> .merge_file_bXDtqu
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/context-overflow-prevention.md

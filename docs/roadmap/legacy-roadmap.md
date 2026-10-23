@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "legacy roadmap"
 issues: []
 discussions: []
-<<<<<<< .merge_file_b265DW
-=======
 status: draft
->>>>>>> .merge_file_Jvdrs5
 ---
 
 # Job Module Roadmap

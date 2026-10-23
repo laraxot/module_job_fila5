@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: optimization-analysis-e-improvements
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_FAIuTf
-=======
 status: stub
->>>>>>> .merge_file_0VMOTG
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

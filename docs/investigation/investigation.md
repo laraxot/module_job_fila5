@@ -2,13 +2,10 @@
 type: investigation
 title: "Investigation Multi-Agency Job Board Sync"
 links: {github_issue: #XXX}
-<<<<<<< .merge_file_eJafMf
-=======
 status: draft
 updated: 2026-10-08
 tags: [docs, job, investigation]
 qmd: "investigation: multi-agency job board sync job"
->>>>>>> .merge_file_7BFQsx
 ---
 # Investigation: Multi-Agency Job Board Sync
 
