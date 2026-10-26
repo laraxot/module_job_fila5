@@ -4,6 +4,9 @@ status: done
 created: 2026-10-21
 updated: 2026-10-21
 module: Job
+type: story
+tags: [docs, job, bmad]
+qmd: "seeder job: log di avanzamento opzionale job"
 ---
 
 # Seeder Job: log di avanzamento opzionale

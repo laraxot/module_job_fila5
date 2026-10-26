@@ -64,9 +64,9 @@ status: draft
 
 ### Core Architecture & Planning
 - [project-structure.md](project-structure.md) - Module structure overview
-- [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
-- [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
-- [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
+- [ON-DEMAND-PATTERN.md](on-demand-pattern.md) - On-demand knowledge pattern
+- [QMD-SETUP.md](qmd-setup.md) - QMD search configuration
+- [PROJECT-STRUCTURE.md](project-structure.md) - Full project structure
 - [architecture-rules.md](architecture-rules.md) - Architecture discipline rules
 - [contracts-naming.md](contracts-naming.md) - Contract naming conventions
 
@@ -114,7 +114,7 @@ status: draft
 - [migration-filament-4.md](migration-filament.md) - v4 migration
 
 ### Migration & Database
-- [MIGRATIONS.md](MIGRATIONS.md) - Migration tracking (10.9KB)
+- [MIGRATIONS.md](migrations.md) - Migration tracking (10.9KB)
 - [schema.md](schema.md) - Database schema (2KB)
 - [nestedset-migration-best-practices.md](nestedset-migration-best-practices.md) - NestedSet guide (13.6KB)
 - [schedule-test-wrong-schema.md](schedule-test-wrong-schema.md) - Schema testing (4.2KB)
@@ -165,7 +165,7 @@ status: draft
 - [job-reports.md](job-reports.md) - Job reports (30.3KB - large reference)
 
 ### Performance & Optimization
-- [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
+- [PERFORMANCE-OPTIMIZATION.md](performance-optimization.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
 - [optimization.md](optimization.md) - Optimization overview (250 bytes)
 - [optimization-analysis-and-improvements.md](optimization-analysis-and-improvements.md) - Analysis (205 bytes)
@@ -200,7 +200,7 @@ status: draft
 - [README.md](README.md) - Module readme (5.7KB, updated 11:24)
 - [docs-health.md](docs-health.md) - Docs health check (1.2KB)
 - [task-consolidare-documentazione.md](task-consolidare-documentazione.md) - Consolidation task
-- [CHANGELOG.md](CHANGELOG.md) - Changelog (184 bytes)
+- [CHANGELOG.md](changelog.md) - Changelog (184 bytes)
 - [task-aumentare-copertura-test.md](task-aumentare-copertura-test.md) - Test coverage task (608 bytes)
 - [task-dashboard-monitoring.md](task-dashboard-monitoring.md) - Dashboard task
 

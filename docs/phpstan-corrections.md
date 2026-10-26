@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "phpstan corrections"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: phpstan-correzioni.md
 ---
 
 # Correzioni PHPStan Livello 10 - Modulo Job

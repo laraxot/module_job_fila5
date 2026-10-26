@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "bottlenecks"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Job Module Performance Bottlenecks
@@ -214,15 +215,6 @@ Implementare:
 ### Versione Incoming
 
 ---
-
-title: "bottlenecks"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bottlenecks"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---

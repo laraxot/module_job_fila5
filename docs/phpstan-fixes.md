@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan fixes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # PHPStan Fixes — Job
@@ -16,15 +17,6 @@ discussions: []
 795→0. [#336](https://github.com/laraxot/base_fixcity_fila5/issues/336). `GetTaskFrequenciesAction` + test Assert.
 
 ---
-
-title: "phpstan fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes"
-issues: []
-discussions: []
 ## Storico — Gennaio 2025
 
 ## ✅ Stato complessivo
