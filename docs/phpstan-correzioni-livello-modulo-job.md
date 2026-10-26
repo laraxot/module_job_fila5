@@ -1,3 +1,11 @@
+---
+title: "Correzioni PHPStan Livello 10 - Modulo Job"
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, job]
+qmd: "correzioni phpstan livello 10 - modulo job job"
+---
 # Correzioni PHPStan Livello 10 - Modulo Job
 **Data**: 2025-11-05  
 **Errori iniziali**: 31  

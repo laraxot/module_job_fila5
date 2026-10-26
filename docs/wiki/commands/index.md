@@ -1,3 +1,11 @@
+---
+title: "Job Module - commands Index"
+type: index
+status: draft
+updated: 2026-10-15
+tags: [docs, job, wiki]
+qmd: "job module - commands index job"
+---
 # Job Module - commands Index
 
 ## Purpose

@@ -10,7 +10,8 @@ module: Job
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-status: stub
+status: superseded
+superseded_by: metodi-duplicati-analisi-job.md
 ---
 
 # Metodi Duplicati — Analisi Job

@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "ARCHITECTURE"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: bmad/architecture.md
 ---
 
 # Job Module Architecture

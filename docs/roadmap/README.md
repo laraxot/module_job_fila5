@@ -69,12 +69,3 @@ Provide a **robust job processing** system that includes:
 - Resource usage
 
 ---
-
-title: "README"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "README"
-issues: []
-discussions: []

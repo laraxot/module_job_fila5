@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "implementation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Implementazione Job
@@ -314,15 +315,6 @@ class JobPageTest extends TestCase
 ### Versione Incoming
 
 ---
-
-title: "implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "implementation"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---

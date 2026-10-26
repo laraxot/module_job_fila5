@@ -12,6 +12,9 @@ related:
   - ../../roadmap-miglioramenti.md
   - ../livewire-widget-epics.md
   - ../livewire-inventory.md
+updated: 2026-10-15
+tags: [docs, job, bmad]
+qmd: "job   continuazione domani job"
 ---
 
 # Job — Continuazione Domani

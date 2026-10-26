@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "navigation translations completion roadmap"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Navigation Translations Completion Roadmap - Job Module
@@ -15,15 +16,6 @@ discussions: []
 **Status**: 📝 **ROADMAP CREATA**
 
 ---
-
-title: "navigation translations completion roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "navigation translations completion roadmap"
-issues: []
-discussions: []
 ## 📊 Executive Summary
 
 Completamento e miglioramento delle traduzioni per i file con sezione `.navigation` nel modulo Job per le **6 lingue più parlate al mondo**:
