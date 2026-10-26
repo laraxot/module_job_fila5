@@ -1,3 +1,11 @@
+---
+title: "Job — completion backlog"
+type: note
+status: draft
+updated: 2026-10-26
+tags: [docs, job]
+qmd: "job   completion backlog job"
+---
 # Job — completion backlog
 
 Status: partial and evidence-driven. This file is the canonical owner-local list for future work.

@@ -191,13 +191,4 @@ $media = $record->getFirstMedia($attachment);
 - [Business Logic Overview](business-logic-overview.md)
 
 ---
-
-title: "phpstan session complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan session complete"
-issues: []
-discussions: []
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.

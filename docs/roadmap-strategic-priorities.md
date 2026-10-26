@@ -25,15 +25,6 @@ Transform task management from a technical burden into an **automation superpowe
 - **Developer Joy**: Intuitive APIs for complex automation scenarios
 
 ---
-
-title: "roadmap "
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap "
-issues: []
-discussions: []
 ## 📊 Current Architecture Assessment
 
 ### ✅ Architectural Strengths

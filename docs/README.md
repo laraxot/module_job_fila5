@@ -10,7 +10,7 @@ issues: []
 discussions: []
 related:
   - "../README.md"
-  - "./00-INDEX.md"
+  - "./00-index.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
   - "./stories/docs-ingressi-job.story.md"
 status: active
@@ -20,7 +20,7 @@ status: active
 
 Cartella `docs/` del modulo Job: documentazione a livello modulo. Per la panoramica
 del modulo vedi il [README del modulo](../README.md); per la navigazione vedi
-l'[indice](./00-INDEX.md).
+l'[indice](./00-index.md).
 
 ## Panoramica
 
@@ -99,7 +99,7 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 
 ## Collegamenti
 
-- [Architettura](./architecture.md)
+- [Architettura](./ARCHITECTURE.md)
 - [Inventario Livewire e widget Filament](./bmad/livewire-inventory.md)
 - [Xot base](../../Xot/docs/README.md)
 - [Notify](../../Notify/docs/README.md) per le notifiche di fallimento job

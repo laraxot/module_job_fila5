@@ -10,7 +10,8 @@ discussions: []
 module: theme
 topic: modelli_factory_seeder_analisi
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
-status: stub
+status: superseded
+superseded_by: filament_4x_compatibility.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
