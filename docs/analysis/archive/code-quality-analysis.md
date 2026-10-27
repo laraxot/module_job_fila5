@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "code quality analysis"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: ../legacy/code-quality-analysis.md
 ---
 
 # ⚙️ Job Module - Code Quality Analysis Report

@@ -1,3 +1,11 @@
+---
+title: "Job Module - rules Index"
+type: index
+status: draft
+updated: 2026-10-15
+tags: [docs, job, wiki]
+qmd: "job module - rules index job"
+---
 # Job Module - rules Index
 
 ## Purpose

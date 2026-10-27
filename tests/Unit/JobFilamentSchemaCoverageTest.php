@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit;
+namespace Modules\Job\Tests\Unit;
 
-use Tests\Modules\Job\TestCase;
-use Tests\Modules\Xot\FilamentSchemaCoverage;
+use Modules\Job\Tests\TestCase;
+use Modules\Xot\Tests\FilamentSchemaCoverage;
 use PHPUnit\Framework\Assert;
 
 use function Safe\glob;

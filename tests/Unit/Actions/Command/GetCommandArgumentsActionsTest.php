@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Actions\Command;
+namespace Modules\Job\Tests\Unit\Actions\Command;
 
 use Modules\Job\Actions\Command\GetCommandArgumentsActions;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\Console\Command\Command;
 
@@ -15,10 +15,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('GetCommandArgumentsActions', function (): void {
-    test('can be instantiated', function (): void {
-        $action = new GetCommandArgumentsActions;
-        Assert::assertInstanceOf(GetCommandArgumentsActions::class, $action);
-    });
 
     test('has correct method signature', function (): void {
         $reflection = new \ReflectionClass(GetCommandArgumentsActions::class);

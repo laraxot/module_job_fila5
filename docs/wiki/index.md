@@ -15,6 +15,7 @@ related:
   - ../../../../../docs/wiki/bmad/architecture.md
   - ../../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
   - ../../../Fixcity/docs/wiki/concepts/ai-harness-module-discipline.md
+status: draft
 ---
 
 # Job Module Wiki

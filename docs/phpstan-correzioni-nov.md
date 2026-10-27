@@ -9,13 +9,8 @@ issues: []
 discussions: []
 module: theme
 topic: phpstan-correzioni-nov
-canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-2025-11.md
+canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-livello-modulo-job.md
 status: stub
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-2025-11.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-livello-modulo-job.md

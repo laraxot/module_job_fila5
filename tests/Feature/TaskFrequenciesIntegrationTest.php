@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Job\Actions\GetTaskFrequenciesAction;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -137,7 +137,7 @@ describe('TaskFrequencies Integration', function () {
 
     it('integrates with Laravel service container', function () {
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
-        Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $actionFromContainer);
+        Assert::assertSame(GetTaskFrequenciesAction::class, $actionFromContainer::class);
     });
 
     it('handles concurrent access correctly', function () {
@@ -173,7 +173,6 @@ describe('TaskFrequencies Integration', function () {
                 $action->execute();
                 Assert::fail('Expected exception for invalid config');
             } catch (Exception $exception) {
-                Assert::assertInstanceOf(Exception::class, $exception);
             }
         }
     });

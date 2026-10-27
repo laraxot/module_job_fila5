@@ -224,7 +224,7 @@ $avgTime = $jobMonitor->getAverageProcessingTime();
 - [Xot Module](../../Xot/docs/README.md) - Core base classes
 - [Activity Module](../../Activity/docs/index.md) - Activity logging
 - [Notify Module](../../Notify/docs/index.md) - Notification system
-- [User Module](../../User/docs/readme.md) - User authentication and management
+- [User Module](../../User/docs/README.md) - User authentication and management
 
 ## Troubleshooting
 Common issues and solutions:
@@ -233,8 +233,3 @@ Common issues and solutions:
 - Database connection issues
 - Retry loop problems
 - Worker process crashes
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

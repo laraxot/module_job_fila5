@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Actions\Command;
+namespace Modules\Job\Tests\Unit\Actions\Command;
 
 use Modules\Job\Actions\Command\GetCommandsAction;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\LaravelData\DataCollection;
 
@@ -14,10 +14,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('GetCommandsAction', function (): void {
-    test('can be instantiated', function (): void {
-        $action = new GetCommandsAction;
-        Assert::assertInstanceOf(GetCommandsAction::class, $action);
-    });
 
     test('has correct method signature', function (): void {
         $reflection = new \ReflectionClass(GetCommandsAction::class);
@@ -28,7 +24,7 @@ describe('GetCommandsAction', function (): void {
 
     test('can be resolved from container', function (): void {
         $actionFromContainer = app(GetCommandsAction::class);
-        Assert::assertInstanceOf(GetCommandsAction::class, $actionFromContainer);
+        Assert::assertSame(GetCommandsAction::class, $actionFromContainer::class);
     });
 
     test('uses strict types', function (): void {

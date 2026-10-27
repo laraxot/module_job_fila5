@@ -2,30 +2,27 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Fixtures;
+namespace Modules\Job\Tests\Fixtures;
 
-use Modules\Job\Actions\Command\GetCommandsAction;
 use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
 
-class StubGetCommandsAction extends GetCommandsAction
+/**
+ * Sostituto di GetCommandsAction che restituisce una collezione di comandi fissa
+ * (classe con nome, non anonima).
+ */
+final class StubGetCommandsAction
 {
-    /** @var DataCollection<int, CommandData> */
-    private DataCollection $collection;
-
     /**
-     * @param  DataCollection<int, CommandData>  $collection
+     * @param  DataCollection<int, CommandData>  $commands
      */
-    public function __construct(DataCollection $collection)
-    {
-        $this->collection = $collection;
-    }
+    public function __construct(private readonly DataCollection $commands) {}
 
     /**
      * @return DataCollection<int, CommandData>
      */
     public function execute(): DataCollection
     {
-        return $this->collection;
+        return $this->commands;
     }
 }

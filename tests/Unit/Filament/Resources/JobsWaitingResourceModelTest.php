@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Filament\Resources;
+namespace Modules\Job\Tests\Unit\Filament\Resources;
 
 use Modules\Job\Filament\Resources\JobBatchResource;
 use Modules\Job\Filament\Resources\JobBatchResource\Tables\JobBatchesTable;
@@ -10,7 +10,7 @@ use Modules\Job\Filament\Resources\JobsWaitingResource;
 use Modules\Job\Filament\Resources\JobsWaitingResource\Tables\JobsWaitingsTable;
 use Modules\Job\Models\JobBatch;
 use Modules\Job\Models\JobsWaiting;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 /**

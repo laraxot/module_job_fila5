@@ -1083,8 +1083,3 @@ Do not use it for: real-time messaging (use WebSocket), event streaming (use Kaf
 **Status:** Active (2026-09-06)  
 **Owner:** Job Module  
 **Visionary Intent:** Async mastery for sustainable scale
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

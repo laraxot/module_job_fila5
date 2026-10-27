@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job;
+namespace Modules\Job\Tests;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 use Modules\Job\Providers\JobServiceProvider;
 use Modules\User\Models\User;
 use Modules\User\Providers\UserServiceProvider;
-use Tests\Modules\Xot\XotBaseTestCase;
+use Modules\Xot\Tests\XotBaseTestCase;
 use PHPUnit\Framework\Assert;
 
 /**

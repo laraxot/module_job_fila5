@@ -156,8 +156,3 @@ $traits = \Safe\class_uses($action);
 
 **Status**: ✅ COMPLETATO AL 100%
 **Prossimo Modulo**: Lang (185 errori) o Cms (717 errori)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

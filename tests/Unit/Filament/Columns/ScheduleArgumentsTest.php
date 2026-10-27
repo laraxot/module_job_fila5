@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Filament\Columns;
+namespace Modules\Job\Tests\Unit\Filament\Columns;
 
-use Tests\Modules\Job\Fixtures\ScheduleArgumentsProbe;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\Fixtures\ScheduleArgumentsProbe;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

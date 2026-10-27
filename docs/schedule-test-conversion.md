@@ -89,8 +89,3 @@ Total: 12 tests, 10 converted from PHPUnit to Pest
 ---
 **Date**: [DATE]
 **Status**: Complete
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

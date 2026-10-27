@@ -1,99 +1,68 @@
 ---
-title: "PRODUCT LAUNCH PLAN"
+title: "product launch plan"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "PRODUCT LAUNCH PLAN"
+qmd: "product launch plan"
 issues: []
 discussions: []
 status: draft
 ---
 
-# Job Module - Product Launch Plan
+# Job - Product Launch Plan
 
-**Module:** Job  
-**Version:** 1.0.0  
-**Last Updated:** March 12, 2026  
-**Owner:** Product Team
+> Piano di lancio. Modulo.
+> Launch readiness stimata: 58%.
 
----
-## Launch Objectives
+## Obiettivo del lancio
 
-1. **Product:** Deploy queue infrastructure
-2. **Reliability:** 99%+ job success rate
-3. **Capacity:** Handle 10K jobs/day
-4. **Observability:** Basic monitoring in place
+Rilasciare **Job** in modo controllato, misurabile e coerente con il suo ruolo: workflow e processi di job/business operation.
 
----
+## Audience interna
 
-## Pre-Launch Checklist
+- owner di modulo o tema
+- admin/operatori
+- sviluppatori che dipendono dal componente
 
-### T-8 Weeks
-- [ ] Queue backend selected
-- [ ] Architecture designed
-- [ ] Requirements documented
+## Criteri di readiness
 
-### T-6 Weeks
-- [ ] Queue infrastructure deployed
-- [ ] Basic job processing working
-- [ ] Retry logic implemented
+- PRD e roadmap aggiornati
+- test critici verdi
+- smoke test del runtime completato
+- gap P0 documentati o chiusi
 
-### T-4 Weeks
-- [ ] Load testing complete
-- [ ] Monitoring configured
-- [ ] Documentation written
+## Piano di rilascio
 
-### T-2 Weeks
-- [ ] Go/No-Go decision
-- [ ] Runbook prepared
-- [ ] Team trained
+### Fase 1 - Internal readiness
+- confermare scope
+- verificare quality gates
+- aggiornare docs e issue
 
-### T-1 Week
-- [ ] Production deployment verified
-- [ ] Smoke tests passed
+### Fase 2 - Controlled rollout
+- abilitare il componente nel flusso reale
+- monitorare errori, regressioni e feedback
 
----
+### Fase 3 - Post-launch review
+- confrontare outcome e target
+- spostare i gap residui nel backlog
 
-## Launch Day Activities
+## Metriche di lancio
 
-| Time | Activity |
-|------|----------|
-| 9:00 AM | Enable queue processing |
-| 10:00 AM | Verify job execution |
-| 2:00 PM | Monitor metrics |
-| 4:00 PM | Review and adjust |
-
----
-
-## Post-Launch Activities
-
-### T+1 Week
-- [ ] Review success rates
-- [ ] Analyze performance
-- [ ] Address issues
-
-### T+4 Weeks
-- [ ] Month 1 metrics review
-- [ ] Capacity planning
-- [ ] Feature prioritization
-
----
-
-## Success Criteria
-
-| Metric | Target |
+| Metrica | Target |
 |--------|--------|
-| **Job Success Rate** | 95%+ |
-| **Daily Capacity** | 10K+ jobs |
-| **Queue Latency** | <5s |
-| **Critical Issues** | 0 |
+| Regressioni P0 | 0 |
+| Issue bloccanti dopo rilascio | < 5% delle issue aperte |
+| Documentazione di supporto aggiornata | 100% |
 
----
+## Rischi
 
-*Last Updated: March 12, 2026*
+- lancio di superfici non ancora supportate dal backend
+- documentazione non aderente al codice reale
+- dipendenze inter-modulo sottostimate
 
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+## Collegamenti
+
+- [PRD](prd.md)
+- [User Research](user-research.md)
+- [Indice centrale](../../../../docs/project/PRODUCT_DOCS_INDEX_2026_03_12.md)

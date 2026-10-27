@@ -65,8 +65,3 @@ Estende `BaseEventServiceProvider` (Laravel) invece di `XotBaseEventServiceProvi
 | 🔴 | BaseModel non conforme | Da risolvere |
 | 🟠 | BaseMorphPivot non conforme | Da risolvere |
 | 🟡 | EventServiceProvider inconsistente | Da standardizzare |
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

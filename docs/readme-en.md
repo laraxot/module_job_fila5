@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "readme en"
 issues: []
 discussions: []
+status: draft
 ---
 
 # ⚙️ Job — English presentation
@@ -24,15 +25,6 @@ discussions: []
 > **Heavy work off the request.** Queues, batches, retries — fast UX under load.
 
 ---
-
-title: "readme en"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme en"
-issues: []
-discussions: []
 ## Why it exists
 
 Geocoding, exports, bulk notifications must not block users.
@@ -73,8 +65,3 @@ Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filamen
 ---
 
 **Module** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -10,12 +10,8 @@ discussions: []
 module: theme
 topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
-status: stub
+status: superseded
+superseded_by: filament-4x-compatibility.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

@@ -2,7 +2,7 @@
 type: note
 tags: [documentation]
 created: 2026-09-26
-qmd: "PATTERNS"
+qmd: "patterns"
 issues: []
 discussions: []
 title: "Job Module Architectural Patterns"
@@ -458,8 +458,3 @@ public function handle(Invoice $invoice): void
 **Document:** PATTERNS.md  
 **Version:** 1.0  
 **Status:** Active (2026-07-28)
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

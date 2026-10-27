@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "packages"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Pacchetti del Modulo Job
@@ -88,20 +89,6 @@ discussions: []
 ### Versione Incoming
 
 ---
-
-title: "packages"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "packages"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

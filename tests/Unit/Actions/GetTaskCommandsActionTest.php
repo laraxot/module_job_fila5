@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Actions;
+namespace Modules\Job\Tests\Unit\Actions;
 
 use Illuminate\Support\Collection;
 use Modules\Job\Actions\GetTaskCommandsAction;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
@@ -15,10 +15,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('GetTaskCommandsAction', function (): void {
-    test('can be instantiated', function (): void {
-        $action = new GetTaskCommandsAction;
-        Assert::assertInstanceOf(GetTaskCommandsAction::class, $action);
-    });
 
     test('has correct method signature', function (): void {
         $reflection = new \ReflectionClass(GetTaskCommandsAction::class);
@@ -32,7 +28,7 @@ describe('GetTaskCommandsAction', function (): void {
 
     test('can be resolved from container', function (): void {
         $actionFromContainer = app(GetTaskCommandsAction::class);
-        Assert::assertInstanceOf(GetTaskCommandsAction::class, $actionFromContainer);
+        Assert::assertSame(GetTaskCommandsAction::class, $actionFromContainer::class);
     });
 
     test('uses QueueableAction trait', function (): void {

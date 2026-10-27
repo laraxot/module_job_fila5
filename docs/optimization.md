@@ -12,8 +12,3 @@ status: draft
 
 https://filamentphp.com/community/danharrin-fast-table-pagination
 
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
