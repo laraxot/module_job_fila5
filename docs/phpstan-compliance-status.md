@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan compliance status"
 issues: []
 discussions: []
-<<<<<<< .merge_file_5rIsG5
-=======
 status: draft
->>>>>>> .merge_file_FqaQID
 ---
 
 # PHPStan Level 10 Compliance Status

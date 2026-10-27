@@ -13,10 +13,8 @@ discussions:
   - "https://github.com/laraxot/base_techplanner_fila5/discussions/47"
 related:
   - "../../../../docs/stories/STORY-001-code-quality-moduli-temi.md"
-<<<<<<< .merge_file_lyKCax
-=======
-status: draft
->>>>>>> .merge_file_AWvPU3
+status: superseded
+superseded_by: ../code-quality-improvement-report.md
 ---
 
 # Code Quality Improvement Report — Job

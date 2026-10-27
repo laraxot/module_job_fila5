@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: migration-filament
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_ZEDNnj
-=======
 status: stub
->>>>>>> .merge_file_EAbcIO
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

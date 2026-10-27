@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: api-integration
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_kxioqT
-=======
 status: stub
->>>>>>> .merge_file_wJ5Wo4
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

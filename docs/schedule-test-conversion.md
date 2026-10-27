@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "schedule test conversion"
 issues: []
 discussions: []
-<<<<<<< .merge_file_34lLbP
-=======
 status: draft
->>>>>>> .merge_file_2Lea8W
 ---
 
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
@@ -90,17 +87,5 @@ it('can do something', function () {
 Total: 12 tests, 10 converted from PHPUnit to Pest
 
 ---
-<<<<<<< .merge_file_34lLbP
-
-title: "schedule test conversion"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "schedule test conversion"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_2Lea8W
 **Date**: [DATE]
 **Status**: Complete

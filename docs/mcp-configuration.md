@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "mcp configuration"
 issues: []
 discussions: []
-<<<<<<< .merge_file_3oWt2s
-=======
 status: draft
->>>>>>> .merge_file_SKrKk1
 ---
 
 # MCP Server Configuration - Job Module
@@ -20,18 +17,6 @@ status: draft
 **MCP Servers**: Asana, ClickUp, Filesystem, Database, Redmine (Planned)
 
 ---
-<<<<<<< .merge_file_3oWt2s
-
-title: "mcp configuration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp configuration"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_SKrKk1
 ## 📋 Overview
 
 The Job module's MCP configuration enables AI assistants to interact with:

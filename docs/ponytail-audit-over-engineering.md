@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "ponytail audit over engineering"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Ponytail audit — Job (over-engineering)
@@ -36,8 +37,4 @@ Vedi [wiki/concepts/model-policy-laravel-contract.md](./wiki/concepts/model-poli
 - [00-INDEX.md](./00-INDEX.md)
 - [Xot audit](../../Xot/docs/ponytail-audit-over-engineering.md)
 - [model-policy-laravel-contract.md](./wiki/concepts/model-policy-laravel-contract.md)
-<<<<<<< .merge_file_RC98kw
-- [policy-restoration-incident.md](./policy-restoration-incident.md)
-=======
 - [policy-restoration-incident.md](./wiki/concepts/policy-restoration-incident.md)
->>>>>>> .merge_file_d3uB98

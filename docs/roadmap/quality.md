@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "quality"
 issues: []
 discussions: []
-<<<<<<< .merge_file_IUXNUp
-=======
 status: draft
->>>>>>> .merge_file_R73fJx
 ---
 
 # Checklist qualità - Job Module

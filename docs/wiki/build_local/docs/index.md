@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_jhyNlj
-=======
 ---
 title: "Documentation Index"
 type: index
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, job, wiki]
 qmd: "documentation index job"
 ---
->>>>>>> .merge_file_UmEiVS
 # Documentation Index
 
 Modulo: Job / build_local

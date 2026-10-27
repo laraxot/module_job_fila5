@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: schedule-crud
 canonical: ../../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_c4d3cv
-=======
 status: stub
->>>>>>> .merge_file_mAU4IT
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep

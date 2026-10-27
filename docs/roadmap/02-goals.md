@@ -7,10 +7,8 @@ updated: 2026-09-26
 qmd: "02 goals"
 issues: []
 discussions: []
-<<<<<<< .merge_file_jmVmtc
-=======
-status: draft
->>>>>>> .merge_file_19LSsp
+status: superseded
+superseded_by: goals.md
 ---
 
 # Goals - Job

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "integrations"
 issues: []
 discussions: []
-<<<<<<< .merge_file_LWiFxH
-=======
 status: draft
->>>>>>> .merge_file_zqtP4P
 ---
 
 # Integrazioni
@@ -109,18 +106,6 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 ### Versione Incoming
 
 ---
-<<<<<<< .merge_file_LWiFxH
-
-title: "integrations"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "integrations"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_zqtP4P
 ### Versione Incoming
 
 ---

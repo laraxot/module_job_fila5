@@ -13,10 +13,7 @@ related:
   - ../../merge-conflicts-list.md
   - ../../code-redundancy-audit.md
   - ../../../../../../docs/chat/handoff-job-lang-merge-phpstan-confidence.md
-<<<<<<< .merge_file_sPEg3h
-=======
 status: draft
->>>>>>> .merge_file_aksYdT
 ---
 
 # Checkpoint confidenza — modulo Job
