@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Traits;
+namespace Modules\Job\Tests\Unit\Traits;
 
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use Modules\Job\Traits\FormatSeconds;
 use PHPUnit\Framework\Assert;
 

@@ -1,7 +1,6 @@
 ---
 title: "Job — scopo del modulo e come raggiungerlo meglio"
 type: concept
-status: active
 created: 2026-09-02
 tags: [job, purpose, code, import, export, fallimenti, schedule]
 qmd: "job scopo modulo code queue import export failed jobs batch schedule fallimenti visibili"
@@ -13,6 +12,8 @@ issues:
 discussions:
   # DA CREARE — vedi sopra.
   - "https://github.com/provtv/module_job_fila5/discussions/"
+status: superseded
+superseded_by: ../purpose.md
 ---
 
 # Job — perche' esiste

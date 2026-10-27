@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit;
+namespace Modules\Job\Tests\Unit;
 
 use Modules\Job\Actions\GetTaskFrequenciesAction;
-use Tests\Modules\Job\TestCase;
-use Tests\Modules\Xot\ModuleDeepCoverage;
+use Modules\Job\Tests\TestCase;
+use Modules\Xot\Tests\ModuleDeepCoverage;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-job-db');

@@ -2,13 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Feature;
+namespace Modules\Job\Tests\Feature;
 
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Providers\JobServiceProvider;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 it('has a simple passing test', function () {
-    Assert::assertSame('job', 'job');
+    Assert::assertTrue(class_exists(JobServiceProvider::class));
+    Assert::assertSame('Job', (new JobServiceProvider(app()))->name);
 });

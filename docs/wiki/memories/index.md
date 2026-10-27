@@ -1,3 +1,11 @@
+---
+title: "Job Module - memories Index"
+type: index
+status: draft
+updated: 2026-10-15
+tags: [docs, job, wiki]
+qmd: "job module - memories index job"
+---
 # Job Module - memories Index
 
 ## Purpose

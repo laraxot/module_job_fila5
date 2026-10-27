@@ -186,14 +186,9 @@ $media = $record->getFirstMedia($attachment);
 
 ## 🔗 Collegamenti
 
-- [Correzioni Job Dettagliate](phpstan-correzioni-2025-11.md)
+- [Correzioni Job Dettagliate](phpstan-correzioni-livello-modulo-job.md)
 - [PHPStan Level 10 Fixes](phpstan-level10-fixes.md)
 - [Business Logic Overview](business-logic-overview.md)
 
 ---
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

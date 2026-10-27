@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit;
+namespace Modules\Job\Tests\Unit;
 
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Translation\PotentiallyTranslatedString;
@@ -25,7 +25,7 @@ use Modules\Job\Models\ScheduleHistory;
 use Modules\Job\Models\Task;
 use Modules\Job\Models\TaskComment;
 use Modules\Job\Rules\Corn;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use Modules\User\Models\Team;
 use Modules\Xot\Contracts\UserContract;
 use PHPUnit\Framework\Assert;

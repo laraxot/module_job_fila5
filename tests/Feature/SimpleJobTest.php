@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Job\Models\Job;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -24,8 +24,6 @@ describe('Job Business Logic', function () {
         ];
 
         $job = Job::create($jobData);
-
-        Assert::assertInstanceOf(Job::class, $job);
 
         Assert::assertSame('default', $job->queue);
 

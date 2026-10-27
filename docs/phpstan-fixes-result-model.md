@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "phpstan fixes january "
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: phpstan-fixes-january-2025.md
 ---
 
 # PHPStan Fixes - Gennaio 2025
@@ -42,8 +43,3 @@ status: draft
 - **Errori PHPStan**: 0
 - **File corretti**: 1
 - **Pattern applicati**: PHPDoc Contracts
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

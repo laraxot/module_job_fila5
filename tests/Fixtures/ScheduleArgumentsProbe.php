@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Fixtures;
+namespace Modules\Job\Tests\Fixtures;
 
 use Modules\Job\Filament\Columns\ScheduleArguments;
 

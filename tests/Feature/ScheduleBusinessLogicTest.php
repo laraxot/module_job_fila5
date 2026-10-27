@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Feature;
+namespace Modules\Job\Tests\Feature;
 
 use Modules\Job\Enums\Status;
 use Modules\Job\Models\Schedule;
 use Modules\Job\Models\ScheduleHistory;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);

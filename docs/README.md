@@ -4,13 +4,13 @@ type: documentation
 module: Job
 tags: [module, documentation]
 created: 2026-06-05
-updated: 2026-10-15
+updated: 2026-10-23
 qmd: "job docs README ownership code map limiti scheduler code"
 issues: []
 discussions: []
 related:
   - "../README.md"
-  - "./00-INDEX.md"
+  - "./00-index.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
   - "./stories/docs-ingressi-job.story.md"
 status: active
@@ -57,10 +57,10 @@ Import::class       // + Export, FailedImportRow
 ## Servizi e Actions
 
 La logica di business nuova vive in Spatie Queueable Actions (`app/Actions/**`,
-metodo `execute()`). Non esiste piu' nessun service: `Modules\Job\Services\ScheduleService`
-e' stato eliminato (story [2026-10-08 services-to-actions](./stories/services-to-actions-job.story.md);
-verificato il 2026-10-14: `app/Services/` non esiste e nessun file di `app/` o `tests/` cita
-`ScheduleService`). Le classi `JobDispatcher`, `QueueManager`, `JobService`, `JobScheduler`,
+metodo `execute()`). Non esiste piu' nessun service: `ScheduleService` e' stato eliminato
+(story [2026-10-08 services-to-actions](./stories/services-to-actions-job.story.md));
+`ScheduleObserver` e `ScheduleClearCacheCommand` usano direttamente
+`ClearScheduleCacheAction`. Le classi `JobDispatcher`, `QueueManager`, `JobService`, `JobScheduler`,
 `JobMonitor` (come classe di servizio) e `FailureHandler`, citate in versioni precedenti di
 questi docs (in particolare [index.md](./index.md)), non esistono nel modulo.
 
@@ -99,7 +99,7 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 
 ## Collegamenti
 
-- [Architettura](./architecture.md)
+- [Architettura](./ARCHITECTURE.md)
 - [Inventario Livewire e widget Filament](./bmad/livewire-inventory.md)
 - [Xot base](../../Xot/docs/README.md)
 - [Notify](../../Notify/docs/README.md) per le notifiche di fallimento job
@@ -119,15 +119,3 @@ rimossi e che il contenuto di `_archive` e' in `docs-archive-2026/` alla radice 
 modulo. Verificato il 2026-10-07: `docs/wiki/` e `docs/build_local/` esistono ancora,
 `docs-archive-2026/` non esiste nel modulo. La pulizia non e' stata applicata in
 questo repo e non e' oggetto della story di merge.
-
-
-## Standing order (qualita' + docs)
-
-- **PHPStan a zero** sul codice del modulo: non ignorare errori, non abbassare il livello, non modificare `phpstan.neon` del progetto. Qualita' + docs + BMAD sono standing order, non opzionali.
-- **Cartella test**: solo `tests/` (minuscolo). `Tests/` e' vietato (case-collision su macOS/Windows e confusione PSR-4).
-- **Nomi `.md`**: kebab-case minuscolo, niente date/timestamp nel nome, unica eccezione `README.md`. Se esistono `readme.md` e `README.md`, resta solo `README.md`.
-- **Docs**: solo dentro `docs/` gia' esistente; consolida invece di moltiplicare file; link relativi; focus su scopo/perche'/business logic (DRY + KISS).
-- **Git**: forward-only (patch in avanti); no reset/revert/checkout come scorciatoia.
-- **BMAD + second brain**: indici e decisioni vivono in `docs/` del modulo; aggiornali quando cambia il perche', non solo il come.
-
-Vedi anche: [00-index.md](./00-index.md) · [index.md](./index.md)
