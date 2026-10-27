@@ -7,10 +7,7 @@ tags: [phpstan, iterable, job, laraxot]
 created: 2026-07-07
 updated: 2026-07-07
 qmd: "job phpstan iterable value type array schedule arguments frontend sortable"
-<<<<<<< .merge_file_hjCe5i
-=======
 status: draft
->>>>>>> .merge_file_GNzukt
 ---
 
 # PHPStan iterable types nel modulo Job

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "index"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Job Module Wiki Index
@@ -16,15 +17,6 @@ discussions: []
 > **Created**: 2026-04-15
 
 ---
-
-title: "index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "index"
-issues: []
-discussions: []
 ## Concepts
 
 _No concept pages created yet_
@@ -62,11 +54,7 @@ _No troubleshooting pages created yet_
 ### Related Project Concepts
 
 - [Laraxot Architecture](../../docs/wiki/concepts/laraxot-architecture.md)
-<<<<<<< .merge_file_H5JgVJ
-- [Actions Over Services](../../docs/wiki/concepts/actions-over-services.md)
-=======
 - [Actions Over Services](../../../../../docs/wiki/concepts/actions-over-services.md)
->>>>>>> .merge_file_4BfBr1
 - [PHPStan Level 10](../../docs/wiki/concepts/phpstan-level10.md)
 
 ## Module's Role in Project

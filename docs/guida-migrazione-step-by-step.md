@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: guida-migrazione-step-by-step
 canonical: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_NPMPvv
-=======
 status: stub
->>>>>>> .merge_file_iDM76s
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

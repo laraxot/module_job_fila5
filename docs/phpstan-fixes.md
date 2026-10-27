@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "phpstan fixes"
 issues: []
 discussions: []
+status: draft
 ---
 
 # PHPStan Fixes — Job
@@ -16,15 +17,6 @@ discussions: []
 795→0. [#336](https://github.com/laraxot/base_fixcity_fila5/issues/336). `GetTaskFrequenciesAction` + test Assert.
 
 ---
-
-title: "phpstan fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes"
-issues: []
-discussions: []
 ## Storico — Gennaio 2025
 
 ## ✅ Stato complessivo
@@ -100,20 +92,6 @@ protected function getHeaderActions(): array
 
 - [lang-link.md](../../../chart/docs/lang-link.md)
 - [lang-link.md](../../../reporting/docs/lang-link.md)
-<<<<<<< .merge_file_aBnTpT
-- [lang-link.md](../../../gdpr/docs/lang-link.md)
-- [lang-link.md](../../../notify/docs/lang-link.md)
-- [lang-link.md](../../../xot/docs/lang-link.md)
-- [lang-link.md](../../../dental/docs/lang-link.md)
-- [lang-link.md](../../../user/docs/lang-link.md)
-- [lang-link.md](../../../ui/docs/lang-link.md)
-- [lang-link.md](../../../job/docs/lang-link.md)
-- [lang-link.md](../../../media/docs/lang-link.md)
-- [lang-link.md](../../../tenant/docs/lang-link.md)
-- [lang-link.md](../../../activity/docs/lang-link.md)
-- [lang-link.md](../../../patient/docs/lang-link.md)
-- [lang-link.md](../../../cms/docs/lang-link.md)
-=======
 - [lang-link.md](../../Gdpr/docs/lang-link.md)
 - [lang-link.md](../../Notify/docs/lang-link.md)
 - [lang-link.md](../../../xot/docs/lang-link.md)
@@ -126,4 +104,3 @@ protected function getHeaderActions(): array
 - [lang-link.md](../../Activity/docs/lang-link.md)
 - [lang-link.md](../../../patient/docs/lang-link.md)
 - [lang-link.md](../../Cms/docs/lang-link.md)
->>>>>>> .merge_file_DGwQh9

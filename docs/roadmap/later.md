@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "later"
 issues: []
 discussions: []
-<<<<<<< .merge_file_pvsg1u
-=======
 status: draft
->>>>>>> .merge_file_4PSghN
 ---
 
 # Later (Module Job)

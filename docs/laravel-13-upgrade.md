@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "laravel 13 upgrade"
 issues: []
 discussions: []
-<<<<<<< .merge_file_U42RFz
-=======
 status: draft
->>>>>>> .merge_file_qmblXE
 ---
 
 # Upgrade Laravel 13 - Job 🐄✨
@@ -38,15 +35,4 @@ L'upgrade a Laravel 13 per il modulo **Job** non è un mero aggiornamento tecnic
 L'aggiornamento richiede l'esecuzione di `composer go` dalla root per consolidare le dipendenze merged.
 
 ---
-<<<<<<< .merge_file_U42RFz
-title: "laravel 13 upgrade"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel 13 upgrade"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_qmblXE
 **Status**: Purificato e Pronto per il Futuro.

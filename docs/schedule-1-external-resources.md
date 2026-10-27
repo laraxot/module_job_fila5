@@ -11,10 +11,7 @@ tags: [migrato-da-txt, job]
 converted_from: schedule_1.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< .merge_file_ibnP91
-=======
 status: draft
->>>>>>> .merge_file_dPC2sI
 ---
 
 # Schedule 1 — risorse esterne

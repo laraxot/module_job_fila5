@@ -1,14 +1,12 @@
-<<<<<<< .merge_file_oiufUR
-=======
 ---
 title: "Asset binari"
 type: note
-status: draft
 updated: 2026-10-08
 tags: [docs, job, wiki]
 qmd: "asset binari job"
+status: superseded
+superseded_by: ../binary-assets.md
 ---
->>>>>>> .merge_file_8wNio4
 # Asset binari
 
 Gli asset binari sono file normali del repository.

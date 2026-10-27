@@ -1,5 +1,3 @@
-<<<<<<< .merge_file_vjyIb2
-=======
 ---
 title: "Decision Log — Job"
 type: note
@@ -8,7 +6,6 @@ updated: 2026-10-08
 tags: [docs, job]
 qmd: "decision log   job job"
 ---
->>>>>>> .merge_file_ZbItcu
 # Decision Log — Job
 
 A threaded, append-only record of decisions made across BMAD planning workflows.

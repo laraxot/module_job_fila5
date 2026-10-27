@@ -7,10 +7,8 @@ updated: 2026-09-26
 qmd: "00 overview"
 issues: []
 discussions: []
-<<<<<<< .merge_file_eAlPxz
-=======
-status: draft
->>>>>>> .merge_file_EQSeh1
+status: superseded
+superseded_by: overview.md
 ---
 
 # Roadmap overview (Module Job)

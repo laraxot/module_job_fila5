@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
-<<<<<<< .merge_file_XVAOtK
-=======
 status: draft
->>>>>>> .merge_file_FjWiSw
 ---
 
 # Testing in Job

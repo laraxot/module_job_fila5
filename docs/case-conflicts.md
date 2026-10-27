@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "case conflicts"
 issues: []
 discussions: []
-<<<<<<< .merge_file_xcv23T
-=======
 status: draft
->>>>>>> .merge_file_SnxdUL
 ---
 
 # Case-Insensitive File Conflicts

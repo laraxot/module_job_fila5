@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Testing Documentation
@@ -279,11 +280,7 @@ protected function createApplication()
 
 - [Testing Setup Guide](../../../docs/testing-setup.md)
 - [Testing Best Practices](../../../docs/testing-best-practices.md)
-<<<<<<< .merge_file_4SDRQP
-- [Troubleshooting Guide](../../../docs/troubleshooting.md)
-=======
 - [Troubleshooting Guide](../../../../docs/troubleshooting.md)
->>>>>>> .merge_file_Uq5GPX
 
 ## Testing Examples
 
@@ -415,13 +412,4 @@ Following these guidelines will ensure your Job module tests are:
 Remember: Good tests are the foundation of reliable software development.
 
 ---
-
-title: "testing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing"
-issues: []
-discussions: []
 *

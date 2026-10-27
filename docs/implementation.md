@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "implementation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Implementazione Job
@@ -307,26 +308,13 @@ class JobPageTest extends TestCase
 ### Versione HEAD
 
 ## Collegamenti tra versioni di implementation.md
-<<<<<<< .merge_file_7qoGUO
-* [implementation.md](../../../gdpr/docs/implementation.md)
-=======
 * [implementation.md](../../Gdpr/docs/implementation.md)
->>>>>>> .merge_file_betiE3
 * [implementation.md](../../../xot/docs/implementation.md)
 * [implementation.md](../../../job/docs/implementation.md)
 
 ### Versione Incoming
 
 ---
-
-title: "implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "implementation"
-issues: []
-discussions: []
 ### Versione Incoming
 
 ---

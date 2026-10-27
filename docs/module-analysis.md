@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "module analysis"
 issues: []
 discussions: []
-<<<<<<< .merge_file_GPrIEN
-=======
 status: draft
->>>>>>> .merge_file_ejZOrw
 ---
 
 # Job Module - Comprehensive Analysis

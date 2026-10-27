@@ -46,4 +46,4 @@ Soluzione: riuso di `Status` (nessun enum nuovo), costanti rimosse.
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
 
-Dev story: [2026-10-06-phpstan-cleanup-job.dev.md](./2026-10-06-phpstan-cleanup-job.dev.md)
+Dev story: [2026-10-06-phpstan-cleanup-job.dev.md](./phpstan-cleanup-job-dev.dev.md)

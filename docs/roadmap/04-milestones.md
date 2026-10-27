@@ -7,10 +7,8 @@ updated: 2026-09-26
 qmd: "04 milestones"
 issues: []
 discussions: []
-<<<<<<< .merge_file_jJnEpW
-=======
-status: draft
->>>>>>> .merge_file_2yBonz
+status: superseded
+superseded_by: milestones.md
 ---
 
 # Milestones - Job

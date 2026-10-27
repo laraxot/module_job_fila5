@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "product requirements"
 issues: []
 discussions: []
-<<<<<<< .merge_file_YhkMe1
-=======
 status: draft
->>>>>>> .merge_file_HN62vr
 ---
 
 # Product Requirements Document (PRD)
@@ -27,18 +24,6 @@ status: draft
 | **Repository** | laraxot/module_job_fila5 |
 
 ---
-<<<<<<< .merge_file_YhkMe1
-
-title: "product requirements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "product requirements"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_HN62vr
 ## 1. Panoramica del Prodotto
 
 ### Descrizione Breve

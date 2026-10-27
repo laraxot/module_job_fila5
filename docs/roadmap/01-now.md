@@ -7,10 +7,8 @@ updated: 2026-09-26
 qmd: "01 now"
 issues: []
 discussions: []
-<<<<<<< .merge_file_gE1Bpr
-=======
-status: draft
->>>>>>> .merge_file_6X0T4A
+status: superseded
+superseded_by: now.md
 ---
 
 # Now (Module Job)

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "product launch plan"
 issues: []
 discussions: []
-<<<<<<< .merge_file_C1VB6i
-=======
 status: draft
->>>>>>> .merge_file_B5TXXW
 ---
 
 # Job - Product Launch Plan

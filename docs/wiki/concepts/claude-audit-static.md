@@ -13,10 +13,7 @@ discussions:
 related:
   - ../../../../../../bashscripts/tools/run-claude-audit-module-static.sh
   - ../../../../../../bashscripts/tools/claude-audit-module-static-boost.sh
-<<<<<<< .merge_file_4ddYIQ
-=======
 status: draft
->>>>>>> .merge_file_RJ35e8
 ---
 
 # claude-audit static (Job)

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "USER RESEARCH"
 issues: []
 discussions: []
-<<<<<<< .merge_file_hC9g6a
-=======
 status: draft
->>>>>>> .merge_file_RowKnt
 ---
 
 # Job Module - User Research
@@ -21,18 +18,6 @@ status: draft
 **Owner:** Product Team
 
 ---
-<<<<<<< .merge_file_hC9g6a
-
-title: "USER RESEARCH"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "USER RESEARCH"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_RowKnt
 ## Research Goals
 
 1. Understand job processing pain points

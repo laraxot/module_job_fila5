@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "dependency intelligence"
 issues: []
 discussions: []
-<<<<<<< .merge_file_eZUcAw
-=======
 status: draft
->>>>>>> .merge_file_VY2rGw
 ---
 
 # Dependency Intelligence - Module Job

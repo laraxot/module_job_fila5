@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: merge-conflict-files-list
 canonical: ../../../Themes/docs/shared-components/merge-conflict-files-list.md
-<<<<<<< .merge_file_DZj3RD
-=======
 status: stub
->>>>>>> .merge_file_WK5kN9
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/merge-conflict-files-list.md

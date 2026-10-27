@@ -10,10 +10,7 @@ confidence: high
 tags: [queueable-action, spatie, architecture, laraxot, job]
 related:
   - Modules/Xot/docs/queueable-actions.md
-<<<<<<< .merge_file_R4YaHO
-=======
 status: draft
->>>>>>> .merge_file_BAVeZO
 ---
 
 # Queueable Actions — Job Module Doctrine

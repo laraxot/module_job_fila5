@@ -14,6 +14,8 @@ related:
   - ../stories/12.1.retire-job-http-livewire.story.md
   - ../../../Cms/docs/bmad/livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-inventory.md
+tags: [docs, job, bmad]
+qmd: "inventario: livewire http → filament   modulo job job"
 ---
 
 # Inventario: Livewire HTTP → Filament — modulo Job
