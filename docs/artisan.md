@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "artisan"
 issues: []
 discussions: []
-<<<<<<< .merge_file_xrVBhw
-=======
 status: draft
->>>>>>> .merge_file_GJjfI6
 ---
 
 https://fly.io/laravel-bytes/streaming-to-the-browser-with-livewire/

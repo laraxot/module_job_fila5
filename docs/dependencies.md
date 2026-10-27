@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "dependencies"
 issues: []
 discussions: []
-<<<<<<< .merge_file_X5iqKn
-=======
 status: draft
->>>>>>> .merge_file_vZQ0xJ
 ---
 
 # Dependencies (Module Job)

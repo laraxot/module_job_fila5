@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: bmad-method
 canonical: ../../../../Themes/docs/shared-components/bmad-method.md
-<<<<<<< .merge_file_ShE5eR
-=======
 status: stub
->>>>>>> .merge_file_XnpbPi
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/bmad-method.md

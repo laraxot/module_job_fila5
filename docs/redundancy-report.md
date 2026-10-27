@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "redundancy report"
 issues: []
 discussions: []
-<<<<<<< .merge_file_nuBcAc
-=======
 status: draft
->>>>>>> .merge_file_nzRFUi
 ---
 
 - Inventario [ridondanze cross-modulo](../docs/redundancy-report.md)

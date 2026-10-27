@@ -7,10 +7,8 @@ updated: 2026-09-26
 qmd: "04 risks"
 issues: []
 discussions: []
-<<<<<<< .merge_file_e6zCJU
-=======
-status: draft
->>>>>>> .merge_file_sREVCs
+status: superseded
+superseded_by: risks.md
 ---
 
 # Risks and dependencies (Module Job)

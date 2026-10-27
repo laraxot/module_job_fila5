@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "readme en"
 issues: []
 discussions: []
+status: draft
 ---
 
 # ⚙️ Job — English presentation
@@ -24,15 +25,6 @@ discussions: []
 > **Heavy work off the request.** Queues, batches, retries — fast UX under load.
 
 ---
-
-title: "readme en"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "readme en"
-issues: []
-discussions: []
 ## Why it exists
 
 Geocoding, exports, bulk notifications must not block users.

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "PRODUCT LAUNCH PLAN"
 issues: []
 discussions: []
-<<<<<<< .merge_file_wQlv6R
-=======
 status: draft
->>>>>>> .merge_file_IlKQPt
 ---
 
 # Job Module - Product Launch Plan
@@ -21,18 +18,6 @@ status: draft
 **Owner:** Product Team
 
 ---
-<<<<<<< .merge_file_wQlv6R
-
-title: "PRODUCT LAUNCH PLAN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PRODUCT LAUNCH PLAN"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_IlKQPt
 ## Launch Objectives
 
 1. **Product:** Deploy queue infrastructure

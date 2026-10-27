@@ -12,10 +12,7 @@ tags: [xotbase, filament, tables, enforcement]
 related:
   - phpstan-schedule-schema-return-type.md
   - ../../../../../../docs/wiki/concepts/xotbase-table-columns-enforcement.md
-<<<<<<< .merge_file_rnN4tV
-=======
 status: draft
->>>>>>> .merge_file_iFYVWl
 ---
 
 # Job Module: XotBaseResourceTable Columns

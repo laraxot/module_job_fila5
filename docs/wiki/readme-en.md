@@ -8,6 +8,7 @@ updated: 2026-07-14
 qmd: "readme en"
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---
 # ⚙️ Job — English presentation
 
@@ -50,11 +51,7 @@ Geocoding, exports, bulk notifications must not block users.
 
 Scale **without fear** — async done right.
 
-<<<<<<< .merge_file_LdNas0
-Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
-=======
 Frontoffice stack: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — see [STORY-133](../../../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
->>>>>>> .merge_file_oK3a6k
 
 ---
 

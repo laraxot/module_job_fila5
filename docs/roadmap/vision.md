@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "vision"
 issues: []
 discussions: []
-<<<<<<< .merge_file_IEROLP
-=======
 status: draft
->>>>>>> .merge_file_nAJx6Z
 ---
 
 # Visione - Job Module

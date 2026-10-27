@@ -9,11 +9,8 @@ issues: []
 discussions: []
 module: theme
 topic: phpstan-correzioni-nov
-canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-2025-11.md
-<<<<<<< .merge_file_dQW92X
-=======
+canonical: ../../../Themes/docs/shared-components/phpstan-correzioni-livello-modulo-job.md
 status: stub
->>>>>>> .merge_file_oNZcZq
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-2025-11.md
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-correzioni-livello-modulo-job.md

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "code quality report"
 issues: []
 discussions: []
-<<<<<<< .merge_file_N4Z6oR
-=======
 status: draft
->>>>>>> .merge_file_7auNwD
 ---
 
 # Code quality — modulo Job

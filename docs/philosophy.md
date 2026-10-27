@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "philosophy"
 issues: []
 discussions: []
-<<<<<<< .merge_file_Q3Mu7w
-=======
 status: draft
->>>>>>> .merge_file_siwLti
 ---
 
 # Job Module: Philosophy, Purpose, and Design Principles

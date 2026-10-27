@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "roadmap 2025"
 issues: []
 discussions: []
-<<<<<<< .merge_file_XtSRYA
-=======
 status: draft
->>>>>>> .merge_file_JjaOpK
 ---
 
 # 🎯 JOB MODULE - ROADMAP 2025
@@ -22,18 +19,6 @@ status: draft
 **Filament**: 🚧 4.x Compatibile  
 
 ---
-<<<<<<< .merge_file_XtSRYA
-
-title: "roadmap 2025"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap 2025"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_JjaOpK
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Job** [descrizione del modulo].

@@ -10,10 +10,8 @@ discussions: []
 module: theme
 topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
-<<<<<<< .merge_file_Z61TRj
-=======
-status: stub
->>>>>>> .merge_file_83JLm7
+status: superseded
+superseded_by: filament-4x-compatibility.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md

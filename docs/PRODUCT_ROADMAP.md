@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "PRODUCT ROADMAP"
 issues: []
 discussions: []
-<<<<<<< .merge_file_pHxuRa
-=======
 status: draft
->>>>>>> .merge_file_QZGGyO
 ---
 
 # Job Module - Product Roadmap
@@ -22,18 +19,6 @@ status: draft
 **Status:** In Development
 
 ---
-<<<<<<< .merge_file_pHxuRa
-
-title: "PRODUCT ROADMAP"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PRODUCT ROADMAP"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_QZGGyO
 ## Vision Statement
 
 To build a **comprehensive job queue and background processing system** that ensures reliable, scalable, and observable asynchronous task execution across the platform.

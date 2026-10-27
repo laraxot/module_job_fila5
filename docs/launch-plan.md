@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "launch plan"
 issues: []
 discussions: []
-<<<<<<< .merge_file_GI7fzP
-=======
 status: draft
->>>>>>> .merge_file_MegERH
 ---
 
 # Product Launch Plan: Job Module

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "testcase philosophy analysis"
 issues: []
 discussions: []
-<<<<<<< .merge_file_JCFgj6
-=======
 status: draft
->>>>>>> .merge_file_q7YPib
 ---
 
 # TestCase Philosophy Analysis - Job Module
@@ -71,18 +68,6 @@ protected function configureTestConnections(): void
    - ❌ Commenti che non aggiungono valore
 
 ---
-<<<<<<< .merge_file_JCFgj6
-
-title: "testcase philosophy analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testcase philosophy analysis"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_q7YPib
 ## La Filosofia CORRETTA
 
 ### Principio Fondamentale

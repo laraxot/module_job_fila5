@@ -10,10 +10,7 @@ discussions: []
 module: theme
 topic: rules-testing-no-migrate-fresh
 canonical: ../../../Themes/docs/shared-components/rules-testing-no-migrate-fresh.md
-<<<<<<< .merge_file_J3euxt
-=======
 status: stub
->>>>>>> .merge_file_2uEv3f
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/rules-testing-no-migrate-fresh.md

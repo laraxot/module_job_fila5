@@ -44,9 +44,9 @@ una scelta: oggi le tabelle di Job stanno nel database applicativo.
 
 ## I confini, e dove oggi sono rotti
 
-### Un Service e le sue tre incarnazioni
+### Una conversione storica, non un'API corrente
 
-`app/Services/ScheduleService.php` (59 righe) viola la policy no-services del progetto.
+Il precedente `app/Services/ScheduleService.php` violava la policy no-services del progetto ed è stato rimosso.
 Il punto non è stilistico: le sue due funzioni esistono già come Action, **in doppia
 copia**.
 
