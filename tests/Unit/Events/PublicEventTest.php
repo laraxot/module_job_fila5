@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Events;
+namespace Modules\Job\Tests\Unit\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Modules\Job\Events\PublicEvent;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;

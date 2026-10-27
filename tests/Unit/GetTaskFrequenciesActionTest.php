@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Job\Actions\GetTaskFrequenciesAction;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
@@ -13,7 +13,7 @@ uses(TestCase::class);
 describe('GetTaskFrequenciesAction', function (): void {
     test('can be instantiated', function (): void {
         $action = new GetTaskFrequenciesAction;
-        Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $action);
+        Assert::assertSame(GetTaskFrequenciesAction::class, $action::class);
     });
 
     test('has queueable action trait', function (): void {
@@ -84,7 +84,7 @@ describe('GetTaskFrequenciesAction', function (): void {
 
     test('can be used with dependency injection', function (): void {
         $actionFromContainer = app(GetTaskFrequenciesAction::class);
-        Assert::assertInstanceOf(GetTaskFrequenciesAction::class, $actionFromContainer);
+        Assert::assertSame(GetTaskFrequenciesAction::class, $actionFromContainer::class);
     });
 
     test('has proper error handling implementation', function (): void {

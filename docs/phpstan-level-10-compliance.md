@@ -90,8 +90,3 @@ Per mantenere la conformità:
 2. Non usare type hints nelle closure dei metodi collection
 3. Usare PHPDoc per specificare i tipi all'interno delle closure
 4. Verificare i type hints su tutti i nuovi metodi
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

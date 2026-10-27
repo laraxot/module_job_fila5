@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 use Modules\Job\Models\Job;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
@@ -18,7 +18,6 @@ describe('Job Business Logic', function () {
 
         Assert::assertSame('default', $job->queue);
         Assert::assertSame(0, $job->attempts);
-        Assert::assertInstanceOf(Job::class, $job);
     });
 
     it('returns waiting status when not reserved', function () {

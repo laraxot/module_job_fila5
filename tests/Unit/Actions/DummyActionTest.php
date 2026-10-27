@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Actions;
+namespace Modules\Job\Tests\Unit\Actions;
 
 use Modules\Job\Actions\DummyAction;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
@@ -14,10 +14,6 @@ use function Safe\file_get_contents;
 uses(TestCase::class);
 
 describe('DummyAction', function (): void {
-    test('can be instantiated', function (): void {
-        $action = new DummyAction;
-        Assert::assertInstanceOf(DummyAction::class, $action);
-    });
 
     test('has correct method signature', function (): void {
         $reflection = new \ReflectionClass(DummyAction::class);

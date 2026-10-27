@@ -8,6 +8,7 @@ updated: 2026-07-14
 qmd: "readme en"
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---
 # ⚙️ Job — English presentation
 

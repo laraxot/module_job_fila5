@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit\Events;
+namespace Modules\Job\Tests\Unit\Events;
 
 use Modules\Job\Events\Event;
 use Modules\Job\Events\TaskEvent;
-use Tests\Modules\Job\TestCase;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;

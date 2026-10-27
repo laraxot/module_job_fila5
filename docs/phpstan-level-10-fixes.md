@@ -197,8 +197,3 @@ if ($someCondition) {
 
 ---
 **Conclusione:** Il modulo Job è ora completamente compliant con PHPStan Level 10, dimostrando eccellenza nella qualità del codice e type safety.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

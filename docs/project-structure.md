@@ -7,6 +7,7 @@ type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
+status: draft
 ---
 
 # Project Structure — Module **Job**
@@ -50,7 +51,7 @@ tags: [structure, architecture, module]
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
 
 ## Convenzioni
 
@@ -98,10 +99,10 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
-- [Global Rules](wiki/rules)
-- [Global Skills](wiki/skills)
-- [Global Commands](wiki/commands)
-- [Global Memories](wiki/memories)
+- [Global Rules](../../../../docs/wiki/rules/)
+- [Global Skills](../../../../docs/wiki/skills/)
+- [Global Commands](../../../../bashscripts/ai/wiki/commands/)
+- [Global Memories](../../../../docs/wiki/memories/)
 
 ## Setup Iniziale (per nuovi moduli)
 
@@ -123,8 +124,3 @@ git commit -m "docs: add wiki structure for Job"
 
 ---
 *Pattern: On-Demand | Source: docs/wiki/*
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

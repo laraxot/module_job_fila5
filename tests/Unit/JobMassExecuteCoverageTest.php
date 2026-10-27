@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Tests\Modules\Job\Unit;
+namespace Modules\Job\Tests\Unit;
 
 use Mockery;
-use Tests\Modules\Job\TestCase;
-use Tests\Modules\Xot\ModuleExecuteCoverage;
+use Modules\Job\Tests\TestCase;
+use Modules\Xot\Tests\ModuleExecuteCoverage;
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class)->group('no-job-db');

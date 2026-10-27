@@ -8,7 +8,7 @@ use Modules\Job\Models\JobBatch;
 
 /*
  * Bootstrap Pest — modulo Job.
- * Ogni file test dichiara uses(\Tests\Modules\Job\TestCase::class).
+ * Ogni file test dichiara uses(\Modules\Job\Tests\TestCase::class).
  * Vietato pest()->extend() / expect()->extend() (PHPStan method.internalClass).
  */
 

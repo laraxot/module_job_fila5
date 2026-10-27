@@ -41,6 +41,10 @@ ispezionare `$output->fetch()` nello stesso punto del ciclo di vita?". Se la
 risposta è "perché fanno la stessa cosa con un comando diverso", quella è
 un'astrazione che manca, non un debug da pulire.
 
+Nota 2026-10-20: oltre alle sequenze commentate c'era un `dddx($output)` attivo in `beginStream()` di entrambi i widget (riga 90). Il
+metodo, un esperimento mai funzionante e senza chiamanti, ora lancia `LogicException`; il percorso reale e' `beginProcess()`. La
+duplicazione tra i due widget resta aperta. Vedi [debug-calls-removal-job](./stories/debug-calls-removal-job.story.md).
+
 `app/Actions/ExecuteTaskAction.php:15` ha un `// TODO: Implement task
 execution` — per un'Action che si chiama letteralmente "esegui il task", è
 la cosa più onesta e più preoccupante che si possa scrivere in un commento.
@@ -49,7 +53,7 @@ Non esiste una terza opzione confortevole.
 
 ## 2. `docs/` che si documenta due volte da sola
 
-`00-index.md` e `00-index.md` esistono entrambi. `actions.md` e `actions.md`
+`00-index.md` e `00-INDEX.md` esistono entrambi. `actions.md` e `ACTIONS.md`
 pure. Su un filesystem case-insensitive (Mac, la maggior parte dei setup
 Windows) uno dei due letteralmente sovrascrive l'altro al checkout — la
 collisione non è teorica, è già in corso silenziosamente per chiunque non
@@ -93,7 +97,7 @@ ammette candidamente di non fare ancora nulla.
 
 ## In ordine di rischio/sforzo
 
-1. Rimuovere `docs/ACTIONS.md`/`00-index.md` duplicati (dopo aver verificato
+1. Rimuovere `docs/ACTIONS.md`/`00-INDEX.md` duplicati (dopo aver verificato
    quale dei due è aggiornato — non a caso, con `git log -p` su entrambi).
 2. Decidere il destino di `ExecuteTaskAction::execute()` — implementare o
    eliminare, non lasciare un TODO che mente su cosa fa il modulo.
@@ -101,8 +105,3 @@ ammette candidamente di non fare ancora nulla.
    trait o in un'Action comune, poi cancellare i commenti di debug.
 4. Popolare `require-dev` (almeno `larastan/larastan`, `pestphp/pest`) così
    il modulo può certificarsi da solo, non solo come parte del monorepo.
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).

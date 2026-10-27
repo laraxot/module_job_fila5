@@ -44,9 +44,9 @@ una scelta: oggi le tabelle di Job stanno nel database applicativo.
 
 ## I confini, e dove oggi sono rotti
 
-### Un Service e le sue tre incarnazioni
+### Una conversione storica, non un'API corrente
 
-`app/Services/ScheduleService.php` (59 righe) viola la policy no-services del progetto.
+Il precedente `app/Services/ScheduleService.php` violava la policy no-services del progetto ed è stato rimosso.
 Il punto non è stilistico: le sue due funzioni esistono già come Action, **in doppia
 copia**.
 
@@ -237,9 +237,4 @@ grep -rn 'extends \(Resource\|Page\|ListRecords\|CreateRecord\|EditRecord\|Widge
 - [migration-filename-from-model-name](../../../../docs/wiki/rules/migration-filename-from-model-name.md) — 1 modello = 1 migrazione
 - [Sigma — scopo](../../Sigma/docs/scopo.md) — lo stesso esercizio sul modulo adattatore
 - [coverage.md](coverage.md) — il contratto di qualità dei test di questo modulo
-- [ARCHITECTURE.md](architecture.md) — l'architettura già documentata
-
---- BMAD + Second Brain ---
-- Scopo: documentazione tecnica del modulo.
-- Utilità: riferimento sviluppatori/audit.
-- Funzionalità: struttura, dipendenze, convenzioni (no date .md, git avanti).
+- [ARCHITECTURE.md](ARCHITECTURE.md) — l'architettura già documentata
