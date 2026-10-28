@@ -358,7 +358,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-<<<<<<< HEAD
         'scheduled_at' => ['label' => 'Programmato per', 'placeholder' => 'Data e ora programmazione', 'help' => 'Data e ora di programmazione del job', 'tooltip' => 'Quando è programmato', 'helper_text' => '', 'description' => ''],
         'started_at' => ['label' => 'Iniziato il', 'help' => 'Data e ora di inizio del job', 'tooltip' => 'Quando è iniziato', 'helper_text' => '', 'description' => ''],
         'finished_at' => ['label' => 'Completato il', 'help' => 'Data e ora di completamento del job', 'tooltip' => 'Quando è completato', 'helper_text' => '', 'description' => ''],
@@ -366,8 +365,6 @@ return [
         'retry_count' => ['label' => 'Conteggio Riprova', 'help' => 'Numero di tentativi di riprova', 'tooltip' => 'Tentativi di riprova', 'helper_text' => '', 'description' => ''],
         'max_retries' => ['label' => 'Max Riprova', 'placeholder' => 'Numero massimo di riprove', 'help' => 'Numero massimo di tentativi di riprova', 'tooltip' => 'Massimo tentativi', 'helper_text' => '', 'description' => ''],
         'value' => ['label' => 'value', 'placeholder' => 'value', 'helper_text' => '', 'description' => 'value'],
-=======
->>>>>>> bb5d203c (.)
     ],
     'actions' => [
         'create' => [

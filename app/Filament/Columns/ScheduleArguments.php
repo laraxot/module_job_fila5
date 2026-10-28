@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Columns;
 
-<<<<<<< HEAD
 use Illuminate\Support\Collection;
-=======
-use Filament\Tables\Columns\TextColumn;
->>>>>>> bb5d203c (.)
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 

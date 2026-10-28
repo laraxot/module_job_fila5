@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Schemas;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\Textarea;
-=======
->>>>>>> bb5d203c (.)
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
@@ -25,17 +22,11 @@ class JobsWaitingForm extends XotBaseResourceForm
     public function getFormSchema(): array
     {
         return [
-<<<<<<< HEAD
             'queue' => TextInput::make('queue')->required()->maxLength(255),
             'payload' => Textarea::make('payload')->required(),
             'attempts' => TextInput::make('attempts')->numeric()->required(),
             'reserved_at' => TextInput::make('reserved_at')->numeric(),
             'available_at' => TextInput::make('available_at')->numeric()->required(),
-=======
-            Section::make([
-                'name' => TextInput::make('name'),
-            ]),
->>>>>>> bb5d203c (.)
         ];
     }
 }
