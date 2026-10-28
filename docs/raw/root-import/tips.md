@@ -10,8 +10,4 @@ qmd: "tips alias superseded"
 
 Documento identico al canonico: [tips.md](../../tips.md).
 
-<<<<<<< .merge_file_si6bHK
 Canonico: `laravel/Modules/Job/docs/tips.md`. Qui non ci sono istruzioni: seguire il file collegato.
-=======
-Canonico: `laravel/Modules/Job/docs/tips.md`. Qui non ci sono istruzioni: seguire il file collegato.
->>>>>>> .merge_file_TKQGws
