@@ -267,21 +267,12 @@ it('can handle task status transitions', function (): void {
     // Ogni transizione si rilegge dal database: l'attributo in memoria di $task
     // vale il valore passato a update() anche se il salvataggio non avvenisse.
     $task->update(['is_active' => 0]);
-<<<<<<< HEAD
     $deactivated = Task::findOrFail($task->id);
     Assert::assertSame(0, $deactivated->is_active);
 
     $task->update(['is_active' => 1]);
     $reactivated = Task::findOrFail($task->id);
     Assert::assertSame(1, $reactivated->is_active);
-=======
-    Assert::assertSame(0, $task->is_active);
-    // Ripristina is_active a 1 e verifica il valore persistito
-    $task->update(['is_active' => 1]);
-    $reactivatedTask = $task->fresh();
-    Assert::assertNotNull($reactivatedTask);
-    Assert::assertSame(1, $reactivatedTask->is_active);
->>>>>>> bb5d203c (.)
 });
 
 it('can handle task ordering and sorting', function (): void {

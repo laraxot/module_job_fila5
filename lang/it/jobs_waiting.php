@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
     'navigation' => ['label' => 'Jobs in attesa', 'group' => 'Job', 'icon' => 'heroicon-o-cog', 'sort' => 50],
     'fields' => [
         'id' => ['label' => 'ID', 'description' => 'Identificativo univoco del job', 'helper_text' => 'Identificativo del job generato automaticamente', 'tooltip' => ''],
@@ -15,57 +14,6 @@ return [
         'created_at' => ['label' => 'Creato il', 'description' => 'Quando il job è stato creato', 'helper_text' => 'Timestamp in cui il job è stato accodato', 'tooltip' => ''],
         'display_name' => ['label' => 'Nome'],
         'updated_at' => ['label' => 'Aggiornato il'],
-=======
-    'navigation' => [
-        'label' => 'Navigation Label',
-        'group' => 'Job',
-        'icon' => 'heroicon-o-cog',
-        'sort' => 50,
-    ],
-    'fields' => [
-        'id' => [
-            'label' => 'ID',
-            'description' => 'Unique identifier for the job',
-            'helper_text' => 'Auto-generated job identifier',
-            'tooltip' => '',
-        ],
-        'queue' => [
-            'label' => 'Queue',
-            'description' => 'Queue name where the job is waiting',
-            'helper_text' => 'Name of the queue this job belongs to',
-            'tooltip' => '',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-            'description' => 'Job data and parameters',
-            'helper_text' => 'Serialized job data and parameters',
-            'tooltip' => '',
-        ],
-        'attempts' => [
-            'label' => 'Attempts',
-            'description' => 'Number of execution attempts',
-            'helper_text' => 'How many times this job has been attempted',
-            'tooltip' => '',
-        ],
-        'reserved_at' => [
-            'label' => 'Reserved At',
-            'description' => 'When the job was reserved for processing',
-            'helper_text' => 'Timestamp when job was picked up for processing',
-            'tooltip' => '',
-        ],
-        'available_at' => [
-            'label' => 'Available At',
-            'description' => 'When the job becomes available for processing',
-            'helper_text' => 'Timestamp when job becomes available for execution',
-            'tooltip' => '',
-        ],
-        'created_at' => [
-            'label' => 'Created At',
-            'description' => 'When the job was created',
-            'helper_text' => 'Timestamp when job was added to queue',
-            'tooltip' => '',
-        ],
->>>>>>> bb5d203c (.)
     ],
     'actions' => [
         'export' => [
@@ -125,39 +73,10 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'messages' => ['no_jobs' => 'Nessun job in attesa', 'job_processed' => 'Job processato', 'job_cancelled' => 'Job cancellato', 'job_retried' => 'Job riprovato'],
     'statuses' => ['waiting' => 'In Attesa', 'reserved' => 'Riservato', 'delayed' => 'Ritardato', 'ready' => 'Pronto'],
     'priorities' => ['low' => 'Bassa', 'normal' => 'Normale', 'high' => 'Alta', 'urgent' => 'Urgente'],
     'types' => ['default' => 'Default', 'scheduled' => 'Schedulato', 'recurring' => 'Ricorrente', 'batch' => 'Batch'],
     'label' => 'Job in attesa',
     'plural_label' => 'Jobs in attesa',
-=======
-    'messages' => [
-        'no_jobs' => 'Nessun job in attesa',
-        'job_processed' => 'Job processato',
-        'job_cancelled' => 'Job cancellato',
-        'job_retried' => 'Job riprovato',
-    ],
-    'statuses' => [
-        'waiting' => 'In Attesa',
-        'reserved' => 'Riservato',
-        'delayed' => 'Ritardato',
-        'ready' => 'Pronto',
-    ],
-    'priorities' => [
-        'low' => 'Bassa',
-        'normal' => 'Normale',
-        'high' => 'Alta',
-        'urgent' => 'Urgente',
-    ],
-    'types' => [
-        'default' => 'Default',
-        'scheduled' => 'Schedulato',
-        'recurring' => 'Ricorrente',
-        'batch' => 'Batch',
-    ],
-    'label' => 'Jobs Waiting',
-    'plural_label' => 'Jobs Waiting (Plurale)',
->>>>>>> bb5d203c (.)
 ];

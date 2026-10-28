@@ -213,13 +213,7 @@ return [
         'system' => 'Errore di Sistema',
     ],
     'plural' => [
-<<<<<<< HEAD
         'model' => ['label' => 'Jobs Falliti'],
-=======
-        'model' => [
-            'label' => 'failed job.plural.model',
-        ],
->>>>>>> bb5d203c (.)
         'label' => 'Jobs Falliti',
         'sort' => 93,
         'icon' => 'job-failed-job',
