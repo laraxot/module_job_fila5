@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "filament"
 type: note
@@ -9,8 +8,6 @@ qmd: "filament"
 issues: []
 discussions: []
 ---
-=======
->>>>>>> bb5d203c (.)
 
 
 https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailedJobsServiceProvider.php

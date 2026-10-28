@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "duplicate methods analysis"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Analisi Metodi Duplicati - Modulo Job
 
 **Totale Gruppi di Duplicati**:

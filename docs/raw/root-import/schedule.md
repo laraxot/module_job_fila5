@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "schedule"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> bb5d203c (.)
 https://healthchecks.io/
 
 Simple and Effective Cron Job Monitoring

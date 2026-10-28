@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "module analysis"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Job Module - Comprehensive Analysis
 
 ## Module Overview

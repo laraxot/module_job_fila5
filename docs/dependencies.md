@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "dependencies"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Dependencies (Module Job)
 
 Canonical dependency map:

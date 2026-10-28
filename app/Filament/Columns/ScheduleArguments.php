@@ -6,9 +6,10 @@ namespace Modules\Job\Filament\Columns;
 
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Tables\Columns\XotBaseTextColumn;
 use Webmozart\Assert\Assert;
 
-class ScheduleArguments extends TextColumn
+class ScheduleArguments extends XotBaseTextColumn
 {
     protected string $view = 'job::filament.columns.schedule-arguments';
 

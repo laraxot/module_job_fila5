@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Auto-generated forbidden paths — do not edit manually
 # Reason: root cleanup policy (see docs/wiki/rules/root-cleanup-policy.md)
 
@@ -19,8 +18,6 @@ docs/workbench
 scripts
 test-results
 tests/.claude-audit
-=======
->>>>>>> bb5d203c (.)
 # ==============================================
 # LARAXOT MODULE JOB - .GITIGNORE
 # ==============================================
@@ -200,7 +197,6 @@ _docs/
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 docs/archive/agentdb.rvf
 lang/lang
-<<<<<<< HEAD
 .vscode/
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
@@ -260,11 +256,3 @@ app/Application
 
 # module-root-hygiene (story module-root-hygiene)
 docs/graphify
-=======
-audit-coverage/
-tests/AuditCoverage/
-.claude-audit/
-.vscode/
-.devcontainer/
-.vscode/
->>>>>>> bb5d203c (.)

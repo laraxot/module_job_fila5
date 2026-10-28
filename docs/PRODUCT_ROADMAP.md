@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "PRODUCT ROADMAP"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Job Module - Product Roadmap
 
 **Module:** Job  

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "storage server"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> bb5d203c (.)
 Wasabi Hot Cloud Storage
 
 Rabata.io Cloud Storage

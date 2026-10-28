@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "code quality analysis "
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11

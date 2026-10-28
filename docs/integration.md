@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "integration"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Integrazione Documentazione
 
 ## Documentazione Collegata

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "confidence guidelines"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: confidence-guidelines.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Massimizzare il livello di confidenza
 
 1. **Test automatizzati**: copertura >90%, includi test unitari, integrazione, e fine‑to‑end.

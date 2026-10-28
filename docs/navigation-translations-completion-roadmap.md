@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "navigation translations completion roadmap"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Navigation Translations Completion Roadmap - Job Module
 
 **Modulo**: Job  

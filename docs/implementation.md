@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "implementation"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Implementazione Job
 
 ## Struttura del Codice

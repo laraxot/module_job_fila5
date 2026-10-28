@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "log"
 type: note
@@ -20,8 +19,6 @@ status: draft
 - Limite principale emerso: lo scheduler su DB non e' registrato (`JobServiceProvider::registerSchedule()` tutto commentato, `ScheduleObserver` non collegato), le chiavi `job::model`, `job::cache.*`, `jobs.pruning.*` non sono definite.
 - Story: [2026-10-14-docs-ingressi-job](../stories/docs-ingressi-job.story.md). Nota durevole: `bashscripts/ai/wiki/memories/docs-notify-activity-media-job-studio.md`.
 
-=======
->>>>>>> bb5d203c (.)
 ## [2026-06-30] docs | Second brain — policy incident consolidato
 
 - Memoria datata rimossa; canon in [policy-restoration-incident.md](./concepts/policy-restoration-incident.md)

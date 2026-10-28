@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "filament version"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Filament Version Declaration — Job
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

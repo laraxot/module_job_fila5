@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "structure"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Struttura del Modulo Job
 
 ## Panoramica

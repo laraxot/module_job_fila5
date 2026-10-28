@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "dry kiss"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025  

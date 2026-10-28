@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "index"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Job Module Wiki Index
 
 > **Module**: Job

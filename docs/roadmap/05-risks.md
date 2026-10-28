@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "05 risks"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Risks - Job
 
 ## Top Risks

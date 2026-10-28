@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "01 current state"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: current-state.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Current State - Job
 
 ## Baseline

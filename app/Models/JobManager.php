@@ -162,9 +162,9 @@ class JobManager extends BaseModel
         $query = $this->newQuery();
 
         if (config('jobs.pruning.activate')) {
-            $retention_days = config('jobs.pruning.retention_days');
-            if (! is_int($retention_days)) {
-                $retention_days = 365;
+            $retentionDays = config('jobs.pruning.retention_days');
+            if (! is_int($retentionDays)) {
+                $retentionDays = 365;
             }
 
             return $query->where('created_at', '<=', now()->subDays($retentionDays));

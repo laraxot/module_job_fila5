@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "02 next"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: next.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Next (Module Job)
 
 ## Features

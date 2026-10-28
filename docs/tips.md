@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "tips"
 type: note
@@ -10,6 +9,5 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> bb5d203c (.)
-https://dudi.dev/optimize-laravel-database-queries/
+https://dudi.dev/optimize-laravel-database-queries/
+

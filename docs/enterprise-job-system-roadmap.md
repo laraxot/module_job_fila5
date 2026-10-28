@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "enterprise job system roadmap"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Job Module - Comprehensive Job Management System
 
 ## Overview
