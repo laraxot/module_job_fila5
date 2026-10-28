@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions\Command;
 
-use Illuminate\Console\Application;
+use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Support\Collection;
 use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
@@ -22,10 +22,10 @@ class GetCommandsAction
      */
     public function execute(): DataCollection
     {
-        $artisan = app(Application::class);
+        $kernel = app(Kernel::class);
 
         /** @var array<string, Command> $commands */
-        $commands = $artisan->all();
+        $commands = $kernel->all();
 
         /** @var Collection<int, CommandData> $commandsData */
         $commandsData = collect($commands)->map(
