@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "test"
 type: note
@@ -8,3 +9,5 @@ qmd: "test"
 issues: []
 discussions: []
 ---
+=======
+>>>>>>> bb5d203c (.)

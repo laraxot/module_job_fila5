@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "dependency intelligence"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Dependency Intelligence - Module Job
 
 Aggiornato da `composer show` il 2026-03-02.

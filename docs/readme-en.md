@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "readme en"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # ⚙️ Job — English presentation
 
 [![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "schedule test conversion"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
 
 ## Problem

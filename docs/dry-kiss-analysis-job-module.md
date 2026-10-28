@@ -1,3 +1,4 @@
+<<<<<<< HEAD:docs/dry-kiss-analysis-job-module.md
 ---
 title: "dry kiss analysis "
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.):docs/dry-kiss-analysis-.md
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025

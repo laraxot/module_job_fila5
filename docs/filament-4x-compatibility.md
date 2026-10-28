@@ -10,7 +10,10 @@ discussions: []
 module: theme
 topic: filament-4x-compatibility
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+<<<<<<< HEAD
 status: stub
+=======
+>>>>>>> bb5d203c (.)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PRODUCT STRATEGY"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Job Module - Product Strategy
 
 **Module:** Job  

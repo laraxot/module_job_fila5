@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "copilot redundancy audit"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "ponytail audit"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Ponytail audit — Job
 
 **Delta modulo only here.** Ranked list, gate e remediation globale negli hub progetto.

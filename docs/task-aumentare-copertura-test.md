@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "task aumentare copertura test"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Task: Aumentare Copertura Test - Job
 
 **Modulo**: Job

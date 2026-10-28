@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "schedule test wrong schema"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # ScheduleBusinessLogicTest - Wrong Database Schema
 
 ## Problem Discovery

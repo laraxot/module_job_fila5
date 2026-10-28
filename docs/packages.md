@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "packages"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Pacchetti del Modulo Job
 
 ## Pacchetti Utilizzati

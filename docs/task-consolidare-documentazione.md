@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "task consolidare documentazione"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Task: Consolidare Documentazione - Job
 
 **Modulo**: Job

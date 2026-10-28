@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "bottlenecks"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Job Module Performance Bottlenecks
 
 ## Queue Management

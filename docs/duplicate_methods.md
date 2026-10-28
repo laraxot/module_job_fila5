@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "duplicate methods"
 type: note
@@ -11,6 +12,8 @@ status: superseded
 superseded_by: duplicate-methods.md
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Metodi duplicati — Job
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

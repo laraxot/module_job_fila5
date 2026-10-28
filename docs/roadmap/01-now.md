@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "01 now"
 type: note
@@ -11,6 +12,8 @@ status: superseded
 superseded_by: now.md
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Now (Module Job)
 
 ## Stabilization

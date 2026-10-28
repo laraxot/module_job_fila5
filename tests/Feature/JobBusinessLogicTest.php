@@ -4,7 +4,10 @@ declare(strict_types=1);
 use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
 
+=======
+>>>>>>> bb5d203c (.)
 uses(TestCase::class);
 
 describe('Job Business Logic', function () {

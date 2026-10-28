@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "sprint planning meeting"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Job - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo.

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "case conflicts"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Case-Insensitive File Conflicts
 
 File duplicati nel modulo `Job` che differiscono solo per la capitalizzazione:

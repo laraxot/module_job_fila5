@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "PRODUCT LAUNCH PLAN"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Job Module - Product Launch Plan
 
 **Module:** Job  

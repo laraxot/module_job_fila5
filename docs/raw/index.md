@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "index"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Raw Sources — Job
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.

@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "metodi duplicati analisi"
 type: note
 tags: [documentation]
@@ -11,6 +12,11 @@ module: theme
 topic: metodi-duplicati-analisi
 canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
 status: stub
+=======
+module: theme
+topic: metodi-duplicati-analisi
+canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
+>>>>>>> bb5d203c (.)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md

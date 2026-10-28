@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "vision"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Visione - Job Module
 
 Fornire un'infrastruttura robusta e scalabile per:

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "translations"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Traduzioni del Modulo Job
 
 ## Collegamenti

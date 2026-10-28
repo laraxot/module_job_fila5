@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "directory structure rules"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Directory Structure Rules
 
 Per il modulo Job valgono queste regole:

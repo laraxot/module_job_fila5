@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "test"
 type: note
@@ -9,3 +10,5 @@ issues: []
 discussions: []
 status: draft
 ---
+=======
+>>>>>>> bb5d203c (.)

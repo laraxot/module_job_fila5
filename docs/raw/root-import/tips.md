@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "tips"
 type: alias
@@ -11,3 +12,6 @@ qmd: "tips alias superseded"
 Documento identico al canonico: [tips.md](../../tips.md).
 
 Canonico: `laravel/Modules/Job/docs/tips.md`. Qui non ci sono istruzioni: seguire il file collegato.
+=======
+https://dudi.dev/optimize-laravel-database-queries/
+>>>>>>> bb5d203c (.)

@@ -18,6 +18,11 @@ class ActionGroup extends XotBaseActionGroup
 {
     use InteractsWithRecord;
 
+<<<<<<< HEAD
+=======
+    public const string ICON_BUTTON_VIEW = 'job::components.action-group';
+
+>>>>>>> bb5d203c (.)
     protected string $view = 'job::components.action-group';
 
     public function getActions(): array
