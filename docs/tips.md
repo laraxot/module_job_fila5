@@ -9,4 +9,5 @@ issues: []
 discussions: []
 ---
 
-https://dudi.dev/optimize-laravel-database-queries/
+https://dudi.dev/optimize-laravel-database-queries/
+

@@ -151,4 +151,8 @@ Related:
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
 - [Project Wiki Agent Instructions](../wiki/agents.md)
+<<<<<<< .merge_file_JfQQde
 - [Module Documentation](../README.md)
+=======
+- [Module Documentation](../README.md)
+>>>>>>> .merge_file_fvIAGz
