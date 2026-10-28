@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "conflicts"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Risoluzione Conflitti - Job
 
 ## File modificati

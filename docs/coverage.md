@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "coverage"
 type: note
@@ -16,13 +15,6 @@ status: draft
 **Lines Coverage:** N/A (Failed to parse)
 **Test Exit Code:** 2
 
-=======
-# Code Coverage: Job
-
-**Lines Coverage:** N/A (Failed to parse)
-**Test Exit Code:** 2
-
->>>>>>> bb5d203c (.)
 ## Output
 
 ```text

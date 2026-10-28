@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "queueable action"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Standard <nome progetto>: spatie/laravel-queueable-action
 
 In tutto il progetto <nome progetto>, **NON si utilizzano Service class custom**. La business logic asincrona e le azioni riutilizzabili sono gestite SEMPRE tramite [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action).

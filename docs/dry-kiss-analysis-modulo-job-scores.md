@@ -1,3 +1,12 @@
+---
+title: "DRY & KISS Analysis - Modulo Job (punteggi)"
+type: note
+tags: [dry, kiss, job]
+created: 2025-10-15
+updated: 2026-10-28
+status: draft
+---
+
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025  

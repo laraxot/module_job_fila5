@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "code quality analysis"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: ../legacy/code-quality-analysis.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11

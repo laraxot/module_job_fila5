@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 ---
 title: "code quality analysis"
 type: alias
 status: superseded
 canonical: "analysis/code-quality-analysis-.md"
 qmd: "code-quality-analysis- alias superseded"
-=======
+---
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -86,7 +85,6 @@ If statement assignments (variable assignment in condition)
 **⚠️ This module cannot be properly analyzed until syntax errors are fixed.**
 The current analysis is incomplete and only shows partial results from PHPMD before it encountered parsing errors.
 
->>>>>>> bb5d203c (.)
 ---
 
 # code quality analysis

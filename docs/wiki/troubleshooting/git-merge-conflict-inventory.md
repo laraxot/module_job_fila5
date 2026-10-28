@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "git merge conflict inventory"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Git Conflict Inventory
 
 - Date: 2026-04-28

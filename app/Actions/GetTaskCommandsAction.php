@@ -22,8 +22,7 @@ class GetTaskCommandsAction
         $allCommands = collect(Artisan::all());
 
         /** @var Collection<int, Command> $sorted */
-        $sorted = $allCommands->sortBy(static function ($command) {
-            /** @var Command $command */
+        $sorted = $allCommands->sortBy(static function (Command $command) {
             $name = $command->getName();
             Assert::string($name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
             if (mb_strpos($name, ':') === false) {

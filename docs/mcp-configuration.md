@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "mcp configuration"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # MCP Server Configuration - Job Module
 
 

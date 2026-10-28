@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "03 later"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: later.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Later (Module Job)
 
 ## Longer-term ideas

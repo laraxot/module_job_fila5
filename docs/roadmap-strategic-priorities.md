@@ -1,4 +1,3 @@
-<<<<<<< HEAD:docs/roadmap-strategic-priorities.md
 ---
 title: "roadmap "
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.):docs/roadmap-.md
 # Job Module Roadmap 2026
 
 ## ⚙️ Sacred Philosophy: "Automation is Liberation"

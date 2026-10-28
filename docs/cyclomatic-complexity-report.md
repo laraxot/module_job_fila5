@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "cyclomatic complexity report"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Cyclomatic Complexity Report - Module: Job
 
 **Analyzer:** Super Mucca 🐮

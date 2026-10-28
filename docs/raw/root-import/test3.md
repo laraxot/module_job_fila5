@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "test3"
 type: note
@@ -10,6 +9,4 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> bb5d203c (.)
 aa

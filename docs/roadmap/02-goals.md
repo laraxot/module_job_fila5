@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "02 goals"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: goals.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Goals - Job
 
 ## Short Term

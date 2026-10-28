@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "README"
 type: note
 tags: [documentation]
@@ -12,11 +11,6 @@ module: theme
 topic: README
 canonical: ../../../../Themes/docs/shared-components/README-Modules.md
 status: stub
-=======
-module: theme
-topic: README
-canonical: ../../../../Themes/docs/shared-components/README-Modules.md
->>>>>>> bb5d203c (.)
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/README-Modules.md

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "docs health"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Docs Health - Job
 
 ## Snapshot

@@ -9,10 +9,7 @@ issues: []
 discussions: []
 related:
   - ./coding-agent-manifests.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> bb5d203c (.)
 ---
 
 # Job {{TYPE^}} LLM Wiki Agent Instructions
@@ -153,9 +150,5 @@ Related:
 ## Related Documentation
 
 - [Project Wiki Integration](../../docs/wiki/README.md)
-<<<<<<< HEAD
 - [Project Wiki Agent Instructions](../wiki/agents.md)
-=======
-- [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
->>>>>>> bb5d203c (.)
 - [Module Documentation](../README.md)

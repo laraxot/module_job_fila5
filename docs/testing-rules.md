@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "testing rules"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test

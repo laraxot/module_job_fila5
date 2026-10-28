@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "filament"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 status: draft
 ---
-=======
->>>>>>> bb5d203c (.)
 
 
 https://gitlab.com/amvisor/filament-failed-jobs/-/blob/master/src/FilamentFailedJobsServiceProvider.php

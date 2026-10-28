@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "changelog"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Changelog
 
 Tutte le variazioni importanti di Job saranno generate automaticamente da semantic-release.

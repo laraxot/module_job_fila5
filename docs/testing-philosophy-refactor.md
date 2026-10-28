@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "testing philosophy refactor"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Job Module Testing Refactor - The Journey to Zen
 
 ## The Problem (Before Refactor)

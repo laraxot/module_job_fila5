@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "README"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # LLM Wiki (module)
 
 This folder is the module's LLM wiki (docs/wiki). Use it to store synthesized, curated docs optimized for LLM ingestion.

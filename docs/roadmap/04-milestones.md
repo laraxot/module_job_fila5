@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "04 milestones"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: milestones.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Milestones - Job
 
 ## M1 Documentation Baseline

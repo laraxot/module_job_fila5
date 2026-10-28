@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "translation navigation structure"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Translation Navigation Structure - Job Module
 
 ## Problema Identificato

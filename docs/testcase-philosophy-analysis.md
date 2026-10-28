@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "testcase philosophy analysis"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # TestCase Philosophy Analysis - Job Module
 
 ## Il Problema Attuale

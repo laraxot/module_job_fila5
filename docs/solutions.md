@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "solutions"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni

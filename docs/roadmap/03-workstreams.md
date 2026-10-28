@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "03 workstreams"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: workstreams.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Workstreams - Job
 
 ## WS1 Architecture

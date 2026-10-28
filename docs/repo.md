@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "repo"
 type: note
@@ -11,7 +10,5 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 https://github.com/mooxphp/jobs/tree/main
 

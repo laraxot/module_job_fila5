@@ -1,5 +1,4 @@
 ---
-<<<<<<< HEAD
 title: "mcp server recommended"
 type: note
 tags: [documentation]
@@ -13,11 +12,6 @@ topic: mcp_server_recommended
 canonical: ../../../Themes/docs/shared-components/mcp_server_recommended.md
 status: superseded
 superseded_by: mcp-server-recommended.md
-=======
-module: theme
-topic: mcp_server_recommended
-canonical: ../../../Themes/docs/shared-components/mcp_server_recommended.md
->>>>>>> bb5d203c (.)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/mcp_server_recommended.md

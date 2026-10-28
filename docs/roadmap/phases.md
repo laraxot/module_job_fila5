@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "phases"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Fasi di sviluppo - Job Module
 
 ## Fase 1: Infrastruttura Core (Completata)

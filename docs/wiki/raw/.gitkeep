@@ -1,12 +1,7 @@
 ---
 module: theme
-<<<<<<< HEAD:docs/wiki/raw/.gitkeep
 topic: .gitkeep
 canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
-=======
-topic: schedule-1
-canonical: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
->>>>>>> bb5d203c (.):docs/_integration/schedule-1.md
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md

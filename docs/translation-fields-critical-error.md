@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "translation fields critical error"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Errore Critico: Rimozione Sezione "fields" dalle Traduzioni
 
 **Modulo**: Job  

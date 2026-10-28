@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "USER RESEARCH"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Job Module - User Research
 
 **Module:** Job  

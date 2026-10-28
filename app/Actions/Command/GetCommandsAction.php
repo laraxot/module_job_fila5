@@ -10,6 +10,8 @@ use Modules\Job\Datas\CommandData;
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Input\InputArgument;
+use Symfony\Component\Console\Input\InputOption;
 
 class GetCommandsAction
 {
@@ -37,7 +39,7 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $arguments */
                 $arguments = collect($command->getDefinition()->getArguments())
                     ->map(
-                        static fn ($argument): array => [
+                        static fn (InputArgument $argument): array => [
                             'name' => (string) $argument->getName(),
                             'description' => (string) $argument->getDescription(),
                             'required' => (bool) $argument->isRequired(),
@@ -48,7 +50,7 @@ class GetCommandsAction
                 /** @var Collection<int, array{name: string, description: string, required: bool}> $options */
                 $options = collect($command->getDefinition()->getOptions())
                     ->map(
-                        static fn ($option): array => [
+                        static fn (InputOption $option): array => [
                             'name' => (string) $option->getName(),
                             'description' => (string) $option->getDescription(),
                             'required' => (bool) $option->isValueRequired(),

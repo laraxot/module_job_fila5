@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "prd"
 type: note
@@ -11,8 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # PRD - Job Module (2025-2026 Lean Standard)
 
 ## 1. Problem Statement

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "duplicate methods report"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: duplicate-methods-report.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Report: Metodi con nome duplicato nei moduli e nei temi
 
 ## Introduzione

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "04 risks"
 type: note
@@ -12,8 +11,6 @@ status: superseded
 superseded_by: risks.md
 ---
 
-=======
->>>>>>> bb5d203c (.)
 # Risks and dependencies (Module Job)
 
 ## Risks
