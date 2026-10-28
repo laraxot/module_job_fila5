@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Links"
 module: "Job"
@@ -10,5 +11,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
 status: draft
 ---
+=======
+>>>>>>> bb5d203c (.)
 https://gist.github.com/milon/5173255b58564a0e50548cfbe879181e
 

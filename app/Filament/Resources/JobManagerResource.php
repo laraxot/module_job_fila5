@@ -7,9 +7,12 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources;
 
+<<<<<<< HEAD
 use Modules\Job\Filament\Resources\JobManagerResource\Pages\CreateJobManager;
 use Modules\Job\Filament\Resources\JobManagerResource\Pages\EditJobManager;
 use Modules\Job\Filament\Resources\JobManagerResource\Pages\ListJobManagers;
+=======
+>>>>>>> bb5d203c (.)
 use Modules\Job\Filament\Resources\JobManagerResource\Widgets\JobStatsOverview;
 use Modules\Job\Models\JobManager;
 use Modules\Xot\Filament\Resources\XotBaseResource;
@@ -20,6 +23,7 @@ class JobManagerResource extends XotBaseResource
     protected static ?string $model = JobManager::class;
 
     #[Override]
+<<<<<<< HEAD
     public static function getRelations(): array
     {
         return [];
@@ -36,6 +40,8 @@ class JobManagerResource extends XotBaseResource
     }
 
     #[Override]
+=======
+>>>>>>> bb5d203c (.)
     public static function getWidgets(): array
     {
         return [

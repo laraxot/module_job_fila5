@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "legacy roadmap"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Job Module Roadmap
 
 Vedi [roadmap/00-index](roadmap/00-index.md).

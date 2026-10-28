@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: "Job - documentazione del modulo (docs)"
 type: documentation
 module: Job
@@ -119,3 +120,58 @@ rimossi e che il contenuto di `_archive` e' in `docs-archive-2026/` alla radice 
 modulo. Verificato il 2026-10-07: `docs/wiki/` e `docs/build_local/` esistono ancora,
 `docs-archive-2026/` non esiste nel modulo. La pulizia non e' stata applicata in
 questo repo e non e' oggetto della story di merge.
+=======
+title: "Job Module Documentation"
+type: documentation
+tags: [module, documentation]
+created: 2026-06-05
+updated: 2026-06-05
+---
+
+# Modulo Job
+
+## Overview
+
+Il modulo **Job** gestisce i job asincroni e le code di elaborazione.
+
+## Funzionalità
+
+- Job queue management
+- Retry logic
+- Failed job handling
+- Job monitoring
+
+## Modelli Principali
+
+```php
+// Job
+Job\Models\Job
+
+// Failed Job
+Job\Models\FailedJob
+
+// Job Batch
+Job\Models\JobBatch
+```
+
+## Services
+
+```php
+// Job dispatcher
+Job\Services\JobDispatcher
+
+// Queue manager
+Job\Services\QueueManager
+```
+
+## Collegamenti
+
+- [Documentazione Root](../../../docs/JOB_MODULE.md)
+- [Xot Base](../Xot/docs/)
+- [Notify Module](../Notify/docs/) - per notifiche job
+
+## Backlinks
+
+- [Queue Config](./queue/)
+- [Failed Jobs](./failed/)
+>>>>>>> bb5d203c (.)

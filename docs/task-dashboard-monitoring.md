@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "task dashboard monitoring"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Task: Migliorare Dashboard Monitoring - Job
 
 **Modulo**: Job

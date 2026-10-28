@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "product requirements"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Product Requirements Document (PRD)
 
 ## Metadata

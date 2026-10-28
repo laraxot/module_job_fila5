@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "links"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
 

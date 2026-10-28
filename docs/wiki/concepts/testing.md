@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "testing"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Testing in Job
 
 Questo componente segue lo standard globale di progetto per il testing.

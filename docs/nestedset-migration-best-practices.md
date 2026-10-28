@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "nestedset migration best practices"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview

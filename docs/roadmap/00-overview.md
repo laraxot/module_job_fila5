@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "00 overview"
 type: note
@@ -11,6 +12,8 @@ status: superseded
 superseded_by: overview.md
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Roadmap overview (Module Job)
 
 ## Scope

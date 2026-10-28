@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "soketi"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 https://github.com/Safemood/REAL-TIME-LARAVEL-9-SOKETI/
 
 https://medium.com/@tthdvd/laravel-reactjs-soketi-triumvirates-step-by-step-guide-to-build-a-real-time-webapp-part-2-f1ed815ec539

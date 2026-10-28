@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "optimization"
 type: note
@@ -9,5 +10,7 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 https://filamentphp.com/community/danharrin-fast-table-pagination
 

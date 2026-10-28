@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "quality"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Checklist qualità - Job Module
 
 - [x] PHPStan Level 10

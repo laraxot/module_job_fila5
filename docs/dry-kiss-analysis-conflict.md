@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "dry kiss analysis conflict"
 type: note
@@ -11,6 +12,8 @@ status: superseded
 superseded_by: dry-kiss.md
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025

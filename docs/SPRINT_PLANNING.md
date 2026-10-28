@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "SPRINT PLANNING"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Job Module - Sprint Planning
 
 **Module:** Job  

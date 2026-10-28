@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "ponytail audit over engineering"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Ponytail audit — Job (over-engineering)
 
 **Ultimo run:** 2026-06-30 (re-run #2)  

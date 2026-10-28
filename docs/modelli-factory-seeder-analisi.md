@@ -10,8 +10,11 @@ discussions: []
 module: theme
 topic: modelli-factory-seeder-analisi
 canonical: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+<<<<<<< HEAD
 status: superseded
 superseded_by: filament-4x-compatibility.md
+=======
+>>>>>>> bb5d203c (.)
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "00 index"
 type: note
@@ -11,6 +12,8 @@ status: superseded
 superseded_by: index.md
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Job Module - Roadmap
 
 > Infrastruttura robusta per code e processi in background.

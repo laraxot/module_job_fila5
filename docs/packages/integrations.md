@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "integrations"
 type: note
@@ -10,6 +11,8 @@ discussions: []
 status: draft
 ---
 
+=======
+>>>>>>> bb5d203c (.)
 # Integrazioni
 
 ## Pacchetti Utilizzati
