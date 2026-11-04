@@ -8,6 +8,7 @@ type: report
 module: Job
 updated: 2026-09-01
 qmd: "cosa migliorare job phpstan phpmd phpinsights coverage debito priorita"
+status: draft
 ---
 
 # Cosa migliorare — modulo Job

@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\DB;
 use Modules\Job\Models\JobManager;
 use Modules\Job\Traits\FormatSeconds;
 use Modules\Xot\Actions\Cast\SafeEloquentCastAction;
-use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 
-class JobStatsOverview extends XotBaseStatsOverviewWidget
+class JobStatsOverview extends BaseWidget
 {
     use FormatSeconds;
 

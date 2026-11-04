@@ -10,26 +10,20 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Support\Facades\Artisan;
 use Modules\Job\Models\FailedJob;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class FailedJobsTable extends XotBaseResourceTable
 {
-    /**
-     * @var class-string<FailedJob>
-     */
-    protected static string $model = FailedJob::class;
-
     /**
      * @return array<string, Column>
      */
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->sortable(),
-            'uuid' => TextColumn::make('uuid')->searchable()->copyable()->toggleable(isToggledHiddenByDefault: true),
+            'id' => IDColumn::make('id')->sortable(),
             'connection' => TextColumn::make('connection')->searchable()->sortable(),
             'queue' => TextColumn::make('queue')->searchable()->sortable(),
-            'exception' => TextColumn::make('exception')->searchable()->wrap()->limit(120),
             'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
         ];
     }

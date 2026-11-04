@@ -3,6 +3,8 @@ title: "Sostenibilità e inbound marketing — Job"
 type: bmad-pointer
 status: decision-input
 updated: 2026-10-15
+tags: [docs, job]
+qmd: "riferimento bmad job"
 ---
 
 # Riferimento BMAD

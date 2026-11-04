@@ -3,10 +3,11 @@ title: "log"
 type: note
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-23
 qmd: "log"
 issues: []
 discussions: []
+module: "Job"
 status: draft
 ---
 
@@ -31,8 +32,6 @@ status: draft
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), `llm-wiki.txt` (percorso `bashscripts/tools/prompts/llm-wiki.txt`: file non presente il 2026-10-14)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
----
-module: "Job"
 ---
 
 # Job - Wiki Activity Log

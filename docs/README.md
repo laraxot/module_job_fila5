@@ -4,15 +4,16 @@ type: documentation
 module: Job
 tags: [module, documentation]
 created: 2026-06-05
-updated: 2026-10-14
+updated: 2026-10-23
 qmd: "job docs README ownership code map limiti scheduler code"
 issues: []
 discussions: []
 related:
   - "../README.md"
-  - "./00-INDEX.md"
+  - "./00-index.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
   - "./stories/docs-ingressi-job.story.md"
+  - "./stories/job-admin-authorization.story.md"
 status: active
 ---
 
@@ -20,7 +21,7 @@ status: active
 
 Cartella `docs/` del modulo Job: documentazione a livello modulo. Per la panoramica
 del modulo vedi il [README del modulo](../README.md); per la navigazione vedi
-l'[indice](./00-INDEX.md).
+l'[indice](./00-index.md).
 
 ## Panoramica
 
@@ -99,7 +100,7 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 
 ## Collegamenti
 
-- [Architettura](./architecture.md)
+- [Architettura](./ARCHITECTURE.md)
 - [Inventario Livewire e widget Filament](./bmad/livewire-inventory.md)
 - [Xot base](../../Xot/docs/README.md)
 - [Notify](../../Notify/docs/README.md) per le notifiche di fallimento job
@@ -111,6 +112,8 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 - [2026-10-06 PHPStan cleanup - Job](./stories/phpstan-cleanup-job.story.md) | [dev](./stories/phpstan-cleanup-job.dev.md)
 - [2026-10-08 Services -> Actions (ScheduleService eliminato)](./stories/services-to-actions-job.story.md)
 - [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
+- [2026-10-29 Autorizzazione pagina e widget operativi (super-admin, allowlist, .env)](./stories/job-admin-authorization.story.md)
+- [2026-10-30 Niente testi fissi nelle Blade (it, en, de, es)](./stories/blade-i18n-no-hardcoded-text.story.md)
 
 ## Stato dell'organizzazione della cartella
 

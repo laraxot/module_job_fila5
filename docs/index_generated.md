@@ -7,7 +7,8 @@ updated: 2026-09-26
 qmd: "index generated"
 issues: []
 discussions: []
-status: draft
+status: superseded
+superseded_by: index-generated.md
 ---
 
 # Job Module Documentation Index (Generated)
