@@ -7,9 +7,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\FailedJobResource\Pages;
 
-<<<<<<< HEAD
-use Modules\Job\Filament\Resources\FailedJobResource;
-=======
 use Filament\Actions\Action;
 use Filament\Notifications\Notification;
 use Filament\Tables\Columns\TextColumn;
@@ -18,15 +15,12 @@ use Illuminate\Support\Facades\DB;
 use Modules\Job\Filament\Resources\FailedJobResource;
 use Modules\Job\Models\FailedJob;
 use Modules\UI\Filament\Tables\Columns\IDColumn;
->>>>>>> 4b65b9e202c20ed424a8cae6fadeb3c800de3413
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
 
 class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
-<<<<<<< HEAD
-=======
 
     #[Override]
     public function getTableColumns(): array
@@ -79,5 +73,4 @@ class ListFailedJobs extends XotBaseListRecords
                 }),
         ];
     }
->>>>>>> 4b65b9e202c20ed424a8cae6fadeb3c800de3413
 }
