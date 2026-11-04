@@ -1,11 +1,7 @@
 ---
 issues: []
 discussions: []
-<<<<<<< .merge_file_vuZEna
-title: "Job — mai Filament*, sempre XotBase*"
-=======
 title: "Job: mai Filament*, sempre XotBase*"
->>>>>>> .merge_file_R8A1Ua
 type: concept
 module: Job
 tags: [job, filament, xotbase, architecture]
