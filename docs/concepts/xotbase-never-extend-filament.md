@@ -1,7 +1,11 @@
 ---
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Job: mai Filament*, sempre XotBase*"
+=======
+title: "Job — mai Filament*, sempre XotBase*"
+>>>>>>> 4b65b9e202c20ed424a8cae6fadeb3c800de3413
 type: concept
 module: Job
 tags: [job, filament, xotbase, architecture]
@@ -15,7 +19,7 @@ related:
 status: draft
 ---
 
-# Mai `Filament\*`: sempre `Modules\Xot\Filament\...\XotBase*`
+# Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
 
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
 
