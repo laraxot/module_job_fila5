@@ -1,7 +1,11 @@
 ---
 issues: []
 discussions: []
+<<<<<<< .merge_file_vuZEna
 title: "Job — mai Filament*, sempre XotBase*"
+=======
+title: "Job: mai Filament*, sempre XotBase*"
+>>>>>>> .merge_file_R8A1Ua
 type: concept
 module: Job
 tags: [job, filament, xotbase, architecture]
@@ -15,7 +19,7 @@ related:
 status: draft
 ---
 
-# Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
+# Mai `Filament\*`: sempre `Modules\Xot\Filament\...\XotBase*`
 
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
 
