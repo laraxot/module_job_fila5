@@ -13,4 +13,8 @@ class JobConfigData extends Data
     use MakesFromTenantConfig;
 
     public bool $enabled = true;
+
+    public int $max_attempts = 3;
+
+    public int $timeout_seconds = 90;
 }

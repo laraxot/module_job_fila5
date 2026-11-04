@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Pages;
 
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
+use Modules\Job\Datas\JobConfigData;
 use Modules\Xot\Filament\Pages\BaseSettingPage;
 
 /**
@@ -17,10 +20,14 @@ use Modules\Xot\Filament\Pages\BaseSettingPage;
 class SettingPage extends BaseSettingPage
 {
     /**
-     * @return array<string, object>
+     * @return array<string, TextInput|Toggle>
      */
     protected function getFormSchema(): array
     {
-        return parent::getFormSchema();
+        return [
+            'enabled' => Toggle::make('enabled')->default(true),
+            'max_attempts' => TextInput::make('max_attempts')->numeric()->integer()->minValue(1)->required(),
+            'timeout_seconds' => TextInput::make('timeout_seconds')->numeric()->integer()->minValue(1)->required(),
+        ];
     }
 }
