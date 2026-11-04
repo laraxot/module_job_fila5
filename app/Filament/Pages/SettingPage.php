@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Pages;
 
-use Modules\Job\Datas\JobConfigData;
 use Modules\Xot\Filament\Pages\BaseSettingPage;
 
 /**
@@ -18,10 +17,10 @@ use Modules\Xot\Filament\Pages\BaseSettingPage;
 class SettingPage extends BaseSettingPage
 {
     /**
-     * @return array<string, never>
+     * @return array<string, object>
      */
     protected function getFormSchema(): array
     {
-        return [];
+        return parent::getFormSchema();
     }
 }
