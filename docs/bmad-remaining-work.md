@@ -1,5 +1,9 @@
 ---
+<<<<<<< .merge_file_jB9W2e
+title: "Job Module — BMAD Stories & Remaining Work"
+=======
 title: "Job Module: BMAD Stories & Remaining Work"
+>>>>>>> .merge_file_mmgO1J
 type: concept
 sources: ["../../AGENTS.md", "laravel/Modules/Job/docs/"]
 confidence: medium
@@ -12,7 +16,11 @@ status: draft
 qmd: "job module   bmad stories & remaining work job"
 ---
 
+<<<<<<< .merge_file_jB9W2e
+# Job Module — BMAD Stories & Remaining Work
+=======
 # Job Module: BMAD Stories & Remaining Work
+>>>>>>> .merge_file_mmgO1J
 
 ## Module Overview
 The Job module provides job listings, application management, and career-related functionality.
