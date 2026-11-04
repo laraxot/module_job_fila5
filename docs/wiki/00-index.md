@@ -11,7 +11,7 @@ related:
 status: stale
 ---
 
-> Nota 2026-10-14 (docs-audit): Copia parziale e piu' vecchia di ../00-INDEX.md (stesse voci, descrizioni non verificate, link relativi misti); l'indice operativo e' ../00-INDEX.md. Link verso ./phpstan-fixes-archive-2.md: bersaglio inesistente. Contenuto non riscritto, verificare prima di usarlo.
+> Nota 2026-10-14 (docs-audit): Copia parziale e piu' vecchia di ../00-index.md (stesse voci, descrizioni non verificate, link relativi misti); l'indice operativo e' ../00-index.md. Link verso ./phpstan-fixes-archive-2.md: bersaglio inesistente. Contenuto non riscritto, verificare prima di usarlo.
 
 # 📚 **Indice Documentazione Modulo Job**
 
@@ -43,8 +43,8 @@ status: stale
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../../Xot/docs/README.md) - Base framework e Page classes.
-- [Activity](../../../Activity/docs/readme.md) - Tracciamento log esecuzione.
-- [Notify](../../../Notify/docs/readme.md) - Notifiche fallimento job.
+- [Activity](../../../Activity/docs/README.md) - Tracciamento log esecuzione.
+- [Notify](../../../Notify/docs/README.md) - Notifiche fallimento job.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

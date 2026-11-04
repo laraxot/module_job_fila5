@@ -2,7 +2,7 @@
 type: note
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-10-23
 qmd: "no services no support queueable actions"
 issues: []
 discussions: []
@@ -16,18 +16,20 @@ status: draft
 
 ## Conversione 2026-07-20
 
-- `app/Services/ScheduleService.php` (2 responsabilità) → `ClearScheduleCacheAction` per l’unico use-case ancora
-  osservabile; nessuna action è stata mantenuta per il caso `getActives()` senza caller.
+- `app/Services/ScheduleService.php` (2 responsabilità) → due Action in `app/Actions/` (radice, nessuna sotto-cartella):
+  - `GetActiveSchedulesAction` (era `getActives()` + `getFromCache()` privato)
+  - `ClearScheduleCacheAction` (era `clearCache()`)
 - Caller: `ScheduleObserver::clearCache()`, `ScheduleClearCacheCommand::handle()` → `app(Modules\Job\Actions\ClearScheduleCacheAction::class)->execute()`.
-- I test reflection-only del vecchio Service e del duplicato `GetActiveSchedulesAction` sono stati rimossi.
+- Il test reflection-only del vecchio Service e quello di `GetActiveSchedulesAction` sono stati rimossi; resta
+  `tests/Unit/Actions/ClearScheduleCacheActionTest.php` (reflection: trait `QueueableAction` + metodo `execute()`).
 
-## Stato dei duplicati
+## Stato dei duplicati (verificato il 2026-10-23)
 
-Il censimento dei caller ha confermato che `GetActiveSchedulesAction` non aveva alcun caller
-applicativo: era mantenuta solo dal proprio test reflection-only ed è stata rimossa insieme al test.
-`ClearScheduleCacheAction` è invece l’action live usata da `ScheduleObserver` e
-`ScheduleClearCacheCommand`, quindi è rimasta al suo posto. Non esiste una cartella
-`app/Actions/Schedule/` nel working tree.
+Non esiste una cartella `app/Actions/Schedule/` nel working tree: i doppioni `Schedule/` descritti in una
+versione precedente di questa nota non ci sono piu'. `ClearScheduleCacheAction` e' l'action live usata da
+`ScheduleObserver` e `ScheduleClearCacheCommand`. `GetActiveSchedulesAction`
+(`app/Actions/GetActiveSchedulesAction.php`) esiste ancora ma non ha caller applicativi ne' test: candidata
+alla rimozione, da fare solo dopo un nuovo `grep -rn GetActiveSchedulesAction` su tutto `laravel/`.
 
 ## Perché
 
