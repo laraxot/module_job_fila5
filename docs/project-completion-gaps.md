@@ -1,5 +1,5 @@
 ---
-title: "Lacune di completamento — Job"
+title: "Lacune di completamento: Job"
 type: audit
 status: open
 created: 2026-10-28
@@ -10,7 +10,7 @@ related:
   - "../../Xot/docs/project-completion-readiness.md"
 ---
 
-# Lacune di completamento — Job
+# Lacune di completamento: Job
 
 ## Esito
 
@@ -63,13 +63,13 @@ Lettura read-only delle 32 story locali (`*.story.md`): 15 hanno uno stato diver
 
 ### Esempi prioritari da riconciliare
 
-- `ready-for-dev` — [`4.27.phpstan-paramtype-coverage.story.md`](stories/4.27.phpstan-paramtype-coverage.story.md)
-- `ready-for-dev` — [`4.28.phpstan-mixed-cleanup.story.md`](stories/4.28.phpstan-mixed-cleanup.story.md)
-- `ready-for-dev` — [`job-config-cache-assente-e-azioni-distruttive.story.md`](stories/job-config-cache-assente-e-azioni-distruttive.story.md)
-- `ready-for-dev` — [`job-livewire-ritiro-con-widget-gemelli.story.md`](stories/job-livewire-ritiro-con-widget-gemelli.story.md)
-- `ready-for-dev` — [`job-module-bmad-setup.story.md`](stories/job-module-bmad-setup.story.md)
-- `ready-for-dev` — [`job-widget-clock-queuelisten-e-processo-bloccante.story.md`](stories/job-widget-clock-queuelisten-e-processo-bloccante.story.md)
-- `review` — [`4.26.phpstan-regression-remediation.story.md`](stories/4.26.phpstan-regression-remediation.story.md)
-- `draft` — [`docs-reorg-core.story.md`](bmad/stories/docs-reorg-core.story.md)
+- `ready-for-dev`: [`4.27.phpstan-paramtype-coverage.story.md`](stories/4.27.phpstan-paramtype-coverage.story.md)
+- `ready-for-dev`: [`4.28.phpstan-mixed-cleanup.story.md`](stories/4.28.phpstan-mixed-cleanup.story.md)
+- `ready-for-dev`: [`job-config-cache-assente-e-azioni-distruttive.story.md`](stories/job-config-cache-assente-e-azioni-distruttive.story.md)
+- `ready-for-dev`: [`job-livewire-ritiro-con-widget-gemelli.story.md`](stories/job-livewire-ritiro-con-widget-gemelli.story.md)
+- `ready-for-dev`: [`job-module-bmad-setup.story.md`](stories/job-module-bmad-setup.story.md)
+- `ready-for-dev`: [`job-widget-clock-queuelisten-e-processo-bloccante.story.md`](stories/job-widget-clock-queuelisten-e-processo-bloccante.story.md)
+- `review`: [`4.26.phpstan-regression-remediation.story.md`](stories/4.26.phpstan-regression-remediation.story.md)
+- `draft`: [`docs-reorg-core.story.md`](bmad/stories/docs-reorg-core.story.md)
 
 Prima di lavorare su questi elementi, verificare lo stato canonico nello sprint status, claim/lock e dipendenze. Una story senza `status` non va considerata automaticamente completata.
