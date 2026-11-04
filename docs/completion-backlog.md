@@ -1,12 +1,20 @@
 ---
+<<<<<<< HEAD
 title: "Job: completion backlog"
+=======
+title: "Job — completion backlog"
+>>>>>>> 4b65b9e202c20ed424a8cae6fadeb3c800de3413
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, job]
 qmd: "job   completion backlog job"
 ---
+<<<<<<< HEAD
 # Job: completion backlog
+=======
+# Job — completion backlog
+>>>>>>> 4b65b9e202c20ed424a8cae6fadeb3c800de3413
 
 Status: partial and evidence-driven. This file is the canonical owner-local list for future work.
 
