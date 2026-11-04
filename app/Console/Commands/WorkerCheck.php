@@ -10,6 +10,7 @@ namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
+use Modules\Job\Actions\BuildQueueWorkerCommandAction;
 
 use function Safe\exec;
 
@@ -122,16 +123,8 @@ class WorkerCheck extends Command
      */
     private function startQueueListener(): string
     {
-        // $command = 'php-cli ' . base_path() . '/artisan queue:listen --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!'; // 5.1
-        // $command = 'php-cli '.base_path().'/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo //$!'; // 5.6 - see comments
-
-        $command =
-            ' /usr/local/bin/php '.
-            base_path().
-            '/artisan queue:work --timeout=60 --sleep=5 --tries=3 > /dev/null & echo $!';
-        // $this->comment($command);
-
-        $pid = exec($command);
+        // timeout, sleep e tries vengono dalle impostazioni del modulo (JobConfigData, SettingPage).
+        $pid = exec(app(BuildQueueWorkerCommandAction::class)->execute());
         // if ($pid === false) {
         //    throw new Exception('['.__LINE__.']['.class_basename($this).']');
         // }

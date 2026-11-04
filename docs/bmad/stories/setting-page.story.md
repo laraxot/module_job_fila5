@@ -1,10 +1,12 @@
 ---
 title: SettingPage di Job, pagina impostazioni senza campi
 qmd: "Job SettingPage configurazione tenant BaseSettingPage Filament"
-status: in-progress
+status: superseded
+superseded_by: ./setting-page-campi-reali.story.md
 module: Job (owner)
 created: 2026-11-04
 related:
+  - ./setting-page-campi-reali.story.md
   - ../../../Xot/docs/bmad/stories/setting-page-tutti-i-moduli.story.md
 ---
 
