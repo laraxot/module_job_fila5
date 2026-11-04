@@ -1,11 +1,7 @@
 ---
 issues: []
 discussions: []
-<<<<<<< HEAD
-title: "Job: mai Filament*, sempre XotBase*"
-=======
 title: "Job — mai Filament*, sempre XotBase*"
->>>>>>> 4b65b9e202c20ed424a8cae6fadeb3c800de3413
 type: concept
 module: Job
 tags: [job, filament, xotbase, architecture]
