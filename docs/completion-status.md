@@ -37,20 +37,20 @@ Problemi trasversali (valgono per tutto il progetto): vedi `project-completion-s
 
 | Stato | Story |
 |---|---|
-| review | [Story 4.26: PHPStan regression remediation — Job](docs/stories/4.26.phpstan-regression-remediation.story.md) |
-| ready-for-dev | [JOB-4.27: PHPStan — dichiarare i param type mancanti (gate typeCoverage 99 % full-tree)](docs/stories/4.27.phpstan-paramtype-coverage.story.md) |
-| ready-for-dev | [PHPStan L10 — residui 4 errori (mixed, instanceof ridondante, RelationX not generic)](docs/stories/4.28.phpstan-mixed-cleanup.story.md) |
+| review | [Story 4.26: PHPStan regression remediation: Job](docs/stories/4.26.phpstan-regression-remediation.story.md) |
+| ready-for-dev | [JOB-4.27: PHPStan: dichiarare i param type mancanti (gate typeCoverage 99 % full-tree)](docs/stories/4.27.phpstan-paramtype-coverage.story.md) |
+| ready-for-dev | [PHPStan L10: residui 4 errori (mixed, instanceof ridondante, RelationX not generic)](docs/stories/4.28.phpstan-mixed-cleanup.story.md) |
 | ready-for-dev | [Job: config cache assente, azioni distruttive senza guardia, SQL su date](docs/stories/job-config-cache-assente-e-azioni-distruttive.story.md) |
 | ready-for-dev | [Job: ritiro dei 4 componenti Livewire con i widget gemelli](docs/stories/job-livewire-ritiro-con-widget-gemelli.story.md) |
 | ready-for-dev | [Job Module BMAD Setup](docs/stories/job-module-bmad-setup.story.md) |
 | ready-for-dev | [Job: widget ClockWidget e QueueListenWidget, doppione con processo bloccante](docs/stories/job-widget-clock-queuelisten-e-processo-bloccante.story.md) |
 | draft | [Riorganizzazione docs core Job](docs/bmad/stories/docs-reorg-core.story.md) |
-| draft | [STORY-504 — PHPInsights crash su charset iso-8859-1 in lang it](docs/stories/STORY-504-phpinsights-charset-fix.story.md) |
+| draft | [STORY-504: PHPInsights crash su charset iso-8859-1 in lang it](docs/stories/STORY-504-phpinsights-charset-fix.story.md) |
 | pointer | [12.4 git hygiene residua (puntatore)](docs/stories/12.4.git-hygiene-queue-pid-graphify-out-aaa.story.md) |
-| investigated | [Regressione — Modules/Job/Config (maiuscolo) ricomparso nella root del modulo](docs/stories/uppercase-root-dir-config-regression.story.md) |
+| investigated | [Regressione: Modules/Job/Config (maiuscolo) ricomparso nella root del modulo](docs/stories/uppercase-root-dir-config-regression.story.md) |
 | senza-status | [1.1.profile cast fix.story](docs/stories/1.1.profile-cast-fix.story.md) |
 | senza-status | [1.2.job complete.story](docs/stories/1.2.job-complete.story.md) |
-| senza-status | [Job Module — Table Audit and $model Property](docs/stories/continuation.story.md) |
+| senza-status | [Job Module: Table Audit and $model Property](docs/stories/continuation.story.md) |
 | senza-status | [lang files pipe corruption job.story](docs/stories/lang-files-pipe-corruption-job.story.md) |
 
 4 story non hanno `status:` nel frontmatter: vanno classificate (done / backlog / superseded).
