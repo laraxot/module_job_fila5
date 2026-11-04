@@ -51,19 +51,15 @@ class WorkerCheck extends Command
      */
     private function isQueueListenerRunning(): bool
     {
-        if (
-            ($pid = $this->getLastQueueListenerPID()) === '' ||
-                ($pid = $this->getLastQueueListenerPID()) === '0' ||
-                ($pid = $this->getLastQueueListenerPID()) === false ||
-                ($pid = $this->getLastQueueListenerPID()) === null
-        ) {
+        $pid = $this->getLastQueueListenerPID();
+        if (in_array($pid, ['', '0', false, null], true)) {
             return false;
         }
 
-        $process_cmd = sprintf('ps -p %s -opid=,cmd=', $pid);
-        $this->comment($process_cmd);
+        $processCommand = sprintf('ps -p %s -opid=,cmd=', $pid);
+        $this->comment($processCommand);
         $output = null;
-        $process = exec($process_cmd, $output);
+        $process = exec($processCommand, $output);
         // $processIsQueueListener = str_contains($process, 'queue:listen'); // 5.1
         // if ($process === false) {
         // DISABILITATO PER SBLOCCARE MODULE JOB
