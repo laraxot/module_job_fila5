@@ -21,6 +21,11 @@ class FailedJobsTable extends XotBaseResourceTable
     public function getTableColumns(): array
     {
         return [
+<<<<<<< .merge_file_YExyew
+            'id' => IDColumn::make('id')->sortable(),
+            'connection' => TextColumn::make('connection')->searchable()->sortable(),
+            'queue' => TextColumn::make('queue')->searchable()->sortable(),
+=======
             'id' => IDColumn::make('id')->searchable()->sortable(),
             'uuid' => TextColumn::make('uuid')
                 ->searchable()
@@ -36,6 +41,7 @@ class FailedJobsTable extends XotBaseResourceTable
                 ->searchable()
                 ->wrap()
                 ->limit(100),
+>>>>>>> .merge_file_gwVVdX
             'failed_at' => TextColumn::make('failed_at')->dateTime()->sortable(),
         ];
     }
