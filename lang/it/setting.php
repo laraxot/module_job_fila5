@@ -12,6 +12,29 @@ return [
         'sort' => 99,
     ],
     'title' => 'Impostazioni',
+    'fields' => [
+        'max_attempts' => [
+            'label' => 'Tentativi per job',
+            'placeholder' => '3',
+            'helper_text' => 'Passato a queue:work --tries quando worker:check avvia il worker. Dopo l\'ultimo tentativo il job finisce tra i falliti.',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'timeout_seconds' => [
+            'label' => 'Durata massima di un job (secondi)',
+            'placeholder' => '60',
+            'helper_text' => 'Passato a queue:work --timeout. Deve restare sotto il retry_after della connessione queue, altrimenti lo stesso job parte due volte.',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'sleep_seconds' => [
+            'label' => 'Attesa a coda vuota (secondi)',
+            'placeholder' => '5',
+            'helper_text' => 'Passato a queue:work --sleep. Vale solo per un worker avviato da worker:check: uno già in esecuzione non cambia finché non viene riavviato.',
+            'tooltip' => '',
+            'description' => '',
+        ],
+    ],
     'actions' => [
         'save' => [
             'label' => 'Salva',
