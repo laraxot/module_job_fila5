@@ -1,12 +1,20 @@
 ---
+<<<<<<< .merge_file_Ea8fSf
 title: "Job — completion backlog"
+=======
+title: "Job: completion backlog"
+>>>>>>> .merge_file_QRkRrA
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, job]
 qmd: "job   completion backlog job"
 ---
+<<<<<<< .merge_file_Ea8fSf
 # Job — completion backlog
+=======
+# Job: completion backlog
+>>>>>>> .merge_file_QRkRrA
 
 Status: partial and evidence-driven. This file is the canonical owner-local list for future work.
 
