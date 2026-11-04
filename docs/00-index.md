@@ -16,16 +16,4 @@ related:
 
 Copia per sola differenza di maiuscole di [00-INDEX.md](./00-INDEX.md). L'indice
 canonico del modulo Job e' `00-INDEX.md`; questo file e' mantenuto solo per non
-<<<<<<< .merge_file_sMaODt
 rompere eventuali link esistenti e non va aggiornato.
-=======
-<<<<<<< .merge_file_2MBlz0
-rompere eventuali link esistenti e non va aggiornato.
-
-## Cosa manca per completare
-
-[completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
-=======
-rompere eventuali link esistenti e non va aggiornato.
->>>>>>> .merge_file_5n1hVr
->>>>>>> .merge_file_grQvaZ
