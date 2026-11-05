@@ -174,6 +174,10 @@ class Task extends BaseModel
      *
      * throws \Exception
      */
+<<<<<<< HEAD
+=======
+
+>>>>>>> laraxot/dev
     /**
      * Frequencies Relation.
      *
