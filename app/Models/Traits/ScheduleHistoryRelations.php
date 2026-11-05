@@ -14,6 +14,9 @@ use Modules\Job\Models\Schedule;
 
 trait ScheduleHistoryRelations
 {
+    /**
+     * @phpstan-return BelongsTo<Schedule, $this>
+     */
     function command(): BelongsTo
         {
             return $this->belongsTo(Schedule::class, 'schedule_id', 'id');

@@ -10,8 +10,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\FrequencyFactory;
-use Modules\Xot\Contracts\ProfileContract;
 use Modules\Job\Models\Traits\FrequencyRelations;
+use Modules\Xot\Contracts\ProfileContract;
 
 // use Modules\Job\Models\Traits\HasParameters;
 /**

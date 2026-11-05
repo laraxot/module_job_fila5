@@ -11,12 +11,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\JobFactory;
+use Modules\Job\Models\Traits\JobMutators;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Webmozart\Assert\Assert;
-
-use function Safe\json_decode;
-use Modules\Job\Models\Traits\JobMutators;
 
 /**
  * Modules\Job\Models\Job.

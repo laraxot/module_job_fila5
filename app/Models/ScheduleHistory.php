@@ -11,9 +11,9 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\ScheduleHistoryFactory;
+use Modules\Job\Models\Traits\ScheduleHistoryRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
-use Modules\Job\Models\Traits\ScheduleHistoryRelations;
 
 /**
  * Modules\Job\Models\ScheduleHistory.
@@ -89,9 +89,8 @@ class ScheduleHistory extends BaseModel
      */
 
     /**
-     * @return BelongsTo<Schedule, $this>
+     * @return array<string, string>
      */
-
     #[Override]
     protected function casts(): array
     {

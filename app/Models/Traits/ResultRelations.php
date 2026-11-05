@@ -15,6 +15,9 @@ use Modules\Job\Models\Task;
 
 trait ResultRelations
 {
+    /**
+     * @phpstan-return BelongsTo<Task, $this>
+     */
     function task(): BelongsTo
         {
             return $this->belongsTo(Task::class);
