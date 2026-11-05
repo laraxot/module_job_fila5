@@ -15,6 +15,7 @@ use Modules\Job\Database\Factories\ScheduleFactory;
 use Modules\Job\Enums\Status;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
+use Modules\Job\Models\Traits\ScheduleRelations;
 
 /**
  * Modules\Job\Models\Schedule.
@@ -94,6 +95,8 @@ use Override;
  */
 class Schedule extends BaseModel
 {
+    use ScheduleRelations;
+
     use ManagesFrequencies;
 
     protected $fillable = [
@@ -144,10 +147,6 @@ class Schedule extends BaseModel
      *
      * @return HasMany<ScheduleHistory, $this>
      */
-    public function histories(): HasMany
-    {
-        return $this->hasMany(ScheduleHistory::class, 'schedule_id', 'id');
-    }
 
     /**
      * Scope a query to only include inactive schedules.

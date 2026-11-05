@@ -16,6 +16,7 @@ use Override;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
+use Modules\Job\Models\Traits\JobMutators;
 
 /**
  * Modules\Job\Models\Job.
@@ -56,6 +57,8 @@ use function Safe\json_decode;
  */
 class Job extends BaseModel
 {
+    use JobMutators;
+
     protected $fillable = [
         'id',
         'queue',
@@ -89,19 +92,6 @@ class Job extends BaseModel
 
             return 'waiting';
         });
-    }
-
-    public function getDisplayNameAttribute(): ?string
-    {
-        Assert::string($json = $this->attributes['payload'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-        $payload = json_decode($json, true);
-        if (! is_array($payload)) {
-            return null;
-        }
-
-        Assert::nullOrString($res = $payload['displayName'] ?? null);
-
-        return $res;
     }
 
     #[Override]

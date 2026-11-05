@@ -13,6 +13,7 @@ use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\ScheduleHistoryFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
+use Modules\Job\Models\Traits\ScheduleHistoryRelations;
 
 /**
  * Modules\Job\Models\ScheduleHistory.
@@ -55,6 +56,8 @@ use Override;
  */
 class ScheduleHistory extends BaseModel
 {
+    use ScheduleHistoryRelations;
+
     /*
      * The database table used by the model.
      *
@@ -88,10 +91,6 @@ class ScheduleHistory extends BaseModel
     /**
      * @return BelongsTo<Schedule, $this>
      */
-    public function command(): BelongsTo
-    {
-        return $this->belongsTo(Schedule::class, 'schedule_id', 'id');
-    }
 
     #[Override]
     protected function casts(): array

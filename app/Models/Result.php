@@ -11,6 +11,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
+use Modules\Job\Models\Traits\ResultRelations;
 
 /**
  * Modules\Job\Models\Result.
@@ -48,6 +49,8 @@ use Override;
  */
 class Result extends BaseModel
 {
+    use ResultRelations;
+
     protected $fillable = [
         'duration',
         'result',
@@ -57,10 +60,6 @@ class Result extends BaseModel
     /**
      * @return BelongsTo<Task, $this>
      */
-    public function task(): BelongsTo
-    {
-        return $this->belongsTo(Task::class);
-    }
 
     public function getLastRun(): Builder
     {

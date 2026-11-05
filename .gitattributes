@@ -10,8 +10,7 @@
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-# Binary files (regular git blobs — NO git-lfs)
-# `binary` + `!filter` azzera eventuali filtri LFS ereditati
+# Binary files remain regular Git blobs.
 *.png binary !filter
 *.jpg binary !filter
 *.jpeg binary !filter
