@@ -97,13 +97,12 @@ class Task extends BaseModel
 {
     // use HasFrequencies;
     use FrontendSortable;
+
     /** > */
     use HasXotFactory;
 
     use Notifiable;
-
     use TaskMutators;
-
     use TaskRelations;
 
     protected $fillable = [
