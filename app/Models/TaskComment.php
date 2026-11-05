@@ -7,9 +7,9 @@ namespace Modules\Job\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Job\Database\Factories\TaskCommentFactory;
+use Modules\Job\Models\Traits\TaskCommentRelations;
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\Job\Models\Traits\TaskCommentRelations;
 
 /**
  * Class TaskComment.

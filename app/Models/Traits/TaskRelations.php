@@ -24,7 +24,7 @@ use Modules\Job\Models\Result;
 trait TaskRelations
 {
     /**
-     * @phpstan-return HasMany<Frequency, static>
+     * @phpstan-return HasMany<Frequency, $this>
      */
     function frequencies(): HasMany
     {
@@ -32,7 +32,7 @@ trait TaskRelations
     }
 
     /**
-     * @phpstan-return HasMany<Result, static>
+     * @phpstan-return HasMany<Result, $this>
      */
     function results(): HasMany
     {

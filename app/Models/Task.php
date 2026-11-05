@@ -13,14 +13,14 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\TaskFactory;
 use Modules\Job\Models\Traits\FrontendSortable;
+use Modules\Job\Models\Traits\TaskMutators;
+use Modules\Job\Models\Traits\TaskRelations;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_decode;
-use Modules\Job\Models\Traits\TaskMutators;
-use Modules\Job\Models\Traits\TaskRelations;
 
 /**
  * Modules\Job\Models\Task.
@@ -95,16 +95,16 @@ use Modules\Job\Models\Traits\TaskRelations;
  */
 class Task extends BaseModel
 {
-    use TaskMutators;
-    use TaskRelations;
-
     // use HasFrequencies;
     use FrontendSortable;
-
     /** > */
     use HasXotFactory;
 
     use Notifiable;
+
+    use TaskMutators;
+
+    use TaskRelations;
 
     protected $fillable = [
         'id',
@@ -170,13 +170,11 @@ class Task extends BaseModel
      * Activated Accessor.
      */
 
-
     /**
      * Upcoming Accessor.
      *
      * throws \Exception
      */
-
 
     /**
      * Frequencies Relation.
@@ -193,9 +191,6 @@ class Task extends BaseModel
     /**
      * Returns the most recent result entry for this task.
      */
-
-
-
 
     /**
      * Route notifications for the mail channel.

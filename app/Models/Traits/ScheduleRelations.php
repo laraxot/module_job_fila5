@@ -19,6 +19,9 @@ use Modules\Job\Models\ScheduleHistory;
 
 trait ScheduleRelations
 {
+    /**
+     * @phpstan-return HasMany<ScheduleHistory, $this>
+     */
     function histories(): HasMany
         {
             return $this->hasMany(ScheduleHistory::class, 'schedule_id', 'id');

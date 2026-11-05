@@ -13,9 +13,9 @@ use Illuminate\Support\Collection;
 use InvalidArgumentException;
 use Modules\Job\Database\Factories\ScheduleFactory;
 use Modules\Job\Enums\Status;
+use Modules\Job\Models\Traits\ScheduleRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
-use Modules\Job\Models\Traits\ScheduleRelations;
 
 /**
  * Modules\Job\Models\Schedule.
@@ -95,9 +95,8 @@ use Modules\Job\Models\Traits\ScheduleRelations;
  */
 class Schedule extends BaseModel
 {
-    use ScheduleRelations;
-
     use ManagesFrequencies;
+    use ScheduleRelations;
 
     protected $fillable = [
         'command',

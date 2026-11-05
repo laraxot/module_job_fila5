@@ -9,9 +9,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Modules\Job\Models\Traits\ResultRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
-use Modules\Job\Models\Traits\ResultRelations;
 
 /**
  * Modules\Job\Models\Result.
@@ -58,9 +58,8 @@ class Result extends BaseModel
     ];
 
     /**
-     * @return BelongsTo<Task, $this>
+     * @return \Illuminate\Database\Query\Builder
      */
-
     public function getLastRun(): Builder
     {
         return $this->select('ran_at')
