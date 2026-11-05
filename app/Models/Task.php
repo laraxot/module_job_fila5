@@ -166,6 +166,11 @@ class Task extends BaseModel
      */
     public function getActivatedAttribute(): bool
     {
+        return $this->getActivated();
+    }
+
+    public function getActivated(): bool
+    {
         return (bool) $this->is_active;
     }
 
@@ -175,6 +180,11 @@ class Task extends BaseModel
      * throws \Exception
      */
     public function getUpcomingAttribute(): string
+    {
+        return $this->getUpcoming();
+    }
+
+    public function getUpcoming(): string
     {
         // return CronExpression::factory($this->getCronExpression())->getNextRunDate()->format('Y-m-d H:i:s');
         return 'preso';
@@ -205,6 +215,11 @@ class Task extends BaseModel
      */
     public function getLastResultAttribute(): ?Result
     {
+        return $this->getLastResult();
+    }
+
+    public function getLastResult(): ?Result
+    {
         $res = $this->results()->orderBy('id', 'desc')->first();
         if ($res === null) {
             return null;
@@ -215,6 +230,11 @@ class Task extends BaseModel
     }
 
     public function getAverageRuntimeAttribute(): float
+    {
+        return $this->getAverageRuntime();
+    }
+
+    public function getAverageRuntime(): float
     {
         /**
          * @var float $avg_duration
