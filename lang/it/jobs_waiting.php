@@ -23,8 +23,14 @@ return [
             'color' => 'green',
             'filename_prefix' => 'Aree al',
             'columns' => [
-                'name' => ['label' => 'Nome area', 'tooltip' => 'Nome dell\'area da esportare'],
-                'parent_name' => ['label' => 'Nome area livello superiore', 'tooltip' => 'Nome dell\'area di livello superiore'],
+                'name' => [
+                    'label' => 'Nome area',
+                    'tooltip' => 'Nome dell\'area da esportare',
+                ],
+                'parent_name' => [
+                    'label' => 'Nome area livello superiore',
+                    'tooltip' => 'Nome dell\'area di livello superiore',
+                ],
             ],
         ],
         'process' => [
@@ -32,24 +38,39 @@ return [
             'tooltip' => 'Processa il job in attesa',
             'icon' => 'play-circle',
             'color' => 'green',
-            'modal' => ['heading' => 'Processa Job', 'description' => 'Vuoi processare questo job in attesa?'],
-            'messages' => ['success' => 'Job processato con successo'],
+            'modal' => [
+                'heading' => 'Processa Job',
+                'description' => 'Vuoi processare questo job in attesa?',
+            ],
+            'messages' => [
+                'success' => 'Job processato con successo',
+            ],
         ],
         'cancel' => [
             'label' => 'Cancella',
             'tooltip' => 'Cancella il job in attesa',
             'icon' => 'delete-icon',
             'color' => 'red',
-            'modal' => ['heading' => 'Cancella Job', 'description' => 'Vuoi cancellare questo job in attesa?'],
-            'messages' => ['success' => 'Job cancellato con successo'],
+            'modal' => [
+                'heading' => 'Cancella Job',
+                'description' => 'Vuoi cancellare questo job in attesa?',
+            ],
+            'messages' => [
+                'success' => 'Job cancellato con successo',
+            ],
         ],
         'retry' => [
             'label' => 'Riprova',
             'tooltip' => 'Riprova il job fallito',
             'icon' => 'redo',
             'color' => 'yellow',
-            'modal' => ['heading' => 'Riprova Job', 'description' => 'Vuoi riprovare questo job?'],
-            'messages' => ['success' => 'Job riprovato con successo'],
+            'modal' => [
+                'heading' => 'Riprova Job',
+                'description' => 'Vuoi riprovare questo job?',
+            ],
+            'messages' => [
+                'success' => 'Job riprovato con successo',
+            ],
         ],
     ],
     'messages' => ['no_jobs' => 'Nessun job in attesa', 'job_processed' => 'Job processato', 'job_cancelled' => 'Job cancellato', 'job_retried' => 'Job riprovato'],
