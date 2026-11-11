@@ -7,45 +7,13 @@ declare(strict_types=1);
 
 namespace Modules\Job\Filament\Resources\FailedJobResource\Pages;
 
-use Filament\Actions\Action;
-use Filament\Notifications\Notification;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Facades\DB;
 use Modules\Job\Filament\Resources\FailedJobResource;
-use Modules\Job\Models\FailedJob;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-use Override;
 
+/**
+ * Colonne e azioni di tabella stanno in `FailedJobsTable`: la List page non le dichiara.
+ */
 class ListFailedJobs extends XotBaseListRecords
 {
     protected static string $resource = FailedJobResource::class;
-
-    /**
-     * @return array<string, Action>
-     */
-    #[Override]
-    protected function getHeaderActions(): array
-    {
-        return [
-            'retry_all' => Action::make('retry_all')
-                ->requiresConfirmation()
-                ->action(static function (): void {
-                    Artisan::call('queue:retry all');
-                    Notification::make()
-                        ->title('All failed jobs have been pushed back onto the queue.')
-                        ->success()
-                        ->send();
-                }),
-            'delete_all' => Action::make('delete_all')
-                ->requiresConfirmation()
-                ->color('danger')
-                ->action(static function (): void {
-                    DB::table((new FailedJob)->getTable())->truncate();
-                    Notification::make()
-                        ->title('All failed jobs have been removed.')
-                        ->success()
-                        ->send();
-                }),
-        ];
-    }
 }

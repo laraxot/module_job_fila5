@@ -7,6 +7,7 @@ namespace Modules\Job\Filament\Resources\JobsWaitingResource\Schemas;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 /**
@@ -16,7 +17,7 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 class JobsWaitingForm extends XotBaseResourceForm
 {
     /**
-     * @return array<string, Component>
+     * @return array<int|string, Component>
      */
     public function getFormSchema(): array
     {
