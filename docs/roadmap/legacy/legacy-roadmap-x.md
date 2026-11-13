@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: legacy-roadmap-x
 canonical: ../../../../../Themes/docs/shared-components/roadmap-2025-Modules.md
+status: stub
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/roadmap-2025-Modules.md

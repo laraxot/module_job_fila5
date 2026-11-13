@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "confidence guidelines"
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---
 # Massimizzare il livello di confidenza
 

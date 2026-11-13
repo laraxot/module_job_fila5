@@ -10,6 +10,7 @@ updated: 2026-07-14
 qmd: "user research"
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---
 # Job Module - User Research
 

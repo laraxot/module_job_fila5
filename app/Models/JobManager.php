@@ -85,7 +85,7 @@ use Override;
  *
  * @mixin \Eloquent
  */
-final class JobManager extends BaseModel
+class JobManager extends BaseModel
 {
     // protected $table = 'job_manager';
 
@@ -101,10 +101,9 @@ final class JobManager extends BaseModel
         'exception_message',
     ];
 
-    public static function getJobId(JobContract $job): string
+    public static function getJobId(JobContract $job): string|int
     {
-        $jobId = $job->getJobId();
-        if ($jobId !== '') {
+        if ($jobId = $job->getJobId()) {
             return $jobId;
         }
 

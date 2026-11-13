@@ -1,3 +1,12 @@
+---
+title: "Boost Skill Fix Summary - Job Module"
+type: note
+updated: 2026-10-08
+tags: [docs, job, wiki]
+qmd: "boost skill fix summary - job module job"
+status: superseded
+superseded_by: ../boost-skill-fix-summary.md
+---
 # Boost Skill Fix Summary - Job Module
 
 **Date**: 2026-03-02

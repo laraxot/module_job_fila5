@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "progress"
 issues: []
 discussions: []
+status: draft
 ---
 
 https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/

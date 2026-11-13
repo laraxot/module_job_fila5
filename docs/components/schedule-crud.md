@@ -10,6 +10,7 @@ discussions: []
 module: theme
 topic: schedule-crud
 canonical: ../../../../Themes/docs/shared-components/.gitkeep
+status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
