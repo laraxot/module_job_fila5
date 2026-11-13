@@ -10,8 +10,6 @@ discussions: []
 module: theme
 topic: concept
 canonical: ../../../../../Themes/docs/shared-components/concept.md
-status: superseded
-superseded_by: ../../llm-wiki/_templates/concept.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/concept.md

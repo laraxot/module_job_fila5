@@ -10,7 +10,6 @@ discussions: []
 module: theme
 topic: filament_4x_compatibility
 canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
-status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

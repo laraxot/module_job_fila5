@@ -10,5 +10,4 @@ updated: 2026-07-14
 qmd: "schedule 1"
 related:
   - "./phpstan-fixes-archive-2.md"
-status: draft
 ---

@@ -10,7 +10,6 @@ discussions: []
 module: theme
 topic: usage
 canonical: ../../../../Themes/docs/shared-components/usage.md
-status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/usage.md

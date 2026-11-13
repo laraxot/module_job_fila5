@@ -10,5 +10,4 @@ updated: 2026-07-14
 qmd: "storage server"
 related:
   - "./phpstan-fixes-archive-2.md"
-status: draft
 ---
