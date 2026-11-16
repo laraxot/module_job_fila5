@@ -1,12 +1,8 @@
 ---
-<<<<<<< .merge_file_1LuHI9
 qmd: "soketi dup"
 issues: []
 discussions: []
 title: 'Soketi dup: risorse esterne'
-=======
-title: 'Soketi dup — risorse esterne'
->>>>>>> .merge_file_cAgnOZ
 module: Job
 type: reference
 slug: soketi-dup
@@ -17,11 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< .merge_file_1LuHI9
 # Soketi dup: risorse esterne
-=======
-# Soketi dup — risorse esterne
->>>>>>> .merge_file_cAgnOZ
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

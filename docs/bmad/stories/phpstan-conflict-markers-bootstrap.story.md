@@ -1,7 +1,7 @@
 ---
 title: "Job — marker conflitto PHP/lang e bootstrap PHPStan"
 type: story
-status: in-progress
+status: done
 module: Job
 epic: quality
 story_id: phpstan-conflict-markers-bootstrap
@@ -39,7 +39,7 @@ Fuori scope primario: note raw/docs `_integration` con marker (solo md).
 
 1. [x] Zero marker `<<<<<<<` in app/tests/lang PHP.
 2. [x] `php -l` verde su app/tests/lang (solo warning use inutili in 2 test).
-3. [ ] PHPStan `Modules/Job` documentato.
+3. [x] PHPStan `Modules/Job` documentato.
 4. [x] Story BMAD + sprint-status.
 
 ## Esito scansione 2026-11-16
@@ -50,9 +50,16 @@ Fuori scope primario: note raw/docs `_integration` con marker (solo md).
 | tests/ | 0 | OK (warning use Exception/stdClass) |
 | lang/ | 0 | OK |
 
-Nessun fix PHP richiesto.
+Marker PHP/lang già assenti. Fix PHPStan collaterali:
+- `GetTaskCommandsAction`: `sortBy` con `mixed` + `Assert::isInstanceOf(Command)`
+- `JobStatusWidgetEnvWriteTest`: import `Modules\Job\Tests\TestCase`
+- `tests/unit/providers/JobProvidersCoverageTest`: variabile `$provider` unused
+
 Debito docs: ~16 `.md` (raw notes dup) con marker.
+Ridondanza test: esistono sia `tests/Unit/Providers/` sia `tests/unit/providers/`
+(inodi distinti) — consolidare in PascalCase in story dedicata.
 
 ## PHPStan
 
-(da compilare dopo analyse)
+- Comando: `php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Job`
+- Exit: **0** — errori: **0**

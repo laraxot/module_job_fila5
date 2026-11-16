@@ -1,9 +1,6 @@
 ---
-<<<<<<< .merge_file_mbPTFQ
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_OjDgBZ
 title: "Schedule 1"
 module: "Job"
 type: concept
@@ -13,8 +10,5 @@ updated: 2026-07-14
 qmd: "schedule 1"
 related:
   - "./phpstan-fixes-archive-2.md"
-<<<<<<< .merge_file_mbPTFQ
 status: draft
-=======
->>>>>>> .merge_file_OjDgBZ
 ---

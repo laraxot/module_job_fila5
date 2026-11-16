@@ -1,12 +1,8 @@
 ---
-<<<<<<< .merge_file_xfLvBX
 qmd: "links dup"
 issues: []
 discussions: []
 title: 'Links dup: risorse esterne'
-=======
-title: 'Links dup — risorse esterne'
->>>>>>> .merge_file_SUHn3u
 module: Job
 type: reference
 slug: links-dup
@@ -17,11 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< .merge_file_xfLvBX
 # Links dup: risorse esterne
-=======
-# Links dup — risorse esterne
->>>>>>> .merge_file_SUHn3u
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

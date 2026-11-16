@@ -1,12 +1,8 @@
 ---
-<<<<<<< .merge_file_O2Dse3
 qmd: "filament dup"
 issues: []
 discussions: []
 title: 'Filament dup: risorse esterne'
-=======
-title: 'Filament dup — risorse esterne'
->>>>>>> .merge_file_lvx6nW
 module: Job
 type: reference
 slug: filament-dup
@@ -17,11 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-<<<<<<< .merge_file_O2Dse3
 # Filament dup: risorse esterne
-=======
-# Filament dup — risorse esterne
->>>>>>> .merge_file_lvx6nW
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.
