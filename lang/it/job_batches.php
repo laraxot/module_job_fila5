@@ -2,9 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_8l3jK0
-return [];
-=======
 return [
     'fields' => [
         'id' => [
@@ -27,4 +24,3 @@ return [
         ],
     ],
 ];
->>>>>>> .merge_file_ejeRxO

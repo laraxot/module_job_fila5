@@ -1,8 +1,12 @@
 ---
+<<<<<<< .merge_file_PIwTrC
 qmd: "schedule 1 dup"
 issues: []
 discussions: []
 title: 'Schedule 1 dup: risorse esterne'
+=======
+title: 'Schedule 1 dup — risorse esterne'
+>>>>>>> .merge_file_Osh9AN
 module: Job
 type: reference
 slug: schedule-1-dup
@@ -13,7 +17,11 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
+<<<<<<< .merge_file_PIwTrC
 # Schedule 1 dup: risorse esterne
+=======
+# Schedule 1 dup — risorse esterne
+>>>>>>> .merge_file_Osh9AN
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.
