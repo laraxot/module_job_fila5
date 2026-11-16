@@ -99,3 +99,8 @@ questo lavoro gira due volte.
 
 - `laravel/Modules/Notify/docs/purpose.md` — per notificare i fallimenti
 - `docs/wiki/rules/queueable-actions.md` — Action accodabili
+
+## Documentazione correlata
+
+- [Audit BMAD](./bmad/audit.md)
+- [ECC](./ecc/job-ecc-audit.md)
