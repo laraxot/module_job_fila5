@@ -72,10 +72,30 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
+        if (! in_array($cmd, $this->getAllowedCommands(), true)) {
+            return;
+        }
+
         $this->out .= '<hr/>';
         Artisan::call($cmd);
-        $this->out .= Artisan::output();
+        $this->out .= e(Artisan::output());
         $this->out .= '<hr/>';
+    }
+
+    /**
+     * @return list<string>
+     */
+    public function getAllowedCommands(): array
+    {
+        return [
+            'job:schedule-list',
+            'schedule:clear-cache',
+            'schedule:list',
+            'schedule:run',
+            'schedule:test',
+            'schedule-monitor:sync',
+            'schedule-monitor:list',
+        ];
     }
 
     /**
