@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_5EoKTW
 ---
 title: "00 INDEX"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_QyX8CX
 # Job Module - Roadmap
 
 > Infrastruttura robusta per code e processi in background.

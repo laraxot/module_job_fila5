@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_mb4zOR
 ---
 title: "phpstan completion job"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_O8cfaX
 # ✅ PHPStan Completion - Modulo Job
 
 ## 🎉 Status: COMPLETATO - 0 Errori
@@ -18,6 +21,7 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_mb4zOR
 title: "phpstan completion job"
 type: note
 tags: [documentation]
@@ -26,6 +30,8 @@ updated: 2026-09-26
 qmd: "phpstan completion job"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_O8cfaX
 ## 📊 Riepilogo Correzioni
 
 | Categoria | Errori Risolti | Tempo |

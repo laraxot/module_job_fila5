@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_8Pz2bh
 ---
 title: "job service provider 1"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_xScGGu
 # JobServiceProvider
 
 ## Panoramica

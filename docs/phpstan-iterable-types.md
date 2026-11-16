@@ -1,6 +1,9 @@
 ---
+<<<<<<< .merge_file_AzPg9H
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_zfPbrD
 title: "PHPStan iterable types nel modulo Job"
 type: rule
 tags: [phpstan, iterable, job, laraxot]

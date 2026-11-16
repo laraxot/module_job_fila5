@@ -1,8 +1,11 @@
 ---
+<<<<<<< .merge_file_XkUrX3
 created: 2026-09-26
 qmd: "phpstan schedule schema return type"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_gRbHZv
 title: "PHPStan Schedule Schema Return Type"
 type: concept
 updated: 2026-05-06

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_D8GAUg
 ---
 title: "phpstan compliance status"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_xjdDq2
 # PHPStan Level 10 Compliance Status
 
 

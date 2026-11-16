@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_spmMEf
 title: "AGENTS"
 type: note
 tags: [documentation]
@@ -7,6 +8,8 @@ updated: 2026-09-26
 qmd: "AGENTS"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_aB6ckg
 module: theme
 topic: AGENTS
 canonical: ../../../../Themes/docs/shared-components/AGENTS-Modules.md

@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_qy7fVB
 qmd: "optimization dup"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_c2Mxca
 title: 'Optimization dup — risorse esterne'
 module: Job
 type: reference

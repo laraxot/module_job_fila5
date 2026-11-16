@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_gOuylD
 ---
 title: "copilot redundancy audit 2026 05 25"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_L1HEWB
 Copilot Redundancy Audit — 2026-05-25
 
 Sintesi

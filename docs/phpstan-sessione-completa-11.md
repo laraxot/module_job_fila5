@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_quiSux
 ---
 title: "phpstan sessione completa 11"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_JjVPGZ
 # Sessione PHPStan Completa - Tutti i Moduli
 **Data**: 2025-11-05
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)
@@ -192,6 +195,7 @@ $media = $record->getFirstMedia($attachment);
 
 ---
 
+<<<<<<< .merge_file_quiSux
 title: "phpstan sessione completa 11"
 type: note
 tags: [documentation]
@@ -200,4 +204,6 @@ updated: 2026-09-26
 qmd: "phpstan sessione completa 11"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_JjVPGZ
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.

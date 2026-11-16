@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_moO7UQ
 ---
 title: "code quality analysis "
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_rsLtgg
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -91,6 +94,7 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 
 ---
 
+<<<<<<< .merge_file_moO7UQ
 title: "code quality analysis "
 type: note
 tags: [documentation]
@@ -99,6 +103,8 @@ updated: 2026-09-26
 qmd: "code quality analysis "
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_rsLtgg
 **Report Generated**: 2025-11-11
 **Next Review**: After fixing syntax errors
 **Target Completion**: 2025-11-15

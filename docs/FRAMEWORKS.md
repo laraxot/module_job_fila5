@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_JKeZUX
 ---
 title: "FRAMEWORKS"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_gLRcme
 # Job — Framework Integration Notes
 
 Integration guidelines for caveman, graphify, bmad-method, headroom, ponytail.
@@ -44,6 +47,7 @@ Efficiency principles:
 - Simplification opportunities: [TBD]
 
 ---
+<<<<<<< .merge_file_JKeZUX
 title: "FRAMEWORKS"
 type: note
 tags: [documentation]
@@ -52,4 +56,6 @@ updated: 2026-09-26
 qmd: "FRAMEWORKS"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_gLRcme
 *Generated: 2026-08-04*

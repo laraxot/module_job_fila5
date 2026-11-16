@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_hZWGLK
 ---
 title: "Job module architecture"
 type: architecture
@@ -16,6 +17,8 @@ related:
   - "../README.md"
 ---
 
+=======
+>>>>>>> .merge_file_4nx5ZJ
 # Job Module Architecture
 
 ## Overview

@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_lNuMcL
 qmd: "soketi dup"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_qTFubc
 title: 'Soketi dup — risorse esterne'
 module: Job
 type: reference

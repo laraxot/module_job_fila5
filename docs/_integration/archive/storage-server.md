@@ -1,6 +1,9 @@
 ---
+<<<<<<< .merge_file_8babld
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_fpy0CJ
 title: "Storage Server"
 module: "Job"
 type: concept

@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_3lquZ1
 ---
 title: "phpstan fixes conflict"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_NzeTUZ
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Status**: ✅ COMPLETATO CON SUCCESSO
@@ -204,6 +207,7 @@ public function __construct(string $output)
 
 ---
 
+<<<<<<< .merge_file_3lquZ1
 title: "phpstan fixes conflict"
 type: note
 tags: [documentation]
@@ -212,6 +216,8 @@ updated: 2026-09-26
 qmd: "phpstan fixes conflict"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_NzeTUZ
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 2.0
 **🐛 PHPStan Level**: 9 ✅

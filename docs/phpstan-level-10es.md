@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_kwUB3v
 title: "phpstan level 10es"
 type: note
 tags: [documentation]
@@ -7,6 +8,8 @@ updated: 2026-09-26
 qmd: "phpstan level 10es"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_Q0tvJb
 module: theme
 topic: phpstan-level-10es
 canonical: ../../../Themes/docs/shared-components/phpstan-level-10-fixes.md

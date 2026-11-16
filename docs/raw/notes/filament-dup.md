@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_eQ0rSE
 qmd: "filament dup"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_x4ydnI
 title: 'Filament dup — risorse esterne'
 module: Job
 type: reference

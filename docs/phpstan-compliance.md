@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_NnQxYq
 ---
 title: "phpstan compliance"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_DJ1PR9
 # PHPStan Compliance - Job Module
 
 ## Status: ✅ FULLY COMPLIANT

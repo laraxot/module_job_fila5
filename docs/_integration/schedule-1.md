@@ -1,4 +1,5 @@
 ---
+<<<<<<< .merge_file_cMVnNz
 title: "schedule 1"
 type: note
 tags: [documentation]
@@ -7,6 +8,8 @@ updated: 2026-09-26
 qmd: "schedule 1"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_Ix9NzZ
 module: theme
 topic: schedule-1
 canonical: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md

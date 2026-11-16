@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_HmnH0D
 qmd: "progress dup"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_uscsOw
 title: 'Progress dup — risorse esterne'
 module: Job
 type: reference

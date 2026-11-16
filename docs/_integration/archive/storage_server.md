@@ -1,6 +1,9 @@
 ---
+<<<<<<< .merge_file_nMbdBA
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_mXA1GB
 title: "Storage Server"
 module: "Job"
 type: concept

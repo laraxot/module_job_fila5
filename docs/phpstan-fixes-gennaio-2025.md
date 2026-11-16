@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_MuK8cb
 ---
 title: "phpstan fixes gennaio 2025"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_EDYJQ8
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025  
@@ -205,6 +208,7 @@ public function __construct(string $output)
 
 ---
 
+<<<<<<< .merge_file_MuK8cb
 title: "phpstan fixes gennaio 2025"
 type: note
 tags: [documentation]
@@ -213,6 +217,8 @@ updated: 2026-09-26
 qmd: "phpstan fixes gennaio 2025"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_EDYJQ8
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025  
 **📦 Versione**: 2.0  
 **🐛 PHPStan Level**: 9 ✅  

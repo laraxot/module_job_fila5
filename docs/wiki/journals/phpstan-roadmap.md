@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_rTfsqg
 ---
 title: "phpstan roadmap"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_hPr77y
 # PHPStan Level 10 Roadmap - Job Module
 
 **Data**: 2026-02-03

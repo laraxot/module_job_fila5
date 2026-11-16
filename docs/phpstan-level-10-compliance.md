@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_g7S3y4
 ---
 title: "phpstan level 10 compliance"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_YqGa07
 # PHPStan Level 10 Compliance - Job Module
 
 **Ultimo aggiornamento**: [DATE]

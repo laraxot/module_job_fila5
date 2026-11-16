@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_yZbJP6
 ---
 title: "phpstan roadmap"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_D2aSnp
 # PHPStan Roadmap - Job Module
 
 > **Date**: [DATE]

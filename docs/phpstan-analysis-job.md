@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_7Gm8rA
 ---
 title: "phpstan analysis job"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_LKRgiK
 # PHPStan Analysis - Job Module
 
 ## 📊 Status
@@ -169,6 +172,7 @@ $result = $value['key']; // Now safe
 
 ---
 
+<<<<<<< .merge_file_7Gm8rA
 title: "phpstan analysis job"
 type: note
 tags: [documentation]
@@ -177,6 +181,8 @@ updated: 2026-09-26
 qmd: "phpstan analysis job"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_LKRgiK
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1

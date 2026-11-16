@@ -1,6 +1,9 @@
 ---
+<<<<<<< .merge_file_YX21Mk
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_fKz4Zk
 title: "Schedule 1"
 module: "Job"
 type: concept

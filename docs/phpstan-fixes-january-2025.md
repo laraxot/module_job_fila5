@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_ZvkSxk
 ---
 title: "phpstan fixes january 2025"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_w7aPIs
 # PHPStan Fixes - Gennaio 2025
 
 ## Modulo Job - Correzioni Completate

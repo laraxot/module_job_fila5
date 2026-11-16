@@ -1,6 +1,9 @@
 ---
+<<<<<<< .merge_file_xqjNiY
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_hEDwF1
 title: "Quality Report — Job"
 type: report
 tags: [quality, phpstan, pest, coverage]

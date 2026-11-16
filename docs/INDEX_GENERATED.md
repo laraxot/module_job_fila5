@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_CgBHT3
 ---
 title: "INDEX GENERATED"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_uRnUlj
 # Job Module Documentation Index (Generated)
 
 **Generated:** 2026-07-28  
@@ -19,6 +22,7 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_CgBHT3
 title: "INDEX GENERATED"
 type: note
 tags: [documentation]
@@ -27,6 +31,8 @@ updated: 2026-09-26
 qmd: "INDEX GENERATED"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_uRnUlj
 ## Table of Contents
 
 1. [Statistics](#statistics)
@@ -154,8 +160,15 @@ discussions: []
 ### Audits & Analysis
 - [code-redundancy-audit.md](code-redundancy-audit.md) - Redundancy audit (2.9KB)
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - Copilot audit (581 bytes)
+<<<<<<< .merge_file_CgBHT3
 ---
 - [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit-2026-05-25.md) - 2026 audit (420 bytes)
+=======
+<<<<<<< HEAD
+=======
+- [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit-2026-05-25.md) - 2026 audit (420 bytes)
+>>>>>>> laraxot/dev
+>>>>>>> .merge_file_uRnUlj
 - [redundancy-audit.md](redundancy-audit.md) - General redundancy (1.2KB)
 - [redundancy-report.md](redundancy-report.md) - Redundancy report (1.6KB)
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) - Method duplication (37KB - comprehensive)

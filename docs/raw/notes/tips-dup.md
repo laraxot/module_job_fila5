@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_fYB7g3
 qmd: "tips dup"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_4GObv7
 title: 'Tips dup — risorse esterne'
 module: Job
 type: reference

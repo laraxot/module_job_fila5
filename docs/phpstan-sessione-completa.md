@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_iHwOY4
 ---
 title: "phpstan sessione completa"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_oS8ljp
 # Sessione PHPStan Completa - Tutti i Moduli
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)  
 **Status**: ⏳ IN CORSO
@@ -191,6 +194,7 @@ $media = $record->getFirstMedia($attachment);
 
 ---
 
+<<<<<<< .merge_file_iHwOY4
 title: "phpstan sessione completa"
 type: note
 tags: [documentation]
@@ -199,5 +203,7 @@ updated: 2026-09-26
 qmd: "phpstan sessione completa"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_oS8ljp
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
 

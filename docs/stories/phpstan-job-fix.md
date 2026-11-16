@@ -1,10 +1,13 @@
 ---
+<<<<<<< .merge_file_kB3ocN
 title: "phpstan job fix"
 type: note
 tags: [documentation]
 qmd: "phpstan job fix"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_yltUEh
 id: phpstan-job-fix
 slug: phpstan-job
 scope: [module:Job, project:base_workorder_fila5]

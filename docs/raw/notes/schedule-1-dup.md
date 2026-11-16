@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_Be9W37
 qmd: "schedule 1 dup"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_YzzP2a
 title: 'Schedule 1 dup — risorse esterne'
 module: Job
 type: reference

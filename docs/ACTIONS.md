@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_kI7uIu
 qmd: "ACTIONS"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_Bdb3wf
 title: "Job Module — QueueableActions Architecture (Consolidated)"
 type: guide
 tags: [actions, architecture, queueable]

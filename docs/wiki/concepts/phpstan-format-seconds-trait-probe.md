@@ -1,7 +1,10 @@
 ---
+<<<<<<< .merge_file_wl8kzp
 qmd: "phpstan format seconds trait probe"
 issues: []
 discussions: []
+=======
+>>>>>>> .merge_file_cEV9m7
 title: PHPStan trait probe FormatSeconds
 type: concept
 module: Job

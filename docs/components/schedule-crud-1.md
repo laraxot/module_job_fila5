@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_gaTtaX
 ---
 title: "schedule crud 1"
 type: note
@@ -9,6 +10,8 @@ issues: []
 discussions: []
 ---
 
+=======
+>>>>>>> .merge_file_JyGjwx
 # Schedule Crud Component
 
 ## Panoramica
