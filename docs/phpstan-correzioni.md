@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_m7qxBt
----
-title: "phpstan correzioni"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan correzioni"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_UQomIO
 # Correzioni PHPStan Livello 10 - Modulo Job
 **Errori iniziali**: 31  
 **Errori finali**: 0  
@@ -50,17 +36,6 @@ $signature = method_exists($command, 'getSignature')
 
 ---
 
-<<<<<<< .merge_file_m7qxBt
-title: "phpstan correzioni"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan correzioni"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_UQomIO
 ### 2. GetTaskCommandsAction.php
 **Errore**: sortBy callback con parametro tipo mixed  
 **Soluzione**: PHPDoc per tipizzare la Collection

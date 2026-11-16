@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_NnQxYq
----
-title: "phpstan compliance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan compliance"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_DJ1PR9
 # PHPStan Compliance - Job Module
 
 ## Status: ✅ FULLY COMPLIANT

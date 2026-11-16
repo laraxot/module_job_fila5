@@ -1,11 +1,8 @@
 ---
-<<<<<<< .merge_file_eQ0rSE
 qmd: "filament dup"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_x4ydnI
-title: 'Filament dup — risorse esterne'
+title: 'Filament dup: risorse esterne'
 module: Job
 type: reference
 slug: filament-dup
@@ -16,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Filament dup — risorse esterne
+# Filament dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

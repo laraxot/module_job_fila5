@@ -1,10 +1,4 @@
 ---
-<<<<<<< .merge_file_GF7uaK
-qmd: "TECH SPEC"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_ngDqEe
 title: "Technical Specification - Job Module"
 type: technical_spec
 tags: [tech spec, job]

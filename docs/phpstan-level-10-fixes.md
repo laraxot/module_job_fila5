@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_ZfJLPi
----
-title: "phpstan level 10 fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level 10 fixes"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_yG3j4R
 # PHPStan Level 10 Fixes - Modulo Job
 
 ## Data: [DATE]
@@ -199,15 +185,4 @@ if ($someCondition) {
 
 ---
 
-<<<<<<< .merge_file_ZfJLPi
-title: "phpstan level 10 fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level 10 fixes"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_yG3j4R
 **Conclusione:** Il modulo Job è ora completamente compliant con PHPStan Level 10, dimostrando eccellenza nella qualità del codice e type safety.

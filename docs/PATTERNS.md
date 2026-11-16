@@ -1,13 +1,4 @@
 ---
-<<<<<<< .merge_file_77oTIP
-type: note
-tags: [documentation]
-created: 2026-09-26
-qmd: "PATTERNS"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_fRkHwF
 title: "Job Module Architectural Patterns"
 category: "architecture"
 owner: "Job"
@@ -453,11 +444,7 @@ public function handle(Invoice $invoice): void
 
 - [Laravel Queues Documentation](https://laravel.com/docs/queues)
 - [Queue Best Practices](./best-practices.md)
-<<<<<<< .merge_file_77oTIP
-- [Troubleshooting Guide](./job-module-troubleshooting-guide.md)
-=======
 - [Troubleshooting Guide](./TROUBLESHOOTING.md)
->>>>>>> .merge_file_fRkHwF
 - [Job Monitor Filament Resource](./COMPONENTS.md#filament-resources)
 
 ---

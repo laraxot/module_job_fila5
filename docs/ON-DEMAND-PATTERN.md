@@ -1,10 +1,4 @@
 ---
-<<<<<<< .merge_file_Vu4yq4
-qmd: "ON DEMAND PATTERN"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_nv2WGq
 title: "On-Demand Pattern — Module Job"
 type: documentation
 created: 2026-05-11

@@ -1,10 +1,4 @@
 ---
-<<<<<<< .merge_file_i1AvGw
-qmd: "PROJECT STRUCTURE"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_XEVM4P
 title: "Project Structure — Module Job"
 type: documentation
 created: 2026-05-11

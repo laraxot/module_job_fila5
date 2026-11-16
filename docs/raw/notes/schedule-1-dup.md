@@ -1,11 +1,8 @@
 ---
-<<<<<<< .merge_file_Be9W37
 qmd: "schedule 1 dup"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_YzzP2a
-title: 'Schedule 1 dup — risorse esterne'
+title: 'Schedule 1 dup: risorse esterne'
 module: Job
 type: reference
 slug: schedule-1-dup
@@ -16,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Schedule 1 dup — risorse esterne
+# Schedule 1 dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_yIZkSu
----
-title: "MIGRATIONS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MIGRATIONS"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_vfzhMa
 # Job Module — Migrations Documentation
 
 ## Overview
@@ -24,17 +10,6 @@ This document describes the migration strategy for the Job module, which manages
 
 ---
 
-<<<<<<< .merge_file_yIZkSu
-title: "MIGRATIONS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MIGRATIONS"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_vfzhMa
 ## Philosophy
 
 Each migration represents the schema lifecycle for one or more models. Migrations follow the **XotBaseMigration pattern**:

@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_XRjlJa
----
-title: "AGENTS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "AGENTS"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_rMJFIm
 # Job {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** Job
@@ -36,12 +22,6 @@ You are the **Job Wiki Maintainer**. Your job is to:
 
 ```yaml
 ---
-<<<<<<< .merge_file_XRjlJa
-qmd: "AGENTS"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_rMJFIm
 title: "Page Title"
 type: concept|entity|source|comparison|decision|troubleshooting
 sources: ["raw/articles/filename.md"]

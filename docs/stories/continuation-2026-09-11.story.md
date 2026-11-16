@@ -1,13 +1,4 @@
 ---
-<<<<<<< .merge_file_eHxnOt
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "continuation 2026 09 11.story"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_u8J4RE
 id: story-continuation-job-module
 title: "Job Module — Table Audit and $model Property"
 type: continuation

@@ -1,11 +1,8 @@
 ---
-<<<<<<< .merge_file_fYB7g3
 qmd: "tips dup"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_4GObv7
-title: 'Tips dup — risorse esterne'
+title: 'Tips dup: risorse esterne'
 module: Job
 type: reference
 slug: tips-dup
@@ -16,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Tips dup — risorse esterne
+# Tips dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

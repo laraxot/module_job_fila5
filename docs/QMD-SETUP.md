@@ -1,10 +1,4 @@
 ---
-<<<<<<< .merge_file_2AGNw0
-qmd: "QMD SETUP"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_B0hptc
 title: "QMD Setup — Module Job"
 type: documentation
 created: 2026-05-11

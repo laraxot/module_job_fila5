@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_yT279d
----
-title: "phpstan fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_yzC8JW
 # PHPStan Fixes — Job
 
 ## 2026-06-10 — STORY-307 · L10 · 0 errori codice
@@ -20,17 +6,6 @@ discussions: []
 
 ---
 
-<<<<<<< .merge_file_yT279d
-title: "phpstan fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_yzC8JW
 ## Storico — Gennaio 2025
 
 ## ✅ Stato complessivo

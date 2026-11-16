@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_5EoKTW
----
-title: "00 INDEX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 INDEX"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_QyX8CX
 # Job Module - Roadmap
 
 > Infrastruttura robusta per code e processi in background.

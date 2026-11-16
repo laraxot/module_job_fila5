@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_g7S3y4
----
-title: "phpstan level 10 compliance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan level 10 compliance"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_YqGa07
 # PHPStan Level 10 Compliance - Job Module
 
 **Ultimo aggiornamento**: [DATE]

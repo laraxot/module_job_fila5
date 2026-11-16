@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_rrl0VB
----
-title: "phpstan session complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan session complete"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_VuyNE1
 # Sessione PHPStan Completa - Tutti i Moduli
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)
 **Status**: ⏳ IN CORSO
@@ -194,15 +180,4 @@ $media = $record->getFirstMedia($attachment);
 
 ---
 
-<<<<<<< .merge_file_rrl0VB
-title: "phpstan session complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan session complete"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_VuyNE1
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.

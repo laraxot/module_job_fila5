@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_TqxALx
----
-title: "phpstan fixes session"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes session"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_COP0q2
 # PHPStan Fixes - Modulo Job
 
 ## 🔄 Status: IN PROGRESS - 49 Errori Rimanenti
@@ -21,17 +7,6 @@ discussions: []
 
 ---
 
-<<<<<<< .merge_file_TqxALx
-title: "phpstan fixes session"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes session"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_COP0q2
 ## 📊 Correzioni Implementate
 
 ### 1. Rimozione Generic Type da HasXotFactory ✅

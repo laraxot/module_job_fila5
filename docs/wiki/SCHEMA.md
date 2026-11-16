@@ -1,12 +1,4 @@
 ---
-<<<<<<< .merge_file_rNVC3A
-type: note
-updated: 2026-09-26
-qmd: "SCHEMA"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_sJ9885
 title: Wiki Schema
 description: Schema e convenzioni per la manutenzione della wiki
 tags:

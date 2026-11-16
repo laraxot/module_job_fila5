@@ -1,15 +1,4 @@
 ---
-<<<<<<< .merge_file_JGIAk5
-title: "migrazione filament 4"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migrazione filament 4"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_71wKGl
 module: theme
 topic: migrazione-filament-4
 canonical: ../../../Themes/docs/shared-components/.gitkeep

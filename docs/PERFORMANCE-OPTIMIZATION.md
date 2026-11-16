@@ -1,10 +1,4 @@
 ---
-<<<<<<< .merge_file_oXbPwp
-qmd: "PERFORMANCE OPTIMIZATION"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_ritJ8N
 title: "Performance Optimization — Module Job"
 type: documentation
 created: 2026-05-11

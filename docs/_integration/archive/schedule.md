@@ -1,9 +1,6 @@
 ---
-<<<<<<< .merge_file_YX21Mk
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_fKz4Zk
 title: "Schedule 1"
 module: "Job"
 type: concept
@@ -13,4 +10,5 @@ updated: 2026-07-14
 qmd: "schedule 1"
 related:
   - "./phpstan-fixes-archive-2.md"
+status: draft
 ---

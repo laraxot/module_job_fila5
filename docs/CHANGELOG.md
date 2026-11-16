@@ -1,15 +1,4 @@
 ---
-<<<<<<< .merge_file_lCm9fA
-title: "CHANGELOG"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "CHANGELOG"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_rNKvQL
 module: theme
 topic: CHANGELOG
 canonical: ../../../Themes/docs/shared-components/CHANGELOG.md

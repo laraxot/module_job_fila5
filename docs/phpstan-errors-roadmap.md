@@ -1,17 +1,3 @@
-<<<<<<< .merge_file_d5E7pF
----
-title: "phpstan errors roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan errors roadmap"
-issues: []
-discussions: []
----
-
-=======
->>>>>>> .merge_file_76lxcD
 # PHPStan Level 10 Errors Roadmap - Job Module
 
 **Modulo**: Job  
@@ -20,17 +6,6 @@ discussions: []
 
 ---
 
-<<<<<<< .merge_file_d5E7pF
-title: "phpstan errors roadmap"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan errors roadmap"
-issues: []
-discussions: []
-=======
->>>>>>> .merge_file_76lxcD
 ## 📊 Errori Identificati
 
 ### Totale Errori: 3

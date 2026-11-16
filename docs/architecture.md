@@ -1,24 +1,16 @@
-<<<<<<< .merge_file_hZWGLK
 ---
-title: "Job module architecture"
-type: architecture
-module: Job
-status: approved
-created: 2026-09-06
-updated: 2026-09-22
-qmd: "job module architecture queue schedule filament"
-issues:
-  - "https://github.com/laraxot/module_job_fila5/issues/54"
-discussions:
-  - "https://github.com/laraxot/module_job_fila5/discussions/55"
-related:
-  - "./bmad/livewire-widget-architecture.md"
-  - "./bmad/livewire-inventory.md"
-  - "../README.md"
+title: "ARCHITECTURE"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ARCHITECTURE"
+issues: []
+discussions: []
+status: superseded
+superseded_by: bmad/architecture.md
 ---
 
-=======
->>>>>>> .merge_file_4nx5ZJ
 # Job Module Architecture
 
 ## Overview
