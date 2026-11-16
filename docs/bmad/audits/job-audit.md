@@ -30,6 +30,24 @@ PHPStan/Pest proporzionati.
 | Marker di conflitto | 0 |
 | Label/tooltip letterali Filament | 0 |
 
+
+## Analisi Funzionale e Scopo di Dominio
+
+### Perché Esiste (Scopo Fondamentale)
+Infrastruttura per l'esecuzione asincrona, code di elaborazione e batch processing del sistema.
+
+### Valore di Business e Utilità
+Evita timeout e congestione HTTP offuscando calcoli pesanti (export massivi XLS, import dati Sigma, invio batch notifiche) su worker dedicati.
+
+### Architettura e Pattern Laraxot
+Estensione di queue worker Laravel, monitoraggio job falliti, retry policies robuste, schedulazione cron agnostica.
+
+### Standard di Qualità e Conformità
+- **PHPStan**: Confermato a Level Max con 0 errori.
+- **Filament**: Conformità Filament 5 con estensione delle classi XotBase*.
+- **Naming**: Convenzione kebab-case rigorosa per tutti i documenti e classi PSR-4.
+- **Trans**: Traduzioni dinamiche via Lang, nessun testo hardcoded.
+
 ## Audit per dimensione
 
 ### Architettura e confini
