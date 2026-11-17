@@ -56,13 +56,13 @@
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
 - [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
 - [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
-- [architecture-rules.md](architecture-rules.md) - Architecture discipline rules
+- [architecture-rules.md](archive/architecture-rules.md) - Architecture discipline rules
 - [contracts-naming.md](contracts-naming.md) - Contract naming conventions
 
 ### Product & Strategy
-- [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
-- [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
-- [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
+- [PRODUCT_STRATEGY.md](product_strategy.md) - Product strategy document
+- [PRODUCT_ROADMAP.md](product_roadmap.md) - Development roadmap
+- [PRODUCT_LAUNCH_PLAN.md](product_launch_plan.md) - Launch planning
 - [product-roadmap.md](product-roadmap.md) - Roadmap details
 - [product-strategy.md](product-strategy.md) - Strategy overview
 - [product-launch-plan.md](product-launch-plan.md) - Launch checklist
@@ -100,7 +100,7 @@
 - [filament-5x-compatibility.md](filament-5x-compatibility.md) - v5 compatibility (1.8KB)
 - [filament-version.md](filament-version.md) - Version tracking (862 bytes)
 - [migration-filament.md](migration-filament.md) - Filament migration
-- [migration-filament-4.md](migration-filament-4.md) - v4 migration
+- [migration-filament-4.md](archive/migration-filament-4.md) - v4 migration
 
 ### Migration & Database
 - [MIGRATIONS.md](MIGRATIONS.md) - Migration tracking (10.9KB)
