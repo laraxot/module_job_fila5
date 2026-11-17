@@ -172,6 +172,14 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
+<<<<<<< .merge_file_oJxgIZ
+        $this->out .= '<hr/>';
+        Artisan::call('queue:'.$cmd);
+        $this->out .= Artisan::output();
+        $this->out .= '<hr/>';
+    }
+
+=======
         if (! in_array($cmd, $this->getAllowedCommands(), true)) {
             return;
         }
@@ -198,6 +206,7 @@ class Status extends Component
         ];
     }
 
+>>>>>>> .merge_file_13zgsK
     public function dummyAction(): void
     {
         for ($i = 0; $i < 1000; $i++) {

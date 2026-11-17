@@ -4,17 +4,37 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Job
+<<<<<<< .merge_file_8Sop25
+qmd: "ECC audit Job verification security testing laravel"
+=======
 qmd: "ECC audit Job checklist security-review clean-code verification-loop inventario misurato finding scheduler policy"
 related:
   - ./00-index.md
   - ../bmad/audits/job-audit.md
   - ../bmad/audit.md
+>>>>>>> .merge_file_QoyUvn
 ---
 
 # ECC audit operativo — Job
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_8Sop25
+ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
+PHPStan + Pest, aggiornamento docs/QMD.
+
+## Checklist
+
+- [ ] `clean-code`: DRY/KISS, Actions su Services, niente wrapper inutili
+- [ ] `security-review`: policy, mass assignment, export, log, privacy, tenant
+- [ ] `laravel-verification`: route, config, migration additive, container
+- [ ] `verification-loop`: PHPStan level max + Pest mirato
+- [ ] `tdd-workflow`: regressione sui finding P0
+- [ ] `documentation-sync`: story + indici + qmd
+- [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
+
+## Input misurato (2026-11-16)
+=======
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa,
 PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/job-audit.md).
 
@@ -31,10 +51,31 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 | `context-engineering` | ok | story 12.1 riaperta dal decision-log (D-4) |
 
 ## Inventario misurato
+>>>>>>> .merge_file_QoyUvn
 
 | Voce | N |
 |---|---:|
 | app PHP | 176 |
+<<<<<<< .merge_file_8Sop25
+| test | 84 |
+| resources | 9 |
+| actions | 16 |
+| services | 1 |
+| policies (files approx) | 32 |
+
+## Gate osservati
+
+- PHPStan `Modules` (2026-11-16): 0 errori
+- Pest: pending (ambiente testing)
+
+## Anti-pattern vietati
+
+- baseline/`@phpstan-ignore` senza motivazione
+- test svuotati per silenziare errori
+- migrate:fresh / RefreshDatabase / --force
+- docs con date nel nome file
+- comportamento o screenshot inventati
+=======
 | test PHP / `*Test.php` / casi Pest | 55 / 49 / 369 |
 | Models / Policy / Resource | 17 / 16 / 9 |
 | Pagine standalone / pagine Resource / Widget | 4 / 26 / 8 |
@@ -52,6 +93,7 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 ## Anti-pattern vietati (stato)
 
 `migrate:fresh` in produzione/CI: 0; in test: 6 occorrenze, 5 negative con mock, **1 non mockata** (P1-3). `RefreshDatabase`: 0. Baseline/`@phpstan-ignore`: 0. `dd()`: 1 (legacy).
+>>>>>>> .merge_file_QoyUvn
 
 ## Riferimenti
 

@@ -72,6 +72,11 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
+<<<<<<< .merge_file_j2VX76
+        $this->out .= '<hr/>';
+        Artisan::call($cmd);
+        $this->out .= Artisan::output();
+=======
         if (! in_array($cmd, $this->getAllowedCommands(), true)) {
             return;
         }
@@ -79,10 +84,13 @@ class Status extends Component
         $this->out .= '<hr/>';
         Artisan::call($cmd);
         $this->out .= e(Artisan::output());
+>>>>>>> .merge_file_Ae4RDl
         $this->out .= '<hr/>';
     }
 
     /**
+<<<<<<< .merge_file_j2VX76
+=======
      * @return list<string>
      */
     public function getAllowedCommands(): array
@@ -99,6 +107,7 @@ class Status extends Component
     }
 
     /**
+>>>>>>> .merge_file_Ae4RDl
      * @return Collection<int, \Illuminate\Console\Scheduling\Event>
      */
     public function getScheduledJobs(): Collection

@@ -4,16 +4,25 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Job
+<<<<<<< .merge_file_hzbBRn
+qmd: "purpose bmad Job"
+=======
 qmd: "purpose bmad Job scopo code import export fallimenti scheduler perché esiste stato del codice"
 related:
   - ../purpose.md
   - ./audits/job-audit.md
   - ./architecture.md
   - ./epics.md
+>>>>>>> .merge_file_WyrgfO
 ---
 
 # Scopo BMAD — Job
 
+<<<<<<< .merge_file_hzbBRn
+## Lo scopo in una frase **Job rende visibile e governabile tutto cio' che accade fuori dalla richiesta HTTP: code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro
+
+SSoT estesa: [../purpose.md](../purpose.md) se presente.
+=======
 ## Lo scopo in una frase
 
 **Job rende visibile e governabile tutto ciò che accade fuori dalla richiesta HTTP — code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro fallimenti.**
@@ -43,3 +52,4 @@ Un lavoro asincrono che fallisce in silenzio è peggio di uno mai partito: chi l
 ## Riferimenti
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
+>>>>>>> .merge_file_WyrgfO
