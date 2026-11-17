@@ -10,7 +10,6 @@ discussions: []
 module: theme
 topic: metodi-duplicati-analisi
 canonical: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
-status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/duplicate-methods-analysis-Modules.md
