@@ -1,13 +1,11 @@
 ---
-title: Job: indice BMAD
+title: Job — indice BMAD
 type: index
 tags: [docs, bmad, job]
 qmd: "Job indice BMAD documentazione"
-status: draft
-updated: 2026-10-09
 ---
 
-# Job: indice BMAD
+# Job — indice BMAD
 
 ## Canonico
 

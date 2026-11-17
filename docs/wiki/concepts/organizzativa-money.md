@@ -10,7 +10,6 @@ discussions: []
 module: theme
 topic: organizzativa-money
 canonical: ../../../../../Themes/docs/shared-components/organizzativa-money.md
-status: stub
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/organizzativa-money.md
