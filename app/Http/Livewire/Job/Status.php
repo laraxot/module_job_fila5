@@ -172,12 +172,41 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
+<<<<<<< .merge_file_oJxgIZ
         $this->out .= '<hr/>';
         Artisan::call('queue:'.$cmd);
         $this->out .= Artisan::output();
         $this->out .= '<hr/>';
     }
 
+=======
+        if (! in_array($cmd, $this->getAllowedCommands(), true)) {
+            return;
+        }
+
+        $this->out .= '<hr/>';
+        Artisan::call('queue:'.$cmd);
+        $this->out .= e(Artisan::output());
+        $this->out .= '<hr/>';
+    }
+
+    /**
+     * @return list<string>
+     */
+    public function getAllowedCommands(): array
+    {
+        return [
+            'clear',
+            'failed',
+            'flush',
+            'prune-batches',
+            'prune-failed',
+            'restart',
+            'retry',
+        ];
+    }
+
+>>>>>>> .merge_file_13zgsK
     public function dummyAction(): void
     {
         for ($i = 0; $i < 1000; $i++) {
