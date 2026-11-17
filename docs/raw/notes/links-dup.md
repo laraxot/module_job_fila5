@@ -1,5 +1,8 @@
 ---
-title: 'Links dup — risorse esterne'
+qmd: "links dup"
+issues: []
+discussions: []
+title: 'Links dup: risorse esterne'
 module: Job
 type: reference
 slug: links-dup
@@ -10,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Links dup — risorse esterne
+# Links dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

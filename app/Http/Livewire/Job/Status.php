@@ -172,10 +172,30 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
+        if (! in_array($cmd, $this->getAllowedCommands(), true)) {
+            return;
+        }
+
         $this->out .= '<hr/>';
         Artisan::call('queue:'.$cmd);
-        $this->out .= Artisan::output();
+        $this->out .= e(Artisan::output());
         $this->out .= '<hr/>';
+    }
+
+    /**
+     * @return list<string>
+     */
+    public function getAllowedCommands(): array
+    {
+        return [
+            'clear',
+            'failed',
+            'flush',
+            'prune-batches',
+            'prune-failed',
+            'restart',
+            'retry',
+        ];
     }
 
     public function dummyAction(): void
