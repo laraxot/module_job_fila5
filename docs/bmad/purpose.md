@@ -4,43 +4,16 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Job
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_pdyJm1
-qmd: "purpose bmad Job"
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_hzbBRn
-qmd: "purpose bmad Job"
-=======
 qmd: "purpose bmad Job scopo code import export fallimenti scheduler perché esiste stato del codice"
 related:
   - ../purpose.md
   - ./audits/job-audit.md
   - ./architecture.md
   - ./epics.md
->>>>>>> .merge_file_WyrgfO
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_tihhd2
->>>>>>> laraxot/dev
 ---
 
 # Scopo BMAD — Job
 
-<<<<<<< HEAD
-=======
-<<<<<<< .merge_file_pdyJm1
-## Lo scopo in una frase **Job rende visibile e governabile tutto cio' che accade fuori dalla richiesta HTTP: code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro
-
-SSoT estesa: [../purpose.md](../purpose.md) se presente.
-=======
->>>>>>> laraxot/dev
-<<<<<<< .merge_file_hzbBRn
-## Lo scopo in una frase **Job rende visibile e governabile tutto cio' che accade fuori dalla richiesta HTTP: code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro
-
-SSoT estesa: [../purpose.md](../purpose.md) se presente.
-=======
 ## Lo scopo in una frase
 
 **Job rende visibile e governabile tutto ciò che accade fuori dalla richiesta HTTP — code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro fallimenti.**
@@ -66,12 +39,8 @@ Un lavoro asincrono che fallisce in silenzio è peggio di uno mai partito: chi l
 | Accorgersi del lavoro che non parte più | **non mantenuta** (dipende dal punto precedente) | `ScheduleHistory`/`Result` mai popolati dal modulo |
 | Il fallimento raggiunge chi l'ha chiesto | **non implementata** | nessun hook di coda attivo |
 | Solo chi amministra gestisce la coda | **violata** su `Job`/`FailedJob`/`JobBatch` | `JobPolicy.php:32` ([P0-1](./audits/job-audit.md#p0-1--un-utente-qualsiasi-può-creare-righe-nella-tabella-jobs)) |
+| ↳ verifica 2026-11-19 | **corretta nel codice** (E1, story in `review`) | `JobPolicy` ora deny-by-default su tutte le ability, bypass solo in `JobBasePolicy::before()` ([e1 story](./stories/e1-job-policy-create-deny.story.md)) |
 
 ## Riferimenti
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
->>>>>>> .merge_file_WyrgfO
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_tihhd2
->>>>>>> laraxot/dev
