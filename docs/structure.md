@@ -143,8 +143,8 @@ namespace Modules\Job\App\Filament\Resources;
 
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
-- [Documentazione Xot](laravel/modules/xot/docs/readme.md)
-- [Documentazione UI](laravel/modules/ui/docs/readme.md)
+- [Documentazione Xot](laravel/modules/xot/docs/README.md)
+- [Documentazione UI](laravel/modules/ui/docs/README.md)
 - [Convenzioni dei Namespace](laravel/docs/module_namespace_rules.md)
 
 ## Collegamenti tra versioni di structure.md

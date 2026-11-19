@@ -38,9 +38,9 @@ related:
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Nessuna dipendenza diretta; usa Xot, spipu/html2pdf (via Xot)
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Base framework e Page classes.
-- [Activity](../../activity/docs/readme.md) - Tracciamento log esecuzione.
-- [Notify](../../notify/docs/readme.md) - Notifiche fallimento job.
+- [Xot](../../xot/docs/README.md) - Base framework e Page classes.
+- [Activity](../../activity/docs/README.md) - Tracciamento log esecuzione.
+- [Notify](../../notify/docs/README.md) - Notifiche fallimento job.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
