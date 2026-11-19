@@ -4,6 +4,12 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Job
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Fl5yHr
+qmd: "audit BMAD Job source-first qualità"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_m9eyxv
 qmd: "audit BMAD Job source-first qualità"
 =======
@@ -13,10 +19,20 @@ related:
   - ./piano-miglioramento.md
   - ../ecc/job-ecc-audit.md
 >>>>>>> .merge_file_PtylIC
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_oEDJW6
+>>>>>>> laraxot/dev
 ---
 
 # Audit BMAD — Job
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Fl5yHr
+SSoT dettagliata: [audits/job-audit.md](./audits/job-audit.md)
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_m9eyxv
 SSoT dettagliata: [audits/job-audit.md](./audits/job-audit.md)
 =======
@@ -24,12 +40,23 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 
 **Scopo in una frase:** Job rende visibile e governabile ciò che accade fuori dalla richiesta HTTP — code, import, export, pianificazioni — e soprattutto i loro fallimenti ([purpose.md](./purpose.md)).
 >>>>>>> .merge_file_PtylIC
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_oEDJW6
+>>>>>>> laraxot/dev
 
 ## Sintesi (2026-11-16)
 
 | Metrica | Valore |
 |---|---:|
+<<<<<<< HEAD
 <<<<<<< .merge_file_m9eyxv
+=======
+<<<<<<< .merge_file_Fl5yHr
+=======
+<<<<<<< .merge_file_m9eyxv
+>>>>>>> .merge_file_oEDJW6
+>>>>>>> laraxot/dev
 | PHP `app/` | 176 |
 | Test | 84 |
 | Resources | 9 |
@@ -45,6 +72,11 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_Fl5yHr
+=======
+>>>>>>> laraxot/dev
 =======
 | PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 |
 | Resource / Widget / Actions / Services | 9 / 8 / 16 / 1 (morto) |
@@ -74,3 +106,7 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 
 [Piano](./piano-miglioramento.md) · [Epics](./epics.md) · [Decision log](./decision-log.md) · [ECC](../ecc/job-ecc-audit.md) · [Story](./stories/module-bmad-audit.story.md)
 >>>>>>> .merge_file_PtylIC
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_oEDJW6
+>>>>>>> laraxot/dev

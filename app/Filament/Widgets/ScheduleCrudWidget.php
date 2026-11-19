@@ -22,8 +22,11 @@ use Webmozart\Assert\Assert;
  */
 class ScheduleCrudWidget extends XotBaseWidget
 {
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view = 'job::filament.widgets.schedule-crud';
+=======
+>>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 

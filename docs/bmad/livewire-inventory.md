@@ -20,7 +20,11 @@ related:
 
 **Solo documentazione. Nessun PHP toccato in questo audit.**
 
+<<<<<<< HEAD
 Questo file è la SSoT del modulo Job per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md) e [Modules/Xot/docs/bmad/livewire-inventory.md](../../Xot/docs/bmad/livewire-inventory.md).
+=======
+Questo file è la SSoT del modulo Job per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](livewire-inventory.md) e [Modules/Xot/docs/bmad/livewire-inventory.md](livewire-inventory.md).
+>>>>>>> laraxot/dev
 
 Differenza rispetto a Cms/Xot: in Job **esistono mount reali** (`<livewire:...>` in viste Blade), quindi la classificazione non è "tutto orfano": un componente è montato dentro una pagina del panel `job::admin`, gli altri solo in viste legacy `adm_theme` prive di renderer.
 

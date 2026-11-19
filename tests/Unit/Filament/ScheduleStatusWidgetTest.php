@@ -6,6 +6,10 @@ use Illuminate\Contracts\Console\Kernel;
 use Modules\Job\Filament\Widgets\ScheduleStatusWidget;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+<<<<<<< HEAD
+=======
+use Mockery;
+>>>>>>> laraxot/dev
 
 uses(TestCase::class);
 

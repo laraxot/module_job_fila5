@@ -12,6 +12,12 @@ qmd: "indice BMAD Job audit purpose piano stories"
 - [Purpose](./purpose.md)
 - [Audit](./audit.md)
 - [Audit dettagliato](./audits/job-audit.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_N2dpjB
+- [Piano di miglioramento](./piano-miglioramento.md)
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_A0n2gQ
 - [Piano di miglioramento](./piano-miglioramento.md)
 =======
@@ -22,6 +28,10 @@ qmd: "indice BMAD Job audit purpose piano stories"
 - [Piano di miglioramento](./piano-miglioramento.md)
 - [ECC audit](../ecc/job-ecc-audit.md)
 >>>>>>> .merge_file_cpRpPZ
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_3p1DZK
+>>>>>>> laraxot/dev
 - [Story audit modulo](./stories/module-bmad-audit.story.md)
 - [ECC](../ecc/00-index.md)
 - [Purpose root](../purpose.md)

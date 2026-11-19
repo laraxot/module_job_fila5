@@ -444,7 +444,11 @@ public function handle(Invoice $invoice): void
 
 - [Laravel Queues Documentation](https://laravel.com/docs/queues)
 - [Queue Best Practices](./best-practices.md)
+<<<<<<< HEAD
 - [Troubleshooting Guide](./TROUBLESHOOTING.md)
+=======
+- [Troubleshooting Guide](troubleshooting.md)
+>>>>>>> laraxot/dev
 - [Job Monitor Filament Resource](./COMPONENTS.md#filament-resources)
 
 ---

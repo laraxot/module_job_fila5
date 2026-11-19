@@ -4,6 +4,12 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Job
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_YkDzhX
+qmd: "audit approfondito Job inventario PHPStan Pest policy Filament Actions"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_N34dfY
 qmd: "audit approfondito Job inventario PHPStan Pest policy Filament Actions"
 =======
@@ -17,13 +23,24 @@ related:
   - ../../ecc/job-ecc-audit.md
   - ../stories/module-bmad-audit.story.md
 >>>>>>> .merge_file_58XFJK
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_69Qr69
+>>>>>>> laraxot/dev
 ---
 
 # Audit approfondito — Job
 
 ## Metodo
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_N34dfY
+=======
+<<<<<<< .merge_file_YkDzhX
+=======
+<<<<<<< .merge_file_N34dfY
+>>>>>>> .merge_file_69Qr69
+>>>>>>> laraxot/dev
 Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
 lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
 inventata. Pest dichiarato solo se eseguito.
@@ -80,6 +97,11 @@ Vedi [piano-miglioramento.md](../piano-miglioramento.md).
 - [audit.md](../audit.md)
 - [ECC](../../ecc/job-ecc-audit.md)
 - [Story](../stories/module-bmad-audit.story.md)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_YkDzhX
+=======
+>>>>>>> laraxot/dev
 =======
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura dei file
 critici (policy, `JobServiceProvider`, widget, componenti Livewire legacy, `ExecuteTaskAction`),
@@ -220,3 +242,7 @@ Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall
 
 [Sintesi](../audit.md) · [ECC](../../ecc/job-ecc-audit.md) · [Story](../stories/module-bmad-audit.story.md) · [Brainstorming](../brainstorming.md)
 >>>>>>> .merge_file_58XFJK
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_69Qr69
+>>>>>>> laraxot/dev

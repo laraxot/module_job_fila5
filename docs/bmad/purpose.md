@@ -4,6 +4,12 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Job
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_pdyJm1
+qmd: "purpose bmad Job"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_hzbBRn
 qmd: "purpose bmad Job"
 =======
@@ -14,10 +20,22 @@ related:
   - ./architecture.md
   - ./epics.md
 >>>>>>> .merge_file_WyrgfO
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_tihhd2
+>>>>>>> laraxot/dev
 ---
 
 # Scopo BMAD — Job
 
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_pdyJm1
+## Lo scopo in una frase **Job rende visibile e governabile tutto cio' che accade fuori dalla richiesta HTTP: code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro
+
+SSoT estesa: [../purpose.md](../purpose.md) se presente.
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_hzbBRn
 ## Lo scopo in una frase **Job rende visibile e governabile tutto cio' che accade fuori dalla richiesta HTTP: code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro
 
@@ -53,3 +71,7 @@ Un lavoro asincrono che fallisce in silenzio è peggio di uno mai partito: chi l
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
 >>>>>>> .merge_file_WyrgfO
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_tihhd2
+>>>>>>> laraxot/dev

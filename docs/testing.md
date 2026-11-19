@@ -82,7 +82,11 @@ Configure Job-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     // Configure Job module
     config(['job.default_queue' => 'default']);
     config(['job.max_attempts' => 3]);
@@ -104,7 +108,11 @@ test('job can be created', function () {
         'attempts' => 0,
         'status' => 'pending',
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     expect($job)->toBeInstanceOf(\Modules\Job\Models\Job::class);
     expect($job->title)->toBe('Test Job');
 });
@@ -115,7 +123,11 @@ test('job can be created', function () {
 ```php
 test('job configuration is loaded', function () {
     $jobConfig = config('job');
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     expect($jobConfig['default_queue'])->toBe('default');
     expect($jobConfig['max_attempts'])->toBe(3);
     expect($jobConfig['timeout'])->toBe(60);
@@ -127,7 +139,11 @@ test('job configuration is loaded', function () {
 ```php
 test('job service provider is registered', function () {
     $app = app();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     expect($app->bound(\Modules\Job\Providers\JobServiceProvider::class))->toBeTrue();
 });
 ```
@@ -172,7 +188,11 @@ test('job service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     config(['job.default_queue' => 'default']);
     config(['job.max_attempts' => 3]);
     config(['job.timeout' => 60]);
@@ -189,11 +209,19 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
+<<<<<<< HEAD
     
     $app['config']->set([
 'database.connections.job.database' => 'Quaeris_data_test',
     ]);
     
+=======
+
+    $app['config']->set([
+'database.connections.job.database' => '<nome progetto>_data_test',
+    ]);
+
+>>>>>>> laraxot/dev
     return $app;
 }
 ```
@@ -297,7 +325,11 @@ test('job can be created', function () {
         'priority' => 1,
         'timeout' => 60,
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     expect($job)->toBeInstanceOf(\Modules\Job\Models\Job::class);
     expect($job->title)->toBe('Test Job');
     expect($job->description)->toBe('Test job description');
@@ -315,14 +347,22 @@ test('job can be created', function () {
 ```php
 test('job service can dispatch job', function () {
     $service = new \Modules\Job\Services\JobService();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     $job = $service->dispatchJob([
         'title' => 'Test Job',
         'description' => 'Test job description',
         'queue' => 'default',
         'payload' => ['key' => 'value'],
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     expect($job)->toBeInstanceOf(\Modules\Job\Models\Job::class);
     expect($job->status)->toBe('pending');
 });
@@ -339,11 +379,19 @@ test('job can be processed', function () {
         'payload' => ['key' => 'value'],
         'status' => 'pending',
     ]);
+<<<<<<< HEAD
     
     // Simulate job processing
     $job->status = 'completed';
     $job->save();
     
+=======
+
+    // Simulate job processing
+    $job->status = 'completed';
+    $job->save();
+
+>>>>>>> laraxot/dev
     expect($job->status)->toBe('completed');
 });
 ```
@@ -358,7 +406,11 @@ test('job api can create job', function () {
         'queue' => 'default',
         'payload' => ['key' => 'value'],
     ];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> laraxot/dev
     $response = $this->post('/api/jobs', $jobData);
     $response->assertStatus(201);
     $response->assertJson([
@@ -420,4 +472,8 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
+<<<<<<< HEAD
 *
+=======
+*
+>>>>>>> laraxot/dev

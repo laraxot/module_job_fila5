@@ -4,6 +4,12 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Job
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_rH00WW
+qmd: "piano miglioramento Job P0 P1 P2 BMAD"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_1WPT9e
 qmd: "piano miglioramento Job P0 P1 P2 BMAD"
 =======
@@ -13,11 +19,22 @@ related:
   - ./epics.md
   - ./decision-log.md
 >>>>>>> .merge_file_1pD6CK
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_ZXG8vk
+>>>>>>> laraxot/dev
 ---
 
 # Piano di miglioramento — Job
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_1WPT9e
+=======
+<<<<<<< .merge_file_rH00WW
+=======
+<<<<<<< .merge_file_1WPT9e
+>>>>>>> .merge_file_ZXG8vk
+>>>>>>> laraxot/dev
 Derivato dall'[audit](./audits/job-audit.md).
 
 ## P0
@@ -52,6 +69,11 @@ Derivato dall'[audit](./audits/job-audit.md).
 - [ ] PHPStan `Modules/Job` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_rH00WW
+=======
+>>>>>>> laraxot/dev
 =======
 Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./epics.md).
 
@@ -88,3 +110,7 @@ Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./e
 - [ ] PHPStan `Modules/Job` = 0
 - [ ] ECC `00-index` aggiornato
 >>>>>>> .merge_file_1pD6CK
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_ZXG8vk
+>>>>>>> laraxot/dev

@@ -16,8 +16,11 @@ class QueueListenWidget extends XotBaseWidget
 
     public bool $run = false;
 
+<<<<<<< HEAD
     /** @var view-string */
     protected string $view = 'job::filament.widgets.queue-listen';
+=======
+>>>>>>> laraxot/dev
 
     protected int|string|array $columnSpan = 'full';
 

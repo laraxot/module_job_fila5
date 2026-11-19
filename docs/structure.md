@@ -148,7 +148,11 @@ namespace Modules\Job\App\Filament\Resources;
 - [Convenzioni dei Namespace](laravel/docs/module_namespace_rules.md)
 
 ## Collegamenti tra versioni di structure.md
+<<<<<<< HEAD
 * [structure.md](bashscripts/docs/structure.md)
+=======
+* [structure.md](structure.md)
+>>>>>>> laraxot/dev
 * [structure.md](../../../gdpr/docs/structure.md)
 * [structure.md](../../../notify/docs/structure.md)
 * [structure.md](../../../xot/docs/structure.md)

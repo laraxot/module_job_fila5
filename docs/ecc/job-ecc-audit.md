@@ -4,6 +4,12 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Job
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_01mTDN
+qmd: "ECC audit Job verification security testing laravel"
+=======
+>>>>>>> laraxot/dev
 <<<<<<< .merge_file_8Sop25
 qmd: "ECC audit Job verification security testing laravel"
 =======
@@ -13,13 +19,24 @@ related:
   - ../bmad/audits/job-audit.md
   - ../bmad/audit.md
 >>>>>>> .merge_file_QoyUvn
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_y6kgwZ
+>>>>>>> laraxot/dev
 ---
 
 # ECC audit operativo — Job
 
 ## Contratto PTVX
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_8Sop25
+=======
+<<<<<<< .merge_file_01mTDN
+=======
+<<<<<<< .merge_file_8Sop25
+>>>>>>> .merge_file_y6kgwZ
+>>>>>>> laraxot/dev
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -34,6 +51,11 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
 
 ## Input misurato (2026-11-16)
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_01mTDN
+=======
+>>>>>>> laraxot/dev
 =======
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa,
 PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/job-audit.md).
@@ -52,11 +74,22 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 
 ## Inventario misurato
 >>>>>>> .merge_file_QoyUvn
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_y6kgwZ
+>>>>>>> laraxot/dev
 
 | Voce | N |
 |---|---:|
 | app PHP | 176 |
+<<<<<<< HEAD
 <<<<<<< .merge_file_8Sop25
+=======
+<<<<<<< .merge_file_01mTDN
+=======
+<<<<<<< .merge_file_8Sop25
+>>>>>>> .merge_file_y6kgwZ
+>>>>>>> laraxot/dev
 | test | 84 |
 | resources | 9 |
 | actions | 16 |
@@ -75,6 +108,11 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 - migrate:fresh / RefreshDatabase / --force
 - docs con date nel nome file
 - comportamento o screenshot inventati
+<<<<<<< HEAD
+=======
+<<<<<<< .merge_file_01mTDN
+=======
+>>>>>>> laraxot/dev
 =======
 | test PHP / `*Test.php` / casi Pest | 55 / 49 / 369 |
 | Models / Policy / Resource | 17 / 16 / 9 |
@@ -94,6 +132,10 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 
 `migrate:fresh` in produzione/CI: 0; in test: 6 occorrenze, 5 negative con mock, **1 non mockata** (P1-3). `RefreshDatabase`: 0. Baseline/`@phpstan-ignore`: 0. `dd()`: 1 (legacy).
 >>>>>>> .merge_file_QoyUvn
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_y6kgwZ
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 
