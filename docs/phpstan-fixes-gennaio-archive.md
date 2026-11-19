@@ -7,7 +7,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "phpstan fixes gennaio archive 1"
 related:
-  - "./phpstan-fixes-archive-2.md"
+  - "./phpstan-fixes-archive-gennaio.md"
 ---
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
