@@ -13,14 +13,19 @@ use Illuminate\Support\Facades\Facade;
 use Mockery\MockInterface;
 use Modules\Job\Actions\Console\AssertAllowedArtisanCommandAction;
 use Modules\Job\Filament\Pages\JobStatus;
+use Modules\Job\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-uses(\Modules\Job\Tests\TestCase::class);
+uses(TestCase::class);
 
 /*
- * Test puri: nessun database, nessun bootstrap dell'app, nessun TestCase del modulo (usa
- * DatabaseTransactions). Application vuota (solo binding di base) + utenti/kernel Artisan mock;
- * il container originale viene ripristinato in afterEach.
+ * La pagina non viene mai avviata dall'app vera: ogni test sostituisce il container con una
+ * Application vuota (solo binding di base) e usa utenti e kernel Artisan finti; il container
+ * originale viene ripristinato in afterEach.
+ *
+ * `uses(TestCase::class)` e' il TestCase del modulo: porta DatabaseTransactions, quindi una
+ * connessione al database serve comunque per far partire il test. Il commento precedente
+ * diceva "nessun TestCase del modulo": era falso.
  */
 
 beforeEach(function (): void {
@@ -100,7 +105,7 @@ it('grants canAccess to super-admin', function (): void {
 it('refuses artisan() to a non super-admin even for a listed command', function (): void {
     jobStatusPageActAs($this->jobContainer, jobStatusPageUser(false));
     jobStatusPageKernel($this->jobContainer)->shouldReceive('call')->never();
-    $page = new JobStatus();
+    $page = new JobStatus;
 
     expect(fn () => $page->artisan('route:list'))->toThrow(AuthorizationException::class)
         ->and($page->out)->toBe('');
@@ -109,7 +114,7 @@ it('refuses artisan() to a non super-admin even for a listed command', function 
 it('rejects commands outside the allowlist even for a super-admin', function (string $command): void {
     jobStatusPageActAs($this->jobContainer, jobStatusPageUser(true));
     jobStatusPageKernel($this->jobContainer)->shouldReceive('call')->never();
-    $page = new JobStatus();
+    $page = new JobStatus;
 
     $page->artisan($command);
 
@@ -129,7 +134,7 @@ it('runs a listed command by exact match for a super-admin', function (): void {
     $kernel = jobStatusPageKernel($this->jobContainer);
     $kernel->shouldReceive('call')->once()->with('route:list')->andReturn(0);
     $kernel->shouldReceive('output')->once()->andReturn('ok');
-    $page = new JobStatus();
+    $page = new JobStatus;
 
     $page->artisan('route:list');
 
@@ -137,7 +142,7 @@ it('runs a listed command by exact match for a super-admin', function (): void {
 });
 
 it('derives the allowlist from the page buttons and excludes destructive framework commands', function (): void {
-    $allowed = (new JobStatus())->getAllowedCommands();
+    $allowed = (new JobStatus)->getAllowedCommands();
 
     expect($allowed)->toContain('queue:restart')->toContain('route:list');
     foreach (['migrate', 'migrate:fresh', 'db:wipe', 'db:seed', 'tinker'] as $forbidden) {
@@ -146,7 +151,7 @@ it('derives the allowlist from the page buttons and excludes destructive framewo
 });
 
 it('AssertAllowedArtisanCommandAction throws for commands that are not listed', function (string $command): void {
-    $action = new AssertAllowedArtisanCommandAction();
+    $action = new AssertAllowedArtisanCommandAction;
 
     expect(fn () => $action->execute($command, ['queue:restart']))->toThrow(InvalidArgumentException::class);
 })->with([
@@ -155,7 +160,7 @@ it('AssertAllowedArtisanCommandAction throws for commands that are not listed', 
 ]);
 
 it('AssertAllowedArtisanCommandAction accepts a listed command', function (): void {
-    $action = new AssertAllowedArtisanCommandAction();
+    $action = new AssertAllowedArtisanCommandAction;
 
     expect(fn () => $action->execute('queue:restart', ['queue:restart']))->not->toThrow(InvalidArgumentException::class);
 });
