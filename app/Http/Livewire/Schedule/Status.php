@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Http\Livewire\Schedule;
 
+use Illuminate\Console\Scheduling\Event;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
@@ -99,12 +100,12 @@ class Status extends Component
     }
 
     /**
-     * @return Collection<int, \Illuminate\Console\Scheduling\Event>
+     * @return Collection<int, Event>
      */
     public function getScheduledJobs(): Collection
     {
         if (app()->runningInConsole()) {
-            /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $empty */
+            /** @var Collection<int, Event> $empty */
             $empty = collect([]);
 
             return $empty;
@@ -113,7 +114,7 @@ class Status extends Component
         // new Kernel(app(), new Dispatcher);
         $schedule = app(Schedule::class);
 
-        /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $events */
+        /** @var Collection<int, Event> $events */
         $events = collect($schedule->events())->values();
 
         return $events;
