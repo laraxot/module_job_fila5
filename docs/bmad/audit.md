@@ -21,9 +21,10 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 
 | Metrica | Valore |
 |---|---:|
-| PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 |
+| PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 (ricontato 2026-11-19: 176 / 56 / 49; la sintesi precedente riportava «Test 84», smentita dal conteggio) |
 | Resource / Widget / Actions / Services | 9 / 8 / 16 / 1 (morto) |
-| Policy (su `UserBasePolicy` / `JobBasePolicy`) | 3 / 13 |
+| Policy (su `UserBasePolicy` / `JobBasePolicy`) | 3 / 13 (ricontato 2026-11-19, dopo E1: 0 / 15 + `JobBasePolicy`) |
+| Policy `return true` | 5 nella sintesi precedente; oggi 2, solo in `JobBasePolicy::before()` (bypass `super-admin` / `job::admin`) |
 | Marker conflitto / `RefreshDatabase` | 0 / 0 |
 | `dd()` in `app/` | 1 (`Http/Livewire/Broad.php:41`) |
 

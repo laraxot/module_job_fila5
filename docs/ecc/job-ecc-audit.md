@@ -49,7 +49,15 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 - PHPStan `Modules/Job` (`--no-progress`): **0 errori**.
 - Pest `Modules/Job/tests` su scratch DB: **parziale** — `JobStatusAuthorizationTest` 17 pass; suite completa non eseguita per carico macchina.
 
-## Anti-pattern vietati (stato)
+## Anti-pattern vietati
+
+- baseline/`@phpstan-ignore` senza motivazione
+- test svuotati per silenziare errori
+- `migrate:fresh` / `RefreshDatabase` / `--force`
+- docs con date nel nome file
+- comportamento o screenshot inventati
+
+### Stato misurato
 
 `migrate:fresh` in produzione/CI: 0; in test: 6 occorrenze, 5 negative con mock, **1 non mockata** (P1-3). `RefreshDatabase`: 0. Baseline/`@phpstan-ignore`: 0. `dd()`: 1 (legacy).
 
