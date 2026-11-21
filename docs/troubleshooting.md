@@ -218,7 +218,11 @@ JobMonitor::where('status', 'processing')
 ### Reference
 
 - [Timeout Configuration](./configuration.md#timeouts)
+<<<<<<< .merge_file_aK429r
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> .merge_file_9if5Um
 
 ---
 
@@ -594,7 +598,11 @@ php artisan queue:work --max-time=3600
 ### Reference
 
 - [Memory Management](./best-practices.md#memory-management)
+<<<<<<< .merge_file_aK429r
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> .merge_file_9if5Um
 
 ---
 
@@ -763,7 +771,11 @@ When a critical job failure occurs:
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Patterns & Best Practices](./PATTERNS.md)
 - [Configuration Guide](./configuration.md)
+<<<<<<< .merge_file_aK429r
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
+=======
+- [Performance Optimization](./performance-optimization.md)
+>>>>>>> .merge_file_9if5Um
 
 ---
 
