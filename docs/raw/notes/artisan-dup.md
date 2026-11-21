@@ -1,5 +1,8 @@
 ---
-title: 'Artisan dup — risorse esterne'
+qmd: "artisan dup"
+issues: []
+discussions: []
+title: 'Artisan dup: risorse esterne'
 module: Job
 type: reference
 slug: artisan-dup
@@ -10,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Artisan dup — risorse esterne
+# Artisan dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

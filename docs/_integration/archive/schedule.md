@@ -1,4 +1,6 @@
 ---
+issues: []
+discussions: []
 title: "Schedule 1"
 module: "Job"
 type: concept
@@ -7,5 +9,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "schedule 1"
 related:
-  - "./phpstan-fixes-archive-2.md"
+  - "./phpstan-fixes-archive-gennaio.md"
+status: draft
 ---

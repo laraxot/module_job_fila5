@@ -1,5 +1,8 @@
 ---
-title: 'Repo dup — risorse esterne'
+qmd: "repo dup"
+issues: []
+discussions: []
+title: 'Repo dup: risorse esterne'
 module: Job
 type: reference
 slug: repo-dup
@@ -10,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Repo dup — risorse esterne
+# Repo dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.
