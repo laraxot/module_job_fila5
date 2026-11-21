@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Http\Livewire\Schedule;
 
+use Illuminate\Console\Scheduling\Event;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
@@ -72,19 +73,43 @@ class Status extends Component
 
     public function artisan(string $cmd): void
     {
+        if (! in_array($cmd, $this->getAllowedCommands(), true)) {
+            return;
+        }
+
         $this->out .= '<hr/>';
         Artisan::call($cmd);
-        $this->out .= Artisan::output();
+        $this->out .= e(Artisan::output());
         $this->out .= '<hr/>';
     }
 
     /**
+     * @return list<string>
+     */
+    public function getAllowedCommands(): array
+    {
+        return [
+            'job:schedule-list',
+            'schedule:clear-cache',
+            'schedule:list',
+            'schedule:run',
+            'schedule:test',
+            'schedule-monitor:sync',
+            'schedule-monitor:list',
+        ];
+    }
+
+    /**
+<<<<<<< .merge_file_bcOYER
      * @return Collection<int, \Illuminate\Console\Scheduling\Event>
+=======
+     * @return Collection<int, Event>
+>>>>>>> .merge_file_0yVrVi
      */
     public function getScheduledJobs(): Collection
     {
         if (app()->runningInConsole()) {
-            /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $empty */
+            /** @var Collection<int, Event> $empty */
             $empty = collect([]);
 
             return $empty;
@@ -93,7 +118,7 @@ class Status extends Component
         // new Kernel(app(), new Dispatcher);
         $schedule = app(Schedule::class);
 
-        /** @var Collection<int, \Illuminate\Console\Scheduling\Event> $events */
+        /** @var Collection<int, Event> $events */
         $events = collect($schedule->events())->values();
 
         return $events;
