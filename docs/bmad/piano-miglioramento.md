@@ -4,27 +4,15 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Job
-<<<<<<< .merge_file_rH00WW
-qmd: "piano miglioramento Job P0 P1 P2 BMAD"
-=======
-<<<<<<< .merge_file_1WPT9e
-qmd: "piano miglioramento Job P0 P1 P2 BMAD"
-=======
 qmd: "piano miglioramento Job P0 P1 P2 policy scheduler Livewire widget guard test sequenza criteri"
 related:
   - ./audits/job-audit.md
   - ./epics.md
   - ./decision-log.md
->>>>>>> .merge_file_1pD6CK
->>>>>>> .merge_file_ZXG8vk
 ---
 
 # Piano di miglioramento — Job
 
-<<<<<<< .merge_file_rH00WW
-=======
-<<<<<<< .merge_file_1WPT9e
->>>>>>> .merge_file_ZXG8vk
 Derivato dall'[audit](./audits/job-audit.md).
 
 ## P0
@@ -59,9 +47,6 @@ Derivato dall'[audit](./audits/job-audit.md).
 - [ ] PHPStan `Modules/Job` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
-<<<<<<< .merge_file_rH00WW
-=======
-=======
 Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./epics.md).
 
 ## P0
@@ -96,5 +81,3 @@ Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./e
 - [ ] `rg 'dd\(|Artisan::call\(\$cmd\)' app` = 0 fuori allowlist
 - [ ] PHPStan `Modules/Job` = 0
 - [ ] ECC `00-index` aggiornato
->>>>>>> .merge_file_1pD6CK
->>>>>>> .merge_file_ZXG8vk

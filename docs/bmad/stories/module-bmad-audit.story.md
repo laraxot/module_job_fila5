@@ -1,20 +1,10 @@
 ---
 title: "Module BMAD audit — Job"
-<<<<<<< .merge_file_Lc4POF
-=======
-<<<<<<< .merge_file_FeMCU3
-=======
 type: story
->>>>>>> .merge_file_n5iROd
->>>>>>> .merge_file_h02Bmg
 status: review
 updated: 2026-11-16
 module: Job
 bmad: true
-<<<<<<< .merge_file_Lc4POF
-=======
-<<<<<<< .merge_file_FeMCU3
->>>>>>> .merge_file_h02Bmg
 qmd: "story BMAD audit modulo Job inventario gate"
 ---
 
@@ -37,9 +27,6 @@ qmd: "story BMAD audit modulo Job inventario gate"
 ## Esito
 
 Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
-<<<<<<< .merge_file_Lc4POF
-=======
-=======
 qmd: "story BMAD audit modulo Job inventario gate pest phpstan finding P0 policy scheduler"
 related:
   - ../audits/job-audit.md
@@ -72,5 +59,3 @@ Audit source-first del modulo che deve rendere governabile il lavoro asincrono e
 ## Esito
 
 E1 (P0-1) chiuso in follow-up: [e1-job-policy-create-deny](./e1-job-policy-create-deny.story.md). Baseline originale: 2 P0, 4 P1, P2 elencati. Chiusura demandata alle story figlie di [epics.md](../epics.md); i P0 sono da chiudere per primi (E1, E2).
->>>>>>> .merge_file_n5iROd
->>>>>>> .merge_file_h02Bmg
