@@ -42,4 +42,8 @@ class SendWelcomeEmailAction
 ## Collegamenti
 
 - [Documentazione ufficiale](https://github.com/spatie/laravel-queueable-action)
+<<<<<<< .merge_file_7ArB8X
 - [README Notify](../laravel/modules/notify/docs/readme.md)
+=======
+- [README Notify](../laravel/modules/notify/docs/README.md)
+>>>>>>> .merge_file_0OGqob

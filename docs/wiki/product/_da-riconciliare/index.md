@@ -13,7 +13,11 @@ Documentation for `job` module categorized as **product**.
 
 ## Files
 
+<<<<<<< .merge_file_Bwkw2R
 - [`INDEX.md`](./index.md)
+=======
+- [`index.md`](./index.md)
+>>>>>>> .merge_file_uOexS7
 - [`configuration.md`](./configuration.md)
 
 ---

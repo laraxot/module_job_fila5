@@ -9,7 +9,11 @@ discussions: []
 module: Job
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
+<<<<<<< .merge_file_ZF8Kys
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
+=======
+canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
+>>>>>>> .merge_file_DCf5v0
 ---
 
 # Metodi Duplicati — Analisi Job

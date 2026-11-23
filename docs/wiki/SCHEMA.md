@@ -19,7 +19,11 @@ docs/
 ├── wiki/
 │   ├── index.md           # Catalogo
 │   ├── log.md             # Registro
+<<<<<<< .merge_file_bc5nPK
 │   ├── SCHEMA.md          # Questo file
+=======
+│   ├── schema.md          # Questo file
+>>>>>>> .merge_file_EfUTPf
 │   ├── concepts/          # Pattern, architettura
 │   ├── entities/          # Modelli, azioni
 │   ├── sources/           # Doc esterna

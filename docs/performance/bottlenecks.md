@@ -206,9 +206,15 @@ Implementare:
 * [bottlenecks.md](../../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../user/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../ui/docs/roadmap/bottlenecks.md)
+<<<<<<< .merge_file_6BbdjI
 * [bottlenecks.md](../../../lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
+=======
+* [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](bottlenecks.md)
+* [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
+>>>>>>> .merge_file_msG8xe
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
 
 ### Versione Incoming

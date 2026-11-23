@@ -56,10 +56,17 @@ qmd search "<topic>"
 \`\`\`
 ./laravel/Modules/Job/docs/
 └── wiki/                    # Knowledge base locale
+<<<<<<< .merge_file_GZpF7V
     ├── rules/INDEX.md      # Indice rules modulo-specifiche
     ├── skills/INDEX.md     # Indice skills modulo-specifiche
     ├── commands/INDEX.md   # Indici commands
     └── memories/INDEX.md   # Indice memories
+=======
+    ├── rules/index.md      # Indice rules modulo-specifiche
+    ├── skills/index.md     # Indice skills modulo-specifiche
+    ├── commands/index.md   # Indici commands
+    └── memories/index.md   # Indice memories
+>>>>>>> .merge_file_temzgq
 \`\`\`
 
 ## Quick Reference
