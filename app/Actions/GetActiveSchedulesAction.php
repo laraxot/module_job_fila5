@@ -10,6 +10,11 @@ use Modules\Job\Models\Schedule;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * SUPERSEDED — duplicato flat. Usare {@see \Modules\Job\Actions\Schedule\GetActiveSchedulesAction}.
+ *
+ * @deprecated Prefer Modules\Job\Actions\Schedule\GetActiveSchedulesAction
+ */
 class GetActiveSchedulesAction
 {
     use QueueableAction;
