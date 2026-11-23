@@ -72,6 +72,9 @@ discussions: []
 
 ### Core Architecture & Planning
 - [project-structure.md](project-structure.md) - Module structure overview
+- [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
+- [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
+- [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
 - [on-demand-pattern.md](on-demand-pattern.md) - On-demand knowledge pattern
 - [qmd-setup.md](qmd-setup.md) - QMD search configuration
 - [project-structure.md](project-structure.md) - Full project structure
@@ -173,6 +176,7 @@ discussions: []
 - [job-reports.md](job-reports.md) - Job reports (30.3KB - large reference)
 
 ### Performance & Optimization
+- [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
 - [optimization.md](optimization.md) - Optimization overview (250 bytes)
