@@ -23,6 +23,12 @@ related:
 
 # JOB — Services → Actions
 
+## Arch debt (#247)
+
+`tests/Arch/debt.php` dichiara `'services' => []` (commento #247): ScheduleService
+rimosso; logica in `GetActiveSchedulesAction` / `ClearScheduleCacheAction`. Merge
+risolto tenendo l'array vuoto, non la voce storica `Modules\Job\Services\ScheduleService`.
+
 ## Contesto
 
 Regola "RELIGION" (`bashscripts/ai/wiki/rules/no-services-rule.md`): nessuna classe
