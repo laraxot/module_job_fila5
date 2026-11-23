@@ -36,3 +36,5 @@ Chi cambia il comportamento aggiorna il contratto nello stesso commit.
 
 ## Contratti
 
+- [ClearScheduleCacheAction](clear-schedule-cache-action.md)
+
