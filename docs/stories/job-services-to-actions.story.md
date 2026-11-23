@@ -121,3 +121,11 @@ Il modulo Job ha altre classi sotto `app/Actions/**` che sono Strategy/Handler (
 sotto scrutinio qui) ma **nessuna** di queste viveva sotto `app/Services/`: il censimento
 iniziale ha trovato un solo file, gia' classificato sopra. Non c'era quindi nessun caso
 Kind B da valutare in questa story.
+
+## Boy scout 2026-11-23 (residuo on-disk)
+
+`ScheduleService.php` (+ `.bak`) e' riapparso. Ridotto a stub SUPERSEDED (no-delete).
+Caller produzione (`ScheduleObserver`, `ScheduleClearCacheCommand`) migrati a
+`Actions\Schedule\ClearScheduleCacheAction`. Flat `Actions/*` marcati `@deprecated`.
+`debt.php` resta `services => []` (#247). Aperto: auth per `git rm` dei residui +
+doppioni flat.

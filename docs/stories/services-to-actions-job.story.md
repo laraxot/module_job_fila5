@@ -49,12 +49,16 @@ istanziabile, avesse un certo namespace e un metodo privato: nessun comportament
   `resources`, `tests` (esclusi docs/vendor): zero risultati.
 - PHPStan (`phpstan.neon`, da `laravel/`) su `Modules/Job/app/Actions`: `[OK] No errors` (esecuzione unica per i cinque moduli, dettaglio nella story Media).
 
+## Boy scout 2026-11-23
+
+- Produzione ora usa `Actions\Schedule\ClearScheduleCacheAction` (non la copia flat).
+- Entrambe le `GetActiveSchedulesAction` leggono `config('job::model')` (nota precedente sulla
+  differenza `Schedule::query()` e' obsoleta).
+- `ScheduleService` stub SUPERSEDED on-disk; test unitario non lo istanzia piu'.
+
 ## Aperto
 
-- Duplicati dentro `app/Actions`: `GetActiveSchedulesAction` e `ClearScheduleCacheAction` esistono due volte, in
-  `Actions/` e in `Actions/Schedule/`. Il codice e' uguale tranne che la copia in `Schedule/` ignora `config('job::model')`
-  e usa `Schedule::query()`. Le produzioni (`ScheduleObserver`, `ScheduleClearCacheCommand`) usano la copia in `Actions/`.
-  Fuori perimetro di questa story: consolidare in una sola (quella con `config('job::model')`) aggiornando
-  `tests/Unit/Actions/Schedule/ScheduleActionsTest.php`.
-- `GetActiveSchedulesAction` non ha chiamanti di produzione: chi pianifica gli `Schedule` attivi non la usa. Verificare
-  che il caricamento degli schedule attivi non ignori la cache configurata.
+- Auth per cancellare: `app/Services/ScheduleService.php` (+ `.bak`), doppioni flat
+  `Actions/GetActiveSchedulesAction.php` + `Actions/ClearScheduleCacheAction.php`.
+- `GetActiveSchedulesAction` senza caller di produzione: verificare che il load degli
+  schedule attivi passi dalla Action (cache `job::cache.*`).
