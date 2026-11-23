@@ -1,13 +1,20 @@
-# Job behavioral contract index
+---
+title: "INDEX — Job"
+type: index
+status: active
+created: 2026-11-23
+updated: 2026-11-23
+decision-makers: []
+---
 
-This is the machine-readable inventory of behavioral contracts owned by the **Job** module.
+<!-- File: docs/contracts/INDEX.md · formato MADR breve. -->
 
-A contract describes an existing public operation or boundary. It names the owner, input, output, stable invariants, side effects and their order, errors, and non-goals. Every invariant gets a stable ID and a Pest group when a test exists; missing coverage is recorded as debt instead of being implied away.
+# <!-- Titolo: indice operativo Job -->
 
-## Contracts
+Elenco operativo dei contract comportamentali del modulo Job.
 
-- No behavioral contracts have been audited yet; do not infer that the module has no contracts.
+| Operazione | Contract | Classe | Invarianti |
+|---|---|---|---|
+| Invalidazione cache schedule | [clear-schedule-cache-action](clear-schedule-cache-action.md) | `Modules\Job\Actions\Schedule\ClearScheduleCacheAction` | JOB-CACHE-INV-1, JOB-CACHE-INV-2 |
 
-## Authoring
-
-Use [Xot contract authoring standard](../../Xot/docs/contracts/contract-authoring-standard.md) and the shared template. Legacy behavior is documented as-is and is not a model for new code.
+(End of file - total 16 lines)
