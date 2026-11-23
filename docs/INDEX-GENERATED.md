@@ -53,7 +53,16 @@
 
 ### Core Architecture & Planning
 - [project-structure.md](project-structure.md) - Module structure overview
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+- [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
+- [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
+- [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_eY3TW8
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
 - [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
 - [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
@@ -61,12 +70,26 @@
 - [on-demand-pattern.md](on-demand-pattern.md) - On-demand knowledge pattern
 - [qmd-setup.md](qmd-setup.md) - QMD search configuration
 - [project-structure.md](project-structure.md) - Full project structure
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - [architecture-rules.md](architecture-rules.md) - Architecture discipline rules
 - [contracts-naming.md](contracts-naming.md) - Contract naming conventions
 
 ### Product & Strategy
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+- [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
+- [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
+- [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_eY3TW8
 - [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
 - [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
 - [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
@@ -74,7 +97,12 @@
 - [product_strategy.md](product_strategy.md) - Product strategy document
 - [product_roadmap.md](product_roadmap.md) - Development roadmap
 - [product_launch_plan.md](product_launch_plan.md) - Launch planning
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - [product-roadmap.md](product-roadmap.md) - Roadmap details
 - [product-strategy.md](product-strategy.md) - Strategy overview
 - [product-launch-plan.md](product-launch-plan.md) - Launch checklist
@@ -152,11 +180,23 @@
 - [redundancy-report.md](redundancy-report.md) - Redundancy report (1.6KB)
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) - Method duplication (37KB - comprehensive)
 - [metodi-duplicati-analisi.md](metodi-duplicati-analisi.md) - Methods analysis (Italian, 249 bytes)
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - [METODI_DUPLICATI_ANALISI.md](METODI_DUPLICATI_ANALISI.md) - Duplicate methods (13.6KB)
 =======
 - [metodi_duplicati_analisi.md](metodi_duplicati_analisi.md) - Duplicate methods (13.6KB)
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- [METODI_DUPLICATI_ANALISI.md](METODI_DUPLICATI_ANALISI.md) - Duplicate methods (13.6KB)
+=======
+<<<<<<< .merge_file_tQOBCG
+- [METODI_DUPLICATI_ANALISI.md](METODI_DUPLICATI_ANALISI.md) - Duplicate methods (13.6KB)
+=======
+- [metodi_duplicati_analisi.md](metodi_duplicati_analisi.md) - Duplicate methods (13.6KB)
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - [duplicate_methods.md](duplicate_methods.md) - Methods report (2KB)
 - [duplicate_methods_report.md](duplicate_methods_report.md) - Methods detail (3.9KB)
 - [docs-health.md](docs-health.md) - Documentation health (1.2KB)
@@ -170,11 +210,23 @@
 - [job-reports.md](job-reports.md) - Job reports (30.3KB - large reference)
 
 ### Performance & Optimization
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
 =======
 - [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
+=======
+<<<<<<< .merge_file_tQOBCG
+- [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
+=======
+- [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
 - [optimization.md](optimization.md) - Optimization overview (250 bytes)
 - [optimization-analysis-and-improvements.md](optimization-analysis-and-improvements.md) - Analysis (205 bytes)
@@ -221,11 +273,23 @@
 
 **Owner files:**
 - `project-structure.md` (3.7KB)
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - `PROJECT-STRUCTURE.md` (3.7KB)
 =======
 - `project-structure.md` (3.7KB)
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- `PROJECT-STRUCTURE.md` (3.7KB)
+=======
+<<<<<<< .merge_file_tQOBCG
+- `PROJECT-STRUCTURE.md` (3.7KB)
+=======
+- `project-structure.md` (3.7KB)
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `architecture-rules.md` (227 bytes - stub, see wiki/)
 
 **Implementation files:**
@@ -234,11 +298,23 @@
 - `dependency-intelligence.md` (1.6KB)
 
 **Assessment:**
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - [ ] Consolidate duplicates: `project-structure.md` vs `PROJECT-STRUCTURE.md` (identical)
 =======
 - [ ] Consolidate duplicates: `project-structure.md` vs `project-structure.md` (identical)
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- [ ] Consolidate duplicates: `project-structure.md` vs `PROJECT-STRUCTURE.md` (identical)
+=======
+<<<<<<< .merge_file_tQOBCG
+- [ ] Consolidate duplicates: `project-structure.md` vs `PROJECT-STRUCTURE.md` (identical)
+=======
+- [ ] Consolidate duplicates: `project-structure.md` vs `project-structure.md` (identical)
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - [ ] Expand `architecture-rules.md` (currently stub)
 - [x] Implementation documentation adequate
 
@@ -273,7 +349,16 @@
 ### 3. Product & Business
 
 **Strategy tier:**
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+- `PRODUCT_STRATEGY.md` (1.9KB)
+- `product-strategy.md` (1.7KB)
+- `PRODUCT_ROADMAP.md` (2.4KB)
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_eY3TW8
 - `PRODUCT_STRATEGY.md` (1.9KB)
 - `product-strategy.md` (1.7KB)
 - `PRODUCT_ROADMAP.md` (2.4KB)
@@ -281,24 +366,46 @@
 - `product_strategy.md` (1.9KB)
 - `product-strategy.md` (1.7KB)
 - `product_roadmap.md` (2.4KB)
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `product-roadmap.md` (1.5KB)
 - `enterprise-job-system-roadmap.md` (15.9KB - comprehensive)
 
 **Planning tier:**
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `PRODUCT_LAUNCH_PLAN.md` (1.7KB)
 - `product-launch-plan.md` (2.2KB)
 - `SPRINT_PLANNING.md` (1.3KB)
 - `sprint-planning-meeting.md` (1.4KB)
 - `USER_RESEARCH.md` (1.9KB)
+<<<<<<< .merge_file_hqyj2R
+=======
+<<<<<<< .merge_file_31uJuw
+=======
+>>>>>>> .merge_file_eY3TW8
 =======
 - `product_launch_plan.md` (1.7KB)
 - `product-launch-plan.md` (2.2KB)
 - `sprint_planning.md` (1.3KB)
 - `sprint-planning-meeting.md` (1.4KB)
 - `user_research.md` (1.9KB)
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `user-research.md` (294 bytes)
 
 **Assessment:**
@@ -392,11 +499,23 @@
 - `duplicate_methods.md` (2KB)
 - `duplicate_methods_report.md` (3.9KB)
 - `metodi-duplicati-analisi.md` (249 bytes - IT stub)
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - `METODI_DUPLICATI_ANALISI.md` (13.6KB - IT detailed)
 =======
 - `metodi_duplicati_analisi.md` (13.6KB - IT detailed)
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- `METODI_DUPLICATI_ANALISI.md` (13.6KB - IT detailed)
+=======
+<<<<<<< .merge_file_tQOBCG
+- `METODI_DUPLICATI_ANALISI.md` (13.6KB - IT detailed)
+=======
+- `metodi_duplicati_analisi.md` (13.6KB - IT detailed)
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 
 **Assessment:**
 - [ ] ARCHIVE: dated redundancy audits (`2026-05-*`, `2026-05-21`)
@@ -422,13 +541,26 @@
 | 7 | code-quality-report.md | Jul 28 08:34 | 6.4KB | Quality metrics |
 | 8 | MIGRATIONS.md | Jul 28 08:34 | 10.9KB | Migration tracking |
 | 9 | enterprise-job-system-roadmap.md | Jul 28 08:34 | 15.9KB | Enterprise plan |
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+| 10 | PRODUCT_STRATEGY.md | Jul 28 08:34 | 1.9KB | Strategy |
+| 11 | PRODUCT_ROADMAP.md | Jul 28 08:34 | 2.4KB | Roadmap |
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_eY3TW8
 | 10 | PRODUCT_STRATEGY.md | Jul 28 08:34 | 1.9KB | Strategy |
 | 11 | PRODUCT_ROADMAP.md | Jul 28 08:34 | 2.4KB | Roadmap |
 =======
 | 10 | product_strategy.md | Jul 28 08:34 | 1.9KB | Strategy |
 | 11 | product_roadmap.md | Jul 28 08:34 | 2.4KB | Roadmap |
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 | 12 | coverage.md | Jul 28 08:34 | 3.9KB | Test coverage |
 | 13 | solutions.md | Jul 28 08:34 | 10KB | Solution guide |
 | 14 | job-reports.md | Jul 28 08:34 | 30.3KB | Large reference |
@@ -438,11 +570,23 @@
 
 **Jul 28, 2026 (08:34):** ~200+ files (batch update)  
 **Jul 28, 2026 (11:24):** README.md only  
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 **Jul 21, 2026:** ACTIONS.md, on-demand-pattern.md, performance-optimization.md, project-structure.md, qmd-setup.md  
 =======
 **Jul 21, 2026:** actions.md, on-demand-pattern.md, performance-optimization.md, project-structure.md, qmd-setup.md  
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+**Jul 21, 2026:** ACTIONS.md, on-demand-pattern.md, performance-optimization.md, project-structure.md, qmd-setup.md  
+=======
+<<<<<<< .merge_file_tQOBCG
+**Jul 21, 2026:** ACTIONS.md, on-demand-pattern.md, performance-optimization.md, project-structure.md, qmd-setup.md  
+=======
+**Jul 21, 2026:** actions.md, on-demand-pattern.md, performance-optimization.md, project-structure.md, qmd-setup.md  
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 **Jul 15, 2026:** contracts-naming.md, queueable-actions.md, root-file-policy.md, root-files-hygiene.md, test.md  
 **Jul 8, 2026:** 50+ original files (initial import)  
 
@@ -565,7 +709,16 @@
 
 **Consolidation targets:**
 - UPPERCASE vs lowercase variants (both versions exist):
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+  - `PRODUCT_STRATEGY.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
+  - `PRODUCT_ROADMAP.md` (2.4KB) → DELETE (consolidate into single roadmap file)
+  - `PRODUCT_LAUNCH_PLAN.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_eY3TW8
   - `PRODUCT_STRATEGY.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
   - `PRODUCT_ROADMAP.md` (2.4KB) → DELETE (consolidate into single roadmap file)
   - `PRODUCT_LAUNCH_PLAN.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
@@ -573,19 +726,37 @@
   - `product_strategy.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
   - `product_roadmap.md` (2.4KB) → DELETE (consolidate into single roadmap file)
   - `product_launch_plan.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 
 **Canonical set (keep):**
 1. `enterprise-job-system-roadmap.md` (15.9KB - comprehensive, canonical)
 2. `product-strategy.md` (1.7KB - merged with PRODUCT_STRATEGY)
 3. `product-launch-plan.md` (2.2KB - merged with PRODUCT_LAUNCH_PLAN)
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+4. `SPRINT_PLANNING.md` (1.3KB - sprint tracking)
+5. `USER_RESEARCH.md` (1.9KB - research findings)
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_eY3TW8
 4. `SPRINT_PLANNING.md` (1.3KB - sprint tracking)
 5. `USER_RESEARCH.md` (1.9KB - research findings)
 =======
 4. `sprint_planning.md` (1.3KB - sprint tracking)
 5. `user_research.md` (1.9KB - research findings)
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 
 **Benefit:** Single source of truth; improved navigation
 
@@ -634,11 +805,23 @@
 - **Option B:** Bilingual with standard naming → `file.md` (EN) + `file-it.md` (IT)
 
 **Current Italian files to consolidate:**
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - `metodi-duplicati-analisi.md` → `METODI_DUPLICATI_ANALISI.md`
 =======
 - `metodi-duplicati-analisi.md` → `metodi_duplicati_analisi.md`
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- `metodi-duplicati-analisi.md` → `METODI_DUPLICATI_ANALISI.md`
+=======
+<<<<<<< .merge_file_tQOBCG
+- `metodi-duplicati-analisi.md` → `METODI_DUPLICATI_ANALISI.md`
+=======
+- `metodi-duplicati-analisi.md` → `metodi_duplicati_analisi.md`
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `migrazione-filament*.md` (2 variants)
 - `modelli-factory-seeder-analisi.md`
 - `phpstan-correzioni*.md` (4 variants)
@@ -669,11 +852,23 @@
 **Current split:**
 - `configuration.md` (generic)
 - `mcp-configuration.md` (MCP specific)
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - `QMD-SETUP.md` vs `qmd-setup.md` (case variants)
 =======
 - `qmd-setup.md` vs `qmd-setup.md` (case variants)
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- `QMD-SETUP.md` vs `qmd-setup.md` (case variants)
+=======
+<<<<<<< .merge_file_tQOBCG
+- `QMD-SETUP.md` vs `qmd-setup.md` (case variants)
+=======
+- `qmd-setup.md` vs `qmd-setup.md` (case variants)
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `artisan.md` + `artisan.txt`
 
 **Proposed consolidation:**
@@ -728,17 +923,34 @@ archive/
 
 #### 4.1 Create Index Stubs for Subdirectories
 
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
+=======
+<<<<<<< .merge_file_31uJuw
+=======
+<<<<<<< .merge_file_tQOBCG
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 Add `INDEX.md` to each subdirectory:
 - `wiki/INDEX.md` - Links to 54 reference files
 - `roadmap/INDEX.md` - Roadmap structure
 - `_integration/INDEX.md` - Integration guides
+<<<<<<< .merge_file_hqyj2R
+=======
+<<<<<<< .merge_file_31uJuw
+=======
+>>>>>>> .merge_file_eY3TW8
 =======
 Add `index.md` to each subdirectory:
 - `wiki/index.md` - Links to 54 reference files
 - `roadmap/index.md` - Roadmap structure
 - `_integration/index.md` - Integration guides
+<<<<<<< .merge_file_hqyj2R
 >>>>>>> .merge_file_l4thW4
+=======
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 
 **Benefit:** Improved navigation
 
@@ -788,11 +1000,23 @@ updated: "2026-07-28"
 
 #### 5.2 Link Map to Wiki Pattern
 
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 Ensure `QMD-SETUP.md` or updated `qmd-setup.md` points to:
 =======
 Ensure `qmd-setup.md` or updated `qmd-setup.md` points to:
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+Ensure `QMD-SETUP.md` or updated `qmd-setup.md` points to:
+=======
+<<<<<<< .merge_file_tQOBCG
+Ensure `QMD-SETUP.md` or updated `qmd-setup.md` points to:
+=======
+Ensure `qmd-setup.md` or updated `qmd-setup.md` points to:
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `wiki/` (54 files of reference material)
 - `roadmap/` (planning documents)
 
@@ -801,11 +1025,23 @@ Ensure `qmd-setup.md` or updated `qmd-setup.md` points to:
 #### 5.3 Create Navigation Breadcrumbs
 
 Add "Back to Index" links in all major docs pointing to:
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 - `INDEX.md` (official index)
 =======
 - `index.md` (official index)
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+- `INDEX.md` (official index)
+=======
+<<<<<<< .merge_file_tQOBCG
+- `INDEX.md` (official index)
+=======
+- `index.md` (official index)
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 - `README.md` (entry point)
 - `INDEX_GENERATED.md` (this file)
 
@@ -825,11 +1061,23 @@ Add "Back to Index" links in all major docs pointing to:
 | **P2** | Configuration | 8 | 4 | Merge related docs | 1h |
 | **P3** | Root files | 51 | 0 | Delete duplicate dirs | 15min |
 | **P3** | Archive org | 19 | Organized | Subdirectory structure | 30min |
+<<<<<<< .merge_file_hqyj2R
 <<<<<<< .merge_file_vOpmwQ
 | **P4** | Index stubs | None | 5+ | Create INDEX.md files | 1h |
 =======
 | **P4** | Index stubs | None | 5+ | Create index.md files | 1h |
 >>>>>>> .merge_file_l4thW4
+=======
+<<<<<<< .merge_file_31uJuw
+| **P4** | Index stubs | None | 5+ | Create INDEX.md files | 1h |
+=======
+<<<<<<< .merge_file_tQOBCG
+| **P4** | Index stubs | None | 5+ | Create INDEX.md files | 1h |
+=======
+| **P4** | Index stubs | None | 5+ | Create index.md files | 1h |
+>>>>>>> .merge_file_4GyqF2
+>>>>>>> .merge_file_hkxNFo
+>>>>>>> .merge_file_eY3TW8
 | **P4** | Stub expansion | 20+ stubs | Full docs | Expand content | 3h+ |
 | **P5** | Front matter | None | All | Add YAML metadata | 2h |
 

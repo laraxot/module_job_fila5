@@ -221,11 +221,19 @@ $avgTime = $jobMonitor->getAverageProcessingTime();
 - [Xot Module](../xot/docs/index.md) - Core base classes
 - [Activity Module](../activity/docs/index.md) - Activity logging
 - [Notify Module](../notify/docs/index.md) - Notification system
+<<<<<<< .merge_file_rTQNuj
 <<<<<<< .merge_file_4EWYOS
 - [User Module](../user/docs/readme.md) - User authentication and management
 =======
 - [User Module](../user/docs/README.md) - User authentication and management
 >>>>>>> .merge_file_iJFsIA
+=======
+<<<<<<< .merge_file_HcIm3G
+- [User Module](../user/docs/readme.md) - User authentication and management
+=======
+- [User Module](../user/docs/README.md) - User authentication and management
+>>>>>>> .merge_file_LUc1cV
+>>>>>>> .merge_file_F7QMQS
 
 ## Troubleshooting
 Common issues and solutions:

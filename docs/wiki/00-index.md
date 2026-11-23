@@ -38,7 +38,11 @@ related:
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Nessuna dipendenza diretta; usa Xot, spipu/html2pdf (via Xot)
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< .merge_file_PCaLzV
 <<<<<<< .merge_file_XAJ1nO
+=======
+<<<<<<< .merge_file_qNxqzT
+>>>>>>> .merge_file_M6Au9B
 - [Xot](../../xot/docs/readme.md) - Base framework e Page classes.
 - [Activity](../../activity/docs/readme.md) - Tracciamento log esecuzione.
 - [Notify](../../notify/docs/readme.md) - Notifiche fallimento job.
@@ -46,7 +50,11 @@ related:
 - [Xot](../../xot/docs/README.md) - Base framework e Page classes.
 - [Activity](../../activity/docs/README.md) - Tracciamento log esecuzione.
 - [Notify](../../notify/docs/README.md) - Notifiche fallimento job.
+<<<<<<< .merge_file_PCaLzV
 >>>>>>> .merge_file_YWlIiq
+=======
+>>>>>>> .merge_file_69ZFnf
+>>>>>>> .merge_file_M6Au9B
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

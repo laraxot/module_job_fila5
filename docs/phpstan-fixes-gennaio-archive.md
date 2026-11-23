@@ -196,13 +196,21 @@ public function __construct(string $output)
 ### **Documentazione Correlata**
 - [README.md Modulo Job](README.md)
 
+<<<<<<< .merge_file_uEi71O
 <<<<<<< .merge_file_YVKJeP
+=======
+<<<<<<< .merge_file_2Gy1vq
+>>>>>>> .merge_file_tw3r0c
 - [README.md Modulo Job](./readme.md)
 - [Queue Management](./queue/readme.md)
 =======
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
+<<<<<<< .merge_file_uEi71O
 >>>>>>> .merge_file_TiJi6g
+=======
+>>>>>>> .merge_file_qOzu0P
+>>>>>>> .merge_file_tw3r0c
 - [Best Practices](./best-practices.md)
 
 ### **Risorse Esterne**

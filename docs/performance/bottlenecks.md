@@ -206,7 +206,11 @@ Implementare:
 * [bottlenecks.md](../../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../user/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../ui/docs/roadmap/bottlenecks.md)
+<<<<<<< .merge_file_zrxcmG
 <<<<<<< .merge_file_6BbdjI
+=======
+<<<<<<< .merge_file_4jBu1g
+>>>>>>> .merge_file_tlw1dV
 * [bottlenecks.md](../../../lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
@@ -214,7 +218,11 @@ Implementare:
 * [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](bottlenecks.md)
 * [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
+<<<<<<< .merge_file_zrxcmG
 >>>>>>> .merge_file_msG8xe
+=======
+>>>>>>> .merge_file_09Gn15
+>>>>>>> .merge_file_tlw1dV
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
 
 ### Versione Incoming
