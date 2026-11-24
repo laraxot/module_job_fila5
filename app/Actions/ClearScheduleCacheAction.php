@@ -15,6 +15,9 @@ use Webmozart\Assert\Assert;
  * non arriva autorizzazione a cancellare i doppioni root di Actions/.
  *
  * @deprecated Prefer Modules\Job\Actions\Schedule\ClearScheduleCacheAction
+ *
+ * @see docs/contracts/root-clear-schedule-cache-action.md
+ * @contract docs/contracts/root-clear-schedule-cache-action.md
  */
 class ClearScheduleCacheAction
 {

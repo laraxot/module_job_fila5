@@ -1,40 +1,34 @@
 ---
-title: "Contratti"
+title: "Contratti del modulo Job"
 type: index
-tags: [contracts, actions, interfaces]
+module: Job
+status: active
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
+qmd: "job contracts readme azioni invarianti pest group"
 ---
 
-# Contratti
+# Contratti del modulo Job
 
-## Metodo Harness
+Un contract descrive il comportamento promesso da una singola Action con effetti collaterali o invarianti di dominio
+(cache degli schedule, comandi Artisan dal pannello, avvio del worker). Standard: `Modules/Xot/docs/contracts/contract-authoring-standard.md`,
+governance: `Modules/Xot/docs/adr/0012-behavioral-contract-governance.md`.
 
-Un contratto descrive una singola operazione pubblica con effetti collaterali, chiamate esterne o invarianti di dominio. Documenta il comportamento osservabile, inclusi errori e non-goals, senza trasformare ogni metodo interno in un contratto.
+## Formato
 
-Ogni invariante ha un ID stabile nel formato `JOB-INV-N`; il test Pest corrispondente usa lo stesso ID come group. La classe implementatrice deve contenere `@contract docs/contracts/<file>.md`; contratto, codice e test cambiano nello stesso commit.
+- Frontmatter con `type: contract` e `action: "Modules\\Job\\Actions\\..."`.
+- Sezioni nell'ordine: `## Input`, `## Output`, `## Invarianti`, `## Effetti collaterali`, `## Errori`, `## Non fa`.
+- Invarianti con ID stabile `JOB-<AREA>-INV-<N>`; ciascuno dovrebbe avere un test Pest con `->group('<ID>')`.
+- La classe riporta `@see` e `@contract docs/contracts/<file>.md` nel docblock.
 
-Cosa promette la superficie pubblica di questo pacchetto: le Action che scrivono dati, chiamano servizi esterni o hanno
-effetti collaterali, e le interfacce (`app/Contracts`). Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
+## File presenti
 
-## Contratto di comportamento di un'Action
+- [clear-schedule-cache-action.md](clear-schedule-cache-action.md) (`JOB-CACHE-INV-1..2`)
+- [assert-allowed-artisan-command-action.md](assert-allowed-artisan-command-action.md) (`JOB-CMD-INV-1..2`)
+- [build-queue-worker-command-action.md](build-queue-worker-command-action.md) (`JOB-WORKER-INV-1..2`)
+- `_template.md`: modello per i nuovi contract.
 
-Un file per Action, nome in kebab-case della classe (`create-ticket-action.md`), frontmatter `type: contract` e
-`action: <FQCN>`, e queste sei sezioni nell'ordine:
+## Stato di copertura
 
-```markdown
-## Input
-## Output
-## Invarianti
-## Effetti collaterali
-## Errori
-## Non fa
-```
-
-Il docblock dell'Action rimanda al file con la riga `Contratto di comportamento: docs/contracts/<file>.md`.
-Chi cambia il comportamento aggiorna il contratto nello stesso commit.
-
-## Contratti
-
-- [ClearScheduleCacheAction](clear-schedule-cache-action.md)
-
+Nessun test del modulo usa `->group('JOB-...')` (`rg "group\('JOB-" Modules/Job/tests` senza risultati): tutti gli
+invarianti sono «non coperti» in senso stretto. Dettagli e backlog in [INDEX.md](INDEX.md).
