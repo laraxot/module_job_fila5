@@ -11,6 +11,7 @@ created: 2026-11-18
 updated: 2026-11-18
 tags: [parcheggio, debito-tecnico]
 description: "File con estensione finta spostati fuori da app/ in Job, con il motivo per ciascuna famiglia."
+qmd: "parcheggiati"
 ---
 
 # File parcheggiati — Job

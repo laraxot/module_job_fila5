@@ -1,3 +1,8 @@
+---
+title: "Task: Job Docs Consolidation & Cleanup"
+type: note
+qmd: "cleanup job task consolidation"
+---
 # Task: Job Docs Consolidation & Cleanup
 
 ## 📋 Obiettivo
