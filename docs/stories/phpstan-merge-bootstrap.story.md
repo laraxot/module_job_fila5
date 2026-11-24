@@ -26,13 +26,11 @@ storico ampio già in [02.Job-merge-conflict-resolution.story.md](./02.Job-merge
 | File | Decisione |
 |------|-----------|
 | `app/Http/Livewire/Schedule/Status.php` | **theirs-short**: `@return Collection<int, Event>` — `Event` già importato; FQCN ridondante |
-| `lang/it/status.php` | **#245**: versione IT completa con commento EnumTrait, sezione `values` (active/inactive/trashed/1) e `fields` IT; stub EN scartato |
-| `tests/Arch/debt.php` | **#247**: `'services' => []` — ScheduleService migrato ad Actions |
 
 ## Acceptance
 
 - [x] Zero marker `<<<<<<<` nel PHP Job toccato
-- [x] `php -l` verde su `Status.php`, `lang/it/status.php`, `tests/Arch/debt.php`
+- [x] `php -l` verde su `Status.php`
 - [x] Themes: nessuno marker PHP (scan condiviso)
 
 ## Note

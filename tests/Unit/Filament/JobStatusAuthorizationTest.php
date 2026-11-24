@@ -19,13 +19,9 @@ use Modules\Xot\Contracts\UserContract;
 uses(TestCase::class);
 
 /*
- * La pagina non viene mai avviata dall'app vera: ogni test sostituisce il container con una
- * Application vuota (solo binding di base) e usa utenti e kernel Artisan finti; il container
- * originale viene ripristinato in afterEach.
- *
- * `uses(TestCase::class)` e' il TestCase del modulo: porta DatabaseTransactions, quindi una
- * connessione al database serve comunque per far partire il test. Il commento precedente
- * diceva "nessun TestCase del modulo": era falso.
+ * Test puri: nessun database, nessun bootstrap dell'app, nessun TestCase del modulo (usa
+ * DatabaseTransactions). Application vuota (solo binding di base) + utenti/kernel Artisan mock;
+ * il container originale viene ripristinato in afterEach.
  */
 
 beforeEach(function (): void {
@@ -127,7 +123,7 @@ it('rejects commands outside the allowlist even for a super-admin', function (st
     'listed command with json option' => 'route:list --json',
     'case change' => 'QUEUE:CLEAR',
     'leading space' => ' queue:clear',
-]);
+])->group('JOB-ARTISAN-INV-1');
 
 it('runs a listed command by exact match for a super-admin', function (): void {
     jobStatusPageActAs($this->jobContainer, jobStatusPageUser(true));
@@ -157,10 +153,10 @@ it('AssertAllowedArtisanCommandAction throws for commands that are not listed', 
 })->with([
     'migrate fresh' => 'migrate:fresh --force',
     'db wipe' => 'db:wipe',
-]);
+])->group('JOB-ARTISAN-INV-1', 'JOB-ARTISAN-INV-2');
 
 it('AssertAllowedArtisanCommandAction accepts a listed command', function (): void {
     $action = new AssertAllowedArtisanCommandAction;
 
     expect(fn () => $action->execute('queue:restart', ['queue:restart']))->not->toThrow(InvalidArgumentException::class);
-});
+})->group('JOB-ARTISAN-INV-1');

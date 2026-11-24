@@ -8,12 +8,6 @@ use Illuminate\Support\Facades\Cache;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
-/**
- * Invalidates the configured schedule cache entry.
- *
- * @see docs/contracts/clear-schedule-cache-action.md
- * @contract docs/contracts/clear-schedule-cache-action.md
- */
 class ClearScheduleCacheAction
 {
     use QueueableAction;

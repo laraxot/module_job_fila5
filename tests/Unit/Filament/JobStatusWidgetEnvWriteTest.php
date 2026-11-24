@@ -28,14 +28,9 @@ use function Safe\unlink;
 uses(TestCase::class);
 
 /*
- * Il widget non viene mai avviato dall'app vera: ogni test sostituisce il container con una
- * Application vuota (solo config/files/filament) e scrive su un file temporaneo, **mai** sul .env
- * del progetto. Container originale e QUEUE_CONNECTION sono ripristinati in afterEach.
- *
- * `uses(TestCase::class)` e' il TestCase del modulo: porta DatabaseTransactions, quindi una
- * connessione al database serve comunque per far partire il test, anche se nessuna asserzione
- * la tocca. Il commento precedente diceva "nessun TestCase del modulo": era falso e faceva
- * credere che questi test di sicurezza girassero senza database.
+ * Test puri: nessun database, nessun bootstrap dell'app, nessun TestCase del modulo (usa
+ * DatabaseTransactions), mai il vero .env: la scrittura va su un file temporaneo. Application vuota
+ * con config/files/filament; container originale e QUEUE_CONNECTION ripristinati in afterEach.
  */
 
 /**
