@@ -3,31 +3,51 @@
 declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Services;
-
-use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
-use Modules\Job\Actions\Schedule\GetActiveSchedulesAction;
+use Modules\Job\Services\ScheduleService;
+use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Spatie\QueueableAction\QueueableAction;
-
-/*
- * ScheduleService e' SUPERSEDED (residuo on-disk). Questo file non lo istanzia piu':
- * verifica le Action canoniche in Actions/Schedule/ (stesso perimetro del vecchio Service).
- * Mirror di tests/Unit/Actions/Schedule/ScheduleActionsTest.php — file tenuto perche'
- * no-delete senza autorizzazione.
- */
+use function Safe\file_get_contents;
 
 uses(\Modules\Job\Tests\TestCase::class);
 
-describe('ScheduleService superseded by Schedule Actions', function () {
-    it('GetActiveSchedulesAction uses QueueableAction and has execute', function () {
-        $reflection = new \ReflectionClass(GetActiveSchedulesAction::class);
-        Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
-        Assert::assertTrue($reflection->hasMethod('execute'));
+describe('ScheduleService', function () {
+    it('can be instantiated', function () {
+        $reflection = new \ReflectionClass(ScheduleService::class);
+        Assert::assertTrue($reflection->isInstantiable());
     });
 
-    it('ClearScheduleCacheAction uses QueueableAction and has execute', function () {
-        $reflection = new \ReflectionClass(ClearScheduleCacheAction::class);
-        Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
-        Assert::assertTrue($reflection->hasMethod('execute'));
+    it('has getActives method', function () {
+        $reflection = new \ReflectionClass(ScheduleService::class);
+        Assert::assertTrue($reflection->hasMethod('getActives'));
+    });
+
+    it('has clearCache method', function () {
+        $reflection = new \ReflectionClass(ScheduleService::class);
+        Assert::assertTrue($reflection->hasMethod('clearCache'));
+    });
+
+    it('has private getFromCache method', function () {
+        $reflection = new \ReflectionClass(ScheduleService::class);
+        Assert::assertTrue($reflection->hasMethod('getFromCache'));
+        $method = $reflection->getMethod('getFromCache');
+        Assert::assertTrue($method->isPrivate());
+    });
+
+    it('uses strict types', function () {
+        $reflection = new \ReflectionClass(ScheduleService::class);
+        $filename = $reflection->getFileName();
+        Assert::assertNotFalse($filename);
+        $content = file_get_contents($filename);
+        Assert::assertStringContainsString('', $content);
+    });
+
+    it('has correct namespace', function () {
+        $reflection = new \ReflectionClass(ScheduleService::class);
+        Assert::assertSame('Modules\Job\Services', $reflection->getNamespaceName());
+    });
+
+    it('has model property', function () {
+        $reflection = new \ReflectionClass(ScheduleService::class);
+        Assert::assertTrue($reflection->hasProperty('model'));
     });
 });

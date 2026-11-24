@@ -1,14 +1,11 @@
 ---
 title: "Module BMAD audit — Job"
-<<<<<<< .merge_file_iSIoH1
-=======
 type: story
->>>>>>> .merge_file_8297bv
 status: review
 updated: 2026-11-16
 module: Job
 bmad: true
-<<<<<<< .merge_file_iSIoH1
+<<<<<<< .merge_file_uLldwZ
 qmd: "story BMAD audit modulo Job inventario gate"
 ---
 
@@ -21,7 +18,18 @@ qmd: "story BMAD audit modulo Job inventario gate"
 - [x] Pack ECC in `docs/ecc/`.
 - [ ] Pest modulo eseguito in ambiente testing stabile.
 - [ ] Finding P0/P1 chiusi con regressione.
+
+## Riferimenti
+
+- [audit](../audit.md)
+- [piano](../piano-miglioramento.md)
+- [ECC](../../ecc/job-ecc-audit.md)
+
+## Esito
+
+Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
 =======
+>>>>>>> .merge_file_uzXQGq
 qmd: "story BMAD audit modulo Job inventario gate pest phpstan finding P0 policy scheduler"
 related:
   - ../audits/job-audit.md
@@ -50,7 +58,6 @@ Audit source-first del modulo che deve rendere governabile il lavoro asincrono e
 1. Lock dei file di `docs/` del modulo (`bashscripts/lock/`), unlock a fine lavoro.
 2. Audit codice → docs; nessun PHP toccato.
 3. Pack ECC e indici aggiornati; `qmd update`.
->>>>>>> .merge_file_8297bv
 
 ## Riferimenti
 
@@ -60,8 +67,8 @@ Audit source-first del modulo che deve rendere governabile il lavoro asincrono e
 
 ## Esito
 
-<<<<<<< .merge_file_iSIoH1
-Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
+<<<<<<< .merge_file_uLldwZ
+E1 (P0-1) chiuso in follow-up: [e1-job-policy-create-deny](./e1-job-policy-create-deny.story.md). Baseline originale: 2 P0, 4 P1, P2 elencati. Chiusura demandata alle story figlie di [epics.md](../epics.md); i P0 sono da chiudere per primi (E1, E2).
 =======
 E1 (P0-1) chiuso in follow-up: [e1-job-policy-create-deny](./e1-job-policy-create-deny.story.md). Baseline originale: 2 P0, 4 P1, P2 elencati. Chiusura demandata alle story figlie di [epics.md](../epics.md); i P0 sono da chiudere per primi (E1, E2). PHPStan sul tree `Modules` a 0.
->>>>>>> .merge_file_8297bv
+>>>>>>> .merge_file_uzXQGq

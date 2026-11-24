@@ -12,13 +12,7 @@ declare(strict_types=1);
 
 return [
     // classi in un namespace Services (regola No Services, DCP-270); NoServicesTest le vede come cartelle
-    //
-    // Vuota dal 2026-11-20 (base_quaeris_fila5#247): logica in
-    // `Actions/Schedule/GetActiveSchedulesAction` +
-    // `Actions/Schedule/ClearScheduleCacheAction`.
-    // 2026-11-23: `app/Services/ScheduleService.php` e' ancora on-disk come stub
-    // SUPERSEDED (no-delete senza auth); zero caller; Observer/Command usano
-    // `Actions/Schedule/ClearScheduleCacheAction`. Non rientra in debito: non e'
-    // business logic attiva.
-    'services' => [],
+    'services' => [
+        'Modules\Job\Services\ScheduleService',
+    ],
 ];

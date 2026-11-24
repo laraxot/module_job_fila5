@@ -23,12 +23,6 @@ related:
 
 # JOB — Services → Actions
 
-## Arch debt (#247)
-
-`tests/Arch/debt.php` dichiara `'services' => []` (commento #247): ScheduleService
-rimosso; logica in `GetActiveSchedulesAction` / `ClearScheduleCacheAction`. Merge
-risolto tenendo l'array vuoto, non la voce storica `Modules\Job\Services\ScheduleService`.
-
 ## Contesto
 
 Regola "RELIGION" (`bashscripts/ai/wiki/rules/no-services-rule.md`): nessuna classe
@@ -121,11 +115,3 @@ Il modulo Job ha altre classi sotto `app/Actions/**` che sono Strategy/Handler (
 sotto scrutinio qui) ma **nessuna** di queste viveva sotto `app/Services/`: il censimento
 iniziale ha trovato un solo file, gia' classificato sopra. Non c'era quindi nessun caso
 Kind B da valutare in questa story.
-
-## Boy scout 2026-11-23 (residuo on-disk)
-
-`ScheduleService.php` (+ `.bak`) e' riapparso. Ridotto a stub SUPERSEDED (no-delete).
-Caller produzione (`ScheduleObserver`, `ScheduleClearCacheCommand`) migrati a
-`Actions\Schedule\ClearScheduleCacheAction`. Flat `Actions/*` marcati `@deprecated`.
-`debt.php` resta `services => []` (#247). Aperto: auth per `git rm` dei residui +
-doppioni flat.

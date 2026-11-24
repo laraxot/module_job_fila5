@@ -7,10 +7,6 @@ namespace Modules\Job\Actions\Console;
 use InvalidArgumentException;
 use Spatie\QueueableAction\QueueableAction;
 
-/**
- * @see docs/contracts/assert-allowed-artisan-command-action.md
- * @contract docs/contracts/assert-allowed-artisan-command-action.md
- */
 final class AssertAllowedArtisanCommandAction
 {
     use QueueableAction;

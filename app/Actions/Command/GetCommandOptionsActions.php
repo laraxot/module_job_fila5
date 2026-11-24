@@ -7,10 +7,6 @@ namespace Modules\Job\Actions\Command;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Console\Command\Command;
 
-/**
- * @see docs/contracts/get-command-options-actions.md
- * @contract docs/contracts/get-command-options-actions.md
- */
 class GetCommandOptionsActions
 {
     use QueueableAction;

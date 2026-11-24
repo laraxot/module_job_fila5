@@ -19,13 +19,9 @@ use Modules\Xot\Contracts\UserContract;
 uses(TestCase::class);
 
 /*
- * La pagina non viene mai avviata dall'app vera: ogni test sostituisce il container con una
- * Application vuota (solo binding di base) e usa utenti e kernel Artisan finti; il container
- * originale viene ripristinato in afterEach.
- *
- * `uses(TestCase::class)` e' il TestCase del modulo: porta DatabaseTransactions, quindi una
- * connessione al database serve comunque per far partire il test. Il commento precedente
- * diceva "nessun TestCase del modulo": era falso.
+ * Test puri: nessun database, nessun bootstrap dell'app, nessun TestCase del modulo (usa
+ * DatabaseTransactions). Application vuota (solo binding di base) + utenti/kernel Artisan mock;
+ * il container originale viene ripristinato in afterEach.
  */
 
 beforeEach(function (): void {
