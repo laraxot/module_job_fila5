@@ -6,6 +6,9 @@ namespace Modules\Job\Tests\Unit;
 
 use Mockery;
 use Mockery\MockInterface;
+use Modules\Job\Models\FailedJob;
+use Modules\Job\Models\Job;
+use Modules\Job\Models\JobBatch;
 use Modules\Job\Models\Policies\FailedImportRowPolicy;
 use Modules\Job\Models\Policies\FailedJobPolicy;
 use Modules\Job\Models\Policies\ImportPolicy;
@@ -86,7 +89,19 @@ test('TaskCommentPolicy espone CRUD', function (): void {
 
 test('JobPolicy deny-default su jobs', function (): void {
     $policy = new JobPolicy;
+<<<<<<< .merge_file_ytZapd
+<<<<<<< .merge_file_nksHPZ
+<<<<<<< .merge_file_gEATaP
+    $job = new Job;
+=======
     $job = new \Modules\Job\Models\Job;
+>>>>>>> .merge_file_9pbwLE
+=======
+    $job = new \Modules\Job\Models\Job;
+>>>>>>> .merge_file_0ULl5c
+=======
+    $job = new \Modules\Job\Models\Job;
+>>>>>>> .merge_file_b5ilo6
 
     Assert::assertFalse($policy->viewAny(jobFakeUser()));
     Assert::assertFalse($policy->create(jobFakeUser()));
@@ -96,8 +111,23 @@ test('JobPolicy deny-default su jobs', function (): void {
 });
 
 test('FailedJobPolicy e JobBatchPolicy deny-default', function (): void {
+<<<<<<< .merge_file_ytZapd
+<<<<<<< .merge_file_nksHPZ
+<<<<<<< .merge_file_gEATaP
+    $failed = new FailedJob;
+    $batch = new JobBatch;
+=======
     $failed = new \Modules\Job\Models\FailedJob;
     $batch = new \Modules\Job\Models\JobBatch;
+>>>>>>> .merge_file_9pbwLE
+=======
+    $failed = new \Modules\Job\Models\FailedJob;
+    $batch = new \Modules\Job\Models\JobBatch;
+>>>>>>> .merge_file_0ULl5c
+=======
+    $failed = new \Modules\Job\Models\FailedJob;
+    $batch = new \Modules\Job\Models\JobBatch;
+>>>>>>> .merge_file_b5ilo6
     foreach ([
         [new FailedJobPolicy, $failed],
         [new JobBatchPolicy, $batch],
