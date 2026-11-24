@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Facade;
 use Livewire\Attributes\Locked;
 use Mockery\MockInterface;
 use Modules\Job\Filament\Widgets\JobStatusWidget;
+use Modules\Job\Tests\TestCase;
 use Modules\Job\Tests\Unit\Filament\JobStatusWidgetProbe;
 use Modules\Xot\Contracts\UserContract;
 
