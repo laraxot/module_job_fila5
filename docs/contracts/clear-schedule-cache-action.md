@@ -1,20 +1,20 @@
 ---
-title: "Contratto — ClearScheduleCacheAction"
+title: "Contratto — ClearScheduleCacheAction (Schedule)"
 type: contract
+owner: Job
+status: accepted
+updated: 2026-11-24
 action: "Modules\\Job\\Actions\\Schedule\\ClearScheduleCacheAction"
-tags: [contract, action, cache, schedule]
-created: 2026-11-23
-updated: 2026-11-23
+qmd: "ClearScheduleCacheAction schedule cache forget job::cache.store job::cache.key JOB-CACHE-INV"
 ---
 
-# ClearScheduleCacheAction
+# ClearScheduleCacheAction (Schedule)
 
-Contratto di comportamento per l'invalidazione della cache degli schedule.
+Invalida la voce di cache degli schedule. Codice: `app/Actions/Schedule/ClearScheduleCacheAction.php:17-27`.
 
 ## Input
 
-- Nessun argomento.
-- `job::cache.store` e `job::cache.key` dalla configurazione del modulo.
+- Nessun argomento. Legge `config('job::cache.store')` e `config('job::cache.key')`, entrambe asserite `string` (righe 23-24).
 
 ## Output
 
@@ -22,27 +22,23 @@ Contratto di comportamento per l'invalidazione della cache degli schedule.
 
 ## Invarianti
 
-- **JOB-CACHE-INV-1** — L'Action invalida esclusivamente la chiave configurata
-  nello store configurato; non svuota l'intero store.
-  Verifica strutturale: `Modules/Job/tests/Unit/Actions/Schedule/ScheduleActionsTest.php`
-  (`ClearScheduleCacheAction uses QueueableAction and has execute method`).
-- **JOB-CACHE-INV-2** — Se store o chiave non sono stringhe configurate,
-  `Assert::string()` interrompe l'esecuzione prima dell'invalidazione.
+| ID | Regola | Test |
+|---|---|---|
+| `JOB-CACHE-INV-1` | Se le due config sono stringhe, viene dimenticata solo la chiave `job::cache.key` dallo store `job::cache.store`. | Nessuno comportamentale: `tests/Unit/Actions/ClearScheduleCacheActionTest.php:15-30` verifica solo struttura (reflection). |
+| `JOB-CACHE-INV-2` | Se una delle due config non e' stringa, lancia `Webmozart\Assert\InvalidArgumentException` prima di toccare la cache. | Test: nessuno. |
+
+Nota su INV-2: `job::cache.*` non e' definita in nessun file del modulo (`config/config.php` restituisce `[]`; `app/Datas/JobConfigData.php:18-19` dichiara le chiavi inesistenti). Con la configurazione attuale l'Action lancia sempre.
 
 ## Effetti collaterali
 
-- Chiama `Cache::store($store)->forget($key)` e quindi rimuove la voce di cache
-  configurata.
-- Non esegue query sul database e non invia eventi o notifiche.
+- Una sola operazione: `Cache::store($store)->forget($key)` (riga 26). Nessuna transazione, nessun evento, nessuna coda, nessun servizio esterno.
 
 ## Errori
 
-- `InvalidArgumentException` da Webmozart Assert quando store o chiave non sono
-  stringhe.
-- Le eccezioni del cache store vengono propagate al chiamante.
+- `Webmozart\Assert\InvalidArgumentException` se `job::cache.store` o `job::cache.key` non sono stringhe.
 
 ## Non fa
 
-- Non modifica gli schedule persistiti.
-- Non ricostruisce la cache e non legge gli schedule attivi.
-- Non invalida altre chiavi o altri store.
+- Non controlla `job::cache.enabled`: il guardia sta nei chiamanti.
+- Non svuota lo store intero e non tocca altre chiavi.
+- Chiamanti verificati: `Observers/ScheduleObserver.php:62-66` (protetto da `config('job::cache.enabled')`, che e' null, quindi non raggiunge l'Action) e `Console/Commands/ScheduleClearCacheCommand.php:30` (comando `schedule:clear-cache`, **senza** guardia: con la config attuale fallisce). Da verificare a runtime.
