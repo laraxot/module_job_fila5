@@ -219,6 +219,7 @@ JobMonitor::where('status', 'processing')
 
 - [Timeout Configuration](./configuration.md#timeouts)
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
+- [Performance Optimization](./performance-optimization.md)
 
 ---
 
@@ -595,6 +596,7 @@ php artisan queue:work --max-time=3600
 
 - [Memory Management](./best-practices.md#memory-management)
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
+- [Performance Optimization](./performance-optimization.md)
 
 ---
 
@@ -764,6 +766,7 @@ When a critical job failure occurs:
 - [Patterns & Best Practices](./PATTERNS.md)
 - [Configuration Guide](./configuration.md)
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
+- [Performance Optimization](./performance-optimization.md)
 
 ---
 

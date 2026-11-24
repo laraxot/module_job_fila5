@@ -48,7 +48,7 @@ Non esiste una terza opzione confortevole.
 
 ## 2. `docs/` che si documenta due volte da sola
 
-`00-index.md` e `00-INDEX.md` esistono entrambi. `actions.md` e `ACTIONS.md`
+`00-index.md` e `00-index.md` esistono entrambi. `actions.md` e `actions.md`
 pure. Su un filesystem case-insensitive (Mac, la maggior parte dei setup
 Windows) uno dei due letteralmente sovrascrive l'altro al checkout — la
 collisione non è teorica, è già in corso silenziosamente per chiunque non

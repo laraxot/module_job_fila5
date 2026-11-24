@@ -56,13 +56,25 @@
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
 - [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
 - [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
-- [architecture-rules.md](archive/architecture-rules.md) - Architecture discipline rules
+- [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
+- [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
+- [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
+- [on-demand-pattern.md](on-demand-pattern.md) - On-demand knowledge pattern
+- [qmd-setup.md](qmd-setup.md) - QMD search configuration
+- [project-structure.md](project-structure.md) - Full project structure
+- [architecture-rules.md](architecture-rules.md) - Architecture discipline rules
 - [contracts-naming.md](contracts-naming.md) - Contract naming conventions
 
 ### Product & Strategy
-- [PRODUCT_STRATEGY.md](product_strategy.md) - Product strategy document
-- [PRODUCT_ROADMAP.md](product_roadmap.md) - Development roadmap
-- [PRODUCT_LAUNCH_PLAN.md](product_launch_plan.md) - Launch planning
+- [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
+- [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
+- [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
+- [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
+- [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
+- [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
+- [product_strategy.md](product_strategy.md) - Product strategy document
+- [product_roadmap.md](product_roadmap.md) - Development roadmap
+- [product_launch_plan.md](product_launch_plan.md) - Launch planning
 - [product-roadmap.md](product-roadmap.md) - Roadmap details
 - [product-strategy.md](product-strategy.md) - Strategy overview
 - [product-launch-plan.md](product-launch-plan.md) - Launch checklist
@@ -100,7 +112,7 @@
 - [filament-5x-compatibility.md](filament-5x-compatibility.md) - v5 compatibility (1.8KB)
 - [filament-version.md](filament-version.md) - Version tracking (862 bytes)
 - [migration-filament.md](migration-filament.md) - Filament migration
-- [migration-filament-4.md](archive/migration-filament-4.md) - v4 migration
+- [migration-filament-4.md](migration-filament-4.md) - v4 migration
 
 ### Migration & Database
 - [MIGRATIONS.md](MIGRATIONS.md) - Migration tracking (10.9KB)
@@ -141,6 +153,7 @@
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) - Method duplication (37KB - comprehensive)
 - [metodi-duplicati-analisi.md](metodi-duplicati-analisi.md) - Methods analysis (Italian, 249 bytes)
 - [METODI_DUPLICATI_ANALISI.md](METODI_DUPLICATI_ANALISI.md) - Duplicate methods (13.6KB)
+- [metodi_duplicati_analisi.md](metodi_duplicati_analisi.md) - Duplicate methods (13.6KB)
 - [duplicate_methods.md](duplicate_methods.md) - Methods report (2KB)
 - [duplicate_methods_report.md](duplicate_methods_report.md) - Methods detail (3.9KB)
 - [docs-health.md](docs-health.md) - Documentation health (1.2KB)
@@ -155,6 +168,7 @@
 
 ### Performance & Optimization
 - [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
+- [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
 - [optimization.md](optimization.md) - Optimization overview (250 bytes)
 - [optimization-analysis-and-improvements.md](optimization-analysis-and-improvements.md) - Analysis (205 bytes)
@@ -202,6 +216,7 @@
 **Owner files:**
 - `project-structure.md` (3.7KB)
 - `PROJECT-STRUCTURE.md` (3.7KB)
+- `project-structure.md` (3.7KB)
 - `architecture-rules.md` (227 bytes - stub, see wiki/)
 
 **Implementation files:**
@@ -211,6 +226,7 @@
 
 **Assessment:**
 - [ ] Consolidate duplicates: `project-structure.md` vs `PROJECT-STRUCTURE.md` (identical)
+- [ ] Consolidate duplicates: `project-structure.md` vs `project-structure.md` (identical)
 - [ ] Expand `architecture-rules.md` (currently stub)
 - [x] Implementation documentation adequate
 
@@ -248,6 +264,12 @@
 - `PRODUCT_STRATEGY.md` (1.9KB)
 - `product-strategy.md` (1.7KB)
 - `PRODUCT_ROADMAP.md` (2.4KB)
+- `PRODUCT_STRATEGY.md` (1.9KB)
+- `product-strategy.md` (1.7KB)
+- `PRODUCT_ROADMAP.md` (2.4KB)
+- `product_strategy.md` (1.9KB)
+- `product-strategy.md` (1.7KB)
+- `product_roadmap.md` (2.4KB)
 - `product-roadmap.md` (1.5KB)
 - `enterprise-job-system-roadmap.md` (15.9KB - comprehensive)
 
@@ -257,6 +279,11 @@
 - `SPRINT_PLANNING.md` (1.3KB)
 - `sprint-planning-meeting.md` (1.4KB)
 - `USER_RESEARCH.md` (1.9KB)
+- `product_launch_plan.md` (1.7KB)
+- `product-launch-plan.md` (2.2KB)
+- `sprint_planning.md` (1.3KB)
+- `sprint-planning-meeting.md` (1.4KB)
+- `user_research.md` (1.9KB)
 - `user-research.md` (294 bytes)
 
 **Assessment:**
@@ -351,6 +378,7 @@
 - `duplicate_methods_report.md` (3.9KB)
 - `metodi-duplicati-analisi.md` (249 bytes - IT stub)
 - `METODI_DUPLICATI_ANALISI.md` (13.6KB - IT detailed)
+- `metodi_duplicati_analisi.md` (13.6KB - IT detailed)
 
 **Assessment:**
 - [ ] ARCHIVE: dated redundancy audits (`2026-05-*`, `2026-05-21`)
@@ -378,6 +406,10 @@
 | 9 | enterprise-job-system-roadmap.md | Jul 28 08:34 | 15.9KB | Enterprise plan |
 | 10 | PRODUCT_STRATEGY.md | Jul 28 08:34 | 1.9KB | Strategy |
 | 11 | PRODUCT_ROADMAP.md | Jul 28 08:34 | 2.4KB | Roadmap |
+| 10 | PRODUCT_STRATEGY.md | Jul 28 08:34 | 1.9KB | Strategy |
+| 11 | PRODUCT_ROADMAP.md | Jul 28 08:34 | 2.4KB | Roadmap |
+| 10 | product_strategy.md | Jul 28 08:34 | 1.9KB | Strategy |
+| 11 | product_roadmap.md | Jul 28 08:34 | 2.4KB | Roadmap |
 | 12 | coverage.md | Jul 28 08:34 | 3.9KB | Test coverage |
 | 13 | solutions.md | Jul 28 08:34 | 10KB | Solution guide |
 | 14 | job-reports.md | Jul 28 08:34 | 30.3KB | Large reference |
@@ -513,6 +545,12 @@
   - `PRODUCT_STRATEGY.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
   - `PRODUCT_ROADMAP.md` (2.4KB) → DELETE (consolidate into single roadmap file)
   - `PRODUCT_LAUNCH_PLAN.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
+  - `PRODUCT_STRATEGY.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
+  - `PRODUCT_ROADMAP.md` (2.4KB) → DELETE (consolidate into single roadmap file)
+  - `PRODUCT_LAUNCH_PLAN.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
+  - `product_strategy.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
+  - `product_roadmap.md` (2.4KB) → DELETE (consolidate into single roadmap file)
+  - `product_launch_plan.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
 
 **Canonical set (keep):**
 1. `enterprise-job-system-roadmap.md` (15.9KB - comprehensive, canonical)
@@ -520,6 +558,10 @@
 3. `product-launch-plan.md` (2.2KB - merged with PRODUCT_LAUNCH_PLAN)
 4. `SPRINT_PLANNING.md` (1.3KB - sprint tracking)
 5. `USER_RESEARCH.md` (1.9KB - research findings)
+4. `SPRINT_PLANNING.md` (1.3KB - sprint tracking)
+5. `USER_RESEARCH.md` (1.9KB - research findings)
+4. `sprint_planning.md` (1.3KB - sprint tracking)
+5. `user_research.md` (1.9KB - research findings)
 
 **Benefit:** Single source of truth; improved navigation
 
@@ -569,6 +611,7 @@
 
 **Current Italian files to consolidate:**
 - `metodi-duplicati-analisi.md` → `METODI_DUPLICATI_ANALISI.md`
+- `metodi-duplicati-analisi.md` → `metodi_duplicati_analisi.md`
 - `migrazione-filament*.md` (2 variants)
 - `modelli-factory-seeder-analisi.md`
 - `phpstan-correzioni*.md` (4 variants)
@@ -600,6 +643,7 @@
 - `configuration.md` (generic)
 - `mcp-configuration.md` (MCP specific)
 - `QMD-SETUP.md` vs `qmd-setup.md` (case variants)
+- `qmd-setup.md` vs `qmd-setup.md` (case variants)
 - `artisan.md` + `artisan.txt`
 
 **Proposed consolidation:**
@@ -658,6 +702,10 @@ Add `INDEX.md` to each subdirectory:
 - `wiki/INDEX.md` - Links to 54 reference files
 - `roadmap/INDEX.md` - Roadmap structure
 - `_integration/INDEX.md` - Integration guides
+Add `index.md` to each subdirectory:
+- `wiki/index.md` - Links to 54 reference files
+- `roadmap/index.md` - Roadmap structure
+- `_integration/index.md` - Integration guides
 
 **Benefit:** Improved navigation
 
@@ -717,6 +765,7 @@ Ensure `QMD-SETUP.md` or updated `qmd-setup.md` points to:
 
 Add "Back to Index" links in all major docs pointing to:
 - `INDEX.md` (official index)
+- `index.md` (official index)
 - `README.md` (entry point)
 - `INDEX_GENERATED.md` (this file)
 

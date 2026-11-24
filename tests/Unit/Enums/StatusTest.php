@@ -35,18 +35,42 @@ describe('Status', function () {
         Assert::assertContains('Filament\Support\Contracts\HasLabel', $interfaces);
     });
 
-    it('getColor returns translation keys via EnumTrait', function () {
-        Assert::assertSame('job::status.values.active.color', Status::Active->getColor());
-        Assert::assertSame('job::status.values.inactive.color', Status::Inactive->getColor());
-        Assert::assertSame('job::status.values.trashed.color', Status::Trashed->getColor());
-        Assert::assertSame('job::status.values.1.color', Status::One->getColor());
+    /*
+     * Questi due test si chiamavano «returns translation keys» e asserivano
+     * esattamente quello: che `getColor()` restituisse
+     * `job::status.values.active.color`. Cioe' mettevano per iscritto
+     * l'**assenza** della traduzione come comportamento atteso.
+     *
+     * Quando una chiave non si risolve, `TransFuncTrait` restituisce
+     * `'fix:'.$key`: l'interfaccia mostrava `fix:job::status.values.active.color`
+     * dove Filament aspettava il nome di un colore. La sezione `values` del file
+     * di lingua non esisteva; ora esiste, in italiano e in inglese
+     * (base_quaeris_fila5#245).
+     *
+     * L'asserzione non e' sul valore letterale — coppierebbe il test al file di
+     * lingua, e ogni ritocco al colore lo farebbe fallire — ma sull'invariante
+     * che conta: ogni caso dell'enum ha una traduzione. E' lo stile che usa
+     * gia' `Modules/Cms/tests/Unit/Enums/AttachmentDiskEnumTest.php`.
+     */
+    it('ogni caso ha un colore tradotto', function () {
+        foreach (Status::cases() as $case) {
+            Assert::assertStringStartsNotWith('fix:', $case->getColor(), $case->value);
+            Assert::assertNotSame('', $case->getColor(), $case->value);
+        }
     });
 
-    it('getIcon returns translation keys via EnumTrait', function () {
-        Assert::assertSame('job::status.values.active.icon', Status::Active->getIcon());
-        Assert::assertSame('job::status.values.inactive.icon', Status::Inactive->getIcon());
-        Assert::assertSame('job::status.values.trashed.icon', Status::Trashed->getIcon());
-        Assert::assertSame('job::status.values.1.icon', Status::One->getIcon());
+    it('ogni caso ha un icona tradotta', function () {
+        foreach (Status::cases() as $case) {
+            Assert::assertStringStartsNotWith('fix:', $case->getIcon(), $case->value);
+            Assert::assertStringStartsWith('heroicon-', $case->getIcon(), $case->value);
+        }
+    });
+
+    it('ogni caso ha un etichetta tradotta', function () {
+        foreach (Status::cases() as $case) {
+            Assert::assertStringStartsNotWith('fix:', $case->getLabel(), $case->value);
+            Assert::assertNotSame('', $case->getLabel(), $case->value);
+        }
     });
 
     it('getLabel returns a non-empty string', function () {
