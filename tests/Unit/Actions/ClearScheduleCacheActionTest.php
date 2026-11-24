@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Job\Tests\Unit\Actions;
 
-use Modules\Job\Actions\ClearScheduleCacheAction;
+use Modules\Job\Actions\Schedule\ClearScheduleCacheAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;

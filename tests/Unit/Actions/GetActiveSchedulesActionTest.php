@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests\Modules\Job\Unit\Actions;
 
-use Modules\Job\Actions\GetActiveSchedulesAction;
+use Modules\Job\Actions\Schedule\GetActiveSchedulesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Spatie\QueueableAction\QueueableAction;

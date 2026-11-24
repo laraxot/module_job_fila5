@@ -8,6 +8,14 @@ use Illuminate\Support\Facades\Cache;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * SUPERSEDED — duplicato flat. Usare {@see \Modules\Job\Actions\Schedule\ClearScheduleCacheAction}.
+ *
+ * Caller di produzione migrati (Observer + Command). Residuo on-disk finché
+ * non arriva autorizzazione a cancellare i doppioni root di Actions/.
+ *
+ * @deprecated Prefer Modules\Job\Actions\Schedule\ClearScheduleCacheAction
+ */
 class ClearScheduleCacheAction
 {
     use QueueableAction;
@@ -20,3 +28,4 @@ class ClearScheduleCacheAction
         Cache::store($store)->forget($key);
     }
 }
+
