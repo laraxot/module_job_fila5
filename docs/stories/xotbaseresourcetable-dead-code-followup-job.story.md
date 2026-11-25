@@ -28,8 +28,25 @@ related:
   - "../../../../docs/stories/xotbaseresourcetable-dead-code-duplicate-table-classes-followup.story.md"
   - "./xotbaseresourcetable-model-audit-job-batch-a.story.md"
 ---
-
 # Follow-up — Table class dead code + `$model` bug (`JobBatchResource`, `JobsWaitingResource`)
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -144,3 +161,28 @@ Nessuna issue aperta oggi in `laraxot/module_job_fila5` per questo audit
 (`gh issue list --search "model-audit" --state all`: nessun risultato). Non
 inventato un numero — nessun commento postato, come da istruzione esplicita
 del task.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `cd laravel && vendor/bin/phpstan analyse Modules/Job --no-progress`: **[OK] No errors**.
+- `cd laravel/Modules/Job && bash ../../tools/phpmd.sh <file> text ../../../docs/phpmd.ruleset.xml`
+  sui 4 file toccati: **0 violazioni** (unico finding, pre-esistente e non
+  toccato da questo diff: `JobsWaitingResource.php:24 LongVariable
+  $shouldRegisterNavigation`, proprietà standard Filament).
+- `cd laravel && XDEBUG_MODE=coverage vendor/bin/pest Modules/Job`: **323
+  passed, 27 failed** (976 assertions, 180.23s). I 27 fallimenti sono
+  pre-esistenti, non toccati da questo diff — dettaglio completo in
+  `docs/coverage.md` (2026-09-11): incompatibilità Mockery in un helper
+  condiviso (`JobExecuteCoverage50Test.php:70`) + un bug indipendente
+  (chiamata statica a un metodo non statico) + asserzioni su `Task`/`Status`
+  scollegate da `JobBatch`/`JobsWaiting`. Il nuovo guard test (4/4) e i test
+  preesistenti che toccano `JobBatch`/le Table (`JobBatchBusinessLogicTest` —
+  12/13 passano, l'unico fallimento è un'asserzione su dati DB condivisi non
+  collegata al codice toccato) non mostrano regressioni introdotte da questo
+  fix.

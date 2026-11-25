@@ -58,6 +58,6 @@ Formato e regole: [action-behavioral-contract](../../../Xot/docs/rules/action-be
 
 ## Decisioni
 
-- [Comandi Artisan dalla UI: allowlist a match esatto](artisan-commands-from-ui-exact-match-allowlist.md) — solo super-admin, autorizzazione ripetuta nel metodo Livewire, nessun argomento libero.
-- [Flag del worker dalle impostazioni del tenant](queue-worker-flags-from-tenant-settings.md) — `timeout/sleep/tries` per tenant, nella shell entrano solo interi.
-- [Tabella jobs in sola lettura](jobs-table-read-only-in-admin.md) — `JobResource` senza create/edit: la coda la scrive il codice.
+- [Comandi Artisan dalla UI: allowlist a match esatto](0001-artisan-commands-from-ui-exact-match-allowlist.md) — solo super-admin, autorizzazione ripetuta nel metodo Livewire, nessun argomento libero.
+- [Flag del worker dalle impostazioni del tenant](0003-queue-worker-flags-from-tenant-settings.md) — `timeout/sleep/tries` per tenant, nella shell entrano solo interi.
+- [Tabella jobs in sola lettura](0002-jobs-table-read-only-in-admin.md) — `JobResource` senza create/edit: la coda la scrive il codice.

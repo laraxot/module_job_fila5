@@ -12,8 +12,25 @@ related:
   - ../audits/job-audit.md
   - ../decision-log.md
 ---
-
 # Story: E1 — chiudere P0 policy create + payload
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -40,3 +57,13 @@ L'audit BMAD ([job-audit](../audits/job-audit.md)) ha trovato `create() = true` 
 ## Esito
 
 P0-1 chiuso in codice. P0-2 (scheduler D-2) resta aperto. Livewire non cancellato (E3); solo allowlist.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

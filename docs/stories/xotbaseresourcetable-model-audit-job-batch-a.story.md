@@ -30,8 +30,25 @@ owned_scope:
 github_issue: null
 github_discussion: null
 ---
-
 # Modulo Job — audit `$model` + colonne reali + UX sulle XotBaseResourceTable
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -176,3 +193,21 @@ ricevuto un diff da questa sessione. Gli altri 10 file dell'`owned_scope` erano 
 modificati nel working tree prima dell'avvio di questa sessione (property `$model`
 già presente, colonne già verificate come corrette, UX già coerente) — inclusi qui
 solo a scopo di tracciamento/verifica, non ri-editati.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` su `FailedJobsTable.php`: nessun errore di sintassi.
+- `vendor/bin/phpstan analyse <11 file elencati in owned_scope> --no-progress` da
+  `/var/www/_bases/base_quaeris_fila5/laravel`: **`[OK] No errors`**.
+  Un primo tentativo è fallito con un errore di bootstrap Filament
+  (`syntax error, unexpected token "<<"`) causato da un file di un altro modulo in
+  edit concorrente da un'altra sessione (pattern noto, vedi memoria
+  "misurare mentre un altro scrive"); il retry pochi secondi dopo è passato pulito
+  — non era un problema di questi 11 file (confermato anche da `php -l` isolato,
+  passato subito).

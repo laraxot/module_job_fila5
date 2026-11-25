@@ -47,7 +47,7 @@ Controlla che un comando Artisan richiesto dal pannello `JobStatus` sia nella wh
 - Non costruisce la whitelist.
 - La classe e' `final`.
 Sorgente: `app/Actions/Console/AssertAllowedArtisanCommandAction.php`. Perché esiste:
-[ADR allowlist a match esatto](../adr/artisan-commands-from-ui-exact-match-allowlist.md).
+[ADR allowlist a match esatto](../adr/0001-artisan-commands-from-ui-exact-match-allowlist.md).
 Unico chiamante in produzione: `Filament/Pages/JobStatus.php::artisan()`.
 
 ## Input

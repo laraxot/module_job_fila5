@@ -9,8 +9,25 @@ updated: 2026-10-06
 tags: [phpstan, cleanup, bmad, job]
 qmd: "phpstan cleanup job dev"
 ---
-
 # [DEV] PHPStan cleanup — Job
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Technical Plan
 
@@ -58,3 +75,19 @@ Esito: 0 errori sui 9 moduli del gruppo (anche con run completo `./vendor/bin/ph
 - Duplicati lasciati intatti: `Actions/GetActiveSchedulesAction.php` e `Actions/Schedule/GetActiveSchedulesAction.php`; i due `ActionGroup`.
 - Da decidere (utente): la colonna `status` e' `boolean` nella migration `create_schedule_table` ma il cast e' un enum a stringa (`active/inactive/trashed`); su MySQL strict la scrittura di `'active'` fallirebbe. Inoltre un eventuale `0` legacy non ha un case (`Status::from('0')` solleva `ValueError`): valutare un case `Zero` o una migrazione dei dati.
 - PHPStan non risolve i docblock delle classi anonime in modo stabile: il cache dei name-scope e' indicizzato per file ma il nome della classe anonima contiene un percorso relativo alla radice dell'esecuzione (file singolo, sottoinsieme di moduli, run completo). Esecuzioni con radici diverse lasciano voci inconsistenti e compaiono falsi `missingType.iterableValue`/`missingType.generics` anche con docblock corretti. Fix deterministico: classi **con nome** in `tests/Fixtures/` (convenzione gia' usata nei moduli).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules/Tenant Modules/Activity Modules/Media Modules/AI Modules/UI Modules/Job Modules/Gdpr Modules/TechPlanner Modules/Seo --memory-limit=-1 --no-progress
+php -l <file toccati>
+
+```
+
+Esito: 0 errori sui 9 moduli del gruppo (anche con run completo `./vendor/bin/phpstan analyse` senza argomenti).

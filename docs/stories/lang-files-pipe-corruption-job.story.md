@@ -8,8 +8,56 @@ qmd: "lang files pipe corruption job.story"
 issues: []
 discussions: []
 ---
-
 # Story: file di lingua Job corrotti da una pipe prima di ogni carattere
+
+## Context and Problem Statement
+
+Stesso motivo di Activity: senza `<?php` contiguo, PHP tratta il file come testo
+inline, non come codice — `php -l` dice "No syntax errors" a vuoto, non perche' il file
+sia un array valido.
+
+### File e conteggio chiavi verificato
+
+| file | chiavi top-level |
+|---|---:|
+| `jobs_waiting.php` | 1 |
+| `job_manager.php` | 2 |
+| `edit_failed_import_row.php` | 1 |
+| `import.php` | 2 |
+| `failed_job.php` | 1 |
+| `job_batch.php` | 2 |
+| `job.php` | 10 |
+| `failed_import_row.php` | 1 |
+
+### Origine non determinata
+
+Come per Activity, non e' noto quale strumento abbia inserito le pipe. Non
+approfondito in questa sessione (era root-cause del crash live, non un audit dedicato).
+Se serve, vale la stessa domanda aperta nella Discussion #21 di Activity.
+
+### Testing standards
+
+Nessun test nuovo, stesso ragionamento di Activity: e' una proprieta' del file
+sorgente, non un comportamento di dominio esprimibile in Pest.
+
+### References
+
+- [Source: laravel/Modules/Activity/docs/stories/lang-files-pipe-corruption.story.md] — pattern gemello, stesso meccanismo di corruzione
+- [Source: laravel/Modules/User/docs/stories/lang-files-empty-stub-corruption.story.md] — trovato nella stessa sessione, meccanismo diverso, stesso crash live
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 Status: done
 
@@ -104,3 +152,13 @@ sorgente, non un comportamento di dominio esprimibile in Pest.
 - `laravel/Modules/Job/lang/lang/it/job_batch.php` — riparato
 - `laravel/Modules/Job/lang/lang/it/job.php` — riparato
 - `laravel/Modules/Job/lang/lang/it/failed_import_row.php` — riparato
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

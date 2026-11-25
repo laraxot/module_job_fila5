@@ -16,8 +16,25 @@ related:
   - ../../docs/phpstan-syntax-fixes.md
   - ../../docs/phpstan-corrections.md
 ---
-
 # STORY-504 — PHPInsights crash su charset iso-8859-1 in lang it
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## User story
 
@@ -53,3 +70,13 @@ si vede solo con PHPInsights — costringe a `SKIP_ENV` (regola qualità gate).
 - Verifica: `php -r "var_dump(iconv_strlen(file_get_contents('...')));"`
   restituisce la lunghezza corretta senza avvisi.
 - Aggiunge `SKIP_ENV` nel report se PHPInsights non è installato.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

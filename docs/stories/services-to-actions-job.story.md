@@ -13,8 +13,25 @@ related:
   - ../../../../bmad-output/epic-code-standards-services-mixed-const.md
   - ../../../../bashscripts/ai/wiki/rules/actions-business-logic.md
 ---
-
 # Services -> Actions nel modulo Job
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Richiesta
 
@@ -58,3 +75,15 @@ istanziabile, avesse un certo namespace e un metodo privato: nessun comportament
   `tests/Unit/Actions/Schedule/ScheduleActionsTest.php`.
 - `GetActiveSchedulesAction` non ha chiamanti di produzione: chi pianifica gli `Schedule` attivi non la usa. Verificare
   che il caricamento degli schedule attivi non ignori la cache configurata.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `rg ScheduleService` / `Modules\Job\Services` su `laravel/Modules`, `Themes`, `app`, `config`, `routes`,
+  `resources`, `tests` (esclusi docs/vendor): zero risultati.
+- PHPStan (`phpstan.neon`, da `laravel/`) su `Modules/Job/app/Actions`: `[OK] No errors` (esecuzione unica per i cinque moduli, dettaglio nella story Media).

@@ -20,8 +20,29 @@ related:
   - "../../../Tenant/docs/concepts/tenant-service-to-actions-migration.md"
   - "../../../../docs/chat/module-job-sync.md"
 ---
-
 # JOB — Services → Actions
+
+## Context and Problem Statement
+
+Il modulo Job ha altre classi sotto `app/Actions/**` che sono Strategy/Handler (es.
+`app/Actions/Console/GetScheduleStatusCommandsAction.php`, che ha gia' `execute()` — non
+sotto scrutinio qui) ma **nessuna** di queste viveva sotto `app/Services/`: il censimento
+iniziale ha trovato un solo file, gia' classificato sopra. Non c'era quindi nessun caso
+Kind B da valutare in questa story.
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -115,3 +136,25 @@ Il modulo Job ha altre classi sotto `app/Actions/**` che sono Strategy/Handler (
 sotto scrutinio qui) ma **nessuna** di queste viveva sotto `app/Services/`: il censimento
 iniziale ha trovato un solo file, gia' classificato sopra. Non c'era quindi nessun caso
 Kind B da valutare in questa story.
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+- `php -l` pulito su tutti i file toccati.
+- `./vendor/bin/phpstan clear-result-cache && ./vendor/bin/phpstan analyse Modules/Job
+  --no-progress --error-format=table`: **0 errori prima → 0 errori dopo**.
+- `./tools/phpmd.sh Modules/Job text ../docs/phpmd.ruleset.xml`: nessun finding nuovo;
+  `ScheduleObserver.php` mostra solo `CamelCaseParameterName`/`UnusedFormalParameter` su
+  `$_schedule`, pre-esistente, riga non toccata da questa story (solo lo `use` in testa al
+  file e' cambiato).
+- `./vendor/bin/pest Modules/Job/tests -c Modules/Job/phpunit.xml --no-coverage`: fallisce
+  al bootstrap (`Cannot open bootstrap script
+  ".../Modules/Job/vendor/autoload.php"`) — causa pre-esistente e non correlata
+  (`phpunit.xml` fa parte del WIP non committato di un'altra sessione, gia' documentato in
+  `docs/coverage.md` § 2026-09-04 mixed-type-reduction). Non risolto, non nello scope di
+  questa story.

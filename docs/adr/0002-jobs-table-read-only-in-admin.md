@@ -25,7 +25,7 @@ Il pannello deve permettere di scrivere sulla coda?
 
 `app/Filament/Resources/JobResource.php::getPages()` registra solo `index` (`ListJobs`) e `board` (`BoardJobs`),
 con il commento `D-3`. Le azioni sulla coda passano dai comandi `queue:*` in allowlist
-(`artisan-commands-from-ui-exact-match-allowlist.md`), mai dalla modifica diretta delle righe.
+(`0001-artisan-commands-from-ui-exact-match-allowlist.md`), mai dalla modifica diretta delle righe.
 
 ## Alternative scartate
 

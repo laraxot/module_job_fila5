@@ -10,8 +10,26 @@ qmd: "job docs bonifica duplicati md5 varianti -2 -3 maiuscole FRAMEWORKS INDEX 
 related:
   - ../../../../Xot/docs/bmad/stories/docs-zen-conventions-swarm.story.md
 ---
-
 # Job: bonifica convenzioni docs
+
+## Context and Problem Statement
+
+Lane E dello swarm [docs-zen-conventions-swarm](../../../../Xot/docs/bmad/stories/docs-zen-conventions-swarm.story.md).
+Job era il modulo piu' rumoroso della lane: ogni documento esisteva in 2-4 varianti (`X.md`, `X-2.md`, `X-3.md`, `X-MAIUSCOLO.md`).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Perche'
 
@@ -60,3 +78,13 @@ Job era il modulo piu' rumoroso della lane: ogni documento esisteva in 2-4 varia
 ## Gate
 
 Solo `.md`: PHPStan/Pint/Pest non applicabili (skip documentato, PHPStan gia' 0).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

@@ -46,7 +46,7 @@ Nessuno: restituisce solo la stringa. Non avvia processi (lo fa `WorkerCheck` co
 - Il percorso `/usr/local/bin/php` e' fisso nel codice.
 - Nota: `base_path()` non viene escapato; un percorso con spazi o caratteri di shell romperebbe la riga. Non verificato a runtime.
 Sorgente: `app/Actions/BuildQueueWorkerCommandAction.php`. Perché esiste:
-[ADR flag del worker dalle impostazioni del tenant](../adr/queue-worker-flags-from-tenant-settings.md).
+[ADR flag del worker dalle impostazioni del tenant](../adr/0003-queue-worker-flags-from-tenant-settings.md).
 Unico chiamante: `Console/Commands/WorkerCheck.php::startQueueListener()`, che passa il risultato a `Safe\exec()`.
 
 ## Input

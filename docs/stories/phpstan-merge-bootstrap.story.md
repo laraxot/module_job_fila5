@@ -12,8 +12,25 @@ related:
   - "./12.1.retire-job-http-livewire.story.md"
   - "../../../TechPlanner/docs/stories/phpstan-merge-bootstrap.story.md"
 ---
-
 # PHPStan merge bootstrap — Job
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Scopo
 
@@ -37,3 +54,13 @@ storico ampio già in [02.job-merge-conflict-resolution.story.md](./02.job-merge
 
 `phpstan.neon` non toccato. Livewire Schedule Status resta in `Http/Livewire` finché
 non chiude [12.1](./12.1.retire-job-http-livewire.story.md).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).

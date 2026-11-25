@@ -16,8 +16,25 @@ updated_at: 2026-09-22
 bmad_phase: analysis
 module: Job
 ---
-
 # Regressione naming: Modules/Job/Config
+
+## Context and Problem Statement
+
+Problema e obiettivo sono descritti nel Decision Outcome (migrazione automatica a MADR).
+
+## Decision Drivers
+
+- Richiesta utente / acceptance criteria della story
+- Vincoli BMAD, second brain, Pest gate e dati sacri
+
+## Considered Options
+
+- Status quo (non fare)
+- Implementare come descritto nel Decision Outcome
+
+## Decision Outcome
+
+Scelta: **implementare**, perché i driver sopra.
 
 ## Contesto
 
@@ -67,3 +84,13 @@ modulo prima di committare, per escludere autoload cache stantio.
 `index-generated-2.md`, `index-2.md`, `index-generated-2.md`, `rules-index.md`):
 candidato per una story di consolidamento dedicata (pattern già visto in
 `docs-index-audit.story.md`, 2026-09-03).
+
+
+### Consequences
+
+- Buono, perché chiude il gap descritto nel Context
+- Cattivo, perché richiede write-back docs, lock e quality gate
+
+### Confirmation
+
+Aggiungere prova ripetibile (Pest exit code + conteggio, PHPStan, o skip host documentato).
