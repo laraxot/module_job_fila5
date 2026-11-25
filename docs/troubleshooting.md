@@ -350,8 +350,8 @@ $schedule->call(new CheckFailedJobsAction())->everyMinute();
 
 ### Reference
 
-- [Retry Strategies](./PATTERNS.md#pattern-2-retry-strategy)
-- [Failure Handling](./PATTERNS.md#pattern-5-failure-handling)
+- [Retry Strategies](patterns.md#pattern-2-retry-strategy)
+- [Failure Handling](patterns.md#pattern-5-failure-handling)
 
 ---
 
@@ -471,7 +471,7 @@ class ProcessChunkAction implements ShouldQueue
 
 ### Reference
 
-- [Batch Processing Pattern](./PATTERNS.md#pattern-3-batch-processing)
+- [Batch Processing Pattern](patterns.md#pattern-3-batch-processing)
 - [Database Transactions](./best-practices.md#transactions)
 
 ---
@@ -725,8 +725,8 @@ stdout_logfile=/var/log/laravel-worker.log
 ### Reference
 
 - [Queue Driver Configuration](./configuration.md)
-- [Job Monitoring](./PATTERNS.md#pattern-4-job-monitoring)
-- [Failure Handling](./PATTERNS.md#pattern-5-failure-handling)
+- [Job Monitoring](patterns.md#pattern-4-job-monitoring)
+- [Failure Handling](patterns.md#pattern-5-failure-handling)
 
 ---
 
@@ -762,7 +762,7 @@ When a critical job failure occurs:
 ## References
 
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
-- [Patterns & Best Practices](./PATTERNS.md)
+- [Patterns & Best Practices](patterns.md)
 - [Configuration Guide](./configuration.md)
 - [Performance Optimization](./performance-optimization.md)
 

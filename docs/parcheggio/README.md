@@ -10,6 +10,7 @@ language: it-IT
 created: 2026-11-18
 updated: 2026-11-18
 tags: [parcheggio, debito-tecnico]
+qmd: "job parcheggio file estensione finta boh up test disabled to_migra spostati da app"
 description: "File con estensione finta spostati fuori da app/ in Job, con il motivo per ciascuna famiglia."
 ---
 

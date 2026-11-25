@@ -1,3 +1,11 @@
+---
+title: "Task: consolidamento e pulizia docs Job"
+type: task
+module: Job
+status: active
+qmd: "job docs cleanup consolidamento duplicati txt file vuoti backup roadmap archivio"
+---
+
 # Task: Job Docs Consolidation & Cleanup
 
 ## 📋 Obiettivo

@@ -25,7 +25,7 @@ related:
 - 🧬 **[Batch Processing](./analysis.md)** - Elaborazione massiva di job concatenati.
 
 ## 📊 **Monitoring & Reports**
-- 📈 **[Job Monitor UI](../../../Activity/docs/filament-3.md)** - Dashboard di monitoraggio in Filament.
+- 📈 **[Job Monitor UI](../../../Activity/docs/filament.md)** - Dashboard di monitoraggio in Filament.
 - 📄 **[PDF Reports](./job-reports.md)** - Generazione di log e statistiche in PDF (HTML2PDF).
 - 🔗 **[Soketi & Socket.io](./soketi.md)** - Real-time monitoring tramite websocket.
 
