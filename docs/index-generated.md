@@ -126,7 +126,7 @@ qmd: "generated"
 - [configuration.md](configuration.md) - Configuration guide
 - [implementation.md](implementation.md) - Implementation details (8KB)
 - [integration.md](integration.md) - Integration guide (2KB)
-- [artisan.md](artisan.md) - Artisan commands (426 bytes)
+- [artisan.md](resources.md) - Artisan commands (426 bytes)
 - [packages.md](packages.md) - Package management (2.8KB)
 - [mcp-configuration.md](mcp-configuration.md) - MCP server config (3.7KB)
 - [mcp-server-recommended.md](mcp-server-recommended.md) - MCP recommendations
@@ -161,7 +161,7 @@ qmd: "generated"
 ### Performance & Optimization
 - [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
-- [optimization.md](optimization.md) - Optimization overview (250 bytes)
+- [optimization.md](resources.md) - Optimization overview (250 bytes)
 - [optimization-analysis-and-improvements.md](optimization-analysis-and-improvements.md) - Analysis (205 bytes)
 - [optimization-analysis-e-improvements.md](optimization-analysis-e-improvements.md) - Analisi (Italian)
 
@@ -182,12 +182,12 @@ qmd: "generated"
 - [queueable-actions.md](queueable-actions.md) - Queueable actions (1.4KB)
 - [queueable-action.md](queueable-action.md) - Single action guide (1.2KB)
 - [second-brain.md](second-brain.md) - Knowledge capture (193 bytes)
-- [links.md](links.md) - Reference links (244 bytes)
-- [tips.md](tips.md) - Tips & tricks (212 bytes)
+- [links.md](resources.md) - Reference links (244 bytes)
+- [tips.md](resources.md) - Tips & tricks (212 bytes)
 - [troubleshooting.md](troubleshooting.md) - Troubleshooting guide (181 bytes)
 - [best-practices.md](best-practices.md) - Best practices (181 bytes)
-- [soketi.md](soketi.md) - Soketi integration (1.2KB)
-- [storage-server.md](storage-server.md) - Storage setup (1.4KB)
+- [soketi.md](resources.md) - Soketi integration (1.2KB)
+- [storage-server.md](resources.md) - Storage setup (1.4KB)
 - [laravel-13-upgrade.md](laravel-13-upgrade.md) - L13 upgrade (1.5KB)
 
 ### Documentation Maintenance

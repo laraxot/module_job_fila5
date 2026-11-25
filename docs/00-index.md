@@ -21,7 +21,7 @@ qmd: "00 indice"
 ## 📊 **Monitoring & Reports**
 - 📈 **[Job Monitor UI](./filament.md)** - Dashboard di monitoraggio in Filament.
 - 📄 **[PDF Reports](./job-reports.md)** - Generazione di log e statistiche in PDF (HTML2PDF).
-- 🔗 **[Soketi & Socket.io](./soketi.md)** - Real-time monitoring tramite websocket.
+- 🔗 **[Soketi & Socket.io](resources.md)** - Real-time monitoring tramite websocket.
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Level 10](./phpstan-level-10-compliance.md)** - Conformità e fix specifici.
