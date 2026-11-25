@@ -6,11 +6,8 @@ status: Done
 priority: High
 created: 2026-09-06
 updated: 2026-09-06
-<<<<<<< .merge_file_ePqniT
 superseded_by: "./01.Job-phpstan-fix.story.md"
-=======
 superseded_by: "./01.job-phpstan-fix.story.md"
->>>>>>> .merge_file_5Xo7sg
 qmd: "phpstan job fix"
 ---
 

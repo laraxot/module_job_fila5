@@ -122,7 +122,7 @@ if ($size > 60000) { // Leave 4KB buffer
 
 ### Reference
 
-- [Queue Serialization Issues](../../Activity/docs/best-practices-3.md#serialization)
+- [Queue Serialization Issues](./best-practices.md#serialization)
 - [Queue Driver Configuration](./configuration.md#queue-drivers)
 
 ---
@@ -355,8 +355,8 @@ $schedule->call(new CheckFailedJobsAction())->everyMinute();
 
 ### Reference
 
-- [Retry Strategies](./patterns-2.md#pattern-2-retry-strategy)
-- [Failure Handling](./patterns-2.md#pattern-5-failure-handling)
+- [Retry Strategies](./PATTERNS.md#pattern-2-retry-strategy)
+- [Failure Handling](./PATTERNS.md#pattern-5-failure-handling)
 
 ---
 
@@ -476,8 +476,8 @@ class ProcessChunkAction implements ShouldQueue
 
 ### Reference
 
-- [Batch Processing Pattern](./patterns-2.md#pattern-3-batch-processing)
-- [Database Transactions](../../Activity/docs/best-practices-3.md#transactions)
+- [Batch Processing Pattern](./PATTERNS.md#pattern-3-batch-processing)
+- [Database Transactions](./best-practices.md#transactions)
 
 ---
 
@@ -599,11 +599,7 @@ php artisan queue:work --max-time=3600
 
 ### Reference
 
-<<<<<<< .merge_file_ce3nWs
 - [Memory Management](./best-practices.md#memory-management)
-=======
-- [Memory Management](../../Activity/docs/best-practices-3.md#memory-management)
->>>>>>> .merge_file_ZTYtDG
 - [Performance Optimization](./performance-optimization.md)
 
 ---
@@ -734,8 +730,8 @@ stdout_logfile=/var/log/laravel-worker.log
 ### Reference
 
 - [Queue Driver Configuration](./configuration.md)
-- [Job Monitoring](./patterns-2.md#pattern-4-job-monitoring)
-- [Failure Handling](./patterns-2.md#pattern-5-failure-handling)
+- [Job Monitoring](./PATTERNS.md#pattern-4-job-monitoring)
+- [Failure Handling](./PATTERNS.md#pattern-5-failure-handling)
 
 ---
 
@@ -771,7 +767,7 @@ When a critical job failure occurs:
 ## References
 
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
-- [Patterns & Best Practices](./patterns-2.md)
+- [Patterns & Best Practices](./PATTERNS.md)
 - [Configuration Guide](./configuration.md)
 - [Performance Optimization](./performance-optimization.md)
 

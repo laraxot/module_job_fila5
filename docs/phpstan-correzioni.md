@@ -399,7 +399,7 @@ fn (ModelType $item): ReturnType => ...
 
 - [PHPStan Level 10 Fixes Precedenti](phpstan-level10-fixes.md)
 - [Business Logic Overview](business-logic-overview.md)
-- [Best Practices](best-practices-3.md)
+- [Best Practices](best-practices.md)
 
 ## ✅ Verifica Finale
 
@@ -813,11 +813,7 @@ fn (ModelType $item): ReturnType => ...
 
 - [PHPStan Level 10 Fixes Precedenti](phpstan-level10-fixes.md)
 - [Business Logic Overview](business-logic-overview.md)
-<<<<<<< .merge_file_qZGwAB
 - [Best Practices](best-practices.md)
-=======
-- [Best Practices](best-practices-3.md)
->>>>>>> .merge_file_3d6CzO
 
 ## ✅ Verifica Finale
 
@@ -1239,11 +1235,7 @@ fn (ModelType $item): ReturnType => ...
 
 - [PHPStan Level 10 Fixes Precedenti](phpstan-level10-fixes.md)
 - [Business Logic Overview](business-logic-overview.md)
-<<<<<<< .merge_file_qZGwAB
 - [Best Practices](best-practices.md)
-=======
-- [Best Practices](best-practices-3.md)
->>>>>>> .merge_file_3d6CzO
 
 ## ✅ Verifica Finale
 
