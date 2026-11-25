@@ -52,7 +52,7 @@ Import::class       // + Export, FailedImportRow
 
 La logica di business nuova vive in Spatie Queueable Actions (`app/Actions/**`,
 metodo `execute()`). L'unico service rimasto e' `Modules\Job\Services\ScheduleService`
-(vedi story [job-services-to-actions](./stories/job-services-to-actions.story.md)).
+(vedi story [job-services-to-actions](stories/0020-job-services-to-actions.story.md)).
 Le classi `JobDispatcher` e `QueueManager`, citate in una versione precedente di
 questo file, non esistono nel modulo.
 
@@ -66,7 +66,7 @@ questo file, non esistono nel modulo.
 
 ## Stories
 
-- [02 Job - risoluzione marker di merge (2026-10)](./stories/02.job-merge-conflict-resolution.story.md)
+- [02 Job - risoluzione marker di merge (2026-10)](stories/0002-job-merge-conflict-resolution.story.md)
 - [2026-10-06 PHPStan cleanup - Job](./stories/2026-10-06-phpstan-cleanup-job.story.md) | [dev](./stories/2026-10-06-phpstan-cleanup-job.dev.md)
 
 ## Stato dell'organizzazione della cartella
