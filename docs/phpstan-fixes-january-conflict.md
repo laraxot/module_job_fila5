@@ -1,3 +1,8 @@
+---
+title: "🔧 PHPStan Fixes - Modulo Job - Gennaio 2025"
+type: note
+qmd: "phpstan fixes january conflict gennaio 2025"
+---
 # 🔧 PHPStan Fixes - Modulo Job - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -183,8 +188,6 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-- [README.md Modulo Job](./readme.md)
-- [Queue Management](./queue/readme.md)
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
 - [Best Practices](./best-practices.md)

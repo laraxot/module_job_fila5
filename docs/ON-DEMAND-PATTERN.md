@@ -7,6 +7,7 @@ tags: [on-demand, pattern, wiki, qmd]
 related:
   - ../../docs/wiki/rules/on-demand-pattern.md
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+qmd: "on demand pattern ondemand"
 ---
 
 # On-Demand Pattern — Module **Job**
@@ -56,10 +57,10 @@ qmd search "<topic>"
 \`\`\`
 ./laravel/Modules/Job/docs/
 └── wiki/                    # Knowledge base locale
-    ├── rules/INDEX.md      # Indice rules modulo-specifiche
-    ├── skills/INDEX.md     # Indice skills modulo-specifiche
-    ├── commands/INDEX.md   # Indici commands
-    └── memories/INDEX.md   # Indice memories
+    ├── rules/index.md      # Indice rules modulo-specifiche
+    ├── skills/index.md     # Indice skills modulo-specifiche
+    ├── commands/index.md   # Indici commands
+    └── memories/index.md   # Indice memories
 \`\`\`
 
 ## Quick Reference

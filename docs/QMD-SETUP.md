@@ -6,6 +6,7 @@ updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+qmd: "qmd setup"
 ---
 
 # QMD Setup per Module **Job**
@@ -64,7 +65,6 @@ qmd search "form" -c job  # Solo questo modulo
 
 - [Global QMD Config](../qmd.md) (root docs)
 - [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 - [On-Demand Pattern](./on-demand-pattern.md)
 
 ---

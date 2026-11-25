@@ -36,11 +36,12 @@ describe('GetActiveSchedulesAction', function () {
 
     it('has correct namespace', function () {
         $reflection = new \ReflectionClass(GetActiveSchedulesAction::class);
-        Assert::assertSame('Modules\Job\Actions', $reflection->getNamespaceName());
+        Assert::assertSame('Modules\Job\Actions\Schedule', $reflection->getNamespaceName());
     });
 
-    it('has model property', function () {
+    it('has private getModel method', function () {
         $reflection = new \ReflectionClass(GetActiveSchedulesAction::class);
-        Assert::assertTrue($reflection->hasProperty('model'));
+        Assert::assertTrue($reflection->hasMethod('getModel'));
+        Assert::assertTrue($reflection->getMethod('getModel')->isPrivate());
     });
 });

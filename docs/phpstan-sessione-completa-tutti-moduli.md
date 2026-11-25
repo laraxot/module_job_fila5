@@ -1,3 +1,8 @@
+---
+title: "Sessione PHPStan Completa - Tutti i Moduli"
+type: note
+qmd: "phpstan sessione completa tutti moduli"
+---
 # Sessione PHPStan Completa - Tutti i Moduli
 **Data**: 2025-11-05
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)
@@ -175,7 +180,6 @@ $media = $record->getFirstMedia($attachment);
 
 ## 🔗 Collegamenti
 
-- [Correzioni Job Dettagliate](phpstan-correzioni-2025-11.md)
 - [Correzioni Job Dettagliate](phpstan-correzioni-.md)
 - [PHPStan Level 10 Fixes](phpstan-level10-fixes.md)
 - [Business Logic Overview](business-logic-overview.md)

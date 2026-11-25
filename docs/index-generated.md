@@ -72,9 +72,6 @@ discussions: []
 
 ### Core Architecture & Planning
 - [project-structure.md](project-structure.md) - Module structure overview
-- [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
-- [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
-- [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
 - [on-demand-pattern.md](on-demand-pattern.md) - On-demand knowledge pattern
 - [qmd-setup.md](qmd-setup.md) - QMD search configuration
 - [project-structure.md](project-structure.md) - Full project structure
@@ -111,7 +108,7 @@ discussions: []
 - [phpstan-errors-roadmap.md](phpstan-errors-roadmap.md) - Error roadmap (4.3KB)
 - [phpstan-syntax-fixes.md](phpstan-syntax-fixes.md) - Syntax fixes (5.7KB)
 - [code-quality-report.md](code-quality-report.md) - Quality report (6.4KB)
-- [code-quality-improvement-report.md](code-quality-improvement-report.md) - Improvements (4.9KB)
+- [code-quality-improvement-report.md](wiki/code-quality-improvement-report.md) - Improvements (4.9KB)
 - [cyclomatic-complexity-report.md](cyclomatic-complexity-report.md) - Complexity analysis (2.3KB)
 
 ### Filament Framework
@@ -157,7 +154,7 @@ discussions: []
 ### Audits & Analysis
 - [code-redundancy-audit.md](code-redundancy-audit.md) - Redundancy audit (2.9KB)
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - Copilot audit (581 bytes)
-- [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit-2026-05-25.md) - 2026 audit (420 bytes)
+- [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - 2026 audit (420 bytes)
 - [redundancy-audit.md](redundancy-audit.md) - General redundancy (1.2KB)
 - [redundancy-report.md](redundancy-report.md) - Redundancy report (1.6KB)
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) - Method duplication (37KB - comprehensive)
@@ -176,7 +173,6 @@ discussions: []
 - [job-reports.md](job-reports.md) - Job reports (30.3KB - large reference)
 
 ### Performance & Optimization
-- [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
 - [optimization.md](optimization.md) - Optimization overview (250 bytes)
@@ -363,9 +359,9 @@ discussions: []
 **Redundancy audits (6 variants):**
 - `code-redundancy-audit.md` (2.9KB)
 - `redundancy-audit.md` (1.2KB)
-- `redundancy-audit-2026-05-21.md` (372 bytes)
+- `redundancy-audit.md` (372 bytes)
 - `copilot-redundancy-audit.md` (581 bytes)
-- `copilot-redundancy-audit-2026-05-25.md` (420 bytes)
+- `copilot-redundancy-audit.md` (420 bytes)
 - `redundancy-report.md` (1.6KB)
 
 **Method/code duplication (5 variants):**
@@ -570,9 +566,9 @@ discussions: []
 
 **Archive:**
 - `redundancy-audit.md` (old)
-- `redundancy-audit-2026-05-21.md` (dated)
+- `redundancy-audit.md` (dated)
 - `copilot-redundancy-audit.md` (outdated)
-- `copilot-redundancy-audit-2026-05-25.md` (dated)
+- `copilot-redundancy-audit.md` (dated)
 
 **Keep:**
 1. `code-redundancy-audit.md` (2.9KB - general audit)

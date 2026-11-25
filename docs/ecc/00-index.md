@@ -13,6 +13,11 @@ Collega le verifiche ECC al workflow PTVX (BMAD → lock → fix → PHPStan/Pes
 
 | Controllo | Stato | Evidenza |
 |---|---|---|
+| Inventario statico | verificato | ../bmad/audits/job-audit.md |
+| PHPStan | 0 su tree Modules (2026-11-16) | comando in audit |
+| Pest | pending | ambiente testing |
+| Security review | pending | story figlie P0/P1 |
+| Docs pack | aggiornato | questo indice + audit ECC |
 | Inventario statico | verificato (2026-11-16) | [audit profondo](../bmad/audits/job-audit.md) |
 | PHPStan `Modules/Job` | **0 errori**; 0 anche sul tree `Modules` (2026-11-16) | comando in audit |
 | Pest | parziale: 17 pass (`JobStatusAuthorizationTest`), suite completa non eseguita | [audit § Gate](../bmad/audits/job-audit.md#gate) |

@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Job — mai Filament\*, sempre XotBase*"
+title: "Job — mai Filament\\*, sempre XotBase*"
 type: concept
 module: Job
 tags: [job, filament, xotbase, architecture]

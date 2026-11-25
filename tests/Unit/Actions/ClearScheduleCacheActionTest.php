@@ -29,6 +29,6 @@ describe('ClearScheduleCacheAction', function () {
 
     it('has correct namespace', function () {
         $reflection = new \ReflectionClass(ClearScheduleCacheAction::class);
-        Assert::assertSame('Modules\Job\Actions', $reflection->getNamespaceName());
+        Assert::assertSame('Modules\Job\Actions\Schedule', $reflection->getNamespaceName());
     });
 });
