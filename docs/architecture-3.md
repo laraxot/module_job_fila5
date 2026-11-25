@@ -31,8 +31,8 @@ The Job module handles background jobs, task scheduling, and queue management.
 - Spatie Activity Log
 
 See also:
-- Filament integration: `docs/wiki/concepts/Job-filament-integration.md`
-- Schedule/Cron: `docs/wiki/how-to/Job-schedule-cron.md`
-- WebSocket support: `docs/wiki/how-to/Job-websocket-soketi.md`
-- Storage servers: `docs/wiki/how-to/Job-storage-server.md`
+- Filament integration: `bashscripts/ai/wiki/concepts/filament-widgets.md#job-filament-integration`
+- Schedule/Cron: `bashscripts/ai/wiki/how-to/modules-ops.md#job-schedule-cron`
+- WebSocket support: `bashscripts/ai/wiki/how-to/modules-ops.md#job-websocket-soketi`
+- Storage servers: `bashscripts/ai/wiki/how-to/modules-ops.md#job-storage-server`
 - Optimization: `docs/wiki/tips/Job-optimization-tips.md`

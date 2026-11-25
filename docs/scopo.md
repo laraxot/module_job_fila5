@@ -233,7 +233,7 @@ grep -rn 'extends \(Resource\|Page\|ListRecords\|CreateRecord\|EditRecord\|Widge
 
 ## Collegamenti
 
-- [no-services-rule](../../../../bashscripts/ai/wiki/rules/no-services-rule.md) — perché `ScheduleService` non deve esistere
+- [no-services-rule](../../../../bashscripts/ai/wiki/rules/actions-business-logic.md) — perché `ScheduleService` non deve esistere
 - [migration-filename-from-model-name](../../../../docs/wiki/rules/migration-filename-from-model-name.md) — 1 modello = 1 migrazione
 - [Sigma — scopo](../../Sigma/docs/scopo.md) — lo stesso esercizio sul modulo adattatore
 - [coverage.md](coverage.md) — il contratto di qualità dei test di questo modulo

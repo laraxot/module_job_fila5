@@ -11,15 +11,43 @@ discussions: []
 related:
   - "../README.md"
   - "./00-index.md"
+<<<<<<< .merge_file_K6BMlt
   - "./stories/02.Job-merge-conflict-resolution.story.md"
+=======
+  - "./stories/02.job-merge-conflict-resolution.story.md"
+>>>>>>> .merge_file_e2ayv5
 ---
 
 # Job docs
 
 Cartella `docs/` del modulo Job: documentazione a livello modulo. Per la panoramica
 del modulo vedi il [README del modulo](../README.md); per la navigazione vedi
+<<<<<<< .merge_file_K6BMlt
 l'[indice](00-index.md).
 l'[indice](00-index.md).
+=======
+<<<<<<< .merge_file_T9789E
+<<<<<<< .merge_file_hVHjBQ
+<<<<<<< .merge_file_QWWeV9
+l'[indice](00-index.md).
+=======
+=======
+>>>>>>> .merge_file_A9ahV7
+=======
+>>>>>>> .merge_file_sRFiXl
+<<<<<<< .merge_file_OsEwtW
+l'[indice](00-index.md).
+=======
+l'[indice](./00-index.md).
+>>>>>>> .merge_file_x37Z3p
+<<<<<<< .merge_file_T9789E
+<<<<<<< .merge_file_hVHjBQ
+>>>>>>> .merge_file_JnbJW6
+=======
+>>>>>>> .merge_file_A9ahV7
+=======
+>>>>>>> .merge_file_sRFiXl
+>>>>>>> .merge_file_e2ayv5
 
 ## Panoramica
 
@@ -66,7 +94,7 @@ questo file, non esistono nel modulo.
 
 ## Stories
 
-- [02 Job - risoluzione marker di merge (2026-10)](./stories/02.Job-merge-conflict-resolution.story.md)
+- [02 Job - risoluzione marker di merge (2026-10)](./stories/02.job-merge-conflict-resolution.story.md)
 - [2026-10-06 PHPStan cleanup - Job](./stories/2026-10-06-phpstan-cleanup-job.story.md) | [dev](./stories/2026-10-06-phpstan-cleanup-job.dev.md)
 
 ## Stato dell'organizzazione della cartella

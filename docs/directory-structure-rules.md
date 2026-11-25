@@ -20,4 +20,4 @@ Per il modulo Job valgono queste regole:
 
 Le vecchie cartelle duplicate individuate erano `Job/lang/lang` e `Job/_docs`.
 
-Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md).
+Regola canonica: [no-lang-lang-and-no-underscore-docs-rule](../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-lang-lang-and-no-underscore-docs-rule).

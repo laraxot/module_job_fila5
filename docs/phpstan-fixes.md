@@ -290,7 +290,11 @@ public function __construct(string $output)
 ### **Documentazione Correlata**
 - [README.md Modulo Job](./readme.md)
 - [Queue Management](./queue/readme.md)
+<<<<<<< .merge_file_1axo6Z
 - [Best Practices](./best-practices.md)
+=======
+- [Best Practices](../../Activity/docs/best-practices-3.md)
+>>>>>>> .merge_file_BGZq9H
 
 ### **Risorse Esterne**
 - [Laravel Notifications](https://laravel.com/docs/notifications)
@@ -497,7 +501,11 @@ public function __construct(string $output)
 ### **Documentazione Correlata**
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
+<<<<<<< .merge_file_1axo6Z
 - [Best Practices](./best-practices.md)
+=======
+- [Best Practices](../../Activity/docs/best-practices-3.md)
+>>>>>>> .merge_file_BGZq9H
 
 ### **Risorse Esterne**
 - [Laravel Notifications](https://laravel.com/docs/notifications)

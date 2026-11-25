@@ -29,7 +29,7 @@ discussions: []
 |------|--------|
 | `app/Models/Policies/*Policy.php` | Contratto Laravel/Filament: una policy per modello (`ExportPolicy`, `ImportPolicy`, …). Anche `class XPolicy extends JobBasePolicy {}` senza metodi è **valida** — la logica può stare in `JobBasePolicy::before()` o nei metodi ability del singolo file. **Mai delete.** |
 
-Vedi [wiki/concepts/model-policy-laravel-contract.md](./wiki/concepts/model-policy-laravel-contract.md).
+Vedi [wiki/concepts/architecture-philosophy.md#model-policy-laravel-contract](./wiki/concepts/model-policy-laravel-contract.md).
 
 ## Collegamenti
 

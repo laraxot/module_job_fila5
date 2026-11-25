@@ -244,7 +244,11 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
+<<<<<<< .merge_file_sB0hQu
 - [Translation Standards](../../xot/docs/translation-standards.md)
+=======
+- [Translation Standards](../../Lang/docs/translation-standards-3.md)
+>>>>>>> .merge_file_gW2ibL
 - [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
 
 ---

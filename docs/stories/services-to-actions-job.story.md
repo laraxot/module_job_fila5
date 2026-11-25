@@ -11,7 +11,7 @@ qmd: "job ScheduleService residuo GetActiveSchedulesAction ClearScheduleCacheAct
 related:
   - ./job-services-to-actions.story.md
   - ../../../../bmad-output/epic-code-standards-services-mixed-const.md
-  - ../../../../bashscripts/ai/wiki/rules/no-services-rule.md
+  - ../../../../bashscripts/ai/wiki/rules/actions-business-logic.md
 ---
 
 # Services -> Actions nel modulo Job

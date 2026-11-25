@@ -29,7 +29,7 @@ qmd: "00 indice"
 - 🧹 **[PHPMD & Complexity](./cyclomatic-complexity-report.md)** - Analisi della pulizia del codice.
 
 ## 📦 **Pacchetti Composer**
-- [Riferimento](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Nessuna dipendenza diretta; usa Xot, spipu/html2pdf (via Xot)
+- [Riferimento](../../../../bashscripts/ai/wiki/memories/migrations-composer-modules.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Nessuna dipendenza diretta; usa Xot, spipu/html2pdf (via Xot)
 
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e Page classes.

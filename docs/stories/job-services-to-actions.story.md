@@ -16,7 +16,7 @@ updated_at: 2026-09-04
 bmad_phase: dev
 module: Job
 related:
-  - "../../../../bashscripts/ai/wiki/rules/no-services-rule.md"
+  - "../../../../bashscripts/ai/wiki/rules/actions-business-logic.md"
   - "../../../Tenant/docs/concepts/tenant-service-to-actions-migration.md"
   - "../../../../docs/chat/module-job-sync.md"
 ---
@@ -25,7 +25,7 @@ related:
 
 ## Contesto
 
-Regola "RELIGION" (`bashscripts/ai/wiki/rules/no-services-rule.md`): nessuna classe
+Regola "RELIGION" (`bashscripts/ai/wiki/rules/actions-business-logic.md`): nessuna classe
 `app/Services/*Service` per business logic, tutto deve essere una
 `Spatie\QueueableAction\QueueableAction` con un unico entrypoint `execute(...)` sotto
 `app/Actions/<Contesto>/`.

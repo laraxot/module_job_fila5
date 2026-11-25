@@ -348,7 +348,7 @@ php artisan pulse:install
 1. **WebSocket Progress Updates**
    - Replace polling with Soketi/Pusher
    - Real-time batch progress bar
-   - See `/docs/wiki/how-to/Job-websocket-soketi.md`
+   - See `bashscripts/ai/wiki/how-to/modules-ops.md#job-websocket-soketi`
 
 2. **Webhook Callbacks**
    - Job completion triggers external POST
