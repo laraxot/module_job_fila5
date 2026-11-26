@@ -115,8 +115,6 @@ class RetryableJobAction implements ShouldQueue
 }
 ```
 
-### Implementation Checklist
-
 - [ ] Define `$tries` for maximum attempt count
 - [ ] Set `$backoff` array or implement `backoff()` method
 - [ ] Use `retryUntil()` to set absolute timeout
@@ -124,8 +122,6 @@ class RetryableJobAction implements ShouldQueue
 - [ ] Log retry attempts with context
 - [ ] Test retry behavior in test suite
 - [ ] Monitor failed job dashboard in Horizon/Filament
-
-### Best Practices
 
 1. **Use exponential backoff:** Prevents overwhelming external services
 2. **Set `retryUntil()`:** Prevents jobs stuck in retry loop indefinitely
@@ -173,8 +169,6 @@ class ProcessBatchDataAction
 }
 ```
 
-### Implementation Checklist
-
 - [ ] Split large datasets into chunks (~100-500 items per job)
 - [ ] Create individual job classes for chunk processing
 - [ ] Use `Bus::batch()` to group jobs
@@ -183,8 +177,6 @@ class ProcessBatchDataAction
 - [ ] Implement `->finally()` for cleanup
 - [ ] Track batch progress in database
 - [ ] Add progress indicator to UI
-
-### Best Practices
 
 1. **Chunk size:** Balance between DB queries and queue load (100-500 items typical)
 2. **Progress tracking:** Store batch status in database for UI display
@@ -262,8 +254,6 @@ class JobMonitorResource extends Resource
 }
 ```
 
-### Implementation Checklist
-
 - [ ] Create `JobMonitor` model for tracking
 - [ ] Log job start: record `job_id`, `class_name`, `started_at`
 - [ ] Log job completion: update `status`, `completed_at`
@@ -272,8 +262,6 @@ class JobMonitorResource extends Resource
 - [ ] Add filters for status, date range, class name
 - [ ] Implement bulk actions (retry, cancel)
 - [ ] Add alerts for failed jobs
-
-### Best Practices
 
 1. **Automatic logging:** Hook into job lifecycle events (started, completed, failed)
 2. **Dashboard visibility:** Make job status queryable and filterable
@@ -336,8 +324,6 @@ class HandleJobFailureAction
 }
 ```
 
-### Implementation Checklist
-
 - [ ] Implement `failed()` method in job class
 - [ ] Log full context: job ID, queue, attempts, exception
 - [ ] Update job monitoring with error state
@@ -346,8 +332,6 @@ class HandleJobFailureAction
 - [ ] Store error messages for investigation
 - [ ] Create recovery/manual retry workflows
 - [ ] Test failure scenarios in test suite
-
-### Best Practices
 
 1. **Log comprehensively:** Include exception stack trace, input data, system state
 2. **Distinguish failure types:** Transient (retry) vs. permanent (alert)
@@ -444,11 +428,8 @@ public function handle(Invoice $invoice): void
 
 - [Laravel Queues Documentation](https://laravel.com/docs/queues)
 - [Queue Best Practices](./best-practices.md)
-<<<<<<< .merge_file_5IfyEM
 - [Troubleshooting Guide](./TROUBLESHOOTING.md)
-=======
 - [Troubleshooting Guide](./troubleshooting.md)
->>>>>>> .merge_file_75xZGz
 - [Job Monitor Filament Resource](./COMPONENTS.md#filament-resources)
 
 ---

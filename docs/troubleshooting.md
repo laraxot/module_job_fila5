@@ -125,8 +125,6 @@ if ($size > 60000) { // Leave 4KB buffer
 
 **Symptoms:** Job killed mid-execution, "Maximum execution time exceeded", incomplete data processing
 
-### Error Pattern
-
 ```
 Maximum execution time exceeded
 SIGTERM received: worker terminating
@@ -134,14 +132,10 @@ Job timeout after 3600 seconds
 PHP Fatal error: Maximum execution time of 30 seconds exceeded
 ```
 
-### Root Causes
-
 1. Job's `$timeout` value too low for actual work
 2. Worker's `--timeout` value too low
 3. Infinite loop or deadlock in job code
 4. Database/API calls hanging without timeout
-
-### Solution (Step-by-Step)
 
 **Step 1: Verify Job Timeout Configuration**
 ```php
@@ -206,8 +200,6 @@ JobMonitor::where('status', 'processing')
     ->each(fn($job) => \Log::warning("Long job: {$job->job_id}"));
 ```
 
-### Prevention
-
 - [ ] Set explicit `$timeout` for every job based on typical runtime + 50% buffer
 - [ ] Test with realistic data volume to measure actual duration
 - [ ] Add timeouts to HTTP, database, and file operations
@@ -215,30 +207,15 @@ JobMonitor::where('status', 'processing')
 - [ ] Monitor job duration dashboard; alert if jobs exceed expected duration
 - [ ] Use `--max-time` flag to restart workers periodically
 
-### Reference
-
 - [Timeout Configuration](./configuration.md#timeouts)
-<<<<<<< .merge_file_isRqRH
-<<<<<<< .merge_file_a7c38u
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
-=======
 - [Performance Optimization](./performance-optimization.md)
->>>>>>> .merge_file_6CegFi
-=======
-<<<<<<< .merge_file_aK429r
-- [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
-=======
-- [Performance Optimization](./performance-optimization.md)
->>>>>>> .merge_file_9if5Um
->>>>>>> .merge_file_WLE7rv
 
 ---
 
 ## Error Category 3: Retry Exhaustion
 
 **Symptoms:** Job marked failed after all retries, no more attempts, data left in inconsistent state
-
-### Error Pattern
 
 ```
 Job failed and no longer retrying
@@ -247,14 +224,10 @@ Maximum retries exceeded
 Job marked as dead-lettered
 ```
 
-### Root Causes
-
 1. External service down (API, database, payment processor)
 2. Insufficient permissions/credentials
 3. Data validation fails repeatedly (not a transient error)
 4. Retry strategy too aggressive or too passive
-
-### Solution (Step-by-Step)
 
 **Step 1: Distinguish Transient vs. Permanent Errors**
 ```php
@@ -349,8 +322,6 @@ class CheckFailedJobsAction
 $schedule->call(new CheckFailedJobsAction())->everyMinute();
 ```
 
-### Prevention
-
 - [ ] Classify errors as transient vs. permanent in catch blocks
 - [ ] Use `retryUntil()` to prevent indefinite retries
 - [ ] Implement circuit breaker pattern for external services
@@ -358,8 +329,6 @@ $schedule->call(new CheckFailedJobsAction())->everyMinute();
 - [ ] Create monitoring dashboard for failed jobs
 - [ ] Test failure scenarios in unit/integration tests
 - [ ] Document expected failures in code comments
-
-### Reference
 
 - [Retry Strategies](./PATTERNS.md#pattern-2-retry-strategy)
 - [Failure Handling](./PATTERNS.md#pattern-5-failure-handling)
@@ -370,8 +339,6 @@ $schedule->call(new CheckFailedJobsAction())->everyMinute();
 
 **Symptoms:** Some jobs in batch succeed, others fail; inconsistent data; partial updates
 
-### Error Pattern
-
 ```
 Batch failure detected
 Job failed but batch continues
@@ -379,14 +346,10 @@ Partial batch completion
 Orphaned records from failed chunk
 ```
 
-### Root Causes
-
 1. No transaction boundaries; some writes succeed before error
 2. Chunk jobs not idempotent (fail if re-run)
 3. Batch failure callback not handling cleanup
 4. Inter-chunk dependencies broken on partial failure
-
-### Solution (Step-by-Step)
 
 **Step 1: Wrap Chunk Processing in Transaction**
 ```php
@@ -471,16 +434,12 @@ class ProcessChunkAction implements ShouldQueue
 }
 ```
 
-### Prevention
-
 - [ ] Wrap all database operations in transactions
 - [ ] Test chunk jobs with same data twice (idempotency test)
 - [ ] Implement progress tracking independent of job completion
 - [ ] Use `->catch()` and `->finally()` callbacks comprehensively
 - [ ] Monitor batch progress dashboard in real-time
 - [ ] Test batch failure scenarios (kill one job, verify recovery)
-
-### Reference
 
 - [Batch Processing Pattern](./PATTERNS.md#pattern-3-batch-processing)
 - [Database Transactions](./best-practices.md#transactions)
@@ -491,22 +450,16 @@ class ProcessChunkAction implements ShouldQueue
 
 **Symptoms:** Worker runs out of memory, jobs killed, "Allowed memory size exhausted"
 
-### Error Pattern
-
 ```
 PHP Fatal error: Allowed memory size of 134217728 bytes exhausted
 Out of memory: Kill process
 Memory leak detected in long-running process
 ```
 
-### Root Causes
-
 1. Loading too many records into memory at once
 2. Unbounded loops accumulating data
 3. Memory leak in third-party library
 4. Worker not recycling between jobs (memory not released)
-
-### Solution (Step-by-Step)
 
 **Step 1: Process Data in Chunks, Not All at Once**
 ```php
@@ -594,8 +547,6 @@ php artisan queue:work --max-jobs=100
 php artisan queue:work --max-time=3600
 ```
 
-### Prevention
-
 - [ ] Always use `chunk()` or `lazy()` for large collections
 - [ ] Test with realistic data volume (10K+, 100K+ records)
 - [ ] Monitor worker memory usage in dashboard
@@ -603,30 +554,15 @@ php artisan queue:work --max-time=3600
 - [ ] Use profiling tools (Xdebug, Blackfire) to detect memory leaks
 - [ ] Document expected memory consumption for each job
 
-### Reference
-
 - [Memory Management](./best-practices.md#memory-management)
-<<<<<<< .merge_file_isRqRH
-<<<<<<< .merge_file_a7c38u
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
-=======
 - [Performance Optimization](./performance-optimization.md)
->>>>>>> .merge_file_6CegFi
-=======
-<<<<<<< .merge_file_aK429r
-- [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
-=======
-- [Performance Optimization](./performance-optimization.md)
->>>>>>> .merge_file_9if5Um
->>>>>>> .merge_file_WLE7rv
 
 ---
 
 ## Error Category 6: Missed/Lost Jobs
 
 **Symptoms:** Job dispatch called but never executed, orphaned jobs, silent failures
-
-### Error Pattern
 
 ```
 Job never appears in queue
@@ -635,14 +571,10 @@ Worker crashed but recovery not automated
 Dead-letter queue filling up
 ```
 
-### Root Causes
-
 1. Queue driver misconfigured (Redis key expiration, DB cleanup)
 2. Worker crashed without error handling
 3. Job payload corruption
 4. Queue pruning deleting unprocessed jobs
-
-### Solution (Step-by-Step)
 
 **Step 1: Verify Queue Driver Health**
 ```bash
@@ -735,8 +667,6 @@ redirect_stderr=true
 stdout_logfile=/var/log/laravel-worker.log
 ```
 
-### Prevention
-
 - [ ] Store dispatch events in database for audit trail
 - [ ] Monitor queue depth with alerts for backlog
 - [ ] Implement dead-letter handling to prevent permanent loss
@@ -744,8 +674,6 @@ stdout_logfile=/var/log/laravel-worker.log
 - [ ] Test worker crash scenarios with graceful recovery
 - [ ] Archive failed jobs for later investigation
 - [ ] Set up alerting for queue driver errors
-
-### Reference
 
 - [Queue Driver Configuration](./configuration.md)
 - [Job Monitoring](./PATTERNS.md#pattern-4-job-monitoring)
@@ -787,19 +715,8 @@ When a critical job failure occurs:
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Patterns & Best Practices](./PATTERNS.md)
 - [Configuration Guide](./configuration.md)
-<<<<<<< .merge_file_isRqRH
-<<<<<<< .merge_file_a7c38u
 - [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
-=======
 - [Performance Optimization](./performance-optimization.md)
->>>>>>> .merge_file_6CegFi
-=======
-<<<<<<< .merge_file_aK429r
-- [Performance Optimization](./PERFORMANCE-OPTIMIZATION.md)
-=======
-- [Performance Optimization](./performance-optimization.md)
->>>>>>> .merge_file_9if5Um
->>>>>>> .merge_file_WLE7rv
 
 ---
 

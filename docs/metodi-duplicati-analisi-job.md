@@ -9,19 +9,7 @@ discussions: []
 module: Job
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-<<<<<<< .merge_file_sUOYFr
-<<<<<<< .merge_file_ZF8Kys
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-=======
-canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
->>>>>>> .merge_file_DCf5v0
-=======
-<<<<<<< .merge_file_av7f7K
-canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-=======
-canonical: ../../../Themes/One/docs/shared-components/metodi_duplicati_analisi.md
->>>>>>> .merge_file_LSy7Gn
->>>>>>> .merge_file_WB7r9f
 ---
 
 # Metodi Duplicati — Analisi Job
@@ -44,8 +32,6 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Activity, Gdpr, Job, Lang, Media, Performance, Progressioni, Setting, Sigma, Tenant, UI, User, Xot
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Models/Policies/JobBasePolicy.php`
 
 [Riflessione: Presente in 13 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
@@ -55,8 +41,6 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 ## Metodo: `getWidgets` (13 occorrenze)
 
 **Moduli coinvolti:** IndennitaCondizioniLavoro, Job, Ptv, Sigma, User, Xot
-
-**File in Job:**
 
 - `./laravel/Modules/Job/app/Filament/Resources/JobManagerResource.php`
 - `./laravel/Modules/Job/app/Filament/Resources/JobResource.php`
@@ -70,13 +54,9 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job, Media, Notify, Ptv, UI, User, Xot
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Filament/Pages/JobStatus.php`
 - `./laravel/Modules/Job/app/Filament/Resources/JobsWaitingResource/Pages/ListJobsWaiting.php`
 - `./laravel/Modules/Job/app/Filament/Resources/JobsWaitingResource/Pages/ListJobsWaitings.php`
-
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 
 ---
 
@@ -84,31 +64,17 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Activity, Job, Rating, User, Xot
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Models/TaskComment.php`
-
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
 ## Metodo: `toMail` (10 occorrenze)
-
-**Moduli coinvolti:** Job, Notify, Progressioni, Ptv, User
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Notifications/TaskCompleted.php`
-
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
 ## Metodo: `validate` (9 occorrenze)
 
 **Moduli coinvolti:** IndennitaResponsabilita, Job, Pdnd, Progressioni, UI, User
-
-**File in Job:**
 
 - `./laravel/Modules/Job/app/Rules/Corn.php`
 
@@ -120,20 +86,14 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** IndennitaResponsabilita, Job, Progressioni, Rating
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Filament/Columns/ActionGroup.php`
 - `./laravel/Modules/Job/app/Filament/Tables/Columns/ActionGroup.php`
-
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 
 ---
 
 ## Metodo: `failed` (8 occorrenze)
 
 **Moduli coinvolti:** DbForge, Job, Notify, Xot
-
-**File in Job:**
 
 - `./laravel/Modules/Job/app/Models/JobBatch.php`
 
@@ -144,8 +104,6 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 ## Metodo: `status` (7 occorrenze)
 
 **Moduli coinvolti:** Job, Xot
-
-**File in Job:**
 
 - `./laravel/Modules/Job/app/Models/Job.php`
 - `./laravel/Modules/Job/app/Models/JobManager.php`
@@ -158,11 +116,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job, Media, Performance, Progressioni, Sigma
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Http/Requests/ScheduleRequest.php`
-
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -170,13 +124,9 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job, User
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Models/Policies/FailedJobPolicy.php`
 - `./laravel/Modules/Job/app/Models/Policies/JobBatchPolicy.php`
 - `./laravel/Modules/Job/app/Models/Policies/JobPolicy.php`
-
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -184,11 +134,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job, Performance, Progressioni, Sigma, User
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Contracts/TaskInterface.php`
-
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
@@ -196,41 +142,17 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** IndennitaResponsabilita, Job, User, Xot
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Events/BroadcastingEvent.php`
 - `./laravel/Modules/Job/app/Events/PrivateEvent.php`
 - `./laravel/Modules/Job/app/Events/PublicEvent.php`
-
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
 ## Metodo: `addTeamMember` (6 occorrenze)
 
-**Moduli coinvolti:** Job, User
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Models/Policies/FailedJobPolicy.php`
-- `./laravel/Modules/Job/app/Models/Policies/JobBatchPolicy.php`
-- `./laravel/Modules/Job/app/Models/Policies/JobPolicy.php`
-
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-
 ---
 
 ## Metodo: `updateTeamMember` (5 occorrenze)
-
-**Moduli coinvolti:** Job, User
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Models/Policies/FailedJobPolicy.php`
-- `./laravel/Modules/Job/app/Models/Policies/JobBatchPolicy.php`
-- `./laravel/Modules/Job/app/Models/Policies/JobPolicy.php`
-
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
@@ -238,25 +160,15 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** IndennitaResponsabilita, Job, Media, Progressioni
 
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Http/Requests/ScheduleRequest.php`
-
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-
 ---
 
 ## Metodo: `getCards` (5 occorrenze)
 
 **Moduli coinvolti:** Job, Ptv, UI
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Filament/Resources/JobManagerResource/Widgets/JobStatsOverview.php`
 - `./laravel/Modules/Job/app/Filament/Resources/JobResource/Widgets/JobStatsOverview.php`
 - `./laravel/Modules/Job/app/Filament/Resources/JobsWaitingResource/Widgets/JobsWaitingOverview.php`
-
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 
 ---
 
@@ -264,14 +176,10 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `./laravel/Modules/Job/app/Filament/Columns/ScheduleOptions.php`
 - `./laravel/Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
 - `./laravel/Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`
-
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 
 ---
 
@@ -279,19 +187,11 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Activity, Job, Performance, Ptv
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Observers/ScheduleObserver.php`
-
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
 ## Metodo: `task` (4 occorrenze)
-
-**Moduli coinvolti:** Job
-
-**File in Job:**
 
 - `./laravel/Modules/Job/app/Models/Frequency.php`
 - `./laravel/Modules/Job/app/Models/Parameter.php`
@@ -306,26 +206,11 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job, Notify, Sigma, Xot
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Models/Schedule.php`
-
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
 
 ---
 
 ## Metodo: `getTags` (4 occorrenze)
-
-**Moduli coinvolti:** Job
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Filament/Columns/ScheduleArguments.php`
-- `./laravel/Modules/Job/app/Filament/Columns/ScheduleOptions.php`
-- `./laravel/Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
-- `./laravel/Modules/Job/app/Filament/Tables/Columns/ScheduleOptions.php`
-
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 
 ---
 
@@ -333,19 +218,13 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job, User, Xot
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Models/Job.php`
-
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
 
 ---
 
 ## Metodo: `begin` (4 occorrenze)
 
 **Moduli coinvolti:** Job, Media, Xot
-
-**File in Job:**
 
 - `./laravel/Modules/Job/app/Filament/Widgets/ClockWidget.php`
 - `./laravel/Modules/Job/app/Filament/Widgets/QueueListenWidget.php`
@@ -358,38 +237,20 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Activity, Job, User
 
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Observers/ScheduleObserver.php`
-
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-
 ---
 
 ## Metodo: `clearCache` (3 occorrenze)
 
-**Moduli coinvolti:** Job, Xot
-
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Observers/ScheduleObserver.php`
 - `./laravel/Modules/Job/app/Services/ScheduleService.php`
-
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
 ## Metodo: `artisan` (3 occorrenze)
 
-**Moduli coinvolti:** Job
-
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Filament/Pages/JobStatus.php`
 - `./laravel/Modules/Job/app/Http/Livewire/Job/Status.php`
 - `./laravel/Modules/Job/app/Http/Livewire/Schedule/Status.php`
-
-[Riflessione: Duplicato interno al modulo Job — valutare estrazione in trait di modulo o classe base]
 
 ---
 
@@ -397,62 +258,29 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Job, Notify
 
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Http/Livewire/Broad.php`
-
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
 
 ---
 
 ## Metodo: `scopeInactive` (2 occorrenze)
 
-**Moduli coinvolti:** Job, Xot
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Models/Schedule.php`
-
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-
 ---
 
 ## Metodo: `onValidationError` (2 occorrenze)
 
-**Moduli coinvolti:** Job
-
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Filament/Resources/ScheduleResource/Pages/CreateSchedule.php`
 - `./laravel/Modules/Job/app/Filament/Resources/ScheduleResource/Pages/EditSchedule.php`
-
-[Riflessione: Duplicato interno al modulo Job — valutare estrazione in trait di modulo o classe base]
 
 ---
 
 ## Metodo: `formatArrayTags` (2 occorrenze)
 
-**Moduli coinvolti:** Job
-
-**File in Job:**
-
 - `./laravel/Modules/Job/app/Filament/Columns/ScheduleArguments.php`
 - `./laravel/Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
-
-[Riflessione: Duplicato interno al modulo Job — valutare estrazione in trait di modulo o classe base]
 
 ---
 
 ## Metodo: `filterEmptyTags` (2 occorrenze)
-
-**Moduli coinvolti:** Job
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Filament/Columns/ScheduleArguments.php`
-- `./laravel/Modules/Job/app/Filament/Tables/Columns/ScheduleArguments.php`
-
-[Riflessione: Duplicato interno al modulo Job — valutare estrazione in trait di modulo o classe base]
 
 ---
 
@@ -460,37 +288,13 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 **Moduli coinvolti:** Activity, Job
 
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Observers/ScheduleObserver.php`
-
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-
 ---
 
 ## Metodo: `beginStream` (2 occorrenze)
 
-**Moduli coinvolti:** Job
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Filament/Widgets/ClockWidget.php`
-- `./laravel/Modules/Job/app/Filament/Widgets/QueueListenWidget.php`
-
-[Riflessione: Duplicato interno al modulo Job — valutare estrazione in trait di modulo o classe base]
-
 ---
 
 ## Metodo: `beginProcess` (2 occorrenze)
-
-**Moduli coinvolti:** Job
-
-**File in Job:**
-
-- `./laravel/Modules/Job/app/Filament/Widgets/ClockWidget.php`
-- `./laravel/Modules/Job/app/Filament/Widgets/QueueListenWidget.php`
-
-[Riflessione: Duplicato interno al modulo Job — valutare estrazione in trait di modulo o classe base]
 
 ---
 

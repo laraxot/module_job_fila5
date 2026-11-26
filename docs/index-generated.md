@@ -72,23 +72,12 @@ discussions: []
 
 ### Core Architecture & Planning
 - [project-structure.md](project-structure.md) - Module structure overview
-<<<<<<< .merge_file_WzB50d
-<<<<<<< .merge_file_5JAQUQ
-=======
-<<<<<<< .merge_file_4E7drw
->>>>>>> .merge_file_Uq4ejB
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
 - [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
 - [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
-=======
 - [on-demand-pattern.md](on-demand-pattern.md) - On-demand knowledge pattern
 - [qmd-setup.md](qmd-setup.md) - QMD search configuration
 - [project-structure.md](project-structure.md) - Full project structure
-<<<<<<< .merge_file_WzB50d
->>>>>>> .merge_file_i2x9wG
-=======
->>>>>>> .merge_file_WOiW57
->>>>>>> .merge_file_Uq4ejB
 - [architecture-rules.md](architecture-rules.md) - Architecture discipline rules
 - [contracts-naming.md](contracts-naming.md) - Contract naming conventions
 
@@ -187,19 +176,8 @@ discussions: []
 - [job-reports.md](job-reports.md) - Job reports (30.3KB - large reference)
 
 ### Performance & Optimization
-<<<<<<< .merge_file_WzB50d
-<<<<<<< .merge_file_5JAQUQ
 - [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
-=======
 - [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
->>>>>>> .merge_file_i2x9wG
-=======
-<<<<<<< .merge_file_4E7drw
-- [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
-=======
-- [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
->>>>>>> .merge_file_WOiW57
->>>>>>> .merge_file_Uq4ejB
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
 - [optimization.md](optimization.md) - Optimization overview (250 bytes)
 - [optimization-analysis-and-improvements.md](optimization-analysis-and-improvements.md) - Analysis (205 bytes)
@@ -245,7 +223,6 @@ discussions: []
 ### 1. Architecture & Design Patterns
 
 **Owner files:**
-- `project-structure.md` (3.7KB)
 - `project-structure.md` (3.7KB)
 - `architecture-rules.md` (227 bytes - stub, see wiki/)
 
