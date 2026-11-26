@@ -56,3 +56,4 @@ verifica con `vendor/bin/pest Modules/Job/tests --group=<ID>`; `—` è debito d
 - [AssertAllowedArtisanCommandAction](assert-allowed-artisan-command-action.md) — ammette un comando solo se identico a una voce dell'allowlist.
 - [BuildQueueWorkerCommandAction](build-queue-worker-command-action.md) — la riga `queue:work` di `worker:check`, con i flag interi del tenant.
 - [ClearScheduleCacheAction](clear-schedule-cache-action.md) — dimentica la cache delle schedulazioni attive (legacy, chiavi di config assenti).
+- [execute-task-action.md](execute-task-action.md)
