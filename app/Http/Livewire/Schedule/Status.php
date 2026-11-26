@@ -100,11 +100,15 @@ class Status extends Component
     }
 
     /**
+<<<<<<< .merge_file_Xb1xek
 <<<<<<< .merge_file_bcOYER
      * @return Collection<int, \Illuminate\Console\Scheduling\Event>
 =======
      * @return Collection<int, Event>
 >>>>>>> .merge_file_0yVrVi
+=======
+     * @return Collection<int, Event>
+>>>>>>> .merge_file_fLLnfQ
      */
     public function getScheduledJobs(): Collection
     {

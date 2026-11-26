@@ -100,7 +100,7 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 ## Collegamenti tra versioni di integrations.md
 * [integrations.md](docs/tecnico/filament/integrations.md)
-* [integrations.md](../../../job/docs/packages/integrations.md)
+* [integrations.md](integrations.md)
 
 ### Versione Incoming
 

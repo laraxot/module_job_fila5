@@ -7,7 +7,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "links"
 related:
-  - "./phpstan-fixes-archive-2.md"
+  - "./phpstan-fixes-archive-gennaio.md"
 ---
 https://betterprogramming.pub/laravel-fail-retry-or-delay-a-queued-job-from-itself-41e0bb14440c
 
