@@ -4,38 +4,38 @@ type: contract
 action: "Modules\\Job\\Actions\\ExecuteTaskAction"
 module: Job
 status: accepted
+created: 2026-11-24
 updated: 2026-11-26
 ---
 
 # ExecuteTaskAction
 
-Classe: `Modules\\Job\\Actions\\ExecuteTaskAction` · `@contract docs/contracts/execute-task-action.md`
-
-Stato attuale: **stub esplicito** — non esegue task finché non è implementata (Roadmap).
+Documenta il comportamento di oggi: l'Action non esegue nulla. Sorgente: `app/Actions/ExecuteTaskAction.php`.
+Chiamanti in produzione: `app/Filament/Widgets/ScheduleCrudWidget.php` (riga 92) e `app/Http/Livewire/Schedule/Crud.php` (riga 114).
 
 ## Input
 
-- `string $taskId`
+- `string $taskId`: non letto, nessuna validazione.
 
 ## Output
 
-- `string` (previsto); oggi non ritorna.
+- Nessuno: il tipo dichiarato è `string` ma il metodo non restituisce mai, lancia sempre.
 
 ## Invarianti
 
-| ID | Regola | Verifica |
+| ID | Regola | Group Pest |
 |---|---|---|
-| JOB-EXEC-INV-1 | Finché non implementata, `execute()` lancia `BadMethodCallException` (fail-loud, niente no-op silenzioso). | `->group('JOB-EXEC-INV-1')` |
-| JOB-EXEC-INV-2 | Nessuna scrittura DB o dispatch job finché l'implementazione non esiste. | `->group('JOB-EXEC-INV-2')` |
-
+| JOB-EXEC-INV-1 | `execute()` lancia sempre `BadMethodCallException` («Method ExecuteTaskAction::execute() not implemented yet. See ROADMAP-2026.md») senza alcun effetto collaterale prima del lancio. | — (non dimostrato) |
 ## Effetti collaterali
 
-- Nessuno (oggi).
+- Nessuno.
 
 ## Errori
 
-- `BadMethodCallException` sempre.
+- `BadMethodCallException` sempre (INV-1).
 
 ## Non fa
 
-- Non è il worker Artisan allowlist (`BuildQueueWorkerCommandAction` / ADR Job).
+- Non esegue alcun task: non è un contratto implementato, il comportamento atteso non è definito qui.
+- Limite noto: i due chiamanti elencati sopra passano `$task_id` a questa Action, quindi il pulsante di esecuzione di un task lancia sempre. Difetto da segnalare.
+- Limite noto: `ROADMAP-2026.md`, citato nel messaggio, non esiste né in `laravel/` né nella radice del repo (verificato con `ls` il 2026-11-26).

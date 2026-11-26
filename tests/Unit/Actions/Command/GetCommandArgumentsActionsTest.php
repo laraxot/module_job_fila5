@@ -27,7 +27,7 @@ describe('GetCommandArgumentsActions', function (): void {
         $command = new Command('test');
         $result = $action->execute($command);
         Assert::assertCount(0, $result);
-    });
+    })->group('JOB-CMDARGS-INV-2');
 
     test('uses strict types', function (): void {
         $reflection = new \ReflectionClass(GetCommandArgumentsActions::class);

@@ -40,7 +40,7 @@ describe('GetCommandOptionsActions', function (): void {
         Assert::assertContains('quiet', $result['withoutValue']);
         Assert::assertContains('ansi', $result['withoutValue']);
         Assert::assertContains('no-ansi', $result['withoutValue']);
-    });
+    })->group('JOB-CMDOPTS-INV-1');
 
     test('uses strict types', function (): void {
         $reflection = new \ReflectionClass(GetCommandOptionsActions::class);

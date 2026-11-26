@@ -3,12 +3,13 @@ title: "ADR — I flag del worker di coda vengono dalle impostazioni del tenant,
 type: decision
 status: accepted
 created: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-26
 module: Job
 tags: [adr, queue, worker, settings, tenant, shell]
 related:
   - ../contracts/build-queue-worker-command-action.md
 qmd: "queue worker flags from tenant settings"
+decision-makers: [team back office]
 ---
 
 # ADR: flag del worker dalle impostazioni del tenant
@@ -21,6 +22,21 @@ qmd: "queue worker flags from tenant settings"
 diversi per tenant (job lunghi, code lente), ma qualunque valore che arriva in una riga passata a `exec()` è un
 punto di iniezione. Come si rendono configurabili i flag senza aprire la shell a un testo scelto da un utente?
 
+## Driver della decisione
+
+- La riga di shell passa a `Safe\exec()` (`Console/Commands/WorkerCheck.php`, `startQueueListener()`): qualunque testo scelto da un utente è un punto di iniezione.
+- Tenant diversi hanno carichi diversi (job lunghi, code lente) e vogliono flag diversi senza un deploy.
+- Senza impostazioni salvate il comando deve restare identico a quello storico, così il cambio non tocca i tenant esistenti.
+- Il worker deve restare in background con `& echo $!`: `WorkerCheck` controlla il PID salvato in `queue.pid`.
+
+## Alternative scartate
+
+- **Valori in `config/job.php` o `.env`**: uguali per tutti i tenant, e modificabili solo con un deploy.
+- **Campo testo libero "argomenti aggiuntivi"**: andrebbe in `exec()` così com'è.
+- **`Process` con array di argomenti invece della stringa**: più sicuro in astratto, ma il worker deve restare in
+  background con `& echo $!` per ricavare il PID che `WorkerCheck` controlla; cambiare il meccanismo di avvio è una
+  decisione separata.
+
 ## Decisione
 
 - I flag stanno in `app/Datas/JobConfigData.php` (`MakesFromTenantConfig`, file di config `job` del tenant) come
@@ -31,21 +47,13 @@ punto di iniezione. Come si rendono configurabili i flag senza aprire la shell a
 - Le chiavi `cache.*` e `jobs.pruning.*` restano fuori dalla pagina di proposito (nessun lettore reale, vedi il
   docblock di `JobConfigData`).
 
-## Alternative scartate
-
-- **Valori in `config/job.php` o `.env`**: uguali per tutti i tenant, e modificabili solo con un deploy.
-- **Campo testo libero "argomenti aggiuntivi"**: andrebbe in `exec()` così com'è.
-- **`Process` con array di argomenti invece della stringa**: più sicuro in astratto, ma il worker deve restare in
-  background con `& echo $!` per ricavare il PID che `WorkerCheck` controlla; cambiare il meccanismo di avvio è una
-  decisione separata.
-
 ## Conseguenze
 
 - Buono: ogni tenant regola il worker dal pannello; il tipo `int` della Data è la sanificazione.
 - Cattivo: il percorso `/usr/local/bin/php` resta scritto nell'Action (vale per l'immagine attuale).
 - Vincolo: `timeout_seconds` deve restare sotto `retry_after` della connessione di coda; nessun controllo lo impone.
 
-## Verifica
+## Conferma
 
 - `cd laravel && vendor/bin/pest Modules/Job/tests/Unit/Datas/JobConfigDataTest.php`: fallisce se senza impostazioni
   salvate il comando cambia anche di un byte, se i flag salvati non arrivano nel comando, se `WorkerCheck` non usa

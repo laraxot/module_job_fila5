@@ -1,18 +1,17 @@
 ---
-title: "INDEX ADR — Job"
+title: "Indice degli ADR — Job"
 type: index
 module: Job
 status: active
-created: 2026-11-23
-updated: 2026-11-24
-qmd: "Job adr index stato decisioni"
+updated: 2026-11-26
 ---
 
-# Indice ADR — Job
+# Indice degli ADR — Job
 
-Stato letto dalla frontmatter di ciascun file. Formato e regole: [README.md](README.md).
+| ADR | Stato | Perché | Conferma |
+|---|---|---|---|
+| [0001-artisan-commands-from-ui-exact-match-allowlist](0001-artisan-commands-from-ui-exact-match-allowlist.md) | accepted | Comandi Artisan dalla UI: solo super-admin, match esatto con i pulsanti, controllo ripetuto nel metodo Livewire. | Sì: `JobStatusAuthorizationTest.php`, `--group=JOB-ARTISAN-INV-1` |
+| [0002-jobs-table-read-only-in-admin](0002-jobs-table-read-only-in-admin.md) | accepted | La tabella `jobs` nel pannello è in sola lettura: niente create/edit su `JobResource`. | No: il test esiste ma è stale (Stato attuale) |
+| [0003-queue-worker-flags-from-tenant-settings](0003-queue-worker-flags-from-tenant-settings.md) | accepted | Flag del worker dalle impostazioni del tenant, solo interi nella riga di shell. | Sì: `JobConfigDataTest.php`, `--group=JOB-WORKER-CMD-INV-1`, `JOB-WORKER-CMD-INV-2` |
 
-| ADR | Stato | Titolo |
-|---|---|---|
-| [0001-controlli-operativi-solo-super-admin-e-whitelist](0001-controlli-operativi-solo-super-admin-e-whitelist.md) | accepted | Controlli operativi solo super-admin e con whitelist |
-| [job-operations-are-whitelisted](job-operations-are-whitelisted.md) | accepted | Le operazioni tecniche Job sono in whitelist (overlap con 0001) |
+Formato e regole: [README](README.md).
