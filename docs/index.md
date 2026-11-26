@@ -234,24 +234,18 @@ Common issues and solutions:
 
 ## Mappa delle cartelle
 
-Elenco generato dall'audit qualita' (issue #64): ogni cartella di `docs/` con il numero di file `.md`.
-Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escluse.
+Elenco aggiornato al cleanup docs (issue #65): ogni cartella di `docs/` con il numero di file `.md` (2026-11-26: 99 file totali, tetto 100).
 
 | Cartella | File .md |
 |---|---|
-| [`analysis/`](analysis/) | 2 |
-| [`bmad/`](bmad/index.md) | 33 |
-| [`components/`](components/) | 1 |
-| [`concepts/`](concepts/) | 1 |
+| radice | 2 |
+| [`adr/`](adr/) | 6 |
+| [`bmad/`](bmad/) | 2 (+3 in `stories/`) |
+| [`contracts/`](contracts/) | 20 |
+| [`digests/`](digests/) | 6 |
 | [`ecc/`](ecc/) | 2 |
-| [`epics/`](epics/) | 1 |
-| [`investigation/`](investigation/) | 1 |
-| [`legacy/`](legacy/) | 10 |
-| [`llm-wiki/`](llm-wiki/index.md) | 4 |
-| [`packages/`](packages/) | 4 |
-| [`performance/`](performance/) | 1 |
-| [`providers/`](providers/) | 1 |
-| [`roadmap/`](roadmap/index.md) | 27 |
-| [`stories/`](stories/) | 29 |
-| [`tasks/`](tasks/) | 4 |
-| [`wiki/`](wiki/index.md) | 54 |
+| [`graphify/`](graphify/), [`headroom/`](headroom/) | 1 + 1 |
+| [`manuals/`](manuals/) | 1 |
+| [`roadmap/`](roadmap/) | 2 |
+| [`stories/`](stories/) | 13 |
+| [`wiki/`](wiki/) | 12 (+28 nelle sotto-cartelle) |
