@@ -4,62 +4,38 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Job
-<<<<<<< .merge_file_6NdtHo
-<<<<<<< .merge_file_m9eyxv
-qmd: "audit BMAD Job source-first qualità"
-=======
-=======
->>>>>>> .merge_file_UsEIlU
-qmd: "audit BMAD Job sintesi gate P0 policy create payload scheduler non eseguito Livewire legacy widget senza guard"
+qmd: "audit BMAD Job source-first qualità sintesi gate P0 policy create payload scheduler non eseguito Livewire legacy widget senza guard"
 related:
   - ./audits/job-audit.md
   - ./piano-miglioramento.md
   - ../ecc/job-ecc-audit.md
-<<<<<<< .merge_file_6NdtHo
->>>>>>> .merge_file_PtylIC
-=======
->>>>>>> .merge_file_UsEIlU
 ---
 
 # Audit BMAD — Job
 
-<<<<<<< .merge_file_6NdtHo
-<<<<<<< .merge_file_m9eyxv
 SSoT dettagliata: [audits/job-audit.md](./audits/job-audit.md)
-=======
+
 SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-audit.md](./audits/job-audit.md).
 
 **Scopo in una frase:** Job rende visibile e governabile ciò che accade fuori dalla richiesta HTTP — code, import, export, pianificazioni — e soprattutto i loro fallimenti ([purpose.md](./purpose.md)).
->>>>>>> .merge_file_PtylIC
-=======
-SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-audit.md](./audits/job-audit.md).
-
-**Scopo in una frase:** Job rende visibile e governabile ciò che accade fuori dalla richiesta HTTP — code, import, export, pianificazioni — e soprattutto i loro fallimenti ([purpose.md](./purpose.md)).
->>>>>>> .merge_file_UsEIlU
 
 ## Sintesi (2026-11-16)
 
 | Metrica | Valore |
 |---|---:|
-<<<<<<< .merge_file_6NdtHo
-<<<<<<< .merge_file_m9eyxv
-| PHP `app/` | 176 |
+| PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 (ricontato 2026-11-19: 176 / 56 / 49; la sintesi precedente riportava «Test 84», smentita dal conteggio) |
 | Test | 84 |
 | Resources | 9 |
 | Actions | 16 |
 | Services | 1 |
-| Policy `return true` | 5 |
-| Marker | 0 |
-=======
-| PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 (ricontato 2026-11-19: 176 / 56 / 49; la sintesi precedente riportava «Test 84», smentita dal conteggio) |
-| Resource / Widget / Actions / Services | 9 / 8 / 16 / 1 (morto) |
-| Policy (su `UserBasePolicy` / `JobBasePolicy`) | 3 / 13 (ricontato 2026-11-19, dopo E1: 0 / 15 + `JobBasePolicy`) |
 | Policy `return true` | 5 nella sintesi precedente; oggi 2, solo in `JobBasePolicy::before()` (bypass `super-admin` / `job::admin`) |
 | Marker conflitto / `RefreshDatabase` | 0 / 0 |
+
+| Resource / Widget / Actions / Services | 9 / 8 / 16 / 1 (morto) |
+| Policy (su `UserBasePolicy` / `JobBasePolicy`) | 3 / 13 (ricontato 2026-11-19, dopo E1: 0 / 15 + `JobBasePolicy`) |
 | `dd()` in `app/` | 1 (`Http/Livewire/Broad.php:41`) |
 
 ## Finding principali
->>>>>>> .merge_file_UsEIlU
 
 | # | Sev | Finding |
 |---|---|---|
@@ -73,11 +49,10 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 
 ## Gate
 
-<<<<<<< .merge_file_6NdtHo
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
-=======
+
 | PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 |
 | Resource / Widget / Actions / Services | 9 / 8 / 16 / 1 (morto) |
 | Policy (su `UserBasePolicy` / `JobBasePolicy`) | 3 / 13 |
@@ -98,8 +73,6 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 
 ## Gate
 
-=======
->>>>>>> .merge_file_UsEIlU
 - PHPStan `Modules/Job`: **0 errori**.
 - Pest: **parziale** — 17 pass (`JobStatusAuthorizationTest`); suite completa non eseguita (macchina con load ≈ 50).
 - Gap-fill BMAD completato: [purpose](./purpose.md), [architecture](./architecture.md), [decision-log](./decision-log.md), [epics](./epics.md), [brainstorming](./brainstorming.md).
@@ -107,7 +80,3 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 ## Riferimenti
 
 [Piano](./piano-miglioramento.md) · [Epics](./epics.md) · [Decision log](./decision-log.md) · [ECC](../ecc/job-ecc-audit.md) · [Story](./stories/module-bmad-audit.story.md)
-<<<<<<< .merge_file_6NdtHo
->>>>>>> .merge_file_PtylIC
-=======
->>>>>>> .merge_file_UsEIlU

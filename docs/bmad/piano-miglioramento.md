@@ -4,31 +4,16 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Job
-<<<<<<< .merge_file_8e0l14
-<<<<<<< .merge_file_1WPT9e
-qmd: "piano miglioramento Job P0 P1 P2 BMAD"
-=======
-=======
->>>>>>> .merge_file_HEfK1Q
-qmd: "piano miglioramento Job P0 P1 P2 policy scheduler Livewire widget guard test sequenza criteri"
+qmd: "piano miglioramento Job P0 P1 P2 BMAD policy scheduler Livewire widget guard test sequenza criteri"
 related:
   - ./audits/job-audit.md
   - ./epics.md
   - ./decision-log.md
-<<<<<<< .merge_file_8e0l14
->>>>>>> .merge_file_1pD6CK
-=======
->>>>>>> .merge_file_HEfK1Q
 ---
 
 # Piano di miglioramento — Job
 
-<<<<<<< .merge_file_8e0l14
-<<<<<<< .merge_file_1WPT9e
-Derivato dall'[audit](./audits/job-audit.md).
-=======
 Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./epics.md).
->>>>>>> .merge_file_HEfK1Q
 
 ## P0
 
@@ -64,10 +49,9 @@ Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./e
 - [ ] D-2 decisa e UI allineata al comportamento reale
 - [ ] `rg 'dd\(|Artisan::call\(\$cmd\)' app` = 0 fuori allowlist
 - [ ] PHPStan `Modules/Job` = 0
-<<<<<<< .merge_file_8e0l14
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
-=======
+
 Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./epics.md).
 
 ## P0
@@ -102,7 +86,3 @@ Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./e
 - [ ] `rg 'dd\(|Artisan::call\(\$cmd\)' app` = 0 fuori allowlist
 - [ ] PHPStan `Modules/Job` = 0
 - [ ] ECC `00-index` aggiornato
->>>>>>> .merge_file_1pD6CK
-=======
-- [ ] ECC `00-index` aggiornato
->>>>>>> .merge_file_HEfK1Q
