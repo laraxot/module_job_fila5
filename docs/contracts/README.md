@@ -26,7 +26,7 @@ governance: `Modules/Xot/docs/adr/0012-behavioral-contract-governance.md`.
 - [clear-schedule-cache-action.md](clear-schedule-cache-action.md) (`JOB-CACHE-INV-1..2`)
 - [assert-allowed-artisan-command-action.md](assert-allowed-artisan-command-action.md) (`JOB-CMD-INV-1..2`)
 - [build-queue-worker-command-action.md](build-queue-worker-command-action.md) (`JOB-WORKER-INV-1..2`)
-- `_template.md`: modello per i nuovi contract.
+- [Template condiviso](../../../Xot/docs/contracts/behavioral-contract-template.md): modello per i nuovi contract.
 
 ## Stato di copertura
 
