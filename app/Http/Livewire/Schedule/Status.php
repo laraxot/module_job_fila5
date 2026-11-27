@@ -36,7 +36,7 @@ class Status extends Component
     /**
      * Comando => etichetta. `schedule:work` manca di proposito: non termina mai e bloccherebbe la richiesta HTTP.
      */
-    private const COMMANDS = [
+    private const array COMMANDS = [
         'job:schedule-list' => 'job:schedule-list',
         'schedule:clear-cache' => 'Delete the cached mutex files created by scheduler',
         'schedule:list' => 'List the scheduled commands',
