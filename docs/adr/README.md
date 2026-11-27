@@ -1,17 +1,4 @@
 ---
-<<<<<<< .merge_file_MoNBhA
-title: "ADR — Job"
-type: index
-tags: [adr, decisioni, job]
-created: 2026-11-18
-updated: 2026-11-24
----
-
-# ADR — Job
-
-Le scelte di Job che sembrano eccessive o strane finché non si vede il rischio: comandi Artisan e `.env` scritti dal
-pannello, una riga di shell passata a `exec()`, una tabella che il pannello non deve poter scrivere.
-=======
 title: "ADR del modulo Job"
 type: index
 module: Job
@@ -33,15 +20,10 @@ Il nome del file e' `NNNN-<argomento>.md` in kebab-case, senza date (la data sta
 
 **Quando leggerli**: prima di aggiungere un pulsante che lancia un comando, un campo alle impostazioni del worker, o
 una pagina a `JobResource`; e prima di "semplificare" un controllo di autorizzazione che sembra doppio.
->>>>>>> .merge_file_Cd1oZQ
 
 **Quando leggerli**: prima di aggiungere un pulsante che lancia un comando, un campo alle impostazioni del worker, o
 una pagina a `JobResource`; e prima di "semplificare" un controllo di autorizzazione che sembra doppio.
 
-<<<<<<< .merge_file_MoNBhA
-Formato e regole: [action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md) (5 sezioni,
-`## Verifica` obbligatoria, nome = argomento senza date).
-=======
 Sei titoli, in quest'ordine: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`,
 `## Conseguenze`, `## Conferma`. La Conferma è un test (percorso e `--group` se c'è), un comando eseguibile da `laravel/`
 o una regola di review; se non esiste una conferma automatica si scrive «Nessuna conferma automatica oggi; proposta: …».
@@ -63,18 +45,28 @@ Chi cambia una decisione scrive un nuovo ADR e segna il precedente `superseded b
 Elenco con stato: [index.md](index.md).
 
 ## Stato di copertura
->>>>>>> .merge_file_Cd1oZQ
 
 ADR: 3. Con conferma automatica (test o comando eseguibile da `laravel/`): 2. ADR 0002 ha una sezione «Stato attuale»: il codice registra solo `index` e il test si aspetta anche `board`.
 
 ## Backlog
 
-<<<<<<< .merge_file_MoNBhA
-- [Comandi Artisan dalla UI: allowlist a match esatto](artisan-commands-from-ui-exact-match-allowlist.md) — solo super-admin, autorizzazione ripetuta nel metodo Livewire, nessun argomento libero.
-- [Flag del worker dalle impostazioni del tenant](queue-worker-flags-from-tenant-settings.md) — `timeout/sleep/tries` per tenant, nella shell entrano solo interi.
-- [Tabella jobs in sola lettura](jobs-table-read-only-in-admin.md) — `JobResource` senza create/edit: la coda la scrive il codice.
-=======
 - Correggere l'attesa di `tests/Unit/Filament/Resources/JobResourceReadOnlyTest.php` da `['index', 'board']` a `['index']`.
 - Allineare `ScheduleStatusWidget` e `JobStatusWidget` all'ADR 0001 (debito dichiarato nelle Conseguenze).
 - `0000-template.md` è il modello, non una decisione.
->>>>>>> .merge_file_Cd1oZQ
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+Questo indice appartiene a **module_job_fila5**: ogni decisione su codice, dominio o tema va nell'ADR del package owner; il root registra soltanto i vincoli di composizione. Un ADR richiede una scelta reale con alternative e conseguenze, più una **Conferma** ripetibile (oppure la dichiarazione esplicita che manca). Non creare ADR fittizi per riempire un indice.
+
+- [Confine LaravelDay/harness Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/adr/0042-laravel-day-harness-adoption-boundary.md); [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md).
+- **BMAD**: la story owner-local conserva `scope`, `must_not_change`, `evidence`, `approval_required` nei cambi rischiosi.
+- **ECC**: nessun marker di merge; distinguere la prova eseguita dal semplice riferimento a un test; se la conferma non è disponibile segnare `non eseguita`.
+- **Second Brain**: QMD/Graphify e `.harness/memory/{facts,lessons}.md` sono puntatori a evidenza datata, non copie degli ADR. [Runbook](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md) · [Rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+## Documenti del package da riconciliare nell'indice
+
+I seguenti file **esistono nel repository su `dev`** e non erano tutti collegati nel ramo d'indice più recente. Sono preservati come puntatori documentali; il loro stato di approvazione, la copertura e l'eventuale sostituzione con ADR numerati devono essere verificati nell'owner. Nessuna prova di esecuzione è implicita.
+
+- [Comandi Artisan dalla UI: allowlist a match esatto](./artisan-commands-from-ui-exact-match-allowlist.md)
+- [Tabella jobs in sola lettura](./jobs-table-read-only-in-admin.md)
+- [Flag del worker dalle impostazioni del tenant](./queue-worker-flags-from-tenant-settings.md)
