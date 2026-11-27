@@ -1,19 +1,4 @@
 ---
-<<<<<<< .merge_file_w3wZsa
-title: "Contratto — ClearScheduleCacheAction"
-type: contract
-action: "Modules\Job\Actions\ClearScheduleCacheAction"
-tags: [contract, action, cache, schedule, legacy]
-created: 2026-11-24
-updated: 2026-11-24
----
-
-# ClearScheduleCacheAction
-
-Sorgente: `app/Actions/ClearScheduleCacheAction.php`. Chiamanti: `Observers/ScheduleObserver.php::clearCache()`
-(su created/updated/saved/deleted di `Schedule`, solo se `config('job::cache.enabled')`) e
-`Console/Commands/ScheduleClearCacheCommand.php` (sempre). Contratto di codice legacy: descrive com'è.
-=======
 title: "Contratto — Schedule\ClearScheduleCacheAction"
 type: contract
 action: "Modules\\Job\\Actions\\Schedule\\ClearScheduleCacheAction"
@@ -27,7 +12,6 @@ updated: 2026-11-26
 
 Invalida la chiave di cache che `Schedule\GetActiveSchedulesAction` riempie con `rememberForever`. Chiamanti: `app/Observers/ScheduleObserver.php` (riga 65) e `app/Console/Commands/ScheduleClearCacheCommand.php` (riga 30).
 È la versione viva; quella nella radice di `app/Actions` è deprecata: [root-clear-schedule-cache-action](root-clear-schedule-cache-action.md). Sorgente: `app/Actions/Schedule/ClearScheduleCacheAction.php`.
->>>>>>> .merge_file_1Ga429
 
 ## Input
 
@@ -41,28 +25,6 @@ Invalida la chiave di cache che `Schedule\GetActiveSchedulesAction` riempie con 
 
 | ID | Regola | Group Pest |
 |---|---|---|
-<<<<<<< .merge_file_w3wZsa
-| JOB-SCHED-CACHE-INV-1 | Cancella una sola chiave (`job::cache.key`) su un solo store (`job::cache.store`), mai un flush dello store. | — |
-| JOB-SCHED-CACHE-INV-2 | Store e chiave sono gli stessi che `GetActiveSchedulesAction` usa per `rememberForever`. | — |
-
-## Effetti collaterali
-
-- `Cache::store($store)->forget($key)`.
-
-## Errori
-
-- `Webmozart\Assert\InvalidArgumentException` se `job::cache.store` o `job::cache.key` non sono stringhe. Nel checkout
-  attuale `config/config.php` di Job ritorna `[]` e queste chiavi non esistono (vedi docblock di `JobConfigData`):
-  l'observer non chiama mai l'Action (`enabled` è null), mentre `ScheduleClearCacheCommand` fallisce su questa Assert.
-
-## Non fa
-
-- Non ricarica la cache: la ripopola il prossimo `GetActiveSchedulesAction::execute()` con cache attiva.
-- Non tocca la cache dello scheduler di Laravel (`schedule:clear-cache` è un altro comando).
-- Esiste un duplicato con lo stesso corpo, `Modules\Job\Actions\Schedule\ClearScheduleCacheAction`, senza chiamanti in
-  produzione (la story `../stories/job-services-to-actions.story.md` lo dichiara come versione da tenere, il codice usa questa):
-  non creare una terza copia; chi consolida sceglie una delle due e aggiorna questo contratto.
-=======
 | JOB-SCHEDCACHE-INV-1 | Cancella solo la chiave `job::cache.key` nello store `job::cache.store` (`Cache::store($store)->forget($key)`), mai `flush`. | — (non dimostrato) |
 | JOB-SCHEDCACHE-INV-2 | Se `store` o `key` non sono stringhe in config, `Assert::string` lancia prima di toccare la cache. | — (non dimostrato) |
 ## Effetti collaterali
@@ -77,4 +39,9 @@ Invalida la chiave di cache che `Schedule\GetActiveSchedulesAction` riempie con 
 
 - Non verifica che il cache store esista e non ricostruisce la cache: al prossimo `GetActiveSchedulesAction` la ricalcola.
 - Non dipende da `job::cache.enabled`: svuota anche se la cache è spenta.
->>>>>>> .merge_file_1Ga429
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Schedule/ClearScheduleCacheAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+- ID storici nella variante precedente: `JOB-SCHED-CACHE-INV-1` e `JOB-SCHED-CACHE-INV-2`. La nuova variante usa `JOB-SCHEDCACHE-INV-1/2`; verificare la migrazione degli eventuali group di test, non trattare i vecchi ID come prove attive.
