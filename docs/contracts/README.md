@@ -1,24 +1,6 @@
 ---
 title: "Contratti — Job"
 type: index
-<<<<<<< .merge_file_e19JYP
-tags: [contracts, actions, job]
-created: 2026-11-18
-updated: 2026-11-24
----
-
-# Contratti — Job
-
-Cosa promettono le Action di Job che decidono se un comando gira, costruiscono la riga di shell del worker o
-toccano la cache delle schedulazioni, e cosa **non** fanno (l'autorizzazione e l'esecuzione restano ai chiamanti).
-
-**Quando leggerli**: prima di chiamare, modificare o imitare una di queste Action, o di aggiungere un chiamante a
-`exec()` / `Artisan::call()` nel modulo.
-
-Formato (6 sezioni, tabella invarianti con ID e group Pest, `@contract` nel docblock):
-[action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md). Un'invariante con group si
-verifica con `vendor/bin/pest Modules/Job/tests --group=<ID>`; `—` è debito dichiarato.
-=======
 module: Job
 status: active
 tags: [contracts, actions, job]
@@ -53,7 +35,6 @@ di esecuzione task. Regola: `Modules/Xot/docs/rules/action-behavioral-contract.m
 - [index](index.md) — registro operativo: operazione, classe, invarianti, copertura, comando.
 
 ## Stato di copertura
->>>>>>> .merge_file_6qIAAg
 
 Contratti: 16. Invarianti: 28, dimostrate da un test `->group('<ID>')`: 8 (conteggio del 2026-11-26 con `rg "group\(" tests`). Le altre portano «— (non dimostrato)» nella colonna Group.
 
@@ -65,11 +46,6 @@ Nessuno: ogni Action in `app/Actions` ha un contratto. Quelle senza chiamanti o 
 
 Invarianti senza test con group (da scrivere o da annotare quando un test esistente le prova davvero):
 
-<<<<<<< .merge_file_e19JYP
-- [AssertAllowedArtisanCommandAction](assert-allowed-artisan-command-action.md) — ammette un comando solo se identico a una voce dell'allowlist.
-- [BuildQueueWorkerCommandAction](build-queue-worker-command-action.md) — la riga `queue:work` di `worker:check`, con i flag interi del tenant.
-- [ClearScheduleCacheAction](clear-schedule-cache-action.md) — dimentica la cache delle schedulazioni attive (legacy, chiavi di config assenti).
-=======
 - `JOB-WORKER-CMD-INV-3` (build-queue-worker-command-action)
 - `JOB-EXEC-INV-1` (execute-task-action)
 - `JOB-DUMMY-INV-1` (dummy-action)
@@ -90,4 +66,11 @@ Invarianti senza test con group (da scrivere o da annotare quando un test esiste
 - `JOB-JSTATCMD-INV-1` (get-job-status-commands-action)
 - `JOB-QSUB-INV-1` (get-queue-subcommands-action)
 - `JOB-SSTATCMD-INV-1` (get-schedule-status-commands-action)
->>>>>>> .merge_file_6qIAAg
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+I contratti di **module_job_fila5** restano accanto alle Action, interfacce o superfici di questo package; root e Xot definiscono lo standard, non copiano le promesse. Un contratto comportamentale esplicita **Input, Output, Invarianti, Effetti collaterali, Errori, Non fa**; ogni ID di invariante punta a un group Pest effettivo oppure segnala `non dimostrata`. Se esiste la classe, il docblock deve rimandare al file con `@contract` e `@see`; per temi senza classi PHP non inventare Action/contratti.
+
+- [Standard Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/contracts/contract-authoring-standard.md) · [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md) · [runbook ECC/Second Brain](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md).
+- **BMAD**: prima di cambiare una promessa, fissa nella story owner scope, esclusioni, evidenza e approvazioni richieste.
+- **ECC**: i marker di merge rendono invalido l'indice; citare una suite non significa averla eseguita. Distingui `pass`, `fail`, `non eseguito` e registra il debito in [rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
