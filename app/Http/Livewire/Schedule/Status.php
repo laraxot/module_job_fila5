@@ -28,6 +28,8 @@ use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
  * e' `#[Locked]`, e non esistono altre proprieta' pubbliche.
  *
  * @see docs/wiki/rules/folio-volt-livewire.md (Livewire: proprieta' pubbliche e `#[Locked]`)
+ * @see Modules/AI/docs/adr/0004-phpstan-zero-errori.md — `private const array COMMANDS` tipizzata
+ *      (PHP 8.3): la lista comandi e' `array<string,string>` per PHPStan, non `array`
  */
 class Status extends Component
 {
