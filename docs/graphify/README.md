@@ -1,3 +1,8 @@
+---
+title: "Graphify Knowledge Graph"
+type: note
+qmd: "graphify knowledge graph"
+---
 # Graphify Knowledge Graph
 
 [![Module](https://img.shields.io/badge/Module-Graphify Knowledge Graph-8B0000.svg)]()

@@ -9,9 +9,21 @@ use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< .merge_file_a4CcVC
  * Dimentica la cache delle schedulazioni attive (store e chiave da `job::cache.*`).
  *
  * @contract docs/contracts/clear-schedule-cache-action.md
+=======
+ * SUPERSEDED — duplicato flat. Usare {@see Schedule\ClearScheduleCacheAction}.
+ *
+ * Caller di produzione migrati (Observer + Command). Residuo on-disk finché
+ * non arriva autorizzazione a cancellare i doppioni root di Actions/.
+ *
+ * @deprecated Prefer Modules\Job\Actions\Schedule\ClearScheduleCacheAction
+ * @see docs/contracts/root-clear-schedule-cache-action.md
+ *
+ * @contract docs/contracts/root-clear-schedule-cache-action.md
+>>>>>>> .merge_file_J2kKH0
  */
 class ClearScheduleCacheAction
 {
