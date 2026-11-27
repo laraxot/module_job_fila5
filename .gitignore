@@ -251,9 +251,12 @@ app/Application
 
 # module-root-hygiene (story module-root-hygiene)
 docs/graphify
+<<<<<<< .merge_file_hPX2kd
 
-# Tooling/configurazione locale (module-theme-root-hygiene)
-.qwen/
-audit-coverage/
-.php-cs-fixer.php
-.php-cs-fixer.dist.php
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_IoXysn

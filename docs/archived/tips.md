@@ -7,6 +7,6 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "tips"
 related:
-  - "./phpstan-fixes-archive-2.md"
+  - "./phpstan-fixes-archive-gennaio.md"
 ---
 https://dudi.dev/optimize-laravel-database-queries/
