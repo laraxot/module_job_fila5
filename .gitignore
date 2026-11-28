@@ -218,22 +218,14 @@ app/Application
 
 # module-root-hygiene (story module-root-hygiene)
 docs/graphify
-<<<<<<< .merge_file_LPIWDq
-<<<<<<< .merge_file_hPX2kd
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_MeqZso
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-<<<<<<< .merge_file_LPIWDq
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_IoXysn
-=======
 
 # fila5-guard: mai nel repo di un modulo/tema
 /node_modules/
@@ -264,4 +256,3 @@ docs/**/backups/
 
 # Indice vettoriale locale (non versionare)
 ruvector.db
->>>>>>> .merge_file_MeqZso

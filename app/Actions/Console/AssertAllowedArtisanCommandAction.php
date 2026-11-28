@@ -10,11 +10,8 @@ use Spatie\QueueableAction\QueueableAction;
 /**
  * Rifiuta ogni comando Artisan che non sia identico a una voce dell'allowlist.
  *
-<<<<<<< .merge_file_k8hNpo
-=======
  * @see docs/contracts/assert-allowed-artisan-command-action.md
  *
->>>>>>> .merge_file_B0owiz
  * @contract docs/contracts/assert-allowed-artisan-command-action.md
  */
 final class AssertAllowedArtisanCommandAction

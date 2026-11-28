@@ -19,15 +19,10 @@ related:
 
 ## Metodo
 
-<<<<<<< .merge_file_XHasOy
-<<<<<<< .merge_file_m1MW3r
-=======
->>>>>>> .merge_file_usScsE
 Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
 lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
 inventata. Pest dichiarato solo se eseguito.
 
-<<<<<<< .merge_file_XHasOy
 ## Inventario misurato
 
 | Area | Conteggio |
@@ -80,10 +75,6 @@ Vedi [piano-miglioramento.md](../piano-miglioramento.md).
 - [audit.md](../audit.md)
 - [ECC](../../ecc/job-ecc-audit.md)
 - [Story](../stories/module-bmad-audit.story.md)
-=======
->>>>>>> .merge_file_ex7bAW
-=======
->>>>>>> .merge_file_usScsE
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura dei file
 critici (policy, `JobServiceProvider`, widget, componenti Livewire legacy, `ExecuteTaskAction`),
 `git log` sulle storie "done", PHPStan sul modulo, Pest sullo scratch DB del repo. La
